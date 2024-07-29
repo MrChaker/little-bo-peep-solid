@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Baskerville Regular";
+  src: url("/fonts/Baskerville-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Baskerville Bold";
+  src: url("/fonts/Baskerville-Bold.ttf")
+}
+
+@font-face {
+  font-family: "Baskerville Italic";
+  src: url("/fonts/Baskerville-Italic.ttf")
+}
+
+@font-face {
+  font-family: "Clicker Script";
+  src: url("/fonts/ClickerScript-Regular.ttf")
+}
+
+
+:root {
+  --background-rgb: 214, 219, 220;
+  --foreground-rgb: 0, 0, 0;
+}
+
+body {
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+}
+
+@media (min-width: 520px) {
+  .gridColsWidth {
+    /* DESKTOP_TEXT_WIDTH_WITH_MARGIN Constant */
+    grid-template-columns: 1fr 488px 1fr;
+  }
+}
+
+.menu-icon-svg{
+  transition: all 0.3s ease;;
+}
+
+.close-icon-svg-1 {
+  transform: translate(10px, -1px) rotate(48deg);
+}
+
+.close-icon-svg-2 {
+  transform: translate(-12px, 10px) rotate(-45deg);
+}
