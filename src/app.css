@@ -22,9 +22,19 @@
   src: url("/fonts/ClickerScript-Regular.ttf")
 }
 
+@font-face {
+  font-family: "Lora Italic";
+  src: url("/fonts/Lora-italic.ttf")
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/Lora.ttf")
+}
+
 
 :root {
-  --background-rgb: 214, 219, 220;
+  --background-rgb: 255, 255, 255;
   --foreground-rgb: 0, 0, 0;
 }
 
@@ -33,11 +43,41 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-@media (min-width: 520px) {
-  .gridColsWidth {
-    /* DESKTOP_TEXT_WIDTH_WITH_MARGIN Constant */
-    grid-template-columns: 1fr 488px 1fr;
-  }
+.MathJax_SVG{
+  font-size: 100%;
+  position: relative;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: auto !important;
+}
+.MathJax_SVG svg{
+  display: inline-block;
+}
+ .MathJax_SVG_Display{
+  margin-bottom: 0 !important;
+} 
+.hidden-on-startup {
+  max-height: 0;
+  height: 0;
+  opacity: 0;
+} 
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+}
+
+.scrollbar-hidden{
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+mjx-container {
+  width: 100%;
+}
+
+span .MathJax_SVG{
+  display: ruby !important;
+  margin: 0 !important;
 }
 
 .menu-icon-svg{
@@ -50,4 +90,245 @@ body {
 
 .close-icon-svg-2 {
   transform: translate(-12px, 10px) rotate(-45deg);
+}
+
+.animated-height-0 {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 1s;
+}
+
+.animated-height-full {
+  grid-template-rows: 1fr;
+}
+
+@media (hover: hover) {
+  .tab:hover:not(.disabled) > path:first-child {
+    fill: #91ed23 !important;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+}
+
+.tab:active:not(.disabled) > path:first-child {
+  fill: #91ed23 !important;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* solution svg css */
+
+.solution_button_svg{
+  transform: translateX(32%);
+}
+
+.solution_button_inscription {
+  transform: translateY(-35px);
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+
+.notes_header_inscription {
+  position: absolute;
+  left: 242px;
+  top: 37px;
+  pointer-events: none;
+}
+
+.solution_button_div {
+  height: 51px;
+}
+
+.pointing_finger_backhand {
+  fill: white;
+  stroke: white;
+  stroke-width: 1;
+}
+
+.pointing_finger_knuckle_zone {
+  fill: white;
+  stroke: white;
+  stroke-width: 4;
+}
+
+.pointing_finger_cuff_zone {
+  fill: white;
+  stroke: white;
+  stroke-width: 3;
+}
+
+.focus_alpha_fill{
+  fill: #0000;
+}
+
+.solution_button_transition {
+  transition: 0.3s;
+}
+
+.active_solution_button_rect {
+  fill: #ffe3ed;
+  stroke: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.active_solution_button_lip {
+  stroke-width: 1.2px;
+  stroke: #000;
+  fill: none;
+}
+
+.inactive_solution_button_lip {
+  stroke-width: 1.4px;
+  stroke: #464646;
+  fill: none;
+}
+
+.inactive_solution_button_rect {
+  fill: #ebebeb;
+  stroke: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inactive_solution_button_hands {
+  fill: #333;
+}
+
+.active_solution_button_hands {
+  fill: black;
+}
+
+
+@media (min-width: 520px) {
+  .gridColsWidth {
+    /* DESKTOP_TEXT_WIDTH_WITH_MARGIN Constant */
+    grid-template-columns: 1fr 488px 1fr;
+  }
+}
+
+.lines tr td {
+  text-align: center;
+  border-left: thin solid black;
+}
+.lines tr td > * {
+  margin: auto;
+}
+
+.lines tr {
+  border-bottom: thin solid black;
+}
+
+.lines tr td:first-child{
+  border-left: none;
+}
+
+.lines tr td:last-child{
+  border-right: none;
+}
+
+.lines tr:first-child{
+  border-top: none;
+}
+
+.lines tr:last-child{
+  border-bottom: none;
+}
+
+
+.grid-cols-1	{grid-template-columns: repeat(1, 1fr);}
+.grid-cols-2	{grid-template-columns: repeat(2, 1fr);}
+.grid-cols-3	{grid-template-columns: repeat(3, 1fr);}
+.grid-cols-4	{grid-template-columns: repeat(4, 1fr);}
+.grid-cols-5	{grid-template-columns: repeat(5, 1fr);}
+.grid-cols-6	{grid-template-columns: repeat(6, 1fr);}
+.grid-cols-7	{grid-template-columns: repeat(7, 1fr);}
+.grid-cols-8	{grid-template-columns: repeat(8, 1fr);}
+.grid-cols-9	{grid-template-columns: repeat(9, 1fr);}
+.grid-cols-10	{grid-template-columns: repeat(10, 1fr);}
+.grid-cols-11	{grid-template-columns: repeat(11, 1fr);}
+.grid-cols-12	{grid-template-columns: repeat(12, 1fr);}
+
+
+@media (min-width: 520px) {
+
+.sm\:grid-cols-1	{grid-template-columns: repeat(1, 1fr);}
+.sm\:grid-cols-2	{grid-template-columns: repeat(2, 1fr);}
+.sm\:grid-cols-3	{grid-template-columns: repeat(3, 1fr);}
+.sm\:grid-cols-4	{grid-template-columns: repeat(4, 1fr);}
+.sm\:grid-cols-5	{grid-template-columns: repeat(5, 1fr);}
+.sm\:grid-cols-6	{grid-template-columns: repeat(6, 1fr);}
+.sm\:grid-cols-7	{grid-template-columns: repeat(7, 1fr);}
+.sm\:grid-cols-8	{grid-template-columns: repeat(8, 1fr);}
+.sm\:grid-cols-9	{grid-template-columns: repeat(9, 1fr);}
+.sm\:grid-cols-10	{grid-template-columns: repeat(10, 1fr);}
+.sm\:grid-cols-11	{grid-template-columns: repeat(11, 1fr);}
+.sm\:grid-cols-12	{grid-template-columns: repeat(12, 1fr);}
+
+.center-on-mobile {
+  grid-column: 1/-1;
+}
+}
+
+.nowrap, .nobreak, .nolinebreak {
+  white-space: nowrap;
+}
+
+.test-bg {
+  background-image: linear-gradient(to right, transparent 0%, transparent 16px, #d1d1f7 16px, #d1d1f7 50%, #e6bbff 50%, #e6bbff calc(100% - 16px), transparent calc(100% - 16px), transparent 100%);
+}
+
+.spacer{
+  height: 1.5rem;
+}
+
+
+.example > .spacer:last-child,
+.sec:nth-last-child(6) > .spacer:last-child,
+.solution .spacer:last-child,
+.spacer:has(+ .pr > :first-child.block-element),
+.pr:has( > :first-child.block-element) + .spacer
+{
+  height: 0;
+}
+
+.spacer:has(+ .text)
+{
+  height: 1.5rem;
+}
+
+.pr:has(.pause) + .spacer,
+.mathblock + .spacer,
+.pr:has(.solution) + .spacer
+{
+  display: none;
+}
+
+.indent-fix {
+  height: 0;
+}
+
+.mathblock-span {
+  display: block;
+  margin-bottom: 1em;
+  background-color: #fff
+}
+
+.mathblock-span:has(+ .mathblock) {
+  margin-bottom: 0;
+}
+
+.dots {
+  flex-grow: 1;
+  height: 2px;
+  background: left / 100% 1px;
+  background-image: linear-gradient(to right, #000 2px, rgba(0, 0, 0, 0) 2px);
+  background-size: 7px 1px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.flip-y {
+  transform: rotateY(180deg);
 }
