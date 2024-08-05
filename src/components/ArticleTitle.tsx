@@ -7,7 +7,11 @@ import {
 import useOnMobile from "../hooks/useOnMobile";
 
 const ArticleTitle = (
-  props
+  props: {
+    label: string;
+    on_mobile?: string;
+    class?: string;
+  }
   // label: &'static str,
   // #[prop(default = "")] on_mobile: &'static str,
   // #[prop(default = "")] class: &'static str,

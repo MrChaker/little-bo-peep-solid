@@ -1,6 +1,7 @@
 use std::{
     env,
-    fs::{self, ReadDir},
+    fs::{self, File, ReadDir},
+    io::{self, BufRead, Write},
     path::PathBuf,
 };
 
@@ -11,20 +12,33 @@ pub enum ArticleType {
 }
 
 impl ArticleType {
+    pub fn from_str(_str: &str) -> Self {
+        match _str {
+            "chapters" => Self::CHAPTER,
+            "bootcamps" => Self::BOOTCAMP,
+            "chapter" => Self::CHAPTER,
+            "bootcamp" => Self::BOOTCAMP,
+            _ => Self::CHAPTER,
+        }
+    }
     fn to_str(&self) -> String {
         match self {
             ArticleType::CHAPTER => "chapter".to_string(),
             ArticleType::BOOTCAMP => "bootcamp".to_string(),
         }
     }
+    pub fn to_title(&self) -> String {
+        match self {
+            ArticleType::CHAPTER => "Chapers".to_string(),
+            ArticleType::BOOTCAMP => "Bootcamps".to_string(),
+        }
+    }
 }
 
 fn read_content_dir() -> ReadDir {
-    let path = env::current_dir();
-    if path.is_err() {
-        panic!("Path env error")
-    }
-    let path_string = format!("{}/src/content", path.unwrap().display());
+    let mut path = env::current_dir().unwrap();
+    path.pop();
+    let path_string = format!("{}/src/content", path.display());
     let entries = fs::read_dir(path_string);
     if entries.is_err() {
         panic!("Content dir not found")
@@ -104,4 +118,50 @@ pub fn get_article_title(path: &PathBuf) -> (String, String) {
         panic!("Could not find title attribute");
     };
     (title, mobile_title)
+}
+
+pub fn replace_content(
+    file_path: &str,
+    start_line: usize,
+    end_marker: &str,
+    replace_str: &str,
+) -> Result<isize, std::io::Error> {
+    let mut lines: Vec<String> = Vec::new();
+
+    // Read the file content into a vector of lines
+    if let Ok(file) = File::open(&file_path) {
+        for line in io::BufReader::new(file).lines() {
+            lines.push(line?);
+        }
+    }
+
+    // Find the end line
+    let mut end_line = start_line;
+    for (index, line) in lines.iter().enumerate().skip(start_line) {
+        if line.trim().starts_with(end_marker) {
+            end_line = index;
+            println!("line iter {} end {}", start_line, end_line);
+
+            break;
+        }
+    }
+
+    println!("line iter {} end {}", start_line, end_line);
+
+    // Replace the lines from start_line to end_line with new_content
+    lines.splice(start_line..end_line, vec![replace_str.to_string()]);
+
+    // Write the modified content back to the file
+    let mut file = File::create(&file_path)?;
+    for line in lines {
+        // add line to file content
+        file.write_all((line + "\n").as_bytes())?;
+    }
+
+    let fixed_lines_between_start_and_end: isize = 3;
+    let diff_end_start: isize = (end_line - start_line).try_into().unwrap();
+
+    let lines_diff: isize = fixed_lines_between_start_and_end - diff_end_start;
+
+    Ok(lines_diff)
 }
