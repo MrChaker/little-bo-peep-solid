@@ -4,44 +4,33 @@ import Spacer from "./Spacer";
 
 const TableOfContents = () => {
   return (
-    <Columns>
-      <div class="col-start-2">
-        <h1 class="text-2xl sm:text-4xl font-baskerville-italic mb-5 gap-4 flex justify-center items-center font-lora">
-          <img
-            src="/images/table_of_contents.svg"
-            class="w-[40px] sm:w-[60px]"
-          />
-          Table of Contents
-          <img
-            src="/images/table_of_contents.svg"
-            class="flip-y w-[40px] sm:w-[60px]"
-          />
-        </h1>
-        {/* render chapter */}
-        <Title label="Chapers" />
-        <ItemsList>
-          <MenuItem
-            article_type="1"
-            label="A Few Refreshers"
-            on_mobile=""
-            href="chapter1"
-          />
-        </ItemsList>
-        {/* end chapter */}
-        <Spacer />
-        {/* render bootcamp */}
-        <Title label="Bootcamps" />
-        <ItemsList>
-          <MenuItem
-            article_type="1"
-            label="Sets"
-            on_mobile=""
-            href="bootcamp1"
-          />
-        </ItemsList>
-        {/* end bootcamp */}
-      </div>
-    </Columns>
+    <div class="col-start-2">
+      <h1 class="text-2xl sm:text-4xl font-baskerville-italic mb-5 gap-4 flex justify-center items-center font-lora">
+        <img src="/images/table_of_contents.svg" class="w-[40px] sm:w-[60px]" />
+        Table of Contents
+        <img
+          src="/images/table_of_contents.svg"
+          class="flip-y w-[40px] sm:w-[60px]"
+        />
+      </h1>
+      {/* render chapter */}
+<Title label="Chapers" /><ItemsList>
+                        <MenuItem article_type="1" label="A Few Refreshers" on_mobile="" href="chapter1"/>
+                        
+                        <MenuItem article_type="2" label="Slopes" on_mobile="" href="chapter2"/>
+                        
+                        <MenuItem article_type="3" label="Functions" on_mobile="" href="chapter3"/>
+<Title label="Bootcamps" /><ItemsList>
+                        <MenuItem article_type="1" label="Sets" on_mobile="" href="bootcamp1"/>
+                        
+                        <MenuItem article_type="2" label="Powers of 10" on_mobile="" href="bootcamp2"/>
+                        </ItemsList>
+      {/* end chapter */}
+      <Spacer />
+      {/* render bootcamp */}
+
+      {/* end bootcamp */}
+    </div>
   );
 };
 

@@ -1,69 +1,41 @@
-pub mod elm_to_jsx;
 pub mod helpers;
 pub mod merge_content;
-use elm_parser::counter::counters::Counters;
-use elm_to_jsx::*;
-use helpers::{get_article_title, get_sorted_articles, replace_content, ArticleType};
-use merge_content::get_articles_content;
-use std::env;
-use std::fs::{read_to_string, File};
-use std::io::Write;
+use helpers::{add_imports, get_article_title, get_sorted_articles, replace_content, ArticleType};
+use std::fs::read_to_string;
 use std::path::Path;
 use std::process::Command;
+use std::{env, fs};
 
 fn main() {
     let mut root = env::current_dir().unwrap();
     root.pop();
     let content_path = format!("{}/src/content", root.display());
-    // let res = merge_content(path_string.as_str());
-    // if res.is_err() {
-    //     panic!("Error");
-    // }
-    // let elm_string = res.unwrap();
 
-    let articles = get_articles_content(content_path.as_str());
+    //let articles = get_articles_content(content_path.as_str());
 
-    if let Ok(articles) = articles {
-        for article in articles {
-            let mut counters = Counters::new();
-            let jsx = elm_to_jsx(&article.content, &mut counters);
-            // write to file
-            let path_to_write =
-                format!("{}/src/routes/article/{}.tsx", root.display(), article.name);
+    println!("🚀 Parsing markup to jsx 🚀");
+    let _ = Command::new(format!("{}/parser_script", root.display()))
+        .args([
+            format!("{}/src/content", root.display()),
+            "--emit-book".to_string(),
+            "solid".to_string(),
+            "--output".to_string(),
+            format!("{}/src/routes/article", root.display()),
+        ])
+        .output()
+        .expect("Failed to run gleam parser script");
 
-            let mut file = match File::create(path_to_write) {
-                Ok(file) => file,
-                Err(error) => {
-                    println!("Error creating file: {}", error);
-                    return;
-                }
-            };
+    println!("🚀 Add import lines 🚀");
+    let entries = fs::read_dir(format!("{}/src/routes/article", root.display())).unwrap();
 
-            let tsx_content = format!(
-                r#"
-                    const Article = () => {{
-                        return <>{jsx}</>;
-                    }};
-                    
-                    export default Article;
-                "#
-            );
-
-            match file.write_all(tsx_content.as_bytes()) {
-                Ok(_) => {
-                    // let _ = Command::new("npx")
-                    //     .arg("prettier")
-                    //     .arg("--write")
-                    //     .arg(format!("{}/src/routes/articles", root.display(),))
-                    //     .output()
-                    //     .expect("Failed to execute command");
-                }
-                Err(error) => println!("Error writing to json_output.json: {}", error),
-            }
-        }
+    for entry in entries {
+        let entry = entry.unwrap();
+        let path = entry.path();
+        add_imports(&path).expect(&format!("Error adding imports to {}", path.display()))
     }
 
     // render tabel of contents
+    println!("🚀 Render tabel of contents 🚀");
     render_table_of_contents(&root);
 
     println!("🟢 Parsing done ! Running prettier 🟢");
@@ -101,6 +73,8 @@ fn render_table_of_contents(root_path: &Path) {
                 list.push_str("<ItemsList>");
 
                 for (i, path) in articles {
+                    println!("path: {}", path.display());
+
                     let (title, mobile_title) = get_article_title(&path);
                     list.push_str(&format!(
                         r#"

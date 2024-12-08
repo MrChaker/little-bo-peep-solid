@@ -1,9 +1,12 @@
 use std::{
     env,
-    fs::{self, File, ReadDir},
+    fmt::format,
+    fs::{self, File, OpenOptions, ReadDir},
     io::{self, BufRead, Write},
-    path::PathBuf,
+    path::{Path, PathBuf},
 };
+
+use nom::Slice;
 
 #[derive(Clone, Copy)]
 pub enum ArticleType {
@@ -54,8 +57,12 @@ pub fn get_sorted_articles(article_type: ArticleType) -> Vec<(u8, PathBuf)> {
         let path = entry.path();
         let metadata = fs::metadata(&path).unwrap();
         let path_str = path.to_str().unwrap();
+        let file_name = path_str.split("/").last().unwrap();
 
-        if metadata.is_dir() && ends_with_article_number(&path, &article_type) {
+        if !file_name.starts_with("#")
+            && metadata.is_dir()
+            && ends_with_article_number(&path, &article_type)
+        {
             let last_char = path_str.chars().last().unwrap();
             let article_number = last_char.to_digit(10).unwrap() as u8;
             articles.push((article_number, path));
@@ -94,7 +101,7 @@ pub fn get_article_title(path: &PathBuf) -> (String, String) {
         let entry = entry.unwrap();
         let path = entry.path();
         let file_name = path.file_name().unwrap().to_str().unwrap_or("");
-        if file_name == "parent.emu" {
+        if file_name == "__parent.emu" {
             let parent_emu = fs::read_to_string(path);
             if parent_emu.is_err() {
                 panic!("Path not found {}", path_str)
@@ -164,4 +171,50 @@ pub fn replace_content(
     let lines_diff: isize = fixed_lines_between_start_and_end - diff_end_start;
 
     Ok(lines_diff)
+}
+
+pub fn add_imports(file: &PathBuf) -> io::Result<()> {
+    let imports = "
+    import ArticleTitle from \"~/components/ArticleTitle\"
+    import {Section, Example, NoBreak, CustomBlock} from \"~/components/Wrappers\"
+    import {CentralDisplay, CentralItalicDisplay} from \"~/components/Delimiters\"
+    import {Math, MathBlock} from \"~/components/Math\"
+    import VerticalChunk from \"~/components/VerticalChunk\"\n";
+
+    let mut file_name = file
+        .to_str()
+        .unwrap()
+        .split("/")
+        .last()
+        .unwrap()
+        .to_string();
+    file_name.truncate(file_name.len() - 4);
+
+    let article_component = format!(
+        "
+        const {} = (props: any) => {{
+            return <>{{props.children}}</>
+        }}\n
+    ",
+        capitalize_first(&file_name)
+    );
+
+    let existing_content = fs::read_to_string(file)?;
+
+    let with_imports = format!("{imports}{article_component}{existing_content}");
+
+    let mut file = OpenOptions::new().write(true).truncate(true).open(file)?;
+
+    file.write_all(with_imports.as_bytes())?;
+    Ok(())
+}
+
+fn capitalize_first(input: &str) -> String {
+    if let Some(first_char) = input.chars().next() {
+        let first_upper = first_char.to_uppercase().to_string();
+        let rest = &input[first_char.len_utf8()..];
+        format!("{}{}", first_upper, rest)
+    } else {
+        String::new()
+    }
 }
