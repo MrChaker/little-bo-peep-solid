@@ -33,6 +33,14 @@ fn main() {
     // render tabel of contents
     println!("🚀 Render tabel of contents 🚀");
     render_table_of_contents(&root);
+    println!("🚀 Render mathjax 🚀");
+    let c = Command::new("node")
+        .args([
+            format!("{}/render-mathjax.js", root.display()),
+            format!("{}/src/routes/article", root.display()),
+        ])
+        .output()
+        .expect("Failed to render mathjax");
 
     println!("🟢 Parsing done ! Running prettier 🟢");
     let _ = Command::new("npx")
