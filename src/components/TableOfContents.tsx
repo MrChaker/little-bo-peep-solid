@@ -13,23 +13,59 @@ const TableOfContents = () => {
           class="flip-y w-[40px] sm:w-[60px]"
         />
       </h1>
-      {/* render chapter */}
-<Title label="Chapers" /><ItemsList>
-                        <MenuItem article_type="1" label="A Few Refreshers" on_mobile="" href="chapter1"/>
-                        
-                        <MenuItem article_type="2" label="Slopes" on_mobile="" href="chapter2"/>
-                        
-                        <MenuItem article_type="3" label="Functions" on_mobile="" href="chapter3"/>
-<Title label="Bootcamps" /><ItemsList>
-                        <MenuItem article_type="1" label="Sets" on_mobile="" href="bootcamp1"/>
-                        
-                        <MenuItem article_type="2" label="Powers of 10" on_mobile="" href="bootcamp2"/>
-                        </ItemsList>
-      {/* end chapter */}
-      <Spacer />
-      {/* render bootcamp */}
+      <div id="chapter">
+        {" "}
+        <Title label="Chapters" />
+        <ItemsList>
+          <MenuItem
+            article_type="1"
+            label="A Few Refreshers"
+            on_mobile=""
+            href="chapter1"
+          />
 
-      {/* end bootcamp */}
+          <MenuItem
+            article_type="2"
+            label="Slopes"
+            on_mobile=""
+            href="chapter2"
+          />
+
+          <MenuItem
+            article_type="3"
+            label="Functions"
+            on_mobile=""
+            href="chapter3"
+          />
+
+          <MenuItem
+            article_type="4"
+            label="Derivatives"
+            on_mobile=""
+            href="chapter4"
+          />
+        </ItemsList>
+      </div>
+      <div id="bootcamp">
+        {" "}
+        <Title label="Bootcamps" />
+        <ItemsList>
+          <MenuItem
+            article_type="1"
+            label="Sets"
+            on_mobile=""
+            href="bootcamp1"
+          />
+
+          <MenuItem
+            article_type="2"
+            label="Powers of 10"
+            on_mobile=""
+            href="bootcamp2"
+          />
+        </ItemsList>
+      </div>
+      <Spacer />
     </div>
   );
 };

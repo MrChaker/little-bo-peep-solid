@@ -240,7 +240,7 @@
         particles, comprising the original colors but
         in white and black flavors:
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -374,7 +374,7 @@
 
         Next we write
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -385,7 +385,7 @@
         the $x$-coordinate of the purple-white particle
         as a function of time (in more detail,
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -394,7 +394,7 @@
 
         to emphasize that WE ARE TALKING ABOUT A FUNCTION, e.g.,
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -405,7 +405,7 @@
         the purple-white particle at
         $t = 2$, etc), and write
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -419,7 +419,7 @@
 
         For example,
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -435,7 +435,7 @@
         is the value of the $x$-coordinate
         of the yellow-white particle; we also have
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -457,7 +457,7 @@
         by adding two such equations together; this can also be
         written
 
-        |> Center
+        |> CenterDisplay
             
             $($
             |> InlineImage
@@ -496,7 +496,7 @@
             src images/svg_ch4_circle_at_2_4_p4_inline.svg
         &ensp;by setting...
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -626,7 +626,7 @@
         particles are one and the same.)
         For starters...
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -844,7 +844,7 @@
 
         ...or...
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -938,7 +938,7 @@
         is the position vector of the yellow particle); 
         for seconders, evaluating these definitions at $t = 0$ gives...
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles
@@ -1092,7 +1092,7 @@
 
         ...or...
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_inline_blackwhite_particles

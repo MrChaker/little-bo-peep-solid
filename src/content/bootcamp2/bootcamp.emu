@@ -255,7 +255,7 @@
     powers of $10$:
 
     |> div
-        align center
+        class align-center
 
         |> table
             class first-line
@@ -270,107 +270,107 @@
                 width 140px
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $n$
                 |> td
-                    align center
+                    class align-center
 
                     $\,\,10^n$
                 |> td
-                    align center
+                    class align-center
 
                     name
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $0$
                 |> td
-                    align center
+                    class align-center
 
                     $1$
                 |> td
-                    align center
+                    class align-center
 
                     _one_
 
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $1$
                 |> td
-                    align center
+                    class align-center
 
                     $10$
                 |> td
-                    align center
+                    class align-center
 
                     _ten_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $2$
                 |> td
-                    align center
+                    class align-center
 
                     $100$
                 |> td
-                    align center
+                    class align-center
 
                     _hundred_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $3$
                 |> td
-                    align center
+                    class align-center
 
                     $1000$
                 |> td
-                    align center
+                    class align-center
 
                     _thousand_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $6$
                 |> td
-                    align center
+                    class align-center
 
                     $1\,000\,000$
                 |> td
-                    align center
+                    class align-center
 
                     _million_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $9$
                 |> td
-                    align center
+                    class align-center
 
                     $1\,000\,000\,000$
                 |> td
-                    align center
+                    class align-center
 
                     _billion_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $12$
                 |> td
-                    align center
+                    class align-center
 
                     $1\,000\,000\,000\,000$
                 |> td
-                    align center
+                    class align-center
 
                     _trillion_
 
@@ -419,7 +419,7 @@
     like so:
     
     |> div
-        align center
+        class align-center
 
         |> table
             class first-line
@@ -434,80 +434,80 @@
                 width 140px
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $n$
                 |> td
-                    align center
+                    class align-center
 
                     $\,\,10^n$
                 |> td
-                    align center
+                    class align-center
 
                     name
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $-1$
                 |> td
-                    align center
+                    class align-center
 
                     $0.1$
                 |> td
-                    align center
+                    class align-center
 
                     _one tenth_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $-2$
                 |> td
-                    align center
+                    class align-center
 
                     $0.01$
                 |> td
-                    align center
+                    class align-center
 
                     _one hundredth_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $-3$
                 |> td
-                    align center
+                    class align-center
 
                     $0.001$
                 |> td
-                    align center
+                    class align-center
 
                     _one thousandth_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $-6$
                 |> td
-                    align center
+                    class align-center
 
                     $0.000001$
                 |> td
-                    align center
+                    class align-center
 
                     _one millionth_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $-9$
                 |> td
-                    align center
+                    class align-center
 
                     $0.000000001$
                 |> td
-                    align center
+                    class align-center
 
                     _one trillionth_
 
@@ -543,7 +543,7 @@
     such prefixes:
     
     |> div
-        align center
+        class align-center
 
         |> table
             class first-line
@@ -557,74 +557,74 @@
 
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     power
                 |> td
-                    align center
+                    class align-center
 
                     prefix
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-1}$
                 |> td
-                    align center
+                    class align-center
 
                     _deci_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-2}$
                 |> td
-                    align center
+                    class align-center
 
                     _centi_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-3}$
                 |> td
-                    align center
+                    class align-center
 
                     _milli_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-6}$
                 |> td
-                    align center
+                    class align-center
 
                     _micro_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-9}$
                 |> td
-                    align center
+                    class align-center
 
                     _nano_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-12}$
                 |> td
-                    align center
+                    class align-center
 
                     _pico_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{-15}$
                 |> td
-                    align center
+                    class align-center
 
                     _femto_
 
@@ -658,7 +658,7 @@
     to $10^{15}$, these are:
     
     |> div
-        align center
+        class align-center
 
         |> table
             class first-line
@@ -671,74 +671,74 @@
                 width 120px
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     power
                 |> td
-                    align center
+                    class align-center
 
                     prefix
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^1$
                 |> td
-                    align center
+                    class align-center
 
                     _deca_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{2}$
                 |> td
-                    align center
+                    class align-center
 
                     _hecto_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{3}$
                 |> td
-                    align center
+                    class align-center
 
                     _kilo_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{6}$
                 |> td
-                    align center
+                    class align-center
 
                     _mega_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{9}$
                 |> td
-                    align center
+                    class align-center
 
                     _giga_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{12}$
                 |> td
-                    align center
+                    class align-center
 
                     _tera_
             |> tr
                 |> td
-                    align center
+                    class align-center
 
                     $10^{15}$
                 |> td
-                    align center
+                    class align-center
 
                     _peta_
 
