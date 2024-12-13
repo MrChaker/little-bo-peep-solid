@@ -1,12 +1,10 @@
+use regex::Regex;
 use std::{
     env,
-    fmt::format,
     fs::{self, File, OpenOptions, ReadDir},
-    io::{self, BufRead, Write},
-    path::{Path, PathBuf},
+    io::{self, read_to_string, BufRead, Write},
+    path::PathBuf,
 };
-
-use nom::Slice;
 
 #[derive(Clone, Copy)]
 pub enum ArticleType {
@@ -32,7 +30,7 @@ impl ArticleType {
     }
     pub fn to_title(&self) -> String {
         match self {
-            ArticleType::CHAPTER => "Chapers".to_string(),
+            ArticleType::CHAPTER => "Chapters".to_string(),
             ArticleType::BOOTCAMP => "Bootcamps".to_string(),
         }
     }
@@ -129,56 +127,42 @@ pub fn get_article_title(path: &PathBuf) -> (String, String) {
 
 pub fn replace_content(
     file_path: &str,
-    start_line: usize,
-    end_marker: &str,
     replace_str: &str,
-) -> Result<isize, std::io::Error> {
-    let mut lines: Vec<String> = Vec::new();
-
+    article_type: &str,
+) -> Result<(), std::io::Error> {
     // Read the file content into a vector of lines
-    if let Ok(file) = File::open(&file_path) {
-        for line in io::BufReader::new(file).lines() {
-            lines.push(line?);
-        }
-    }
+    let file_content = fs::read_to_string(file_path)?;
 
-    // Find the end line
-    let mut end_line = start_line;
-    for (index, line) in lines.iter().enumerate().skip(start_line) {
-        if line.trim().starts_with(end_marker) {
-            end_line = index;
-            println!("line iter {} end {}", start_line, end_line);
+    let start = regex::escape(&format!("<div id=\"{article_type}\">"));
+    let end = regex::escape(&format!("</div>"));
 
-            break;
-        }
-    }
+    let re = Regex::new(&format!(r"{}(.*?){}", start, end)).unwrap();
 
-    println!("line iter {} end {}", start_line, end_line);
+    // Replace the matched text with a desired replacement
+    let replaced = re.replace_all(&file_content, |_: &regex::Captures| {
+        format!("<div id=\"{article_type}\"> {replace_str} </div>")
+    });
 
-    // Replace the lines from start_line to end_line with new_content
-    lines.splice(start_line..end_line, vec![replace_str.to_string()]);
-
-    // Write the modified content back to the file
     let mut file = File::create(&file_path)?;
-    for line in lines {
-        // add line to file content
-        file.write_all((line + "\n").as_bytes())?;
-    }
-
-    let fixed_lines_between_start_and_end: isize = 3;
-    let diff_end_start: isize = (end_line - start_line).try_into().unwrap();
-
-    let lines_diff: isize = fixed_lines_between_start_and_end - diff_end_start;
-
-    Ok(lines_diff)
+    file.write_all(replaced.as_bytes())?;
+    Ok(())
 }
 
 pub fn add_imports(file: &PathBuf) -> io::Result<()> {
     let imports = "
     import ArticleTitle from \"~/components/ArticleTitle\"
-    import {Section, Example, NoBreak, CustomBlock} from \"~/components/Wrappers\"
-    import {CentralDisplay, CentralItalicDisplay} from \"~/components/Delimiters\"
+    import {Section, Example, NoBreak, CustomBlock, Pause} from \"~/components/Wrappers\"
+    import {CenterDisplay, CentralItalicDisplay} from \"~/components/Delimiters\"
     import {Math, MathBlock} from \"~/components/Math\"
+    import {ImageRight, ImageLeft} from \"~/components/SideImage\"
+    import Image from \"~/components/Image\"
+    import InlineImage from \"~/components/InlineImage\"
+    import {Exercise, Exercises} from \"~/components/Exercises\"
+    import Solution from \"~/components/Solution\"
+    import Table from \"~/components/Table\"
+    import Grid from \"~/components/Grid\"
+    import {List, Item} from \"~/components/List\"
+    import {SectionDivider, StarDivider} from \"~/components/SectionDivider\"
     import VerticalChunk from \"~/components/VerticalChunk\"\n";
 
     let mut file_name = file
@@ -193,7 +177,9 @@ pub fn add_imports(file: &PathBuf) -> io::Result<()> {
     let article_component = format!(
         "
         const {} = (props: any) => {{
-            return <>{{props.children}}</>
+            return <>
+            <ArticleTitle label={{props.title}} />
+            {{props.children}}</>
         }}\n
     ",
         capitalize_first(&file_name)
