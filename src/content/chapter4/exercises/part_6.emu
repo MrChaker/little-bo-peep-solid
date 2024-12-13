@@ -561,8 +561,8 @@
         $$
         \begin{align}
         (fg)(u) &= f(u) \cdot g(u) \\
-        &= g(u) \cdot f(u) \up{1.5}\\
-        &= (gf)(u) \up{1.5}
+        &= g(u) \cdot f(u) \\up{1.5}\\
+        &= (gf)(u) \\up{1.5}
         \end{align}
         $$
 

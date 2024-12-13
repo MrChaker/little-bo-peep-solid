@@ -1,8 +1,8 @@
 import { ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
 
-export const CenteralDisplay = (
-  props: ParentProps & SharedProps & { indent?: boolean }
+export const CenterDisplay = (
+  props: ParentProps & SharedProps & { indent?: boolean },
 ) => {
   return (
     <div
@@ -16,7 +16,7 @@ export const CenteralDisplay = (
 };
 
 export const CentralItalicDisplay = (
-  props: ParentProps & SharedProps & { indent?: boolean }
+  props: ParentProps & SharedProps & { indent?: boolean },
 ) => {
   return (
     <div

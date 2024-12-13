@@ -2,7 +2,7 @@ import { ParentProps } from "solid-js";
 
 export const Math = (props: ParentProps) => {
   return (
-    <div class="w-fit inline-flex items-baseline indent-0 hidden-on-startup">
+    <div class="w-fit inline-flex items-baseline indent-0">
       {props.children}
     </div>
   );

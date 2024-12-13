@@ -4,7 +4,7 @@ import ArticleTitle from "~/components/ArticleTitle";
 export default function Home() {
   return (
     <>
-      <ArticleTitle />
+      <ArticleTitle label="" />
       <TableOfContents />
     </>
   );

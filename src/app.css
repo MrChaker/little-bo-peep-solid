@@ -35,6 +35,8 @@
 :root {
   --background-rgb: 255, 255, 255;
   --foreground-rgb: 0, 0, 0;
+  --desktop-text-column-width: 488px;
+  --desktop-text-column-padding: 16px;
 }
 
 body {
@@ -67,6 +69,10 @@ i {
   padding-inline: var(--desktop-text-column-padding);
 }
 
+.spacer {
+  height: 1.5rem;
+}
+
 /* Mathjax */
 
 .MathJax_SVG {
@@ -80,7 +86,7 @@ i {
   display: inline-block;
 }
 .MathJax_SVG_Display {
-  margin-bottom: 0 !important;
+  margin: 0 !important;
 }
 .hidden-on-startup {
   max-height: 0;

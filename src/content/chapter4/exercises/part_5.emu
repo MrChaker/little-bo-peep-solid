@@ -439,7 +439,7 @@
             during the
         &ensp;six displacements:
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet
@@ -450,7 +450,7 @@
         |> ImageRight
             src images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet
@@ -458,7 +458,7 @@
                 style margin-right:1em
             $-6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,-2.7\,\te{cells}$
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet
@@ -466,7 +466,7 @@
                 style margin-right:1em
             $6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.9\te{s}\,\,=\,\,6.075\,\te{cells}$
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet
@@ -474,7 +474,7 @@
                 style margin-right:1em
             $6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,2.7\,\te{cells}$
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet
@@ -482,7 +482,7 @@
                 style margin-right:1em
             $-6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,-2.7\,\te{cells}$
 
-        |> Center
+        |> CenterDisplay
 
             |> InlineImage
                 class ch4_pacman1_inline_number_pellet

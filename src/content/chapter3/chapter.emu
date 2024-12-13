@@ -185,8 +185,8 @@
         $$
         \te{VX-11/78A}(x) = \begin{cases} 
         3.5 & \te{if $x = 0$},\\
-        2.5\up{1.1} & \te{if $x = 1$},\\
-        \te{undefined}\up{1.1} & \te{if $x \ne 0, 1$}
+        2.5\\up{1.1} & \te{if $x = 1$},\\
+        \te{undefined}\\up{1.1} & \te{if $x \ne 0, 1$}
         \end{cases}
         $$
         
@@ -323,7 +323,7 @@
         \te{DM-1700}(x) = 
         \begin{cases} 
         0             & \te{if $x \leq 0$ or $x \geq 1$},\\
-        1 - x\up{1.1} & \te{if $0 < x < 1$}
+        1 - x\\up{1.1} & \te{if $0 < x < 1$}
         \end{cases}
         $$
         
@@ -483,7 +483,7 @@
 
     |> Image
         src images/svg_ch3_empty_circle.svg
-        container_classes pt-4 mb-3
+        class pt-4 mb-3
 
     ...means that the point in question is _excluded_ 
     from the graph. A filled circle, by opposition, 
@@ -804,7 +804,7 @@
             The absolute value function is 
             
             $$
-            x \ra \begin{cases} x & \te{if $x \geq 0$,}\\ -x\!\!\up{1.2} & \te{if $x < 0$}\end{cases}
+            x \ra \begin{cases} x & \te{if $x \geq 0$,}\\ -x\!\!\\up{1.2} & \te{if $x < 0$}\end{cases}
             $$
             
             because $-(-1) = 1$, $-(-5) = 5$, etc.
@@ -1462,7 +1462,7 @@
             go from $D$ to $C$, $C$ to $B$, and $B$ to $A$. 
             For example,
 
-            |> DisplayCentered 
+            |> DisplayCenterDisplayed 
 
                 $\Large h($
                 
@@ -1500,7 +1500,7 @@
             
             in set $C$,  and
 
-            |> DisplayCentered 
+            |> DisplayCenterDisplayed 
 
                 $\Large g(h($
 
@@ -1665,7 +1665,7 @@
             \begin{align}
             \,\,\,\,(x + 5)^2
             &= x^2 + (2\cdot 5)x + 5^2 \\
-            &= \up{1.4} x^2 + 10x + 25
+            &= \\up{1.4} x^2 + 10x + 25
             \end{align}
             $$
             and adding $5$ gives $x^2 + 10x + 30$.
