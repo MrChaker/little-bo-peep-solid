@@ -1,5 +1,6 @@
 import { ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
+import { twJoin } from "tailwind-merge";
 
 type ImageProps = ParentProps &
   SharedProps & {
@@ -11,14 +12,23 @@ type ImageProps = ParentProps &
 
 const Image = (props: ImageProps) => {
   return (
-    <img
-      class={`slice ${props.class}`}
-      width={props.width}
-      height={props.height}
-      style={props.style}
-      src={props.src}>
-      Image
-    </img>
+    <div class="w-max fill-available scrollbar-hidden transition-all m-auto relative">
+      <div
+        style={{
+          height: props.height,
+          width: props.width,
+        }}
+        class="left-1/2 -translate-x-1/2 relative">
+        <img
+          class={twJoin(
+            "slice scrollbar-hidden sm:overflow-x-visible m-auto transition-all w-max",
+            props.class
+          )}
+          style={props.style}
+          src={props.src}
+        />
+      </div>
+    </div>
   );
 };
 
