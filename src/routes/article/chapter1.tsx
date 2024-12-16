@@ -22,7 +22,10 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Chapter1 = (props: any) => {
   return (
     <>
-      <ArticleTitle label={`Chapter 1: ` + props.title} />
+      <ArticleTitle
+        label={`Chapter 1: ` + props.title}
+        on_mobile_label={`Chapter 1: ` + props.mobile_title}
+      />
       {props.children}
     </>
   );

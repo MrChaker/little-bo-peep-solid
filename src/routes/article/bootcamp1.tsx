@@ -22,7 +22,10 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Bootcamp1 = (props: any) => {
   return (
     <>
-      <ArticleTitle label={`Bootcamp 1: ` + props.title} />
+      <ArticleTitle
+        label={`Bootcamp 1: ` + props.title}
+        on_mobile_label={`Bootcamp 1: ` + props.mobile_title}
+      />
       {props.children}
     </>
   );

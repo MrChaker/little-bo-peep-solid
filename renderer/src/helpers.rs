@@ -178,13 +178,17 @@ pub fn add_imports(file: &PathBuf) -> io::Result<()> {
         "
         const {} = (props: any) => {{
             return <>
-            <ArticleTitle label={} />
+            <ArticleTitle label={} on_mobile_label={}/>
             {{props.children}}</>
         }}\n
     ",
         capitalize_first(&file_name),
         format!(
             "{{`{}: ` + props.title }}",
+            add_space_between_word_and_digit(capitalize_first(&file_name).as_str())
+        ),
+        format!(
+            "{{`{}: ` + props.mobile_title }}",
             add_space_between_word_and_digit(capitalize_first(&file_name).as_str())
         )
     );

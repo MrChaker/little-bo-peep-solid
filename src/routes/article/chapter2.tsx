@@ -22,7 +22,10 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Chapter2 = (props: any) => {
   return (
     <>
-      <ArticleTitle label={`Chapter 2: ` + props.title} />
+      <ArticleTitle
+        label={`Chapter 2: ` + props.title}
+        on_mobile_label={`Chapter 2: ` + props.mobile_title}
+      />
       {props.children}
     </>
   );
@@ -45,9 +48,7 @@ of how “steep” a line is. Here are a few examples
 (for an explanation of the values, see below):`}
           </VerticalChunk>
           <div class="spacer"></div>
-          <Image src="/images/chapter_2_1.svg">
-            <ImageRight offset_y="-1rem" src="/images/32.svg"></ImageRight>
-          </Image>
+          <Image src="/images/chapter_2_1.svg"></Image>
           <div class="spacer"></div>
           <VerticalChunk>{`To explain, the slope of a line is...`}</VerticalChunk>
           <div class="spacer"></div>
