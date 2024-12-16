@@ -9,14 +9,14 @@ import useOnMobile from "../hooks/useOnMobile";
 const ArticleTitle = (
   props: {
     label: string;
-    on_mobile?: string;
+    on_mobile_label?: string;
     class?: string;
   },
   // label: &'static str,
   // #[prop(default = "")] on_mobile: &'static str,
   // #[prop(default = "")] class: &'static str,
 ) => {
-  //const { on_mobile } = useOnMobile();
+  const { on_mobile } = useOnMobile();
 
   return (
     <div class="sm:grid gridColsWidth pt-14">
@@ -32,7 +32,7 @@ const ArticleTitle = (
             : CHAPTER_TITLE_BOTTOM_MARGIN_DESKTOP
         }`}>
         <span class="sm:hidden">
-          {props.on_mobile ? props.on_mobile : props.label}
+          {on_mobile() ? props.on_mobile_label : props.label}
         </span>
         <span class="hidden sm:block">{props.label}</span>
       </h1>
