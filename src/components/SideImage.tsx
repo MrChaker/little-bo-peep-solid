@@ -3,6 +3,7 @@ import {
   createMemo,
   createSignal,
   mergeProps,
+  onCleanup,
   ParentProps,
 } from "solid-js";
 import SharedProps from "./types/SharedProps";
@@ -41,6 +42,10 @@ type SideImageProps = Partial<ImageProps> & {
 };
 
 const SideImage = (_props: SideImageProps) => {
+  let container_ref: HTMLDivElement | undefined;
+  let [scale, set_scale] = createSignal(1);
+  let [transform_origin, set_transform_origin] = createSignal("unset");
+
   const props = mergeProps(
     {
       offset_x: "0px",
@@ -52,7 +57,7 @@ const SideImage = (_props: SideImageProps) => {
     _props
   );
 
-  let innerStyles = {
+  let innerStyles = () => ({
     left: props.side === "right" ? props.offset_x : "",
     right: props.side === "left" ? `calc(-100% + ${props.offset_x})` : "",
     top: `calc(50% + ${props.offset_y.includes("%") ? "0px" : props.offset_y})`,
@@ -60,16 +65,32 @@ const SideImage = (_props: SideImageProps) => {
       props.img_position
     )} + ${props.offset_y.includes("%") ? props.offset_y : "0px"}))`,
     padding: `${props.padding}`,
-    scale: "",
-    transformOrigin: "",
-  };
+    scale: `${scale()}`,
+    "transform-origin": transform_origin(),
+  });
+
+  if (typeof window !== "undefined") {
+    const handle_image_scale = (e: Event) => {
+      let prev_sibling = container_ref?.previousElementSibling as any;
+      let scale_value = prev_sibling?.dataset.scale_side_images;
+      set_scale(scale_value);
+      set_transform_origin(`${(1.0 - scale_value) * 100.0}% top 0`);
+    };
+
+    window.addEventListener("image_scale", handle_image_scale);
+
+    onCleanup(() => {
+      window.removeEventListener("resize", handle_image_scale);
+    });
+  }
 
   return (
     <div
+      ref={container_ref}
       style={props.parentStyles}
       class="side-img absolute -translate-x-1/2 !w-1 !p-0 !ps-0 !pe-0 h-1">
       <div
-        style={innerStyles}
+        style={innerStyles()}
         class="flex shrink-0 transition-opacity duration-300 lg:transition-none lg:opacity-100  z-10 absolute w-max">
         <div
           class="absolute z-10"
