@@ -178,11 +178,15 @@ pub fn add_imports(file: &PathBuf) -> io::Result<()> {
         "
         const {} = (props: any) => {{
             return <>
-            <ArticleTitle label={{props.title}} />
+            <ArticleTitle label={} />
             {{props.children}}</>
         }}\n
     ",
-        capitalize_first(&file_name)
+        capitalize_first(&file_name),
+        format!(
+            "{{`{}: ` + props.title }}",
+            add_space_between_word_and_digit(capitalize_first(&file_name).as_str())
+        )
     );
 
     let existing_content = fs::read_to_string(file)?;
@@ -203,4 +207,9 @@ fn capitalize_first(input: &str) -> String {
     } else {
         String::new()
     }
+}
+
+fn add_space_between_word_and_digit(input: &str) -> String {
+    let re = Regex::new(r"(\p{L})(\d)").unwrap();
+    re.replace_all(input, "$1 $2").to_string()
 }
