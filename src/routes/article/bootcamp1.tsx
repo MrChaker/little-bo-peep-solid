@@ -22,7 +22,7 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Bootcamp1 = (props: any) => {
   return (
     <>
-      <ArticleTitle label={props.title} />
+      <ArticleTitle label={`Bootcamp 1: ` + props.title} />
       {props.children}
     </>
   );
@@ -4002,21 +4002,18 @@ In calculus, you will see sets such as `}
           <div class="spacer"></div>
           <MathBlock>
             <svg
-              style="vertical-align: -0.814ex;"
+              style="vertical-align: 0;"
               xmlns="http://www.w3.org/2000/svg"
-              width="4.183ex"
-              height="3.258ex"
+              width="2.352ex"
+              height="2.225ex"
               role="img"
               focusable="false"
-              viewBox="0 -1080 1849 1440"
+              viewBox="0 -983.5 1039.7 983.5"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-72"
-                  d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                  id="MJX-1-TEX-D-211D"
+                  d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
               </defs>
               <g
                 stroke="currentColor"
@@ -4025,16 +4022,10 @@ In calculus, you will see sets such as `}
                 transform="scale(1,-1)">
                 <g data-mml-node="math">
                   <g data-mml-node="mstyle" transform="scale(1.44)">
-                    <g data-mml-node="mtext" fill="red" stroke="red">
-                      <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(500,0)"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(892,0)"></use>
+                    <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                      <g data-mml-node="mi">
+                        <use data-c="211D" xlink:href="#MJX-1-TEX-D-211D"></use>
+                      </g>
                     </g>
                   </g>
                 </g>
@@ -4051,21 +4042,18 @@ decimal numbers, or such as `}
           <div class="spacer"></div>
           <MathBlock>
             <svg
-              style="vertical-align: -0.814ex;"
+              style="vertical-align: 0;"
               xmlns="http://www.w3.org/2000/svg"
-              width="4.522ex"
-              height="3.258ex"
+              width="2.173ex"
+              height="2.225ex"
               role="img"
               focusable="false"
-              viewBox="0 -1080 1998.7 1440"
+              viewBox="0 -983.5 960.5 983.5"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-7A"
-                  d="M42 263Q44 270 48 345T53 423V431H393Q399 425 399 415Q399 403 398 402L381 378Q364 355 331 309T265 220L134 41L182 40H206Q254 40 283 46T331 77Q352 105 359 185L361 201Q361 202 381 202H401V196Q401 195 393 103T384 6V0H209L34 1L31 3Q28 8 28 17Q28 30 29 31T160 210T294 394H236Q169 393 152 388Q127 382 113 367Q89 344 82 264V255H42V263Z"></path>
+                  id="MJX-1-TEX-D-2124"
+                  d="M39 -1Q29 9 29 12Q29 23 60 77T219 337L410 648H364Q261 648 210 628Q168 612 142 588T109 545T97 509T88 490Q85 489 80 489Q72 489 61 503L70 588Q72 607 75 628T79 662T81 675Q84 677 88 681Q90 683 341 683H592Q604 673 604 666Q604 662 412 348L221 37Q221 35 301 35Q406 35 446 48Q504 68 543 111T597 212Q602 239 617 239Q624 239 629 234T635 223Q635 215 621 113T604 8L597 1Q595 -1 317 -1H39ZM148 637L166 648H112V632Q111 629 110 622T108 612Q108 608 110 608T116 612T129 623T148 637ZM552 646Q552 648 504 648Q452 648 450 643Q448 639 266 343T77 37Q77 35 128 35H179L366 339L552 646ZM572 35Q581 89 581 97L561 77Q542 59 526 48L508 37L539 35H572Z"></path>
               </defs>
               <g
                 stroke="currentColor"
@@ -4074,16 +4062,10 @@ decimal numbers, or such as `}
                 transform="scale(1,-1)">
                 <g data-mml-node="math">
                   <g data-mml-node="mstyle" transform="scale(1.44)">
-                    <g data-mml-node="mtext" fill="red" stroke="red">
-                      <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                      <use
-                        data-c="7A"
-                        xlink:href="#MJX-1-TEX-N-7A"
-                        transform="translate(500,0)"></use>
-                      <use
-                        data-c="7A"
-                        xlink:href="#MJX-1-TEX-N-7A"
-                        transform="translate(944,0)"></use>
+                    <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                      <g data-mml-node="mi">
+                        <use data-c="2124" xlink:href="#MJX-1-TEX-D-2124"></use>
+                      </g>
                     </g>
                   </g>
                 </g>
@@ -4101,21 +4083,18 @@ negative ones. You might also encounter
           <div class="spacer"></div>
           <MathBlock>
             <svg
-              style="vertical-align: -0.814ex;"
+              style="vertical-align: -0.065ex;"
               xmlns="http://www.w3.org/2000/svg"
-              width="5.252ex"
-              height="3.258ex"
+              width="2.352ex"
+              height="2.29ex"
               role="img"
               focusable="false"
-              viewBox="0 -1080 2321.3 1440"
+              viewBox="0 -983.5 1039.7 1012.3"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-6E"
-                  d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path>
+                  id="MJX-1-TEX-D-2115"
+                  d="M20 664Q20 666 31 683H142Q256 683 258 681Q259 680 279 653T342 572T422 468L582 259V425Q582 451 582 490T583 541Q583 611 573 628T522 648Q500 648 493 654Q484 665 493 679L500 683H691Q702 676 702 666Q702 657 698 652Q688 648 680 648Q633 648 627 612Q624 601 624 294V-8Q616 -20 607 -20Q601 -20 596 -15Q593 -13 371 270L156 548L153 319Q153 284 153 234T152 167Q152 103 156 78T172 44T213 34Q236 34 242 28Q253 17 242 3L236 -1H36Q24 6 24 16Q24 34 56 34Q58 35 69 36T86 40T100 50T109 72Q111 83 111 345V603L96 619Q72 643 44 648Q20 648 20 664ZM413 419L240 648H120L136 628Q137 626 361 341T587 54L589 68Q589 78 589 121V192L413 419Z"></path>
               </defs>
               <g
                 stroke="currentColor"
@@ -4124,16 +4103,10 @@ negative ones. You might also encounter
                 transform="scale(1,-1)">
                 <g data-mml-node="math">
                   <g data-mml-node="mstyle" transform="scale(1.44)">
-                    <g data-mml-node="mtext" fill="red" stroke="red">
-                      <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                      <use
-                        data-c="6E"
-                        xlink:href="#MJX-1-TEX-N-6E"
-                        transform="translate(500,0)"></use>
-                      <use
-                        data-c="6E"
-                        xlink:href="#MJX-1-TEX-N-6E"
-                        transform="translate(1056,0)"></use>
+                    <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                      <g data-mml-node="mi">
+                        <use data-c="2115" xlink:href="#MJX-1-TEX-D-2115"></use>
+                      </g>
                     </g>
                   </g>
                 </g>
@@ -4180,19 +4153,16 @@ negative ones. You might also encounter
                 <svg
                   style="vertical-align: -0.566ex;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="17.99ex"
+                  width="15.976ex"
                   height="2.262ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -750 7951.6 1000"
+                  viewBox="0 -750 7061.6 1000"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-6E"
-                      d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path>
+                      id="MJX-1-TEX-D-2115"
+                      d="M20 664Q20 666 31 683H142Q256 683 258 681Q259 680 279 653T342 572T422 468L582 259V425Q582 451 582 490T583 541Q583 611 573 628T522 648Q500 648 493 654Q484 665 493 679L500 683H691Q702 676 702 666Q702 657 698 652Q688 648 680 648Q633 648 627 612Q624 601 624 294V-8Q616 -20 607 -20Q601 -20 596 -15Q593 -13 371 270L156 548L153 319Q153 284 153 234T152 167Q152 103 156 78T172 44T213 34Q236 34 242 28Q253 17 242 3L236 -1H36Q24 6 24 16Q24 34 56 34Q58 35 69 36T86 40T100 50T109 72Q111 83 111 345V603L96 619Q72 643 44 648Q20 648 20 664ZM413 419L240 648H120L136 628Q137 626 361 341T587 54L589 68Q589 78 589 121V192L413 419Z"></path>
                     <path
                       id="MJX-1-TEX-N-3D"
                       d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
@@ -4224,45 +4194,41 @@ negative ones. You might also encounter
                     stroke-width="0"
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="6E"
-                          xlink:href="#MJX-1-TEX-N-6E"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="6E"
-                          xlink:href="#MJX-1-TEX-N-6E"
-                          transform="translate(1056,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="2115"
+                            xlink:href="#MJX-1-TEX-D-2115"></use>
+                        </g>
                       </g>
-                      <g data-mml-node="mo" transform="translate(1889.8,0)">
+                      <g data-mml-node="mo" transform="translate(999.8,0)">
                         <use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(2945.6,0)">
+                      <g data-mml-node="mo" transform="translate(2055.6,0)">
                         <use data-c="7B" xlink:href="#MJX-1-TEX-N-7B"></use>
                       </g>
-                      <g data-mml-node="mn" transform="translate(3445.6,0)">
+                      <g data-mml-node="mn" transform="translate(2555.6,0)">
                         <use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(3945.6,0)">
+                      <g data-mml-node="mo" transform="translate(3055.6,0)">
                         <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use>
                       </g>
-                      <g data-mml-node="mn" transform="translate(4390.2,0)">
+                      <g data-mml-node="mn" transform="translate(3500.2,0)">
                         <use data-c="32" xlink:href="#MJX-1-TEX-N-32"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(4890.2,0)">
+                      <g data-mml-node="mo" transform="translate(4000.2,0)">
                         <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use>
                       </g>
-                      <g data-mml-node="mn" transform="translate(5334.9,0)">
+                      <g data-mml-node="mn" transform="translate(4444.9,0)">
                         <use data-c="33" xlink:href="#MJX-1-TEX-N-33"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(5834.9,0)">
+                      <g data-mml-node="mo" transform="translate(4944.9,0)">
                         <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(6279.6,0)">
+                      <g data-mml-node="mo" transform="translate(5389.6,0)">
                         <use data-c="2026" xlink:href="#MJX-1-TEX-N-2026"></use>
                       </g>
-                      <g data-mml-node="mo" transform="translate(7451.6,0)">
+                      <g data-mml-node="mo" transform="translate(6561.6,0)">
                         <use data-c="7D" xlink:href="#MJX-1-TEX-N-7D"></use>
                       </g>
                     </g>
@@ -4543,11 +4509,11 @@ greater than or equal to `}
             <svg
               style="vertical-align: -0.814ex;"
               xmlns="http://www.w3.org/2000/svg"
-              width="21.562ex"
+              width="19.731ex"
               height="3.258ex"
               role="img"
               focusable="false"
-              viewBox="0 -1080 9530.2 1440"
+              viewBox="0 -1080 8721 1440"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
@@ -4569,11 +4535,8 @@ greater than or equal to `}
                   id="MJX-1-TEX-N-3D"
                   d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-72"
-                  d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                  id="MJX-1-TEX-D-211D"
+                  d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
               </defs>
               <g
                 stroke="currentColor"
@@ -4604,19 +4567,12 @@ greater than or equal to `}
                       <use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use>
                     </g>
                     <g
-                      data-mml-node="mtext"
-                      fill="red"
-                      stroke="red"
+                      data-mml-node="TeXAtom"
+                      data-mjx-texclass="ORD"
                       transform="translate(5334.2,0)">
-                      <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(500,0)"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(892,0)"></use>
+                      <g data-mml-node="mi">
+                        <use data-c="211D" xlink:href="#MJX-1-TEX-D-211D"></use>
+                      </g>
                     </g>
                   </g>
                 </g>
@@ -4699,21 +4655,18 @@ and no bound above`}</CentralItalicDisplay>
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.262ex"
+                  width="1.633ex"
+                  height="1.545ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -750 1284 1000"
+                  viewBox="0 -683 722 683"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                   </defs>
                   <g
                     stroke="currentColor"
@@ -4721,16 +4674,12 @@ and no bound above`}</CentralItalicDisplay>
                     stroke-width="0"
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
                     </g>
                   </g>
@@ -4753,21 +4702,18 @@ written`}
           <div class="spacer"></div>
           <MathBlock>
             <svg
-              style="vertical-align: -0.814ex;"
+              style="vertical-align: 0;"
               xmlns="http://www.w3.org/2000/svg"
-              width="4.183ex"
-              height="4.291ex"
+              width="2.352ex"
+              height="3.258ex"
               role="img"
               focusable="false"
-              viewBox="0 -1536.5 1849 1896.5"
+              viewBox="0 -1440 1039.7 1440"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-72"
-                  d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                  id="MJX-1-TEX-D-211D"
+                  d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                 <path id="MJX-1-TEX-S4-2013" d="M0 248V285H499V248H0Z"></path>
               </defs>
               <g
@@ -4778,28 +4724,24 @@ written`}
                 <g data-mml-node="math">
                   <g data-mml-node="mstyle" transform="scale(1.44)">
                     <g data-mml-node="mover">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
-                      <g data-mml-node="mo" transform="translate(0,682)">
+                      <g data-mml-node="mo" transform="translate(0,615)">
                         <svg
-                          width="1284"
+                          width="722"
                           height="237"
                           x="0"
                           y="148"
-                          viewBox="321 148 1284 237">
+                          viewBox="180.5 148 722 237">
                           <use
                             data-c="2013"
                             xlink:href="#MJX-1-TEX-S4-2013"
-                            transform="scale(3.852,1)"></use>
+                            transform="scale(2.166,1)"></use>
                         </svg>
                       </g>
                     </g>
@@ -4814,21 +4756,18 @@ written`}
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.262ex"
+                  width="1.633ex"
+                  height="1.545ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -750 1284 1000"
+                  viewBox="0 -683 722 683"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                   </defs>
                   <g
                     stroke="currentColor"
@@ -4836,16 +4775,12 @@ written`}
                     stroke-width="0"
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
                     </g>
                   </g>
@@ -4931,19 +4866,16 @@ symbols “`}
             <svg
               style="vertical-align: -0.814ex;"
               xmlns="http://www.w3.org/2000/svg"
-              width="30.089ex"
-              height="4.291ex"
+              width="26.427ex"
+              height="4.072ex"
               role="img"
               focusable="false"
-              viewBox="0 -1536.5 13299.4 1896.5"
+              viewBox="0 -1440 11680.8 1800"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <path
-                  id="MJX-1-TEX-N-5C"
-                  d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                <path
-                  id="MJX-1-TEX-N-72"
-                  d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                  id="MJX-1-TEX-D-211D"
+                  d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                 <path id="MJX-1-TEX-S4-2013" d="M0 248V285H499V248H0Z"></path>
                 <path
                   id="MJX-1-TEX-N-3D"
@@ -4975,68 +4907,57 @@ symbols “`}
                 <g data-mml-node="math">
                   <g data-mml-node="mstyle" transform="scale(1.44)">
                     <g data-mml-node="mover">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
-                      <g data-mml-node="mo" transform="translate(0,682)">
+                      <g data-mml-node="mo" transform="translate(0,615)">
                         <svg
-                          width="1284"
+                          width="722"
                           height="237"
                           x="0"
                           y="148"
-                          viewBox="321 148 1284 237">
+                          viewBox="180.5 148 722 237">
                           <use
                             data-c="2013"
                             xlink:href="#MJX-1-TEX-S4-2013"
-                            transform="scale(3.852,1)"></use>
+                            transform="scale(2.166,1)"></use>
                         </svg>
                       </g>
                     </g>
-                    <g data-mml-node="mo" transform="translate(1561.8,0)">
+                    <g data-mml-node="mo" transform="translate(999.8,0)">
                       <use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use>
                     </g>
                     <g
-                      data-mml-node="mtext"
-                      fill="red"
-                      stroke="red"
-                      transform="translate(2617.6,0)">
-                      <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(500,0)"></use>
-                      <use
-                        data-c="72"
-                        xlink:href="#MJX-1-TEX-N-72"
-                        transform="translate(892,0)"></use>
+                      data-mml-node="TeXAtom"
+                      data-mjx-texclass="ORD"
+                      transform="translate(2055.6,0)">
+                      <g data-mml-node="mi">
+                        <use data-c="211D" xlink:href="#MJX-1-TEX-D-211D"></use>
+                      </g>
                     </g>
-                    <g data-mml-node="mo" transform="translate(4123.8,0)">
+                    <g data-mml-node="mo" transform="translate(2999.8,0)">
                       <use data-c="222A" xlink:href="#MJX-1-TEX-N-222A"></use>
                     </g>
-                    <g data-mml-node="mo" transform="translate(5013,0)">
+                    <g data-mml-node="mo" transform="translate(3889,0)">
                       <use data-c="7B" xlink:href="#MJX-1-TEX-N-7B"></use>
                     </g>
-                    <g data-mml-node="mo" transform="translate(5513,0)">
+                    <g data-mml-node="mo" transform="translate(4389,0)">
                       <use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"></use>
                     </g>
-                    <g data-mml-node="mi" transform="translate(6291,0)">
+                    <g data-mml-node="mi" transform="translate(5167,0)">
                       <use data-c="221E" xlink:href="#MJX-1-TEX-N-221E"></use>
                     </g>
-                    <g data-mml-node="mo" transform="translate(7291,0)">
+                    <g data-mml-node="mo" transform="translate(6167,0)">
                       <use data-c="2C" xlink:href="#MJX-1-TEX-N-2C"></use>
                     </g>
-                    <g data-mml-node="mi" transform="translate(7735.7,0)">
+                    <g data-mml-node="mi" transform="translate(6611.7,0)">
                       <use data-c="221E" xlink:href="#MJX-1-TEX-N-221E"></use>
                     </g>
-                    <g data-mml-node="mo" transform="translate(8735.7,0)">
+                    <g data-mml-node="mo" transform="translate(7611.7,0)">
                       <use data-c="7D" xlink:href="#MJX-1-TEX-N-7D"></use>
                     </g>
                   </g>
@@ -5051,21 +4972,18 @@ symbols “`}
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.98ex"
+                  width="1.633ex"
+                  height="2.262ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -1067 1284 1317"
+                  viewBox="0 -1000 722 1000"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                     <path
                       id="MJX-1-TEX-S4-2013"
                       d="M0 248V285H499V248H0Z"></path>
@@ -5077,28 +4995,24 @@ symbols “`}
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
                       <g data-mml-node="mover">
-                        <g data-mml-node="mtext" fill="red" stroke="red">
-                          <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(500,0)"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(892,0)"></use>
+                        <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                          <g data-mml-node="mi">
+                            <use
+                              data-c="211D"
+                              xlink:href="#MJX-1-TEX-D-211D"></use>
+                          </g>
                         </g>
-                        <g data-mml-node="mo" transform="translate(0,682)">
+                        <g data-mml-node="mo" transform="translate(0,615)">
                           <svg
-                            width="1284"
+                            width="722"
                             height="237"
                             x="0"
                             y="148"
-                            viewBox="321 148 1284 237">
+                            viewBox="180.5 148 722 237">
                             <use
                               data-c="2013"
                               xlink:href="#MJX-1-TEX-S4-2013"
-                              transform="scale(3.852,1)"></use>
+                              transform="scale(2.166,1)"></use>
                           </svg>
                         </g>
                       </g>
@@ -5112,21 +5026,18 @@ version of `}
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.262ex"
+                  width="1.633ex"
+                  height="1.545ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -750 1284 1000"
+                  viewBox="0 -683 722 683"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                   </defs>
                   <g
                     stroke="currentColor"
@@ -5134,16 +5045,12 @@ version of `}
                     stroke-width="0"
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
                     </g>
                   </g>
@@ -5155,21 +5062,18 @@ version of `}
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.98ex"
+                  width="1.633ex"
+                  height="2.262ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -1067 1284 1317"
+                  viewBox="0 -1000 722 1000"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                     <path
                       id="MJX-1-TEX-S4-2013"
                       d="M0 248V285H499V248H0Z"></path>
@@ -5181,28 +5085,24 @@ version of `}
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
                       <g data-mml-node="mover">
-                        <g data-mml-node="mtext" fill="red" stroke="red">
-                          <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(500,0)"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(892,0)"></use>
+                        <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                          <g data-mml-node="mi">
+                            <use
+                              data-c="211D"
+                              xlink:href="#MJX-1-TEX-D-211D"></use>
+                          </g>
                         </g>
-                        <g data-mml-node="mo" transform="translate(0,682)">
+                        <g data-mml-node="mo" transform="translate(0,615)">
                           <svg
-                            width="1284"
+                            width="722"
                             height="237"
                             x="0"
                             y="148"
-                            viewBox="321 148 1284 237">
+                            viewBox="180.5 148 722 237">
                             <use
                               data-c="2013"
                               xlink:href="#MJX-1-TEX-S4-2013"
-                              transform="scale(3.852,1)"></use>
+                              transform="scale(2.166,1)"></use>
                           </svg>
                         </g>
                       </g>
@@ -5592,21 +5492,18 @@ remain explicitly `}
             <NoBreak>
               <Math>
                 <svg
-                  style="vertical-align: -0.566ex;"
+                  style="vertical-align: 0;"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="2.905ex"
-                  height="2.262ex"
+                  width="1.633ex"
+                  height="1.545ex"
                   role="img"
                   focusable="false"
-                  viewBox="0 -750 1284 1000"
+                  viewBox="0 -683 722 683"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <path
-                      id="MJX-1-TEX-N-5C"
-                      d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                    <path
-                      id="MJX-1-TEX-N-72"
-                      d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                      id="MJX-1-TEX-D-211D"
+                      d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                   </defs>
                   <g
                     stroke="currentColor"
@@ -5614,16 +5511,12 @@ remain explicitly `}
                     stroke-width="0"
                     transform="scale(1,-1)">
                     <g data-mml-node="math">
-                      <g data-mml-node="mtext" fill="red" stroke="red">
-                        <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(500,0)"></use>
-                        <use
-                          data-c="72"
-                          xlink:href="#MJX-1-TEX-N-72"
-                          transform="translate(892,0)"></use>
+                      <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                        <g data-mml-node="mi">
+                          <use
+                            data-c="211D"
+                            xlink:href="#MJX-1-TEX-D-211D"></use>
+                        </g>
                       </g>
                     </g>
                   </g>

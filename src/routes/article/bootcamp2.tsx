@@ -22,7 +22,7 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Bootcamp2 = (props: any) => {
   return (
     <>
-      <ArticleTitle label={props.title} />
+      <ArticleTitle label={`Bootcamp 2: ` + props.title} />
       {props.children}
     </>
   );
@@ -10755,13 +10755,13 @@ compute `}
               <NoBreak>
                 <Math>
                   <svg
-                    style="vertical-align: -0.566ex;"
+                    style="vertical-align: -0.09ex;"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="6.965ex"
-                    height="2.262ex"
+                    width="5.694ex"
+                    height="1.636ex"
                     role="img"
                     focusable="false"
-                    viewBox="0 -750 3078.6 1000"
+                    viewBox="0 -683 2516.6 723"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
                       <path
@@ -10771,11 +10771,8 @@ compute `}
                         id="MJX-1-TEX-N-2208"
                         d="M84 250Q84 372 166 450T360 539Q361 539 377 539T419 540T469 540H568Q583 532 583 520Q583 511 570 501L466 500Q355 499 329 494Q280 482 242 458T183 409T147 354T129 306T124 272V270H568Q583 262 583 250T568 230H124V228Q124 207 134 177T167 112T231 48T328 7Q355 1 466 0H570Q583 -10 583 -20Q583 -32 568 -40H471Q464 -40 446 -40T417 -41Q262 -41 172 45Q84 127 84 250Z"></path>
                       <path
-                        id="MJX-1-TEX-N-5C"
-                        d="M56 731Q56 740 62 745T75 750Q85 750 92 740Q96 733 270 255T444 -231Q444 -239 438 -244T424 -250Q414 -250 407 -240Q404 -236 230 242T56 731Z"></path>
-                      <path
-                        id="MJX-1-TEX-N-72"
-                        d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path>
+                        id="MJX-1-TEX-D-211D"
+                        d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path>
                     </defs>
                     <g
                       stroke="currentColor"
@@ -10794,19 +10791,14 @@ compute `}
                             xlink:href="#MJX-1-TEX-N-2208"></use>
                         </g>
                         <g
-                          data-mml-node="mtext"
-                          fill="red"
-                          stroke="red"
+                          data-mml-node="TeXAtom"
+                          data-mjx-texclass="ORD"
                           transform="translate(1794.6,0)">
-                          <use data-c="5C" xlink:href="#MJX-1-TEX-N-5C"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(500,0)"></use>
-                          <use
-                            data-c="72"
-                            xlink:href="#MJX-1-TEX-N-72"
-                            transform="translate(892,0)"></use>
+                          <g data-mml-node="mi">
+                            <use
+                              data-c="211D"
+                              xlink:href="#MJX-1-TEX-D-211D"></use>
+                          </g>
                         </g>
                       </g>
                     </g>
