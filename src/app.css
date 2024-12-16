@@ -396,3 +396,7 @@ span .MathJax_SVG {
   max-width: fill-available;
   max-width: -webkit-fill-available;
 }
+
+.max-width-screen {
+  max-width: calc(100vw - var(--desktop-text-column-padding) * 2);
+}
