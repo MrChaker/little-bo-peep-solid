@@ -11,7 +11,7 @@ const ArticleTitle = (
     label: string;
     on_mobile_label?: string;
     class?: string;
-  },
+  }
   // label: &'static str,
   // #[prop(default = "")] on_mobile: &'static str,
   // #[prop(default = "")] class: &'static str,
@@ -19,18 +19,18 @@ const ArticleTitle = (
   const { on_mobile } = useOnMobile();
 
   return (
-    <div class="sm:grid gridColsWidth pt-14">
+    <div class="slice pt-14">
       <h1
-        class="sm:col-start-2 text-3xl sm:text-4xl p-4"
+        class="text-3xl sm:text-4xl p-4"
         style={`margin-top: ${
-          false
+          on_mobile()
             ? CHAPTER_TITLE_TOP_MARGIN_MOBILE
             : CHAPTER_TITLE_TOP_MARGIN_DESKTOP
-        };margin-bottom: ${
-          false
+        }px;margin-bottom: ${
+          on_mobile()
             ? CHAPTER_TITLE_BOTTOM_MARGIN_MOBILE
             : CHAPTER_TITLE_BOTTOM_MARGIN_DESKTOP
-        }`}>
+        }px`}>
         <span class="sm:hidden">
           {on_mobile() ? props.on_mobile_label : props.label}
         </span>
