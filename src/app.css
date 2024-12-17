@@ -65,7 +65,7 @@ i {
 
   width: min(var(--desktop-text-column-width), 100%);
   padding-inline: var(--desktop-text-column-padding);
-  margin: auto;
+  margin-inline: auto;
 }
 
 .slice > * {
