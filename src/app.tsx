@@ -6,6 +6,7 @@ import Container from "~/components/Container";
 
 import "./app.css";
 import { StoreProvider } from "./store/StoreProvider";
+import PanelButton from "./components/PanelButton";
 
 export default function App() {
   return (
@@ -13,8 +14,9 @@ export default function App() {
       <Router
         root={(props) => (
           <>
-            <Nav />
+            <PanelButton />
             <Container>
+              <Nav />
               <Suspense>{props.children}</Suspense>
             </Container>
           </>
