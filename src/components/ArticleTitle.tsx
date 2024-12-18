@@ -21,7 +21,7 @@ const ArticleTitle = (
   return (
     <div class="slice pt-14">
       <h1
-        class="text-3xl sm:text-4xl p-4"
+        class="text-3xl sm:text-4xl py-4"
         style={`margin-top: ${
           on_mobile()
             ? CHAPTER_TITLE_TOP_MARGIN_MOBILE
