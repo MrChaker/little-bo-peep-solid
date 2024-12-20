@@ -1,12 +1,24 @@
 use notify::Config;
 use notify::{EventKind, RecommendedWatcher, RecursiveMode, Result, Watcher};
+use regex::Regex;
 use std::env;
 use std::fs::OpenOptions;
 use std::io::Write;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::sync::mpsc::channel;
 use std::time::Duration;
+
+fn get_changed_article(path: &mut PathBuf) -> PathBuf {
+    if let Some(last_component) = path.file_name().and_then(|name| name.to_str()) {
+        let pattern = regex::Regex::new(r"^(chapter|bootcamp)\d+$").unwrap();
+        if pattern.is_match(last_component) {
+            return path.to_path_buf();
+        }
+    }
+    path.pop();
+    get_changed_article(path)
+}
 
 fn main() -> Result<()> {
     // Create a channel to receive the events.
@@ -27,19 +39,25 @@ fn main() -> Result<()> {
     loop {
         match rx.recv() {
             Ok(event) => {
-                if let Ok(_) = event {
+                if let Ok(mut event) = event {
                     println!("Content changed !!");
 
                     let mut root = env::current_dir().unwrap();
                     root.pop();
-                    let renderer_path = format!("{}/renderer", root.display());
 
-                    let output = Command::new("cargo")
-                        .current_dir(renderer_path)
-                        .arg("run")
-                        .output();
+                    // get changed articles path
+                    for path in event.paths.iter_mut() {
+                        let path = get_changed_article(path);
+                        println!("path {}", path.display());
 
-                    println!("{:?}", output)
+                        let renderer_path = format!("{}/renderer", root.display());
+
+                        let _ = Command::new("cargo")
+                            .current_dir(renderer_path)
+                            .args(["run", "--mathjax"])
+                            .output()
+                            .expect("Failed to update content");
+                    }
                 } else {
                     println!("Event error {:?}", event.err().unwrap())
                 }

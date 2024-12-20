@@ -11,7 +11,7 @@ const ArticleTitle = (
     label: string;
     on_mobile_label?: string;
     class?: string;
-  }
+  },
   // label: &'static str,
   // #[prop(default = "")] on_mobile: &'static str,
   // #[prop(default = "")] class: &'static str,
