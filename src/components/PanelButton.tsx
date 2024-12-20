@@ -4,9 +4,9 @@ import {
   HAMBURGER_MENU_HEIGHT,
   HAMBURGER_MENU_SCROLLY_END_FADE,
   HAMBURGER_MENU_SCROLLY_START_FADE,
-} from "~/constants";
-import useOnMobile from "~/hooks/useOnMobile";
-import { useGlobalContext } from "~/store/StoreProvider";
+} from "../constants";
+import useOnMobile from "../hooks/useOnMobile";
+import { useGlobalContext } from "../store/StoreProvider";
 
 const PanelButton = () => {
   const { on_mobile } = useOnMobile();
@@ -22,7 +22,7 @@ const PanelButton = () => {
       1.0,
       1.0 -
         (window.scrollY - HAMBURGER_MENU_SCROLLY_START_FADE) /
-          HAMBURGER_MENU_SCROLLY_END_FADE
+          HAMBURGER_MENU_SCROLLY_END_FADE,
     );
   };
 
@@ -48,7 +48,7 @@ const PanelButton = () => {
         class={twJoin(
           "h-14 w-14 fixed right-0 border-l sm:border-l-0 border-b z-50",
           !open() && scrollY() > HAMBURGER_MENU_HEIGHT && "sm:border-b-0",
-          open() && !on_mobile() && scrollY() > 0 && "hover:border-b-0"
+          open() && !on_mobile() && scrollY() > 0 && "hover:border-b-0",
         )}>
         <button
           onClick={() => {
@@ -65,15 +65,15 @@ const PanelButton = () => {
         class={twJoin(
           "w-14 fixed right-0 z-40 h-14",
           burger_background_on && "h-[10rem]",
-          scrollY() == 0 && !burger_background_on && "h-14"
+          scrollY() == 0 && !burger_background_on && "h-14",
         )}
         style={{
           "background-color":
             scrollY() > 0 && burger_background_on
               ? "transparent"
               : false
-              ? "#fff000"
-              : "#fff",
+                ? "#fff000"
+                : "#fff",
         }}></div>
     </>
   );

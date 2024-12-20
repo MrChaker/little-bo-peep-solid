@@ -148,7 +148,7 @@ pub fn replace_content(
     Ok(())
 }
 
-pub fn add_imports(file: &PathBuf) -> io::Result<()> {
+pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
     let imports = "
     import ArticleTitle from \"~/components/ArticleTitle\"
     import {Section, Example, NoBreak, CustomBlock, Pause} from \"~/components/Wrappers\"
@@ -182,7 +182,11 @@ pub fn add_imports(file: &PathBuf) -> io::Result<()> {
             {{props.children}}</>
         }}\n
     ",
-        capitalize_first(&file_name),
+        if !numerated {
+            remove_number(capitalize_first(&file_name).as_str())
+        } else {
+            capitalize_first(&file_name)
+        },
         format!(
             "{{`{}: ` + props.title }}",
             add_space_between_word_and_digit(capitalize_first(&file_name).as_str())
@@ -193,7 +197,7 @@ pub fn add_imports(file: &PathBuf) -> io::Result<()> {
         )
     );
 
-    let existing_content = fs::read_to_string(file)?;
+    let existing_content = fs::read_to_string(file)?.replace(r"\up", r"\\up");
 
     let with_imports = format!("{imports}{article_component}{existing_content}");
 
@@ -216,4 +220,9 @@ fn capitalize_first(input: &str) -> String {
 fn add_space_between_word_and_digit(input: &str) -> String {
     let re = Regex::new(r"(\p{L})(\d)").unwrap();
     re.replace_all(input, "$1 $2").to_string()
+}
+
+fn remove_number(input: &str) -> String {
+    let re = Regex::new(r"(\p{L})(\d)").unwrap();
+    re.replace_all(input, "$1").to_string()
 }

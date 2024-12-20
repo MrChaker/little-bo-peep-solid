@@ -158,38 +158,42 @@ const typesetMath = async (fileContents) => {
   return processedString;
 };
 
+const processJSXFile = async (path) => {
+  try {
+    console.log(`Processing file: ${path}`);
+    const file = fs.readFileSync(path, "utf-8");
+    const processedContents = await typesetMath(file);
+    fs.writeFileSync(path, processedContents, "utf-8");
+    console.log(`Updated file: ${path}`);
+  } catch (error) {
+    console.error(`Error processing file ${path}\nError: ${error}`);
+  }
+};
 //
 const processJSXFiles = async (directory) => {
   const files = fs.readdirSync(directory);
   for (const file of files) {
     const filePath = path.join(directory, file);
-    try {
-      if (path.extname(file) === ".tsx") {
-        console.log(`Processing file: ${filePath}`);
-
-        const file = fs.readFileSync(filePath, "utf-8");
-        const processedContents = await typesetMath(file);
-
-        fs.writeFileSync(filePath, processedContents, "utf-8");
-        console.log(`Updated file: ${filePath}`);
-      }
-    } catch (error) {
-      console.error(`Error processing file ${filePath}\nError: ${error}`);
-    }
+    await processJSXFile(filePath);
   }
 };
 
-const [, , directoryArg] = process.argv;
-if (!directoryArg) {
+const [, _, input_path] = process.argv;
+if (!input_path) {
   console.error("Error: Please provide a directory as an argument.");
   process.exit(1);
 }
 
-const jsxDirectory = path.resolve(directoryArg);
+const path_resolved = path.resolve(input_path);
 
 (async () => {
   try {
-    await processJSXFiles(jsxDirectory);
+    console.log(fs.statSync(path_resolved));
+    if (fs.statSync(path_resolved).isFile) {
+      await processJSXFile(path_resolved);
+    } else {
+      await processJSXFiles(path_resolved);
+    }
   } catch (error) {
     console.error("Error processing files:", error);
   }

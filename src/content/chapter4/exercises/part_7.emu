@@ -15,7 +15,7 @@
         At $t = 2$s the rat is running at a velocity of
         
         $$
-        {5\over 3\\up{1}}[{\te{m/s}}]
+        {5\over 3\up{1}}[{\te{m/s}}]
         $$
         
         by the slope of this line segment on $y = g(t)$:
@@ -40,7 +40,7 @@
         the dollars-per-second rate at $t = 2$s, by Exercise 35):
 
         $$
-        \left({5\over 3\\up{1}}\left[{\te{m} \over \te{s}}\right]\right) \times \left({1 \over 10\\up{1}}\left[{\te{\$} \over \te{m}}\right]\right) = {5\over 30\\up{1}}\left[{\te{\$} \over \te{s}}\right].
+        \left({5\over 3\up{1}}\left[{\te{m} \over \te{s}}\right]\right) \times \left({1 \over 10\up{1}}\left[{\te{\$} \over \te{m}}\right]\right) = {5\over 30\up{1}}\left[{\te{\$} \over \te{s}}\right].
         $$
 
         |> ImageRight

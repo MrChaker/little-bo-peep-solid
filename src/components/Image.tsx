@@ -1,7 +1,7 @@
 import { createEffect, createSignal, ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
 import { twJoin } from "tailwind-merge";
-import useOnMobile from "~/hooks/useOnMobile";
+import useOnMobile from "../hooks/useOnMobile";
 
 type ImageProps = ParentProps &
   SharedProps & {
