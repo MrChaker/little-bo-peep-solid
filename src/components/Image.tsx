@@ -60,6 +60,7 @@ const Image = (props: ImageProps) => {
         data-scale_side_images={scale_value()}
         class="left-1/2 -translate-x-1/2 relative w-max">
         <img
+          loading="lazy"
           onClick={() => {
             // if on_mobile.get() && !margin_mode.get() {
             if (on_mobile()) {
@@ -75,7 +76,7 @@ const Image = (props: ImageProps) => {
           class={twJoin(
             "scrollbar-hidden sm:overflow-x-visible m-auto transition-all",
             props.class,
-            on_mobile() && scaled_down() && "max-width-screen",
+            on_mobile() && scaled_down() && "max-width-screen"
           )}
           style={props.style}
           src={props.src}

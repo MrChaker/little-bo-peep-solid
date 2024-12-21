@@ -54,7 +54,7 @@ const SideImage = (_props: SideImageProps) => {
       padding: "",
       squiggle_y: "30%",
     },
-    _props,
+    _props
   );
 
   let innerStyles = () => ({
@@ -62,7 +62,7 @@ const SideImage = (_props: SideImageProps) => {
     right: props.side === "left" ? `calc(-100% + ${props.offset_x})` : "",
     top: `calc(50% + ${props.offset_y.includes("%") ? "0px" : props.offset_y})`,
     transform: `translateY(calc(-50% + ${getInnerTransfrom(
-      props.img_position,
+      props.img_position
     )} + ${props.offset_y.includes("%") ? props.offset_y : "0px"}))`,
     padding: `${props.padding}`,
     scale: `${scale()}`,
@@ -115,7 +115,11 @@ const SideImage = (_props: SideImageProps) => {
             transform: "translate(-50%, -50%)",
             padding: "2.6rem",
           }}>
-          <img src="/images/squiggle.png" class="h-11 min-w-[45px]" />
+          <img
+            loading="lazy"
+            src="/images/squiggle.png"
+            class="h-11 min-w-[45px]"
+          />
         </div>
       )}
     </div>
