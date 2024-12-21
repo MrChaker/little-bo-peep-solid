@@ -17,6 +17,7 @@ const InlineImage = (props: InlineImageProps) => {
     <>
       {props.space_left && ` `}
       <img
+        loading="lazy"
         class={`bg-cover inline-block relative ${props.class}`}
         style={{
           width: props.width,
