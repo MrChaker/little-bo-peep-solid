@@ -1,5 +1,6 @@
 import { ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
+import LazyImage from "./LazyImage";
 
 type InlineImageProps = SharedProps & {
   src: string;
@@ -16,7 +17,7 @@ const InlineImage = (props: InlineImageProps) => {
   return (
     <>
       {props.space_left && ` `}
-      <img
+      <LazyImage
         loading="lazy"
         class={`bg-cover inline-block relative ${props.class}`}
         style={{
@@ -26,7 +27,7 @@ const InlineImage = (props: InlineImageProps) => {
           "margin-right": props.margin_right,
           top: props.y_anchor,
         }}
-        src={props.src}></img>
+        src={props.src}></LazyImage>
       {props.space_right && ` `}
     </>
   );
