@@ -2,6 +2,7 @@ import { createEffect, createSignal, ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
 import { twJoin } from "tailwind-merge";
 import useOnMobile from "../hooks/useOnMobile";
+import LazyImage from "./LazyImage";
 
 type ImageProps = ParentProps &
   SharedProps & {
@@ -59,8 +60,7 @@ const Image = (props: ImageProps) => {
         }}
         data-scale_side_images={scale_value()}
         class="left-1/2 -translate-x-1/2 relative w-max">
-        <img
-          loading="lazy"
+        <LazyImage
           onClick={() => {
             // if on_mobile.get() && !margin_mode.get() {
             if (on_mobile()) {

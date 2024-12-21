@@ -9,6 +9,7 @@ import {
 import SharedProps from "./types/SharedProps";
 import { twJoin } from "tailwind-merge";
 import useOnMobile from "../hooks/useOnMobile";
+import LazyImage from "./LazyImage";
 
 type ImageProps = ParentProps &
   SharedProps & {
@@ -98,7 +99,7 @@ const SideImage = (_props: SideImageProps) => {
           {props.children}
         </div>
 
-        <img
+        <LazyImage
           class={twJoin(props.class, !props.width && "max-w-max")}
           style={props.style}
           src={props.src}
