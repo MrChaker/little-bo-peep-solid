@@ -4,10 +4,8 @@ import { twJoin } from "tailwind-merge";
 
 export const List = (props: ParentProps & SharedProps) => {
   return (
-    <div
-      class={twJoin("slice px-4 list-decimal", props.class)}
-      style={props.style}>
-      <ol>{props.children}</ol>
+    <div class={twJoin("slice", props.class)} style={props.style}>
+      <ol class="list-decimal px-4 ml-6">{props.children}</ol>
     </div>
   );
 };
