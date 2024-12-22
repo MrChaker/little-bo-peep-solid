@@ -1,10 +1,13 @@
 import ArticleTitle from "~/components/ArticleTitle";
+import Container from "~/components/Container";
+import Nav from "~/components/Nav";
 import {
   Section,
   Example,
   NoBreak,
   CustomBlock,
   Pause,
+  WriterlyBlankLine,
 } from "~/components/Wrappers";
 import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
@@ -21,13 +24,14 @@ import VerticalChunk from "~/components/VerticalChunk";
 
 const Bootcamp1 = (props: any) => {
   return (
-    <>
+    <Container>
+      <Nav />
       <ArticleTitle
         label={`Bootcamp 1: ` + props.title}
         on_mobile_label={`Bootcamp 1: ` + props.mobile_title}
       />
       {props.children}
-    </>
+    </Container>
   );
 };
 

@@ -1,10 +1,13 @@
 import ArticleTitle from "~/components/ArticleTitle";
+import Container from "~/components/Container";
+import Nav from "~/components/Nav";
 import {
   Section,
   Example,
   NoBreak,
   CustomBlock,
   Pause,
+  WriterlyBlankLine,
 } from "~/components/Wrappers";
 import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
@@ -21,13 +24,14 @@ import VerticalChunk from "~/components/VerticalChunk";
 
 const Chapter3 = (props: any) => {
   return (
-    <>
+    <Container>
+      <Nav />
       <ArticleTitle
         label={`Chapter 3: ` + props.title}
         on_mobile_label={`Chapter 3: ` + props.mobile_title}
       />
       {props.children}
-    </>
+    </Container>
   );
 };
 
@@ -1863,48 +1867,40 @@ Evaluate:`}
               sm_cols={1}
               cols={2}>
               <Item>
-                <VerticalChunk>
-                  {String.raw`i. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`i. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 (\lambda u.u^3)(0.5)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`ii. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`ii. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 (u \ra u^2)(x + 1)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`iii. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`iii. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 (\lambda t.t - 1)(100) \cdot (\lambda t.t + 1)(100)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`iv. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`iv. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 (u \ra u^2)(a + b)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
             </Grid>
             <div class="spacer"></div>
@@ -1920,48 +1916,40 @@ $`}</Math>
                 sm_cols={1}
                 cols={2}>
                 <Item>
-                  <VerticalChunk>
-                    {String.raw`i. `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw`i. `}
+                  <NoBreak>
+                    <Math>{String.raw`$
 0.5^3 = 0.125
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw`ii. `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw`ii. `}
+                  <NoBreak>
+                    <Math>{String.raw`$
 (x + 1)^2 = x^2 + 2x + 1
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw`iii. `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw`iii. `}
+                  <NoBreak>
+                    <Math>{String.raw`$
 (100 - 1) \cdot (100 + 1) = 9999
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw`iv. `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw`iv. `}
+                  <NoBreak>
+                    <Math>{String.raw`$
 (a + b)^2 = a^2 + 2ab + b^2
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
               </Grid>
             </Solution>
@@ -5215,48 +5203,40 @@ $`}</Math>
               sm_cols={1}
               cols={2}>
               <Item>
-                <VerticalChunk>
-                  {String.raw`i. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`i. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 f \circ g = (x \ra f(g(x)))
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`ii. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`ii. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 g \circ f = (x \ra f(g(x)))
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`iii. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`iii. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 f \circ g = (x \ra g(f(x)))
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`iv. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`iv. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 g \circ f = (x \ra g(f(x)))
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
             </Grid>
             <div class="spacer"></div>

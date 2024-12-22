@@ -1,10 +1,13 @@
 import ArticleTitle from "~/components/ArticleTitle";
+import Container from "~/components/Container";
+import Nav from "~/components/Nav";
 import {
   Section,
   Example,
   NoBreak,
   CustomBlock,
   Pause,
+  WriterlyBlankLine,
 } from "~/components/Wrappers";
 import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
@@ -21,13 +24,14 @@ import VerticalChunk from "~/components/VerticalChunk";
 
 const Chapter1 = (props: any) => {
   return (
-    <>
+    <Container>
+      <Nav />
       <ArticleTitle
         label={`Chapter 1: ` + props.title}
         on_mobile_label={`Chapter 1: ` + props.mobile_title}
       />
       {props.children}
-    </>
+    </Container>
   );
 };
 
@@ -38,7 +42,7 @@ const Article = () => {
         <Section>
           <VerticalChunk>
             {String.raw``}
-            <b>{String.raw`Square Roooooooots.`}</b>
+            <b>{String.raw`Square Roots.`}</b>
             {String.raw`
 You might remember that “minus times minus 
 is plus” and that “plus times plus is plus”.
@@ -495,71 +499,67 @@ An elementary fraction, or division, such as`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`can be thought of in a few different ways:`}</VerticalChunk>
+          <div class="spacer"></div>
           <List>
             <Item>
-              <VerticalChunk>
-                {String.raw`Fifty halves (i.e., `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              {String.raw`Fifty halves (i.e., `}
+              <NoBreak>
+                <Math>{String.raw`$
 50 \times {1\over 2}
 $`}</Math>
-                </NoBreak>
-                {String.raw`).`}
-              </VerticalChunk>
+              </NoBreak>
+              {String.raw`).`}
             </Item>
             <Item>
-              <VerticalChunk indent={true}>
-                {String.raw`The size obtained when something of size 
+              {String.raw`The size obtained when something of size 
 fifty is divided into two equal parts 
 (answer: `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              <NoBreak>
+                <Math>{String.raw`$
 25
 $`}</Math>
-                </NoBreak>
-                {String.raw`).`}
-              </VerticalChunk>
+              </NoBreak>
+              {String.raw`).`}
             </Item>
             <Item>
-              <VerticalChunk indent={true}>
-                {String.raw`The number of times that `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              {String.raw`The number of times that `}
+              <NoBreak>
+                <Math>{String.raw`$
 2
 $`}</Math>
-                </NoBreak>
-                {String.raw` goes into `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              </NoBreak>
+              {String.raw` goes into `}
+              <NoBreak>
+                <Math>{String.raw`$
 50
 $`}</Math>
-                </NoBreak>
-                {String.raw` 
+              </NoBreak>
+              {String.raw` 
 (answer: `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              <NoBreak>
+                <Math>{String.raw`$
 25
 $`}</Math>
-                  {String.raw`,`}
-                </NoBreak>
-                {String.raw` because it takes twenty-five
+                {String.raw`,`}
+              </NoBreak>
+              {String.raw` because it takes twenty-five
 `}
-                <NoBreak>
-                  <Math>{String.raw`$
+              <NoBreak>
+                <Math>{String.raw`$
 2
 $`}</Math>
-                  {String.raw`'s`}
-                </NoBreak>
-                {String.raw` to make up `}
-                <NoBreak>
-                  <Math>{String.raw`$
+                {String.raw`'s`}
+              </NoBreak>
+              {String.raw` to make up `}
+              <NoBreak>
+                <Math>{String.raw`$
 50
 $`}</Math>
-                </NoBreak>
-                {String.raw`).`}
-              </VerticalChunk>
+              </NoBreak>
+              {String.raw`).`}
             </Item>
           </List>
+          <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`But `}
             <NoBreak>
@@ -1287,103 +1287,85 @@ True or false (and, if possible, explain):`}
               sm_cols={2}
               cols={3}>
               <Item>
-                <VerticalChunk>
-                  {String.raw`a. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`a. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  0.9^2 < 0.9 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`b. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`b. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  \sqrt{0.01} = 0.1 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`c. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`c. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  \sqrt[2]{\up{0.8}\sqrt[3]{2}} = \sqrt[3]{\up{0.8}\sqrt[2]{2}} 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`d. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`d. `}
+                <NoBreak>
+                  <Math>{String.raw`$
 {\sqrt{2} \over \up{0.55}2} = \sqrt{0.5}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`e. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`e. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  {1 \over \sqrt{2}} = \sqrt{0.5} 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`f. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`f. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  2^{30} > 1000^3 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`g. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`g. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  {1 \over 0.95} > 1.05 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`h. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`h. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  (-1)^{101} = -1 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
               <Item>
-                <VerticalChunk indent={true}>
-                  {String.raw`i. `}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                {String.raw`i. `}
+                <NoBreak>
+                  <Math>{String.raw`$
  {100 \over \up{0.5}99} < {101 \over \up{0.5}100} 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
               </Item>
             </Grid>
             <div class="spacer"></div>
@@ -1967,169 +1949,139 @@ simply changes the sign of the previous result):`}
               <div class="spacer"></div>
               <Grid place_items="end" cols={3}>
                 <Item>
-                  <VerticalChunk>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)^1 = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1) = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  -1 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)^2 = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)\times (-1) = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  1 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)^3 = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)\times(-1)\times (-1) = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  -1 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)^4 = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)\times(-1)\times(-1)\times(-1) = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  1 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  (-1)^5 = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  \,\,\,(-1)\times(-1)\times(-1)\times(-1)\times(-1) = 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
                 <Item>
-                  <VerticalChunk indent={true}>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                  {String.raw``}
+                  <NoBreak>
+                    <Math>{String.raw`$
  -1 
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
+                  </NoBreak>
+                  {String.raw``}
                 </Item>
               </Grid>
               <div class="spacer"></div>

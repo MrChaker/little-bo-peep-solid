@@ -151,7 +151,9 @@ pub fn replace_content(
 pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
     let imports = "
     import ArticleTitle from \"~/components/ArticleTitle\"
-    import {Section, Example, NoBreak, CustomBlock, Pause} from \"~/components/Wrappers\"
+    import Container from \"~/components/Container\";
+    import Nav from \"~/components/Nav\";
+    import {Section, Example, NoBreak, CustomBlock, Pause, WriterlyBlankLine} from \"~/components/Wrappers\"
     import {CenterDisplay, CentralItalicDisplay} from \"~/components/Delimiters\"
     import {Math, MathBlock} from \"~/components/Math\"
     import {ImageRight, ImageLeft} from \"~/components/SideImage\"
@@ -177,9 +179,11 @@ pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
     let article_component = format!(
         "
         const {} = (props: any) => {{
-            return <>
-            <ArticleTitle label={} on_mobile_label={}/>
-            {{props.children}}</>
+            return (<Container>
+                <Nav />
+                <ArticleTitle label={} on_mobile_label={}/>
+                {{props.children}}
+             </Container>)
         }}\n
     ",
         if !numerated {

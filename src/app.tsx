@@ -15,10 +15,7 @@ export default function App() {
         root={(props) => (
           <>
             <PanelButton />
-            <Container>
-              <Nav />
-              <Suspense>{props.children}</Suspense>
-            </Container>
+            <Suspense>{props.children}</Suspense>
           </>
         )}>
         <FileRoutes />
