@@ -17,6 +17,10 @@ export const Pause = () => {
   return <span></span>;
 };
 
+export const WriterlyBlankLine = () => {
+  return <></>;
+};
+
 export const CustomBlock = (props: ParentProps & SharedProps) => {
   return (
     <span class={props.class} style={props.style}>

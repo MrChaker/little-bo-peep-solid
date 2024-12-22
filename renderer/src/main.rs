@@ -62,13 +62,13 @@ fn main() {
                     "--emit-book".to_string(),
                     "solid".to_string(),
                     "--output".to_string(),
-                    format!("{}/src/routes/article", root.display()),
+                    format!("{}/generated", root.display()),
                 ])
                 .output()
                 .expect("Failed to run gleam parser script");
 
             println!("🚀 Add import lines 🚀");
-            let entries = fs::read_dir(format!("{}/src/routes/article", root.display())).unwrap();
+            let entries = fs::read_dir(format!("{}/generated", root.display())).unwrap();
 
             for entry in entries {
                 let entry = entry.unwrap();
@@ -96,9 +96,21 @@ fn main() {
             let _ = Command::new("npx")
                 .arg("prettier")
                 .arg("--write")
-                .arg(format!("{}/src", root.display(),))
+                .arg(format!("{}/generated", root.display(),))
                 .output()
                 .expect("Failed to execute command");
+
+            // copy generated content to src/routes/article folder
+            let entries = fs::read_dir(format!("{}/generated", root.display())).unwrap();
+            for entry in entries {
+                let entry = entry.unwrap();
+                let path = entry.path();
+                let file_name = path.file_name().unwrap().to_str().unwrap_or("");
+                let route_file = &format!("{}/src/routes/article/{file_name}", root.display());
+                let generated_content = read_to_string(&path).unwrap();
+                let mut f = File::create(route_file).unwrap();
+                f.write_all(generated_content.as_bytes()).unwrap();
+            }
         }
     }
 }

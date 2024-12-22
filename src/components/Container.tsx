@@ -13,12 +13,16 @@ const Container = (props: ParentProps) => {
     createSignal(false);
 
   createEffect(() => {
-    window.scroll({
-      left: 1500,
-      behavior: "instant",
-    });
+    setTimeout(
+      () =>
+        window.scroll({
+          left: 1500,
+          behavior: "instant",
+        }),
+      10
+    );
+
     const scroll_back = () => {
-      console.log(!state_changed_by_scroll(), window.scrollX);
       if (page_state == "fixed") {
         if (
           !state_changed_by_scroll() &&

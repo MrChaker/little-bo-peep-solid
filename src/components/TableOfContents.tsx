@@ -5,7 +5,6 @@ import ArticleTitle from "./ArticleTitle";
 
 const TableOfContents = () => {
   return (
-    // <Columns>
     <div>
       <h1 class="mb-[2.3rem] sm:mb-[2.6rem] flex justify-center items-center">
         <TitleSVG />
@@ -65,7 +64,6 @@ const TableOfContents = () => {
       </div>
       <Spacer />
     </div>
-    // </Columns>
   );
 };
 
