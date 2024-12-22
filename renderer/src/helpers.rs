@@ -197,7 +197,7 @@ pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
         )
     );
 
-    let existing_content = fs::read_to_string(file)?.replace(r"\up", r"\\up");
+    let existing_content = fs::read_to_string(file)?;
 
     let with_imports = format!("{imports}{article_component}{existing_content}");
 

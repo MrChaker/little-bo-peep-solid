@@ -443,8 +443,8 @@ at random) is the function defined by`}
             <MathBlock>{String.raw`$$
 \te{VX-11/78A}(x) = \begin{cases} 
 3.5 & \te{if $x = 0$},\\
-2.5\\up{1.1} & \te{if $x = 1$},\\
-\te{undefined}\\up{1.1} & \te{if $x \ne 0, 1$}
+2.5\up{1.1} & \te{if $x = 1$},\\
+\te{undefined}\up{1.1} & \te{if $x \ne 0, 1$}
 \end{cases}
 $$`}</MathBlock>
             <div class="spacer"></div>
@@ -777,7 +777,7 @@ defined by`}
 \te{DM-1700}(x) = 
 \begin{cases} 
 0             & \te{if $x \leq 0$ or $x \geq 1$},\\
-1 - x\\up{1.1} & \te{if $0 < x < 1$}
+1 - x\up{1.1} & \te{if $0 < x < 1$}
 \end{cases}
 $$`}</MathBlock>
             <div class="spacer"></div>
@@ -1780,7 +1780,7 @@ function using “definition by cases”?`}
               <VerticalChunk>{String.raw`The absolute value function is `}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
-x \ra \begin{cases} x & \te{if $x \geq 0$,}\\ -x\!\!\\up{1.2} & \te{if $x < 0$}\end{cases}
+x \ra \begin{cases} x & \te{if $x \geq 0$,}\\ -x\!\!\up{1.2} & \te{if $x < 0$}\end{cases}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>
@@ -3806,7 +3806,7 @@ $$`}</MathBlock>
 \begin{align}
 \,\,\,\,(x + 5)^2
 &= x^2 + (2\cdot 5)x + 5^2 \\
-&= \\up{1.4} x^2 + 10x + 25
+&= \up{1.4} x^2 + 10x + 25
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>

@@ -895,9 +895,9 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \begin{align}
-\\up{0.95}f''' &= (f'')'\\
-\\up{1.25}f'''' &= (f''')'\\
-\\up{1.25}f''''\psa' &= (f'''')'\\
+\up{0.95}f''' &= (f'')'\\
+\up{1.25}f'''' &= (f''')'\\
+\up{1.25}f''''\psa' &= (f'''')'\\
 \end{align}
 $$`}</MathBlock>
           <div class="spacer"></div>
@@ -1917,9 +1917,9 @@ values of the functions. So—for example—`}</VerticalChunk>
               <MathBlock>{String.raw`$$
 \begin{align}
 & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(5) \\
-=& \,\,\,(x \ra x + 1)(5) + (u \ra 2u + 1)(5) \\up{1.5} \\
-=& \,\,\,(5 + 1) + (2\cdot 5 + 1) \\up{1.5} \\
-=& \,\,\,3\cdot 5 + 2 = 17 \\up{1.5}
+=& \,\,\,(x \ra x + 1)(5) + (u \ra 2u + 1)(5) \up{1.5} \\
+=& \,\,\,(5 + 1) + (2\cdot 5 + 1) \up{1.5} \\
+=& \,\,\,3\cdot 5 + 2 = 17 \up{1.5}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -1936,9 +1936,9 @@ $`}</Math>
               <MathBlock>{String.raw`$$
 \begin{align}
 & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(t) \\
-=& \,\,\,(x \ra x + 1)(t) + (u \ra 2u + 1)(t) \\up{1.5} \\
-=& \,\,\,(t + 1) + (2t + 1) \\up{1.5} \\
-=& \,\,\,3t + 2 \\up{1.5}
+=& \,\,\,(x \ra x + 1)(t) + (u \ra 2u + 1)(t) \up{1.5} \\
+=& \,\,\,(t + 1) + (2t + 1) \up{1.5} \\
+=& \,\,\,3t + 2 \up{1.5}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -1995,9 +1995,9 @@ $`}</Math>
               <MathBlock>{String.raw`$$
 \begin{align}
 & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(x) \\
-=& \,\,\,(x \ra x + 1)(x) + (u \ra 2u + 1)(x) \\up{1.5} \\
-=& \,\,\,(x + 1) + (2x + 1) \\up{1.5} \\
-=& \,\,\,3x + 2 \\up{1.5}
+=& \,\,\,(x \ra x + 1)(x) + (u \ra 2u + 1)(x) \up{1.5} \\
+=& \,\,\,(x + 1) + (2x + 1) \up{1.5} \\
+=& \,\,\,3x + 2 \up{1.5}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -8965,8 +8965,8 @@ $$`}</MathBlock>
               <MathBlock>{String.raw`$$
 \begin{align}
 (fg)(u) &= f(u) \cdot g(u) \\
-&= g(u) \cdot f(u) \\up{1.5}\\
-&= (gf)(u) \\up{1.5}
+&= g(u) \cdot f(u) \up{1.5}\\
+&= (gf)(u) \up{1.5}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -9396,7 +9396,7 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
-{5\over 3\\up{1}}[{\te{m/s}}]
+{5\over 3\up{1}}[{\te{m/s}}]
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>
@@ -9483,7 +9483,7 @@ $`}</Math>
               <div class="spacer"></div>
               <MathBlock>
                 {String.raw`$$
-\left({5\over 3\\up{1}}\left[{\te{m} \over \te{s}}\right]\right) \times \left({1 \over 10\\up{1}}\left[{\te{\$} \over \te{m}}\right]\right) = {5\over 30\\up{1}}\left[{\te{\$} \over \te{s}}\right].
+\left({5\over 3\up{1}}\left[{\te{m} \over \te{s}}\right]\right) \times \left({1 \over 10\up{1}}\left[{\te{\$} \over \te{m}}\right]\right) = {5\over 30\up{1}}\left[{\te{\$} \over \te{s}}\right].
 $$`}
                 <ImageRight src="/images/svg_ch4_f_g_actual_exercise_cloud.svg"></ImageRight>
               </MathBlock>

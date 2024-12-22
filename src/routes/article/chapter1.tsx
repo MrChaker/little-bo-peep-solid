@@ -678,8 +678,8 @@ really is (one second!):`}
           <MathBlock>{String.raw`$$
 \begin{align}
 {71 \over 40} \,&=\, {40 + 30 + 1 \over 40} \,=\, {40 \over 40} + {30 \over 40} + {1 \over 40}\\
-\,&=\, 1 + {3 \over 4} + {1 \over 4}\!\cdot \!{1 \over 10}\\up{1.5}\\
-\,&=\, 1 + 0.75 + 0.025 = 1.775\\up{1.5}
+\,&=\, 1 + {3 \over 4} + {1 \over 4}\!\cdot \!{1 \over 10}\up{1.5}\\
+\,&=\, 1 + 0.75 + 0.025 = 1.775\up{1.5}
 \end{align}
 $$`}</MathBlock>
           <div class="spacer"></div>
@@ -955,9 +955,9 @@ of degree two”),`}
             <div class="spacer"></div>
             <MathBlock>{String.raw`$$
 \begin{align}
-\\up{1} (10 + 3)^2 \,&=\, 10\!\cdot\!10 \,+\, 2\!\cdot\!3\!\cdot\!10 \,+\, 3\!\cdot\!3 \\
-\\up{1} \,&=\, 100 + 60 + 9 \\
-\\up{1} \,&=\, 169
+\up{1} (10 + 3)^2 \,&=\, 10\!\cdot\!10 \,+\, 2\!\cdot\!3\!\cdot\!10 \,+\, 3\!\cdot\!3 \\
+\up{1} \,&=\, 100 + 60 + 9 \\
+\up{1} \,&=\, 169
 \end{align}
 $$`}</MathBlock>
             <div class="spacer"></div>
@@ -1313,7 +1313,7 @@ $`}</Math>
                   {String.raw`c. `}
                   <NoBreak>
                     <Math>{String.raw`$
- \sqrt[2]{\\up{0.8}\sqrt[3]{2}} = \sqrt[3]{\\up{0.8}\sqrt[2]{2}} 
+ \sqrt[2]{\up{0.8}\sqrt[3]{2}} = \sqrt[3]{\up{0.8}\sqrt[2]{2}} 
 $`}</Math>
                   </NoBreak>
                   {String.raw``}
@@ -1324,7 +1324,7 @@ $`}</Math>
                   {String.raw`d. `}
                   <NoBreak>
                     <Math>{String.raw`$
-{\sqrt{2} \over \\up{0.55}2} = \sqrt{0.5}
+{\sqrt{2} \over \up{0.55}2} = \sqrt{0.5}
 $`}</Math>
                   </NoBreak>
                   {String.raw``}
@@ -1379,7 +1379,7 @@ $`}</Math>
                   {String.raw`i. `}
                   <NoBreak>
                     <Math>{String.raw`$
- {100 \over \\up{0.5}99} < {101 \over \\up{0.5}100} 
+ {100 \over \up{0.5}99} < {101 \over \up{0.5}100} 
 $`}</Math>
                   </NoBreak>
                   {String.raw``}
@@ -1437,21 +1437,21 @@ $`}</Math>
 `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}}
+\sqrt[2]{\up{0.75}\sqrt[3]{2}}
 $`}</Math>
                 </NoBreak>
                 {String.raw`
 and `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}}
+\sqrt[3]{\up{0.75}\sqrt[2]{2}}
 $`}</Math>
                 </NoBreak>
                 {String.raw` are 
 both equal to `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[6]{\\up{0.6}2}
+\sqrt[6]{\up{0.6}2}
 $`}</Math>
                   {String.raw`.`}
                 </NoBreak>
@@ -1462,24 +1462,24 @@ convince yourself, note that`}
               <MathBlock>
                 {String.raw`$$
 \begin{align}
-&\,\, (\sqrt[2]{\\up{0.75}\sqrt[3]{2}}\rt{0.1})^6 \\
-=&\,\, \\up{1.3}
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}}\qquad\\
-=&\,\, \\up{1.3}
-(\gbk\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}}\rt{0.11}) \times
-(\gbk\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}}\rt{0.11}) \times
-(\gbk\sqrt[2]{\\up{0.75}\sqrt[3]{2}} \times
-\sqrt[2]{\\up{0.75}\sqrt[3]{2}}\rt{0.11}) \\
-=& \,\, \\up{1.3} (\sqrt[3]{\\up{0.64}2}\rt{0.1}) \times (\sqrt[3]{\\up{0.64}2}\rt{0.1}) \times
-(\sqrt[3]{\\up{0.64}2}\rt{0.1})\\
-=& \,\, \\up{1.4} 2
+&\,\, (\sqrt[2]{\up{0.75}\sqrt[3]{2}}\rt{0.1})^6 \\
+=&\,\, \up{1.3}
+\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}}\qquad\\
+=&\,\, \up{1.3}
+(\gbk\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}}\rt{0.11}) \times
+(\gbk\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}}\rt{0.11}) \times
+(\gbk\sqrt[2]{\up{0.75}\sqrt[3]{2}} \times
+\sqrt[2]{\up{0.75}\sqrt[3]{2}}\rt{0.11}) \\
+=& \,\, \up{1.3} (\sqrt[3]{\up{0.64}2}\rt{0.1}) \times (\sqrt[3]{\up{0.64}2}\rt{0.1}) \times
+(\sqrt[3]{\up{0.64}2}\rt{0.1})\\
+=& \,\, \up{1.4} 2
 \end{align}
 $$`}
                 <ImageLeft offset_y="0.8rem" src="/images/17.svg"></ImageLeft>
@@ -1490,24 +1490,24 @@ $$`}
               <MathBlock>
                 {String.raw`$$
 \begin{align}
-&\,\, (\sqrt[3]{\\up{0.75}\sqrt[2]{2}}\rt{0.1})^6 \\
-=&\,\, \\up{1.3}
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}}\\
-=& \,\, \\up{1.3}
-(\gbk\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}}\rt{0.11}) \times
-(\gbk\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}} \times
-\sqrt[3]{\\up{0.75}\sqrt[2]{2}}\rt{0.11})\\
-=&\,\, \\up{1.3}
-\sqrt[2]{\\up{0.65}2} \times \sqrt[2]{\\up{0.65}2}\\
-=&\,\, \\up{1.4} 2
+&\,\, (\sqrt[3]{\up{0.75}\sqrt[2]{2}}\rt{0.1})^6 \\
+=&\,\, \up{1.3}
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}}\\
+=& \,\, \up{1.3}
+(\gbk\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}}\rt{0.11}) \times
+(\gbk\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}} \times
+\sqrt[3]{\up{0.75}\sqrt[2]{2}}\rt{0.11})\\
+=&\,\, \up{1.3}
+\sqrt[2]{\up{0.65}2} \times \sqrt[2]{\up{0.65}2}\\
+=&\,\, \up{1.4} 2
 \end{align}
 $$`}
                 <ImageLeft src="/images/18.svg"></ImageLeft>
@@ -1517,8 +1517,8 @@ $$`}
                 {String.raw`so `}
                 <NoBreak>
                   <Math>{String.raw`$
-(\sqrt[2]{\\up{0.76}\sqrt[3]{2}}\rt{0.1})^6 = 
-(\sqrt[3]{\\up{0.76}\sqrt[2]{2}}\rt{0.1})^6 = 2
+(\sqrt[2]{\up{0.76}\sqrt[3]{2}}\rt{0.1})^6 = 
+(\sqrt[3]{\up{0.76}\sqrt[2]{2}}\rt{0.1})^6 = 2
 $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
@@ -1541,7 +1541,7 @@ $$`}</MathBlock>
                 {String.raw`is not necessarily `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[6]{\\up{0.6}2}
+\sqrt[6]{\up{0.6}2}
 $`}</Math>
                   {String.raw`,`}
                 </NoBreak>
@@ -1549,7 +1549,7 @@ $`}</Math>
 because `}
                 <NoBreak>
                   <Math>{String.raw`$
-x = -\sqrt[6]{\\up{0.6}2}
+x = -\sqrt[6]{\up{0.6}2}
 $`}</Math>
                 </NoBreak>
                 {String.raw` satisfies 
@@ -1560,14 +1560,14 @@ this equation as well!`}
 `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[2]{\\up{0.76}\sqrt[3]{2}}
+\sqrt[2]{\up{0.76}\sqrt[3]{2}}
 $`}</Math>
                 </NoBreak>
                 {String.raw` and
 `}
                 <NoBreak>
                   <Math>{String.raw`$
-\sqrt[3]{\\up{0.76}\sqrt[2]{2}}
+\sqrt[3]{\up{0.76}\sqrt[2]{2}}
 $`}</Math>
                 </NoBreak>
                 {String.raw` are both 
@@ -1591,7 +1591,7 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
-{\sqrt{x} \over \sqrt{y}} = \sqrt{\\up{0.7}x \over y}
+{\sqrt{x} \over \sqrt{y}} = \sqrt{\up{0.7}x \over y}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>
@@ -1613,7 +1613,7 @@ root to be defined), so`}
               </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
-{\sqrt{2} \over 2} = {\sqrt{2} \over \sqrt{4}} = \sqrt{\\up{0.8}2 \over 4} = \sqrt{0.5}
+{\sqrt{2} \over 2} = {\sqrt{2} \over \sqrt{4}} = \sqrt{\up{0.8}2 \over 4} = \sqrt{0.5}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...ta-daa!`}</VerticalChunk>
@@ -1655,7 +1655,7 @@ $`}</Math>
                 <NoBreak>
                   <Math>{String.raw`$
 {\sqrt{x} \over \sqrt{y}} = 
-\sqrt{\\up{0.7}x \over y}
+\sqrt{\up{0.7}x \over y}
 $`}</Math>
                   {String.raw`”`}
                 </NoBreak>
@@ -1663,7 +1663,7 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
-{1 \over \sqrt{2}} = {\sqrt{1} \over \sqrt{2}} = \sqrt{\\up{0.8}1 \over 2} = \sqrt{0.5}.
+{1 \over \sqrt{2}} = {\sqrt{1} \over \sqrt{2}} = \sqrt{\up{0.8}1 \over 2} = \sqrt{0.5}.
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Or by direct verification:`}</VerticalChunk>
@@ -1734,7 +1734,7 @@ you):`}
               <MathBlock>{String.raw`$$
 \begin{array}{c|c}
 \,\,\,\,n\,\,\,\, & 2^n\dn{0.3} \\ \hline
-0 & 1 \\up{1.1}\\
+0 & 1 \up{1.1}\\
 1 & 2 \\
 2 & 4 \\
 3 & 8 \\
@@ -1848,9 +1848,9 @@ preserving the inequality, one has`}
               <MathBlock>{String.raw`$$
 \begin{align}
 & {1 \over 0.95} > 1.05\\
-\iff & 1 > 1.05 \cdot 0.95\\up{1.4}\\
-\iff & 1 > (1 + 0.05)(1 - 0.05)\\up{1.4}\\
-\iff & 1 > 1 - 0.05^2\\up{1.4}
+\iff & 1 > 1.05 \cdot 0.95\up{1.4}\\
+\iff & 1 > (1 + 0.05)(1 - 0.05)\up{1.4}\\
+\iff & 1 > 1 - 0.05^2\up{1.4}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -2317,7 +2317,7 @@ from the left, pointing to the fact that the
 + \,&\, \left({1 \over 4} - {1 \over 5}\right)\\
 + \,&\, \left({1 \over 5} - {1 \over 6}\right)\\
 + \,&\, \left({1 \over 6} - {1 \over 7}\right)\\
-+ \,&\, \,\,\,\,\,\,\,\,\dots\\up{1.3}
++ \,&\, \,\,\,\,\,\,\,\,\dots\up{1.3}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -2376,9 +2376,9 @@ infinite sum in the first place.) Well...`}
                 {String.raw`$$
 \begin{align}
 {1 \over n} - {1 \over n+1} &= {1 \over n}\cdot{n+1 \over n+1}\, - \,
-{1 \over n+1}\cdot{n \over n}\\up{1.5}\\
-&= {n+1 \over n(n+1)} - {n \over n(n+1)}\\up{1.5}\\
-&= {1 \over n(n+1)}\\up{1.5}
+{1 \over n+1}\cdot{n \over n}\up{1.5}\\
+&= {n+1 \over n(n+1)} - {n \over n(n+1)}\up{1.5}\\
+&= {1 \over n(n+1)}\up{1.5}
 \end{align}
 $$`}
                 <ImageRight
@@ -2390,9 +2390,9 @@ $$`}
                   <MathBlock>{String.raw`$$
 \begin{align}
 {1 \over 99} - {1 \over 100}
-&= {1 \over 99}\cdot{100 \over 100}\, - \,{1 \over 100}\cdot{99 \over 99}\\up{1.5}\\
-&= {100 \over 99\cdot 100} - {99 \over 99\cdot 100}\\up{1.5}\\
-&= {1 \over 99\cdot 100}\\up{1.5}
+&= {1 \over 99}\cdot{100 \over 100}\, - \,{1 \over 100}\cdot{99 \over 99}\up{1.5}\\
+&= {100 \over 99\cdot 100} - {99 \over 99\cdot 100}\up{1.5}\\
+&= {1 \over 99\cdot 100}\up{1.5}
 \end{align}
 $$`}</MathBlock>
                 </ImageRight>
@@ -2420,8 +2420,8 @@ $$`}</MathBlock>
 + \,&\, \left({1 \over 4} - {1 \over 5}\right)\\
 + \,&\, \left({1 \over 5} - {1 \over 6}\right)\\
 + \,&\, \left({1 \over 6} - {1 \over 7}\right)\\
-+ \,&\, \,\,\,\,\,\,\,\,\dots\\up{1.3}\dn{1}\\ \hline
-= \,&\, 1\\up{1.5}
++ \,&\, \,\,\,\,\,\,\,\,\dots\up{1.3}\dn{1}\\ \hline
+= \,&\, 1\up{1.5}
 \end{align}
 $$`}</MathBlock>
               <div class="spacer"></div>
@@ -2627,8 +2627,8 @@ however.) Having said this, the difference is:`}</VerticalChunk>
 \begin{align}
 {1 \over n^2} - {1 \over n(n+1)} &= {1 \over n^2} \cdot {n+1 \over n+1} - {1 \over n(n+1)} \cdot
 {n \over n}\\
-&= {n+1 \over n^2(n+1)} - {n \over n^2(n+1)}\\up{1.5}\\
-&= {1 \over n^2(n+1)}\\up{1.5}
+&= {n+1 \over n^2(n+1)} - {n \over n^2(n+1)}\up{1.5}\\
+&= {1 \over n^2(n+1)}\up{1.5}
 \end{align}
 $$`}
                 <ImageRight
@@ -2643,8 +2643,8 @@ $$`}
 {1 \over 99^2} - {1 \over 99\cdot 100} &=
 {1 \over 99^2}\cdot{100 \over 100}\, - \,
 {1 \over 99\cdot 100}\cdot{99 \over 99}\\
-&= {100 \over 99^2 \cdot 100} - {99 \over 99^2 \cdot 100}\\up{1.5}\\
-&= {1 \over 99^2\cdot 100}\\up{1.5}
+&= {100 \over 99^2 \cdot 100} - {99 \over 99^2 \cdot 100}\up{1.5}\\
+&= {1 \over 99^2\cdot 100}\up{1.5}
 \end{align}
 $$`}</MathBlock>
                 </ImageRight>
