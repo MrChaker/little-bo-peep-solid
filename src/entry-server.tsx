@@ -14,8 +14,15 @@ export default createHandler(() => (
             content="width=device-width,initial-scale=1.0,minimum-scale=1"
           />
           <meta name="format-detection" content="telephone=no" />
-          <title>Little Bo Peep</title>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG"
+            defer={true}
+          />
           <script src="/extras.js" defer={true} />
+          <script src="/mathjax_setup.js" defer={true} />
+
+          <title>Little Bo Peep</title>
+
           {assets}
         </head>
         <body>
