@@ -1,17 +1,17 @@
-const script = document.createElement("script");
-script.type = "text/x-mathjax-config";
-script.textContent = String.raw`
-MathJax.Hub.Config({
-  ShowMathMenu: false,
-  extensions: ["tex2jax.js"],
-  skipStartupTypeset: false,
-  // "SVG": {font: "STIX-Web", mtextFontInherit: true, useGlobalCache: true},
-  SVG: { mtextFontInherit: true, useGlobalCache: false },
-  "HTML-CSS": { mtextFontInherit: true, font: "STIX-Web" },
-  tex2jax: { inlineMath: [["$", "$"]], processEscapes: true },
-  TeX: {
-    extensions: ["color.js"],
-    Macros: {
+window.MathJax = {
+  svg: {
+    mtextInheritFont: true,
+  },
+  chtml: {
+    mtextInheritFont: true,
+  },
+  tex: {
+    inlineMath: [
+      ["$", "$"],
+      ["\\(", "\\)"],
+    ],
+    processEscapes: true,
+    macros: {
       dblcol:
         "\\!\\rt{0.1}\\mathrel{\\raise.13ex{\\substack{\\small \\circ \\\\ \\small \\circ}}}",
       hc: "\\!\\rt{0.1}\\mathrel{\\raise.13ex{\\substack{\\small \\circ \\\\ \\small \\circ}}}",
@@ -57,23 +57,38 @@ MathJax.Hub.Config({
       faketextelement: "{\\color{white}\\text{*}}\\!\\!\\!\\rt{0.1}",
     }, // end Macros
   },
-});
+  options: {
+    enableMenu: false,
+  },
+  loader: {
+    load: ["output/svg"],
+  },
+  startup: {
+    ready: () => {
+      MathJax.startup.defaultReady();
+      MathJax.startup.promise.then(() => {
+        // document.querySelectorAll(".hidden-on-startup").forEach((elem) => {
+        //   elem.classList.remove("hidden-on-startup");
+        //   elem.classList.add("animate-appear");
+        // });
+      });
+    },
+  },
+};
 
-document.getElementsByTagName("body").item(0).style.opacity = 0;
-MathJax.Hub.Register.StartupHook("End", function () {
-  document.querySelectorAll(".hidden-on-startup").forEach((elem) => {
-    elem.classList.remove("hidden-on-startup");
-    elem.classList.add("animate-appear");
-  });
+// document.getElementsByTagName("body").item(0).style.opacity = 0;
+// MathJax.Hub.Register.StartupHook("End", function () {
+//   document.querySelectorAll(".hidden-on-startup").forEach((elem) => {
+//     elem.classList.remove("hidden-on-startup");
+//     elem.classList.add("animate-appear");
+//   });
 
-  const event = new CustomEvent('math-rendered', {
-    bubbles: true, 
-  });
-  
-  document.dispatchEvent(event);
+//   const event = new CustomEvent('math-rendered', {
+//     bubbles: true,
+//   });
 
-  document.getElementsByTagName("body").item(0).style.opacity = 1;
-  
-});
-`;
-document.head.appendChild(script);
+//   document.dispatchEvent(event);
+
+//   document.getElementsByTagName("body").item(0).style.opacity = 1;
+
+// });
