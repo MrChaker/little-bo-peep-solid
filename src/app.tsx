@@ -1,6 +1,6 @@
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { Suspense } from "solid-js";
+import { createEffect, Suspense } from "solid-js";
 import Nav from "~/components/Nav";
 import Container from "~/components/Container";
 

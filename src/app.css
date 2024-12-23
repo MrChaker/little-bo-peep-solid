@@ -114,7 +114,11 @@ i {
 }
 
 mjx-container {
-  width: 100%;
+  width: auto !important;
+  margin: 0 !important;
+  svg {
+    display: inline;
+  }
 }
 
 span .MathJax_SVG {

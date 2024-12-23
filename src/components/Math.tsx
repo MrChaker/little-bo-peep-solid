@@ -1,13 +1,29 @@
-import { ParentProps } from "solid-js";
+import { createEffect, ParentProps } from "solid-js";
 
 export const Math = (props: ParentProps) => {
+  let math: HTMLDivElement | undefined;
+
+  createEffect(() => {
+    (window as any).MathJax.typesetPromise([math]);
+  });
+
   return (
-    <div class="w-fit inline-flex items-baseline indent-0">
+    <div ref={math} class="math w-fit inline-flex items-baseline indent-0">
       {props.children}
     </div>
   );
 };
 
 export const MathBlock = (props: ParentProps) => {
-  return <div class="slice">{props.children}</div>;
+  let math: HTMLDivElement | undefined;
+
+  createEffect(() => {
+    (window as any).MathJax.typesetPromise([math]);
+  });
+
+  return (
+    <div ref={math} class="slice math">
+      {props.children}
+    </div>
+  );
 };
