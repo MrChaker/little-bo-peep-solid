@@ -10,7 +10,7 @@ import { GREEN_DIV_HEIGHT, TEXT_X_PADDING } from "~/constants";
 import { twJoin } from "tailwind-merge";
 import Spacer from "./Spacer";
 import { useGlobalContext } from "~/store/StoreProvider";
-import { getExerciseByIndex, updateOpenState } from "~/store";
+import { getExerciseByIndex, updateExerciseByIndex } from "~/store";
 
 type SolutionProps = ParentProps &
   SharedProps & {
@@ -21,15 +21,16 @@ const Solution = (props: SolutionProps) => {
   let button_ref: HTMLDivElement | undefined;
   let ref: HTMLDivElement | undefined;
   let { store, set_store } = useGlobalContext();
-  let {} = store;
-  let solution_open = createMemo(
-    () =>
-      getExerciseByIndex(store, props.solution_number)?.solution_open || false
+
+  let exercise_state = createMemo(() =>
+    getExerciseByIndex(store, props.solution_number)
   );
+  let solution_open = () => exercise_state()?.solution_open || false;
+  let transition_duration = () => exercise_state()?.transition_duration || 1000;
+
   let [content_height, set_content_height] = createSignal(0);
   let [transition, set_transition] = createSignal(false);
   let [bot_div, set_bot_div] = createSignal(false);
-  let [transition_duration, set_transition_duration] = createSignal(0);
   let [solution_fully_opened, set_solution_fully_opened] = createSignal(
     solution_open()
   );
@@ -48,8 +49,15 @@ const Solution = (props: SolutionProps) => {
       // } else {
       //   set_content_height(ref.offset_height);
       // }
+      // bot div
+      setTimeout(() => {
+        set_bot_div(false);
+      }, transition_duration());
     } else {
       set_content_height(0);
+      setTimeout(() => {
+        set_bot_div(true);
+      }, transition_duration());
     }
   });
 
@@ -70,9 +78,10 @@ const Solution = (props: SolutionProps) => {
 
   // set transition duration
   createEffect(() => {
-    if (ref) {
-      set_transition_duration(Math.min(1000, ref.offsetHeight));
-    }
+    updateExerciseByIndex(store, set_store, props.solution_number, {
+      field: "transition_duration",
+      value: Math.min(1000, ref?.offsetHeight || 0),
+    });
   });
 
   // solution fully opened
@@ -94,19 +103,6 @@ const Solution = (props: SolutionProps) => {
     }
   });
 
-  // toggle bot div
-  createEffect(() => {
-    if (solution_open()) {
-      setTimeout(() => {
-        set_bot_div(false);
-      }, transition_duration());
-    } else {
-      setTimeout(() => {
-        set_bot_div(true);
-      }, transition_duration());
-    }
-  });
-
   return (
     <>
       <div
@@ -119,7 +115,6 @@ const Solution = (props: SolutionProps) => {
             let element_pos =
               window.innerHeight - (ref?.getBoundingClientRect()?.bottom || 0);
 
-            console.log(element_pos);
             let should_scroll_to_button_first =
               element_pos > GREEN_DIV_HEIGHT + 40 + 56;
             if (solution_open() && should_scroll_to_button_first) {
@@ -139,12 +134,10 @@ const Solution = (props: SolutionProps) => {
             //   new_url = `${window.location.pathname}?tab=0&opened=${!solution_open.get()}`;
             // }
             // navigate(new_url, options);
-            updateOpenState(
-              store,
-              set_store,
-              props.solution_number,
-              !solution_open()
-            );
+            updateExerciseByIndex(store, set_store, props.solution_number, {
+              field: "solution_open",
+              value: !solution_open(),
+            });
           }}
         />
       </div>
@@ -196,9 +189,12 @@ export const BackupArrow = () => {
       xmlns="http://www.w3.org/2000/svg"
       class="tab cursor-pointer overflow-visible z-10"
       onClick={() => {
-        document?.getElementById("exo")?.scrollIntoView({
-          behavior: "smooth",
-        });
+        console.log(
+          document
+            ?.getElementById("exo")
+            ?.scrollIntoView({ behavior: "smooth" })
+        );
+        document?.getElementById("exo")?.scrollIntoView({ behavior: "smooth" });
       }}>
       <path
         class="overflow-visible"

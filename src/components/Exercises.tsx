@@ -2,6 +2,7 @@ import {
   Accessor,
   children,
   createEffect,
+  createMemo,
   createSignal,
   For,
   ParentProps,
@@ -12,6 +13,9 @@ import Image from "./Image";
 import { JSX } from "solid-js/h/jsx-runtime";
 import { twJoin } from "tailwind-merge";
 import { useGlobalContext } from "~/store/StoreProvider";
+import { GREEN_DIV_HEIGHT } from "~/constants";
+import { getSelectedExercise } from "~/store";
+import { useSearchParams } from "@solidjs/router";
 
 type ExercisesProps = ParentProps &
   SharedProps & {
@@ -22,12 +26,14 @@ export const Exercises = (props: ExercisesProps) => {
   let children_list = children(() => props.children);
   let [selected_exo, set_selected_exo] = createSignal(0);
   let { store, set_store } = useGlobalContext();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   createEffect(() => {
     let exercises_state = children_list.toArray().map((child, i) => ({
       selected: Number(localStorage.getItem("selected_exo")) === i || false,
       solution_open:
         String(localStorage.getItem(`article_${i}_opened`)) === "true" || false,
+      transition_duration: 1000,
     }));
 
     set_store((prev) => ({
@@ -35,6 +41,12 @@ export const Exercises = (props: ExercisesProps) => {
       exercises: exercises_state,
     }));
   });
+
+  // createEffect(() => {
+  //   if (searchParams) {
+  //     set_selected_exo(Number(searchParams.get("tab")));
+  //   }
+  // }
 
   return (
     <>
@@ -167,5 +179,38 @@ const Swticher = (props: SwitcherProps) => {
 };
 
 export const Exercise = (props: ParentProps & SharedProps) => {
-  return <div>{props.children}</div>;
+  let { store, set_store } = useGlobalContext();
+  let solution_open = createMemo(
+    () => getSelectedExercise(store)?.solution_open || false
+  );
+  let transition_duration = createMemo(
+    () => getSelectedExercise(store)?.transition_duration || 1000
+  );
+  let [bot_div, set_bot_div] = createSignal(false);
+
+  // toggle bot div
+  createEffect(() => {
+    if (solution_open()) {
+      setTimeout(() => {
+        set_bot_div(false);
+      }, transition_duration());
+    } else {
+      setTimeout(() => {
+        set_bot_div(true);
+      }, transition_duration());
+    }
+  });
+
+  return (
+    <div>
+      {props.children}
+      <div
+        class="slice transition-all col-start-2"
+        style={{
+          height: `${!solution_open() || bot_div() ? GREEN_DIV_HEIGHT : 0}px`,
+          "background-color": true ? "#00440050" : "",
+          "transition-duration": `${solution_open() ? 1000 : 0}ms`,
+        }}></div>
+    </div>
+  );
 };
