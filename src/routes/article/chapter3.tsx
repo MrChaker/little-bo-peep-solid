@@ -1839,8 +1839,8 @@ $`}</Math>
                 {String.raw`,
 etc. `}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2258,8 +2258,8 @@ $`}</Math>
                 {String.raw`”,
 the formula for the function from Exercise 4.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2270,9 +2270,8 @@ in DESMOS. Viz:`}
               <Image
                 width="1400px"
                 src="/images/png_ch3_desmos_composition_0_c.png"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -2435,8 +2434,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` second”.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -2511,8 +2510,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”).`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
@@ -2816,8 +2815,8 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`is on the second graph. The first graph is
 therefore some very compressed thing, full of
 scrunched bumps!`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2991,8 +2990,8 @@ $$`}</MathBlock>
                 </CustomBlock>
                 {String.raw`...and this completes the computation!`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -3096,8 +3095,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -3171,8 +3170,8 @@ $$`}</MathBlock>
                 </CustomBlock>
                 {String.raw`in lambda notation).`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -3188,8 +3187,8 @@ $$`}</MathBlock>
 way you parenthesize it you obtain the same 
 function, so why bother?)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -3303,8 +3302,8 @@ as the`}
                 <ImageRight src="/images/svg_ch3_associativity_cloud.svg"></ImageRight>
               </VerticalChunk>
               <VerticalChunk>{String.raw`of function composition.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
@@ -3613,8 +3612,8 @@ waypoints along a path are “straightened”
 point or destination point of the final 
 arrow.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 5.`}</i>
                 {String.raw`
@@ -3635,8 +3634,8 @@ general, no choice but to diligently apply
 each recipe in order—the first function first,
 the second function second.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 6.`}</i>
                 {String.raw`
@@ -4553,8 +4552,8 @@ $`}</Math>
               </CentralItalicDisplay>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -5839,8 +5838,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -5884,8 +5883,8 @@ x = {{-B \pm \sqrt{B^2 - 4AC}} \over 2A}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`as briefly flashed by, e.g., in Chapter 1.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`

@@ -642,8 +642,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` is undefined).`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <Pause></Pause>
+          <Pause></Pause>
+          <VerticalChunk>
             {String.raw``}
             <b>{String.raw`Note.`}</b>
             {String.raw` In general, the ratio of two decimal 
@@ -1371,10 +1371,8 @@ $`}</Math>
             <div class="spacer"></div>
             <Solution solution_number={0}>
               <VerticalChunk>{String.raw`Part by part:`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`a. (True) We have`}
-              </VerticalChunk>
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`a. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 0.9^2 = {9 \over 10}\cdot{9 \over 10} = {81 \over 100} = 0.81
@@ -1389,10 +1387,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`b. (True) We have`}
-              </VerticalChunk>
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`b. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 0.1^2 = {1 \over 10} \cdot {1 \over 10} = {1 \over 100} = 0.01,
@@ -1413,8 +1409,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw`c. (True) In fact, 
 `}
                 <NoBreak>
@@ -1567,10 +1563,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`d. (True) In general,`}
-              </VerticalChunk>
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`d. (True) In general,`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 {\sqrt{x} \over \sqrt{y}} = \sqrt{\up{0.7}x \over y}
@@ -1599,8 +1593,8 @@ root to be defined), so`}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...ta-daa!`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` One can also proceed by “direct
@@ -1630,8 +1624,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw`e. (True) Using the 
 “`}
                 <NoBreak>
@@ -1680,10 +1674,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` by part d.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`f. (True) We have`}
-              </VerticalChunk>
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`f. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 2^{30} = 2^{10} \times 2^{10} \times 2^{10} = (2^{10})^3
@@ -1694,9 +1686,8 @@ $$`}</MathBlock>
               <MathBlock>{String.raw`$$
 (2^{10})^3 = (1024)^3 > 1000^3.
 $$`}</MathBlock>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -1820,12 +1811,10 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`g. (True) As an inequality can be multiplied 
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`g. (True) As an inequality can be multiplied 
 on both sides by a positive number while 
-preserving the inequality, one has`}
-              </VerticalChunk>
+preserving the inequality, one has`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 \begin{align}
@@ -1867,8 +1856,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` means “if and only if”.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -1928,8 +1917,8 @@ $$`}</MathBlock>
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`etc.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw`h. (True) Here are the first few powers of `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -2135,10 +2124,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
-                {String.raw`i. (False) We have`}
-              </VerticalChunk>
+              <Pause></Pause>
+              <VerticalChunk>{String.raw`i. (False) We have`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 {100 \over 99} = {99 + 1 \over 99} = 1 + {1 \over 99}
@@ -2168,8 +2155,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
@@ -2392,8 +2379,8 @@ $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`equivalently) which is not obvious at first 
 glance, and kind of interesting!`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 5.`}</i>
                 {String.raw` The fact that`}
@@ -2632,8 +2619,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Example 1.`}</i>
                 {String.raw` Above, we estimated`}

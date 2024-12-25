@@ -691,8 +691,8 @@ also include this picture:`}</VerticalChunk>
           <VerticalChunk>{String.raw`Then “rise” and “run” have their signs flipped,
 but the ratio rise-over-run is the same, as
 already mentioned.)`}</VerticalChunk>
-          <VerticalChunk indent={true}>
-            <Pause></Pause>
+          <Pause></Pause>
+          <VerticalChunk>
             {String.raw``}
             <i>{String.raw`An Additional Miscellaneous Notation.`}</i>
             {String.raw`
@@ -1586,8 +1586,8 @@ $`}</Math>
                 {String.raw` rotation and so, likewise,
 are the lines defined by their hypotenuses!`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -1847,8 +1847,8 @@ $$`}
               </MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`which can also make it easy to remember!`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -1980,8 +1980,8 @@ $`}</Math>
                 {String.raw`s
 for that time interval, etc.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2000,8 +2000,8 @@ wherever the graph of the height has a sharp
 corner. (Because the slope of the graph is not
 well-defined at such corners.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -2159,8 +2159,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`-intercept.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` Our drawing makes some implicit

@@ -342,8 +342,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` as well.)`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <Pause></Pause>
+          <Pause></Pause>
+          <VerticalChunk>
             {String.raw``}
             <b>{String.raw`Vocabulary.`}</b>
             {String.raw`
@@ -952,266 +952,264 @@ $`}</Math>
             </NoBreak>
             {String.raw`:`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <div class="align-center">
-              <table margin-bottom="1em" margin-top="1em" class="first-line">
-                <colgroup>
-                  <col width="60px" />
-                  <col width="200px" />
-                  <col width="140px" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+          <div class="align-center">
+            <table margin-bottom="1em" margin-top="1em" class="first-line">
+              <colgroup>
+                <col width="60px" />
+                <col width="200px" />
+                <col width="140px" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 n
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 \,\,10^n
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`name`}</VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`name`}</VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`ten`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`ten`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 2
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 100
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`hundred`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`hundred`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 3
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1000
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`thousand`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`thousand`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 6
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1\,000\,000
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`million`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`million`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 9
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1\,000\,000\,000
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`billion`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`billion`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 12
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 1\,000\,000\,000\,000
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`trillion`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <Pause></Pause>
-            {String.raw`One can note that
-`}
-          </VerticalChunk>
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`trillion`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Pause></Pause>
+          <VerticalChunk>{String.raw`One can note that
+`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`one million is a thousand thousand`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`
@@ -1269,201 +1267,201 @@ For negative exponents we simply say “one tenth”
 instead of “ten”, etc. Specifically, the table looks
 like so:`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <div class="align-center">
-              <table margin-bottom="1em" margin-top="1em" class="first-line">
-                <colgroup>
-                  <col width="60px" />
-                  <col width="200px" />
-                  <col width="140px" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+          <div class="align-center">
+            <table margin-bottom="1em" margin-top="1em" class="first-line">
+              <colgroup>
+                <col width="60px" />
+                <col width="200px" />
+                <col width="140px" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 n
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 \,\,10^n
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`name`}</VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`name`}</VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 -1
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0.1
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one tenth`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one tenth`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 -2
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0.01
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one hundredth`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one hundredth`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 -3
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0.001
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one thousandth`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one thousandth`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 -6
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0.000001
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one millionth`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one millionth`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 -9
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 0.000000001
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`one trillionth`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <Pause></Pause>
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`one trillionth`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Pause></Pause>
+          <VerticalChunk>
             {String.raw`In passing, note how the standard decimal expansion
 for `}
             <NoBreak>
@@ -1539,166 +1537,166 @@ $`}</Math>
             {String.raw` Here is a list of the most common
 such prefixes:`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <div class="align-center">
-              <table margin-bottom="1em" margin-top="1em" class="first-line">
-                <colgroup>
-                  <col width="120px" />
-                  <col width="120px" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`power`}</VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`prefix`}</VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+          <div class="align-center">
+            <table margin-bottom="1em" margin-top="1em" class="first-line">
+              <colgroup>
+                <col width="120px" />
+                <col width="120px" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`power`}</VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`prefix`}</VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-1}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`deci`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`deci`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-2}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`centi`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`centi`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-3}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`milli`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`milli`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-6}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`micro`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`micro`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-9}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`nano`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`nano`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-12}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`pico`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`pico`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{-15}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`femto`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <Pause></Pause>
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`femto`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Pause></Pause>
+          <VerticalChunk>
             {String.raw`(Funny how the prefixes switch from 
 ending in ‘i’ to ending in ‘o’ after 
 `}
@@ -1797,168 +1795,166 @@ $`}</Math>
             </NoBreak>
             {String.raw` these are:`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>
-            <div class="align-center">
-              <table margin-bottom="1em" margin-top="1em" class="first-line">
-                <colgroup>
-                  <col width="120px" />
-                  <col width="120px" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`power`}</VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>{String.raw`prefix`}</VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+          <div class="align-center">
+            <table margin-bottom="1em" margin-top="1em" class="first-line">
+              <colgroup>
+                <col width="120px" />
+                <col width="120px" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`power`}</VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>{String.raw`prefix`}</VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^1
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`deca`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`deca`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{2}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`hecto`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`hecto`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{3}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`kilo`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`kilo`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{6}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`mega`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`mega`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{9}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`giga`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`giga`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{12}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`tera`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`tera`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <NoBreak>
+                        <Math>{String.raw`$
 10^{15}
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                    <td class="align-center">
-                      <VerticalChunk>
-                        {String.raw``}
-                        <i>{String.raw`peta`}</i>
-                        {String.raw``}
-                      </VerticalChunk>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <Pause></Pause>
-            {String.raw`For example, a`}
-          </VerticalChunk>
+                      </NoBreak>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                  <td class="align-center">
+                    <VerticalChunk>
+                      {String.raw``}
+                      <i>{String.raw`peta`}</i>
+                      {String.raw``}
+                    </VerticalChunk>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <Pause></Pause>
+          <VerticalChunk>{String.raw`For example, a`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`kilometer`}</CentralItalicDisplay>
           <div class="spacer"></div>
@@ -2431,8 +2427,8 @@ million. Similarly, “万万万” is `}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`which is just one trillion.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Notes.`}</i>
                 {String.raw`
@@ -2634,8 +2630,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Postscript`}</i>
                 {String.raw`:
@@ -2975,8 +2971,8 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`stated earlier in the chapter as (A), while the third equality uses
 additivity of exponents, also stated earlier. (So: We are only using “known”
 facts, alongside some ordinary arithmetic.)`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Notes.`}</i>
                 {String.raw`

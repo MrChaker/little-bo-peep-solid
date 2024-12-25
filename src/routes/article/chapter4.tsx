@@ -1760,17 +1760,16 @@ this gives the second derivative the following
 pockmarked appearance:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_slope_one_half_see_saw_second_derivative.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
 Taking even further derivatives produces
 the same graph back, over and over again.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -1975,8 +1974,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` (!!)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2071,9 +2070,8 @@ axis. This gives the unique solutions:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_missing_units_solution.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2441,8 +2439,8 @@ our previous sketch to produce these slopes...`}</VerticalChunk>
               <Image src="/images/svg_ch4_sketch_the_middle_a_sol4.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...achieving our final answer. `}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` For reference, the actual 
@@ -2753,8 +2751,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` respectively, in their middles.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2937,8 +2935,8 @@ is the blue, because the `}
                 {String.raw`
 derivative of the red curve is itself.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -2949,8 +2947,8 @@ values—the “most slanted up” and the
 were always going to have an oscillatory
 pattern, as well.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -2966,9 +2964,8 @@ bump, not the other way around:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_cosine_curves_cresting.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -3384,8 +3381,8 @@ $`}</Math>
 and yellow particles, we find the graph
 from the problem statement!`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
@@ -3412,8 +3409,8 @@ $`}</Math>
               <VerticalChunk>{String.raw`(If the above just looks like a 
 confusing mess then don't sweat it—it's
 not that important.)`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 5.`}</i>
                 {String.raw`
@@ -3528,8 +3525,8 @@ so the particles are going twice as fast!
 (I.e.: speed 2, since the particles of
 Exercise 12 have unit speed.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -4106,8 +4103,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -4134,9 +4131,8 @@ curves:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_5_euler_final_graph.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -4178,8 +4174,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -4230,8 +4226,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`-coordinate.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
@@ -4312,8 +4308,8 @@ $`}</Math>
 typically look more chaotic than the curves
 from Note 1.) `}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 5.`}</i>
                 {String.raw`
@@ -4532,8 +4528,8 @@ $`}</Math>
 and that grows comparatively slowly over
 time. ~The End~`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -4609,8 +4605,8 @@ starting from curve `}
                   src="/images/svg_ch4_17_particle1_inline.svg"></InlineImage>
                 {String.raw`!`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -4836,8 +4832,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is negative, by the way.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` 
@@ -4846,8 +4842,8 @@ A fraction of this form is called a `}
 quotient`}</i>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -4872,8 +4868,8 @@ $`}</Math>
 through two specified points on another
 curve”.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -5797,8 +5793,8 @@ $`}</Math>
                 <i>{String.raw`product rule`}</i>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -5939,8 +5935,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -6085,8 +6081,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -6785,8 +6781,8 @@ $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is an approximation to the circumference of a unit
 circle.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -6809,8 +6805,8 @@ $`}</Math>
 too large”), which is strikingly good, all things
 considered.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -8018,8 +8014,8 @@ Pacman must
 be at the bottom-left exit of the bottom-right
 maze corner, still.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -8757,8 +8753,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` which completes the proof.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -8781,8 +8777,8 @@ In words, we have just established the`}
                   true
                 }>{String.raw`(if you recall that one) in Exercise 9 of Chapter 
 3.`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -9124,8 +9120,8 @@ $`}</Math>
                 {String.raw`
 seconds after the start of the race.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -9197,8 +9193,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -9216,9 +9212,8 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_f_g_composition_units.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 3.`}</i>
                 {String.raw`
@@ -9517,8 +9512,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` cents per second.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Postscript.`}</i>
                 {String.raw`
@@ -9707,8 +9702,8 @@ $`}</Math>
                 <i>{String.raw`chain rule`}</i>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` Said `}
@@ -9744,8 +9739,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.)`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw` One can also write the chain rule very succinctly like so... `}
@@ -9875,8 +9870,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw` 
@@ -9959,9 +9954,8 @@ to the origin and trace out its path over time
 (either way is fine):`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_what_is_the_acceleration_vector_centered.svg"></Image>
-              <div class="spacer"></div>
+              <Pause></Pause>
               <VerticalChunk>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -10099,10 +10093,9 @@ $`}</Math>
               <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_uncentered.svg"></Image>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_centered.svg"></Image>
-              <div class="spacer"></div>
+              <StarDivider></StarDivider>
+              <Pause></Pause>
               <VerticalChunk>
-                <StarDivider></StarDivider>
-                <Pause></Pause>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
@@ -12890,8 +12883,8 @@ $`}</Math>
 distances between the particles over time. This is
 not the case! (But we didn't know any better, back
 then.)`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <Pause></Pause>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 2.`}</i>
                 {String.raw`
@@ -13272,98 +13265,98 @@ $`}</Math>
               </ul>
               <ImageLeft src="/images/svg_ch4_express_the_f_g_h_A_B_C_D_cloud.svg"></ImageLeft>
               <VerticalChunk>{String.raw`For the real numbers:`}</VerticalChunk>
-              <VerticalChunk indent={true}>
-                <ul style="margin:1em 0 0 2.5em">
-                  <li>
-                    <VerticalChunk>
-                      {String.raw``}
-                      <i>
-                        {String.raw`the associativity of [real number] multiplication is
+              <ul style="margin:1em 0 0 2.5em">
+                <li>
+                  <VerticalChunk>
+                    {String.raw``}
+                    <i>
+                      {String.raw`the associativity of [real number] multiplication is
 the fact that `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 a(bc) = (ab)c
 $`}</Math>
-                        </NoBreak>
-                        {String.raw` for all `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw` for all `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 a, b, c \in \rr
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </i>
+                      </NoBreak>
                       {String.raw``}
-                    </VerticalChunk>
-                  </li>
-                  <li>
-                    <VerticalChunk>
-                      {String.raw``}
-                      <i>
-                        {String.raw`the associativity of [real number] addition is
+                    </i>
+                    {String.raw``}
+                  </VerticalChunk>
+                </li>
+                <li>
+                  <VerticalChunk>
+                    {String.raw``}
+                    <i>
+                      {String.raw`the associativity of [real number] addition is
 the fact that `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 a + (b + c) = (a + b) + c
 $`}</Math>
-                        </NoBreak>
-                        {String.raw` for all `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw` for all `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 a, b, c \in \rr
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </i>
+                      </NoBreak>
                       {String.raw``}
-                    </VerticalChunk>
-                  </li>
-                  <li>
-                    <VerticalChunk>
-                      {String.raw``}
-                      <i>
-                        {String.raw`the commutativity of [real number] multiplication is
+                    </i>
+                    {String.raw``}
+                  </VerticalChunk>
+                </li>
+                <li>
+                  <VerticalChunk>
+                    {String.raw``}
+                    <i>
+                      {String.raw`the commutativity of [real number] multiplication is
 the fact that `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 ab = ba
 $`}</Math>
-                        </NoBreak>
-                        {String.raw` for all `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw` for all `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 a, b \in \rr
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </i>
+                      </NoBreak>
                       {String.raw``}
-                    </VerticalChunk>
-                  </li>
-                  <li>
-                    <VerticalChunk>
-                      {String.raw``}
-                      <i>
-                        {String.raw`the commutativity of [real number] addition is
+                    </i>
+                    {String.raw``}
+                  </VerticalChunk>
+                </li>
+                <li>
+                  <VerticalChunk>
+                    {String.raw``}
+                    <i>
+                      {String.raw`the commutativity of [real number] addition is
 the fact that `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 a + b = b + a
 $`}</Math>
-                        </NoBreak>
-                        {String.raw` for all `}
-                        <NoBreak>
-                          <Math>{String.raw`$
+                      </NoBreak>
+                      {String.raw` for all `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 a, b \in \rr
 $`}</Math>
-                        </NoBreak>
-                        {String.raw``}
-                      </i>
+                      </NoBreak>
                       {String.raw``}
-                    </VerticalChunk>
-                  </li>
-                </ul>
-                <Pause></Pause>
+                    </i>
+                    {String.raw``}
+                  </VerticalChunk>
+                </li>
+              </ul>
+              <Pause></Pause>
+              <VerticalChunk>
                 {String.raw``}
                 <i>{String.raw`Note 1.`}</i>
                 {String.raw`
