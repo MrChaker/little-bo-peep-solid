@@ -1,6 +1,7 @@
 import {
   Accessor,
   children,
+  createEffect,
   createSignal,
   For,
   ParentProps,
@@ -10,6 +11,7 @@ import SharedProps from "./types/SharedProps";
 import Image from "./Image";
 import { JSX } from "solid-js/h/jsx-runtime";
 import { twJoin } from "tailwind-merge";
+import { useGlobalContext } from "~/store/StoreProvider";
 
 type ExercisesProps = ParentProps &
   SharedProps & {
@@ -18,8 +20,21 @@ type ExercisesProps = ParentProps &
 
 export const Exercises = (props: ExercisesProps) => {
   let children_list = children(() => props.children);
-  console.log(children_list);
   let [selected_exo, set_selected_exo] = createSignal(0);
+  let { store, set_store } = useGlobalContext();
+
+  createEffect(() => {
+    let exercises_state = children_list.toArray().map((child, i) => ({
+      selected: Number(localStorage.getItem("selected_exo")) === i || false,
+      solution_open:
+        String(localStorage.getItem(`article_${i}_opened`)) === "true" || false,
+    }));
+
+    set_store((prev) => ({
+      ...prev,
+      exercises: exercises_state,
+    }));
+  });
 
   return (
     <>
