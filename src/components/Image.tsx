@@ -7,6 +7,7 @@ import LazyImage from "./LazyImage";
 type ImageProps = ParentProps &
   SharedProps & {
     src: string;
+    id?: string;
     width?: string;
     height?: string;
     padding_left?: number;
@@ -48,11 +49,15 @@ const Image = (props: ImageProps) => {
 
   return (
     <div
+      id={props.id}
       style={{
         "padding-left": `${props.padding_left || 0}`,
         "padding-right": `${props.padding_right || 0}`,
       }}
-      class="relative left-1/2 -translate-x-1/2 col-start-2 scrollbar-hidden sm:overflow-x-visible transition-all w-max">
+      class={twJoin(
+        "relative left-1/2 -translate-x-1/2 col-start-2 scrollbar-hidden sm:overflow-x-visible transition-all w-max",
+        props.class
+      )}>
       <div
         style={{
           height: props.height,
@@ -74,9 +79,8 @@ const Image = (props: ImageProps) => {
           }}
           ref={image_ref}
           class={twJoin(
-            "scrollbar-hidden sm:overflow-x-visible m-auto transition-all",
-            props.class,
-            on_mobile() && scaled_down() && "max-width-screen",
+            "scrollbar-hidden sm:overflow-x-visible m-auto transition-all h-[inherit]",
+            on_mobile() && scaled_down() && "max-width-screen"
           )}
           style={props.style}
           src={props.src}
