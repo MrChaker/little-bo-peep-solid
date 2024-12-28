@@ -3,7 +3,7 @@ import SharedProps from "./types/SharedProps";
 import { JSX } from "solid-js/jsx-runtime";
 
 function LazyImage(
-  props: ParentProps & JSX.ImgHTMLAttributes<HTMLImageElement>,
+  props: ParentProps & JSX.ImgHTMLAttributes<HTMLImageElement>
 ) {
   const [isVisible, setIsVisible] = createSignal(false);
   let imgRef: HTMLImageElement | undefined;
@@ -16,7 +16,7 @@ function LazyImage(
           observer.disconnect();
         }
       },
-      { threshold: 0 },
+      { rootMargin: "300px" }
     );
 
     if (imgRef) observer.observe(imgRef);
