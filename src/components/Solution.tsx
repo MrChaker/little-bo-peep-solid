@@ -24,9 +24,6 @@ const Solution = (props: SolutionProps) => {
   let { store, set_store } = useGlobalContext();
 
   const solution_open = () => store.solutions_open[props.solution_number];
-
-  console.log("sol ", props.solution_number, " : ", solution_open());
-
   let transition_duration = () => store.transition_duration;
 
   let [content_height, set_content_height] = createSignal(0);
