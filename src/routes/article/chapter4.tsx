@@ -21,17 +21,21 @@ import Grid from "~/components/Grid";
 import { List, Item } from "~/components/List";
 import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
+import useScrollX from "~/hooks/useScrollX";
+import useSaveScroll from "~/hooks/useSaveScroll";
 
 const Chapter4 = (props: any) => {
+  useScrollX();
+  useSaveScroll();
+
   return (
-    <Container>
-      <Nav />
+    <>
       <ArticleTitle
         label={`Chapter 4: ` + props.title}
         on_mobile_label={`Chapter 4: ` + props.mobile_title}
       />
       {props.children}
-    </Container>
+    </>
   );
 };
 

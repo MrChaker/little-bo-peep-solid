@@ -15,9 +15,12 @@ export default function App() {
       <Router
         root={(props) => (
           <>
-            <PanelButton />
-            <Suspense>{props.children}</Suspense>
-            <SVGDefs />
+            <Container>
+              <Nav />
+              <PanelButton />
+              <Suspense>{props.children}</Suspense>
+              <SVGDefs />
+            </Container>
           </>
         )}>
         <FileRoutes />
