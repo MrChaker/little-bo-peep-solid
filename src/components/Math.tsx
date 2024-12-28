@@ -1,29 +1,54 @@
-import { createEffect, ParentProps } from "solid-js";
+import { onCleanup, onMount, ParentProps } from "solid-js";
+import { JSX } from "solid-js/jsx-runtime";
 
-export const Math = (props: ParentProps) => {
-  let math: HTMLDivElement | undefined;
+function LazyMath(props: ParentProps & JSX.HTMLAttributes<HTMLDivElement>) {
+  let ref: HTMLDivElement | undefined;
 
-  createEffect(() => {
-    (window as any).MathJax.typesetPromise([math]);
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          (window as any).MathJax.typesetPromise([ref]);
+          observer.disconnect();
+        }
+      },
+      {
+        rootMargin: "300px",
+      }
+    );
+
+    if (ref) observer.observe(ref);
+
+    onCleanup(() => observer.disconnect());
   });
 
   return (
-    <div ref={math} class="math w-fit inline-flex items-baseline indent-0">
+    <div ref={ref} class={props.class || ""} style={props.style || ""}>
       {props.children}
     </div>
+  );
+}
+
+export const Math = (props: ParentProps) => {
+  // let math: HTMLDivElement | undefined;
+
+  // createEffect(() => {
+  //   (window as any).MathJax.typesetPromise([math]);
+  // });
+
+  return (
+    <LazyMath class="math w-fit inline-flex items-baseline indent-0">
+      {props.children}
+    </LazyMath>
   );
 };
 
 export const MathBlock = (props: ParentProps) => {
-  let math: HTMLDivElement | undefined;
+  // let math: HTMLDivElement | undefined;
 
-  createEffect(() => {
-    (window as any).MathJax.typesetPromise([math]);
-  });
+  // createEffect(() => {
+  //   (window as any).MathJax.typesetPromise([math]);
+  // });
 
-  return (
-    <div ref={math} class="slice math">
-      {props.children}
-    </div>
-  );
+  return <LazyMath class="slice math">{props.children}</LazyMath>;
 };
