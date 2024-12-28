@@ -167,11 +167,6 @@ export const BackupArrow = () => {
       xmlns="http://www.w3.org/2000/svg"
       class="tab cursor-pointer overflow-visible z-10"
       onClick={() => {
-        console.log(
-          document
-            ?.getElementById("exo")
-            ?.scrollIntoView({ behavior: "smooth" })
-        );
         document?.getElementById("exo")?.scrollIntoView({ behavior: "smooth" });
       }}>
       <path

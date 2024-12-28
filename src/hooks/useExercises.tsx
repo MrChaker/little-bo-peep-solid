@@ -67,7 +67,6 @@ const useExercises = (length: number) => {
   }
 
   createEffect(() => {
-    console.log("stored update", String(stored_selected_exo()));
     set_selected_exo(String(stored_selected_exo()));
     setSearchParams({
       selected: String(stored_selected_exo()),

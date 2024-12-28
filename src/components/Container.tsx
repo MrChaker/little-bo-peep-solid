@@ -3,28 +3,19 @@ import { useGlobalContext } from "../store/StoreProvider";
 import useSaveScroll from "~/hooks/useSaveScroll";
 
 const Container = (props: ParentProps) => {
-  const {
-    store: { page_state },
-  } = useGlobalContext();
-  useSaveScroll();
+  const { store } = useGlobalContext();
+  const page_state = () => store.page_state;
   // let article_node: NodeRef<Div> = create_node_ref::<Div>(cx);
   //  can_click is for disabling click on page transition
 
   let [state_changed_by_scroll, set_state_changed_by_scroll] =
     createSignal(false);
 
-  createEffect(() => {
-    setTimeout(
-      () =>
-        window.scroll({
-          left: 1500,
-          behavior: "instant",
-        }),
-      10
-    );
+  // there is an inital scroll when each page is loaded . code for it is in useScrollX used in renderder helpers add_imports and table of contents
 
+  createEffect(() => {
     const scroll_back = () => {
-      if (page_state == "fixed") {
+      if (page_state() == "fixed") {
         if (
           !state_changed_by_scroll() &&
           window.scrollX > 1300.0 &&

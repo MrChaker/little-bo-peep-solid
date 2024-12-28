@@ -5,10 +5,9 @@ import Container from "~/components/Container";
 
 export default function Home() {
   return (
-    <Container>
-      <Nav />
+    <>
       <ArticleTitle label="" />
       <TableOfContents />
-    </Container>
+    </>
   );
 }

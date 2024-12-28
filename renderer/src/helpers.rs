@@ -165,7 +165,9 @@ pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
     import Grid from \"~/components/Grid\"
     import {List, Item} from \"~/components/List\"
     import {SectionDivider, StarDivider} from \"~/components/SectionDivider\"
-    import VerticalChunk from \"~/components/VerticalChunk\"\n";
+    import VerticalChunk from \"~/components/VerticalChunk\"
+    import useScrollX from \"~/hooks/useScrollX\"
+    import useSaveScroll from \"~/hooks/useSaveScroll\"\n";
 
     let mut file_name = file
         .to_str()
@@ -179,11 +181,14 @@ pub fn add_imports(file: &PathBuf, numerated: bool) -> io::Result<()> {
     let article_component = format!(
         "
         const {} = (props: any) => {{
-            return (<Container>
-                <Nav />
+            useScrollX();
+            useSaveScroll();
+
+            return (
+            <>
                 <ArticleTitle label={} on_mobile_label={}/>
                 {{props.children}}
-             </Container>)
+             </>)
         }}\n
     ",
         if !numerated {

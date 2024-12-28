@@ -2,8 +2,13 @@ import { ParentProps } from "solid-js";
 import Columns from "./Columns";
 import Spacer from "./Spacer";
 import ArticleTitle from "./ArticleTitle";
+import { useNavigate } from "@solidjs/router";
+import { useGlobalContext } from "~/store/StoreProvider";
+import useScrollX from "~/hooks/useScrollX";
 
 const TableOfContents = () => {
+  useScrollX();
+
   return (
     <div>
       <h1 class="mb-[2.3rem] sm:mb-[2.6rem] flex justify-center items-center">
@@ -88,6 +93,8 @@ const MenuItem = (props: {
   article_type: string;
 }) => {
   //let GlobalState { route, .. } = use_context(cx).unwrap();
+  const navigate = useNavigate();
+  const { set_store } = useGlobalContext();
 
   return (
     <a
