@@ -255,7 +255,7 @@
     powers of $10$:
 
     |> div
-        class align-center
+        class slice align-center
 
         |> table
             class first-line
@@ -423,7 +423,7 @@
     like so:
     
     |> div
-        class align-center
+        class slice align-center
 
         |> table
             class first-line
@@ -550,7 +550,7 @@
     such prefixes:
     
     |> div
-        class align-center
+        class slice align-center
 
         |> table
             class first-line
@@ -669,7 +669,7 @@
     to $10^{15}$, these are:
     
     |> div
-        class align-center
+        class slice align-center
 
         |> table
             class first-line

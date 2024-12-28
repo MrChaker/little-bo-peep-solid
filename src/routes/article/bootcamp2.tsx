@@ -953,7 +953,7 @@ $`}</Math>
             </NoBreak>
             {String.raw`:`}
           </VerticalChunk>
-          <div class="align-center">
+          <div class="slice align-center">
             <table margin-bottom="1em" margin-top="1em" class="first-line">
               <colgroup>
                 <col width="60px" />
@@ -1269,7 +1269,7 @@ For negative exponents we simply say “one tenth”
 instead of “ten”, etc. Specifically, the table looks
 like so:`}
           </VerticalChunk>
-          <div class="align-center">
+          <div class="slice align-center">
             <table margin-bottom="1em" margin-top="1em" class="first-line">
               <colgroup>
                 <col width="60px" />
@@ -1540,7 +1540,7 @@ $`}</Math>
             {String.raw` Here is a list of the most common
 such prefixes:`}
           </VerticalChunk>
-          <div class="align-center">
+          <div class="slice align-center">
             <table margin-bottom="1em" margin-top="1em" class="first-line">
               <colgroup>
                 <col width="120px" />
@@ -1799,7 +1799,7 @@ $`}</Math>
             </NoBreak>
             {String.raw` these are:`}
           </VerticalChunk>
-          <div class="align-center">
+          <div class="slice align-center">
             <table margin-bottom="1em" margin-top="1em" class="first-line">
               <colgroup>
                 <col width="120px" />
