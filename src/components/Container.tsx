@@ -1,11 +1,12 @@
 import { ParentProps, createEffect, createSignal } from "solid-js";
 import { useGlobalContext } from "../store/StoreProvider";
+import useSaveScroll from "~/hooks/useSaveScroll";
 
 const Container = (props: ParentProps) => {
   const {
     store: { page_state },
   } = useGlobalContext();
-
+  useSaveScroll();
   // let article_node: NodeRef<Div> = create_node_ref::<Div>(cx);
   //  can_click is for disabling click on page transition
 
