@@ -23,9 +23,9 @@ const Title = () => {
 
   return (
     <div
-      class="slice select-none w-full pl-4 h-full border-r-0 font-clickerscript"
+      class="slice select-none w-full h-full border-r-0 font-clickerscript"
       id="Header">
-      <div class="font-clickerscript text-3xl pt-2 self-end sm:pl-2 pb-2">
+      <div class="font-clickerscript text-3xl pt-2 self-end pb-2">
         <a href="/" onClick={() => setRoute("/")}>
           Little Bo Peep
         </a>
