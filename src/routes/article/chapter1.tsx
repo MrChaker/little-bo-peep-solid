@@ -642,6 +642,7 @@ $`}</Math>
             </NoBreak>
             {String.raw` is undefined).`}
           </VerticalChunk>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>
             {String.raw``}
@@ -1273,7 +1274,7 @@ are good things to multiply together.)`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Exercises labels={["0", "1"]}>
-          <Exercise>
+          <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 1.`}</b>
@@ -1371,6 +1372,7 @@ $`}</Math>
             <div class="spacer"></div>
             <Solution solution_number={0}>
               <VerticalChunk>{String.raw`Part by part:`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`a. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
@@ -1387,6 +1389,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`b. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
@@ -1409,6 +1412,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw`c. (True) In fact, 
@@ -1563,6 +1567,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`d. (True) In general,`}</VerticalChunk>
               <div class="spacer"></div>
@@ -1593,6 +1598,7 @@ root to be defined), so`}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...ta-daa!`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1624,6 +1630,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw`e. (True) Using the 
@@ -1674,6 +1681,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` by part d.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`f. (True) We have`}</VerticalChunk>
               <div class="spacer"></div>
@@ -1686,6 +1694,7 @@ $$`}</MathBlock>
               <MathBlock>{String.raw`$$
 (2^{10})^3 = (1024)^3 > 1000^3.
 $$`}</MathBlock>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1811,6 +1820,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`g. (True) As an inequality can be multiplied 
 on both sides by a positive number while 
@@ -1856,6 +1866,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` means “if and only if”.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1917,6 +1928,7 @@ $$`}</MathBlock>
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`etc.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw`h. (True) Here are the first few powers of `}
@@ -2124,6 +2136,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>{String.raw`i. (False) We have`}</VerticalChunk>
               <div class="spacer"></div>
@@ -2155,6 +2168,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2379,6 +2393,7 @@ $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`equivalently) which is not obvious at first 
 glance, and kind of interesting!`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2448,7 +2463,7 @@ etc.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={1}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 2.`}</b>
@@ -2619,6 +2634,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}

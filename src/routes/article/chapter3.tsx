@@ -1771,7 +1771,7 @@ $`}</Math>
             "19",
             "20",
           ]}>
-          <Exercise>
+          <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 1.`}</b>
@@ -1806,7 +1806,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={1}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 2.`}</b>
@@ -1839,6 +1839,7 @@ $`}</Math>
                 {String.raw`,
 etc. `}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1850,7 +1851,7 @@ theorem.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={2}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
@@ -1954,7 +1955,7 @@ $`}</Math>
               </Grid>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={3}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 4.`}</b>
@@ -2179,7 +2180,7 @@ equal.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={4}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 5.`}</b>
@@ -2258,6 +2259,7 @@ $`}</Math>
                 {String.raw`”,
 the formula for the function from Exercise 4.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2270,6 +2272,7 @@ in DESMOS. Viz:`}
               <Image
                 width="1400px"
                 src="/images/png_ch3_desmos_composition_0_c.png"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2434,6 +2437,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` second”.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2510,6 +2514,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”).`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2584,7 +2589,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={5}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 6.`}</b>
@@ -2736,7 +2741,7 @@ $$`}</MathBlock>
 form, it being more “talkative”.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={6}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 7.`}</b>
@@ -2815,6 +2820,7 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`is on the second graph. The first graph is
 therefore some very compressed thing, full of
 scrunched bumps!`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2852,7 +2858,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={7}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 8.`}</b>
@@ -2990,6 +2996,7 @@ $$`}</MathBlock>
                 </CustomBlock>
                 {String.raw`...and this completes the computation!`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3002,7 +3009,7 @@ into a single string of equalities:`}
               <Image src="/images/svg_first_victim_second_victim_1_1em.svg"></Image>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={8}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 9.`}</b>
@@ -3095,6 +3102,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3170,6 +3178,7 @@ $$`}</MathBlock>
                 </CustomBlock>
                 {String.raw`in lambda notation).`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3187,6 +3196,7 @@ $$`}</MathBlock>
 way you parenthesize it you obtain the same 
 function, so why bother?)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3302,6 +3312,7 @@ as the`}
                 <ImageRight src="/images/svg_ch3_associativity_cloud.svg"></ImageRight>
               </VerticalChunk>
               <VerticalChunk>{String.raw`of function composition.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3612,6 +3623,7 @@ waypoints along a path are “straightened”
 point or destination point of the final 
 arrow.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3634,6 +3646,7 @@ general, no choice but to diligently apply
 each recipe in order—the first function first,
 the second function second.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3745,7 +3758,7 @@ that the two functions are equal!!`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={9}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 10.`}</b>
@@ -3814,7 +3827,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={10}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 11.`}</b>
@@ -4012,7 +4025,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={11}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 12.`}</b>
@@ -4058,7 +4071,7 @@ the reals because the square of a real number
 is nonnegative.`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={12}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 13.`}</b>
@@ -4131,7 +4144,7 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`constituting two distinct solutions.`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={13}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 14.`}</b>
@@ -4552,6 +4565,7 @@ $`}</Math>
               </CentralItalicDisplay>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw``}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4609,7 +4623,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={14}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 15.`}</b>
@@ -4839,7 +4853,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={15}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 16.`}</b>
@@ -5173,7 +5187,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={16}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 17.`}</b>
@@ -5274,7 +5288,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={17}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 18.`}</b>
@@ -5485,7 +5499,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={18}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 19.`}</b>
@@ -5680,7 +5694,7 @@ $`}</Math>
                 }>{String.raw`...if we put the vertical translation first.`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={19}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 20.`}</b>
@@ -5838,6 +5852,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -5883,6 +5898,7 @@ x = {{-B \pm \sqrt{B^2 - 4AC}} \over 2A}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`as briefly flashed by, e.g., in Chapter 1.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -5929,7 +5945,7 @@ to the absence of roots in that case, as well.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={20}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 21.`}</b>

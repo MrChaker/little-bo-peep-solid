@@ -342,6 +342,7 @@ $`}</Math>
             </NoBreak>
             {String.raw` as well.)`}
           </VerticalChunk>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>
             {String.raw``}
@@ -1207,6 +1208,7 @@ $`}</Math>
               </tbody>
             </table>
           </div>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>{String.raw`One can note that
 `}</VerticalChunk>
@@ -1460,6 +1462,7 @@ $`}</Math>
               </tbody>
             </table>
           </div>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>
             {String.raw`In passing, note how the standard decimal expansion
@@ -1695,6 +1698,7 @@ $`}</Math>
               </tbody>
             </table>
           </div>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>
             {String.raw`(Funny how the prefixes switch from 
@@ -1953,6 +1957,7 @@ $`}</Math>
               </tbody>
             </table>
           </div>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>{String.raw`For example, a`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
@@ -2231,7 +2236,7 @@ $`}</Math>
             "13",
             "14",
           ]}>
-          <Exercise>
+          <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 1.`}</b>
@@ -2341,7 +2346,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={1}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 2.`}</b>
@@ -2393,7 +2398,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={2}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
@@ -2427,6 +2432,7 @@ million. Similarly, “万万万” is `}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`which is just one trillion.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2469,7 +2475,7 @@ equal one trillion because “ten ten ten” is
 a thousand.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={3}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 4.`}</b>
@@ -2544,7 +2550,7 @@ kilometers in a millimeter.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={4}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 5.`}</b>
@@ -2583,7 +2589,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={5}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 6.`}</b>
@@ -2630,6 +2636,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2643,7 +2650,7 @@ into existence. (And taxes it out of existence.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={6}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 7.`}</b>
@@ -2676,7 +2683,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={7}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 8.`}</b>
@@ -2715,7 +2722,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={8}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 9.`}</b>
@@ -2758,7 +2765,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={9}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 10.`}</b>
@@ -2800,7 +2807,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={10}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 11.`}</b>
@@ -2846,7 +2853,7 @@ indivisible—unit of computer memory.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={11}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 12.`}</b>
@@ -2921,7 +2928,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={12}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 13.`}</b>
@@ -2971,6 +2978,7 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`stated earlier in the chapter as (A), while the third equality uses
 additivity of exponents, also stated earlier. (So: We are only using “known”
 facts, alongside some ordinary arithmetic.)`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3012,7 +3020,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={13}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 14.`}</b>
@@ -3123,7 +3131,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={14}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 15.`}</b>

@@ -1631,7 +1631,7 @@ $`}</Math>
             "39",
             "40",
           ]}>
-          <Exercise>
+          <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 1.`}</b>
@@ -1684,7 +1684,7 @@ the corners.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={1}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 2.`}</b>
@@ -1736,7 +1736,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={2}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
@@ -1760,6 +1760,7 @@ this gives the second derivative the following
 pockmarked appearance:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_slope_one_half_see_saw_second_derivative.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1768,6 +1769,7 @@ pockmarked appearance:`}</VerticalChunk>
 Taking even further derivatives produces
 the same graph back, over and over again.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1777,7 +1779,7 @@ the same graph back, over and over again.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={3}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 4.`}</b>
@@ -1847,7 +1849,7 @@ of time:`}
               <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units_second_derivative.svg"></Image>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={4}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 5.`}</b>
@@ -1974,6 +1976,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` (!!)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2031,7 +2034,7 @@ acts.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={5}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 6.`}</b>
@@ -2070,6 +2073,7 @@ axis. This gives the unique solutions:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_missing_units_solution.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2147,7 +2151,7 @@ the simple _&_ correct way!)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={6}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 7.`}</b>
@@ -2278,7 +2282,7 @@ zigzag, by the way.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={7}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 8.`}</b>
@@ -2439,6 +2443,7 @@ our previous sketch to produce these slopes...`}</VerticalChunk>
               <Image src="/images/svg_ch4_sketch_the_middle_a_sol4.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...achieving our final answer. `}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2450,7 +2455,7 @@ derivative looks like so:`}
               <Image src="/images/svg_ch4_sketch_the_middle_a_sol5.svg"></Image>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={8}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 9.`}</b>
@@ -2751,6 +2756,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` respectively, in their middles.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2768,7 +2774,7 @@ $`}</Math>
               <Image src="/images/svg_ch4_sketch_the_middle_b_sol12.svg"></Image>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={9}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 10.`}</b>
@@ -2860,7 +2866,7 @@ doubled, so the derivative is doubled.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={10}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 11.`}</b>
@@ -2903,7 +2909,7 @@ rate:`}</VerticalChunk>
               <VerticalChunk>{String.raw`(Well, believe us or not, but we're right!)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={11}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 12.`}</b>
@@ -2935,6 +2941,7 @@ is the blue, because the `}
                 {String.raw`
 derivative of the red curve is itself.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2947,6 +2954,7 @@ values—the “most slanted up” and the
 were always going to have an oscillatory
 pattern, as well.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2964,6 +2972,7 @@ bump, not the other way around:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_cosine_curves_cresting.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3381,6 +3390,7 @@ $`}</Math>
 and yellow particles, we find the graph
 from the problem statement!`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3409,6 +3419,7 @@ $`}</Math>
               <VerticalChunk>{String.raw`(If the above just looks like a 
 confusing mess then don't sweat it—it's
 not that important.)`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3451,7 +3462,7 @@ particle, etc.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={12}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 13.`}</b>
@@ -3525,6 +3536,7 @@ so the particles are going twice as fast!
 (I.e.: speed 2, since the particles of
 Exercise 12 have unit speed.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -3552,7 +3564,7 @@ property that holds only for one specific
 “tweaking” of the units.`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={13}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 14.`}</b>
@@ -4103,6 +4115,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4131,6 +4144,7 @@ curves:`}
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_5_euler_final_graph.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4174,6 +4188,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4226,6 +4241,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`-coordinate.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4308,6 +4324,7 @@ $`}</Math>
 typically look more chaotic than the curves
 from Note 1.) `}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4347,7 +4364,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={14}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 15.`}</b>
@@ -4528,6 +4545,7 @@ $`}</Math>
 and that grows comparatively slowly over
 time. ~The End~`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4605,6 +4623,7 @@ starting from curve `}
                   src="/images/svg_ch4_17_particle1_inline.svg"></InlineImage>
                 {String.raw`!`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4766,7 +4785,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={15}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 16.`}</b>
@@ -4832,6 +4851,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is negative, by the way.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4842,6 +4862,7 @@ A fraction of this form is called a `}
 quotient`}</i>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4868,6 +4889,7 @@ $`}</Math>
 through two specified points on another
 curve”.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -4939,7 +4961,7 @@ $$`}</MathBlock>
               <VerticalChunk>{String.raw`is undefined.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={16}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 17.`}</b>
@@ -5793,6 +5815,7 @@ $`}</Math>
                 <i>{String.raw`product rule`}</i>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -5825,7 +5848,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={17}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 18.`}</b>
@@ -5883,7 +5906,7 @@ of the rates of change of the components`}</CentralItalicDisplay>
               <VerticalChunk indent={true}>{String.raw`(etc).`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={18}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 19.`}</b>
@@ -5935,6 +5958,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -6009,7 +6033,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={19}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 20.`}</b>
@@ -6081,6 +6105,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -6120,7 +6145,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={20}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 21.`}</b>
@@ -6268,7 +6293,7 @@ the beginning, so the second way is clearly the
 superior definition!!`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={21}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 22.`}</b>
@@ -6372,7 +6397,7 @@ we prefer the first form, with the arrow, found at the
 end of the chapter—it's more explicit!)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={22}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 23.`}</b>
@@ -6697,7 +6722,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={23}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 24.`}</b>
@@ -6781,6 +6806,7 @@ $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is an approximation to the circumference of a unit
 circle.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -6805,6 +6831,7 @@ $`}</Math>
 too large”), which is strikingly good, all things
 considered.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -6857,7 +6884,7 @@ length of a quarter-revolution:`}
 of our approximations.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={24}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 25.`}</b>
@@ -7419,7 +7446,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={25}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 26.`}</b>
@@ -8014,6 +8041,7 @@ Pacman must
 be at the bottom-left exit of the bottom-right
 maze corner, still.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -8025,7 +8053,7 @@ near...`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={26}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 27.`}</b>
@@ -8552,7 +8580,7 @@ information, if we want. (Well...`}</VerticalChunk>
 homework ourselves.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={27}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 28.`}</b>
@@ -8753,6 +8781,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` which completes the proof.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -8777,6 +8806,7 @@ In words, we have just established the`}
                   true
                 }>{String.raw`(if you recall that one) in Exercise 9 of Chapter 
 3.`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -8810,7 +8840,7 @@ is the same.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={28}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 29.`}</b>
@@ -9022,7 +9052,7 @@ definition of function equality.`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={29}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 30.`}</b>
@@ -9120,6 +9150,7 @@ $`}</Math>
                 {String.raw`
 seconds after the start of the race.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9193,6 +9224,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9212,6 +9244,7 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_f_g_composition_units.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9293,7 +9326,7 @@ parts of the course that momentarily lose you money):`}
               <VerticalChunk>{String.raw`(Etc.)`}</VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={30}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 31.`}</b>
@@ -9356,7 +9389,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={31}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 32.`}</b>
@@ -9512,6 +9545,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` cents per second.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9551,7 +9585,7 @@ something every day.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={32}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 33.`}</b>
@@ -9702,6 +9736,7 @@ $`}</Math>
                 <i>{String.raw`chain rule`}</i>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9739,6 +9774,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9767,7 +9803,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={33}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 34.`}</b>
@@ -9870,6 +9906,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9884,7 +9921,7 @@ dimensions of length over time ([L/T]).`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={34}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 35.`}</b>
@@ -9954,6 +9991,7 @@ to the origin and trace out its path over time
 (either way is fine):`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_what_is_the_acceleration_vector_centered.svg"></Image>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -9966,7 +10004,7 @@ acceleration vector is nonzero!`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={35}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 36.`}</b>
@@ -10094,6 +10132,7 @@ $`}</Math>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_centered.svg"></Image>
               <StarDivider></StarDivider>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -10121,7 +10160,7 @@ $`}</Math>
               <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_with_position.svg"></Image>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={36}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 37.`}</b>
@@ -10349,7 +10388,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={37}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 38.`}</b>
@@ -10576,7 +10615,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={38}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 39.`}</b>
@@ -12883,6 +12922,7 @@ $`}</Math>
 distances between the particles over time. This is
 not the case! (But we didn't know any better, back
 then.)`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -12932,7 +12972,7 @@ in 1 dimension!`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={39}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 40.`}</b>
@@ -13044,7 +13084,7 @@ one solution, at least.)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={40}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 41.`}</b>
@@ -13355,6 +13395,7 @@ $`}</Math>
                   </VerticalChunk>
                 </li>
               </ul>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}

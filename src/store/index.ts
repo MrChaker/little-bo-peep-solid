@@ -10,12 +10,20 @@ type Store = {
   page_state: "fixed" | "free";
   burger_background_on: boolean;
   exercises: ExercisesState;
+
+  selected_exo: number;
+  solutions_open: boolean[];
+  transition_duration: number;
 };
 
 const [store, set_store] = createStore<Store>({
   page_state: "fixed",
   burger_background_on: false,
   exercises: [],
+
+  selected_exo: 0,
+  solutions_open: [],
+  transition_duration: 1000,
 });
 
 const getExerciseByIndex = (store: Store, index: number) => {

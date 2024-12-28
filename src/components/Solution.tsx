@@ -11,6 +11,7 @@ import { twJoin } from "tailwind-merge";
 import Spacer from "./Spacer";
 import { useGlobalContext } from "~/store/StoreProvider";
 import { getExerciseByIndex, updateExerciseByIndex } from "~/store";
+import { useSearchParams } from "@solidjs/router";
 
 type SolutionProps = ParentProps &
   SharedProps & {
@@ -22,11 +23,11 @@ const Solution = (props: SolutionProps) => {
   let ref: HTMLDivElement | undefined;
   let { store, set_store } = useGlobalContext();
 
-  let exercise_state = createMemo(() =>
-    getExerciseByIndex(store, props.solution_number)
-  );
-  let solution_open = () => exercise_state()?.solution_open || false;
-  let transition_duration = () => exercise_state()?.transition_duration || 1000;
+  const solution_open = () => store.solutions_open[props.solution_number];
+
+  console.log("sol ", props.solution_number, " : ", solution_open());
+
+  let transition_duration = () => store.transition_duration;
 
   let [content_height, set_content_height] = createSignal(0);
   let [transition, set_transition] = createSignal(false);
@@ -42,13 +43,6 @@ const Solution = (props: SolutionProps) => {
   createEffect(() => {
     if (solution_open()) {
       set_content_height(ref?.offsetHeight || 0);
-      // if (ref?.offsetHeight === 0) {
-      //   setTimeout(() => {
-      //     set_content_height(ref.offset_height);
-      //   }, 1000);
-      // } else {
-      //   set_content_height(ref.offset_height);
-      // }
       // bot div
       setTimeout(() => {
         set_bot_div(false);
@@ -78,10 +72,7 @@ const Solution = (props: SolutionProps) => {
 
   // set transition duration
   createEffect(() => {
-    updateExerciseByIndex(store, set_store, props.solution_number, {
-      field: "transition_duration",
-      value: Math.min(1000, ref?.offsetHeight || 0),
-    });
+    set_store("transition_duration", Math.min(1000, ref?.offsetHeight || 1000));
   });
 
   // solution fully opened
@@ -124,19 +115,9 @@ const Solution = (props: SolutionProps) => {
             }
             set_transition(true);
             setTimeout(() => set_transition(false), 1100);
-            // let options = { resolve: true, replace: false, scroll: false, state: null };
-            // let search_params = new URLSearchParams(window.location.search);
-            // let new_url;
-            // if (search_params.has("opened")) {
-            //   search_params.set("opened", search_params.get("opened") === "true" ? "false" : "true");
-            //   new_url = `${window.location.pathname}?${search_params.toString()}`;
-            // } else {
-            //   new_url = `${window.location.pathname}?tab=0&opened=${!solution_open.get()}`;
-            // }
-            // navigate(new_url, options);
-            updateExerciseByIndex(store, set_store, props.solution_number, {
-              field: "solution_open",
-              value: !solution_open(),
+            set_store("solutions_open", (prev) => {
+              prev[props.solution_number] = !solution_open();
+              return [...prev];
             });
           }}
         />

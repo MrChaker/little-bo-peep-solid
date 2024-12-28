@@ -691,6 +691,7 @@ also include this picture:`}</VerticalChunk>
           <VerticalChunk>{String.raw`Then “rise” and “run” have their signs flipped,
 but the ratio rise-over-run is the same, as
 already mentioned.)`}</VerticalChunk>
+          <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>
             {String.raw``}
@@ -1522,7 +1523,7 @@ velocity!`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Exercises labels={["0", "1", "2", "3"]}>
-          <Exercise>
+          <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 1.`}</b>
@@ -1586,6 +1587,7 @@ $`}</Math>
                 {String.raw` rotation and so, likewise,
 are the lines defined by their hypotenuses!`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1666,7 +1668,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={1}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 2.`}</b>
@@ -1847,6 +1849,7 @@ $$`}
               </MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`which can also make it easy to remember!`}</VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -1918,7 +1921,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={2}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
@@ -1980,6 +1983,7 @@ $`}</Math>
                 {String.raw`s
 for that time interval, etc.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2000,6 +2004,7 @@ wherever the graph of the height has a sharp
 corner. (Because the slope of the graph is not
 well-defined at such corners.)`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
@@ -2077,7 +2082,7 @@ $`}</Math>
               </VerticalChunk>
             </Solution>
           </Exercise>
-          <Exercise>
+          <Exercise exercise_number={3}>
             <VerticalChunk>
               {String.raw``}
               <b>{String.raw`Exercise 4.`}</b>
@@ -2159,6 +2164,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`-intercept.`}
               </VerticalChunk>
+              <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
                 {String.raw``}
