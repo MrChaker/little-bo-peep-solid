@@ -106,9 +106,7 @@ const Solution = (props: SolutionProps) => {
             let should_scroll_to_button_first =
               element_pos > GREEN_DIV_HEIGHT + 40 + 56;
             if (solution_open() && should_scroll_to_button_first) {
-              document
-                ?.getElementById("exo")
-                ?.scrollIntoView({ behavior: "smooth" });
+              document?.getElementById("exo")?.scrollIntoView();
             }
             set_transition(true);
             setTimeout(() => set_transition(false), 1100);
@@ -167,7 +165,7 @@ export const BackupArrow = () => {
       xmlns="http://www.w3.org/2000/svg"
       class="tab cursor-pointer overflow-visible z-10"
       onClick={() => {
-        document?.getElementById("exo")?.scrollIntoView({ behavior: "smooth" });
+        document?.getElementById("exo")?.scrollIntoView();
       }}>
       <path
         class="overflow-visible"
