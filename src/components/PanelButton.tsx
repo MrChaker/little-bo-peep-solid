@@ -7,13 +7,14 @@ import {
 } from "../constants";
 import useOnMobile from "../hooks/useOnMobile";
 import { useGlobalContext } from "../store/StoreProvider";
+import { set_store } from "~/store";
 
 const PanelButton = () => {
   const { on_mobile } = useOnMobile();
-  const {
-    store: { burger_background_on },
-  } = useGlobalContext();
-  const [open, set_open] = createSignal(false);
+  const { store } = useGlobalContext();
+  const burger_background_on = () => store.burger_background_on;
+  const open = () => store.panel_opened;
+
   const [opacity, set_opacity] = createSignal(1);
   const [scrollY, set_scrollY] = createSignal(0);
 
@@ -22,7 +23,7 @@ const PanelButton = () => {
       1.0,
       1.0 -
         (window.scrollY - HAMBURGER_MENU_SCROLLY_START_FADE) /
-          HAMBURGER_MENU_SCROLLY_END_FADE,
+          HAMBURGER_MENU_SCROLLY_END_FADE
     );
   };
 
@@ -48,32 +49,32 @@ const PanelButton = () => {
         class={twJoin(
           "h-14 w-14 fixed right-0 border-l sm:border-l-0 border-b z-50",
           !open() && scrollY() > HAMBURGER_MENU_HEIGHT && "sm:border-b-0",
-          open() && !on_mobile() && scrollY() > 0 && "hover:border-b-0",
+          open() && !on_mobile() && scrollY() > 0 && "hover:border-b-0"
         )}>
         <button
           onClick={() => {
-            set_open(!open());
+            set_store("panel_opened", !open());
           }}
           style={{
             opacity: !open() && !on_mobile() ? opacity() : 1,
           }}
-          class="select-none flex items-center justify-center h-8 w-8 m-3 fill-[rgb(30,30,30)] hover:fill-stone-600">
+          class="select-none flex items-center justify-center h-8 w-8 m-3 fill-[rgb(30,30,30)] hover:fill-stone-600 hover:!opacity-100">
           <PanelButtonIcon open={open()} />
         </button>
       </div>
       <div
         class={twJoin(
           "w-14 fixed right-0 z-40 h-14",
-          burger_background_on && "h-[10rem]",
-          scrollY() == 0 && !burger_background_on && "h-14",
+          burger_background_on() && "h-[10rem]",
+          scrollY() == 0 && !burger_background_on && "h-14"
         )}
         style={{
           "background-color":
-            scrollY() > 0 && burger_background_on
+            scrollY() > 0 && burger_background_on()
               ? "transparent"
               : false
-                ? "#fff000"
-                : "#fff",
+              ? "#fff000"
+              : "#fff",
         }}></div>
     </>
   );

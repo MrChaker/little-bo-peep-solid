@@ -79,7 +79,8 @@ fn main() {
 
             // render tabel of contents
             println!("🚀 Render tabel of contents 🚀");
-            render_table_of_contents(&root);
+            render_articles_list(&root, "TableOfContents");
+            render_articles_list(&root, "Panel");
 
             if inculde_math.is_some_and(|i| i == "--mathjax") {
                 println!("🚀 Render mathjax 🚀");
@@ -115,12 +116,15 @@ fn main() {
     }
 }
 
-fn render_table_of_contents(root_path: &Path) {
+fn render_articles_list(root_path: &Path, component_name: &str) {
     // read table.tsx file
-    let toc_path = format!("{}/src/components/TableOfContents.tsx", root_path.display());
+    let toc_path = format!(
+        "{}/src/components/{component_name}.tsx",
+        root_path.display()
+    );
     let file_content = read_to_string(&toc_path);
     if file_content.is_err() {
-        panic!("TableOfContents.tsx does not exist");
+        panic!("{component_name}.tsx does not exist");
     }
 
     for article_type_str in ["chapter", "bootcamp"].to_vec() {

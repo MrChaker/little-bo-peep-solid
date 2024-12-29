@@ -8,6 +8,7 @@ type ExercisesState = {
 
 type Store = {
   page_state: "fixed" | "free";
+  panel_opened: boolean;
   burger_background_on: boolean;
   exercises: ExercisesState;
 
@@ -18,6 +19,7 @@ type Store = {
 
 const [store, set_store] = createStore<Store>({
   page_state: "fixed",
+  panel_opened: false,
   burger_background_on: false,
   exercises: [],
 
