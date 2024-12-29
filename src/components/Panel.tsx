@@ -3,6 +3,7 @@ import { HAMBURGER_MENU_HEIGHT } from "~/constants";
 import { useGlobalContext } from "~/store/StoreProvider";
 import Spacer from "./Spacer";
 import useOnMobile from "~/hooks/useOnMobile";
+import { Store } from "~/store";
 
 const Panel = () => {
   const { store } = useGlobalContext();
@@ -90,7 +91,14 @@ const Panel = () => {
               />
             </ItemsList>
           </div>
-          <div id="options"></div>
+          <div id="options">
+            <Title label="Options" />
+            <Option
+              label="Section Dividers"
+              state_key="show_section_dividers"
+            />
+            <Option label="Squiggles" state_key="show_squiggles" />
+          </div>
         </div>
       </div>
     </div>
@@ -136,6 +144,58 @@ const MenuItem = (props: {
       </span>
       <span class="hidden sm:block">{props.label}</span>
     </a>
+  );
+};
+
+const Option = (props: { label: string; state_key: keyof Store }) => {
+  const { store, set_store } = useGlobalContext();
+  const state = () => store[props.state_key] as boolean;
+
+  return (
+    <div class="flex justify-between items-center text-2xl pb-1.5 sm:pb-2">
+      <p>{props.label}</p>
+      <Checkbox
+        value={state()}
+        onChange={() => set_store(props.state_key, !state())}
+      />
+    </div>
+  );
+};
+
+const Checkbox = (props: {
+  value: boolean;
+  onChange: (value: boolean) => void;
+}) => {
+  return (
+    <div
+      onClick={() => props.onChange(!props.value)}
+      class={`w-5 h-5 border border-solid border-black rounded flex items-center justify-center cursor-pointer ${
+        props.value
+          ? "bg-[#c1ebff] hover:bg-[#9ac1d3]"
+          : "bg-white hover:bg-[#f3f3f3]"
+      }`}>
+      {props.value && (
+        <svg
+          width="14"
+          height="9"
+          viewBox="0 0 13 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect
+            width="2.09"
+            height="7.33987"
+            rx="1.045"
+            transform="matrix(0.460058 -0.887889 0.625737 0.780034 0 6.85571)"
+            fill="white"></rect>
+          <rect
+            width="2.09"
+            height="13.38"
+            rx="1.045"
+            transform="matrix(0.529272 0.848452 -0.560655 0.828049 11.5157 0)"
+            fill="white"></rect>
+        </svg>
+      )}
+    </div>
   );
 };
 
