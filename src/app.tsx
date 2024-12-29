@@ -8,6 +8,7 @@ import "./app.css";
 import { StoreProvider } from "./store/StoreProvider";
 import PanelButton from "./components/PanelButton";
 import SVGDefs from "./components/SVGDefs";
+import Panel from "./components/Panel";
 
 export default function App() {
   return (
@@ -15,9 +16,10 @@ export default function App() {
       <Router
         root={(props) => (
           <>
+            <PanelButton />
+            <Panel />
             <Container>
               <Nav />
-              <PanelButton />
               <Suspense>{props.children}</Suspense>
               <SVGDefs />
             </Container>

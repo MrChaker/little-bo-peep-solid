@@ -1,9 +1,5 @@
 import { ParentProps } from "solid-js";
-import Columns from "./Columns";
 import Spacer from "./Spacer";
-import ArticleTitle from "./ArticleTitle";
-import { useNavigate } from "@solidjs/router";
-import { useGlobalContext } from "~/store/StoreProvider";
 import useScrollX from "~/hooks/useScrollX";
 
 const TableOfContents = () => {
@@ -92,16 +88,10 @@ const MenuItem = (props: {
   on_mobile?: string;
   article_type: string;
 }) => {
-  //let GlobalState { route, .. } = use_context(cx).unwrap();
-  const navigate = useNavigate();
-  const { set_store } = useGlobalContext();
-
   return (
     <a
       href={`/article/${props.href}`}
-      class="slice flex items-baseline justify-between !leading-9 lg:!leading-10 !text-2xl lg:!text-3xl"
-      // onClick=move |_| route.set(href)
-    >
+      class="slice flex items-baseline justify-between !leading-9 lg:!leading-10 !text-2xl lg:!text-3xl">
       <span class="block !w-fit">{props.article_type}</span>
       <span class="dots !w-auto"></span>
       <span class="sm:hidden !w-auto">
