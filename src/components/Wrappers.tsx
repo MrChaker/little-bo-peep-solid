@@ -1,8 +1,18 @@
 import { ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
+import { SectionDivider } from "./SectionDivider";
+import { useGlobalContext } from "~/store/StoreProvider";
 
 export const Section = (props: ParentProps & { divider?: boolean }) => {
-  return <section>{props.children}</section>;
+  const { store, set_store } = useGlobalContext();
+  const show_section_dividers = () => store.show_section_dividers;
+
+  return (
+    <>
+      <section>{props.children}</section>
+      {show_section_dividers() && <SectionDivider />}
+    </>
+  );
 };
 
 export const Example = (props: ParentProps) => {

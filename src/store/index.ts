@@ -15,17 +15,26 @@ type Store = {
   selected_exo: number;
   solutions_open: boolean[];
   transition_duration: number;
+
+  show_section_dividers: boolean;
+  show_areas: boolean;
+  show_squiggles: boolean;
 };
 
 const [store, set_store] = createStore<Store>({
   page_state: "fixed",
   panel_opened: false,
+
   burger_background_on: false,
   exercises: [],
 
   selected_exo: 0,
   solutions_open: [],
   transition_duration: 1000,
+
+  show_section_dividers: false,
+  show_areas: false,
+  show_squiggles: true,
 });
 
 const getExerciseByIndex = (store: Store, index: number) => {

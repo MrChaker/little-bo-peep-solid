@@ -10,6 +10,7 @@ import SharedProps from "./types/SharedProps";
 import { twJoin } from "tailwind-merge";
 import useOnMobile from "../hooks/useOnMobile";
 import LazyImage from "./LazyImage";
+import { useGlobalContext } from "~/store/StoreProvider";
 
 type ImageProps = ParentProps &
   SharedProps & {
@@ -46,6 +47,8 @@ const SideImage = (_props: SideImageProps) => {
   let container_ref: HTMLDivElement | undefined;
   let [scale, set_scale] = createSignal(1);
   let [transform_origin, set_transform_origin] = createSignal("unset");
+  const { store } = useGlobalContext();
+  const show_squiggles = () => store.show_squiggles;
 
   const props = mergeProps(
     {
@@ -55,7 +58,7 @@ const SideImage = (_props: SideImageProps) => {
       padding: "",
       squiggle_y: "30%",
     },
-    _props,
+    _props
   );
 
   let innerStyles = () => ({
@@ -63,7 +66,7 @@ const SideImage = (_props: SideImageProps) => {
     right: props.side === "left" ? `calc(-100% + ${props.offset_x})` : "",
     top: `calc(50% + ${props.offset_y.includes("%") ? "0px" : props.offset_y})`,
     transform: `translateY(calc(-50% + ${getInnerTransfrom(
-      props.img_position,
+      props.img_position
     )} + ${props.offset_y.includes("%") ? props.offset_y : "0px"}))`,
     padding: `${props.padding}`,
     scale: `${scale()}`,
@@ -106,7 +109,7 @@ const SideImage = (_props: SideImageProps) => {
         />
       </div>
 
-      {props.use_squiggle_on_mobile && (
+      {show_squiggles() && props.use_squiggle_on_mobile && (
         <div
           class="squiggle block sm:hidden absolute"
           style={{

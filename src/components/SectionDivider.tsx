@@ -1,5 +1,6 @@
 import { ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
+import Spacer from "./Spacer";
 
 type SolutionProps = ParentProps &
   SharedProps & {
@@ -7,7 +8,12 @@ type SolutionProps = ParentProps &
   };
 
 export const SectionDivider = () => {
-  return <img src="/images/section-divider.svg" />;
+  return (
+    <>
+      <Spacer />
+      <img class="slice" src="/images/section_divider.svg" />
+    </>
+  );
 };
 
 export const StarDivider = () => {
