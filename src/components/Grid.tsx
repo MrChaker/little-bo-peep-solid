@@ -21,7 +21,8 @@ type GridProps = ParentProps &
     margin_top?: number;
     margin_bottom?: number;
     gap?: string;
-    column_first: boolean;
+    column_first?: boolean;
+    with_padding?: boolean;
   };
 
 const Grid = (_props: GridProps) => {
@@ -35,6 +36,7 @@ const Grid = (_props: GridProps) => {
       class: "",
       place_items: "center",
       gap: "1rem",
+      with_padding: true,
     },
     _props
   );
@@ -78,6 +80,7 @@ const Grid = (_props: GridProps) => {
       style={{
         "margin-top": `${props.margin_top}px`,
         "margin-bottom": `${props.margin_bottom}px`,
+        "padding-inline": props.with_padding ? `${TEXT_X_PADDING}px` : "0",
       }}>
       <div
         ref={parentSpan}
