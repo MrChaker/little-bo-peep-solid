@@ -1462,25 +1462,21 @@
             go from $D$ to $C$, $C$ to $B$, and $B$ to $A$. 
             For example,
 
-            |> DisplayCenterDisplayed 
+            _|$\Large h($
+            |> InlineImage
+                src images/svg_ch3_composition_icon_clubs.svg
+                width 1rem
+                y_anchor -3px
+            $\Large{}) =$
+            |> InlineImage
+                src images/svg_ch3_composition_icon_die_3.svg
+                width 1.25rem
+                y_anchor -3px
+                margin_left .5rem
+                margin_right .5rem
+            |_
 
-                $\Large h($
-                
-                |> InlineImage
-                    src images/svg_ch3_composition_icon_clubs.svg
-                    width 1rem
-                    y_anchor -3px
-
-                $\Large{}) =$
-                
-                |> InlineImage
-                    src images/svg_ch3_composition_icon_die_3.svg
-                    width 1.25rem
-                    y_anchor -3px
-                    margin_left .5rem
-                    margin_right .5rem
-            
-            because the arrow that originates at 
+            because the arrow that originates at
 
             |> InlineImage
                 src images/svg_ch3_composition_icon_clubs.svg
@@ -1500,24 +1496,21 @@
             
             in set $C$,  and
 
-            |> DisplayCenterDisplayed 
-
-                $\Large g(h($
-
-                |> InlineImage
-                    src images/svg_ch3_composition_icon_clubs.svg
-                    width 1rem
-                    y_anchor -3px
-
-                $\Large{})){}=$
-
-                |> InlineImage
-                    src images/svg_ch3_composition_icon_fence.svg
-                    width 2.3rem
-                    y_anchor -4px
-                    space_left true
-                    space_right true
-                
+            _|
+            $\Large g(h($
+            |> InlineImage
+                src images/svg_ch3_composition_icon_clubs.svg
+                width 1rem
+                y_anchor -3px
+            $\Large{})){}=$
+            |> InlineImage
+                src images/svg_ch3_composition_icon_fence.svg
+                width 2.3rem
+                y_anchor -4px
+                space_left true
+                space_right true
+            |_
+            
             because, pursuing that path onwards, the arrow 
             that originates at
             
