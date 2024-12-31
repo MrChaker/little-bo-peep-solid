@@ -96,7 +96,8 @@ horizontal change`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`...more elegant!`}</VerticalChunk>
+            indent={true}
+          >{String.raw`...more elegant!`}</VerticalChunk>
           <VerticalChunk indent={true}>
             {String.raw`For example, the line below has slope 1, because
 it goes up by `}
@@ -133,7 +134,8 @@ with each unit to the right:`}
           <div class="spacer"></div>
           <Image
             class="pl-[19.5px]"
-            src="/images/slope_0.5_example.svg"></Image>
+            src="/images/slope_0.5_example.svg"
+          ></Image>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`(Etc.)`}</VerticalChunk>
         </Section>
@@ -164,7 +166,8 @@ $`}</Math>
           <Image
             cloud_image={true}
             class="mt-6 mb-2"
-            src="/images/31.svg"></Image>
+            src="/images/31.svg"
+          ></Image>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
  \te{slope} = {\te{vertical change from A to B} \over \te{horizontal change from A to B}} 
@@ -174,7 +177,8 @@ $$`}</MathBlock>
 horizontal change gives the per-horizontal-unit
 vertical change.`}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`More precisely, if`}</VerticalChunk>
+            indent={true}
+          >{String.raw`More precisely, if`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
  A = (x_1, y_1) 
@@ -199,7 +203,9 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`are the horizontal _&_ the vertical change,
+            {String.raw`are the horizontal `}
+            <i>{String.raw`&`}</i>
+            {String.raw` the vertical change,
 respectively, from `}
             <NoBreak>
               <Math>{String.raw`$
@@ -331,7 +337,8 @@ definition, is a nonnegative number, while a
 difference carries no such restriction.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`In particular, since`}</VerticalChunk>
+            indent={true}
+          >{String.raw`In particular, since`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
  x_2 - x_1 
@@ -375,7 +382,8 @@ $`}</Math>
                 <img
                   style="margin-top:7px; margin-bottom:7px;"
                   width={50}
-                  src="/images/33.svg"></img>
+                  src="/images/33.svg"
+                ></img>
               </td>
               <td>
                 <MathBlock>{String.raw`$$
@@ -410,7 +418,8 @@ $`}</Math>
                 <img
                   style="margin-top:7px; margin-bottom:7px;"
                   width={105}
-                  src="/images/34.svg"></img>
+                  src="/images/34.svg"
+                ></img>
               </td>
               <td>
                 <MathBlock>{String.raw`$$
@@ -445,7 +454,8 @@ $`}</Math>
                 <img
                   style="margin-top:10px; margin-bottom:4px;"
                   width={105}
-                  src="/images/35.svg"></img>
+                  src="/images/35.svg"
+                ></img>
               </td>
               <td>
                 <MathBlock>{String.raw`$$
@@ -480,7 +490,8 @@ $`}</Math>
                 <img
                   style="margin-top:10px; margin-bottom:4px;"
                   width={105}
-                  src="/images/36.svg"></img>
+                  src="/images/36.svg"
+                ></img>
               </td>
               <td>
                 <MathBlock>{String.raw`$$
@@ -515,7 +526,8 @@ $`}</Math>
                 <img
                   style="margin-top:10px; margin-bottom:4px;"
                   width={105}
-                  src="/images/37.svg"></img>
+                  src="/images/37.svg"
+                ></img>
               </td>
               <td>
                 <MathBlock>{String.raw`$$
@@ -653,7 +665,8 @@ $`}</Math>
             <InlineImage
               space_right={true}
               width="28px"
-              src="/images/rise-run.svg"></InlineImage>
+              src="/images/rise-run.svg"
+            ></InlineImage>
             {String.raw`”), following such a picture:`}
           </VerticalChunk>
           <div class="spacer"></div>
@@ -685,9 +698,8 @@ $`}</Math>
 that appear in the slope formula.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(In order not to discriminate, maybe we should
+            indent={true}
+          >{String.raw`(In order not to discriminate, maybe we should
 also include this picture:`}</VerticalChunk>
           <div class="spacer"></div>
           <Image class="pt-4 mb-4" src="/images/47.svg"></Image>
@@ -1065,7 +1077,8 @@ $$`}
               use_squiggle_on_mobile={false}
               offset_x="4rem"
               offset_y="1rem"
-              src="/images/svg_vertical_line_equation.svg"></ImageLeft>
+              src="/images/svg_vertical_line_equation.svg"
+            ></ImageLeft>
           </MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
@@ -1148,7 +1161,8 @@ $`}</Math>
             <ImageRight
               offset_x="2rem"
               line={1.0}
-              src="/images/svg_3_plus_minus_one_times_x_cloud.svg"></ImageRight>
+              src="/images/svg_3_plus_minus_one_times_x_cloud.svg"
+            ></ImageRight>
           </VerticalChunk>
         </Section>
         <div class="spacer"></div>
@@ -1258,17 +1272,15 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`since velocity is defined as`}</VerticalChunk>
+            indent={true}
+          >{String.raw`since velocity is defined as`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`displacement over time`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and this is precisely the form of the ratio “rise
+            indent={true}
+          >{String.raw`and this is precisely the form of the ratio “rise
 over run” for the current graph. (More generally,
 we have`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
@@ -1305,9 +1317,8 @@ $`}</Math>
 or km/hour, etc, depends on the exact units involved.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Terminology-wise, slopes are often known as`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Terminology-wise, slopes are often known as`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`rates of change`}</CentralItalicDisplay>
           <div class="spacer"></div>
@@ -1423,7 +1434,8 @@ $$`}
                 children_x="29%"
                 children_y="34.5%"
                 offset_x="-6rem"
-                src="/images/54.svg">
+                src="/images/54.svg"
+              >
                 <MathBlock>{String.raw`$$
 {4 \over 0.75} = 5.3333...\qquad\qquad\,\,\,
 $$`}</MathBlock>
@@ -1475,9 +1487,8 @@ $`}</Math>
           </CenterDisplay>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`one could easily be tricked into thinking that a
+            indent={true}
+          >{String.raw`one could easily be tricked into thinking that a
 “dimension” is the same thing as a “unit”. In
 fact, dimensions are broader categories, such as,
 namely,`}</VerticalChunk>
@@ -1511,9 +1522,8 @@ the “length” dimension one finds`}</VerticalChunk>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(etc), and so on. (You can imagine some of the
+            indent={true}
+          >{String.raw`(etc), and so on. (You can imagine some of the
 units found in the “mass” dimension, e.g..) On
 the other hand, dimensions can be multiplied and
 divided just like units. For example,`}</VerticalChunk>
@@ -1522,7 +1532,8 @@ divided just like units. For example,`}</VerticalChunk>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`is another dimension, commonly known as...
+            indent={true}
+          >{String.raw`is another dimension, commonly known as...
 velocity!`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
@@ -1721,7 +1732,8 @@ $$`}
                   offset_y="-7.1rem"
                   offset_x="-7.2rem"
                   img_position="top"
-                  src="/images/62.svg"></ImageLeft>
+                  src="/images/62.svg"
+                ></ImageLeft>
               </MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`because`}</VerticalChunk>
@@ -1763,9 +1775,8 @@ $`}</Math>
 the line!`}
               </VerticalChunk>
               <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`Unfortunately, the equation`}</VerticalChunk>
+                indent={true}
+              >{String.raw`Unfortunately, the equation`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
  p = {y - y_0 \over x - x_0} 
@@ -1807,7 +1818,8 @@ not a valid equality because the right-hand
 side is an undefined quantity.)`}
               </VerticalChunk>
               <VerticalChunk
-                indent={true}>{String.raw`Instead, multiplying`}</VerticalChunk>
+                indent={true}
+              >{String.raw`Instead, multiplying`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 p = {y - y_0 \over x - x_0}
@@ -1849,7 +1861,8 @@ $$`}
                 <ImageRight
                   offset_y="-0.5rem"
                   offset_x="2.5rem"
-                  src="/images/svg_slope_times_run_equals_rise_cloud.svg"></ImageRight>
+                  src="/images/svg_slope_times_run_equals_rise_cloud.svg"
+                ></ImageRight>
               </MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`which can also make it easy to remember!`}</VerticalChunk>
@@ -1938,7 +1951,8 @@ graph):`}
             <div class="spacer"></div>
             <Image
               class="pt-[22px] pb-[15px] pl-[90px]"
-              src="/images/1.svg"></Image>
+              src="/images/1.svg"
+            ></Image>
             <div class="spacer"></div>
             <Solution solution_number={2}>
               <VerticalChunk>{String.raw`Here is the “official” graph of the (vertical)
@@ -1946,7 +1960,8 @@ velocity:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image
                 class="pt-[21px] pb-[20px] pl-[46px]"
-                src="/images/64.svg"></Image>
+                src="/images/64.svg"
+              ></Image>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`On each interval, the velocity is rate of

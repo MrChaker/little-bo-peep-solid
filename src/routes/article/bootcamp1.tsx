@@ -157,7 +157,8 @@ roughly meaning`}
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`as in, for example, the buttons and clock 
+            indent={true}
+          >{String.raw`as in, for example, the buttons and clock 
 display and door handle of a microwave oven) 
 of a set consists of just one functionality: 
 a set can answer questions of the form`}</VerticalChunk>
@@ -215,9 +216,8 @@ $`}</Math>
 answer “yes”.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Notation-wise, the expression`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Notation-wise, the expression`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large x \in A
@@ -263,9 +263,8 @@ $`}</Math>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`equivalently. [One can also say`}</VerticalChunk>
+            indent={true}
+          >{String.raw`equivalently. [One can also say`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
@@ -323,7 +322,8 @@ $`}</Math>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`depending on one's mood and/or tastes.]
+            indent={true}
+          >{String.raw`depending on one's mood and/or tastes.]
 As in all of mathematics, any such statement 
 evaluates to either “true” or “false”.
 For example,`}</VerticalChunk>
@@ -410,9 +410,8 @@ answer “yes” to`}</VerticalChunk>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and answer “no” to all else. For that matter,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`and answer “no” to all else. For that matter,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large\{1, 1, 2\}
@@ -436,9 +435,8 @@ $$`}</MathBlock>
           <VerticalChunk indent={true}>{String.raw`and answer “no” to all else,
 they are by definition the same.`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(These examples demonstrate that human notation 
+            indent={true}
+          >{String.raw`(These examples demonstrate that human notation 
 is redundant: there are several different ways of 
 writing down the same set. They also demonstrate
 that sets do not keep track of the`}</VerticalChunk>
@@ -452,14 +450,12 @@ that sets do not keep track of the`}</VerticalChunk>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`of their elements. Such notions are simply not part
+            indent={true}
+          >{String.raw`of their elements. Such notions are simply not part
 of the “API” of a set.)`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Moreover, any empty set is equal to any other 
+            indent={true}
+          >{String.raw`Moreover, any empty set is equal to any other 
 empty set. Equality follows because both sets 
 answer all questions the same way: they both 
 answer “no” to everything. So there is`}</VerticalChunk>
@@ -468,17 +464,15 @@ answer “no” to everything. So there is`}</VerticalChunk>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and only one empty set. Therefore, mathematicians speak of`}</VerticalChunk>
+            indent={true}
+          >{String.raw`and only one empty set. Therefore, mathematicians speak of`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`empty set—the one and only!`}</VerticalChunk>
+            indent={true}
+          >{String.raw`empty set—the one and only!`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Section>
@@ -536,9 +530,8 @@ $`}</Math>
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Mind you, concerning this example, that`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Mind you, concerning this example, that`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>
             {String.raw`$$
@@ -546,7 +539,8 @@ $`}</Math>
 $$`}
             <ImageRight
               offset_x="1em"
-              src="/images/svg_empty_set_cloud.svg"></ImageRight>
+              src="/images/svg_empty_set_cloud.svg"
+            ></ImageRight>
           </MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`because a box containing an empty box is not the same
@@ -916,7 +910,9 @@ encounter `}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`is a _closed interval_, consisting of all (real) numbers 
+            {String.raw`is a `}
+            <i>{String.raw`closed interval`}</i>
+            {String.raw`, consisting of all (real) numbers 
 greater than or equal to `}
             <NoBreak>
               <Math>{String.raw`$
@@ -997,7 +993,9 @@ $`}</Math>
             <b>{String.raw`Sets not encountered in calculus.`}</b>
             {String.raw`
 If you take a more advanced course, you might encounter 
-the so-called _set of extended real numbers_,
+the so-called `}
+            <i>{String.raw`set of extended real numbers`}</i>
+            {String.raw`,
 written`}
           </VerticalChunk>
           <div class="spacer"></div>
@@ -1077,9 +1075,8 @@ is: `}
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`E.g. (to give you a brief flavor, before we move on forever from the topic),
+            indent={true}
+          >{String.raw`E.g. (to give you a brief flavor, before we move on forever from the topic),
 the value of something like`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$

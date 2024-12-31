@@ -159,7 +159,8 @@ $`}</Math>
             {String.raw` times. `}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`For example,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`For example,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large 10^4 = 1 \times 10 \times 10 \times 10 \times 10 = 10000
@@ -197,7 +198,9 @@ $`}</Math>
 10
 $`}</Math>
             </NoBreak>
-            {String.raw` _zero times_,
+            {String.raw` `}
+            <i>{String.raw`zero times`}</i>
+            {String.raw`,
 as per the exponent, which is zero) by the first definition, while`}
           </VerticalChunk>
           <div class="spacer"></div>
@@ -592,9 +595,8 @@ $`}</Math>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and they will repeatedly admonish that`}</VerticalChunk>
+            indent={true}
+          >{String.raw`and they will repeatedly admonish that`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`an empty product is `}
@@ -687,7 +689,8 @@ $`}</Math>
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`More generally,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`More generally,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large 10^{\hspace{0.1ex}n} \times 10^{\hspace{0.1ex}m} = 10^{\hspace{0.1ex}n + m}
@@ -720,9 +723,8 @@ which is known as`}
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and which is sometimes paraphrased by saying
+            indent={true}
+          >{String.raw`and which is sometimes paraphrased by saying
 that`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the product of the powers is the power of the sum`}</CentralItalicDisplay>
@@ -818,9 +820,8 @@ $`}</Math>
 of exponents”. `}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`On this subject, note that if one writes`}</VerticalChunk>
+            indent={true}
+          >{String.raw`On this subject, note that if one writes`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large a^{b^{c}}
@@ -1509,17 +1510,15 @@ $`}</Math>
           <VerticalChunk>{String.raw`...and so on, which is a possible trick to check 
 one's work and avoid mistakes.`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`However, there also exist negative exponent`}</VerticalChunk>
+            indent={true}
+          >{String.raw`However, there also exist negative exponent`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`prefixes`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`that people use to qualify other measures. For
+            indent={true}
+          >{String.raw`that people use to qualify other measures. For
 example, a`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`millimeter`}</CentralItalicDisplay>
@@ -1717,9 +1716,8 @@ $`}</Math>
             {String.raw` (Well, anyway.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`To give an idea of scale,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`To give an idea of scale,`}</VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`micrometers`}</CentralItalicDisplay>
           <div class="spacer"></div>
@@ -2004,7 +2002,9 @@ that is equal to `}
 8
 $`}</Math>
             </NoBreak>
-            {String.raw` _bits_, with a `}
+            {String.raw` `}
+            <i>{String.raw`bits`}</i>
+            {String.raw`, with a `}
             <i>{String.raw`bit`}</i>
             {String.raw`
 being a single 0/1 value.)`}
@@ -2030,7 +2030,8 @@ $`}</Math>
 (positive) number.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`For example,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`For example,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large 100
@@ -2059,7 +2060,8 @@ $`}</Math>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`and this means that`}</VerticalChunk>
+            indent={true}
+          >{String.raw`and this means that`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large 2
@@ -2239,7 +2241,8 @@ $`}</Math>
             "12",
             "13",
             "14",
-          ]}>
+          ]}
+        >
           <Exercise exercise_number={0}>
             <VerticalChunk>
               {String.raw``}
@@ -2407,7 +2410,9 @@ $`}</Math>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
               {String.raw`
-If “万” is Chinese for _ten thousand_, what is “万万” in English?
+If “万” is Chinese for `}
+              <i>{String.raw`ten thousand`}</i>
+              {String.raw`, what is “万万” in English?
 What about “万万万”?`}
             </VerticalChunk>
             <div class="spacer"></div>
@@ -2454,14 +2459,14 @@ Rearranging`}
               <div class="spacer"></div>
               <VerticalChunk>{String.raw``}</VerticalChunk>
               <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`directly leads us to “hundred million” 
+                indent={true}
+              >{String.raw`directly leads us to “hundred million” 
 without having to use exponents, since ten
 times ten is a hundred and since a thousand 
 times a thousand is a million.`}</VerticalChunk>
               <VerticalChunk
-                indent={true}>{String.raw`(Similarly,`}</VerticalChunk>
+                indent={true}
+              >{String.raw`(Similarly,`}</VerticalChunk>
               <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`ten thousand ten thousand ten thousand`}</CentralItalicDisplay>
               <div class="spacer"></div>
@@ -2472,9 +2477,8 @@ times a thousand is a million.`}</VerticalChunk>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw``}</VerticalChunk>
               <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`after rearrangement, which can be seen to
+                indent={true}
+              >{String.raw`after rearrangement, which can be seen to
 equal one trillion because “ten ten ten” is
 a thousand.)`}</VerticalChunk>
             </Solution>
@@ -2852,7 +2856,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` billion “millibits” per gigabyte.
 (But to reiterate, there is no such thing 
-as a “millibit”; a bit is a _discrete_—i.e., 
+as a “millibit”; a bit is a `}
+                <i>{String.raw`discrete`}</i>
+                {String.raw`—i.e., 
 indivisible—unit of computer memory.)`}
               </VerticalChunk>
             </Solution>
@@ -3442,7 +3448,8 @@ $$`}</MathBlock>
 $$`}
                 <ImageRight
                   offset_y="1em"
-                  src="/images/svg_add_equations_cloud.svg"></ImageRight>
+                  src="/images/svg_add_equations_cloud.svg"
+                ></ImageRight>
               </MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...are satisfied! Adding the second and 

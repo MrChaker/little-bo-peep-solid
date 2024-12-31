@@ -98,7 +98,8 @@ $$`}
               padding="40px"
               offset_x="-3rem"
               offset_y="-1rem"
-              src="/images/svg_cloud_minus_two_squared.svg"></ImageRight>
+              src="/images/svg_cloud_minus_two_squared.svg"
+            ></ImageRight>
           </MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
@@ -185,7 +186,8 @@ $`}</Math>
             {String.raw`.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`Now we can ponder, say,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Now we can ponder, say,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \sqrt{0.5}
@@ -330,7 +332,8 @@ $`}</Math>
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`In last resort, and in reasonably good 
+            indent={true}
+          >{String.raw`In last resort, and in reasonably good 
 agreement with our observations, a calculator 
 reveals that`}</VerticalChunk>
           <div class="spacer"></div>
@@ -735,7 +738,9 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`more generally. This property is known as the
-_distributivity of multiplication over addition_,
+`}
+            <i>{String.raw`distributivity of multiplication over addition`}</i>
+            {String.raw`,
 or `}
             <i>{String.raw`distributivity`}</i>
             {String.raw` for short.`}
@@ -779,9 +784,8 @@ $$`}</MathBlock>
           <VerticalChunk>{String.raw`because multiplication takes precedence over 
 addition, by default.)`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`A little more generally, one has such identities 
+            indent={true}
+          >{String.raw`A little more generally, one has such identities 
 as`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -795,7 +799,8 @@ parenthesis. Indeed,`}
             <ImageLeft
               offset_y="-10px"
               line={1.5}
-              src="/images/325.svg"></ImageLeft>
+              src="/images/325.svg"
+            ></ImageLeft>
           </VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -886,9 +891,8 @@ $`}</Math>
 indeed.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`If we start from the afore-mentioned identity`}</VerticalChunk>
+            indent={true}
+          >{String.raw`If we start from the afore-mentioned identity`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 (a + b)(C + D) \,=\, aC + bC + aD + bD
@@ -944,8 +948,10 @@ bb = b^2
 $`}</Math>
               {String.raw`.`}
             </NoBreak>
-            {String.raw` (This is the _binomial expansion 
-of degree two_, but such terminology is not very 
+            {String.raw` (This is the `}
+            <i>{String.raw`binomial expansion 
+of degree two`}</i>
+            {String.raw`, but such terminology is not very 
 important at this stage.)`}
           </VerticalChunk>
           <div class="spacer"></div>
@@ -1290,7 +1296,8 @@ True or false (and, if possible, explain):`}
               center_on_overflow={true}
               sm_cutoff={520}
               sm_cols={2}
-              cols={3}>
+              cols={3}
+            >
               <Item>
                 {String.raw`a. `}
                 <NoBreak>
@@ -1776,7 +1783,8 @@ $$`}
                   children_y="48%"
                   offset_y="-1rem"
                   offset_x="-4rem"
-                  src="/images/104.svg">
+                  src="/images/104.svg"
+                >
                   <VerticalChunk>
                     {String.raw``}
                     <NoBreak>
@@ -2343,7 +2351,8 @@ $$`}
                   children_x="30%"
                   y="12%"
                   offset_y="3.5rem"
-                  src="/images/24.svg">
+                  src="/images/24.svg"
+                >
                   <MathBlock>{String.raw`$$
 \begin{align}
 {1 \over 99} - {1 \over 100}
@@ -2537,7 +2546,8 @@ $$`}
                   children_y="13%"
                   src="/images/25.svg"
                   offset_y="1.2rem"
-                  offset_x="-6rem">
+                  offset_x="-6rem"
+                >
                   <MathBlock>{String.raw`$$
 {1 \over 99\cdot 100}
 $$`}</MathBlock>
@@ -2556,7 +2566,8 @@ $$`}
                   children_y="15%"
                   src="/images/26.svg"
                   offset_y="1.2rem"
-                  offset_x="-6rem">
+                  offset_x="-6rem"
+                >
                   <MathBlock>{String.raw`$$
 {1 \over 99^2}
 $$`}</MathBlock>
@@ -2595,7 +2606,8 @@ $$`}
                   children_y="27%"
                   y="12%"
                   offset_y="2rem"
-                  src="/images/27.svg">
+                  src="/images/27.svg"
+                >
                   <MathBlock>{String.raw`$$
 \begin{align}
 {1 \over 99^2} - {1 \over 99\cdot 100} &=
