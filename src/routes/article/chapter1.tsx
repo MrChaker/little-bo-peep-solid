@@ -58,10 +58,7 @@ is positive. For example,`}
           <MathBlock>{String.raw`$$
 (-2) \times (-2) = 4
 $$`}</MathBlock>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
           <CenterDisplay>{String.raw`and`}</CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 2 \times 2 = 4
@@ -1042,11 +1039,9 @@ a^2 - b^2
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`a difference of squares`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`whence `}
             <i>{String.raw`a difference of squares can always be 
 factored`}</i>

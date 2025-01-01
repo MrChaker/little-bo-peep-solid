@@ -50,14 +50,9 @@ const Article = () => {
             {String.raw`
 A`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`is a “rule” for transforming inputs (usually
+          <VerticalChunk>{String.raw`is a “rule” for transforming inputs (usually
 numbers) into outputs (usually numbers as well).
 One can think of a function as a box with an
 “input tube” and an “output tube”:`}</VerticalChunk>
@@ -125,11 +120,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` processes inputs is`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the output is the square of the input`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`then`}</VerticalChunk>
+          <VerticalChunk>{String.raw`then`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 {f(2) = 4}
@@ -241,11 +234,9 @@ $`}</Math>
             {String.raw` more generally, which
 is actually the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`definition`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`of `}
             <NoBreak>
               <Math>{String.raw`$
@@ -264,11 +255,9 @@ $`}</Math>
             {String.raw`
 A`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`lambda function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`is not a type of function, but a type of
 notation  that enables one to define a function 
 without giving it a name, such as “`}
@@ -509,30 +498,21 @@ something to qualify as a function: `}
             {String.raw` to 
 output`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`one`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`output per (accepted) input, and `}
             <b>{String.raw`(ii)`}</b>
             {String.raw` to return 
 the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`same`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`output each time on the same input. (Sometimes,
+          <VerticalChunk>{String.raw`output each time on the same input. (Sometimes,
 functions are said to be`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`deterministic`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`because of `}
             <b>{String.raw`(ii)`}</b>
             {String.raw`.)`}
@@ -546,11 +526,9 @@ functions are said to be`}</VerticalChunk>
             {String.raw`
 The`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`graph`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`of a function is a visualization device. A point
 on the graph corresponds to an input for which
 the function is defined. The `}
@@ -946,7 +924,6 @@ $`}</Math>
             </NoBreak>
             {String.raw` is a function`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`from `}
             <NoBreak>
@@ -963,11 +940,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`or, which is to say, that`}</VerticalChunk>
+          <VerticalChunk>{String.raw`or, which is to say, that`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \dom f \subseteq \rr
@@ -1068,24 +1041,17 @@ following the pattern above. `}
 As it turns out, the term “graph” just means 
 “set of points in the plane”. So a `}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`function graph`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(as described above) is just one particular 
+          <VerticalChunk>{String.raw`(as described above) is just one particular 
 kind of “graph” among other things that are 
 also called “graphs”, but that are not 
 function graphs.`}</VerticalChunk>
           <VerticalChunk
             indent={true}>{String.raw`The so-called`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`vertical line test`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`observes that a graph [`}
             <NoBreak>
               <Math>{String.raw`$
@@ -1282,17 +1248,12 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is that the former is a`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`while the latter is a`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`while the latter is a`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`value.`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`(Well, provided `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1323,17 +1284,12 @@ f(x)
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is that the former is a`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`while the latter is a`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`while the latter is a`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`value.`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`Amusingly, though, if we add “`}
             <NoBreak>
               <Math>{String.raw`$
@@ -1351,11 +1307,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` then we are back to considering a `}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`and which is namely the function whose rule is: 
 apply `}
             <NoBreak>
@@ -1377,11 +1331,9 @@ $$`}</MathBlock>
             {String.raw`. 
 (You cannot use this equality to`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`define`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -1603,18 +1555,12 @@ table:`}</VerticalChunk>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`There is some confusion about the term`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`affine`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`for which the term`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`for which the term`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`linear`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`is sometimes substituted. But if we say 
+          <VerticalChunk>{String.raw`is sometimes substituted. But if we say 
 “linear” we mean a function of the form `}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -2358,7 +2304,6 @@ written`}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`and read`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`“`}
                 <NoBreak>
@@ -2375,8 +2320,7 @@ $`}</Math>
                 {String.raw`”`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`(mathematicians have to invent a notation for 
 everything—that little circle “`}
                 <NoBreak>
@@ -2554,7 +2498,6 @@ Amusingly—or not—both sides of `}
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`are read`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>
                 {String.raw`“`}
                 <NoBreak>
@@ -2576,8 +2519,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`”`}
               </CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`since “`}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -2826,7 +2768,6 @@ $`}</Math>
               <Image src="/images/svg_ch3_cosine_1000x_worked.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`By the first step, a`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`horizontal dilation by a factor 1000`}</CentralItalicDisplay>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw` `}</VerticalChunk>
@@ -3264,14 +3205,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is known as the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`associativity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of addition; likewise, the fact that`}</VerticalChunk>
+              <VerticalChunk>{String.raw`of addition; likewise, the fact that`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <CustomBlock style="font-size:1.1em">
                   <MathBlock>{String.raw`$$
@@ -3300,12 +3236,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is known as the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`associativity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`of multiplication; and again likewise,
+              <VerticalChunk>{String.raw`of multiplication; and again likewise,
 the fact that`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <CustomBlock style="font-size:1.1em">
@@ -3336,13 +3269,11 @@ $`}</Math>
                 {String.raw` is known 
 as the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`associativity`}</CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>
-                {String.raw``}
+              <CentralItalicDisplay>
+                {String.raw`associativity`}
                 <ImageRight src="/images/svg_ch3_associativity_cloud.svg"></ImageRight>
-              </VerticalChunk>
+              </CentralItalicDisplay>
+              <div class="spacer"></div>
               <VerticalChunk>{String.raw`of function composition.`}</VerticalChunk>
               <div class="spacer"></div>
               <Pause></Pause>
@@ -3451,7 +3382,6 @@ $`}</Math>
                 {String.raw` 
 For example,`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>
                 {String.raw``}
                 <NoBreak>
@@ -3479,11 +3409,7 @@ $`}</Math>
                   src="/images/svg_ch3_composition_icon_die_3.svg"></InlineImage>
                 {String.raw``}
               </CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`because the arrow that originates at`}</VerticalChunk>
+              <VerticalChunk>{String.raw`because the arrow that originates at`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <InlineImage
                   space_right={true}
@@ -3515,7 +3441,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`  and`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>
                 {String.raw`
 `}
@@ -3544,11 +3469,7 @@ $`}</Math>
                   src="/images/svg_ch3_composition_icon_fence.svg"></InlineImage>
                 {String.raw``}
               </CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`because, pursuing that path onwards, the arrow 
+              <VerticalChunk>{String.raw`because, pursuing that path onwards, the arrow 
 that originates at`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <InlineImage
@@ -3772,11 +3693,9 @@ $`}</Math>
 two functions are equal if and only if they 
 are equal`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`as sets of ordered pairs`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`because the set of ordered pairs is the 
 underlying “thing” that the function is. In 
 particular, there is no notion of a “formula” 
@@ -4305,7 +4224,6 @@ $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Three steps, three geometric transformations!
 The third step effects a`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`vertical scaling by `}
                 <NoBreak>
@@ -4316,8 +4234,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`i.e., vertically stretches the graph by
 a factor `}
                 <NoBreak>
@@ -4343,7 +4260,6 @@ $`}</Math>
                 {String.raw` The second step 
 effects a`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`vertical translation by `}
                 <NoBreak>
@@ -4354,8 +4270,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`i.e., lowers the height of the entire
 graph by `}
                 <NoBreak>
@@ -4381,11 +4296,9 @@ $`}</Math>
 The first step, on the other hand, is
 entirely different: it is a`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`preprocessing`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`step, in that we mess with the input (i.e., 
 `}
                 <NoBreak>
@@ -4496,11 +4409,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`leftward`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`translate by `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4516,7 +4427,6 @@ $`}</Math>
                 {String.raw`
 and, as a consequence, the first step effects a`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`leftward translation by `}
                 <NoBreak>
@@ -4527,8 +4437,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of the curve `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4538,7 +4447,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` or`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`horizontal translation by `}
                 <NoBreak>
@@ -4549,8 +4457,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`more elegantly put. (The second formulation
 doesn't assume a particular orientation of the 
 `}
@@ -4568,7 +4475,6 @@ in our opinion.)`}
                   true
                 }>{String.raw`To recapitulate, the three transformations
 are,in order:`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`1. horizontal translation by `}
                 <NoBreak>
@@ -4578,9 +4484,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`2. vertical translation by `}
                 <NoBreak>
@@ -4590,9 +4493,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`3. vertical scaling by `}
                 <NoBreak>
@@ -4602,8 +4502,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
               <div class="spacer"></div>
               <Pause></Pause>
               <VerticalChunk>
@@ -4703,7 +4601,6 @@ $`}</Math>
               {String.raw`
 If you apply these transformations...`}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>
               {String.raw`1. vertical translation by `}
               <NoBreak>
@@ -4713,9 +4610,6 @@ $`}</Math>
               </NoBreak>
               {String.raw``}
             </CentralItalicDisplay>
-            <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>
               {String.raw`2. horizontal translation by `}
               <NoBreak>
@@ -4725,9 +4619,6 @@ $`}</Math>
               </NoBreak>
               {String.raw``}
             </CentralItalicDisplay>
-            <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>
               {String.raw`3. vertical scaling by `}
               <NoBreak>
@@ -4738,8 +4629,7 @@ $`}</Math>
               {String.raw``}
             </CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               {String.raw`...to the curve `}
               <NoBreak>
                 <Math>{String.raw`$
@@ -5089,7 +4979,6 @@ $`}</Math>
                 {String.raw` by the following
 sequence of transformations (cf. Exercise 14):`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`1. vertical translation by `}
                 <NoBreak>
@@ -5099,9 +4988,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`2. horizontal translation by `}
                 <NoBreak>
@@ -5111,9 +4997,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`3. vertical scaling by `}
                 <NoBreak>
@@ -5124,8 +5007,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`(We put the vertical translation first.)
 By Exercise 15, the roots of `}
                 <NoBreak>
@@ -5657,7 +5539,6 @@ that also has a minus sign out front.)`}
                   true
                 }>{String.raw`By direct analogy with Exercise 14, the three
 transformations are thus...`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`1. horizontal translation by `}
                 <NoBreak>
@@ -5667,9 +5548,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`2. vertical translation by `}
                 <NoBreak>
@@ -5679,9 +5557,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`3. vertical scaling by `}
                 <NoBreak>
@@ -5692,10 +5567,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`...or...`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`...or...`}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`1. vertical translation by `}
                 <NoBreak>
@@ -5705,9 +5577,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`2. horizontal translation by `}
                 <NoBreak>
@@ -5717,9 +5586,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`3. vertical scaling by `}
                 <NoBreak>
@@ -5730,11 +5596,7 @@ $`}</Math>
                 {String.raw``}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`...if we put the vertical translation first.`}</VerticalChunk>
+              <VerticalChunk>{String.raw`...if we put the vertical translation first.`}</VerticalChunk>
             </Solution>
           </Exercise>
           <Exercise exercise_number={19}>
@@ -5802,7 +5664,6 @@ $`}</Math>
                 {String.raw` by the following sequence of 
 transformations (cf. Exercise 19):`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`1. vertical translation by `}
                 <NoBreak>
@@ -5812,9 +5673,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`2. horizontal translation by `}
                 <NoBreak>
@@ -5824,9 +5682,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`3. vertical scaling by `}
                 <NoBreak>
@@ -5836,13 +5691,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw``}
               </CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>{String.raw`~`}</CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`On the one hand, if`}</VerticalChunk>
+              <VerticalChunk>{String.raw`On the one hand, if`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 {B^2 - 4AC \over 4A^2} < 0

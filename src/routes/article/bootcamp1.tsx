@@ -152,26 +152,19 @@ $$`}</MathBlock>
 The “API” (a computer science notion,
 roughly meaning`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the interface offered to the outside world`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`as in, for example, the buttons and clock 
+          <VerticalChunk>{String.raw`as in, for example, the buttons and clock 
 display and door handle of a microwave oven) 
 of a set consists of just one functionality: 
 a set can answer questions of the form`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain ... ?`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`and nothing else.
+          <VerticalChunk>{String.raw`and nothing else.
 For example, you could ask a set`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 3?`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`to which `}
             <NoBreak>
               <Math>{String.raw`$
@@ -187,11 +180,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` would answer “no”, or`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`to which `}
             <NoBreak>
               <Math>{String.raw`$
@@ -224,7 +215,6 @@ answer “yes”.`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`means`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -241,9 +231,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`or `}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`or `}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -261,12 +249,7 @@ $`}</Math>
             {String.raw`?”`}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`equivalently. [One can also say`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`equivalently. [One can also say`}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -283,9 +266,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`or `}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`or `}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -302,9 +283,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`or `}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`or `}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -321,9 +300,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`depending on one's mood and/or tastes.]
+          <VerticalChunk>{String.raw`depending on one's mood and/or tastes.]
 As in all of mathematics, any such statement 
 evaluates to either “true” or “false”.
 For example,`}</VerticalChunk>
@@ -401,18 +378,10 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`these sets are actually one and the same, because they both
 answer “yes” to`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 1?`}</CentralItalicDisplay>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw`
-`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and answer “no” to all else. For that matter,`}</VerticalChunk>
+          <VerticalChunk>{String.raw`and answer “no” to all else. For that matter,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large\{1, 1, 2\}
@@ -425,15 +394,10 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`but since both sets answer “yes” to`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 1?`}</CentralItalicDisplay>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw`
-`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`and answer “no” to all else,
+          <VerticalChunk>{String.raw`and answer “no” to all else,
 they are by definition the same.`}</VerticalChunk>
           <VerticalChunk
             indent={
@@ -442,19 +406,12 @@ they are by definition the same.`}</VerticalChunk>
 is redundant: there are several different ways of 
 writing down the same set. They also demonstrate
 that sets do not keep track of the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`order`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`nor of the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`nor of the`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`multiplicity`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`of their elements. Such notions are simply not part
+          <VerticalChunk>{String.raw`of their elements. Such notions are simply not part
 of the “API” of a set.)`}</VerticalChunk>
           <VerticalChunk
             indent={
@@ -463,22 +420,12 @@ of the “API” of a set.)`}</VerticalChunk>
 empty set. Equality follows because both sets 
 answer all questions the same way: they both 
 answer “no” to everything. So there is`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`one`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and only one empty set. Therefore, mathematicians speak of`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`and only one empty set. Therefore, mathematicians speak of`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`empty set—the one and only!`}</VerticalChunk>
+          <VerticalChunk>{String.raw`empty set—the one and only!`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Section>
@@ -779,7 +726,6 @@ abstruse expression of the type`}</VerticalChunk>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`read`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`an element `}
             <NoBreak>
@@ -821,8 +767,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`as “`}
             <NoBreak>
               <Math>{String.raw`$
@@ -977,12 +922,10 @@ $$`}</MathBlock>
             <i>{String.raw`open`}</i>
             {String.raw` interval, by the way) means`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the set of real numbers with no bound below,
 and no bound above`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`which is all of `}
             <NoBreak>
               <Math>{String.raw`$

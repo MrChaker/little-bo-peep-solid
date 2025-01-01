@@ -223,11 +223,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`differentiable`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`if `}
             <NoBreak>
               <Math>{String.raw`$
@@ -258,7 +256,6 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`differentiable on `}
             <NoBreak>
@@ -269,8 +266,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`if `}
             <NoBreak>
               <Math>{String.raw`$
@@ -286,7 +282,6 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`differentiable at `}
             <NoBreak>
@@ -297,8 +292,7 @@ $`}</Math>
             {String.raw``}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`if `}
             <NoBreak>
               <Math>{String.raw`$
@@ -423,29 +417,16 @@ x \ra 0
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`as the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`zero function`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`we can summarize the situation by saying that`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`we can summarize the situation by saying that`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`~ the derivative of a constant function
 is the zero function ~`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`or, more shortly,`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`or, more shortly,`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`~ the derivative of a constant is zero ~`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(the way people usually state it).`}</VerticalChunk>
+          <VerticalChunk>{String.raw`(the way people usually state it).`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Section>
@@ -549,7 +530,6 @@ $`}</Math>
 does not change the slope of anything.)`}
           </VerticalChunk>
           <VerticalChunk indent={true}>{String.raw`In words:`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw`~ the derivative of the affine function 
 `}
@@ -567,17 +547,11 @@ $`}</Math>
             {String.raw` ~`}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Or, flexing our linguistic prowess a tad more:`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`Or, flexing our linguistic prowess a tad more:`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`~ the derivative of an affine function is 
 the coefficient of its linear term ~`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`(The “linear term” of `}
             <NoBreak>
               <Math>{String.raw`$
@@ -832,11 +806,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` as the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`rate of change`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`of `}
             <NoBreak>
               <Math>{String.raw`$
@@ -846,11 +818,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` or, depending, as the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`instantaneous`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`rate of change of `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1025,13 +995,10 @@ $`}</Math>
               {String.raw` by a similar computation;
 a.k.a.:`}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
-            <CentralItalicDisplay>{String.raw`~ the second derivative of an affine function is zero ~`}</CentralItalicDisplay>
-            <div class="spacer"></div>
-            <VerticalChunk>
-              {String.raw``}
+            <CentralItalicDisplay>
+              {String.raw`~ the second derivative of an affine function is zero ~`}
               <ImageLeft src="/images/svg_ch4_adding_statements_cloud.svg"></ImageLeft>
-            </VerticalChunk>
+            </CentralItalicDisplay>
           </Example>
         </Section>
         <div class="spacer"></div>
@@ -1061,30 +1028,18 @@ is positive, the slope is increasing; if the
 second derivative is negative, the slope is 
 decreasing. Moreover, an`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`increasing`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`slope gives curves a “bending upwards” shape, while a`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`slope gives curves a “bending upwards” shape, while a`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`decreasing`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`slope gives curves a “bending downward” shape!`}</VerticalChunk>
+          <VerticalChunk>{String.raw`slope gives curves a “bending downward” shape!`}</VerticalChunk>
           <VerticalChunk
             indent={
               true
             }>{String.raw`To emphasize, if the second derivative is some`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CenterDisplay>{String.raw`LARGE POSITIVE NUMBER`}</CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`then the slope is increasing at that rate, 
 which could result in a sharp bend upwards
 in the graph (unless you are near vertical
@@ -1122,13 +1077,8 @@ matter).`}
             indent={
               true
             }>{String.raw`Likewise, if the second derivative is some`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CenterDisplay>{String.raw`LARGE NEGATIVE NUMBER`}</CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`then the slope is decreasing at [the absolute 
+          <VerticalChunk>{String.raw`then the slope is decreasing at [the absolute 
 value of] that rate, which could result in 
 a sharp bend downwards in the graph (unless
 you are near vertical already, once again,
@@ -1231,18 +1181,12 @@ finally, the second derivative...`}
           <Image src="/images/svg_ch4_position_by_time_der_der.svg"></Image>
           <ImageLeft src="/images/svg_ch4_position_by_time_der_cloud.svg"></ImageLeft>
           <VerticalChunk>{String.raw`...describes`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the rate of change of velocity`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`also known as the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`also known as the`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`acceleration`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`as a function of time.`}</VerticalChunk>
+          <VerticalChunk>{String.raw`as a function of time.`}</VerticalChunk>
           <VerticalChunk indent={true}>
             {String.raw`Note that the units on the `}
             <NoBreak>
@@ -1303,15 +1247,10 @@ is defined as “the increase in velocity per unit
 time”.`}</VerticalChunk>
           <VerticalChunk
             indent={true}>{String.raw`To summarize:`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`~ velocity is the derivative of position ~`}</CentralItalicDisplay>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`~ acceleration is the derivative of velocity ~`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             <StarDivider></StarDivider>
             {String.raw``}
             <b>{String.raw`Note.`}</b>
@@ -1326,27 +1265,15 @@ The exotic units`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`can be read`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`meters per second squared`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`which sounds pretty cryptic, unfortunately, or`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`which sounds pretty cryptic, unfortunately, or`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`meters per second per second`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`which is better, or (slight difference!)`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`which is better, or (slight difference!)`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`meters per second, per second`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`which is even better because it “shows” acceleration
 to be a number of m`}
             <NoBreak>
@@ -1423,11 +1350,9 @@ velocity.`}</VerticalChunk>
 The rate of change of acceleration has a
 name as well, being known as the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`jerk`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`in physics. The units of jerk (or “the”
 units of jerk, since any units of same 
 `}
@@ -1440,11 +1365,9 @@ units of jerk, since any units of same
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`meters per second, per second, per second`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`which is mildly amusing. Basically, the
 jerk specifies how many `}
             <i>{String.raw`meters per second,
@@ -1464,17 +1387,12 @@ rather, when some some `}
 the movement of their train or subway car,
 etc. In fact,`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`constant acceleration`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`and`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`and`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`zero jerk`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`are synonymous, insofar as the everyday 
+          <VerticalChunk>{String.raw`are synonymous, insofar as the everyday 
 world is concerned—which is good, because
 these notions are also equivalent in the
 mathematical realm, what with jerk being
@@ -1553,11 +1471,9 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`of functions already appear in Exercise 18 of
 Chapter 3, also. On the other hand, the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`quotient`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`(i.e., `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1567,11 +1483,9 @@ $`}</Math>
             </NoBreak>
             {String.raw` and`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`difference`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`(i.e., `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1753,14 +1667,9 @@ $`}</Math>
               {String.raw`
 Sketch the`}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>{String.raw`second`}</CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk
-              indent={
-                true
-              }>{String.raw`derivative of the graph in Exercise 1.`}</VerticalChunk>
+            <VerticalChunk>{String.raw`derivative of the graph in Exercise 1.`}</VerticalChunk>
             <div class="spacer"></div>
             <Solution solution_number={2}>
               <VerticalChunk>{String.raw`The second derivative is zero wherever the
@@ -1881,11 +1790,9 @@ Syntatically,`}</VerticalChunk>
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is a`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`sum of functions`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`because `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -2098,27 +2005,19 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is a`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`dimensionless`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`unit. Dimensionless units arise when 
+              <VerticalChunk>{String.raw`unit. Dimensionless units arise when 
 quantities are divided by like quantities.
 Think of dimensionless quantities as “pure 
 fractions” or “pure ratios”. (Percentages
 are dimensionless—in fact the term`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`percentage`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`is synonymous with`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`is synonymous with`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`dimensionless ratio`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`though if you spoke to people about 
 “dimensionless ratios” they would look at 
 you funny. Also percentages are a system of
@@ -2887,11 +2786,9 @@ Where is the rate of change of the function
 below, on the part shown, greatest? And
 where is the`}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>{String.raw`rate of change of the rate of change`}</CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw`greatest?`}</VerticalChunk>
+            <VerticalChunk>{String.raw`greatest?`}</VerticalChunk>
             <div class="spacer"></div>
             <Image src="/images/svg_ch4_narrow_and_less_narrow_bends.svg"></Image>
             <div class="spacer"></div>
@@ -2903,14 +2800,9 @@ of the curve:`}</VerticalChunk>
               <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_steepest.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`On the other hand,`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`the rate of change of the rate of change`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`[a.k.a., second derivative] is the rate
+              <VerticalChunk>{String.raw`[a.k.a., second derivative] is the rate
 of change  of the slope, and that will
 be greatest at the first bend of the curve,
 where the slope is changing at the fastest 
@@ -3024,7 +2916,6 @@ two-dimensional.) `}
                 indent={
                   true
                 }>{String.raw`Here's another point of view: just like`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`position`}</CentralItalicDisplay>
               <div class="spacer"></div>
               <VerticalChunk>
@@ -3036,11 +2927,9 @@ known as the `}
 the way, where “vector” is a term of art
 for “pair of numbers”—so the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`is encoded by a pair of numbers—equally
 known as the `}
                 <i>{String.raw`velocity vector`}</i>
@@ -3048,23 +2937,13 @@ known as the `}
 is no coincidence, because the first
 coordinate of the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`is the derivative of the first coordinate
+              <VerticalChunk>{String.raw`is the derivative of the first coordinate
 of the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`position vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`and likewise for the second coordinate—two
+              <VerticalChunk>{String.raw`and likewise for the second coordinate—two
 coordinates, two rates of change!`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 {String.raw`Geometrically, if we use the `}
@@ -3100,17 +2979,12 @@ from a point on the curve, this arrow
 is tangent to the curve, and the`}
                 <ImageRight src="/images/svg_ch4_cosine_curves_tangent_velocity_cloud.svg"></ImageRight>
               </VerticalChunk>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`length`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`of the arrow is the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`of the arrow is the`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of the particle at that moment in time.
 More precisely, if you let the particle
 drift at the exact same `}
@@ -3173,12 +3047,9 @@ $`}</Math>
                 {String.raw`.
 And speed being`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`distance per unit time`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`the length of the arrow is, therefore,
+              <VerticalChunk>{String.raw`the length of the arrow is, therefore,
 the speed!`}</VerticalChunk>
               <VerticalChunk
                 indent={
@@ -3193,14 +3064,9 @@ circle at the origin):`}</VerticalChunk>
               <Image src="/images/svg_ch4_cosine_curves_unit_circle.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`position vectors`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of the particles are as follows:`}</VerticalChunk>
+              <VerticalChunk>{String.raw`of the particles are as follows:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_cosine_curves_unit_circle_position_vectors.svg"></Image>
               <div class="spacer"></div>
@@ -3216,12 +3082,9 @@ $`}</Math>
                 {String.raw` While
 the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity vectors`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`are as follows:`}</VerticalChunk>
+              <VerticalChunk>{String.raw`are as follows:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_cosine_curves_unit_circle_velocity_vectors.svg"></Image>
               <div class="spacer"></div>
@@ -3287,7 +3150,6 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` for example,`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the velocity in `}
                 <NoBreak>
@@ -3305,11 +3167,8 @@ $`}</Math>
                 {String.raw` of the blue particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`at any given moment in time. This also
+              <VerticalChunk>{String.raw`at any given moment in time. This also
 means:`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the `}
                 <NoBreak>
@@ -3328,8 +3187,7 @@ $`}</Math>
 of the blue particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`...because “velocity in `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -3447,11 +3305,9 @@ figure again:`}
               <Image src="/images/svg_ch4_cosine_curves_cresting.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The derivative is`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`ahead`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of the red particle, so that 
 `}
                 <NoBreak>
@@ -3564,14 +3420,9 @@ anything, and time could be seconds, hours,
 etc—it doesn't matter. However, one should
 be aware that what amounts to`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`unit speed`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`under one set of units is no longer “unit
+              <VerticalChunk>{String.raw`under one set of units is no longer “unit
 speed” under a different set of units—this
 is not a “physical” property of the 
 particles, but, rather, a “mathematical”
@@ -3690,19 +3541,12 @@ convention), instead of 4:`}
               <Image src="/images/svg_ch4_5_euler_position_vectors.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The idea would be that the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of the red particle is the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`of the red particle is the`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`position vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw`of the blue particle, 
+              <VerticalChunk>{String.raw`of the blue particle, 
 likewise for the blue and yellow particles,
 and so on. (Position vectors shown above.)
 For example, at the instant above, the
@@ -3711,11 +3555,8 @@ velocity vectors would be as follows:`}</VerticalChunk>
               <Image src="/images/svg_ch4_5_euler_velocity_vectors.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The velocity vectors are`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>{String.raw`NOT`}</CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`tangent to the unit circle, and so the
+              <VerticalChunk>{String.raw`tangent to the unit circle, and so the
 particles will leave the circle!
 (But that's OK.) In one-tenth a unit
 of time, for example, the particles would
@@ -3885,14 +3726,9 @@ out to infinity.`}
               <VerticalChunk>{String.raw`In any case [take two] the point is that
 whether or not you are one of the wizards,
 you can`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`guess`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`the existence of these five paths—sort 
+              <VerticalChunk>{String.raw`the existence of these five paths—sort 
 of “feel” that they exist! (This is a 
 moral consolation prize, at least.)`}</VerticalChunk>
               <VerticalChunk
@@ -3936,7 +3772,6 @@ $`}</Math>
                 {String.raw` then, to spell
 it all out, since`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the 
 `}
@@ -3957,8 +3792,7 @@ $`}</Math>
                 {String.raw` of the blue particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw``}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -3975,7 +3809,6 @@ $`}</Math>
                 {String.raw` of the blue 
 particle; and since `}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the 
 `}
@@ -3996,8 +3829,7 @@ $`}</Math>
                 {String.raw` of the yellow particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw``}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4014,7 +3846,6 @@ $`}</Math>
                 {String.raw` of the
 yellow particle; and since`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the
 `}
@@ -4035,8 +3866,7 @@ $`}</Math>
                 {String.raw` of the green particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw``}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4053,7 +3883,6 @@ $`}</Math>
                 {String.raw` of the
 green particle; and since`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the 
 `}
@@ -4075,8 +3904,7 @@ $`}</Math>
 particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw``}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4093,7 +3921,6 @@ $`}</Math>
                 {String.raw` of the
 purple particle; and since`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the rate of change of the 
 `}
@@ -4114,8 +3941,7 @@ $`}</Math>
                 {String.raw` of the red particle`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw``}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4295,11 +4121,9 @@ $`}</Math>
 etc) and stipulate the same rules, namely
 that the `}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`(now `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4310,11 +4134,9 @@ $`}</Math>
                 {String.raw` of the red particle
 be the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`position`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`(now `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -4349,14 +4171,12 @@ In fact, our symmetric two-dimensional
 solution is an instance in which you can say
 that`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the whole is simpler than the parts`}</CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>
-                {String.raw``}
+              <CentralItalicDisplay>
+                {String.raw`the whole is simpler than the parts`}
                 <ImageLeft src="/images/svg_ch4_5_euler_hearts_left.svg"></ImageLeft>
                 <ImageRight src="/images/svg_ch4_5_euler_hearts_right.svg"></ImageRight>
-              </VerticalChunk>
+              </CentralItalicDisplay>
+              <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`in that you would never spot the symmetry
 at play, or have a chance of eyeballing
@@ -4712,10 +4532,8 @@ $$`}</MathBlock>
                 indent={true}>{String.raw`In this starting configuration, all
 velocity vectors are exactly tangent to
 the unit circle`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>{String.raw`EXCEPT`}</CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`for particle 14, whose velocity vector, 
 being the position of particle 1, is straight
 out from the circle! So, as we “start time”,
@@ -5703,11 +5521,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` (The`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`differentiability`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -5730,11 +5546,9 @@ $`}</Math>
                 {String.raw` we are tacitly
 assuming—implies`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`continuity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`as well, which implies that `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -5902,27 +5716,18 @@ is known as the `}
             <div class="spacer"></div>
             <Solution solution_number={17}>
               <VerticalChunk>{String.raw`One can say`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`the derivative of the sum is the sum of the
 derivatives`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw`or`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`or`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`the rate of change of the sum is the sum of
 the rates of change`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`or (we made this one up)`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`or (we made this one up)`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`the rate of change of the aggregate is the sum
 of the rates of change of the components`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw`(etc).`}</VerticalChunk>
+              <VerticalChunk>{String.raw`(etc).`}</VerticalChunk>
             </Solution>
           </Exercise>
           <Exercise exercise_number={18}>
@@ -6574,11 +6379,9 @@ at the beginning of the product...`}
               <Image src="/images/svg_ch4_big_product_prefix_outline.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...; here the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`differentiability`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -6593,11 +6396,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` implies the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`continuity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`of `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -6717,11 +6518,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` does not appear here, the tail end`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`stays put`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`where it is, irrespective of the value of `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -8091,11 +7890,9 @@ if its second derivative has this graph (broadly):`}
             <div class="spacer"></div>
             <Solution solution_number={26}>
               <VerticalChunk>{String.raw`As the second derivative is the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`rate of change of the slope`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`places where the second derivative is zero are 
 places where the slope of the function is constant.
 So the function will have a constant slope over
@@ -8121,17 +7918,12 @@ does say “broadly” anyway):`}
               <Image src="/images/svg_ch4_one_long_line_with_purple.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`As`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`constant slope`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw`means`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`means`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`line segment`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={true}>{String.raw`the function will therefore be a 
+              <VerticalChunk>{String.raw`the function will therefore be a 
 line segment, over each of the purple intervals!`}</VerticalChunk>
               <VerticalChunk
                 indent={
@@ -8315,19 +8107,12 @@ $`}</Math>
               <Image src="/images/svg_ch4_one_long_line_solution_sketch_3.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Again, any of these graphs are`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`equally valid`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`solutions, and, for the last time,`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`solutions, and, for the last time,`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`any amount of vertical translation can be introduced`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`(you can move the graphs up and down). So in
 other words we have a “two-parameter family of
 solutions”: one parameter of the solution—free
@@ -8638,7 +8423,6 @@ $`}</Math>
               {String.raw`,
 or, namely, to show that`}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>
               {String.raw`(`}
               <NoBreak>
@@ -8662,9 +8446,7 @@ $`}</Math>
               {String.raw``}
             </CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw`equals`}</VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+            <VerticalChunk>{String.raw`equals`}</VerticalChunk>
             <CentralItalicDisplay>
               {String.raw``}
               <NoBreak>
@@ -8687,8 +8469,7 @@ $`}</Math>
               {String.raw`)`}
             </CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               {String.raw`for all functions `}
               <NoBreak>
                 <Math>{String.raw`$
@@ -8818,22 +8599,12 @@ $`}</Math>
                 {String.raw`
 In words, we have just established the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`associativity of function multiplication`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`while we had previously established the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`while we had previously established the`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`associativity of function composition`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`(if you recall that one) in Exercise 9 of Chapter 
+              <VerticalChunk>{String.raw`(if you recall that one) in Exercise 9 of Chapter 
 3.`}</VerticalChunk>
               <div class="spacer"></div>
               <Pause></Pause>
@@ -8964,14 +8735,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` are both real numbers—the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`commutativity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of real number addition is the fact that`}</VerticalChunk>
+              <VerticalChunk>{String.raw`of real number addition is the fact that`}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 a + b = b + a
@@ -9287,11 +9053,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is the`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`~ total ~`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`amount earned when position `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -9957,12 +9721,9 @@ dimensions of length over time ([L/T]).`}
               {String.raw`
 What is the `}
             </VerticalChunk>
-            <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
             <CentralItalicDisplay>{String.raw`acceleration vector`}</CentralItalicDisplay>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw``}</VerticalChunk>
-            <VerticalChunk
-              indent={true}>{String.raw`(velocity vector of the velocity vector)
+            <VerticalChunk>{String.raw`(velocity vector of the velocity vector)
 of the particle from Exercise 39?`}</VerticalChunk>
             <div class="spacer"></div>
             <Solution solution_number={34}>
@@ -10342,11 +10103,9 @@ $$`}</MathBlock>
 interval is half of the maximum speed within the interval!
 But there are infinitely many intervals, and, therefore,
 it takes`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`at least`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`infinitely much time to make it to `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -10374,14 +10133,9 @@ $`}</Math>
               </VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`A so-called`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`geometric progression`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`is a sequence of numbers in which each number
+              <VerticalChunk>{String.raw`is a sequence of numbers in which each number
 is a fixed multiple of the previous number.
 For example,`}</VerticalChunk>
               <div class="spacer"></div>
@@ -10544,7 +10298,6 @@ $`}</Math>
               <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow_red.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Indeed, for the red graph,`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the slope equals the `}
                 <NoBreak>
@@ -10555,12 +10308,7 @@ $`}</Math>
                 {String.raw`-value`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`(velocity = position), while`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`(velocity = position), while`}</VerticalChunk>
               <CentralItalicDisplay>
                 {String.raw`the slope equals minus the `}
                 <NoBreak>
@@ -10571,8 +10319,7 @@ $`}</Math>
                 {String.raw`-value`}
               </CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`for the blue graph (velocity = position
 of yellow = minus own position). 
 (We forgot to mention that the blue and
@@ -10891,35 +10638,21 @@ they are “stuck” to that line.`}
               </VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`Also note that the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of the black particles, being equal to the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`of the black particles, being equal to the`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`length of the velocity vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`of said particles, is equal to the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`length of the position vector`}</CentralItalicDisplay>
-              <div class="spacer"></div>
-              <VerticalChunk>
-                {String.raw``}
-                <ImageRight src="/images/svg_ch4_circle_at_2_4_position_equals_velocity_cloud.svg"></ImageRight>
-              </VerticalChunk>
               <VerticalChunk>{String.raw`of said particles, is equal to the`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <CentralItalicDisplay>
+                {String.raw`length of the position vector`}
+                <ImageRight src="/images/svg_ch4_circle_at_2_4_position_equals_velocity_cloud.svg"></ImageRight>
+              </CentralItalicDisplay>
+              <div class="spacer"></div>
+              <VerticalChunk>{String.raw`of said particles, is equal to the`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`distance to the origin`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw`of said particles,
+              <VerticalChunk>{String.raw`of said particles,
 since the length of the position vector is
 the distance to the origin.`}</VerticalChunk>
               <VerticalChunk indent={true}>
@@ -12940,13 +12673,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` there ensues`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CenterDisplay>{String.raw`“a [kind of] four-particle explosion”`}</CenterDisplay>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`in the first paragraph of the solution, the word 
+              <VerticalChunk>{String.raw`in the first paragraph of the solution, the word 
 “explosion” might be misleading, implying increased
 distances between the particles over time. This is
 not the case! (But we didn't know any better, back
@@ -12960,35 +12688,18 @@ then.)`}</VerticalChunk>
 As you might already have caught on, but is
 maybe worth emphasizing,`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`is not the same thing as`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`is not the same thing as`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`because, specifically, speed is`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`because, specifically, speed is`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`distance per unit time`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`—a nonnegative number—whereas velocity is`}</VerticalChunk>
-              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <VerticalChunk>{String.raw`—a nonnegative number—whereas velocity is`}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`displacement per unit time`}</CentralItalicDisplay>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk indent={true}>
+              <VerticalChunk>
                 {String.raw`—a vector-valued quantity, or `}
                 <NoBreak>
                   <Math>{String.raw`$

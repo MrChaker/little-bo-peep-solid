@@ -64,13 +64,10 @@ of how “steep” a line is. Here are a few examples
 {y_2 - y_1 \over x_2 - x_1}\qquad\,\,\,\,\,\te{and}\,\,\,\,\,\qquad{y_1 - y_2 \over x_1 - x_2} 
 {y_2 - y_1 \over x_2 - x_1}\qquad\,\,\,\,\,\te{and}\,\,\,\,\,\qquad{y_1 - y_2 \over x_1 - x_2} 
 $$`}</MathBlock>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the number of units the line goes up with each
 unit to the right`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`...assuming that numbers on the `}
             <NoBreak>
               <Math>{String.raw`$
@@ -90,13 +87,10 @@ $`}</Math>
 going right, as is usually the case. One can also
 describe slope as...`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`the amount of vertical change per unit of
 horizontal change`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`...more elegant!`}</VerticalChunk>
+          <VerticalChunk>{String.raw`...more elegant!`}</VerticalChunk>
           <VerticalChunk indent={true}>
             {String.raw`For example, the line below has slope 1, because
 it goes up by `}
@@ -857,7 +851,6 @@ $`}</Math>
             </NoBreak>
             {String.raw` (FYI, this height is called the`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -868,8 +861,7 @@ $`}</Math>
             {String.raw`-intercept`}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`of the line, because `}
             <NoBreak>
               <Math>{String.raw`$
@@ -891,7 +883,6 @@ $`}</Math>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is also sometimes called the`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>
             {String.raw``}
             <NoBreak>
@@ -902,8 +893,7 @@ $`}</Math>
             {String.raw`-intercept`}
           </CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`of the line, so the term “`}
             <NoBreak>
               <Math>{String.raw`$
@@ -1252,28 +1242,16 @@ you had noticed):`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`In fact, the slope is the balloon's upward`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`since velocity is defined as`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`since velocity is defined as`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`displacement over time`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`and this is precisely the form of the ratio “rise
+          <VerticalChunk>{String.raw`and this is precisely the form of the ratio “rise
 over run” for the current graph. (More generally,
 we have`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CenterDisplay>{String.raw`“slope = velocity”`}</CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`whenever the `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1307,11 +1285,9 @@ or km/hour, etc, depends on the exact units involved.)`}
             indent={
               true
             }>{String.raw`Terminology-wise, slopes are often known as`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`rates of change`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`in the presence of units. More particularly, in the
 common case when the `}
             <NoBreak>
@@ -1448,7 +1424,6 @@ $$`}</MathBlock>
             {String.raw`
 Comparing`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CenterDisplay>
             {String.raw`“the `}
             <NoBreak>
@@ -1459,9 +1434,7 @@ $`}</Math>
             </NoBreak>
             {String.raw` has dimensions of time”`}
           </CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`with`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+          <VerticalChunk>{String.raw`with`}</VerticalChunk>
           <CenterDisplay>
             {String.raw`“the `}
             <NoBreak>
@@ -1472,56 +1445,34 @@ $`}</Math>
             </NoBreak>
             {String.raw` has units of seconds”`}
           </CenterDisplay>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`one could easily be tricked into thinking that a
+          <VerticalChunk>{String.raw`one could easily be tricked into thinking that a
 “dimension” is the same thing as a “unit”. In
 fact, dimensions are broader categories, such as,
 namely,`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`time`}</CentralItalicDisplay>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw`
-`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`length`}</CentralItalicDisplay>
-          <div class="spacer"></div>
-          <VerticalChunk>{String.raw`
-`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`mass`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             {String.raw`each of which covers `}
             <i>{String.raw`several different`}</i>
             {String.raw` units.
 For example, in the “time” dimension, one finds
 individual units of the type`}
           </VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`years, seconds, minutes, hours, days`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw`(etc), while in
+          <VerticalChunk>{String.raw`(etc), while in
 the “length” dimension one finds`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`meters, kilometers, millimeters, yards, feet`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(etc), and so on. (You can imagine some of the
+          <VerticalChunk>{String.raw`(etc), and so on. (You can imagine some of the
 units found in the “mass” dimension, e.g..) On
 the other hand, dimensions can be multiplied and
 divided just like units. For example,`}</VerticalChunk>
-          <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`length over time`}</CentralItalicDisplay>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`is another dimension, commonly known as...
+          <VerticalChunk>{String.raw`is another dimension, commonly known as...
 velocity!`}</VerticalChunk>
         </Section>
         <div class="spacer"></div>
