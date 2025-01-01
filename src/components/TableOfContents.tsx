@@ -71,9 +71,19 @@ const TableOfContents = () => {
 const Title = (props: { label: string }) => {
   return (
     <h1 class="slice !text-[2.1rem] !leading-7 font-baskerville-italic mb-5 !justify-between items-center">
-      <img src="/images/title_line.svg" class="!w-[30%] sm:!w-36" />
-      {props.label}
-      <img src="/images/title_line.svg" class="rotate-180 !w-[30%] sm:!w-36" />
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex-1">
+          <img src="/images/title_line.svg" class="w-full" />
+        </div>
+
+        <div class="whitespace-nowrap">
+          <p class="">{props.label}</p>
+        </div>
+
+        <div class="flex-1">
+          <img src="/images/title_line.svg" class="w-full rotate-180" />
+        </div>
+      </div>
     </h1>
   );
 };
