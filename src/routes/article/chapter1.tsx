@@ -735,7 +735,9 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`more generally. This property is known as the
-_distributivity of multiplication over addition_,
+`}
+            <i>{String.raw`distributivity of multiplication over addition`}</i>
+            {String.raw`,
 or `}
             <i>{String.raw`distributivity`}</i>
             {String.raw` for short.`}
@@ -944,8 +946,10 @@ bb = b^2
 $`}</Math>
               {String.raw`.`}
             </NoBreak>
-            {String.raw` (This is the _binomial expansion 
-of degree two_, but such terminology is not very 
+            {String.raw` (This is the `}
+            <i>{String.raw`binomial expansion 
+of degree two`}</i>
+            {String.raw`, but such terminology is not very 
 important at this stage.)`}
           </VerticalChunk>
           <div class="spacer"></div>

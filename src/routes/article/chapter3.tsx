@@ -380,12 +380,16 @@ $$`}</MathBlock>
 (z \ra z^3)(10) + (t \ra t^2)(5) = 1025.
 $$`}</MathBlock>
           <div class="spacer"></div>
-          <VerticalChunk>{String.raw`(Etc.) (Indeed, to emphasize again, the variable 
+          <VerticalChunk>
+            {String.raw`(Etc.) (Indeed, to emphasize again, the variable 
 denoting the input does not matter: it is just a 
 placeholder, and you obtain the same output, and 
-the same _function_, no matter what symbol 
+the same `}
+            <i>{String.raw`function`}</i>
+            {String.raw`, no matter what symbol 
 you choose.*) (\*As long as you don't collide 
-with other existing variable names.)`}</VerticalChunk>
+with other existing variable names.)`}
+          </VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Section>
@@ -500,18 +504,21 @@ example is that functions `}
             {String.raw` be 
 completely arbitrary! In fact, there are only 
 two “ground rules” to respect in order for 
-something to qualify as a function: *(i)* to 
+something to qualify as a function: `}
+            <b>{String.raw`(i)`}</b>
+            {String.raw` to 
 output`}
           </VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`one`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={
-              true
-            }>{String.raw`output per (accepted) input, and *(ii)* to return 
-the`}</VerticalChunk>
+          <VerticalChunk indent={true}>
+            {String.raw`output per (accepted) input, and `}
+            <b>{String.raw`(ii)`}</b>
+            {String.raw` to return 
+the`}
+          </VerticalChunk>
           <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`same`}</CentralItalicDisplay>
           <div class="spacer"></div>
@@ -525,8 +532,11 @@ functions are said to be`}</VerticalChunk>
           <CentralItalicDisplay>{String.raw`deterministic`}</CentralItalicDisplay>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw``}</VerticalChunk>
-          <VerticalChunk
-            indent={true}>{String.raw`because of *(ii)*.)`}</VerticalChunk>
+          <VerticalChunk indent={true}>
+            {String.raw`because of `}
+            <b>{String.raw`(ii)`}</b>
+            {String.raw`.)`}
+          </VerticalChunk>
         </Section>
         <div class="spacer"></div>
         <Section>
@@ -1454,7 +1464,9 @@ x \ra x^3
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`is clearly a _function_, not a `}
+            {String.raw`is clearly a `}
+            <i>{String.raw`function`}</i>
+            {String.raw`, not a `}
             <i>{String.raw`value`}</i>
             {String.raw`. 
 So “`}
@@ -1657,9 +1669,11 @@ $`}</Math>
 $`}</Math>
             </NoBreak>
             {String.raw` are called the `}
-            <i>{String.raw`quadratic_, 
-`}</i>
-            {String.raw`linear_, and `}
+            <i>{String.raw`quadratic`}</i>
+            {String.raw`, 
+`}
+            <i>{String.raw`linear`}</i>
+            {String.raw`, and `}
             <i>{String.raw`constant`}</i>
             {String.raw` terms of the 
 polynomial, respectively. If you see`}
@@ -2372,7 +2386,9 @@ $`}</Math>
                   {String.raw`”`}
                 </NoBreak>
                 {String.raw` is called 
-the _composition operator_,
+the `}
+                <i>{String.raw`composition operator`}</i>
+                {String.raw`,
 by the way) is the function that you get by
 gluing `}
                 <NoBreak>
@@ -2426,7 +2442,9 @@ for further processing. (A certain movie called
 f \circ g
 $`}</Math>
                 </NoBreak>
-                {String.raw` is a _function_, defined as the
+                {String.raw` is a `}
+                <i>{String.raw`function`}</i>
+                {String.raw`, defined as the
 above assemblage of “`}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -2489,7 +2507,9 @@ consists of all `}
 x
 $`}</Math>
                 </NoBreak>
-                {String.raw` such that: *(i)* `}
+                {String.raw` such that: `}
+                <b>{String.raw`(i)`}</b>
+                {String.raw` `}
                 <NoBreak>
                   <Math>{String.raw`$
 g(x)
@@ -2504,7 +2524,9 @@ $`}</Math>
                   {String.raw`”)`}
                 </NoBreak>
                 {String.raw` and,
-*(ii)* `}
+`}
+                <b>{String.raw`(ii)`}</b>
+                {String.raw` `}
                 <NoBreak>
                   <Math>{String.raw`$
 f(g(x))
@@ -2776,8 +2798,12 @@ is a function whose graph looks like so...`}
 {x \ra \cos(1000x)}
 $$`}</MathBlock>
             <div class="spacer"></div>
-            <VerticalChunk>{String.raw`...have a graph that looks like a bunch of very tight 
-bumps, or, instead, very flat _&_ spaced-out bumps??`}</VerticalChunk>
+            <VerticalChunk>
+              {String.raw`...have a graph that looks like a bunch of very tight 
+bumps, or, instead, very flat `}
+              <i>{String.raw`&`}</i>
+              {String.raw` spaced-out bumps??`}
+            </VerticalChunk>
             <div class="spacer"></div>
             <Solution solution_number={6}>
               <VerticalChunk>
@@ -2906,7 +2932,9 @@ $`}</Math>
               </NoBreak>
               {String.raw` are functions); plz
 note that you will have to apply (AA) 
-_twice_, as each application of (AA) 
+`}
+              <i>{String.raw`twice`}</i>
+              {String.raw`, as each application of (AA) 
 makes `}
               <i>{String.raw`one`}</i>
               {String.raw` copy of the symbol “`}
@@ -3322,7 +3350,9 @@ as the`}
                 {String.raw``}
                 <i>{String.raw`Note 4.`}</i>
                 {String.raw`
-One of the best ways to explain _&_ understand
+One of the best ways to explain `}
+                <i>{String.raw`&`}</i>
+                {String.raw` understand
 the associativity of function composition 
 uses this picture:`}
               </VerticalChunk>
@@ -3421,39 +3451,39 @@ $`}</Math>
                 {String.raw` 
 For example,`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <DisplayCenterDisplayed>
-                  <VerticalChunk>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <CenterDisplay>
+                {String.raw``}
+                <NoBreak>
+                  <Math>{String.raw`$
 \Large h(
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
-                  <VerticalChunk indent={true}>
-                    <InlineImage
-                      y_anchor="-3px"
-                      width="1rem"
-                      src="/images/svg_ch3_composition_icon_clubs.svg"></InlineImage>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                </NoBreak>
+                {String.raw``}
+                <InlineImage
+                  y_anchor="-3px"
+                  width="1rem"
+                  src="/images/svg_ch3_composition_icon_clubs.svg"></InlineImage>
+                {String.raw``}
+                <NoBreak>
+                  <Math>{String.raw`$
 \Large{}) =
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
-                  <InlineImage
-                    margin_right=".5rem"
-                    margin_left=".5rem"
-                    y_anchor="-3px"
-                    width="1.25rem"
-                    src="/images/svg_ch3_composition_icon_die_3.svg"></InlineImage>
-                </DisplayCenterDisplayed>
-                {String.raw`because the arrow that originates at `}
-              </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
+                <InlineImage
+                  margin_right=".5rem"
+                  margin_left=".5rem"
+                  y_anchor="-3px"
+                  width="1.25rem"
+                  src="/images/svg_ch3_composition_icon_die_3.svg"></InlineImage>
+                {String.raw``}
+              </CenterDisplay>
+              <VerticalChunk>{String.raw``}</VerticalChunk>
+              <VerticalChunk
+                indent={
+                  true
+                }>{String.raw`because the arrow that originates at`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <InlineImage
                   space_right={true}
@@ -3485,40 +3515,41 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`  and`}
               </VerticalChunk>
-              <VerticalChunk indent={true}>
-                <DisplayCenterDisplayed>
-                  <VerticalChunk>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+              <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
+              <CenterDisplay>
+                {String.raw`
+`}
+                <NoBreak>
+                  <Math>{String.raw`$
 \Large g(h(
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
-                  <VerticalChunk indent={true}>
-                    <InlineImage
-                      y_anchor="-3px"
-                      width="1rem"
-                      src="/images/svg_ch3_composition_icon_clubs.svg"></InlineImage>
-                    {String.raw``}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                </NoBreak>
+                {String.raw``}
+                <InlineImage
+                  y_anchor="-3px"
+                  width="1rem"
+                  src="/images/svg_ch3_composition_icon_clubs.svg"></InlineImage>
+                {String.raw``}
+                <NoBreak>
+                  <Math>{String.raw`$
 \Large{})){}=
 $`}</Math>
-                    </NoBreak>
-                    {String.raw``}
-                  </VerticalChunk>
-                  <InlineImage
-                    space_right={true}
-                    space_left={true}
-                    y_anchor="-4px"
-                    width="2.3rem"
-                    src="/images/svg_ch3_composition_icon_fence.svg"></InlineImage>
-                </DisplayCenterDisplayed>
-                {String.raw`because, pursuing that path onwards, the arrow 
-that originates at`}
-              </VerticalChunk>
+                </NoBreak>
+                {String.raw``}
+                <InlineImage
+                  space_right={true}
+                  space_left={true}
+                  y_anchor="-4px"
+                  width="2.3rem"
+                  src="/images/svg_ch3_composition_icon_fence.svg"></InlineImage>
+                {String.raw``}
+              </CenterDisplay>
+              <VerticalChunk>{String.raw``}</VerticalChunk>
+              <VerticalChunk
+                indent={
+                  true
+                }>{String.raw`because, pursuing that path onwards, the arrow 
+that originates at`}</VerticalChunk>
               <VerticalChunk indent={true}>
                 <InlineImage
                   space_right={true}
@@ -3836,7 +3867,9 @@ $`}</Math>
               {String.raw``}
               <b>{String.raw`Exercise 11.`}</b>
               {String.raw`
-Solve Exercise 10 using algebra _&_
+Solve Exercise 10 using algebra `}
+              <i>{String.raw`&`}</i>
+              {String.raw`
 variables.`}
             </VerticalChunk>
             <div class="spacer"></div>
@@ -3982,7 +4015,9 @@ $`}</Math>
                   {String.raw`,`}
                 </NoBreak>
                 {String.raw` as previously found.
-(But now we know that the solution is _unique_,
+(But now we know that the solution is `}
+                <i>{String.raw`unique`}</i>
+                {String.raw`,
 because the only number `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -5035,7 +5070,9 @@ $`}</Math>
                 {String.raw`.`}
               </VerticalChunk>
               <VerticalChunk indent={true}>
-                {String.raw`To complete the problem _as we were asked_, 
+                {String.raw`To complete the problem `}
+                <i>{String.raw`as we were asked`}</i>
+                {String.raw`, 
 however, we will use the fact that `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -5409,7 +5446,9 @@ are defining the `}
               {String.raw` and `}
               <i>{String.raw`product`}</i>
               {String.raw` of functions,
-instead of their _composition_, namely.)`}
+instead of their `}
+              <i>{String.raw`composition`}</i>
+              {String.raw`, namely.)`}
             </VerticalChunk>
             <VerticalChunk indent={true}>
               {String.raw`Given these definitions, which of the following
@@ -5816,7 +5855,9 @@ $$`}</MathBlock>
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>
-                {String.raw`and the vertical translation is _upward_, 
+                {String.raw`and the vertical translation is `}
+                <i>{String.raw`upward`}</i>
+                {String.raw`, 
 the curve detaches from the `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -5954,7 +5995,9 @@ to the absence of roots in that case, as well.`}
               {String.raw``}
               <b>{String.raw`Exercise 21.`}</b>
               {String.raw`
-Summon your senses of extrapolation _&_ 
+Summon your senses of extrapolation `}
+              <i>{String.raw`&`}</i>
+              {String.raw` 
 imagination to evaluate this expression:`}
             </VerticalChunk>
             <div class="spacer"></div>

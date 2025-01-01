@@ -910,7 +910,9 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`these being, namely, the _third_, `}
+            {String.raw`these being, namely, the `}
+            <i>{String.raw`third`}</i>
+            {String.raw`, `}
             <i>{String.raw`fourth`}</i>
             {String.raw`
 and `}
@@ -1143,10 +1145,12 @@ Curves with increasing (technically:
 `}
             <i>{String.raw`nondecreasing`}</i>
             {String.raw`) slope are called `}
-            <i>{String.raw`convex_, 
+            <i>{String.raw`convex`}</i>
+            {String.raw`, 
 while curves with decreasing (technically: 
-`}</i>
-            {String.raw`nonincreasing_) slope are called `}
+`}
+            <i>{String.raw`nonincreasing`}</i>
+            {String.raw`) slope are called `}
             <i>{String.raw`concave`}</i>
             {String.raw`.
 Viz:`}
@@ -1532,7 +1536,9 @@ $`}</Math>
               {String.raw`”`}
             </NoBreak>
             {String.raw` being known as
-the _composition operator_, while the sum`}
+the `}
+            <i>{String.raw`composition operator`}</i>
+            {String.raw`, while the sum`}
           </VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -2151,7 +2157,9 @@ $`}</Math>
                   {String.raw`”;`}
                 </NoBreak>
                 {String.raw` that is
-the simple _&_ correct way!)`}
+the simple `}
+                <i>{String.raw`&`}</i>
+                {String.raw` correct way!)`}
               </VerticalChunk>
             </Solution>
           </Exercise>
@@ -3032,13 +3040,14 @@ for “pair of numbers”—so the`}
               <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw``}</VerticalChunk>
-              <VerticalChunk
-                indent={
-                  true
-                }>{String.raw`is encoded by a pair of numbers—equally
-known as the _velocity vector_—which
+              <VerticalChunk indent={true}>
+                {String.raw`is encoded by a pair of numbers—equally
+known as the `}
+                <i>{String.raw`velocity vector`}</i>
+                {String.raw`—which
 is no coincidence, because the first
-coordinate of the`}</VerticalChunk>
+coordinate of the`}
+              </VerticalChunk>
               <VerticalChunk indent={true}>{String.raw``}</VerticalChunk>
               <CentralItalicDisplay>{String.raw`velocity vector`}</CentralItalicDisplay>
               <div class="spacer"></div>
@@ -3234,7 +3243,9 @@ the speed is `}
 $`}</Math>
                   {String.raw`,`}
                 </NoBreak>
-                {String.raw` _&_ are brushed
+                {String.raw` `}
+                <i>{String.raw`&`}</i>
+                {String.raw` are brushed
 in the direction of travel.`}
               </VerticalChunk>
               <VerticalChunk indent={true}>
@@ -4738,10 +4749,8 @@ in this figure:`}</VerticalChunk>
                         <VerticalChunk>{String.raw`blue`}</VerticalChunk>
                       </span>
                       {String.raw`, particle 1, the last particle
-to be (noticeably`}
-                      <b>{String.raw`) “peeled off” from
-the circle (`}</b>
-                      {String.raw`all particles are 
+to be (noticeably*) “peeled off” from
+the circle (*all particles are 
 instantaneously peeled off from the 
 circle to `}
                       <i>{String.raw`some`}</i>
@@ -4822,10 +4831,14 @@ that appear in the fraction:`}</VerticalChunk>
 {f(x + h) - f(x)\over h}
 $$`}</MathBlock>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw`is seen to have the form _rise over run_, 
+              <VerticalChunk>
+                {String.raw`is seen to have the form `}
+                <i>{String.raw`rise over run`}</i>
+                {String.raw`, 
 and is more precisely equal to the slope
 of the pale brown line going through the
-point `}</VerticalChunk>
+point `}
+              </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>
                 {String.raw`$$
@@ -5882,7 +5895,9 @@ $`}</Math>
               </NoBreak>
               {String.raw` What English-language
 aphorism can summarize it? (This identity
-is known as the _sum rule_, by the way.)`}
+is known as the `}
+              <i>{String.raw`sum rule`}</i>
+              {String.raw`, by the way.)`}
             </VerticalChunk>
             <div class="spacer"></div>
             <Solution solution_number={17}>
@@ -6280,11 +6295,17 @@ Which is to define`}
 cf = (x \ra c)f
 $$`}</MathBlock>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw`where the right-hand-side is _one function
-times another_, i.e., _a product of functions_,
+              <VerticalChunk>
+                {String.raw`where the right-hand-side is `}
+                <i>{String.raw`one function
+times another`}</i>
+                {String.raw`, i.e., `}
+                <i>{String.raw`a product of functions`}</i>
+                {String.raw`,
 which is something that has ITSELF ALREADY BEEN
 DEFINED. (!) (To wit, the definition of
-function multiplication is that`}</VerticalChunk>
+function multiplication is that`}
+              </VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
 fg = (x \ra f(x)g(x))
@@ -8142,8 +8163,11 @@ to the other:`}
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_one_long_line_negative_area.svg"></Image>
               <div class="spacer"></div>
-              <VerticalChunk>{String.raw`In any case the areas are all the same _in absolute
-value_, meaning that whatever slope is gained as
+              <VerticalChunk>
+                {String.raw`In any case the areas are all the same `}
+                <i>{String.raw`in absolute
+value`}</i>
+                {String.raw`, meaning that whatever slope is gained as
 we pass over a positive bump, the same amount
 is lost again as we pass over a negative bump!
 Thus, the line segments of the original function
@@ -8151,7 +8175,8 @@ will alternate between “low” and “high”
 slopes—as we pass over a positive bump we switch
 from a “low slope” line segment to a “high slope”
 line segment, and vice-versa when we pass over a
-negative bump.`}</VerticalChunk>
+negative bump.`}
+              </VerticalChunk>
               <VerticalChunk indent={true}>{String.raw`Put `}</VerticalChunk>
               <div class="spacer"></div>
               <MathBlock>{String.raw`$$
@@ -13138,84 +13163,88 @@ Express the...`}
               <ul style="margin:1em 0 0 2.5em">
                 <li>
                   <VerticalChunk>
-                    {String.raw`_the associativity of function multiplication is
+                    {String.raw``}
+                    <i>
+                      {String.raw`the associativity of function multiplication is
 the fact that `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 (f \circ g) \circ h = f \circ (g \circ h)
 $`}</Math>
-                    </NoBreak>
-                    {String.raw`
+                      </NoBreak>
+                      {String.raw`
 for all functions `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 f
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 g
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 h
 $`}</Math>
-                    </NoBreak>
-                    {String.raw` such that 
+                      </NoBreak>
+                      {String.raw` such that 
 `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 h : D \ra C
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 g : C \ra B
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 f : B \ra A
 $`}</Math>
-                    </NoBreak>
-                    {String.raw` 
+                      </NoBreak>
+                      {String.raw` 
 [for arbitrary sets `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                      <NoBreak>
+                        <Math>{String.raw`$
 A
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 B
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 C
 $`}</Math>
-                      {String.raw`,`}
-                    </NoBreak>
-                    {String.raw` `}
-                    <NoBreak>
-                      <Math>{String.raw`$
+                        {String.raw`,`}
+                      </NoBreak>
+                      {String.raw` `}
+                      <NoBreak>
+                        <Math>{String.raw`$
 D
 $`}</Math>
-                    </NoBreak>
-                    {String.raw`]_`}
+                      </NoBreak>
+                      {String.raw`]`}
+                    </i>
+                    {String.raw``}
                   </VerticalChunk>
                 </li>
                 <li>

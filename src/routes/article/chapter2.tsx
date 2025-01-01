@@ -196,7 +196,9 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`are the horizontal _&_ the vertical change,
+            {String.raw`are the horizontal `}
+            <i>{String.raw`&`}</i>
+            {String.raw` the vertical change,
 respectively, from `}
             <NoBreak>
               <Math>{String.raw`$

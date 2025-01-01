@@ -197,7 +197,9 @@ $`}</Math>
 10
 $`}</Math>
             </NoBreak>
-            {String.raw` _zero times_,
+            {String.raw` `}
+            <i>{String.raw`zero times`}</i>
+            {String.raw`,
 as per the exponent, which is zero) by the first definition, while`}
           </VerticalChunk>
           <div class="spacer"></div>
@@ -2004,7 +2006,9 @@ that is equal to `}
 8
 $`}</Math>
             </NoBreak>
-            {String.raw` _bits_, with a `}
+            {String.raw` `}
+            <i>{String.raw`bits`}</i>
+            {String.raw`, with a `}
             <i>{String.raw`bit`}</i>
             {String.raw`
 being a single 0/1 value.)`}
@@ -2407,7 +2411,9 @@ $`}</Math>
               {String.raw``}
               <b>{String.raw`Exercise 3.`}</b>
               {String.raw`
-If “万” is Chinese for _ten thousand_, what is “万万” in English?
+If “万” is Chinese for `}
+              <i>{String.raw`ten thousand`}</i>
+              {String.raw`, what is “万万” in English?
 What about “万万万”?`}
             </VerticalChunk>
             <div class="spacer"></div>
@@ -2852,7 +2858,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` billion “millibits” per gigabyte.
 (But to reiterate, there is no such thing 
-as a “millibit”; a bit is a _discrete_—i.e., 
+as a “millibit”; a bit is a `}
+                <i>{String.raw`discrete`}</i>
+                {String.raw`—i.e., 
 indivisible—unit of computer memory.)`}
               </VerticalChunk>
             </Solution>

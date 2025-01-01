@@ -916,7 +916,9 @@ encounter `}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
-            {String.raw`is a _closed interval_, consisting of all (real) numbers 
+            {String.raw`is a `}
+            <i>{String.raw`closed interval`}</i>
+            {String.raw`, consisting of all (real) numbers 
 greater than or equal to `}
             <NoBreak>
               <Math>{String.raw`$
@@ -997,7 +999,9 @@ $`}</Math>
             <b>{String.raw`Sets not encountered in calculus.`}</b>
             {String.raw`
 If you take a more advanced course, you might encounter 
-the so-called _set of extended real numbers_,
+the so-called `}
+            <i>{String.raw`set of extended real numbers`}</i>
+            {String.raw`,
 written`}
           </VerticalChunk>
           <div class="spacer"></div>
