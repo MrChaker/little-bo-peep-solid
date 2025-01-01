@@ -56,7 +56,6 @@
     |> Image
         src images/31.svg
         class mt-6 mb-2
-        cloud_image true
 
     $$ \te{slope} = {\te{vertical change from A to B} \over \te{horizontal change from A to B}} $$
 
