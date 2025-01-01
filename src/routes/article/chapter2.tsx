@@ -161,10 +161,7 @@ $`}</Math>
             {String.raw` on the line:`}
           </VerticalChunk>
           <div class="spacer"></div>
-          <Image
-            cloud_image={true}
-            class="mt-6 mb-2"
-            src="/images/31.svg"></Image>
+          <Image class="mt-6 mb-2" src="/images/31.svg"></Image>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
  \te{slope} = {\te{vertical change from A to B} \over \te{horizontal change from A to B}} 
