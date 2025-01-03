@@ -8,12 +8,10 @@ type SolutionProps = ParentProps &
   };
 
 export const SectionDivider = () => {
-  return (
-    <>
-      <Spacer />
-      <img class="slice" src="/images/section_divider.svg" />
-    </>
-  );
+  return <>
+    <Spacer />
+    <img class="slice" src="/images/section_divider.svg" />
+  </>;
 };
 
 export const StarDivider = () => {

@@ -1,12 +1,14 @@
 import { createSignal, onCleanup, onMount, ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
 import { JSX } from "solid-js/jsx-runtime";
+import { useGlobalContext } from "~/store/StoreProvider";
 
 function LazyImage(
   props: ParentProps & JSX.ImgHTMLAttributes<HTMLImageElement>
 ) {
   const [isVisible, setIsVisible] = createSignal(false);
   let imgRef: HTMLImageElement | undefined;
+  let {store} = useGlobalContext();
 
   onMount(() => {
     const observer = new IntersectionObserver(
@@ -31,6 +33,7 @@ function LazyImage(
       alt={props.alt || ""}
       class={props.class || ""}
       style={props.style || ""}
+      classList={{"bg-red-500": store.show_areas}}
       loading="lazy"
     />
   );
