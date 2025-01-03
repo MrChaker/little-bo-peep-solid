@@ -30,7 +30,12 @@ const VerticalChunk = (
   return (
     <div
       ref={node_ref}
-      class={twJoin("slice", props.indent && "indent-10", props.class)}
+      class={twJoin(
+        "slice", 
+        props.indent && "indent-10",
+        props.class,
+        store.show_areas && "test-bg"
+      )}
       style={props.style}>
       <div>{props.children}</div>
     </div>

@@ -426,3 +426,8 @@ table.first-line tr td:first-child {
 .max-width-screen {
   max-width: calc(100vw - var(--desktop-text-column-padding) * 2);
 }
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}

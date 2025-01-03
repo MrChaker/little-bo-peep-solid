@@ -169,7 +169,7 @@ export const Exercise = (
         class="slice transition-all col-start-2"
         style={{
           height: `${!solution_open() || bot_div() ? GREEN_DIV_HEIGHT : 0}px`,
-          "background-color": true ? "#00440050" : "",
+          "background-color": store.show_areas ? "#00440050" : "",
           "transition-duration": `${solution_open() ? 1000 : 0}ms`,
         }}></div>
     </div>

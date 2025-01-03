@@ -93,10 +93,8 @@ const Panel = () => {
           </div>
           <div id="options">
             <Title label="Options" />
-            <Option
-              label="Section Dividers"
-              state_key="show_section_dividers"
-            />
+            <Option label="Areas" state_key="show_areas" />
+            <Option label="Section Dividers" state_key="show_section_dividers"/>
             <Option label="Squiggles" state_key="show_squiggles" />
           </div>
         </div>
