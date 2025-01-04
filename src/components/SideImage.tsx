@@ -92,7 +92,8 @@ const SideImage = (_props: SideImageProps) => {
     <div
       ref={container_ref}
       style={props.parentStyles}
-      class="side-img absolute -translate-x-1/2 !w-1 !p-0 !ps-0 !pe-0 h-1">
+      class="side-img absolute -translate-x-1/2 !w-1 !p-0 !ps-0 !pe-0 h-1"
+      >
       <div
         style={innerStyles()}
         class="flex shrink-0 transition-opacity duration-300 lg:transition-none lg:opacity-100  z-10 absolute w-max">
@@ -136,6 +137,7 @@ export const ImageRight = ({
   ...props
 }: ImageProps) => {
   const { on_mobile } = useOnMobile();
+
   let line_height = () => (on_mobile() ? 28.0 : 32.5);
   let parent_styles = () => ({
     left: "calc(100% - 0.5rem)",
