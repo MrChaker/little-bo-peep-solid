@@ -33,7 +33,7 @@ const [store, set_store] = createStore<Store>({
   transition_duration: 1000,
 
   show_section_dividers: false,
-  show_areas: false,
+  show_areas: true,
   show_squiggles: true,
 });
 
