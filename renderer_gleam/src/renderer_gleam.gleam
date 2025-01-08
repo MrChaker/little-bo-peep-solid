@@ -255,10 +255,10 @@ pub fn main() {
     add_boilerplate(root() <> "/generated/" <> file, file)
   })
   io.debug("🚀 Render table of contents and chapter panel 🚀")
-  render_articles_list(root() <> "/src/components/test.tsx")
-  // render_articles_list(root() <> "/src/components/Panel.tsx")
+  render_articles_list(root() <> "/src/components/TableOfContents.tsx")
+  render_articles_list(root() <> "/src/components/Panel.tsx")
 
-  io.println("🟢 Parsing done ! Running prettier 🟢")
+  io.println("🚀 Parsing done ! Running Running prettier 🚀")
   case
     shellout.command(
       run: "npx",
@@ -267,9 +267,19 @@ pub fn main() {
       opt: [],
     )
   {
-    Ok(_) -> io.println("🟢 Done 🟢")
+    Ok(_) -> Nil
     Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
   }
+
+  io.println("🚀 Moving generated files to routes 🚀")
+  use generated_files <- result.try(simplifile.read_directory(
+    root() <> "/generated",
+  ))
+  list.each(generated_files, fn(file) {
+    let assert Ok(content) = simplifile.read(root() <> "/generated/" <> file)
+    simplifile.write(root() <> "/src/routes/article/" <> file, content)
+  })
+  io.println("🟢 Done 🟢")
 
   Ok(Nil)
 }
