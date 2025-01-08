@@ -55,11 +55,13 @@ fn add_boilerplate(file_path: String, file_name: String) {
   // remove .tsx
   let capetalized = string.capitalise(file_name)
   let label =
-    "{`" <> add_space_between_word_and_digit(capetalized) <> " ` + props.title}"
+    "{`"
+    <> add_space_between_word_and_digit(capetalized)
+    <> ": ` + props.title}"
   let on_mobile_label =
     "{`"
     <> add_space_between_word_and_digit(capetalized)
-    <> " ` + props.mobile_title}"
+    <> ": ` + props.mobile_title}"
 
   let article_component = "const " <> capetalized <> " = (props: any) => {
             useScrollX();
