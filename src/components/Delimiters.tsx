@@ -3,22 +3,25 @@ import SharedProps from "./types/SharedProps";
 import { twJoin } from "tailwind-merge";
 import { useGlobalContext } from "~/store/StoreProvider";
 
-export const CenterDisplay = (
-  props: ParentProps & SharedProps & { indent?: boolean },
+export const CentralDisplay = (
+  props: ParentProps & SharedProps & { indent?: boolean }
 ) => {
-  let {store} = useGlobalContext();
+  let { store } = useGlobalContext();
   return (
     <div
       class={twJoin(props.class, "slice", "text-center", "block")}
-      classList={{"indent-10": props.indent, "bg-[#ebe3a0b0]": store.show_areas}}
+      classList={{
+        "indent-10": props.indent,
+        "bg-[#ebe3a0b0]": store.show_areas,
+      }}
       style={props.style}>
       <div>{props.children}</div>
     </div>
   );
 };
 
-export const CentralItalicDisplay = (
-  props: ParentProps & SharedProps & { indent?: boolean },
+export const CentralDisplayItalic = (
+  props: ParentProps & SharedProps & { indent?: boolean }
 ) => {
   return (
     <div
