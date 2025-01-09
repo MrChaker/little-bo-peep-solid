@@ -19,7 +19,7 @@ const ArticleTitle = (
   const { on_mobile } = useOnMobile();
 
   return (
-    <div class="slice pt-14">
+    <div class="slice">
       <h1
         class="text-3xl sm:text-4xl py-4"
         style={`margin-top: ${

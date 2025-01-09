@@ -39,58 +39,14 @@ const Panel = () => {
         }}
         class="select-none overscroll-none absolute right-0 w-[16rem] sm:w-[22rem] z-40 bg-stone-100 overflow-scroll translate-y-0 sm:translate-y-[-1px]">
         <div class="select-none scrollbar-hidden sm:h-full pt-[0.6em] px-[1em] overflow-y-hidden [&ul]:mb-[8px] [&ul]:p-0">
-          <div id="chapter">
-            {" "}
-            <Title label="Chapters" />
-            <ItemsList>
-              <MenuItem
-                article_type="1"
-                label="A Few Refreshers"
-                on_mobile=""
-                href="chapter1"
-              />
-
-              <MenuItem
-                article_type="2"
-                label="Slopes"
-                on_mobile=""
-                href="chapter2"
-              />
-
-              <MenuItem
-                article_type="3"
-                label="Functions"
-                on_mobile=""
-                href="chapter3"
-              />
-
-              <MenuItem
-                article_type="4"
-                label="Derivatives"
-                on_mobile=""
-                href="chapter4"
-              />
-            </ItemsList>
-          </div>
-          <div id="bootcamp">
-            {" "}
-            <Title label="Bootcamps" />
-            <ItemsList>
-              <MenuItem
-                article_type="1"
-                label="Sets"
-                on_mobile=""
-                href="bootcamp1"
-              />
-
-              <MenuItem
-                article_type="2"
-                label="Powers of 10"
-                on_mobile=""
-                href="bootcamp2"
-              />
-            </ItemsList>
-          </div>
+          <div id="chapter"><Title label="Chapter" />
+ <ItemsList>
+<MenuItem article_type="1" label="A Few Refreshers" on_mobile="" href="chapter1"/><MenuItem article_type="2" label="Slopes" on_mobile="" href="chapter2"/><MenuItem article_type="3" label="Functions" on_mobile="" href="chapter3"/><MenuItem article_type="4" label="Derivatives" on_mobile="" href="chapter4"/></ItemsList>
+</div>
+          <div id="bootcamp"><Title label="Bootcamp" />
+ <ItemsList>
+<MenuItem article_type="1" label="Sets" on_mobile="" href="bootcamp1"/><MenuItem article_type="2" label="Powers of 10" on_mobile="" href="bootcamp2"/></ItemsList>
+</div>
           <div id="options">
             <Title label="Options" />
             <Option label="Areas" state_key="show_areas" />
