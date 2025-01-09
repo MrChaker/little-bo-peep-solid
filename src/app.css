@@ -55,10 +55,11 @@ i {
 }
 
 /* Slice */
-.slice {
+.slice-v1 {
   position: relative;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
   font-size: 1.25rem; /* Equivalent to text-xl */
   line-height: 1.5em;
@@ -68,13 +69,16 @@ i {
   margin-inline: auto;
 }
 
-.slice > * {
+.slice-v1 > * {
   width: min(var(--desktop-text-column-width), 100%);
   /* padding-inline: var(--desktop-text-column-padding); */
 }
+.children-relative > * {
+  position: relative;
+}
 
 @media (max-width: 520px) {
-  .slice {
+  .slice-v1 {
     width: 100%;
   }
 }
@@ -392,14 +396,10 @@ table.first-line tr td:first-child {
 .test-bg {
   background-image: linear-gradient(
     to right,
-    transparent 0%,
-    transparent 16px,
     #d1d1f7 16px,
     #d1d1f7 50%,
     #e6bbff 50%,
-    #e6bbff calc(100% - 16px),
-    transparent calc(100% - 16px),
-    transparent 100%
+    #e6bbff calc(100% - 16px)
   );
 }
 
