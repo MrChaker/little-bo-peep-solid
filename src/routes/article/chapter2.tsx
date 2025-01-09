@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Chapter2 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -64,8 +62,9 @@ of how “steep” a line is. Here are a few examples
 {y_2 - y_1 \over x_2 - x_1}\qquad\,\,\,\,\,\te{and}\,\,\,\,\,\qquad{y_1 - y_2 \over x_1 - x_2} 
 {y_2 - y_1 \over x_2 - x_1}\qquad\,\,\,\,\,\te{and}\,\,\,\,\,\qquad{y_1 - y_2 \over x_1 - x_2} 
 $$`}</MathBlock>
-          <CentralItalicDisplay>{String.raw`the number of units the line goes up with each
-unit to the right`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the number of units the line goes up with each
+unit to the right`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`...assuming that numbers on the `}
@@ -87,8 +86,9 @@ $`}</Math>
 going right, as is usually the case. One can also
 describe slope as...`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the amount of vertical change per unit of
-horizontal change`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the amount of vertical change per unit of
+horizontal change`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`...more elegant!`}</VerticalChunk>
           <VerticalChunk indent={true}>
@@ -851,7 +851,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` (FYI, this height is called the`}
           </VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -859,7 +860,7 @@ y
 $`}</Math>
             </NoBreak>
             {String.raw`-intercept`}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`of the line, because `}
@@ -883,7 +884,8 @@ $`}</Math>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is also sometimes called the`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -891,7 +893,7 @@ y
 $`}</Math>
             </NoBreak>
             {String.raw`-intercept`}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`of the line, so the term “`}
@@ -1242,15 +1244,19 @@ you had noticed):`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`In fact, the slope is the balloon's upward`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`velocity`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`since velocity is defined as`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`displacement over time`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`displacement over time`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and this is precisely the form of the ratio “rise
 over run” for the current graph. (More generally,
 we have`}</VerticalChunk>
-          <CenterDisplay>{String.raw`“slope = velocity”`}</CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>{String.raw`“slope = velocity”`}</CentralDisplay>
+          <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`whenever the `}
             <NoBreak>
@@ -1285,7 +1291,8 @@ or km/hour, etc, depends on the exact units involved.)`}
             indent={
               true
             }>{String.raw`Terminology-wise, slopes are often known as`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`rates of change`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`rates of change`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`in the presence of units. More particularly, in the
@@ -1424,7 +1431,8 @@ $$`}</MathBlock>
             {String.raw`
 Comparing`}
           </VerticalChunk>
-          <CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>
             {String.raw`“the `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1433,9 +1441,11 @@ $`}</Math>
               {String.raw`-axis`}
             </NoBreak>
             {String.raw` has dimensions of time”`}
-          </CenterDisplay>
+          </CentralDisplay>
+          <div class="spacer"></div>
           <VerticalChunk>{String.raw`with`}</VerticalChunk>
-          <CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>
             {String.raw`“the `}
             <NoBreak>
               <Math>{String.raw`$
@@ -1444,14 +1454,18 @@ $`}</Math>
               {String.raw`-axis`}
             </NoBreak>
             {String.raw` has units of seconds”`}
-          </CenterDisplay>
+          </CentralDisplay>
+          <div class="spacer"></div>
           <VerticalChunk>{String.raw`one could easily be tricked into thinking that a
 “dimension” is the same thing as a “unit”. In
 fact, dimensions are broader categories, such as,
 namely,`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`time`}</CentralItalicDisplay>
-          <CentralItalicDisplay>{String.raw`length`}</CentralItalicDisplay>
-          <CentralItalicDisplay>{String.raw`mass`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`time`}</CentralDisplayItalic>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`length`}</CentralDisplayItalic>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`mass`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`each of which covers `}
@@ -1460,17 +1474,20 @@ namely,`}</VerticalChunk>
 For example, in the “time” dimension, one finds
 individual units of the type`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`years, seconds, minutes, hours, days`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`years, seconds, minutes, hours, days`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`(etc), while in
 the “length” dimension one finds`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`meters, kilometers, millimeters, yards, feet`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`meters, kilometers, millimeters, yards, feet`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`(etc), and so on. (You can imagine some of the
 units found in the “mass” dimension, e.g..) On
 the other hand, dimensions can be multiplied and
 divided just like units. For example,`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`length over time`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`length over time`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is another dimension, commonly known as...
 velocity!`}</VerticalChunk>
@@ -1502,32 +1519,18 @@ $`}</Math>
               <VerticalChunk>{String.raw`This is true, as illustrated by the following pair of lines:`}</VerticalChunk>
               <div class="spacer"></div>
               <Image class="relative w-fit" src="/images/55.svg">
-                <ImageRight src="/images/56.svg">
-                  <VerticalChunk>
-                    {String.raw`offset`}
-                    <i>{String.raw`y 5rem
-offset`}</i>
-                    {String.raw`x -1.3rem
-use`}
-                    <i>{String.raw`squiggle`}</i>
-                    {String.raw`on_mobile false`}
-                  </VerticalChunk>
-                </ImageRight>
-                <ImageLeft src="/images/57.svg">
-                  <VerticalChunk>
-                    {String.raw`offset`}
-                    <i>{String.raw`x -7rem
-offset`}</i>
-                    {String.raw`y 0.5rem
-y bottom
-img`}
-                    <i>{String.raw`position bottom
-use`}</i>
-                    {String.raw`squiggle`}
-                    <i>{String.raw`on`}</i>
-                    {String.raw`mobile false`}
-                  </VerticalChunk>
-                </ImageLeft>
+                <ImageRight
+                  use_squiggle_on_mobile={false}
+                  offset_x="-1.3rem"
+                  offset_y="5rem"
+                  src="/images/56.svg"></ImageRight>
+                <ImageLeft
+                  use_squiggle_on_mobile={false}
+                  img_position="bottom"
+                  y="bottom"
+                  offset_y="0.5rem"
+                  offset_x="-7rem"
+                  src="/images/57.svg"></ImageLeft>
               </Image>
               <div class="spacer"></div>
               <VerticalChunk>
@@ -1573,32 +1576,18 @@ $`}</Math>
               </VerticalChunk>
               <div class="spacer"></div>
               <Image class="relative w-fit" src="/images/58.svg">
-                <ImageRight src="/images/59.svg">
-                  <VerticalChunk>
-                    {String.raw`offset`}
-                    <i>{String.raw`y 7.2rem
-offset`}</i>
-                    {String.raw`x -1.2rem
-use`}
-                    <i>{String.raw`squiggle`}</i>
-                    {String.raw`on_mobile false`}
-                  </VerticalChunk>
-                </ImageRight>
-                <ImageLeft src="/images/60.svg">
-                  <VerticalChunk>
-                    {String.raw`offset`}
-                    <i>{String.raw`x -5rem
-offset`}</i>
-                    {String.raw`y 0.5rem
-y bottom
-img`}
-                    <i>{String.raw`position bottom
-use`}</i>
-                    {String.raw`squiggle`}
-                    <i>{String.raw`on`}</i>
-                    {String.raw`mobile false`}
-                  </VerticalChunk>
-                </ImageLeft>
+                <ImageRight
+                  use_squiggle_on_mobile={false}
+                  offset_x="-1.2rem"
+                  offset_y="7.2rem"
+                  src="/images/59.svg"></ImageRight>
+                <ImageLeft
+                  use_squiggle_on_mobile={false}
+                  img_position="bottom"
+                  y="bottom"
+                  offset_y="0.5rem"
+                  offset_x="-5rem"
+                  src="/images/60.svg"></ImageLeft>
               </Image>
               <div class="spacer"></div>
               <VerticalChunk>

@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Chapter1 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -58,7 +56,8 @@ is positive. For example,`}
           <MathBlock>{String.raw`$$
 (-2) \times (-2) = 4
 $$`}</MathBlock>
-          <CenterDisplay>{String.raw`and`}</CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>{String.raw`and`}</CentralDisplay>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 2 \times 2 = 4
@@ -1039,7 +1038,8 @@ a^2 - b^2
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`a difference of squares`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`a difference of squares`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`whence `}

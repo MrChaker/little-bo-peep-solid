@@ -70,7 +70,7 @@ const Swticher = (props: SwitcherProps) => {
   let selected_exo = () => store.selected_exo;
 
   return (
-    <div class="slice !text-xl gap-2 !w-fit mt-[2px]">
+    <div class="flex justify-center !text-xl gap-2 mt-[2px]">
       <svg
         width="43"
         height="43"
