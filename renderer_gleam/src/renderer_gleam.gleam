@@ -61,7 +61,7 @@ fn add_boilerplate(file_path: String, file_name: String) {
   let on_mobile_label =
     "{`"
     <> add_space_between_word_and_digit(capetalized)
-    <> ": ` + props.mobile_title}"
+    <> ": ` + (props.mobile_title || props.title)}"
 
   let article_component = "const " <> capetalized <> " = (props: any) => {
             useScrollX();
@@ -150,7 +150,7 @@ fn get_article_titles(path: String) {
 
   let mobile_title =
     list.find_map(lines, find_title(_, "mobile_title"))
-    |> result.unwrap("")
+    |> result.unwrap(title)
 
   Ok(#(title, mobile_title))
 }
