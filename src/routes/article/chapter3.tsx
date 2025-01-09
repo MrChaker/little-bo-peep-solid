@@ -30,7 +30,7 @@ const Chapter3 = (props: any) => {
     <>
       <ArticleTitle
         label={`Chapter 3: ` + props.title}
-        on_mobile_label={`Chapter 3: ` + props.mobile_title}
+        on_mobile_label={`Chapter 3: ` + (props.mobile_title || props.title)}
       />
       {props.children}
     </>

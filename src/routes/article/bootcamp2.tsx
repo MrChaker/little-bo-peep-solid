@@ -30,7 +30,7 @@ const Bootcamp2 = (props: any) => {
     <>
       <ArticleTitle
         label={`Bootcamp 2: ` + props.title}
-        on_mobile_label={`Bootcamp 2: ` + props.mobile_title}
+        on_mobile_label={`Bootcamp 2: ` + (props.mobile_title || props.title)}
       />
       {props.children}
     </>

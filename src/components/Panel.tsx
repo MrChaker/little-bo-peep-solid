@@ -41,11 +41,11 @@ const Panel = () => {
         <div class="select-none scrollbar-hidden sm:h-full pt-[0.6em] px-[1em] overflow-y-hidden [&ul]:mb-[8px] [&ul]:p-0">
           <div id="chapter"><Title label="Chapter" />
  <ItemsList>
-<MenuItem article_type="1" label="A Few Refreshers" on_mobile="" href="chapter1"/><MenuItem article_type="2" label="Slopes" on_mobile="" href="chapter2"/><MenuItem article_type="3" label="Functions" on_mobile="" href="chapter3"/><MenuItem article_type="4" label="Derivatives" on_mobile="" href="chapter4"/></ItemsList>
+<MenuItem article_type="1" label="A Few Refreshers" on_mobile="A Few Refreshers" href="chapter1"/><MenuItem article_type="2" label="Slopes" on_mobile="Slopes" href="chapter2"/><MenuItem article_type="3" label="Functions" on_mobile="Functions" href="chapter3"/><MenuItem article_type="4" label="Derivatives" on_mobile="Derivatives" href="chapter4"/></ItemsList>
 </div>
           <div id="bootcamp"><Title label="Bootcamp" />
  <ItemsList>
-<MenuItem article_type="1" label="Sets" on_mobile="" href="bootcamp1"/><MenuItem article_type="2" label="Powers of 10" on_mobile="" href="bootcamp2"/></ItemsList>
+<MenuItem article_type="1" label="Sets" on_mobile="Sets" href="bootcamp1"/><MenuItem article_type="2" label="Powers of 10" on_mobile="Powers of 10" href="bootcamp2"/></ItemsList>
 </div>
           <div id="options">
             <Title label="Options" />
