@@ -431,3 +431,7 @@ table.first-line tr td:first-child {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
+
+.bg-lavender {
+  background-color: rgba(0, 0, 255, 0.05);
+}
