@@ -13,7 +13,7 @@ const Nav = () => {
       </nav>
       <div
         style={{ top: `${HAMBURGER_MENU_HEIGHT - 1.0}px` }}
-        class="h-0 border-b left-[-1500px] w-[4400px] fixed sm:absolute z-50"></div>
+        class="h-0 border-b left-[-1500px] !w-[4400px] fixed sm:absolute z-50"></div>
     </>
   );
 };
