@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Chapter4 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -223,7 +221,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`differentiable`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`differentiable`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`if `}
@@ -256,7 +255,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`differentiable on `}
             <NoBreak>
               <Math>{String.raw`$
@@ -264,7 +264,7 @@ $`}</Math>
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`if `}
@@ -282,7 +282,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` is`}
           </VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`differentiable at `}
             <NoBreak>
               <Math>{String.raw`$
@@ -290,7 +291,7 @@ a
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`if `}
@@ -417,14 +418,17 @@ x \ra 0
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`as the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`zero function`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`zero function`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`we can summarize the situation by saying that`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`~ the derivative of a constant function
-is the zero function ~`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`~ the derivative of a constant function
+is the zero function ~`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or, more shortly,`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`~ the derivative of a constant is zero ~`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`~ the derivative of a constant is zero ~`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`(the way people usually state it).`}</VerticalChunk>
         </Section>
@@ -530,7 +534,8 @@ $`}</Math>
 does not change the slope of anything.)`}
           </VerticalChunk>
           <VerticalChunk indent={true}>{String.raw`In words:`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`~ the derivative of the affine function 
 `}
             <NoBreak>
@@ -545,11 +550,12 @@ y = a
 $`}</Math>
             </NoBreak>
             {String.raw` ~`}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`Or, flexing our linguistic prowess a tad more:`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`~ the derivative of an affine function is 
-the coefficient of its linear term ~`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`~ the derivative of an affine function is 
+the coefficient of its linear term ~`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`(The “linear term” of `}
@@ -806,7 +812,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` as the`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`rate of change`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`rate of change`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`of `}
@@ -818,7 +825,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` or, depending, as the`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`instantaneous`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`instantaneous`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`rate of change of `}
@@ -995,10 +1003,11 @@ $`}</Math>
               {String.raw` by a similar computation;
 a.k.a.:`}
             </VerticalChunk>
-            <CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>
               {String.raw`~ the second derivative of an affine function is zero ~`}
               <ImageLeft src="/images/svg_ch4_adding_statements_cloud.svg"></ImageLeft>
-            </CentralItalicDisplay>
+            </CentralDisplayItalic>
           </Example>
         </Section>
         <div class="spacer"></div>
@@ -1028,17 +1037,21 @@ is positive, the slope is increasing; if the
 second derivative is negative, the slope is 
 decreasing. Moreover, an`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`increasing`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`increasing`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`slope gives curves a “bending upwards” shape, while a`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`decreasing`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`decreasing`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`slope gives curves a “bending downward” shape!`}</VerticalChunk>
           <VerticalChunk
             indent={
               true
             }>{String.raw`To emphasize, if the second derivative is some`}</VerticalChunk>
-          <CenterDisplay>{String.raw`LARGE POSITIVE NUMBER`}</CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>{String.raw`LARGE POSITIVE NUMBER`}</CentralDisplay>
+          <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`then the slope is increasing at that rate, 
 which could result in a sharp bend upwards
@@ -1077,7 +1090,9 @@ matter).`}
             indent={
               true
             }>{String.raw`Likewise, if the second derivative is some`}</VerticalChunk>
-          <CenterDisplay>{String.raw`LARGE NEGATIVE NUMBER`}</CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>{String.raw`LARGE NEGATIVE NUMBER`}</CentralDisplay>
+          <div class="spacer"></div>
           <VerticalChunk>{String.raw`then the slope is decreasing at [the absolute 
 value of] that rate, which could result in 
 a sharp bend downwards in the graph (unless
@@ -1181,10 +1196,12 @@ finally, the second derivative...`}
           <Image src="/images/svg_ch4_position_by_time_der_der.svg"></Image>
           <ImageLeft src="/images/svg_ch4_position_by_time_der_cloud.svg"></ImageLeft>
           <VerticalChunk>{String.raw`...describes`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the rate of change of velocity`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the rate of change of velocity`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`also known as the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`acceleration`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`acceleration`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`as a function of time.`}</VerticalChunk>
           <VerticalChunk indent={true}>
@@ -1247,8 +1264,10 @@ is defined as “the increase in velocity per unit
 time”.`}</VerticalChunk>
           <VerticalChunk
             indent={true}>{String.raw`To summarize:`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`~ velocity is the derivative of position ~`}</CentralItalicDisplay>
-          <CentralItalicDisplay>{String.raw`~ acceleration is the derivative of velocity ~`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`~ velocity is the derivative of position ~`}</CentralDisplayItalic>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`~ acceleration is the derivative of velocity ~`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             <StarDivider></StarDivider>
@@ -1265,13 +1284,16 @@ The exotic units`}
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`can be read`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`meters per second squared`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`meters per second squared`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`which sounds pretty cryptic, unfortunately, or`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`meters per second per second`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`meters per second per second`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`which is better, or (slight difference!)`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`meters per second, per second`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`meters per second, per second`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`which is even better because it “shows” acceleration
@@ -1350,7 +1372,8 @@ velocity.`}</VerticalChunk>
 The rate of change of acceleration has a
 name as well, being known as the`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`jerk`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`jerk`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`in physics. The units of jerk (or “the”
@@ -1365,7 +1388,8 @@ units of jerk, since any units of same
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`meters per second, per second, per second`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`meters per second, per second, per second`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`which is mildly amusing. Basically, the
@@ -1387,10 +1411,12 @@ rather, when some some `}
 the movement of their train or subway car,
 etc. In fact,`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`constant acceleration`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`constant acceleration`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`zero jerk`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`zero jerk`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`are synonymous, insofar as the everyday 
 world is concerned—which is good, because
@@ -1471,7 +1497,8 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`of functions already appear in Exercise 18 of
 Chapter 3, also. On the other hand, the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`quotient`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`quotient`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`(i.e., `}
@@ -1483,7 +1510,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` and`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`difference`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`difference`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`(i.e., `}
@@ -1667,7 +1695,8 @@ $`}</Math>
               {String.raw`
 Sketch the`}
             </VerticalChunk>
-            <CentralItalicDisplay>{String.raw`second`}</CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>{String.raw`second`}</CentralDisplayItalic>
             <div class="spacer"></div>
             <VerticalChunk>{String.raw`derivative of the graph in Exercise 1.`}</VerticalChunk>
             <div class="spacer"></div>
@@ -1790,7 +1819,8 @@ Syntatically,`}</VerticalChunk>
 $$`}</MathBlock>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is a`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`sum of functions`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`sum of functions`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`because `}
@@ -2005,17 +2035,20 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is a`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`dimensionless`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`dimensionless`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`unit. Dimensionless units arise when 
 quantities are divided by like quantities.
 Think of dimensionless quantities as “pure 
 fractions” or “pure ratios”. (Percentages
 are dimensionless—in fact the term`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`percentage`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`percentage`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is synonymous with`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`dimensionless ratio`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`dimensionless ratio`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`though if you spoke to people about 
@@ -2786,7 +2819,8 @@ Where is the rate of change of the function
 below, on the part shown, greatest? And
 where is the`}
             </VerticalChunk>
-            <CentralItalicDisplay>{String.raw`rate of change of the rate of change`}</CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>{String.raw`rate of change of the rate of change`}</CentralDisplayItalic>
             <div class="spacer"></div>
             <VerticalChunk>{String.raw`greatest?`}</VerticalChunk>
             <div class="spacer"></div>
@@ -2800,7 +2834,8 @@ of the curve:`}</VerticalChunk>
               <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_steepest.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`On the other hand,`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the rate of change of the rate of change`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`the rate of change of the rate of change`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`[a.k.a., second derivative] is the rate
 of change  of the slope, and that will
@@ -2916,7 +2951,8 @@ two-dimensional.) `}
                 indent={
                   true
                 }>{String.raw`Here's another point of view: just like`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`position`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`position`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`
@@ -2927,7 +2963,8 @@ known as the `}
 the way, where “vector” is a term of art
 for “pair of numbers”—so the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`is encoded by a pair of numbers—equally
@@ -2937,11 +2974,13 @@ known as the `}
 is no coincidence, because the first
 coordinate of the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity vector`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity vector`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is the derivative of the first coordinate
 of the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`position vector`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`position vector`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`and likewise for the second coordinate—two
 coordinates, two rates of change!`}</VerticalChunk>
@@ -2979,10 +3018,12 @@ from a point on the curve, this arrow
 is tangent to the curve, and the`}
                 <ImageRight src="/images/svg_ch4_cosine_curves_tangent_velocity_cloud.svg"></ImageRight>
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`length`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`length`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of the arrow is the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`speed`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`of the particle at that moment in time.
@@ -3047,7 +3088,8 @@ $`}</Math>
                 {String.raw`.
 And speed being`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`distance per unit time`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`distance per unit time`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`the length of the arrow is, therefore,
 the speed!`}</VerticalChunk>
@@ -3064,7 +3106,8 @@ circle at the origin):`}</VerticalChunk>
               <Image src="/images/svg_ch4_cosine_curves_unit_circle.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`position vectors`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`position vectors`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of the particles are as follows:`}</VerticalChunk>
               <div class="spacer"></div>
@@ -3082,7 +3125,8 @@ $`}</Math>
                 {String.raw` While
 the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity vectors`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity vectors`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`are as follows:`}</VerticalChunk>
               <div class="spacer"></div>
@@ -3150,7 +3194,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` for example,`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the velocity in `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -3165,11 +3210,12 @@ x
 $`}</Math>
                 </NoBreak>
                 {String.raw` of the blue particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`at any given moment in time. This also
 means:`}</VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -3185,7 +3231,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw`-coordinate
 of the blue particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`...because “velocity in `}
@@ -3305,7 +3351,8 @@ figure again:`}
               <Image src="/images/svg_ch4_cosine_curves_cresting.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The derivative is`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`ahead`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`ahead`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`of the red particle, so that 
@@ -3420,7 +3467,8 @@ anything, and time could be seconds, hours,
 etc—it doesn't matter. However, one should
 be aware that what amounts to`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`unit speed`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`unit speed`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`under one set of units is no longer “unit
 speed” under a different set of units—this
@@ -3541,10 +3589,12 @@ convention), instead of 4:`}
               <Image src="/images/svg_ch4_5_euler_position_vectors.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The idea would be that the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity vector`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity vector`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of the red particle is the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`position vector`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`position vector`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of the blue particle, 
 likewise for the blue and yellow particles,
@@ -3555,7 +3605,9 @@ velocity vectors would be as follows:`}</VerticalChunk>
               <Image src="/images/svg_ch4_5_euler_velocity_vectors.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`The velocity vectors are`}</VerticalChunk>
-              <CenterDisplay>{String.raw`NOT`}</CenterDisplay>
+              <div class="spacer"></div>
+              <CentralDisplay>{String.raw`NOT`}</CentralDisplay>
+              <div class="spacer"></div>
               <VerticalChunk>{String.raw`tangent to the unit circle, and so the
 particles will leave the circle!
 (But that's OK.) In one-tenth a unit
@@ -3726,7 +3778,8 @@ out to infinity.`}
               <VerticalChunk>{String.raw`In any case [take two] the point is that
 whether or not you are one of the wizards,
 you can`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`guess`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`guess`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`the existence of these five paths—sort 
 of “feel” that they exist! (This is a 
@@ -3772,7 +3825,8 @@ $`}</Math>
                 {String.raw` then, to spell
 it all out, since`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the 
 `}
                 <NoBreak>
@@ -3790,7 +3844,7 @@ $`}</Math>
                   {String.raw`-coordinate`}
                 </NoBreak>
                 {String.raw` of the blue particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw``}
@@ -3809,7 +3863,8 @@ $`}</Math>
                 {String.raw` of the blue 
 particle; and since `}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the 
 `}
                 <NoBreak>
@@ -3827,7 +3882,7 @@ $`}</Math>
                   {String.raw`-coordinate`}
                 </NoBreak>
                 {String.raw` of the yellow particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw``}
@@ -3846,7 +3901,8 @@ $`}</Math>
                 {String.raw` of the
 yellow particle; and since`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the
 `}
                 <NoBreak>
@@ -3864,7 +3920,7 @@ $`}</Math>
                   {String.raw`-coordinate`}
                 </NoBreak>
                 {String.raw` of the green particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw``}
@@ -3883,7 +3939,8 @@ $`}</Math>
                 {String.raw` of the
 green particle; and since`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the 
 `}
                 <NoBreak>
@@ -3902,7 +3959,7 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` of the purple
 particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw``}
@@ -3921,7 +3978,8 @@ $`}</Math>
                 {String.raw` of the
 purple particle; and since`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the rate of change of the 
 `}
                 <NoBreak>
@@ -3939,7 +3997,7 @@ $`}</Math>
                   {String.raw`-coordinate`}
                 </NoBreak>
                 {String.raw` of the red particle`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw``}
@@ -4121,7 +4179,8 @@ $`}</Math>
 etc) and stipulate the same rules, namely
 that the `}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`(now `}
@@ -4134,7 +4193,8 @@ $`}</Math>
                 {String.raw` of the red particle
 be the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`position`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`position`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`(now `}
@@ -4171,11 +4231,12 @@ In fact, our symmetric two-dimensional
 solution is an instance in which you can say
 that`}
               </VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the whole is simpler than the parts`}
                 <ImageLeft src="/images/svg_ch4_5_euler_hearts_left.svg"></ImageLeft>
                 <ImageRight src="/images/svg_ch4_5_euler_hearts_right.svg"></ImageRight>
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`in that you would never spot the symmetry
@@ -4532,7 +4593,9 @@ $$`}</MathBlock>
                 indent={true}>{String.raw`In this starting configuration, all
 velocity vectors are exactly tangent to
 the unit circle`}</VerticalChunk>
-              <CenterDisplay>{String.raw`EXCEPT`}</CenterDisplay>
+              <div class="spacer"></div>
+              <CentralDisplay>{String.raw`EXCEPT`}</CentralDisplay>
+              <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`for particle 14, whose velocity vector, 
 being the position of particle 1, is straight
@@ -5521,7 +5584,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` (The`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`differentiability`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`differentiability`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`of `}
@@ -5546,7 +5610,8 @@ $`}</Math>
                 {String.raw` we are tacitly
 assuming—implies`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`continuity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`continuity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`as well, which implies that `}
@@ -5716,16 +5781,19 @@ is known as the `}
             <div class="spacer"></div>
             <Solution solution_number={17}>
               <VerticalChunk>{String.raw`One can say`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the derivative of the sum is the sum of the
-derivatives`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`the derivative of the sum is the sum of the
+derivatives`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`or`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the rate of change of the sum is the sum of
-the rates of change`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`the rate of change of the sum is the sum of
+the rates of change`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`or (we made this one up)`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the rate of change of the aggregate is the sum
-of the rates of change of the components`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`the rate of change of the aggregate is the sum
+of the rates of change of the components`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`(etc).`}</VerticalChunk>
             </Solution>
@@ -6379,7 +6447,8 @@ at the beginning of the product...`}
               <Image src="/images/svg_ch4_big_product_prefix_outline.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`...; here the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`differentiability`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`differentiability`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`of `}
@@ -6396,7 +6465,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` implies the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`continuity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`continuity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`of `}
@@ -6518,7 +6588,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` does not appear here, the tail end`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`stays put`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`stays put`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`where it is, irrespective of the value of `}
@@ -6846,84 +6917,86 @@ $`}</Math>
                 </VerticalChunk>
               </CenterDisplay>
               <ImageRight src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg"></ImageRight>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    style="margin-right:1em"
-                    src="/images/svg_ch4_pacman1_pellet2_inline.svg"
-                    class="ch4_pacman1_inline_number_pellet"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      style="margin-right:1em"
+                      src="/images/svg_ch4_pacman1_pellet2_inline.svg"
+                      class="ch4_pacman1_inline_number_pellet"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 -6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,-2.7\,\te{cells}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    style="margin-right:1em"
-                    src="/images/svg_ch4_pacman1_pellet3_inline.svg"
-                    class="ch4_pacman1_inline_number_pellet"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      style="margin-right:1em"
+                      src="/images/svg_ch4_pacman1_pellet3_inline.svg"
+                      class="ch4_pacman1_inline_number_pellet"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.9\te{s}\,\,=\,\,6.075\,\te{cells}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    style="margin-right:1em"
-                    src="/images/svg_ch4_pacman1_pellet4_inline.svg"
-                    class="ch4_pacman1_inline_number_pellet"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      style="margin-right:1em"
+                      src="/images/svg_ch4_pacman1_pellet4_inline.svg"
+                      class="ch4_pacman1_inline_number_pellet"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,2.7\,\te{cells}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    style="margin-right:1em"
-                    src="/images/svg_ch4_pacman1_pellet5_inline.svg"
-                    class="ch4_pacman1_inline_number_pellet"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      style="margin-right:1em"
+                      src="/images/svg_ch4_pacman1_pellet5_inline.svg"
+                      class="ch4_pacman1_inline_number_pellet"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 -6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.4\te{s}\,\,=\,\,-2.7\,\te{cells}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    style="margin-right:1em"
-                    src="/images/svg_ch4_pacman1_pellet6_inline.svg"
-                    class="ch4_pacman1_inline_number_pellet"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      style="margin-right:1em"
+                      src="/images/svg_ch4_pacman1_pellet6_inline.svg"
+                      class="ch4_pacman1_inline_number_pellet"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 6.75\te{c}\hlfbk/\hlfbk\te{s}\,\,\times\,\,0.9\te{s}\,\,=\,\,6.075\,\te{cells}
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`Given the horizontal/vertical alternation
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`Given the horizontal/vertical alternation
 of displacements, this would nominally 
-imply the following set of initial motions:`}</VerticalChunk>
+imply the following set of initial motions:`}
+              </VerticalChunk>
               <div class="spacer"></div>
               <Image src="/images/svg_ch4_pacman1_initial_displacements_before_rounding.svg"></Image>
               <div class="spacer"></div>
@@ -7890,7 +7963,8 @@ if its second derivative has this graph (broadly):`}
             <div class="spacer"></div>
             <Solution solution_number={26}>
               <VerticalChunk>{String.raw`As the second derivative is the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`rate of change of the slope`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`rate of change of the slope`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`places where the second derivative is zero are 
@@ -7918,10 +7992,12 @@ does say “broadly” anyway):`}
               <Image src="/images/svg_ch4_one_long_line_with_purple.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`As`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`constant slope`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`constant slope`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`means`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`line segment`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`line segment`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`the function will therefore be a 
 line segment, over each of the purple intervals!`}</VerticalChunk>
@@ -8107,10 +8183,12 @@ $`}</Math>
               <Image src="/images/svg_ch4_one_long_line_solution_sketch_3.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Again, any of these graphs are`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`equally valid`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`equally valid`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`solutions, and, for the last time,`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`any amount of vertical translation can be introduced`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`any amount of vertical translation can be introduced`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`(you can move the graphs up and down). So in
@@ -8423,7 +8501,8 @@ $`}</Math>
               {String.raw`,
 or, namely, to show that`}
             </VerticalChunk>
-            <CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>
               {String.raw`(`}
               <NoBreak>
                 <Math>{String.raw`$
@@ -8444,10 +8523,11 @@ h
 $`}</Math>
               </NoBreak>
               {String.raw``}
-            </CentralItalicDisplay>
+            </CentralDisplayItalic>
             <div class="spacer"></div>
             <VerticalChunk>{String.raw`equals`}</VerticalChunk>
-            <CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>
               {String.raw``}
               <NoBreak>
                 <Math>{String.raw`$
@@ -8467,7 +8547,7 @@ h
 $`}</Math>
               </NoBreak>
               {String.raw`)`}
-            </CentralItalicDisplay>
+            </CentralDisplayItalic>
             <div class="spacer"></div>
             <VerticalChunk>
               {String.raw`for all functions `}
@@ -8599,10 +8679,12 @@ $`}</Math>
                 {String.raw`
 In words, we have just established the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`associativity of function multiplication`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`associativity of function multiplication`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`while we had previously established the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`associativity of function composition`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`associativity of function composition`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`(if you recall that one) in Exercise 9 of Chapter 
 3.`}</VerticalChunk>
@@ -8735,7 +8817,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` are both real numbers—the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`commutativity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`commutativity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of real number addition is the fact that`}</VerticalChunk>
               <div class="spacer"></div>
@@ -9053,7 +9136,8 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` is the`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`~ total ~`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`~ total ~`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`amount earned when position `}
@@ -9721,7 +9805,8 @@ dimensions of length over time ([L/T]).`}
               {String.raw`
 What is the `}
             </VerticalChunk>
-            <CentralItalicDisplay>{String.raw`acceleration vector`}</CentralItalicDisplay>
+            <div class="spacer"></div>
+            <CentralDisplayItalic>{String.raw`acceleration vector`}</CentralDisplayItalic>
             <div class="spacer"></div>
             <VerticalChunk>{String.raw`(velocity vector of the velocity vector)
 of the particle from Exercise 39?`}</VerticalChunk>
@@ -10103,7 +10188,8 @@ $$`}</MathBlock>
 interval is half of the maximum speed within the interval!
 But there are infinitely many intervals, and, therefore,
 it takes`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`at least`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`at least`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`infinitely much time to make it to `}
@@ -10133,7 +10219,8 @@ $`}</Math>
               </VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`A so-called`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`geometric progression`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`geometric progression`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is a sequence of numbers in which each number
 is a fixed multiple of the previous number.
@@ -10298,7 +10385,8 @@ $`}</Math>
               <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow_red.svg"></Image>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`Indeed, for the red graph,`}</VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the slope equals the `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -10306,10 +10394,11 @@ y
 $`}</Math>
                 </NoBreak>
                 {String.raw`-value`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`(velocity = position), while`}</VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`the slope equals minus the `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -10317,7 +10406,7 @@ y
 $`}</Math>
                 </NoBreak>
                 {String.raw`-value`}
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`for the blue graph (velocity = position
@@ -10512,42 +10601,42 @@ $`}</Math>
                 indent={true}>{String.raw`To go deeper, we introduce eight new
 particles, comprising the original colors but
 in white and black flavors:`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw`, `}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw`, `}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`At `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -10638,19 +10727,23 @@ they are “stuck” to that line.`}
               </VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`Also note that the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`speed`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of the black particles, being equal to the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`length of the velocity vector`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`length of the velocity vector`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of said particles, is equal to the`}</VerticalChunk>
-              <CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>
                 {String.raw`length of the position vector`}
                 <ImageRight src="/images/svg_ch4_circle_at_2_4_position_equals_velocity_cloud.svg"></ImageRight>
-              </CentralItalicDisplay>
+              </CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of said particles, is equal to the`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`distance to the origin`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`distance to the origin`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`of said particles,
 since the length of the position vector is
@@ -10718,21 +10811,21 @@ $`}</Math>
 behavior of the black and white particles.`}</VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`Next we write`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`for the function that gives 
 the `}
                 <NoBreak>
@@ -10744,36 +10837,38 @@ $`}</Math>
                 {String.raw` of the purple-white particle
 as a function of time (in more detail,`}
               </VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x : \rr \ra \rr
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`to emphasize that WE ARE TALKING ABOUT A FUNCTION, e.g.,`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`to emphasize that WE ARE TALKING ABOUT A FUNCTION, e.g.,`}
+              </VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(2)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`is the `}
                 <NoBreak>
                   <Math>{String.raw`$
@@ -10792,21 +10887,21 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` etc), and write`}
               </VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`for the function that gives
 the `}
                 <NoBreak>
@@ -10821,31 +10916,31 @@ for all the other particles.`}
               </VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`For example,`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`because the rate of change of the 
 `}
                 <NoBreak>
@@ -10864,104 +10959,106 @@ $`}</Math>
                 {String.raw`-coordinate
 of the yellow-white particle; we also have`}
               </VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`by adding two such equations together; this can also be
-written`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`by adding two such equations together; this can also be
+written`}
+              </VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x)' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`by the sum rule; but this gives us an idea!; we can
 try to `}
                 <i>{String.raw`define`}</i>
@@ -10983,272 +11080,273 @@ try to `}
                   class="ch4_inline_blackwhite_particles"></InlineImage>
                 {String.raw`&ensp;by setting...`}
               </VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`...and see if these definitions satisfy the constraints
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`...and see if these definitions satisfy the constraints
 of the problem! (We momentarily have two different
 purple particles: the one from the problem statement, 
 and the one that we have just defined; but that's ok,
@@ -11256,699 +11354,702 @@ as long as we are aware of this small semantic
 transgression, it is not such a big deal, 
 and we shall soon prove that these two
 particles are one and the same.)
-For starters...`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+For starters...`}
+              </VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = (
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\!\rt{0.05})' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y =
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`...or...`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`...or...`}
+              </VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y\,\!\!\!' = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`...cutting out the middle computation, so the constraints
 relating particle velocities to particle positions are
 satisfied (e.g., the velocity vector of the purple particle
@@ -11961,538 +12062,540 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` gives...`}
               </VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) + 
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>{String.raw`...or...`}</VerticalChunk>
-              <CenterDisplay>
-                <VerticalChunk>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
+                {String.raw`...or...`}
+              </VerticalChunk>
+              <VerticalChunk indent={true}>
+                <CenterDisplay>
+                  <VerticalChunk>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _x(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-                <VerticalChunk indent={true}>
-                  <br></br>
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                  <VerticalChunk indent={true}>
+                    <br></br>
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0) = 2\,\,+
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                  <InlineImage
-                    src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                    class="ch4_inline_blackwhite_particles"></InlineImage>
-                  {String.raw``}
-                  <NoBreak>
-                    <Math>{String.raw`$
+                    </NoBreak>
+                    {String.raw``}
+                    <InlineImage
+                      src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
+                      class="ch4_inline_blackwhite_particles"></InlineImage>
+                    {String.raw``}
+                    <NoBreak>
+                      <Math>{String.raw`$
 _y(0)
 $`}</Math>
-                  </NoBreak>
-                  {String.raw``}
-                </VerticalChunk>
-              </CenterDisplay>
-              <VerticalChunk>
+                    </NoBreak>
+                    {String.raw``}
+                  </VerticalChunk>
+                </CenterDisplay>
                 {String.raw`...cutting out the middle computation, which is to
 say that the positions at time `}
                 <NoBreak>
@@ -12673,7 +12776,9 @@ $`}</Math>
                 </NoBreak>
                 {String.raw` there ensues`}
               </VerticalChunk>
-              <CenterDisplay>{String.raw`“a [kind of] four-particle explosion”`}</CenterDisplay>
+              <div class="spacer"></div>
+              <CentralDisplay>{String.raw`“a [kind of] four-particle explosion”`}</CentralDisplay>
+              <div class="spacer"></div>
               <VerticalChunk>{String.raw`in the first paragraph of the solution, the word 
 “explosion” might be misleading, implying increased
 distances between the particles over time. This is
@@ -12688,16 +12793,20 @@ then.)`}</VerticalChunk>
 As you might already have caught on, but is
 maybe worth emphasizing,`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`speed`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`speed`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`is not the same thing as`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`velocity`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`velocity`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`because, specifically, speed is`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`distance per unit time`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`distance per unit time`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`—a nonnegative number—whereas velocity is`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`displacement per unit time`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`displacement per unit time`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`—a vector-valued quantity, or `}

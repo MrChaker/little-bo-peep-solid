@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Bootcamp2 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -265,7 +263,8 @@ $`}</Math>
             {String.raw`.
 Moreover, (A) actually holds for`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`every`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`every`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`integer `}
@@ -397,7 +396,8 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`...and any one of these equations implies the other two.
 Thus, either of (A) and (AA) expresses the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`reciprocality`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`reciprocality`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`of `}
@@ -585,10 +585,12 @@ $`}</Math>
             </NoBreak>
             {String.raw` as an`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`empty product`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`empty product`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and they will repeatedly admonish that`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`an empty product is `}
             <NoBreak>
               <Math>{String.raw`$
@@ -596,7 +598,7 @@ $`}</Math>
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`in the sense that “all products start at 
@@ -706,11 +708,13 @@ $`}</Math>
             {String.raw`),
 which is known as`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`additivity of exponents`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`additivity of exponents`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and which is sometimes paraphrased by saying
 that`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the product of the powers is the power of the sum`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the product of the powers is the power of the sum`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`where `}
@@ -1200,7 +1204,8 @@ $`}</Math>
           <Pause></Pause>
           <VerticalChunk>{String.raw`One can note that
 `}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`one million is a thousand thousand`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`one million is a thousand thousand`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`
 because`}</VerticalChunk>
@@ -1216,22 +1221,25 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`by additivity of exponents. Similarly, note that`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`one billion is a thousand million`}
             <ImageLeft src="/images/svg_ten_to_the_3_times_ten_to_the_6_cloud.svg"></ImageLeft>
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and `}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`one trillion is a thousand billion`}
             <ImageLeft src="/images/svg_ten_to_the_3_times_ten_to_the_9_cloud.svg"></ImageLeft>
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and also (while we're at it)`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`one trillion is a million million`}
             <ImageRight src="/images/svg_ten_to_the_6_times_ten_to_the_6_cloud.svg"></ImageRight>
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`as can be seen, for example, by replacing “billion”
@@ -1491,11 +1499,13 @@ one's work and avoid mistakes.`}</VerticalChunk>
             indent={
               true
             }>{String.raw`However, there also exist negative exponent`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`prefixes`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`prefixes`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`that people use to qualify other measures. For
 example, a`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`millimeter`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`millimeter`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`is `}
@@ -1692,7 +1702,8 @@ $`}</Math>
             indent={
               true
             }>{String.raw`To give an idea of scale,`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`micrometers`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`micrometers`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`are smaller than the smallest animal
@@ -1735,7 +1746,8 @@ $`}</Math>
             {String.raw` stands
 for “micrometer”). Next down,`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`nanometers`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`nanometers`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`happen to be smaller than the diameter
@@ -1932,7 +1944,8 @@ $`}</Math>
           <div class="spacer"></div>
           <Pause></Pause>
           <VerticalChunk>{String.raw`For example, a`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`kilometer`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`kilometer`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`is a thousand meters
@@ -1945,7 +1958,8 @@ $`}</Math>
             {String.raw` “kilo” = thousand], 
 while a`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`terabyte`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`terabyte`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`is a trillion bytes [b/`}
@@ -1958,7 +1972,8 @@ $`}</Math>
 (In case you don't know, by the way, 
 a `}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`byte`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`byte`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw` is a unit of computer memory
@@ -2012,7 +2027,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` is, of course,`}
           </VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`ten to the power `}
             <NoBreak>
               <Math>{String.raw`$
@@ -2020,7 +2036,7 @@ $`}</Math>
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and this means that`}</VerticalChunk>
           <div class="spacer"></div>
@@ -2409,10 +2425,12 @@ $$`}</MathBlock>
                 {String.raw`
 Rearranging`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`ten thousand ten thousand`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`ten thousand ten thousand`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`to`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`ten ten thousand thousand`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`ten ten thousand thousand`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`directly leads us to “hundred million” 
 without having to use exponents, since ten
@@ -2420,10 +2438,12 @@ times ten is a hundred and since a thousand
 times a thousand is a million.`}</VerticalChunk>
               <VerticalChunk
                 indent={true}>{String.raw`(Similarly,`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`ten thousand ten thousand ten thousand`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`ten thousand ten thousand ten thousand`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`becomes`}</VerticalChunk>
-              <CentralItalicDisplay>{String.raw`ten ten ten thousand thousand thousand`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`ten ten ten thousand thousand thousand`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>{String.raw`after rearrangement, which can be seen to
 equal one trillion because “ten ten ten” is
@@ -3353,7 +3373,8 @@ $`}</Math>
                 {String.raw`
 if and only if...`}
               </VerticalChunk>
-              <CentralItalicDisplay>{String.raw`the three exponents are zero`}</CentralItalicDisplay>
+              <div class="spacer"></div>
+              <CentralDisplayItalic>{String.raw`the three exponents are zero`}</CentralDisplayItalic>
               <div class="spacer"></div>
               <VerticalChunk>
                 {String.raw`...(!!!) which means that we need to find values
