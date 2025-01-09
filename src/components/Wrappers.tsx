@@ -9,7 +9,7 @@ export const Section = (props: ParentProps & { divider?: boolean }) => {
 
   return (
     <>
-      <section>{props.children}</section>
+      <>{props.children}</>
       {show_section_dividers() && <SectionDivider />}
     </>
   );

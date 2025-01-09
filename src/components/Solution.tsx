@@ -130,7 +130,7 @@ const Solution = (props: SolutionProps) => {
         <div
           ref={ref}
           class={twJoin(
-            "transition-all",
+            "transition-all children-relative",
             !solution_open() ? "-translate-y-full" : "",
             transition() ? "transition-all" : ""
           )}

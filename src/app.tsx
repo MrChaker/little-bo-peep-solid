@@ -19,9 +19,7 @@ export default function App() {
             <PanelButton />
             <Panel />
             <Container>
-              <Nav />
               <Suspense>{props.children}</Suspense>
-              <SVGDefs />
             </Container>
           </>
         )}>
