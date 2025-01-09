@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Bootcamp1 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -152,17 +150,20 @@ $$`}</MathBlock>
 The “API” (a computer science notion,
 roughly meaning`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the interface offered to the outside world`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the interface offered to the outside world`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`as in, for example, the buttons and clock 
 display and door handle of a microwave oven) 
 of a set consists of just one functionality: 
 a set can answer questions of the form`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`do you contain ... ?`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain ... ?`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and nothing else.
 For example, you could ask a set`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`do you contain 3?`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 3?`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`to which `}
@@ -180,7 +181,8 @@ $`}</Math>
             </NoBreak>
             {String.raw` would answer “no”, or`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 2?`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`to which `}
@@ -206,16 +208,16 @@ $`}</Math>
 answer “yes”.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Notation-wise, the expression`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Notation-wise, the expression`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \Large x \in A
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`means`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -229,10 +231,11 @@ x
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or `}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -247,10 +250,11 @@ x
 $`}</Math>
             </NoBreak>
             {String.raw`?”`}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`equivalently. [One can also say`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -264,10 +268,11 @@ A
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or `}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -281,10 +286,11 @@ A
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`or `}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw``}
             <NoBreak>
               <Math>{String.raw`$
@@ -298,7 +304,7 @@ A
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`depending on one's mood and/or tastes.]
 As in all of mathematics, any such statement 
@@ -378,8 +384,10 @@ $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`these sets are actually one and the same, because they both
 answer “yes” to`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`do you contain 1?`}</CentralItalicDisplay>
-          <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 1?`}</CentralDisplayItalic>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 2?`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and answer “no” to all else. For that matter,`}</VerticalChunk>
           <div class="spacer"></div>
@@ -394,36 +402,40 @@ $$`}</MathBlock>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`but since both sets answer “yes” to`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`do you contain 1?`}</CentralItalicDisplay>
-          <CentralItalicDisplay>{String.raw`do you contain 2?`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 1?`}</CentralDisplayItalic>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`do you contain 2?`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and answer “no” to all else,
 they are by definition the same.`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`(These examples demonstrate that human notation 
+            indent={true}
+          >{String.raw`(These examples demonstrate that human notation 
 is redundant: there are several different ways of 
 writing down the same set. They also demonstrate
 that sets do not keep track of the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`order`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`order`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`nor of the`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`multiplicity`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`multiplicity`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`of their elements. Such notions are simply not part
 of the “API” of a set.)`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Moreover, any empty set is equal to any other 
+            indent={true}
+          >{String.raw`Moreover, any empty set is equal to any other 
 empty set. Equality follows because both sets 
 answer all questions the same way: they both 
 answer “no” to everything. So there is`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`one`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`one`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`and only one empty set. Therefore, mathematicians speak of`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`empty set—the one and only!`}</VerticalChunk>
         </Section>
@@ -483,9 +495,8 @@ $`}</Math>
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`Mind you, concerning this example, that`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Mind you, concerning this example, that`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>
             {String.raw`$$
@@ -493,7 +504,8 @@ $`}</Math>
 $$`}
             <ImageRight
               offset_x="1em"
-              src="/images/svg_empty_set_cloud.svg"></ImageRight>
+              src="/images/svg_empty_set_cloud.svg"
+            ></ImageRight>
           </MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`because a box containing an empty box is not the same
@@ -726,7 +738,8 @@ abstruse expression of the type`}</VerticalChunk>
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`read`}</VerticalChunk>
-          <CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>
             {String.raw`an element `}
             <NoBreak>
               <Math>{String.raw`$
@@ -765,7 +778,7 @@ B
 $`}</Math>
             </NoBreak>
             {String.raw``}
-          </CentralItalicDisplay>
+          </CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`as “`}
@@ -922,8 +935,9 @@ $$`}</MathBlock>
             <i>{String.raw`open`}</i>
             {String.raw` interval, by the way) means`}
           </VerticalChunk>
-          <CentralItalicDisplay>{String.raw`the set of real numbers with no bound below,
-and no bound above`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`the set of real numbers with no bound below,
+and no bound above`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`which is all of `}
@@ -1024,9 +1038,8 @@ is: `}
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`E.g. (to give you a brief flavor, before we move on forever from the topic),
+            indent={true}
+          >{String.raw`E.g. (to give you a brief flavor, before we move on forever from the topic),
 the value of something like`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$

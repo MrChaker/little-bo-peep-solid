@@ -10,59 +10,15 @@ const TableOfContents = () => {
       <h1 class="mb-[2.3rem] sm:mb-[2.6rem] flex justify-center items-center">
         <TitleSVG />
       </h1>
-      <div id="chapter">
-        {" "}
-        <Title label="Chapters" />
-        <ItemsList>
-          <MenuItem
-            article_type="1"
-            label="A Few Refreshers"
-            on_mobile=""
-            href="chapter1"
-          />
-
-          <MenuItem
-            article_type="2"
-            label="Slopes"
-            on_mobile=""
-            href="chapter2"
-          />
-
-          <MenuItem
-            article_type="3"
-            label="Functions"
-            on_mobile=""
-            href="chapter3"
-          />
-
-          <MenuItem
-            article_type="4"
-            label="Derivatives"
-            on_mobile=""
-            href="chapter4"
-          />
-        </ItemsList>
-      </div>
+      <div id="chapter"><Title label="Chapter" />
+ <ItemsList>
+<MenuItem article_type="1" label="A Few Refreshers" on_mobile="" href="chapter1"/><MenuItem article_type="2" label="Slopes" on_mobile="" href="chapter2"/><MenuItem article_type="3" label="Functions" on_mobile="" href="chapter3"/><MenuItem article_type="4" label="Derivatives" on_mobile="" href="chapter4"/></ItemsList>
+</div>
       <Spacer />
-      <div id="bootcamp">
-        {" "}
-        <Title label="Bootcamps" />
-        <ItemsList>
-          <MenuItem
-            article_type="1"
-            label="Sets"
-            on_mobile=""
-            href="bootcamp1"
-          />
-
-          <MenuItem
-            article_type="2"
-            label="Powers of 10"
-            on_mobile=""
-            href="bootcamp2"
-          />
-        </ItemsList>
-      </div>
+      <div id="bootcamp"><Title label="Bootcamp" />
+ <ItemsList>
+<MenuItem article_type="1" label="Sets" on_mobile="" href="bootcamp1"/><MenuItem article_type="2" label="Powers of 10" on_mobile="" href="bootcamp2"/></ItemsList>
+</div>
       <Spacer />
     </div>
   );

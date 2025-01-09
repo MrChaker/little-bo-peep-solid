@@ -9,7 +9,7 @@ import {
   Pause,
   WriterlyBlankLine,
 } from "~/components/Wrappers";
-import { CenterDisplay, CentralItalicDisplay } from "~/components/Delimiters";
+import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
 import { Math, MathBlock } from "~/components/Math";
 import { ImageRight, ImageLeft } from "~/components/SideImage";
 import Image from "~/components/Image";
@@ -23,11 +23,9 @@ import { SectionDivider, StarDivider } from "~/components/SectionDivider";
 import VerticalChunk from "~/components/VerticalChunk";
 import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
-
 const Chapter1 = (props: any) => {
   useScrollX();
   useSaveScroll();
-
   return (
     <>
       <ArticleTitle
@@ -58,7 +56,8 @@ is positive. For example,`}
           <MathBlock>{String.raw`$$
 (-2) \times (-2) = 4
 $$`}</MathBlock>
-          <CenterDisplay>{String.raw`and`}</CenterDisplay>
+          <div class="spacer"></div>
+          <CentralDisplay>{String.raw`and`}</CentralDisplay>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 2 \times 2 = 4
@@ -95,7 +94,8 @@ $$`}
               padding="40px"
               offset_x="-3rem"
               offset_y="-1rem"
-              src="/images/svg_cloud_minus_two_squared.svg"></ImageRight>
+              src="/images/svg_cloud_minus_two_squared.svg"
+            ></ImageRight>
           </MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>
@@ -182,7 +182,8 @@ $`}</Math>
             {String.raw`.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`Now we can ponder, say,`}</VerticalChunk>
+            indent={true}
+          >{String.raw`Now we can ponder, say,`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 \sqrt{0.5}
@@ -327,7 +328,8 @@ $`}</Math>
             {String.raw`.`}
           </VerticalChunk>
           <VerticalChunk
-            indent={true}>{String.raw`In last resort, and in reasonably good 
+            indent={true}
+          >{String.raw`In last resort, and in reasonably good 
 agreement with our observations, a calculator 
 reveals that`}</VerticalChunk>
           <div class="spacer"></div>
@@ -778,9 +780,8 @@ $$`}</MathBlock>
           <VerticalChunk>{String.raw`because multiplication takes precedence over 
 addition, by default.)`}</VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`A little more generally, one has such identities 
+            indent={true}
+          >{String.raw`A little more generally, one has such identities 
 as`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -794,7 +795,8 @@ parenthesis. Indeed,`}
             <ImageLeft
               offset_y="-10px"
               line={1.5}
-              src="/images/325.svg"></ImageLeft>
+              src="/images/325.svg"
+            ></ImageLeft>
           </VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
@@ -885,9 +887,8 @@ $`}</Math>
 indeed.)`}
           </VerticalChunk>
           <VerticalChunk
-            indent={
-              true
-            }>{String.raw`If we start from the afore-mentioned identity`}</VerticalChunk>
+            indent={true}
+          >{String.raw`If we start from the afore-mentioned identity`}</VerticalChunk>
           <div class="spacer"></div>
           <MathBlock>{String.raw`$$
 (a + b)(C + D) \,=\, aC + bC + aD + bD
@@ -1039,7 +1040,8 @@ a^2 - b^2
 $$`}</MathBlock>
           <div class="spacer"></div>
           <VerticalChunk>{String.raw`is`}</VerticalChunk>
-          <CentralItalicDisplay>{String.raw`a difference of squares`}</CentralItalicDisplay>
+          <div class="spacer"></div>
+          <CentralDisplayItalic>{String.raw`a difference of squares`}</CentralDisplayItalic>
           <div class="spacer"></div>
           <VerticalChunk>
             {String.raw`whence `}
@@ -1289,7 +1291,8 @@ True or false (and, if possible, explain):`}
               center_on_overflow={true}
               sm_cutoff={520}
               sm_cols={2}
-              cols={3}>
+              cols={3}
+            >
               <Item>
                 {String.raw`a. `}
                 <NoBreak>
@@ -1775,7 +1778,8 @@ $$`}
                   children_y="48%"
                   offset_y="-1rem"
                   offset_x="-4rem"
-                  src="/images/104.svg">
+                  src="/images/104.svg"
+                >
                   <VerticalChunk>
                     {String.raw``}
                     <NoBreak>
@@ -2342,7 +2346,8 @@ $$`}
                   children_x="30%"
                   y="12%"
                   offset_y="3.5rem"
-                  src="/images/24.svg">
+                  src="/images/24.svg"
+                >
                   <MathBlock>{String.raw`$$
 \begin{align}
 {1 \over 99} - {1 \over 100}
@@ -2536,7 +2541,8 @@ $$`}
                   children_y="13%"
                   src="/images/25.svg"
                   offset_y="1.2rem"
-                  offset_x="-6rem">
+                  offset_x="-6rem"
+                >
                   <MathBlock>{String.raw`$$
 {1 \over 99\cdot 100}
 $$`}</MathBlock>
@@ -2555,7 +2561,8 @@ $$`}
                   children_y="15%"
                   src="/images/26.svg"
                   offset_y="1.2rem"
-                  offset_x="-6rem">
+                  offset_x="-6rem"
+                >
                   <MathBlock>{String.raw`$$
 {1 \over 99^2}
 $$`}</MathBlock>
@@ -2594,7 +2601,8 @@ $$`}
                   children_y="27%"
                   y="12%"
                   offset_y="2rem"
-                  src="/images/27.svg">
+                  src="/images/27.svg"
+                >
                   <MathBlock>{String.raw`$$
 \begin{align}
 {1 \over 99^2} - {1 \over 99\cdot 100} &=
