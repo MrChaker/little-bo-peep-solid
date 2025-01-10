@@ -258,13 +258,15 @@ pub fn main() {
         root() <> "/src/content",
         "--emit-book",
         "solid",
-        "output",
+        "--output",
         root() <> "/generated",
       ],
       opt: [],
     )
   {
-    Ok(_) -> Nil
+    Ok(o) -> {
+      io.debug(o)
+    }
     Error(_) -> {
       panic as "Parsing failed"
     }
