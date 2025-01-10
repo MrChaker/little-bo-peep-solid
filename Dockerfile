@@ -7,6 +7,7 @@ COPY . .
 RUN cd renderer_gleam \
   && gleam run
 
+RUN ls /gleam-app
 
 FROM node:22-alpine
 
@@ -20,11 +21,11 @@ RUN npm install
 
 COPY . .
 
-COPY --from=gleam-build /gleam-app /gleam-app
+COPY --from=gleam-build . ./gleam
 
-RUN ls /gleam-app
+RUN ls ./gleam
 
-COPY --from=gleam-build /gleam-app/src/routes/article /app/src/routes/article
+COPY --from=gleam-build ./src/routes/article ./src/routes/article
 
 RUN npm run build
 
