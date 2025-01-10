@@ -8,7 +8,7 @@ import lbp_desugaring as desugarer
 import shellout
 import simplifile
 
-fn pop_path(path: String) -> String {
+fn dotdot(path: String) -> String {
   path
   |> string.split("/")
   |> list.reverse()
@@ -18,8 +18,8 @@ fn pop_path(path: String) -> String {
 }
 
 fn root() {
-  let assert Ok(root) = simplifile.current_directory()
-  pop_path(root)
+  let assert Ok(current_directory) = simplifile.current_directory()
+  dotdot(current_directory)
 }
 
 fn add_space_between_word_and_digit(str: String) -> String {
@@ -241,6 +241,18 @@ fn render_articles_list(path: String) {
   })
 }
 
+fn run_prettier(
+  in: String,
+  path: String
+) -> Result(_, _) {
+  shellout.command(
+      run: "npx",
+      in: in,
+      with: ["prettier", "--write", path],
+      opt: [],
+    )
+}
+
 pub fn main() {
   io.debug("🚀 Parsing markup to jsx 🚀")
   desugarer.emit_book(
@@ -261,13 +273,7 @@ pub fn main() {
   render_articles_list(root() <> "/src/components/Panel.tsx")
 
   io.println("🚀 Parsing done ! Running Running prettier 🚀")
-  case
-    shellout.command(
-      run: "npx",
-      in: "/",
-      with: ["prettier", "--write", root() <> "/generated"],
-      opt: [],
-    )
+  case run_prettier("/", root() <> "/generated")
   {
     Ok(_) -> Nil
     Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
