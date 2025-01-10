@@ -140,7 +140,6 @@ fn find_title(line: String, prop_name: String) {
 }
 
 fn get_article_titles(path: String) {
-  io.debug(path)
   use file_content <- result.try(simplifile.read(path))
   let lines = string.split(file_content, "\n")
   let title =
@@ -208,7 +207,6 @@ fn replace_content(path: String, article_type: String, generated: String) {
     )
   let splits = regexp.split(re, file_contents)
   // each match will be splitted into 5 splits
-  io.debug(splits |> list.length)
 
   case list.length(splits) >= 5 {
     True -> {
@@ -293,8 +291,14 @@ pub fn main() {
   use generated_files <- result.try(simplifile.read_directory(
     root() <> "/generated",
   ))
+  io.debug(generated_files)
   list.each(generated_files, fn(file) {
+    io.debug(root() <> "/generated/" <> file)
+
     let assert Ok(content) = simplifile.read(root() <> "/generated/" <> file)
+
+    io.debug("read")
+
     simplifile.write(root() <> "/src/routes/article/" <> file, content)
   })
   io.println("🟢 Done 🟢")
