@@ -20,6 +20,10 @@ RUN npm install
 
 COPY . .
 
+COPY --from=gleam-build /gleam-app /gleam-app
+
+RUN ls /gleam-app
+
 COPY --from=gleam-build /gleam-app/src/routes/article /app/src/routes/article
 
 RUN npm run build
