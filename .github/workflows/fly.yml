@@ -21,6 +21,15 @@ jobs:
             echo "Unknown branch" > .env
           fi
 
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "26.0.2"
+          gleam-version: "1.5.1"
+          rebar3-version: "3"
+      - run: cd renderer_gleam
+      - run: gleam deps download
+      - run: gleam run
+
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: |
           if [ "${{ github.ref }}" == "refs/heads/production" ]; then
