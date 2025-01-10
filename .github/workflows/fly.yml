@@ -30,7 +30,7 @@ jobs:
       - run: cd renderer_gleam && gleam run
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: ls
+      - run: ls src/routes/article
       - run: |
           if [ "${{ github.ref }}" == "refs/heads/production" ]; then
             flyctl deploy --remote-only --no-cache --app little-bo-peep-solid 
