@@ -276,13 +276,10 @@ pub fn main() {
   use generated_files <- result.try(simplifile.read_directory(
     root() <> "/generated",
   ))
-  io.debug("root" <> root())
-
-  io.debug(generated_files)
-
   list.each(generated_files, fn(file) {
     add_boilerplate(root() <> "/generated/" <> file, file)
   })
+
   io.debug("🚀 Render table of contents and chapter panel 🚀")
   render_articles_list(root() <> "/src/components/TableOfContents.tsx")
   render_articles_list(root() <> "/src/components/Panel.tsx")
@@ -297,16 +294,9 @@ pub fn main() {
   use generated_files <- result.try(simplifile.read_directory(
     root() <> "/generated",
   ))
-  io.debug(generated_files)
   let _ = simplifile.create_directory(root() <> "/src/routes/article/")
-
   list.each(generated_files, fn(file) {
-    io.debug(root() <> "/generated/" <> file)
-
     let assert Ok(content) = simplifile.read(root() <> "/generated/" <> file)
-
-    io.debug("read")
-
     simplifile.write(root() <> "/src/routes/article/" <> file, content)
   })
   io.println("🟢 Done 🟢")
