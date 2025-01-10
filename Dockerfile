@@ -1,12 +1,26 @@
-FROM node:18-alpine
+FROM ghcr.io/gleam-lang/gleam:v1.5.1-erlang-alpine AS gleam-build
+
+WORKDIR /gleam-app
+
+COPY . .
+
+RUN cd renderer_gleam \
+  && gleam run
+
+
+FROM node:22-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
+
+RUN ls
 
 RUN npm install
 
 COPY . .
+
+COPY --from=gleam-build /gleam-app/src/routes/article /app/src/routes/article
 
 RUN npm run build
 
