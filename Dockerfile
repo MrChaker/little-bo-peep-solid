@@ -7,8 +7,6 @@ COPY . .
 RUN cd renderer_gleam \
   && gleam run
 
-RUN ls /gleam-app
-
 FROM node:22-alpine
 
 WORKDIR /app
