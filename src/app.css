@@ -132,6 +132,7 @@ mjx-container {
   mjx-container {
     left: 0;
     transform: translateX(0);
+    margin-inline: auto !important;
   }
 }
 
