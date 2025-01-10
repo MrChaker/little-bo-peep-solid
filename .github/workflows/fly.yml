@@ -2,7 +2,7 @@ name: Fly Deploy
 on:
   push:
     branches:
-      - main
+      - production
       - develop
 jobs:
   deploy:
@@ -13,7 +13,7 @@ jobs:
 
       - name: Create .env file
         run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+          if [ "${{ github.ref }}" == "refs/heads/production" ]; then
             echo "ENV=production" > .env
           elif [ "${{ github.ref }}" == "refs/heads/develop" ]; then
             echo "ENV=development" > .env
@@ -23,7 +23,7 @@ jobs:
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+          if [ "${{ github.ref }}" == "refs/heads/production" ]; then
             flyctl deploy --remote-only --app little-bo-peep-solid
           elif [ "${{ github.ref }}" == "refs/heads/develop" ]; then
             flyctl deploy --remote-only --app little-bo-peep-develop-solid
