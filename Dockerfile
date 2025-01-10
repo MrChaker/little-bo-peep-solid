@@ -10,6 +10,8 @@ COPY . .
 
 RUN npm run build
 
+RUN cat fly.toml && ls
+
 # Expose the port the app runs on
 EXPOSE 3000
 
