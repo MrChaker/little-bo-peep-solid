@@ -274,6 +274,10 @@ pub fn main() {
   use generated_files <- result.try(simplifile.read_directory(
     root() <> "/generated",
   ))
+  io.debug("root" <> root())
+
+  io.debug(generated_files)
+
   list.each(generated_files, fn(file) {
     add_boilerplate(root() <> "/generated/" <> file, file)
   })

@@ -26,6 +26,7 @@ jobs:
           otp-version: "26.0.2"
           gleam-version: "1.5.1"
           rebar3-version: "3"
+      - run: ls
       - run: cd renderer_gleam && gleam deps download
       - run: cd renderer_gleam && gleam run
 
