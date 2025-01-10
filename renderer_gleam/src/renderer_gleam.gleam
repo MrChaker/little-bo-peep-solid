@@ -4,7 +4,6 @@ import gleam/list
 import gleam/regexp
 import gleam/result
 import gleam/string
-import lbp_desugaring as desugarer
 import shellout
 import simplifile
 
@@ -241,25 +240,37 @@ fn render_articles_list(path: String) {
   })
 }
 
-fn run_prettier(
-  in: String,
-  path: String
-) -> Result(_, _) {
+fn run_prettier(in: String, path: String) -> Result(_, _) {
   shellout.command(
-      run: "npx",
-      in: in,
-      with: ["prettier", "--write", path],
-      opt: [],
-    )
+    run: "npx",
+    in: in,
+    with: ["prettier", "--write", path],
+    opt: [],
+  )
 }
 
 pub fn main() {
   io.debug("🚀 Parsing markup to jsx 🚀")
-  desugarer.emit_book(
-    path: root() <> "/src/content",
-    emitter: "solid",
-    output_folder: root() <> "/generated",
-  )
+  let _ = simplifile.create_directory(root() <> "/generated")
+  case
+    shellout.command(
+      run: root() <> "/parser_script",
+      in: root(),
+      with: [
+        root() <> "/src/content",
+        "--emit-book",
+        "solid",
+        "output",
+        root() <> "/generated",
+      ],
+      opt: [],
+    )
+  {
+    Ok(_) -> Nil
+    Error(_) -> {
+      panic as "Parsing failed"
+    }
+  }
 
   io.debug("🚀 Adding Boilerplate 🚀")
   use generated_files <- result.try(simplifile.read_directory(
@@ -273,8 +284,7 @@ pub fn main() {
   render_articles_list(root() <> "/src/components/Panel.tsx")
 
   io.println("🚀 Parsing done ! Running Running prettier 🚀")
-  case run_prettier("/", root() <> "/generated")
-  {
+  case run_prettier("/", root() <> "/generated") {
     Ok(_) -> Nil
     Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
   }
