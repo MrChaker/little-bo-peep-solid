@@ -298,6 +298,8 @@ pub fn main() {
     root() <> "/generated",
   ))
   io.debug(generated_files)
+  let _ = simplifile.create_directory(root() <> "/src/routes/article/")
+
   list.each(generated_files, fn(file) {
     io.debug(root() <> "/generated/" <> file)
 
