@@ -157,10 +157,7 @@ const Solution = (props: SolutionProps) => {
         }}>
         <div
           ref={ref}
-          class={twJoin(
-            "children-relative min-w-full",
-            !solution_fully_opened() && "overflow-hidden"
-          )}>
+          class={twJoin(!solution_fully_opened() && "overflow-hidden")}>
           {props.children}
           <div
             style={{

@@ -69,7 +69,7 @@ const Container = (props: ParentProps) => {
         class="relative flex justify-center align-center w-full pb-14 min-h-screen left-[1500px]"
         id="Container">
         <div class="w-full transition duration-300 sm:overflow-visible sm:translate-x-0">
-          <div class="font-baskerville w-full slice-v1 children-relative">
+          <div class="font-baskerville w-full">
             <Nav />
             {props.children}
             <SVGDefs />

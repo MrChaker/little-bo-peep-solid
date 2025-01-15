@@ -55,7 +55,7 @@ i {
 }
 
 /* Slice */
-.slice-v1 {
+.slice {
   position: relative;
   display: flex;
   justify-content: center;
@@ -69,16 +69,13 @@ i {
   margin-inline: auto;
 }
 
-.slice-v1 > * {
+.slice > * {
   width: min(var(--desktop-text-column-width), 100%);
   /* padding-inline: var(--desktop-text-column-padding); */
 }
-.children-relative > * {
-  position: relative;
-}
 
 @media (max-width: 520px) {
-  .slice-v1 {
+  .slice {
     width: 100%;
   }
 }
