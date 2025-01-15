@@ -2,6 +2,7 @@ import {
   Accessor,
   createEffect,
   createMemo,
+  createRenderEffect,
   createSignal,
   ParentProps,
 } from "solid-js";
@@ -27,6 +28,7 @@ const Solution = (props: SolutionProps) => {
   let transition_duration = () => store.transition_duration;
 
   let [content_height, set_content_height] = createSignal(0);
+  let [ref_div_mounted, set_ref_div_mounted] = createSignal(false);
   let [transition, set_transition] = createSignal(false);
   let [bot_div, set_bot_div] = createSignal(false);
   let [solution_fully_opened, set_solution_fully_opened] = createSignal(
@@ -36,20 +38,45 @@ const Solution = (props: SolutionProps) => {
     null
   );
 
+  createEffect(() => {
+    const handleResize = () => {
+      if (solution_open()) {
+        set_content_height(ref?.clientHeight || 0);
+      }
+    };
+
+    window.addEventListener("scroll", handleResize);
+
+    return () => {
+      return window.removeEventListener("scroll", handleResize);
+    };
+  });
+
+  const handleResize = () => {
+    set_content_height(ref?.clientHeight || 0);
+  };
+
   // toggle content div height
   createEffect(() => {
     if (solution_open()) {
-      set_content_height(ref?.offsetHeight || 0);
+      set_content_height(ref?.clientHeight || 0);
+      window.addEventListener("scroll", handleResize);
       // bot div
       setTimeout(() => {
         set_bot_div(false);
       }, transition_duration());
     } else {
+      window.removeEventListener("scroll", handleResize);
+      // console.log(window.)
       set_content_height(0);
       setTimeout(() => {
         set_bot_div(true);
       }, transition_duration());
     }
+
+    return () => {
+      return window.removeEventListener("scroll", handleResize);
+    };
   });
 
   // Update content height on resize
@@ -119,24 +146,21 @@ const Solution = (props: SolutionProps) => {
       </div>
       <div
         class={twJoin(
-          "solution col-start-2 transition-[height] relative",
-          solution_open() ? "animated-height-full" : "pointer-events-none",
-          !solution_fully_opened() && "overflow-y-clip"
+          "solution col-start-2 relative grid transition",
+          !solution_open() && "pointer-events-none"
         )}
         style={{
-          height: `${content_height()}px`,
+          // height: `${content_height()}px`,
+          "grid-template-rows": solution_open() ? "1fr" : "0fr",
           "transition-duration": `${transition_duration()}ms`,
+          "transition-property": "grid-template-rows",
         }}>
         <div
           ref={ref}
           class={twJoin(
-            "transition-all children-relative",
-            !solution_open() ? "-translate-y-full" : "",
-            transition() ? "transition-all" : ""
-          )}
-          style={{
-            "transition-duration": `${transition_duration()}ms`,
-          }}>
+            "children-relative min-w-full",
+            !solution_fully_opened() && "overflow-hidden"
+          )}>
           {props.children}
           <div
             style={{
