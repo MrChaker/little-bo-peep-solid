@@ -146,18 +146,25 @@ const Solution = (props: SolutionProps) => {
       </div>
       <div
         class={twJoin(
-          "solution col-start-2 relative grid transition",
-          !solution_open() && "pointer-events-none"
+          "solution col-start-2 relative grid transition-all",
+          !solution_open() && "pointer-events-none",
+          !solution_fully_opened() && "overflow-y-clip"
         )}
         style={{
-          // height: `${content_height()}px`,
           "grid-template-rows": solution_open() ? "1fr" : "0fr",
           "transition-duration": `${transition_duration()}ms`,
           "transition-property": "grid-template-rows",
         }}>
         <div
           ref={ref}
-          class={twJoin(!solution_fully_opened() && "overflow-hidden")}>
+          class={twJoin(
+            "transition-transform",
+            !solution_open() && "-translate-y-full",
+            !solution_fully_opened() && "overflow-hidden"
+          )}
+          style={{
+            "transition-duration": `${transition_duration()}ms`,
+          }}>
           {props.children}
           <div
             style={{
