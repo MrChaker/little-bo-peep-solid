@@ -1,18 +1,9 @@
-import {
-  Accessor,
-  createEffect,
-  createMemo,
-  createRenderEffect,
-  createSignal,
-  ParentProps,
-} from "solid-js";
+import { Accessor, createEffect, createSignal, ParentProps } from "solid-js";
 import SharedProps from "./types/SharedProps";
 import { GREEN_DIV_HEIGHT, TEXT_X_PADDING } from "~/constants";
 import { twJoin } from "tailwind-merge";
 import Spacer from "./Spacer";
 import { useGlobalContext } from "~/store/StoreProvider";
-import { getExerciseByIndex, updateExerciseByIndex } from "~/store";
-import { useSearchParams } from "@solidjs/router";
 
 type SolutionProps = ParentProps &
   SharedProps & {
@@ -27,76 +18,34 @@ const Solution = (props: SolutionProps) => {
   const solution_open = () => store.solutions_open[props.solution_number];
   let transition_duration = () => store.transition_duration;
 
-  let [content_height, set_content_height] = createSignal(0);
-  let [ref_div_mounted, set_ref_div_mounted] = createSignal(false);
   let [transition, set_transition] = createSignal(false);
   let [bot_div, set_bot_div] = createSignal(false);
-  let [solution_fully_opened, set_solution_fully_opened] = createSignal(
-    solution_open()
-  );
+  let [solution_fully_opened, set_solution_fully_opened] = createSignal(true); // set true to get ref.height
   let [handle, set_handle] = createSignal<ReturnType<typeof setTimeout> | null>(
     null
   );
 
   createEffect(() => {
-    const handleResize = () => {
-      if (solution_open()) {
-        set_content_height(ref?.clientHeight || 0);
-      }
-    };
-
-    window.addEventListener("scroll", handleResize);
-
-    return () => {
-      return window.removeEventListener("scroll", handleResize);
-    };
-  });
-
-  const handleResize = () => {
-    set_content_height(ref?.clientHeight || 0);
-  };
-
-  // toggle content div height
-  createEffect(() => {
     if (solution_open()) {
-      set_content_height(ref?.clientHeight || 0);
-      window.addEventListener("scroll", handleResize);
       // bot div
       setTimeout(() => {
         set_bot_div(false);
-      }, transition_duration());
+      }, transition_duration()[props.solution_number]);
     } else {
-      window.removeEventListener("scroll", handleResize);
-      // console.log(window.)
-      set_content_height(0);
       setTimeout(() => {
         set_bot_div(true);
-      }, transition_duration());
+      }, transition_duration()[props.solution_number]);
     }
-
-    return () => {
-      return window.removeEventListener("scroll", handleResize);
-    };
-  });
-
-  // Update content height on resize
-  createEffect(() => {
-    const updateContentHeight = () => {
-      if (solution_open()) {
-        set_content_height(ref?.offsetHeight || 0);
-      } else {
-        set_content_height(0);
-      }
-    };
-    window.addEventListener("resize", updateContentHeight);
-    return () => {
-      window.removeEventListener("resize", updateContentHeight);
-    };
   });
 
   // set transition duration
   createEffect(() => {
-    set_store("transition_duration", Math.min(1000, ref?.offsetHeight || 1000));
+    if (ref?.offsetHeight)
+      set_store("transition_duration", (prev) =>
+        prev.map((val, i) =>
+          i === props.solution_number ? ref?.offsetHeight : val
+        )
+      );
   });
 
   // solution fully opened
@@ -104,7 +53,7 @@ const Solution = (props: SolutionProps) => {
     if (solution_open()) {
       let timeout_handle = setTimeout(
         () => set_solution_fully_opened(true),
-        transition_duration()
+        transition_duration()[props.solution_number]
       );
       set_handle(timeout_handle);
     } else {
@@ -114,7 +63,7 @@ const Solution = (props: SolutionProps) => {
       set_solution_fully_opened(false);
       setTimeout(() => {
         set_solution_fully_opened(false);
-      }, transition_duration());
+      }, transition_duration()[props.solution_number]);
     }
   });
 
@@ -152,7 +101,9 @@ const Solution = (props: SolutionProps) => {
         )}
         style={{
           "grid-template-rows": solution_open() ? "1fr" : "0fr",
-          "transition-duration": `${transition_duration()}ms`,
+          "transition-duration": `${
+            transition_duration()[props.solution_number]
+          }ms`,
           "transition-property": "grid-template-rows",
         }}>
         <div
@@ -163,12 +114,16 @@ const Solution = (props: SolutionProps) => {
             !solution_fully_opened() && "overflow-hidden"
           )}
           style={{
-            "transition-duration": `${transition_duration()}ms`,
+            "transition-duration": `${
+              transition_duration()[props.solution_number]
+            }ms`,
           }}>
           {props.children}
           <div
             style={{
-              "transition-duration": `${solution_open() ? 1000 : 100}ms`,
+              "transition-duration": `${
+                transition_duration()[props.solution_number]
+              }ms`,
             }}
             class={twJoin(
               "backup-arrow mt-[32px] flex items-center justify-center transition-opacity",

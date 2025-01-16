@@ -30,6 +30,10 @@ export const Exercises = (props: ExercisesProps) => {
   useExercises(children_list.toArray().length);
   let { store, set_store } = useGlobalContext();
   let selected_exo = () => store.selected_exo;
+  set_store(
+    "transition_duration",
+    Array.from({ length: children_list.toArray().length }).map(() => 1000)
+  );
 
   return (
     <>
@@ -154,11 +158,11 @@ export const Exercise = (
     if (solution_open()) {
       setTimeout(() => {
         set_bot_div(false);
-      }, transition_duration());
+      }, transition_duration()[props.exercise_number]);
     } else {
       setTimeout(() => {
         set_bot_div(true);
-      }, transition_duration());
+      }, transition_duration()[props.exercise_number]);
     }
   });
 
@@ -170,7 +174,9 @@ export const Exercise = (
         style={{
           height: `${!solution_open() || bot_div() ? GREEN_DIV_HEIGHT : 0}px`,
           "background-color": store.show_areas ? "#00440050" : "",
-          "transition-duration": `${solution_open() ? 1000 : 0}ms`,
+          "transition-duration": `${
+            transition_duration()[props.exercise_number]
+          }ms`,
         }}></div>
     </div>
   );

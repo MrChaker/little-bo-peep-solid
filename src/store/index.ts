@@ -13,7 +13,7 @@ type Store = {
 
   selected_exo: number;
   solutions_open: boolean[];
-  transition_duration: number;
+  transition_duration: number[];
 
   show_section_dividers: boolean;
   show_areas: boolean;
@@ -28,7 +28,7 @@ const [store, set_store] = createStore<Store>({
 
   selected_exo: 0,
   solutions_open: [],
-  transition_duration: 1000,
+  transition_duration: [],
 
   show_section_dividers: false,
   show_areas: true,
