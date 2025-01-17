@@ -18,24 +18,35 @@ const Solution = (props: SolutionProps) => {
   const solution_open = () => store.solutions_open[props.solution_number];
   let transition_duration = () => store.transition_duration;
 
+  let [content_height, set_content_height] = createSignal(0);
   let [transition, set_transition] = createSignal(false);
   let [bot_div, set_bot_div] = createSignal(false);
   let [solution_fully_opened, set_solution_fully_opened] = createSignal(true); // set true to get ref.height
   let [handle, set_handle] = createSignal<ReturnType<typeof setTimeout> | null>(
     null
   );
-
+  const handleResize = () => {
+    set_content_height(ref?.clientHeight || 0);
+  };
   createEffect(() => {
     if (solution_open()) {
+      set_content_height(ref?.offsetHeight || 0);
+      window.addEventListener("scroll", handleResize);
       // bot div
       setTimeout(() => {
         set_bot_div(false);
       }, transition_duration()[props.solution_number]);
     } else {
+      window.removeEventListener("scroll", handleResize);
+      set_content_height(0);
       setTimeout(() => {
         set_bot_div(true);
       }, transition_duration()[props.solution_number]);
     }
+
+    return () => {
+      return window.removeEventListener("scroll", handleResize);
+    };
   });
 
   // set transition duration
@@ -95,23 +106,22 @@ const Solution = (props: SolutionProps) => {
       </div>
       <div
         class={twJoin(
-          "solution col-start-2 relative grid transition-all",
+          "solution relative  transition-all",
           !solution_open() && "pointer-events-none",
           !solution_fully_opened() && "overflow-y-clip"
         )}
         style={{
-          "grid-template-rows": solution_open() ? "1fr" : "0fr",
+          height: `${content_height()}px`,
           "transition-duration": `${
             transition_duration()[props.solution_number]
           }ms`,
-          "transition-property": "grid-template-rows",
+          "transition-property": "height",
         }}>
         <div
           ref={ref}
           class={twJoin(
             "transition-transform",
-            !solution_open() && "-translate-y-full",
-            !solution_fully_opened() && "overflow-hidden"
+            !solution_open() && "-translate-y-full"
           )}
           style={{
             "transition-duration": `${
