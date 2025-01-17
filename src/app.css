@@ -114,7 +114,6 @@ i {
 }
 
 mjx-container {
-  width: max-content !important;
   margin: 0 !important;
   left: 50%;
   transform: translateX(-50%);

@@ -43,7 +43,7 @@ const Solution = (props: SolutionProps) => {
     if (ref?.offsetHeight)
       set_store("transition_duration", (prev) =>
         prev.map((val, i) =>
-          i === props.solution_number ? ref?.offsetHeight : val
+          i === props.solution_number ? Math.min(ref?.offsetHeight, 1000) : val
         )
       );
   });
