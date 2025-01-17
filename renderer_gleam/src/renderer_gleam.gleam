@@ -284,11 +284,11 @@ pub fn main() {
   render_articles_list(root() <> "/src/components/TableOfContents.tsx")
   render_articles_list(root() <> "/src/components/Panel.tsx")
 
-  io.println("🚀 Parsing done ! Running Running prettier 🚀")
-  case run_prettier("/", root() <> "/generated") {
-    Ok(_) -> Nil
-    Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
-  }
+  // io.println("🚀 Parsing done ! Running Running prettier 🚀")
+  // case run_prettier("/", root() <> "/generated") {
+  //   Ok(_) -> Nil
+  //   Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
+  // }
 
   io.println("🚀 Moving generated files to routes 🚀")
   use generated_files <- result.try(simplifile.read_directory(
