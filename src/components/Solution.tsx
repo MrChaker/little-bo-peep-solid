@@ -19,7 +19,6 @@ const Solution = (props: SolutionProps) => {
   let transition_duration = () => store.transition_duration;
 
   let [content_height, set_content_height] = createSignal(0);
-  let [transition, set_transition] = createSignal(false);
   let [bot_div, set_bot_div] = createSignal(false);
   let [solution_fully_opened, set_solution_fully_opened] = createSignal(true); // set true to get ref.height
   let [handle, set_handle] = createSignal<ReturnType<typeof setTimeout> | null>(
@@ -89,14 +88,11 @@ const Solution = (props: SolutionProps) => {
           onClick={() => {
             let element_pos =
               window.innerHeight - (ref?.getBoundingClientRect()?.bottom || 0);
-
             let should_scroll_to_button_first =
               element_pos > GREEN_DIV_HEIGHT + 40 + 56;
             if (solution_open() && should_scroll_to_button_first) {
               document?.getElementById("exo")?.scrollIntoView();
             }
-            set_transition(true);
-            setTimeout(() => set_transition(false), 1100);
             set_store("solutions_open", (prev) => {
               prev[props.solution_number] = !solution_open();
               return [...prev];
