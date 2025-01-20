@@ -763,7 +763,7 @@
             |> ImageLeft
                 src images/62.svg
                 img_position top
-                offset_x -7.2rem
+                offset_x -5.5rem
                 offset_y -7.1rem
                 use_squiggle_on_mobile false
 
