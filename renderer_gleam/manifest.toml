@@ -21,11 +21,13 @@ packages = [
 ]
 
 [requirements]
+argv = { version = ">= 1.0.2 and < 2.0.0" }
 blamedlines = { path = "../../../VistuleB/blamedlines" }
 gleam_stdlib = { version = ">= 0.34.0 and < 2.0.0" }
 gleeunit = { version = ">= 1.0.0 and < 2.0.0" }
 lbp_desugaring = { path = "../../../MrChaker/lbp_desugaring" }
 leptos_emitter = { version = ">= 1.0.0 and < 2.0.0" }
+shellout = { version = ">= 1.6.0 and < 2.0.0" }
 simplifile = { version = ">= 2.2.0 and < 3.0.0" }
 vxml_parser = { version = ">= 1.0.0 and < 2.0.0" }
 writerly_parser = { path = "../../../VistuleB/writerly_parser" }

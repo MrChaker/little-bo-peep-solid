@@ -23,6 +23,8 @@ blamedlines = { path = "../../../VistuleB/blamedlines" }
 writerly_parser = { path = "../../../VistuleB/writerly_parser" }
 vxml_parser = ">= 1.0.0 and < 2.0.0"
 leptos_emitter = ">= 1.0.0 and < 2.0.0"
+argv = ">= 1.0.2 and < 2.0.0"
+shellout = ">= 1.6.0 and < 2.0.0"
 
 [dev-dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"
