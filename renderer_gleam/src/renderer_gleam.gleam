@@ -209,8 +209,6 @@ pub fn main() {
     }
   )
 
-  // io.debug(amendments.debug_prettified_string_fragments_local_paths)
-
   let renderer = vr.Renderer(
     assembler: wp.assemble_blamed_lines,
     source_parser: wp.parse_blamed_lines,
