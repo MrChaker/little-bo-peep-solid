@@ -1,8 +1,9 @@
 const useScrollX = () => {
   if (typeof window !== "undefined") {
+    console.log("inside useScrollX", (document.body.scrollWidth - window.innerWidth) / 2);
     requestAnimationFrame(() => {
       window.scroll({
-        left: 1500,
+        left: (document.body.scrollWidth - window.innerWidth) / 2,
         behavior: "instant",
       });
     });

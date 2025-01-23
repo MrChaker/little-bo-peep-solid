@@ -7,9 +7,11 @@ const TOC = () => {
   useScrollX();
   return (
     <div>
-      <h1 class="mb-[2.3rem] sm:mb-[2.6rem] flex justify-center items-center">
-        <TitleSVG />
-      </h1>
+      <div class="mb-[2.3rem] sm:mb-[2.6rem] flex justify-center items-center">
+        <div style="width:100vw" class="flex justify-center items-center">
+          <TitleSVG />
+        </div>
+      </div>
       <TOCAuthorSuppliedContent />
     </div>
   );

@@ -3,7 +3,7 @@ import useScrollX from "~/hooks/useScrollX";
 import useSaveScroll from "~/hooks/useSaveScroll";
 
 const Bootcamp = (props: any) => {
-  useScrollX();
+  // useScrollX();
   useSaveScroll();
   return (
     <>

@@ -74,23 +74,6 @@ const PanelButton = () => {
           class="select-none flex items-center justify-center h-8 w-8 m-3 fill-[rgb(30,30,30)] hover:fill-stone-600 hover:!opacity-100"
         >
           <PanelButtonIcon open={open()} />
-          
-          {
-            /* document.body.scrollWidth/2 does not seem
-               to be at the center of the column of text;
-               to debug, uncomment next '{}' block and scroll
-               until center of column of text is at middle
-               of right edge of browser; then we should
-               have
-
-               (scrollWidth()) / 2 == scrollX() + innerWidth()
-
-               ...but that's not the case
-            */
-          }
-          {/* {scrollWidth()}
-          <br></br>{(scrollWidth()) / 2}
-          <br></br>{scrollX() + innerWidth()} */}
         </button>
       </div>
       <div

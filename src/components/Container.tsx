@@ -1,4 +1,4 @@
-import { ParentProps, createEffect, onCleanup } from "solid-js";
+import { ParentProps, createEffect, onCleanup, createSignal } from "solid-js";
 import Nav from "./Nav";
 import SVGDefs from "./SVGDefs";
 
@@ -7,15 +7,37 @@ const Container = (props: ParentProps) => {
   // there is an inital scroll when each page is loaded .
   // code for it is in useScrollX used in renderder helpers
   // add_imports and table of contents
+  const [scrollY, set_scrollY] = createSignal(0);
+  const [scrollX, set_scrollX] = createSignal(0);
+  const [innerWidth, set_innerWidth] = createSignal(0);
+  const [scrollWidth, set_scrollWidth] = createSignal(0);
+
+  const handleScroll = () => {
+    set_scrollY(window.scrollY);
+    set_scrollX(window.scrollX);
+  };
+
+  const handleResize = () => {
+    set_innerWidth(window.innerWidth);
+    set_scrollWidth(document.body.scrollWidth);
+  };
 
   createEffect(() => {
+    handleScroll();
+    handleResize();
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
     const scroll_back = () => {
+      let theoretical_left = (scrollWidth() - innerWidth()) / 2;
+
       if (
-        window.scrollX > 1300.0 &&
-        window.scrollX < 1700.0
+        scrollX() > theoretical_left - 200 &&
+        scrollX() < theoretical_left + 200
       ) {
         window.scroll({
-          left: 1500,
+          left: theoretical_left,
           behavior: "smooth",
         });
       }
@@ -27,14 +49,23 @@ const Container = (props: ParentProps) => {
     onCleanup(() => {
       document.removeEventListener("scrollend", scroll_back);
       document.removeEventListener("touchend", scroll_back);
+      document.removeEventListener("scroll", scroll_back);
+      document.removeEventListener("resize", scroll_back);
     });
   });
 
   createEffect(() => {
     document.addEventListener("click", (_) => {
       window.scroll({
-        left: 1500,
+        left: (scrollWidth() - innerWidth()) / 2,
         behavior: "smooth",
+      });
+    });
+
+    window.addEventListener("resize", (_) => {
+      window.scroll({
+        left: (scrollWidth() - innerWidth()) / 2,
+        behavior: "instant",
       });
     });
   });
@@ -42,7 +73,7 @@ const Container = (props: ParentProps) => {
   return (
     <div class="">
       <div
-        class="relative flex justify-center align-center w-full pb-14 min-h-screen left-[1500px]"
+        class="outer-width-enforcer"
         id="Container">
         <div class="w-full transition duration-300 sm:overflow-visible sm:translate-x-0">
           <div class="font-baskerville w-full">
@@ -51,26 +82,8 @@ const Container = (props: ParentProps) => {
             <SVGDefs />
           </div>
         </div>
-        <ColumnButtonLeft />
-        <ColumnButtonRight />
       </div>
     </div>
-  );
-};
-
-const ColumnButtonRight = () => {
-  return (
-    <div
-      style="width: 1500px;"
-      class={`z-40 transition duration-300 absolute grid grid-cols-4 justify-end items-center w-full h-full translate-x-3/4 lg:translate-x-[85%] opacity-0 pointer-events-none`}></div>
-  );
-};
-
-const ColumnButtonLeft = () => {
-  return (
-    <div
-      style="width: 1500px;"
-      class={`z-40 transition duration-300 lg:hidden absolute grid grid-cols-4 justify-end items-center w-full h-full lg:translate-0 -translate-x-3/4 opacity-0 pointer-events-none`}></div>
   );
 };
 

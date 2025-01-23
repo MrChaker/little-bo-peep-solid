@@ -14,7 +14,10 @@ const useSaveScroll = () => {
       set_scroll(Number(localStorage.getItem(`${article}_scroll`) || "0"));
 
       if (scroll() !== null) {
-        window.scrollTo(1500, Number(scroll()));
+        window.scrollTo(
+          (document.body.scrollWidth - window.innerWidth) / 2,
+          Number(scroll())
+        );
       }
 
       window.addEventListener("scroll", update);

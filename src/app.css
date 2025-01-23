@@ -63,20 +63,14 @@ i {
   font-size: 1.25rem; /* Equivalent to text-xl */
   line-height: 1.5em;
 
-  width: min(var(--desktop-text-column-width), 100%);
-  padding-inline: var(--desktop-text-column-padding);
+  width: min(var(--desktop-text-column-width), 100vw);
+  padding-left: var(--desktop-text-column-padding);
+  padding-right: var(--desktop-text-column-padding);
   margin-inline: auto;
 }
 
 .slice > * {
-  width: min(var(--desktop-text-column-width), 100%);
-  /* padding-inline: var(--desktop-text-column-padding); */
-}
-
-@media (max-width: 520px) {
-  .slice {
-    width: 100%;
-  }
+  width: min(var(--desktop-text-column-width), 100vw);
 }
 
 .spacer {
@@ -440,4 +434,8 @@ table.first-line tr td:first-child {
 
 .bg-lavender {
   background-color: rgba(0, 0, 255, 0.05);
+}
+
+.outer-width-enforcer {
+  width: calc(min(var(--desktop-text-column-width), 100%) + 3000px);
 }
