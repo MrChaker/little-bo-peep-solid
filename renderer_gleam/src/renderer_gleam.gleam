@@ -1,305 +1,240 @@
-import gleam/int
-import gleam/io
+import argv
+import gleam/option.{ Some }
 import gleam/list
-import gleam/regexp
-import gleam/result
+import gleam/io
 import gleam/string
-import shellout
-import simplifile
+import infrastructure as infra
+import vxml_renderer as vr
+import writerly_parser as wp
+import pipeline
+import blamedlines.{type BlamedLine, type Blame, BlamedLine, Blame}
+import vxml_parser.{type VXML, BlamedAttribute}
 
-fn dotdot(path: String) -> String {
-  path
-  |> string.split("/")
-  |> list.reverse()
-  |> list.drop(1)
-  |> list.reverse()
-  |> string.join("/")
+const ins = string.inspect
+
+type FragmentType {
+  Chapter(Int)
+  Bootcamp(Int)
+  TOCAuthorSuppliedContent
+  PanelAuthorSuppliedContent
 }
 
-fn root() {
-  let assert Ok(current_directory) = simplifile.current_directory()
-  dotdot(current_directory)
+type LBPSplitterError {
+  NoTOCAuthorSuppliedContent
+  MoreThanOneTOCAuthorSuppliedContent
+  NoPanelAuthorSuppliedContent
+  MoreThanOnePanelAuthorSuppliedContent
 }
 
-fn add_space_between_word_and_digit(str: String) -> String {
-  let assert Ok(re) = regexp.from_string("(\\w+)(\\d+)")
-  let assert [_, name, digit, _] = regexp.split(re, str)
-  name <> " " <> digit
+type LBPEmitterError {
+  NumberAttributeAlreadyExists(FragmentType, Int)
 }
 
-fn add_boilerplate(file_path: String, file_name: String) {
-  use file_content <- result.try(simplifile.read(file_path))
-  let imports =
-    "
-    import ArticleTitle from \"~/components/ArticleTitle\"
-    import Container from \"~/components/Container\";
-    import Nav from \"~/components/Nav\";
-    import {Section, Example, NoBreak, CustomBlock, Pause, WriterlyBlankLine} from \"~/components/Wrappers\"
-    import {CentralDisplay, CentralDisplayItalic} from \"~/components/Delimiters\"
-    import {Math, MathBlock} from \"~/components/Math\"
-    import {ImageRight, ImageLeft} from \"~/components/SideImage\"
-    import Image from \"~/components/Image\"
-    import InlineImage from \"~/components/InlineImage\"
-    import {Exercise, Exercises} from \"~/components/Exercises\"
-    import Solution from \"~/components/Solution\"
-    import Table from \"~/components/Table\"
-    import Grid from \"~/components/Grid\"
-    import {List, Item} from \"~/components/List\"
-    import {SectionDivider, StarDivider} from \"~/components/SectionDivider\"
-    import VerticalChunk from \"~/components/VerticalChunk\"
-    import useScrollX from \"~/hooks/useScrollX\"
-    import useSaveScroll from \"~/hooks/useSaveScroll\"\n"
-
-  let file_name = string.drop_end(file_name, 4)
-  // remove .tsx
-  let capetalized = string.capitalise(file_name)
-  let label =
-    "{`"
-    <> add_space_between_word_and_digit(capetalized)
-    <> ": ` + props.title}"
-  let on_mobile_label =
-    "{`"
-    <> add_space_between_word_and_digit(capetalized)
-    <> ": ` + (props.mobile_title || props.title)}"
-
-  let article_component = "const " <> capetalized <> " = (props: any) => {
-            useScrollX();
-            useSaveScroll();
-            return (
-            <>
-                <ArticleTitle label=" <> label <> " on_mobile_label=" <> on_mobile_label <> " />
-                {props.children}
-             </>)
-        }\n
-    "
-
-  use _ <- result.try(simplifile.write(
-    file_path,
-    imports <> article_component <> file_content,
-  ))
-
-  Ok("")
+fn blame_us(message: String) -> Blame {
+  Blame(message, -1, [])
 }
 
-fn get_digit(str: String) -> Int {
-  let assert Ok(re) = regexp.from_string("(\\w+)(\\d+)")
-  let assert [_, _, digit, _] = regexp.split(re, str)
-
-  let assert Ok(res) = int.parse(digit)
-  res
-}
-
-fn is_of_article_type(str: String, article_type: String) -> Bool {
-  let assert Ok(re) = regexp.from_string("(\\w+)(\\d+)")
-  let assert [_, name, _, _] = regexp.split(re, str)
-  name == article_type
-}
-
-fn get_sorted_articles(
-  article_type,
-) -> Result(List(#(Int, String)), simplifile.FileError) {
-  use content_dir_items <- result.try(simplifile.read_directory(
-    root() <> "/src/content",
-  ))
-
-  let assert Ok(output) =
-    list.scan(content_dir_items, [], fn(acc, item) {
-      let full_path = root() <> "/src/content/" <> item
-      let assert Ok(is_dir) = simplifile.is_directory(full_path)
-      case
-        !string.starts_with(item, "#")
-        && is_dir
-        && is_of_article_type(item, article_type)
-      {
-        True -> {
-          list.append(acc, [#(get_digit(item), full_path)])
-        }
-        False -> acc
+fn lbp_splitter(root: VXML) -> Result(List(#(String, VXML, FragmentType)), LBPSplitterError) {
+  let chapter_vxmls = infra.children_with_tag(root, "Chapter")
+  let bootcamp_vxmls = infra.children_with_tag(root, "Bootcamp")
+  use toc_vxml <- infra.on_error_on_ok(
+    infra.unique_child_with_tag(root, "TOCAuthorSuppliedContent"),
+    with_on_error: fn(error) {
+      case error {
+        infra.MoreThanOne -> Error(MoreThanOneTOCAuthorSuppliedContent)
+        infra.LessThanOne -> Error(NoTOCAuthorSuppliedContent)
       }
-    })
-    |> list.last()
+    }
+  )
+
+  use panel_vxml <- infra.on_error_on_ok(
+    infra.unique_child_with_tag(root, "PanelAuthorSuppliedContent"),
+    with_on_error: fn(error) {
+      case error {
+        infra.MoreThanOne -> Error(MoreThanOnePanelAuthorSuppliedContent)
+        infra.LessThanOne -> Error(NoPanelAuthorSuppliedContent)
+      }
+    }
+  )
 
   Ok(
-    list.sort(output, fn(a, b) {
-      let #(a, _) = a
-      let #(b, _) = b
-      int.compare(a, b)
-    }),
-  )
-}
-
-fn find_title(line: String, prop_name: String) {
-  let trimmed = line |> string.trim()
-  case string.starts_with(trimmed, prop_name) {
-    True -> {
-      let assert Ok(#(_, title)) = string.split_once(trimmed, " ")
-      Ok(title)
-    }
-    False -> Error("")
-  }
-}
-
-fn get_article_titles(path: String) {
-  use file_content <- result.try(simplifile.read(path))
-  let lines = string.split(file_content, "\n")
-  let title =
-    list.find_map(lines, find_title(_, "title"))
-    |> result.unwrap("")
-
-  let mobile_title =
-    list.find_map(lines, find_title(_, "mobile_title"))
-    |> result.unwrap(title)
-
-  Ok(#(title, mobile_title))
-}
-
-fn append_to_list(
-  articles: List(#(Int, String)),
-  article_type: String,
-  output: String,
-  // generated: String
-) {
-  case articles {
-    [] -> output
-    [#(i, path), ..rest] -> {
-      let assert Ok(#(title, mobile_title)) =
-        get_article_titles(path <> "/__parent.emu")
-
-      let output =
-        output
-        <> "<MenuItem article_type=\""
-        <> string.inspect(i)
-        <> "\" label=\""
-        <> title
-        <> "\" on_mobile=\""
-        <> mobile_title
-        <> "\" href=\""
-        <> article_type
-        <> string.inspect(i)
-        <> "\"/>"
-
-      append_to_list(rest, article_type, output)
-    }
-  }
-}
-
-fn loop_splits(splits: List(String), generated: String) {
-  case splits {
-    [] -> string.join(splits, "")
-    [prev_content, opening_div, _, closing_div, ..rest] -> {
-      prev_content
-      <> opening_div
-      <> generated
-      <> closing_div
-      <> loop_splits(rest, generated)
-    }
-    _ -> string.join(splits, "")
-  }
-}
-
-fn replace_content(path: String, article_type: String, generated: String) {
-  // put content inside <div id="article_type"></div>
-  use file_contents <- result.try(simplifile.read(path))
-  let assert Ok(re) =
-    regexp.compile(
-      "(?s)(<div id=\"" <> article_type <> "\">)(.*?)(</div>)",
-      regexp.Options(case_insensitive: False, multi_line: True),
+    list.flatten(
+      [
+        [#("components/TOCAuthorSuppliedContent.tsx", toc_vxml, TOCAuthorSuppliedContent)],
+        [#("components/PanelAuthorSuppliedContent.tsx", panel_vxml, PanelAuthorSuppliedContent)],
+        list.index_map(chapter_vxmls, fn(c, index){#("routes/article/chapter" <> ins(index + 1) <> ".tsx", c, Chapter(index + 1))}),
+        list.index_map(bootcamp_vxmls, fn(c, index){#("routes/article/bootcamp" <> ins(index + 1) <> ".tsx", c, Bootcamp(index + 1))}),
+      ]
     )
-  let splits = regexp.split(re, file_contents)
-  // each match will be splitted into 5 splits
+  )
+}
 
-  case list.length(splits) >= 5 {
-    True -> {
-      simplifile.write(path, loop_splits(splits, generated))
-    }
-    False -> {
-      Ok(Nil)
-    }
+fn lbp_chapter_bootcamp_common_emitter(
+  path: String,
+  fragment: VXML,
+  fragment_type: FragmentType,
+  number: Int,
+) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let blame = BlamedAttribute(blame_us("lbp_fragment_emitterL65"), "number", ins(number))
+
+  use with_attribute <- infra.on_error_on_ok(
+    over: infra.prepend_unique_key_attribute(fragment, blame),
+    with_on_error: fn(_) { Error(NumberAttributeAlreadyExists(fragment_type, number)) }
+  )
+
+  let lines = list.flatten([
+    [
+      case fragment_type {
+        Chapter(_) -> BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Chapter from \"~/components/Chapter\";")
+        Bootcamp(_) -> BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Bootcamp from \"~/components/Bootcamp\";")
+        _ -> panic as "bad fragment_type"
+      }
+    ],
+    [
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Section, Example, NoBreak, CustomBlock, Pause, WriterlyBlankLine } from \"~/components/Wrappers\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { CentralDisplay, CentralDisplayItalic } from \"~/components/Delimiters\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Math, MathBlock } from \"~/components/Math\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { ImageRight, ImageLeft } from \"~/components/SideImage\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Image from \"~/components/Image\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import InlineImage from \"~/components/InlineImage\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Exercise, Exercises } from \"~/components/Exercises\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Solution from \"~/components/Solution\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Table from \"~/components/Table\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Grid from \"~/components/Grid\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { List, Item } from \"~/components/List\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { SectionDivider, StarDivider } from \"~/components/SectionDivider\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import VerticalChunk from \"~/components/VerticalChunk\";"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, ""),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "const Article = () => {"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 2, "return ("),
+    ],
+    vxml_parser.vxml_to_jsx_blamed_lines(with_attribute, 4),
+    [
+      BlamedLine(blame_us("lbp_fragment_emitter"), 2, ");"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "};"),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, ""),
+      BlamedLine(blame_us("lbp_fragment_emitter"), 0, "export default Article;"),
+    ]
+  ])
+
+  Ok(#(path, lines, fragment_type))
+}
+
+fn toc_emitter(path: String, fragment: VXML, fragment_type: FragmentType) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let lines = list.flatten([
+    [
+      BlamedLine(blame_us("toc_emitter"), 0, "import TOCTitle from \"./TOCTitle\";"),
+      BlamedLine(blame_us("toc_emitter"), 0, "import TOCItem from \"./TOCItem\";"),
+      BlamedLine(blame_us("toc_emitter"), 0, "import Spacer from \"./Spacer\";"),
+      BlamedLine(blame_us("toc_emitter"), 0, ""),
+      BlamedLine(blame_us("toc_emitter"), 0, "const TOCAuthorSuppliedContent = () => {"),
+      BlamedLine(blame_us("toc_emitter"), 2, "return ("),
+      BlamedLine(blame_us("toc_emitter"), 4, "<>"),
+    ],
+    vxml_parser.vxmls_to_jsx_blamed_lines(fragment |> infra.get_children, 6),
+    [
+      BlamedLine(blame_us("toc_emitter"), 4, "</>"),
+      BlamedLine(blame_us("toc_emitter"), 2, ");"),
+      BlamedLine(blame_us("toc_emitter"), 0, "};"),
+      BlamedLine(blame_us("toc_emitter"), 0, ""),
+      BlamedLine(blame_us("toc_emitter"), 0, "export default TOCAuthorSuppliedContent;"),
+    ],
+  ])
+
+  Ok(#(path, lines, fragment_type))
+}
+
+fn panel_emitter(path: String, fragment: VXML, fragment_type: FragmentType) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let lines = list.flatten([
+    [
+      BlamedLine(blame_us("panel_emitter"), 0, "import PanelTitle from \"./PanelTitle\";"),
+      BlamedLine(blame_us("panel_emitter"), 0, "import PanelItem from \"./PanelItem\";"),
+      BlamedLine(blame_us("panel_emitter"), 0, ""),
+      BlamedLine(blame_us("panel_emitter"), 0, "const PanelAuthorSuppliedContent = () => {"),
+      BlamedLine(blame_us("panel_emitter"), 2, "return ("),
+      BlamedLine(blame_us("panel_emitter"), 4, "<>"),
+    ],
+    vxml_parser.vxmls_to_jsx_blamed_lines(fragment |> infra.get_children, 6),
+    [
+      BlamedLine(blame_us("panel_emitter"), 4, "</>"),
+      BlamedLine(blame_us("panel_emitter"), 2, ");"),
+      BlamedLine(blame_us("panel_emitter"), 0, "};"),
+      BlamedLine(blame_us("panel_emitter"), 0, ""),
+      BlamedLine(blame_us("panel_emitter"), 0, "export default PanelAuthorSuppliedContent;"),
+    ],
+  ])
+
+  Ok(#(path, lines, fragment_type))
+}
+
+fn lbp_emitter(pair : #(String, VXML, FragmentType)) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let #(path, vxml, fragment_type) = pair
+  case fragment_type {
+    Chapter(n) -> lbp_chapter_bootcamp_common_emitter(path, vxml, fragment_type, n)
+    Bootcamp(n) -> lbp_chapter_bootcamp_common_emitter(path, vxml, fragment_type, n)
+    TOCAuthorSuppliedContent -> toc_emitter(path, vxml, fragment_type)
+    PanelAuthorSuppliedContent -> panel_emitter(path, vxml, fragment_type)
   }
 }
 
-fn render_articles_list(path: String) {
-  ["chapter", "bootcamp"]
-  |> list.each(fn(article_type) {
-    let assert Ok(articles) = get_sorted_articles(article_type)
-    case list.length(articles) {
-      0 -> Ok(Nil)
-      _ -> {
-        let output =
-          "<Title label=\""
-          <> string.capitalise(article_type)
-          <> "\" />\n <ItemsList>\n"
-          <> append_to_list(articles, article_type, "")
-          <> "</ItemsList>\n"
-
-        replace_content(path, article_type, output)
-      }
-    }
-  })
-}
-
-fn run_prettier(in: String, path: String) -> Result(_, _) {
-  shellout.command(
-    run: "npx",
-    in: in,
-    with: ["prettier", "--write", path],
-    opt: [],
-  )
+fn cli_usage() {
+  io.println("command line options (mix & match any combination):")
+  io.println("")
+  io.println("      --prettier")
+  io.println("         -> run npm prettier on emitted content")
+  io.println("      --spotlight <path1> <path2> ...")
+  io.println("         -> spotlight the given paths before assembling")
+  io.println("      --debug-pipeline-<x>-<y>")
+  io.println("         -> print output of pipes number x up to y")
+  io.println("      --debug-pipeline-<x>")
+  io.println("         -> print output of pipe number x")
+  io.println("      --debug-pipeline-0-0")
+  io.println("         -> print output of all pipes")
+  io.println("      --debug-fragments-bl <local_path1> <local_path2> ...")
+  io.println("         -> print blamed lines of local paths")
+  io.println("      --debug-fragments-printed <local_path1> <local_path2> ...")
+  io.println("         -> print unprettified output files of local paths")
+  io.println("      --debug-fragments-prettified <local_path1> <local_path2> ...")
+  io.println("         -> print prettified output files of local paths")
 }
 
 pub fn main() {
-  io.debug("🚀 Parsing markup to jsx 🚀")
-  let _ = simplifile.create_directory(root() <> "/generated")
-  case
-    shellout.command(
-      run: root() <> "/parser_script",
-      in: root(),
-      with: [
-        root() <> "/src/content",
-        "--emit-book",
-        "solid",
-        "--output",
-        root() <> "/generated",
-      ],
-      opt: [],
-    )
-  {
-    Ok(o) -> {
-      io.debug(o)
+  use amendments <- infra.on_error_on_ok(
+    io.debug(vr.process_command_line_arguments(argv.load().arguments, [#("--prettier", True)])),
+    fn (error) {
+      io.println("")
+      io.println("command line error: " <> ins(error))
+      io.println("")
+      cli_usage()
     }
-    Error(_) -> {
-      panic as "Parsing failed"
-    }
+  )
+
+  let renderer = vr.Renderer(
+    assembler: wp.assemble_blamed_lines,
+    source_parser: wp.parse_blamed_lines,
+    parsed_source_converter: wp.writerlys_to_vxmls,
+    pipeline: pipeline.our_pipeline(),
+    splitter: lbp_splitter,
+    emitter: lbp_emitter,
+    prettifier: vr.prettier_prettifier,
+  )
+
+  let parameters = vr.RendererParameters(
+    input_dir: "../src/content",
+    output_dir: Some("../src"),
+    prettifying_option: False,
+  )
+    |> vr.amend_renderer_paramaters_by_command_line_amendment(amendments)
+
+  let debug_options = vr.empty_renderer_debug_options("../renderer_artifacts")
+    |> vr.amend_renderer_debug_options_by_command_line_amendment(io.debug(amendments))
+
+  case vr.run_renderer(
+    renderer,
+    parameters,
+    debug_options,
+  ) {
+    Ok(Nil) -> Nil
+    Error(error) -> io.println("\nrenderer error: " <> ins(error) <> "\n")
   }
-
-  io.debug("🚀 Adding Boilerplate 🚀")
-  use generated_files <- result.try(simplifile.read_directory(
-    root() <> "/generated",
-  ))
-  list.each(generated_files, fn(file) {
-    add_boilerplate(root() <> "/generated/" <> file, file)
-  })
-
-  io.debug("🚀 Render table of contents and chapter panel 🚀")
-  render_articles_list(root() <> "/src/components/TableOfContents.tsx")
-  render_articles_list(root() <> "/src/components/Panel.tsx")
-
-  // io.println("🚀 Parsing done ! Running Running prettier 🚀")
-  // case run_prettier("/", root() <> "/generated") {
-  //   Ok(_) -> Nil
-  //   Error(#(_, e)) -> io.println_error("🔴 Could not run prettier " <> e)
-  // }
-
-  io.println("🚀 Moving generated files to routes 🚀")
-  use generated_files <- result.try(simplifile.read_directory(
-    root() <> "/generated",
-  ))
-  let _ = simplifile.create_directory(root() <> "/src/routes/article/")
-  list.each(generated_files, fn(file) {
-    let assert Ok(content) = simplifile.read(root() <> "/generated/" <> file)
-    simplifile.write(root() <> "/src/routes/article/" <> file, content)
-  })
-  io.println("🟢 Done 🟢")
-
-  Ok(Nil)
 }
