@@ -73,7 +73,7 @@ const Container = (props: ParentProps) => {
   return (
     <div class="">
       <div
-        class="outer-width-enforcer"
+        class="outer-width-enforcer pb-14"
         id="Container">
         <div class="w-full transition duration-300 sm:overflow-visible sm:translate-x-0">
           <div class="font-baskerville w-full">
