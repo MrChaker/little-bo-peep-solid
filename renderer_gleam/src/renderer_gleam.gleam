@@ -177,25 +177,9 @@ fn lbp_emitter(pair : #(String, VXML, FragmentType)) -> Result(#(String, List(Bl
   }
 }
 
-fn cli_usage() {
-  io.println("command line options (mix & match any combination):")
-  io.println("")
+fn cli_usage_supplementary() {
   io.println("      --prettier")
   io.println("         -> run npm prettier on emitted content")
-  io.println("      --spotlight <path1> <path2> ...")
-  io.println("         -> spotlight the given paths before assembling")
-  io.println("      --debug-pipeline-<x>-<y>")
-  io.println("         -> print output of pipes number x up to y")
-  io.println("      --debug-pipeline-<x>")
-  io.println("         -> print output of pipe number x")
-  io.println("      --debug-pipeline-0-0")
-  io.println("         -> print output of all pipes")
-  io.println("      --debug-fragments-bl <local_path1> <local_path2> ...")
-  io.println("         -> print blamed lines of local paths")
-  io.println("      --debug-fragments-printed <local_path1> <local_path2> ...")
-  io.println("         -> print unprettified output files of local paths")
-  io.println("      --debug-fragments-prettified <local_path1> <local_path2> ...")
-  io.println("         -> print prettified output files of local paths")
 }
 
 pub fn main() {
@@ -205,7 +189,8 @@ pub fn main() {
       io.println("")
       io.println("command line error: " <> ins(error))
       io.println("")
-      cli_usage()
+      vr.cli_usage()
+      cli_usage_supplementary()
     }
   )
 
