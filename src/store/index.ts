@@ -7,7 +7,6 @@ type ExercisesState = {
 }[];
 
 type Store = {
-  page_state: "fixed" | "free";
   panel_opened: boolean;
   exercises: ExercisesState;
 
@@ -21,7 +20,6 @@ type Store = {
 };
 
 const [store, set_store] = createStore<Store>({
-  page_state: "fixed",
   panel_opened: false,
 
   exercises: [],
