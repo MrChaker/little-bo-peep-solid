@@ -438,4 +438,5 @@ table.first-line tr td:first-child {
 
 .outer-width-enforcer {
   width: calc(min(var(--desktop-text-column-width), 100%) + 3000px);
+  overflow: hidden;
 }

@@ -18,6 +18,7 @@ const Container = (props: ParentProps) => {
   };
 
   const handleResize = () => {
+    console.log("resizing scrollWidth to ", document.body.scrollWidth);
     set_innerWidth(window.innerWidth);
     set_scrollWidth(document.body.scrollWidth);
   };
@@ -56,6 +57,8 @@ const Container = (props: ParentProps) => {
 
   createEffect(() => {
     document.addEventListener("click", (_) => {
+      console.log("scrollWidth():", scrollWidth());
+      console.log("innerWidth():", innerWidth());
       window.scroll({
         left: (scrollWidth() - innerWidth()) / 2,
         behavior: "smooth",

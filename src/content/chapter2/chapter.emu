@@ -621,15 +621,9 @@
         $$
 
         |> ImageRight
-            src images/54.svg
+            src images/svg_ch2_ch_units_cloud.svg
             offset_x -6rem
-            children_y 34.5%
-            children_x 29%
-            clickable_on_desktop true
-
-            $$
-            {4 \over 0.75} = 5.3333...\qquad\qquad\,\,\,
-            $$
+            style width:930px
 
         following the template
 

@@ -1944,17 +1944,9 @@ const Article = () => {
             \frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
             $$
             <ImageRight
-                 clickable_on_desktop={true}
-                 children_x="29%"
-                 children_y="34.5%"
+                 style="width:930px"
                  offset_x="-6rem"
-                 src="/images/54.svg">
-              <MathBlock>
-                $$
-                &#123;4 \over 0.75&#125; = 5.3333...\qquad\qquad\,\,\,
-                $$
-              </MathBlock>
-            </ImageRight>
+                 src="/images/svg_ch2_ch_units_cloud.svg" />
           </MathBlock>
           <div
                class="spacer" />
