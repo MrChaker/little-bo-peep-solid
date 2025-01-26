@@ -2449,11 +2449,9 @@ const Article = () => {
               $$
               <ImageRight
                    use_squiggle_on_mobile={false}
-                   children_x="39%"
-                   children_y="48%"
                    offset_y="-1rem"
                    offset_x="-4rem"
-                   src="/images/104.svg">
+                   src="/images/svg_ch1_ex_104.svg">
                 <VerticalChunk>
                   {" "}{" "}
                   <NoBreak>
@@ -3217,22 +3215,9 @@ const Article = () => {
               \end&#123;align&#125;
               $$
               <ImageRight
-                   children_y="30%"
-                   children_x="30%"
                    y="12%"
                    offset_y="3.5rem"
-                   src="/images/24.svg">
-                <MathBlock>
-                  $$
-                  \begin&#123;align&#125;
-                  &#123;1 \over 99&#125; - &#123;1 \over 100&#125;
-                  &= &#123;1 \over 99&#125;\cdot&#123;100 \over 100&#125;\, - \,&#123;1 \over 100&#125;\cdot&#123;99 \over 99&#125;\up&#123;1.5&#125;\\
-                  &= &#123;100 \over 99\cdot 100&#125; - &#123;99 \over 99\cdot 100&#125;\up&#123;1.5&#125;\\
-                  &= &#123;1 \over 99\cdot 100&#125;\up&#123;1.5&#125;
-                  \end&#123;align&#125;
-                  $$
-                </MathBlock>
-              </ImageRight>
+                   src="/images/svg_ch1_ex_24.svg" />
             </MathBlock>
             <div
                  class="spacer" />
@@ -3498,17 +3483,9 @@ const Article = () => {
               $$
               <ImageRight
                    use_squiggle_on_mobile={false}
-                   children_x="41%"
-                   children_y="13%"
-                   src="/images/25.svg"
+                   src="/images/svg_ch1_ex_25.svg"
                    offset_y="1.2rem"
-                   offset_x="-6rem">
-                <MathBlock>
-                  $$
-                  &#123;1 \over 99\cdot 100&#125;
-                  $$
-                </MathBlock>
-              </ImageRight>
+                   offset_x="-6rem" />
             </MathBlock>
             <div
                  class="spacer" />
@@ -3523,17 +3500,9 @@ const Article = () => {
               $$
               <ImageRight
                    use_squiggle_on_mobile={false}
-                   children_x="41%"
-                   children_y="15%"
-                   src="/images/26.svg"
+                   src="/images/ch1_ex_26.svg"
                    offset_y="1.2rem"
-                   offset_x="-6rem">
-                <MathBlock>
-                  $$
-                  &#123;1 \over 99^2&#125;
-                  $$
-                </MathBlock>
-              </ImageRight>
+                   offset_x="-6rem" />
             </MathBlock>
             <div
                  class="spacer" />
@@ -3580,23 +3549,9 @@ const Article = () => {
               $$
               <ImageRight
                    clickable_on_desktop={true}
-                   children_x="23%"
-                   children_y="27%"
                    y="12%"
                    offset_y="2rem"
-                   src="/images/27.svg">
-                <MathBlock>
-                  $$
-                  \begin&#123;align&#125;
-                  &#123;1 \over 99^2&#125; - &#123;1 \over 99\cdot 100&#125; &=
-                  &#123;1 \over 99^2&#125;\cdot&#123;100 \over 100&#125;\, - \,
-                  &#123;1 \over 99\cdot 100&#125;\cdot&#123;99 \over 99&#125;\\
-                  &= &#123;100 \over 99^2 \cdot 100&#125; - &#123;99 \over 99^2 \cdot 100&#125;\up&#123;1.5&#125;\\
-                  &= &#123;1 \over 99^2\cdot 100&#125;\up&#123;1.5&#125;
-                  \end&#123;align&#125;
-                  $$
-                </MathBlock>
-              </ImageRight>
+                   src="/images/svg_ch1_ex_27.svg" />
             </MathBlock>
             <div
                  class="spacer" />

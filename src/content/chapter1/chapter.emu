@@ -802,11 +802,9 @@
             $$
 
             |> ImageRight
-                src images/104.svg
+                src images/svg_ch1_ex_104.svg
                 offset_x -4rem
                 offset_y -1rem
-                children_y 48%
-                children_x 39%
                 use_squiggle_on_mobile false
 
                 $10^{15}\fw\te{mm} = 10^{15}\fw(10^{-6}\fw\te{km}) = \dots$
@@ -1055,20 +1053,9 @@
             $$
 
             |> ImageRight
-                src images/24.svg
+                src images/svg_ch1_ex_24.svg
                 offset_y 3.5rem
                 y 12%
-                children_x 30%
-                children_y 30%
-
-                $$
-                \begin{align}
-                {1 \over 99} - {1 \over 100}
-                &= {1 \over 99}\cdot{100 \over 100}\, - \,{1 \over 100}\cdot{99 \over 99}\up{1.5}\\
-                &= {100 \over 99\cdot 100} - {99 \over 99\cdot 100}\up{1.5}\\
-                &= {1 \over 99\cdot 100}\up{1.5}
-                \end{align}
-                $$
 
             ...it's that much. (For example,
 
@@ -1165,14 +1152,8 @@
             |> ImageRight
                 offset_x -6rem
                 offset_y 1.2rem
-                src images/25.svg
-                children_y 13%
-                children_x 41%
+                src images/svg_ch1_ex_25.svg
                 use_squiggle_on_mobile false 
-
-                $$
-                {1 \over 99\cdot 100}
-                $$
 
             (as previously computed) is smaller than
 
@@ -1183,14 +1164,8 @@
             |> ImageRight
                 offset_x -6rem
                 offset_y 1.2rem
-                src images/26.svg
-                children_y 15%
-                children_x 41%
+                src images/ch1_ex_26.svg
                 use_squiggle_on_mobile false
-
-                $$
-                {1 \over 99^2}
-                $$
 
             we will compute the difference
 
@@ -1219,22 +1194,10 @@
             $$
 
             |> ImageRight
-                src images/27.svg
+                src images/svg_ch1_ex_27.svg
                 offset_y 2rem
                 y 12%
-                children_y 27%
-                children_x 23%
                 clickable_on_desktop true
-
-                $$
-                \begin{align}
-                {1 \over 99^2} - {1 \over 99\cdot 100} &=
-                {1 \over 99^2}\cdot{100 \over 100}\, - \,
-                {1 \over 99\cdot 100}\cdot{99 \over 99}\\
-                &= {100 \over 99^2 \cdot 100} - {99 \over 99^2 \cdot 100}\up{1.5}\\
-                &= {1 \over 99^2\cdot 100}\up{1.5}
-                \end{align}
-                $$
 
             which, for large $n$, is roughly
 
