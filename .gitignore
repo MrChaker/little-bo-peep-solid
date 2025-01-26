@@ -34,5 +34,4 @@ Thumbs.db
 generated
 content_watcher/build
 renderer_gleam/build
-src/routes/article
 
