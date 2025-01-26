@@ -46,15 +46,6 @@ const Article = () => {
         </VerticalChunk>
         <div
              class="spacer" />
-        <MathBlock>
-          $$
-           
-          &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; 
-          &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; 
-          $$
-        </MathBlock>
-        <div
-             class="spacer" />
         <CentralDisplayItalic>
           the number of units the line goes up with each
           unit to the right
