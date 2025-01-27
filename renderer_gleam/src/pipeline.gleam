@@ -1,7 +1,5 @@
 import gleam/option.{Some, None}
-import desugarers/rename_when_child_of.{rename_when_child_of}
 import desugarers/absorb_next_sibling_while.{absorb_next_sibling_while}
-import desugarers/add_attributes.{add_attributes}
 import desugarers/add_counter_attributes.{add_counter_attributes}
 import desugarers/add_exercise_labels.{add_exercise_labels}
 import desugarers/add_spacer_divs_before.{add_spacer_divs_before}
@@ -26,6 +24,8 @@ import desugarers/remove_empty_lines.{remove_empty_lines}
 import desugarers/remove_vertical_chunks_with_no_text_child.{
   remove_vertical_chunks_with_no_text_child,
 }
+import desugarers/remove_attributes.{remove_attributes}
+import desugarers/rename_when_child_of.{rename_when_child_of}
 import desugarers/split_by_indexed_regexes.{split_by_indexed_regexes}
 import desugarers/group_siblings_not_separated_by_blank_lines.{group_siblings_not_separated_by_blank_lines}
 import desugarers/surround_elements_by.{surround_elements_by}
@@ -304,9 +304,8 @@ pub fn our_pipeline() -> List(Pipe) {
       #("List", "spacer"),
       #("Pause", "spacer"),
     ]),
-    // Self closed tags
-    add_attributes(#(["col"], [#("is_self_closed", "true")])),
     generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
     generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
+    remove_attributes(["counter", "handle"])
   ]
 }

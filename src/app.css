@@ -42,6 +42,8 @@
 body {
   background: rgb(var(--background-rgb));
   color: rgb(var(--foreground-rgb));
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  line-height: 1.5em;
 }
 
 /* Delimiters */
@@ -54,24 +56,23 @@ i {
   font-family: "Baskerville Italic";
 }
 
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
 /* Slice */
 .slice {
   position: relative;
-  display: flex;
-  justify-content: center;
-
-  font-size: 1.25rem; /* Equivalent to text-xl */
-  line-height: 1.5em;
-
   width: min(var(--desktop-text-column-width), 100vw);
   padding-left: var(--desktop-text-column-padding);
   padding-right: var(--desktop-text-column-padding);
   margin-inline: auto;
 }
 
-.slice > * {
+/* .slice > * {
   width: min(var(--desktop-text-column-width), 100vw);
-}
+} */
 
 .spacer {
   height: 1.5rem;

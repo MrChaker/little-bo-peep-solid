@@ -17,8 +17,6 @@ const Article = () => {
   return (
     <Bootcamp
          number={2}
-         counter="NoteCounter"
-         counter="ExampleCounter"
          title="Powers of 10">
       <Section>
         <VerticalChunk>
@@ -1296,14 +1294,11 @@ const Article = () => {
                class="first-line">
             <colgroup>
               <col
-                   width="60px"
-                   is_self_closed={true} />
+                   width="60px" />
               <col
-                   width="200px"
-                   is_self_closed={true} />
+                   width="200px" />
               <col
-                   width="140px"
-                   is_self_closed={true} />
+                   width="140px" />
             </colgroup>
             <tbody>
               <tr>
@@ -1732,14 +1727,11 @@ const Article = () => {
                class="first-line">
             <colgroup>
               <col
-                   width="60px"
-                   is_self_closed={true} />
+                   width="60px" />
               <col
-                   width="200px"
-                   is_self_closed={true} />
+                   width="200px" />
               <col
-                   width="140px"
-                   is_self_closed={true} />
+                   width="140px" />
             </colgroup>
             <tbody>
               <tr>
@@ -2093,11 +2085,9 @@ const Article = () => {
                class="first-line">
             <colgroup>
               <col
-                   width="120px"
-                   is_self_closed={true} />
+                   width="120px" />
               <col
-                   width="120px"
-                   is_self_closed={true} />
+                   width="120px" />
             </colgroup>
             <tbody>
               <tr>
@@ -2436,11 +2426,9 @@ const Article = () => {
                class="first-line">
             <colgroup>
               <col
-                   width="120px"
-                   is_self_closed={true} />
+                   width="120px" />
               <col
-                   width="120px"
-                   is_self_closed={true} />
+                   width="120px" />
             </colgroup>
             <tbody>
               <tr>
@@ -3040,8 +3028,7 @@ const Article = () => {
       <div
            class="spacer" />
       <Exercises
-           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]}
-           counter="ExerciseCounter">
+           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]}>
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
@@ -3080,7 +3067,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={0}>
             <VerticalChunk>
               Since{" "}
@@ -3220,7 +3206,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={1}>
             <VerticalChunk>
               We have
@@ -3295,7 +3280,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={2}>
             <VerticalChunk>
               “万万” is “ten thousand ten thousand”, or
@@ -3413,7 +3397,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={3}>
             <VerticalChunk>
               There are{" "}
@@ -3519,7 +3502,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={4}>
             <VerticalChunk>
               We have
@@ -3582,7 +3564,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={5}>
             <VerticalChunk>
               One hundred billion is{" "}
@@ -3662,7 +3643,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={6}>
             <VerticalChunk>
               {" "}{" "}
@@ -3715,7 +3695,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={7}>
             <VerticalChunk>
               {" "}{" "}
@@ -3764,7 +3743,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={8}>
             <VerticalChunk>
               Since{" "}
@@ -3822,7 +3800,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={9}>
             <VerticalChunk>
               We have
@@ -3894,7 +3871,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={10}>
             <VerticalChunk>
               Presumably, there are{" "}
@@ -4022,7 +3998,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={11}>
             <VerticalChunk>
               One has
@@ -4100,7 +4075,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={12}>
             <VerticalChunk>
               Here is the “proof” that your professor is 
@@ -4268,7 +4242,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={13}>
             <VerticalChunk>
               We have (#1)
@@ -4488,7 +4461,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={14}>
             <VerticalChunk>
               Firstly we can rewrite{" "}

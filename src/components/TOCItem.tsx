@@ -7,7 +7,7 @@ const TOCItem = (props: {
   return (
     <a
       href={`/article/${props.href}`}
-      class="slice flex items-baseline justify-between !leading-9 lg:!leading-10 !text-2xl lg:!text-3xl"
+      class="slice flex items-baseline justify-between !leading-9 lg:!leading-10 !text-3xl"
     >
       <span class="block !w-fit">{props.article_type}</span>
       <span class="dots !w-auto"></span>

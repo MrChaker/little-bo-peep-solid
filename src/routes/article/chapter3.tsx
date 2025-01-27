@@ -17,8 +17,6 @@ const Article = () => {
   return (
     <Chapter
          number={3}
-         counter="NoteCounter"
-         counter="ExampleCounter"
          title="Functions">
       <Section>
         <VerticalChunk>
@@ -2433,8 +2431,7 @@ const Article = () => {
       <div
            class="spacer" />
       <Exercises
-           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]}
-           counter="ExerciseCounter">
+           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]}>
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
@@ -2449,7 +2446,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={0}>
             <VerticalChunk>
               The absolute value function is{" "}
@@ -2500,7 +2496,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={1}>
             <VerticalChunk>
               We have
@@ -2618,7 +2613,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={2}>
             <VerticalChunk>
               The answers are:
@@ -2786,7 +2780,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={3}>
             <VerticalChunk>
               As{" "}
@@ -3011,7 +3004,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={4}>
             <VerticalChunk>
               We would like to argue the correctness of 
@@ -3573,7 +3565,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={5}>
             <VerticalChunk>
               For the first graph,{" "}
@@ -3839,7 +3830,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={6}>
             <VerticalChunk>
               Consider how to “read off” a value of{" "}
@@ -4059,7 +4049,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={7}>
             <VerticalChunk>
               Setting “
@@ -4202,7 +4191,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={8}>
             <VerticalChunk>
               We will again evaluate the “outer”
@@ -5210,7 +5198,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={9}>
             <VerticalChunk>
               The answer is
@@ -5279,7 +5266,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={10}>
             <VerticalChunk>
               Put an unknown “
@@ -5582,7 +5568,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={11}>
             <VerticalChunk>
               The equation is equivalent to
@@ -5648,7 +5633,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={12}>
             <VerticalChunk>
               The equation can be written
@@ -5795,7 +5779,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={13}>
             <VerticalChunk>
               Write
@@ -6534,7 +6517,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={14}>
             <VerticalChunk>
               Start by noting that the point 
@@ -6751,7 +6733,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={15}>
             <VerticalChunk>
               Well,
@@ -7245,7 +7226,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={16}>
             <VerticalChunk>
               The true statements are i, iv, because
@@ -7528,7 +7508,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={17}>
             <VerticalChunk>
               The first equality is false because the 
@@ -7671,7 +7650,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={18}>
             <VerticalChunk>
               Write
@@ -7933,7 +7911,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={19}>
             <VerticalChunk>
               The curve
@@ -8275,7 +8252,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={20}>
             <VerticalChunk>
               ...in an expression such as...

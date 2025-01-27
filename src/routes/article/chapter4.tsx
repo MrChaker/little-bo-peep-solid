@@ -17,11 +17,9 @@ const Article = () => {
   return (
     <Chapter
          number={4}
-         counter="NoteCounter"
-         counter="ExampleCounter"
          title="Derivatives">
       <Image
-           src="/images/svg_ch4_polaroids.svg" />
+           src="/images/svg_ch4_ch_polaroids.svg" />
       <div
            class="spacer" />
       <Section>
@@ -2217,8 +2215,7 @@ const Article = () => {
       <div
            class="spacer" />
       <Exercises
-           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"]}
-           counter="ExerciseCounter">
+           labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"]}>
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
@@ -2246,7 +2243,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={0}>
             <VerticalChunk>
               That would be:
@@ -2333,7 +2329,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={1}>
             <VerticalChunk>
               The graph of{" "}
@@ -2391,7 +2386,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={2}>
             <VerticalChunk>
               The second derivative is zero wherever the
@@ -2472,7 +2466,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={3}>
             <VerticalChunk>
               The units on the{" "}
@@ -2544,7 +2537,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={4}>
             <VerticalChunk>
               The equation is true!
@@ -2803,7 +2795,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={5}>
             <VerticalChunk>
               The pattern to respect is that, each time 
@@ -2993,7 +2984,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={6}>
             <VerticalChunk>
               The graphs are already in the right order 
@@ -3170,7 +3160,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={7}>
             <VerticalChunk>
               To start with, the slope of{" "}
@@ -3392,7 +3381,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={8}>
             <VerticalChunk>
               Firstly, the graph of{" "}
@@ -3842,7 +3830,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={9}>
             <VerticalChunk>
               Yes, this is the case. For a joke way
@@ -3942,7 +3929,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={10}>
             <VerticalChunk>
               The rate of change is the slope, which
@@ -4001,7 +3987,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={11}>
             <VerticalChunk>
               As it happens—and by the exact method
@@ -4783,7 +4768,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={12}>
             <VerticalChunk>
               The values oscillate between{" "}
@@ -4995,7 +4979,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={13}>
             <VerticalChunk>
               We can naïvely try to imitiate how the
@@ -5991,7 +5974,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={14}>
             <VerticalChunk>
               Take{" "}
@@ -6529,7 +6511,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={15}>
             <VerticalChunk>
               This version pictures all the elements
@@ -7196,7 +7177,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={16}>
             <VerticalChunk>
               Dividing by{" "}
@@ -8013,7 +7993,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={17}>
             <VerticalChunk>
               One can say
@@ -8068,7 +8047,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={18}>
             <VerticalChunk>
               The form of...
@@ -8307,7 +8285,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={19}>
             <VerticalChunk>
               That would be the fact that
@@ -8507,7 +8484,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={20}>
             <VerticalChunk>
               The “logical” definition is:
@@ -8750,7 +8726,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={21}>
             <VerticalChunk>
               E.g.:
@@ -8861,7 +8836,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={22}>
             <VerticalChunk>
               We can start with the fraction in the
@@ -9281,7 +9255,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={23}>
             <VerticalChunk>
               Because the particle is going at unit speed the
@@ -9568,7 +9541,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={24}>
             <VerticalChunk>
               Let's start by examining Pacman's first six displacements,
@@ -10276,7 +10248,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={25}>
             <VerticalChunk>
               It seems well-advised to start by heuristically verifying
@@ -11117,7 +11088,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={26}>
             <VerticalChunk>
               As the second derivative is the
@@ -11998,7 +11968,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={27}>
             <VerticalChunk>
               It is necessary and sufficient to show that
@@ -12351,7 +12320,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={28}>
             <VerticalChunk>
               Given an arbitrary{" "}
@@ -12677,7 +12645,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={29}>
             <VerticalChunk>
               It computes
@@ -12976,7 +12943,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={30}>
             <VerticalChunk>
               It computes the dollars-per-second earnings rate 
@@ -13081,7 +13047,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={31}>
             <VerticalChunk>
               At{" "}
@@ -13380,7 +13345,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={32}>
             <VerticalChunk>
               The sought-for formula is
@@ -13662,7 +13626,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={33}>
             <VerticalChunk>
               The velocity vector is an arrow of length{" "}
@@ -13797,7 +13760,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={34}>
             <VerticalChunk>
               The velocity vector of Exercise 39 travels
@@ -13919,7 +13881,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={35}>
             <VerticalChunk>
               The velocity vector has length{" "}
@@ -14152,7 +14113,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={36}>
             <VerticalChunk>
               Going back in time,
@@ -14505,7 +14465,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={37}>
             <VerticalChunk>
               For{" "}
@@ -14795,7 +14754,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={38}>
             <VerticalChunk>
               At{" "}
@@ -17692,7 +17650,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={39}>
             <VerticalChunk>
               Recall the curves from Exercise 12:
@@ -17877,7 +17834,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={40}>
             <VerticalChunk>
               For the functions:

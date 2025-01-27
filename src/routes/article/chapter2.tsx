@@ -17,8 +17,6 @@ const Article = () => {
   return (
     <Chapter
          number={2}
-         counter="NoteCounter"
-         counter="ExampleCounter"
          title="Slopes">
       <Section>
         <VerticalChunk>
@@ -2078,8 +2076,7 @@ const Article = () => {
       <div
            class="spacer" />
       <Exercises
-           labels={["0", "1", "2", "3"]}
-           counter="ExerciseCounter">
+           labels={["0", "1", "2", "3"]}>
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
@@ -2110,7 +2107,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={0}>
             <VerticalChunk>
               This is true, as illustrated by the following pair of lines:
@@ -2263,7 +2259,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={1}>
             <VerticalChunk>
               A point{" "}
@@ -2601,7 +2596,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={2}>
             <VerticalChunk>
               Here is the “official” graph of the (vertical)
@@ -2852,7 +2846,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={3}>
             <VerticalChunk>
               E.g.:

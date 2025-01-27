@@ -17,8 +17,6 @@ const Article = () => {
   return (
     <Chapter
          number={1}
-         counter="NoteCounter"
-         counter="ExampleCounter"
          title="A Few Refreshers">
       <Section>
         <VerticalChunk>
@@ -1773,8 +1771,7 @@ const Article = () => {
       <div
            class="spacer" />
       <Exercises
-           labels={["0", "1"]}
-           counter="ExerciseCounter">
+           labels={["0", "1"]}>
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
@@ -1895,7 +1892,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={0}>
             <VerticalChunk>
               Part by part:
@@ -3470,7 +3466,6 @@ const Article = () => {
           <div
                class="spacer" />
           <Solution
-               counter="SolutionNoteCounter"
                solution_number={1}>
             <VerticalChunk>
               Since
