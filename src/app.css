@@ -70,6 +70,14 @@ i {
   margin-inline: auto;
 }
 
+table  {
+  margin-inline: auto;
+}
+
+table .slice {
+  width: auto;
+}
+
 /* .slice > * {
   width: min(var(--desktop-text-column-width), 100vw);
 } */
