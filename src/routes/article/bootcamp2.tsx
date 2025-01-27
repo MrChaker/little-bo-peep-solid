@@ -17,6 +17,8 @@ const Article = () => {
   return (
     <Bootcamp
          number={2}
+         counter="NoteCounter"
+         counter="ExampleCounter"
          title="Powers of 10">
       <Section>
         <VerticalChunk>
@@ -2714,8 +2716,11 @@ const Article = () => {
           {" "}
           being a single 0/1 value.)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+      </Section>
+      <div
+           class="spacer" />
+      <Section>
+        <VerticalChunk>
           {" "}{" "}
           <b>
             Logarithms base 10.
@@ -2814,6 +2819,11 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
+            {" "}{" "}
+            <b>
+              Example 1.
+            </b>
+            {" "}
             It so happens that
           </VerticalChunk>
           <div
@@ -2880,6 +2890,11 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
+            {" "}{" "}
+            <b>
+              Example 2.
+            </b>
+            {" "}
             It so happens that
           </VerticalChunk>
           <div
@@ -2927,6 +2942,11 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
+            {" "}{" "}
+            <b>
+              Example 3.
+            </b>
+            {" "}
             Since
           </VerticalChunk>
           <div
@@ -2970,6 +2990,11 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
+            {" "}{" "}
+            <b>
+              Example 4.
+            </b>
+            {" "}
             Since
           </VerticalChunk>
           <div

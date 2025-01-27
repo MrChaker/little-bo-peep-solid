@@ -17,6 +17,8 @@ const Article = () => {
   return (
     <Bootcamp
          number={1}
+         counter="NoteCounter"
+         counter="ExampleCounter"
          title="Sets">
       <Section>
         <VerticalChunk>

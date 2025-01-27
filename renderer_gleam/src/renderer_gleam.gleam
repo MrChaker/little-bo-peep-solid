@@ -184,7 +184,7 @@ fn cli_usage_supplementary() {
 
 pub fn main() {
   use amendments <- infra.on_error_on_ok(
-    io.debug(vr.process_command_line_arguments(argv.load().arguments, [#("--prettier", True)])),
+    vr.process_command_line_arguments(argv.load().arguments, [#("--prettier", True)]),
     fn (error) {
       io.println("")
       io.println("command line error: " <> ins(error))
@@ -212,7 +212,7 @@ pub fn main() {
     |> vr.amend_renderer_paramaters_by_command_line_amendment(amendments)
 
   let debug_options = vr.empty_renderer_debug_options("../renderer_artifacts")
-    |> vr.amend_renderer_debug_options_by_command_line_amendment(io.debug(amendments))
+    |> vr.amend_renderer_debug_options_by_command_line_amendment(amendments)
 
   case vr.run_renderer(
     renderer,

@@ -775,6 +775,8 @@
     that is equal to $8$ _bits_, with a _bit_
     being a single 0/1 value.)
 
+|> Section
+
     *Logarithms base 10.*
     Every positive number can be uniquely 
     written as “ten to the power something”.

@@ -99,7 +99,9 @@ pub fn our_pipeline() -> List(Pipe) {
     // 7.
     add_title_counters_and_titles_with_handle_assignments([
       #("Chapter", "ExampleCounter", "Example", "*Example ", ".*", "*Example.*"),
+      #("Bootcamp", "ExampleCounter", "Example", "*Example ", ".*", "*Example.*"),
       #("Chapter", "NoteCounter", "Note", "_Note ", "._", "_Note._"),
+      #("Bootcamp", "NoteCounter", "Note", "_Note ", "._", "_Note._"),
       #(
         "Exercises",
         "ExerciseCounter",
