@@ -1930,8 +1930,10 @@ const Article = () => {
           mathematical realm, what with jerk being
           the derivative of acceleration!
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <div
+             class="spacer" />
+        <Pause />
+        <VerticalChunk>
           {" "}{" "}
           <b>
             Postscript: Sums, Products, Quotients,
