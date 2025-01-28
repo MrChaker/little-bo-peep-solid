@@ -41,9 +41,9 @@ export const Exercises = (props: ExercisesProps) => {
         id="exo"
         src="/images/seperator.png"
         height="50px"
-        class="flex items-center mt-[15px] mb-[40px]"></Image>
-      <Swticher exercises={children_list.toArray()} />
-      <div class="col-start-2 h-[31px]"></div>
+        class="mt-[15px] mb-[40px]"></Image>
+      <Switcher exercises={children_list.toArray()} />
+      <div class="h-[31px]"></div>
       <For each={children_list.toArray()}>
         {(child, index) => {
           return (
@@ -69,7 +69,7 @@ type SwitcherProps = {
   // set_selected_exo: Setter<number>;
 };
 
-const Swticher = (props: SwitcherProps) => {
+const Switcher = (props: SwitcherProps) => {
   let { store, set_store } = useGlobalContext();
   let selected_exo = () => store.selected_exo;
 

@@ -57,8 +57,6 @@ const Container = (props: ParentProps) => {
 
   createEffect(() => {
     document.addEventListener("click", (_) => {
-      console.log("scrollWidth():", scrollWidth());
-      console.log("innerWidth():", innerWidth());
       window.scroll({
         left: (scrollWidth() - innerWidth()) / 2,
         behavior: "smooth",

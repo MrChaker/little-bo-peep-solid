@@ -51,22 +51,20 @@ const Solution = (props: SolutionProps) => {
     if (solution_open()) {
       set_content_height(ref?.offsetHeight || 0);
       window.addEventListener("scroll", handleResize);
-      // bot div
-      setTimeout(() => {
-        set_bot_div(false);
-      }, transition_duration()[props.solution_number]);
-      turnOffScrollHistory();
+      setTimeout(
+        () => { set_bot_div(false); },
+        transition_duration()[props.solution_number]
+      );
     } else {
       window.removeEventListener("scroll", handleResize);
       set_content_height(0);
-      setTimeout(() => {
-        set_bot_div(true);
-      }, transition_duration()[props.solution_number]);
+      setTimeout(
+        () => { set_bot_div(true); }, 
+        transition_duration()[props.solution_number]
+      );
     }
 
-    return () => {
-      return window.removeEventListener("scroll", handleResize);
-    };
+    onCleanup(() => window.removeEventListener("scroll", handleResize));
   });
 
   // set transition duration
@@ -83,10 +81,7 @@ const Solution = (props: SolutionProps) => {
   createEffect(() => {
     if (solution_open()) {
       let timeout_handle = setTimeout(
-        () => {
-          set_solution_fully_opened(true);
-          turnOnScrollHistory();
-        },
+        () => { set_solution_fully_opened(true); },
         transition_duration()[props.solution_number]
       );
       set_handle(timeout_handle);
@@ -95,9 +90,10 @@ const Solution = (props: SolutionProps) => {
         clearTimeout(handle()!);
       }
       set_solution_fully_opened(false);
-      setTimeout(() => {
-        set_solution_fully_opened(false);
-      }, transition_duration()[props.solution_number]);
+      setTimeout(
+        () => { set_solution_fully_opened(false); },
+        transition_duration()[props.solution_number]
+      );
     }
   });
 
@@ -105,29 +101,34 @@ const Solution = (props: SolutionProps) => {
     <>
       <div
         ref={button_ref}
-        class="relative col-start-2"
+        class="relative"
         style={`padding-inline: ${TEXT_X_PADDING}`}
       >
         <SolutionSVG
           solution_open={solution_open}
-          onClick={() => {
-            let element_pos =
-              window.innerHeight - (ref?.getBoundingClientRect()?.bottom || 0);
-            let should_scroll_to_button_first =
-              element_pos > GREEN_DIV_HEIGHT + 40 + 56;
-            if (solution_open() && should_scroll_to_button_first) {
-              document?.getElementById("exo")?.scrollIntoView();
+          onClick={
+            () => {
+              let element_pos =
+                window.innerHeight - (ref?.getBoundingClientRect()?.bottom || 0);
+              let should_scroll_to_button_first =
+                element_pos > GREEN_DIV_HEIGHT + 40 + 56;
+              if (solution_open() && should_scroll_to_button_first) {
+                document?.getElementById("exo")?.scrollIntoView();
+              }
+              set_store(
+                "solutions_open",
+                (prev) => {
+                  prev[props.solution_number] = !solution_open();
+                  return [...prev];
+                }
+              );
             }
-            set_store("solutions_open", (prev) => {
-              prev[props.solution_number] = !solution_open();
-              return [...prev];
-            });
-          }}
+          }
         />
       </div>
       <div
         class={twJoin(
-          "solution relative  transition-all",
+          "solution relative transition-all",
           !solution_open() && "pointer-events-none",
           !solution_fully_opened() && "overflow-y-clip"
         )}
@@ -213,8 +214,7 @@ export const SolutionSVG = (props: BtnProps) => {
       <Spacer />
       <div
         onClick={props.onClick}
-        id="solution-button"
-        class="column cursor-pointer"
+        class="cursor-pointer"
       >
         <svg class="mx-auto h-[37px] overflow-visible">
           <g class="solution_button_svg">
