@@ -1,4 +1,10 @@
-import { Accessor, createEffect, createSignal, ParentProps } from "solid-js";
+import {
+  Accessor,
+  createEffect,
+  createSignal,
+  ParentProps,
+  onCleanup,
+} from "solid-js";
 import SharedProps from "./types/SharedProps";
 import { GREEN_DIV_HEIGHT, TEXT_X_PADDING } from "~/constants";
 import { twJoin } from "tailwind-merge";
@@ -9,6 +15,18 @@ type SolutionProps = ParentProps &
   SharedProps & {
     solution_number: number;
   };
+
+const turnOffScrollHistory = () => {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+}
+
+const turnOnScrollHistory = () => {
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+}
 
 const Solution = (props: SolutionProps) => {
   let button_ref: HTMLDivElement | undefined;
@@ -24,9 +42,11 @@ const Solution = (props: SolutionProps) => {
   let [handle, set_handle] = createSignal<ReturnType<typeof setTimeout> | null>(
     null
   );
+
   const handleResize = () => {
     set_content_height(ref?.clientHeight || 0);
   };
+
   createEffect(() => {
     if (solution_open()) {
       set_content_height(ref?.offsetHeight || 0);
@@ -35,6 +55,7 @@ const Solution = (props: SolutionProps) => {
       setTimeout(() => {
         set_bot_div(false);
       }, transition_duration()[props.solution_number]);
+      turnOffScrollHistory();
     } else {
       window.removeEventListener("scroll", handleResize);
       set_content_height(0);
@@ -62,7 +83,10 @@ const Solution = (props: SolutionProps) => {
   createEffect(() => {
     if (solution_open()) {
       let timeout_handle = setTimeout(
-        () => set_solution_fully_opened(true),
+        () => {
+          set_solution_fully_opened(true);
+          turnOnScrollHistory();
+        },
         transition_duration()[props.solution_number]
       );
       set_handle(timeout_handle);
@@ -82,7 +106,8 @@ const Solution = (props: SolutionProps) => {
       <div
         ref={button_ref}
         class="relative col-start-2"
-        style={`padding-inline: ${TEXT_X_PADDING}`}>
+        style={`padding-inline: ${TEXT_X_PADDING}`}
+      >
         <SolutionSVG
           solution_open={solution_open}
           onClick={() => {
@@ -112,7 +137,8 @@ const Solution = (props: SolutionProps) => {
             transition_duration()[props.solution_number]
           }ms`,
           "transition-property": "height",
-        }}>
+        }}
+      >
         <div
           ref={ref}
           class={twJoin(
@@ -123,7 +149,8 @@ const Solution = (props: SolutionProps) => {
             "transition-duration": `${
               transition_duration()[props.solution_number]
             }ms`,
-          }}>
+          }}
+        >
           {props.children}
           <div
             style={{
@@ -135,7 +162,8 @@ const Solution = (props: SolutionProps) => {
               "backup-arrow mt-[32px] flex items-center justify-center transition-opacity",
               !(solution_open() && solution_fully_opened()) && "opacity-0",
               bot_div() && "delay-[2s]"
-            )}>
+            )}
+          >
             <BackupArrow />
           </div>
         </div>
@@ -155,7 +183,8 @@ export const BackupArrow = () => {
       class="tab cursor-pointer overflow-visible z-10"
       onClick={() => {
         document?.getElementById("exo")?.scrollIntoView();
-      }}>
+      }}
+    >
       <path
         class="overflow-visible"
         d="M35.4941 1H6.65545C3.53203 1 1 3.53203 1 6.65545V35.4941C1 38.6175 3.53203 41.1495 6.65545 41.1495H35.4941C38.6175 41.1495 41.1495 38.6175 41.1495 35.4941V6.65545C41.1495 3.53203 38.6175 1 35.4941 1Z"
@@ -163,10 +192,12 @@ export const BackupArrow = () => {
         fill-opacity="0.4"
         stroke="black"
         stroke-width="1.5"
-        stroke-miterlimit="2"></path>
+        stroke-miterlimit="2"
+      ></path>
       <path
         d="M20 32C20 32.5523 20.4477 33 21 33C21.5523 33 22 32.5523 22 32H20ZM21 11L15.2265 21H26.7735L21 11ZM22 32L22 20H20L20 32H22Z"
-        fill="black"></path>
+        fill="black"
+      ></path>
     </svg>
   );
 };
@@ -183,7 +214,8 @@ export const SolutionSVG = (props: BtnProps) => {
       <div
         onClick={props.onClick}
         id="solution-button"
-        class="column cursor-pointer">
+        class="column cursor-pointer"
+      >
         <svg class="mx-auto h-[37px] overflow-visible">
           <g class="solution_button_svg">
             <rect
@@ -192,7 +224,8 @@ export const SolutionSVG = (props: BtnProps) => {
               x="-7"
               y="-7"
               width="123"
-              height="50"></rect>
+              height="50"
+            ></rect>
 
             <rect
               id="solution_button_focus_rect"
@@ -203,7 +236,8 @@ export const SolutionSVG = (props: BtnProps) => {
                   : "active_solution_button_rect"
               )}
               width="109"
-              height="36"></rect>
+              height="36"
+            ></rect>
 
             <path
               id="solution_button_lip"
@@ -213,7 +247,8 @@ export const SolutionSVG = (props: BtnProps) => {
                   ? "inactive_solution_button_lip"
                   : "active_solution_button_lip"
               )}
-              d="M 0 10 v -10 h 109 v 10 M 0 26 v 10 h 109 v -10"></path>
+              d="M 0 10 v -10 h 109 v 10 M 0 26 v 10 h 109 v -10"
+            ></path>
 
             <g
               id="solution_button_finger_pair"
@@ -222,7 +257,8 @@ export const SolutionSVG = (props: BtnProps) => {
                 props.solution_open()
                   ? "inactive_solution_button_hands"
                   : "active_solution_button_hands"
-              )}>
+              )}
+            >
               <g transform="translate(101.5, 18)">
                 <use href="#finger_pointing_left"></use>
               </g>
