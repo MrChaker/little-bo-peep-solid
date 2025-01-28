@@ -194,8 +194,6 @@ pub fn main() {
     }
   )
 
-  // io.debug(amendments.assemble_blamed_lines_selector_args)
-
   let renderer = vr.Renderer(
     assembler: wp.assemble_blamed_lines_advanced_mode(_, amendments.assemble_blamed_lines_selector_args),
     source_parser: wp.parse_blamed_lines,
