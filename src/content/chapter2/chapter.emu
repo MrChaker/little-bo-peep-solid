@@ -1,4 +1,5 @@
 |> Section
+    type intro
 
     *Slopes.*
     The _slope_ of a line is a mathematical measure
@@ -42,6 +43,7 @@
 
 
 |> Section
+    handle measuring
 
     *Measuring Slope.*
     The slope of a line is also the ratio of vertical

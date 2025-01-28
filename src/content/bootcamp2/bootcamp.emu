@@ -14,6 +14,7 @@
 
 
 |> Section
+    handle quack
 
     *Integer powers of 10.*
     We define
@@ -254,129 +255,124 @@
     In English, e.g., these are some of the “famous”
     powers of $10$:
 
-    |> div
-        class slice align-center
+    |> table
+        class first-line
 
-        |> table
-            class first-line
-            margin-top 1em
-            margin-bottom 1em
+        |> colgroup
 
-            |> colgroup
+            |> col
+                width 60px
+            |> col
+                width 200px
+            |> col
+                width 140px
 
-                |> col
-                    width 60px
-                |> col
-                    width 200px
-                |> col
-                    width 140px
+        |> tbody
+            |> tr
+                |> td
+                    class align-center
 
-            |> tbody
-                |> tr
-                    |> td
-                        class align-center
+                    $n$
+                |> td
+                    class align-center
 
-                        $n$
-                    |> td
-                        class align-center
+                    $\,\,10^n$
+                |> td
+                    class align-center
 
-                        $\,\,10^n$
-                    |> td
-                        class align-center
+                    name
+            |> tr
+                |> td
+                    class align-center
 
-                        name
-                |> tr
-                    |> td
-                        class align-center
+                    $0$
+                |> td
+                    class align-center
 
-                        $0$
-                    |> td
-                        class align-center
+                    $1$
+                |> td
+                    class align-center
 
-                        $1$
-                    |> td
-                        class align-center
+                    _one_
 
-                        _one_
+            |> tr
+                |> td
+                    class align-center
 
-                |> tr
-                    |> td
-                        class align-center
+                    $1$
+                |> td
+                    class align-center
 
-                        $1$
-                    |> td
-                        class align-center
+                    $10$
+                |> td
+                    class align-center
 
-                        $10$
-                    |> td
-                        class align-center
+                    _ten_
+            |> tr
+                |> td
+                    class align-center
 
-                        _ten_
-                |> tr
-                    |> td
-                        class align-center
+                    $2$
+                |> td
+                    class align-center
 
-                        $2$
-                    |> td
-                        class align-center
+                    $100$
+                |> td
+                    class align-center
 
-                        $100$
-                    |> td
-                        class align-center
+                    _hundred_
+            |> tr
+                |> td
+                    class align-center
 
-                        _hundred_
-                |> tr
-                    |> td
-                        class align-center
+                    $3$
+                |> td
+                    class align-center
 
-                        $3$
-                    |> td
-                        class align-center
+                    $1000$
+                |> td
+                    class align-center
 
-                        $1000$
-                    |> td
-                        class align-center
+                    _thousand_
+            |> tr
+                |> td
+                    class align-center
 
-                        _thousand_
-                |> tr
-                    |> td
-                        class align-center
+                    $6$
+                |> td
+                    class align-center
 
-                        $6$
-                    |> td
-                        class align-center
+                    $1\,000\,000$
+                |> td
+                    class align-center
 
-                        $1\,000\,000$
-                    |> td
-                        class align-center
+                    _million_
+            |> tr
+                |> td
+                    class align-center
 
-                        _million_
-                |> tr
-                    |> td
-                        class align-center
+                    $9$
+                |> td
+                    class align-center
 
-                        $9$
-                    |> td
-                        class align-center
+                    $1\,000\,000\,000$
+                |> td
+                    class align-center
 
-                        $1\,000\,000\,000$
-                    |> td
-                        class align-center
+                    _billion_
+            |> tr
+                |> td
+                    class align-center
 
-                        _billion_
-                |> tr
-                    |> td
-                        class align-center
+                    $12$
+                |> td
+                    class align-center
 
-                        $12$
-                    |> td
-                        class align-center
+                    $1\,000\,000\,000\,000$
+                |> td
+                    class align-center
 
-                        $1\,000\,000\,000\,000$
-                    |> td
-                        class align-center
-
-                        _trillion_
+                    _trillion_
 
     |> Pause
 

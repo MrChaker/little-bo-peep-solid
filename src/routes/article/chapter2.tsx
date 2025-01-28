@@ -18,7 +18,8 @@ const Article = () => {
     <Chapter
          number={2}
          title="Slopes">
-      <Section>
+      <Section
+           type="intro">
         <VerticalChunk>
           {" "}{" "}
           <b>
@@ -89,13 +90,11 @@ const Article = () => {
              indent={true}>
           For example, the line below has slope 1, because
           it goes up by{" "}
-          <NoBreak>
-            <Math>
-              $
-              1
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            1
+            $
+          </Math>
           {" "}unit for each unit to the right:
         </VerticalChunk>
         <div
@@ -121,13 +120,11 @@ const Article = () => {
             minus
           </i>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              0.5
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            0.5
+            $
+          </Math>
           {" "}units
           with each unit to the right:
         </VerticalChunk>
@@ -163,13 +160,11 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              B
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            B
+            $
+          </Math>
           {" "}on the line:
         </VerticalChunk>
         <div
@@ -247,13 +242,11 @@ const Article = () => {
           </i>
           {" "}the vertical change,
           respectively, from{" "}
-          <NoBreak>
-            <Math>
-              $
-              A
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            A
+            $
+          </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
@@ -345,13 +338,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           is the vertical change from{" "}
-          <NoBreak>
-            <Math>
-              $
-              A
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            A
+            $
+          </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
@@ -374,21 +365,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           is the horizontal change from{" "}
-          <NoBreak>
-            <Math>
-              $
-              A
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            A
+            $
+          </Math>
           {" "}to{" "}
-          <NoBreak>
-            <Math>
-              $
-              B
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            B
+            $
+          </Math>
           .)
         </VerticalChunk>
       </Section>
@@ -477,26 +464,22 @@ const Article = () => {
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    x_2 - x_1
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  x_2 - x_1
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    y_2 - y_1
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  y_2 - y_1
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
@@ -518,26 +501,22 @@ const Article = () => {
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    +
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  +
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    +
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  +
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
@@ -559,26 +538,22 @@ const Article = () => {
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    -
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  -
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    -
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  -
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
@@ -600,26 +575,22 @@ const Article = () => {
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    +
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  +
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    -
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  -
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
@@ -641,26 +612,22 @@ const Article = () => {
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    -
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  -
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
                 {" "}{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    +
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  +
+                  $
+                </Math>
                 {" "}{" "}
               </VerticalChunk>
             </td>
@@ -689,21 +656,17 @@ const Article = () => {
           {" "}be able to algebraically
           verify that the slope formula gives the same
           answer if{" "}
-          <NoBreak>
-            <Math>
-              $
-              (x_1, y_1)
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            (x_1, y_1)
+            $
+          </Math>
           {" "}and{" "}
-          <NoBreak>
-            <Math>
-              $
-              (x_2, y_2)
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            (x_2, y_2)
+            $
+          </Math>
           {" "}swap
           places, or, namely, to show that the fractions
           <ImageRight
@@ -803,21 +766,17 @@ const Article = () => {
         <VerticalChunk>
           can also occur another way, namely if the points
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              (x_1, y_1)
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            (x_1, y_1)
+            $
+          </Math>
           {" "}and{" "}
-          <NoBreak>
-            <Math>
-              $
-              (x_2, y_2)
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            (x_2, y_2)
+            $
+          </Math>
           {" "}coincide. In that
           case, more precisely, the slope formula evaluates
           to
@@ -857,13 +816,11 @@ const Article = () => {
           {" "}
           Some people remember the slope formula as “slope
           equals rise over run” (i.e., “
-          <NoBreak>
-            <Math>
-              $
-              \te&#123;slope&#125; =
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \te&#123;slope&#125; =
+            $
+          </Math>
           {" "}{" "}
           <InlineImage
                space_right={true}
@@ -904,13 +861,11 @@ const Article = () => {
             ”,
           </NoBreak>
           {" "}“
-          <NoBreak>
-            <Math>
-              $
-              y_2 - y_1\!
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y_2 - y_1\!
+            $
+          </Math>
           ”
           that appear in the slope formula.
         </VerticalChunk>
@@ -953,22 +908,18 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           where the foreign-looking symbols{" "}
-          <NoBreak>
-            <Math>
-              $
-              \Delta x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \Delta x
+            $
+          </Math>
           ,
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              \Delta y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \Delta y
+            $
+          </Math>
           {" "}can be thought of as shorthands for
           “
           <NoBreak>
@@ -1000,13 +951,11 @@ const Article = () => {
             ”,
           </NoBreak>
           {" "}“change in{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           ”.)
         </VerticalChunk>
       </Section>
@@ -1090,21 +1039,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           where{" "}
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}and{" "}
-          <NoBreak>
-            <Math>
-              $
-              b
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            b
+            $
+          </Math>
           {" "}are constants defines a line in
           the Cartesian plane. E.g.:
         </VerticalChunk>
@@ -1147,13 +1092,11 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}so{" "}
-          <NoBreak>
-            <Math>
-              $
-              b
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            b
+            $
+          </Math>
           {" "}is the height of the line at
           {" "}
           <NoBreak>
@@ -1170,35 +1113,29 @@ const Article = () => {
              class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           -intercept
         </CentralDisplayItalic>
         <div
              class="spacer" />
         <VerticalChunk>
           of the line, because{" "}
-          <NoBreak>
-            <Math>
-              $
-              x = 0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x = 0
+            $
+          </Math>
           {" "}is where the line
           crosses the{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}axis. But the point
         </VerticalChunk>
         <div
@@ -1217,13 +1154,11 @@ const Article = () => {
              class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           -intercept
         </CentralDisplayItalic>
         <div
@@ -1240,13 +1175,11 @@ const Article = () => {
           </NoBreak>
           {" "}might
           either refer to the value{" "}
-          <NoBreak>
-            <Math>
-              $
-              b
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            b
+            $
+          </Math>
           {" "}or to the point
           {" "}
           <NoBreak>
@@ -1280,29 +1213,23 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           so{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}increases by{" "}
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}between{" "}
-          <NoBreak>
-            <Math>
-              $
-              x = 0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x = 0
+            $
+          </Math>
           {" "}and
           {" "}
           <NoBreak>
@@ -1314,64 +1241,50 @@ const Article = () => {
             .
           </NoBreak>
           {" "}In fact,{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}increases by{" "}
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}each time
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}increases by 1, so, by our own definition of
           slope—the increase in{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}per unit increase in
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           —
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}is the slope of{" "}
-          <NoBreak>
-            <Math>
-              $
-              y = ax + b
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y = ax + b
+            $
+          </Math>
           .
         </VerticalChunk>
         <div
@@ -1414,23 +1327,19 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           cannot describe a vertical line, because{" "}
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}is
           the slope, while a vertical line has no slope, so
           what would{" "}
-          <NoBreak>
-            <Math>
-              $
-              a
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a
+            $
+          </Math>
           {" "}be equal to? Instead, a vertical
           line is described by an equation of the form
         </VerticalChunk>
@@ -1450,13 +1359,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           (see Fig. 1) where{" "}
-          <NoBreak>
-            <Math>
-              $
-              c \in \rr
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            c \in \rr
+            $
+          </Math>
           {" "}is a constant, 
           similarly to the more familiar equation
         </VerticalChunk>
@@ -1471,13 +1378,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           for a horizontal line, where{" "}
-          <NoBreak>
-            <Math>
-              $
-              b \in \rr
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            b \in \rr
+            $
+          </Math>
           {" "}is a
           constant.
         </VerticalChunk>
@@ -1537,22 +1442,18 @@ const Article = () => {
             -intercept
           </NoBreak>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              3
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            3
+            $
+          </Math>
           {" "}
           and slope{" "}
-          <NoBreak>
-            <Math>
-              $
-              -1
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            -1
+            $
+          </Math>
           .
           <ImageRight
                offset_x="2rem"
@@ -1602,42 +1503,34 @@ const Article = () => {
         <VerticalChunk>
           as should make sense, given that the slope is a
           change in{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}divided by a change in{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           .
         </VerticalChunk>
         <VerticalChunk
              indent={true}>
           For example, if the units on the{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}axis are
           meters (“m”) and the units on the{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}axis are
           seconds (“s”) then the slope has units
         </VerticalChunk>
@@ -1670,13 +1563,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           The slope of the graph is{" "}
-          <NoBreak>
-            <Math>
-              $
-              0.75
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            0.75
+            $
+          </Math>
           {" "}{" "}
           <i>
             meters per
@@ -1737,39 +1628,31 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           whenever the{" "}
-          <NoBreak>
-            <Math>
-              $
-              y
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y
+            $
+          </Math>
           {" "}axis has dimensions of length and
           the{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}axis has dimensions of time—whether the
           slope turns out to be{" "}
-          <NoBreak>
-            <Math>
-              $
-              \te&#123;m&#125;/\te&#123;s&#125;
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \te&#123;m&#125;/\te&#123;s&#125;
+            $
+          </Math>
           {" "}or{" "}
-          <NoBreak>
-            <Math>
-              $
-              \te&#123;km&#125;/\te&#123;s&#125;
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \te&#123;km&#125;/\te&#123;s&#125;
+            $
+          </Math>
           {" "}
           or km/hour, etc, depends on the exact units involved.)
         </VerticalChunk>
@@ -1885,13 +1768,11 @@ const Article = () => {
           <VerticalChunk>
             found in the second line of the table. (Indeed,
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                0.75
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              0.75
+              $
+            </Math>
             m
             <NoBreak>
               <Math>
@@ -2086,22 +1967,18 @@ const Article = () => {
             </b>
             {" "}
             True or false: Lines of slope{" "}
-            <NoBreak>
-              <Math>
-                $
-                -1 \over 2
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              -1 \over 2
+              $
+            </Math>
             {" "}
             are perpendicular to lines of slope{" "}
-            <NoBreak>
-              <Math>
-                $
-                2
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              2
+              $
+            </Math>
             .
           </VerticalChunk>
           <div
@@ -2134,13 +2011,11 @@ const Article = () => {
             <VerticalChunk>
               In more detail, the two triangles are related
               by a{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  90^\circ
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                90^\circ
+                $
+              </Math>
               {" "}rotation and so, likewise,
               are the lines defined by their hypotenuses!
             </VerticalChunk>
@@ -2154,13 +2029,11 @@ const Article = () => {
               </i>
               {" "}
               More generally, a line of slope{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p
+                $
+              </Math>
               {" "}is
               perpendicular to a line of slope{" "}
               <NoBreak>
@@ -2206,24 +2079,20 @@ const Article = () => {
             <VerticalChunk>
               (If the axes are oriented the usual way then 
               the above drawing covers all the cases{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p &gt; 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p &gt; 0
+                $
+              </Math>
               ,
               whereas if we flip the two number axes to point
               down/left the above drawing covers all the cases 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p &lt; 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p &lt; 0
+                $
+              </Math>
               —magic!)
             </VerticalChunk>
           </Solution>
@@ -2238,21 +2107,17 @@ const Article = () => {
             {" "}
             Find the general equation of a line of slope
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                p
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              p
+              $
+            </Math>
             {" "}passing through a point{" "}
-            <NoBreak>
-              <Math>
-                $
-                (x_0, y_0)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (x_0, y_0)
+              $
+            </Math>
             .
             (Hint: Start from the slope formula.)
           </VerticalChunk>
@@ -2262,22 +2127,18 @@ const Article = () => {
                solution_number={1}>
             <VerticalChunk>
               A point{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x,y) \ne (x_0,y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x,y) \ne (x_0,y_0)
+                $
+              </Math>
               {" "}is on the
               line of slope{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p
+                $
+              </Math>
               {" "}if and only if
             </VerticalChunk>
             <div
@@ -2310,13 +2171,11 @@ const Article = () => {
             <VerticalChunk>
               is the slope of the line segment from
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x_0,y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x_0,y_0)
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -2329,21 +2188,17 @@ const Article = () => {
               {" "}and it is necessary
               and sufficient for this segment to have slope
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p
+                $
+              </Math>
               {" "}in order for the point{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x,y)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x,y)
+                $
+              </Math>
               {" "}to be on
               the line!
             </VerticalChunk>
@@ -2363,13 +2218,11 @@ const Article = () => {
             <VerticalChunk>
               is not an entirely satisfactory answer,
               because the point{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x,y) = (x_0,y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x,y) = (x_0,y_0)
+                $
+              </Math>
               {" "}itself
               does not satisfy the equation. (We find
             </VerticalChunk>
@@ -2442,13 +2295,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               which is satisfied by the point{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x,y) = (x_0,y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x,y) = (x_0,y_0)
+                $
+              </Math>
               {" "}
               as well as by every other point on the line.
               This can be a final answer, and, pleasingly,
@@ -2504,22 +2355,18 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               {" "}isolated on the left-hand side. From
               there one can also distribute{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p(x-x_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p(x-x_0)
+                $
+              </Math>
               ,
               obtaining (after putting “
               <NoBreak>
@@ -2564,13 +2411,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  b = y_0 - px_0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                b = y_0 - px_0
+                $
+              </Math>
               .
             </VerticalChunk>
           </Solution>
@@ -2649,13 +2494,11 @@ const Article = () => {
               {" "}where the mosquito
               goes up by one meter during a one second
               period, so the vertical velocity is 1m
-              <NoBreak>
-                <Math>
-                  $
-                  /
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                /
+                $
+              </Math>
               s
               for that time interval, etc.
             </VerticalChunk>
@@ -2774,21 +2617,17 @@ const Article = () => {
               </i>
               {" "}
               does{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0.5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0.5
+                $
+              </Math>
               {" "}go into{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                2
+                $
+              </Math>
               ?)
             </VerticalChunk>
           </Solution>
@@ -2824,22 +2663,18 @@ const Article = () => {
               -intercept
             </NoBreak>
             {" "}of the line of slope{" "}
-            <NoBreak>
-              <Math>
-                $
-                p
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              p
+              $
+            </Math>
             {" "}
             through the point{" "}
-            <NoBreak>
-              <Math>
-                $
-                (x_0,y_0)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (x_0,y_0)
+              $
+            </Math>
             {" "}by using a drawing
             and “rise equals slope times run”.
           </VerticalChunk>
@@ -2867,13 +2702,11 @@ const Article = () => {
                 -intercept
               </NoBreak>
               {" "}to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x_0, y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x_0, y_0)
+                $
+              </Math>
               {" "}
               is{" "}
               <NoBreak>
@@ -2898,13 +2731,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               is the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               -intercept.
             </VerticalChunk>
             <div
@@ -2917,13 +2748,11 @@ const Article = () => {
               </i>
               {" "}Our drawing makes some implicit
               assumptions, such as{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p &gt; 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p &gt; 0
+                $
+              </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
@@ -2956,38 +2785,30 @@ const Article = () => {
               </NoBreak>
               {" "}to
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x_0, y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x_0, y_0)
+                $
+              </Math>
               {" "}regardless of the sign of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  p
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                p
+                $
+              </Math>
               {" "}or
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x_0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x_0
+                $
+              </Math>
               {" "}(because{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x_0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x_0
+                $
+              </Math>
               {" "}is the run in all cases),
               making
             </VerticalChunk>

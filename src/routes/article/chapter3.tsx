@@ -18,7 +18,8 @@ const Article = () => {
     <Chapter
          number={3}
          title="Functions">
-      <Section>
+      <Section
+           type="intro">
         <VerticalChunk>
           {" "}{" "}
           <b>
@@ -56,13 +57,11 @@ const Article = () => {
              indent={true}>
           In the above picture, the name of the function
           is “
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           ”.
         </VerticalChunk>
         <VerticalChunk
@@ -80,13 +79,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           (which is read “
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}of{" "}
           <NoBreak>
             <Math>
@@ -99,13 +96,11 @@ const Article = () => {
           {" "}and that's 
           important) for the result of passing an input
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}to a function{" "}
           <NoBreak>
             <Math>
@@ -117,13 +112,11 @@ const Article = () => {
           </NoBreak>
           {" "}For example, if the rule
           according to which{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}processes inputs is
         </VerticalChunk>
         <div
@@ -147,21 +140,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           [“
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}of{" "}
-          <NoBreak>
-            <Math>
-              $
-              2
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            2
+            $
+          </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
@@ -193,21 +182,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           [“
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}of{" "}
-          <NoBreak>
-            <Math>
-              $
-              3
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            3
+            $
+          </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
@@ -260,21 +245,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           [“
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}of{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
@@ -352,13 +333,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           to mean “the function that maps{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
@@ -452,13 +431,11 @@ const Article = () => {
         <VerticalChunk>
           ...the same as an equation of the form 
           “
-          <NoBreak>
-            <Math>
-              $
-              f(\dots) = \dots
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f(\dots) = \dots
+            $
+          </Math>
           ”.
         </VerticalChunk>
         <VerticalChunk
@@ -565,13 +542,11 @@ const Article = () => {
         <VerticalChunk>
           in the case where the function has a name, such
           as “
-          <NoBreak>
-            <Math>
-              $
-              g
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            g
+            $
+          </Math>
           ”.
         </VerticalChunk>
         <div
@@ -626,21 +601,17 @@ const Article = () => {
           <VerticalChunk>
             aaand... and these are the only two values of 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}for which VX-11/78A
-            <NoBreak>
-              <Math>
-                $
-                (x)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (x)
+              $
+            </Math>
             {" "}is defined, as 
             specified.
           </VerticalChunk>
@@ -787,13 +758,11 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}because VX-78/11A maps{" "}
-          <NoBreak>
-            <Math>
-              $
-              0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            0
+            $
+          </Math>
           {" "}to 
           {" "}
           <NoBreak>
@@ -823,21 +792,17 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}because VX-78/11A maps{" "}
-          <NoBreak>
-            <Math>
-              $
-              1
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            1
+            $
+          </Math>
           {" "}to{" "}
-          <NoBreak>
-            <Math>
-              $
-              2.5
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            2.5
+            $
+          </Math>
           .
         </VerticalChunk>
         <div
@@ -850,39 +815,31 @@ const Article = () => {
             </b>
             {" "}
             Here is a graph of{" "}
-            <NoBreak>
-              <Math>
-                $
-                x \ra x^2
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \ra x^2
+              $
+            </Math>
             {" "}on the interval
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                [-1, 1]
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              [-1, 1]
+              $
+            </Math>
             {" "}(meaning: going from{" "}
-            <NoBreak>
-              <Math>
-                $
-                x = -1
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x = -1
+              $
+            </Math>
             {" "}to 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                x = 1
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x = 1
+              $
+            </Math>
             ):
           </VerticalChunk>
           <div
@@ -895,13 +852,11 @@ const Article = () => {
             Among all the points on this graph that we 
             could discuss, let us name, say, the point 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                (0.75, 0.5625)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (0.75, 0.5625)
+              $
+            </Math>
             ...
           </VerticalChunk>
           <div
@@ -913,22 +868,18 @@ const Article = () => {
           <VerticalChunk>
             ...which finds itself on the graph, namely, 
             because the square of{" "}
-            <NoBreak>
-              <Math>
-                $
-                0.75
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              0.75
+              $
+            </Math>
             {" "}is 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                0.5625 = 9/16
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              0.5625 = 9/16
+              $
+            </Math>
             .
             <ImageLeft
                  offset_y="0em"
@@ -951,13 +902,11 @@ const Article = () => {
             domain
           </i>
           {" "}of a function{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           —written
         </VerticalChunk>
         <div
@@ -971,21 +920,17 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           —is the set of inputs{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}for which{" "}
-          <NoBreak>
-            <Math>
-              $
-              f(x)
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f(x)
+            $
+          </Math>
           {" "}is
           defined.
         </VerticalChunk>
@@ -1011,13 +956,11 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             because VX-11/78A
-            <NoBreak>
-              <Math>
-                $
-                (x)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (x)
+              $
+            </Math>
             {" "}is only defined at{" "}
             <NoBreak>
               <Math>
@@ -1029,13 +972,11 @@ const Article = () => {
             </NoBreak>
             {" "}
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                1
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              1
+              $
+            </Math>
             .
           </VerticalChunk>
         </Example>
@@ -1078,22 +1019,18 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             because{" "}
-            <NoBreak>
-              <Math>
-                $
-                \te&#123;DM-1700&#125;(x)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              \te&#123;DM-1700&#125;(x)
+              $
+            </Math>
             {" "}is defined for all
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                x \in \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \in \rr
+              $
+            </Math>
             .
           </VerticalChunk>
         </Example>
@@ -1107,13 +1044,11 @@ const Article = () => {
             </b>
             {" "}
             If{" "}
-            <NoBreak>
-              <Math>
-                $
-                g : \rr \ra \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g : \rr \ra \rr
+              $
+            </Math>
             {" "}(we are going to explain 
             this notation imminently) is the function given 
             by
@@ -1149,30 +1084,24 @@ const Article = () => {
             </i>
             {" "}
             (i.e., we need{" "}
-            <NoBreak>
-              <Math>
-                $
-                x - 1 \geq 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x - 1 \geq 0
+              $
+            </Math>
             {" "}in order for{" "}
-            <NoBreak>
-              <Math>
-                $
-                g(x)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g(x)
+              $
+            </Math>
             {" "}
             to be defined, i.e., we need{" "}
-            <NoBreak>
-              <Math>
-                $
-                x \geq 1
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \geq 1
+              $
+            </Math>
             ).
           </VerticalChunk>
         </Example>
@@ -1186,13 +1115,11 @@ const Article = () => {
             </b>
             {" "}
             If{" "}
-            <NoBreak>
-              <Math>
-                $
-                h : \rr \ra \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              h : \rr \ra \rr
+              $
+            </Math>
             {" "}is defined by
           </VerticalChunk>
           <div
@@ -1220,23 +1147,19 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             because{" "}
-            <NoBreak>
-              <Math>
-                $
-                1/(x+1)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              1/(x+1)
+              $
+            </Math>
             {" "}is well-defined if and only if
             division by 0 is avoided, i.e., if and only if 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                x \ne -1
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \ne -1
+              $
+            </Math>
             .
           </VerticalChunk>
         </Example>
@@ -1263,34 +1186,28 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           means that{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}is a function
         </VerticalChunk>
         <div
              class="spacer" />
         <CentralDisplayItalic>
           from{" "}
-          <NoBreak>
-            <Math>
-              $
-              \rr
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \rr
+            $
+          </Math>
           {" "}to{" "}
-          <NoBreak>
-            <Math>
-              $
-              \rr
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            \rr
+            $
+          </Math>
           {" "}{" "}
         </CentralDisplayItalic>
         <div
@@ -1311,13 +1228,11 @@ const Article = () => {
           [translation:{" "}
           <i>
             the domain of{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}is a subset of 
             the set of real numbers
           </i>
@@ -1336,13 +1251,11 @@ const Article = () => {
           [translation:{" "}
           <i>
             the set of values output by{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}
             is a subset of the set of real numbers
           </i>
@@ -1375,13 +1288,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           (i.e., that{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}only accepts values from{" "}
           <NoBreak>
             <Math>
@@ -1405,13 +1316,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           (i.e., that{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}only outputs values from{" "}
           <NoBreak>
             <Math>
@@ -1463,13 +1372,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           observes that a graph [
-          <NoBreak>
-            <Math>
-              $
-              =
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            =
+            $
+          </Math>
           {" "}{" "}
           <i>
             set of points 
@@ -1663,13 +1570,11 @@ const Article = () => {
         <VerticalChunk>
           which implies a discontinuity in the graph of
           {" "}
-          <NoBreak>
-            <Math>
-              $
-              y = 0^x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            y = 0^x
+            $
+          </Math>
           {" "}at{" "}
           <NoBreak>
             <Math>
@@ -1707,13 +1612,11 @@ const Article = () => {
               ”
             </NoBreak>
             {" "}and “
-            <NoBreak>
-              <Math>
-                $
-                f(x)
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f(x)
+              $
+            </Math>
             ”.
           </b>
           {" "}
@@ -1892,13 +1795,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}because that would lead to a circular 
           definition. But that doesn't make the equality 
           any less true. And btw, you can go “one layer 
@@ -1915,13 +1816,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           ...where we use the fact that{" "}
-          <NoBreak>
-            <Math>
-              $
-              f = (t \ra f(t))
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f = (t \ra f(t))
+            $
+          </Math>
           {" "}
           in the second equality. You could keep going, 
           replacing each time “
@@ -1954,13 +1853,11 @@ const Article = () => {
               ”
             </NoBreak>
             {" "}and “
-            <NoBreak>
-              <Math>
-                $
-                x \ra x^3
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \ra x^3
+              $
+            </Math>
             ”.
           </b>
           {" "}
@@ -2060,13 +1957,11 @@ const Article = () => {
           </b>
           {" "}
           A function{" "}
-          <NoBreak>
-            <Math>
-              $
-              f
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            f
+            $
+          </Math>
           {" "}of the form
         </VerticalChunk>
         <div
@@ -2253,13 +2148,11 @@ const Article = () => {
           {" "}This is more 
           restricted than an affine function, because
           there is no constant{" "}
-          <NoBreak>
-            <Math>
-              $
-              a_0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            a_0
+            $
+          </Math>
           !
         </VerticalChunk>
         <div
@@ -2287,21 +2180,17 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}{" "}
-          <NoBreak>
-            <Math>
-              $
-              1
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            1
+            $
+          </Math>
           {" "}and{" "}
-          <NoBreak>
-            <Math>
-              $
-              0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            0
+            $
+          </Math>
           {" "}are called the{" "}
           <i>
             quadratic
@@ -2355,22 +2244,18 @@ const Article = () => {
              indent={true}>
           Note that the linear term can also be viewed as
           the “
-          <NoBreak>
-            <Math>
-              $
-              x^1
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x^1
+            $
+          </Math>
           {" "}term” while the constant term can
           also be viewed as the “
-          <NoBreak>
-            <Math>
-              $
-              x^0
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x^0
+            $
+          </Math>
           {" "}term”; because
         </VerticalChunk>
         <div
@@ -2409,13 +2294,11 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           for all{" "}
-          <NoBreak>
-            <Math>
-              $
-              x
-              $
-            </Math>
-          </NoBreak>
+          <Math>
+            $
+            x
+            $
+          </Math>
           {" "}(even{" "}
           <NoBreak>
             <Math>
@@ -2520,13 +2403,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \sqrt&#123;(-5)^2&#125; = 5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \sqrt&#123;(-5)^2&#125; = 5
+                $
+              </Math>
               ,
               etc.{" "}
             </VerticalChunk>
@@ -2567,46 +2448,38 @@ const Article = () => {
                cols={2}>
             <Item>
               i.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (\lambda u.u^3)(0.5)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (\lambda u.u^3)(0.5)
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               ii.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (u \ra u^2)(x + 1)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (u \ra u^2)(x + 1)
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               iii.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (\lambda t.t - 1)(100) \cdot (\lambda t.t + 1)(100)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (\lambda t.t - 1)(100) \cdot (\lambda t.t + 1)(100)
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               iv.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (u \ra u^2)(a + b)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (u \ra u^2)(a + b)
+                $
+              </Math>
               {" "}{" "}
             </Item>
           </Grid>
@@ -2629,46 +2502,38 @@ const Article = () => {
                  cols={2}>
               <Item>
                 i.{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    0.5^3 = 0.125
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  0.5^3 = 0.125
+                  $
+                </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 ii.{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    (x + 1)^2 = x^2 + 2x + 1
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  (x + 1)^2 = x^2 + 2x + 1
+                  $
+                </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 iii.{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    (100 - 1) \cdot (100 + 1) = 9999
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  (100 - 1) \cdot (100 + 1) = 9999
+                  $
+                </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 iv.{" "}
-                <NoBreak>
-                  <Math>
-                    $
-                    (a + b)^2 = a^2 + 2ab + b^2
-                    $
-                  </Math>
-                </NoBreak>
+                <Math>
+                  $
+                  (a + b)^2 = a^2 + 2ab + b^2
+                  $
+                </Math>
                 {" "}{" "}
               </Item>
             </Grid>
@@ -2718,44 +2583,36 @@ const Article = () => {
               .
             </NoBreak>
             {" "}(Start at{" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}and travel left on the 
             number line until you meet an integer; but if
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}is already an integer, stay there; the 
             place you land is{" "}
-            <NoBreak>
-              <Math>
-                $
-                \lfloor x \rfloor
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              \lfloor x \rfloor
+              $
+            </Math>
             .)
           </VerticalChunk>
           <VerticalChunk
                indent={true}>
             Sketch the graph{" "}
-            <NoBreak>
-              <Math>
-                $
-                y = \floor&#123;x&#125;
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              y = \floor&#123;x&#125;
+              $
+            </Math>
             .
           </VerticalChunk>
           <VerticalChunk
@@ -2783,13 +2640,11 @@ const Article = () => {
                solution_number={3}>
             <VerticalChunk>
               As{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}grows, so does{" "}
               <NoBreak>
                 <Math>
@@ -2801,21 +2656,17 @@ const Article = () => {
               </NoBreak>
               {" "}but
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \floor&#123;x&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \floor&#123;x&#125;
+                $
+              </Math>
               {" "}only “levels up” each time{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               reaches a new integer, and “flatlines”
               otherwise; this gives rise to the following
@@ -2829,22 +2680,18 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               (For example,{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \floor&#123;1&#125; = 1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \floor&#123;1&#125; = 1
+                $
+              </Math>
               {" "}because the 
               greatest integer less than or equal to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                1
+                $
+              </Math>
               {" "}
               is{" "}
               <NoBreak>
@@ -2856,30 +2703,24 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \floor&#123;-0.5&#125; = -1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \floor&#123;-0.5&#125; = -1
+                $
+              </Math>
               {" "}because the greatest
               integer less than or equal to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -0.5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -0.5
+                $
+              </Math>
               {" "}is{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -1
+                $
+              </Math>
               ,
               and so on.)
             </VerticalChunk>
@@ -2897,21 +2738,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               The red dot to the left of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}has{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               -coordinate
               {" "}
               <NoBreak>
@@ -3030,13 +2867,11 @@ const Article = () => {
               Indeed, the two graphs featured above differ
               only by a horizontal dilation; dividing the 
               input by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                2
+                $
+              </Math>
               {" "}“undoes” the dilation, at which 
               point it suffices to apply the function pictured
               in the second graph; having declared our method 
@@ -3053,13 +2888,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...as obtained by “sticking”{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x/2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x/2
+                $
+              </Math>
               {" "}(the halved 
               input) in place of “
               <NoBreak>
@@ -3071,13 +2904,11 @@ const Article = () => {
                 ”
               </NoBreak>
               {" "}in “
-              <NoBreak>
-                <Math>
-                  $
-                  \,x - \lfloor x \rfloor
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \,x - \lfloor x \rfloor
+                $
+              </Math>
               ”,
               the formula for the function from Exercise 4.
             </VerticalChunk>
@@ -3141,13 +2972,11 @@ const Article = () => {
             <VerticalChunk>
               {" "}of the functions 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \f
+                $
+              </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
@@ -3169,21 +2998,17 @@ const Article = () => {
             <VerticalChunk>
               ...(compared to the drawing at the top of the
               chapter), then the composition of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \f
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g
+                $
+              </Math>
               ,
               written
             </VerticalChunk>
@@ -3203,21 +3028,17 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               “
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \hlfbk&#123;&#125;g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \hlfbk&#123;&#125;g
+                $
+              </Math>
               ”
             </CentralDisplayItalic>
             <div
@@ -3278,13 +3099,11 @@ const Article = () => {
                 's
               </NoBreak>
               {" "}output is passed on to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \f
+                $
+              </Math>
               {" "}
               for further processing. (A certain movie called
               “The Human Centipede” comes to mind.)
@@ -3301,34 +3120,28 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g
+                $
+              </Math>
               {" "}is a{" "}
               <i>
                 function
               </i>
               , defined as the
               above assemblage of “
-              <NoBreak>
-                <Math>
-                  $
-                  g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g
+                $
+              </Math>
               {" "}first,{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}second”.)
             </VerticalChunk>
             <div
@@ -3341,23 +3154,19 @@ const Article = () => {
               </i>
               {" "}
               For a formal definition of “
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g
+                $
+              </Math>
               ”—something
               not based on pictures—one need only specify what
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g
+                $
+              </Math>
               {" "}does to inputs. Specifically:
             </VerticalChunk>
             <div
@@ -3384,34 +3193,28 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               which is to say that the domain of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g
+                $
+              </Math>
               {" "}
               consists of all{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}such that:{" "}
               <b>
                 (i)
               </b>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g(x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g(x)
+                $
+              </Math>
               {" "}
               exists (a.k.a, “
               <NoBreak>
@@ -3428,21 +3231,17 @@ const Article = () => {
                 (ii)
               </b>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f(g(x))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f(g(x))
+                $
+              </Math>
               {" "}exists (a.k.a., “
-              <NoBreak>
-                <Math>
-                  $
-                  g(x) \in \dom f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g(x) \in \dom f
+                $
+              </Math>
               ”).
             </VerticalChunk>
             <div
@@ -3472,29 +3271,23 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplay>
               “
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \hlfbk&#123;&#125;g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \hlfbk&#123;&#125;g
+                $
+              </Math>
               {" "}of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x\hspace&#123;0.1em&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x\hspace&#123;0.1em&#125;
+                $
+              </Math>
               ”
             </CentralDisplay>
             <div
@@ -3510,21 +3303,17 @@ const Article = () => {
                 ”
               </NoBreak>
               {" "}is read “
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g\rt&#123;0.1&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g\rt&#123;0.1&#125;
+                $
+              </Math>
               ”,
               and “
               <NoBreak>
@@ -3536,13 +3325,11 @@ const Article = () => {
                 ”
               </NoBreak>
               {" "}is read “
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}of ...”.
             </VerticalChunk>
           </Solution>
@@ -3599,13 +3386,11 @@ const Article = () => {
             <VerticalChunk>
               because all we have to do is to multiply 
               Exercise 5's formula by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                2
+                $
+              </Math>
               .
             </VerticalChunk>
             <VerticalChunk
@@ -3624,13 +3409,11 @@ const Article = () => {
             <VerticalChunk>
               because the problem is similar to Exercise 5 
               except with a factor{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  3
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                3
+                $
+              </Math>
               {" "}horizontal dilation.
             </VerticalChunk>
             <VerticalChunk
@@ -3706,13 +3489,11 @@ const Article = () => {
               </NoBreak>
               {" "}the formula for the 
               second graph. Then we multiply that by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  3
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                3
+                $
+              </Math>
               {" "}
               (to go from ”
             </VerticalChunk>
@@ -3791,13 +3572,11 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             (the “hollow dot colon” means that{" "}
-            <NoBreak>
-              <Math>
-                $
-                \dom \cos = \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              \dom \cos = \rr
+              $
+            </Math>
             )
             is a function whose graph looks like so...
           </VerticalChunk>
@@ -3833,22 +3612,18 @@ const Article = () => {
                solution_number={6}>
             <VerticalChunk>
               Consider how to “read off” a value of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = \cos(1000x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = \cos(1000x)
+                $
+              </Math>
               {" "}
               from the graph{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = \cos(x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = \cos(x)
+                $
+              </Math>
               :
             </VerticalChunk>
             <div
@@ -3912,13 +3687,11 @@ const Article = () => {
               </i>
               {" "}
               One can also reason that a small change in{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               results in a large change in{" "}
               <NoBreak>
@@ -3931,22 +3704,18 @@ const Article = () => {
               </NoBreak>
               {" "}so that 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \cos(1000x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \cos(1000x)
+                $
+              </Math>
               {" "}must “cycle” much faster through 
               values than{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \cos(x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \cos(x)
+                $
+              </Math>
               {" "}does.
             </VerticalChunk>
           </Solution>
@@ -3995,21 +3764,17 @@ const Article = () => {
               </MathBlock>
             </CustomBlock>
             (where{" "}
-            <NoBreak>
-              <Math>
-                $
-                r
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              r
+              $
+            </Math>
             {" "}and{" "}
-            <NoBreak>
-              <Math>
-                $
-                s
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              s
+              $
+            </Math>
             {" "}are functions); plz
             note that you will have to apply (AA) 
             {" "}
@@ -4037,13 +3802,11 @@ const Article = () => {
             </i>
             {" "}copies of 
             “
-            <NoBreak>
-              <Math>
-                $
-                \circ
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              \circ
+              $
+            </Math>
             ”!!
           </VerticalChunk>
           <div
@@ -4179,13 +3942,11 @@ const Article = () => {
             </NoBreak>
             {" "}instead of 
             “
-            <NoBreak>
-              <Math>
-                $
-                (f \circ g) \circ h
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              (f \circ g) \circ h
+              $
+            </Math>
             ”.
           </VerticalChunk>
           <div
@@ -4229,13 +3990,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  s = h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                s = h
+                $
+              </Math>
               {" "}in
               the definitional equation, and the second step
               is...
@@ -4279,13 +4038,11 @@ const Article = () => {
                 ”
               </NoBreak>
               {" "}by “
-              <NoBreak>
-                <Math>
-                  $
-                  h(x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                h(x)
+                $
+              </Math>
               ”.
             </VerticalChunk>
             <div
@@ -4359,30 +4116,24 @@ const Article = () => {
               </CustomBlock>
               are the same function; this function is namely
               the function that maps{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f(g(h(x)))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f(g(h(x)))
+                $
+              </Math>
               {" "}for 
               all{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}(or
             </VerticalChunk>
             <VerticalChunk
@@ -4462,13 +4213,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  c
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                c
+                $
+              </Math>
               {" "}is known as the
             </VerticalChunk>
             <div
@@ -4510,13 +4259,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  c
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                c
+                $
+              </Math>
               {" "}is known as the
             </VerticalChunk>
             <div
@@ -4559,13 +4306,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                h
+                $
+              </Math>
               {" "}is known 
               as the
             </VerticalChunk>
@@ -4633,13 +4378,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  D
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                D
+                $
+              </Math>
               {" "}are sets 
               while the arrows encode functions{" "}
               <NoBreak>
@@ -4651,31 +4394,25 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g
+                $
+              </Math>
               {" "}
               and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                h
+                $
+              </Math>
               {" "}that, respectively in reverse order, 
               go from{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  D
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                D
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -4686,13 +4423,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  C
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                C
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -4703,13 +4438,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  B
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                B
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -4726,26 +4459,22 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplay>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \Large h(
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \Large h(
+                $
+              </Math>
               {" "}{" "}
               <InlineImage
                    y_anchor="-3px"
                    width="1rem"
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \Large&#123;&#125;) =
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \Large&#123;&#125;) =
+                $
+              </Math>
               {" "}{" "}
               <InlineImage
                    margin_right=".5rem"
@@ -4769,13 +4498,11 @@ const Article = () => {
                    width="1rem"
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               in set{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  D
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                D
+                $
+              </Math>
               {" "}lands at{" "}
             </VerticalChunk>
             <VerticalChunk
@@ -4802,26 +4529,22 @@ const Article = () => {
             <CentralDisplay>
               {" "}
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \Large g(h(
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \Large g(h(
+                $
+              </Math>
               {" "}{" "}
               <InlineImage
                    y_anchor="-3px"
                    width="1rem"
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \Large&#123;&#125;))&#123;&#125;=
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \Large&#123;&#125;))&#123;&#125;=
+                $
+              </Math>
               {" "}{" "}
               <InlineImage
                    space_right={true}
@@ -4846,13 +4569,11 @@ const Article = () => {
                    width="1.25rem"
                    src="/images/svg_ch3_composition_icon_die_3.svg" />
               in set{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  C
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                C
+                $
+              </Math>
               {" "}lands at
             </VerticalChunk>
             <VerticalChunk
@@ -4878,31 +4599,25 @@ const Article = () => {
                  indent={true}>
               Under this representation one can “compute”
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g \circ h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g \circ h
+                $
+              </Math>
               {" "}by gluing arrows end-to-end.
               First, say, obliviate set{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  C
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                C
+                $
+              </Math>
               {" "}in the middle 
               right, then do the same with set{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  B
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                B
+                $
+              </Math>
               {" "}in the
               middle left:
             </VerticalChunk>
@@ -4915,21 +4630,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               We can also get rid of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  B
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                B
+                $
+              </Math>
               {" "}first,{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  C
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                C
+                $
+              </Math>
               {" "}second:
             </VerticalChunk>
             <div
@@ -4942,23 +4653,19 @@ const Article = () => {
             <VerticalChunk>
               The first order of computation corresponds
               to the parenthetization “
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ (g \circ h)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ (g \circ h)
+                $
+              </Math>
               ”
               while the second corresponds to the 
               parenthetization “
-              <NoBreak>
-                <Math>
-                  $
-                  (f \circ g) \circ h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (f \circ g) \circ h
+                $
+              </Math>
               ”.
               Intuitively, the reason they come out the 
               same (in “step 6”, bottom left) is because 
@@ -5007,21 +4714,17 @@ const Article = () => {
               {" "}
               We have taken for granted the fact that two 
               functions{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g
+                $
+              </Math>
               {" "}are “equal” if and only
               if they produce the same outupt for every 
               input but this is a actually subtle thing 
@@ -5052,30 +4755,24 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               because VX-11/78A maps{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0
+                $
+              </Math>
               {" "}to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  3.5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                3.5
+                $
+              </Math>
               {" "}and maps 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                1
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -5098,13 +4795,11 @@ const Article = () => {
                 </MathBlock>
               </CustomBlock>
               means that input{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  a
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                a
+                $
+              </Math>
               {" "}produces output{" "}
               <NoBreak>
                 <Math>
@@ -5186,13 +4881,11 @@ const Article = () => {
               ”
             </NoBreak>
             {" "}and “
-            <NoBreak>
-              <Math>
-                $
-                \dots
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              \dots
+              $
+            </Math>
             ”.
           </VerticalChunk>
           <div
@@ -5229,21 +4922,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               and adding{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                5
+                $
+              </Math>
               {" "}gives{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x^2 + 10x + 30
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x^2 + 10x + 30
+                $
+              </Math>
               .
             </VerticalChunk>
           </Solution>
@@ -5325,23 +5014,19 @@ const Article = () => {
                 )
               </NoBreak>
               {" "}the coefficients of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x^2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x^2
+                $
+              </Math>
               {" "}on both 
               sides of the equation must be equal, the 
               coefficients of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}on both sides of the
               equation must be equal, and the constant
               terms on boths of the equation must be 
@@ -5423,13 +5108,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}so{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  U^2 + V = 30
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                U^2 + V = 30
+                $
+              </Math>
               {" "}becomes
               {" "}
               <NoBreak>
@@ -5442,13 +5125,11 @@ const Article = () => {
               </NoBreak>
               {" "}and 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  V = 30 - 25 = 5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                V = 30 - 25 = 5
+                $
+              </Math>
               .
               So{" "}
               <NoBreak>
@@ -5466,13 +5147,11 @@ const Article = () => {
               </i>
               ,
               because the only number{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  U
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                U
+                $
+              </Math>
               {" "}that satisfies
             </VerticalChunk>
             <div
@@ -5495,13 +5174,11 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}and the only number{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  V
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                V
+                $
+              </Math>
               {" "}that
               satisfies{" "}
             </VerticalChunk>
@@ -5516,13 +5193,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               is{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  V = 5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                V = 5
+                $
+              </Math>
               .)
             </VerticalChunk>
           </Solution>
@@ -5548,21 +5223,17 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             (cf
-            <NoBreak>
-              <Math>
-                $
-                .
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              .
+              $
+            </Math>
             {" "}Exercise 21) has no solutions{" "}
-            <NoBreak>
-              <Math>
-                $
-                x \in \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \in \rr
+              $
+            </Math>
             .
           </VerticalChunk>
           <div
@@ -5621,13 +5292,11 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             has two solutions{" "}
-            <NoBreak>
-              <Math>
-                $
-                x \in \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x \in \rr
+              $
+            </Math>
             .
           </VerticalChunk>
           <div
@@ -5648,13 +5317,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               because{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (x + 5)^2 = x^2 + 10x + 25
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (x + 5)^2 = x^2 + 10x + 25
+                $
+              </Math>
               {" "}
               and{" "}
               <NoBreak>
@@ -5666,13 +5333,11 @@ const Article = () => {
                 .
               </NoBreak>
               {" "}Passing{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  55
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                55
+                $
+              </Math>
               {" "}to the
               other side, we find
             </VerticalChunk>
@@ -5758,13 +5423,11 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                B
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              B
+              $
+            </Math>
             {" "}such that{" "}
             <NoBreak>
               <Math>
@@ -5854,13 +5517,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               that can be seen as descending from{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = x^2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = x^2
+                $
+              </Math>
               {" "}
               in three steps:
             </VerticalChunk>
@@ -5923,13 +5584,11 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -5947,13 +5606,11 @@ const Article = () => {
               </NoBreak>
               {" "}because we multiply the
               value of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               {" "}by{" "}
               <NoBreak>
                 <Math>
@@ -5970,13 +5627,11 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;-&#123;B^2 \over 4A^2&#125;&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;-&#123;B^2 \over 4A^2&#125;&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -5994,21 +5649,17 @@ const Article = () => {
               </NoBreak>
               {" "}because we add 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B^2 \over 4A^2&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B^2 \over 4A^2&#125;
+                $
+              </Math>
               {" "}to the value of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               .
               The first step, on the other hand, is
               entirely different: it is a
@@ -6082,21 +5733,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               by going{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  a
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                a
+                $
+              </Math>
               {" "}units to the right. The larger{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  a
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                a
+                $
+              </Math>
               {" "}
               is, thus, the further{" "}
             </VerticalChunk>
@@ -6123,13 +5770,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               has value{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f(0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f(0)
+                $
+              </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
@@ -6141,13 +5786,11 @@ const Article = () => {
               </NoBreak>
               {" "}and if you replace
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  20
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                20
+                $
+              </Math>
               {" "}with something larger, that position (i.e., 
               {" "}
               <NoBreak>
@@ -6160,13 +5803,11 @@ const Article = () => {
               </NoBreak>
               {" "}drifts even further off to the left!
               In any case, the graph{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = f(x + a)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = f(x + a)
+                $
+              </Math>
               {" "}is the
             </VerticalChunk>
             <div
@@ -6178,21 +5819,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               translate by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  a
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                a
+                $
+              </Math>
               {" "}units of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = f(x)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = f(x)
+                $
+              </Math>
               {" "}
               and, as a consequence, the first step effects a
             </VerticalChunk>
@@ -6200,13 +5837,11 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               leftward translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;B\over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;B\over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -6227,13 +5862,11 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B\over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B\over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -6262,39 +5895,33 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               1. horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B \over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B \over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               2. vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;-&#123;B^2 \over 4A^2&#125;&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;-&#123;B^2 \over 4A^2&#125;&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -6402,22 +6029,18 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                y_0 \in \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              y_0 \in \rr
+              $
+            </Math>
             {" "}and 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                a \in \rr
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              a \in \rr
+              $
+            </Math>
             {" "}with{" "}
             <NoBreak>
               <Math>
@@ -6428,13 +6051,11 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                a \ne 0.
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              a \ne 0.
+              $
+            </Math>
             {" "}
             If you apply these transformations...
           </VerticalChunk>
@@ -6442,39 +6063,33 @@ const Article = () => {
                class="spacer" />
           <CentralDisplayItalic>
             1. vertical translation by{" "}
-            <NoBreak>
-              <Math>
-                $
-                -y_0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              -y_0
+              $
+            </Math>
             {" "}{" "}
           </CentralDisplayItalic>
           <div
                class="spacer" />
           <CentralDisplayItalic>
             2. horizontal translation by{" "}
-            <NoBreak>
-              <Math>
-                $
-                x_0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x_0
+              $
+            </Math>
             {" "}{" "}
           </CentralDisplayItalic>
           <div
                class="spacer" />
           <CentralDisplayItalic>
             3. vertical scaling by{" "}
-            <NoBreak>
-              <Math>
-                $
-                a
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              a
+              $
+            </Math>
             {" "}{" "}
           </CentralDisplayItalic>
           <div
@@ -6496,22 +6111,18 @@ const Article = () => {
               Roots
             </i>
             {" "}are values of{" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}such 
             that{" "}
-            <NoBreak>
-              <Math>
-                $
-                y = 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              y = 0
+              $
+            </Math>
             .)
           </VerticalChunk>
           <div
@@ -6521,21 +6132,17 @@ const Article = () => {
             <VerticalChunk>
               Start by noting that the point 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (\sqrt&#123;y_0&#125;, y_0)
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (\sqrt&#123;y_0&#125;, y_0)
+                $
+              </Math>
               {" "}is on the curve{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = x^2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = x^2
+                $
+              </Math>
               ,
               as well as the point{" "}
               <NoBreak>
@@ -6549,21 +6156,17 @@ const Article = () => {
               {" "}
               because
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  (\sqrt&#123;y_0&#125;)^2 = (-\sqrt&#123;y_0&#125;)^2 =
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                (\sqrt&#123;y_0&#125;)^2 = (-\sqrt&#123;y_0&#125;)^2 =
+                $
+              </Math>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y_0;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y_0;
+                $
+              </Math>
               {" "}
               here is a sketch of the situation before 
               anything happens:
@@ -6577,22 +6180,18 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               After vertically translating by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -y_0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -y_0
+                $
+              </Math>
               {" "}
               the roots will therefore be at{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = \pm\sqrt&#123;y_0&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = \pm\sqrt&#123;y_0&#125;
+                $
+              </Math>
               :
             </VerticalChunk>
             <div
@@ -6604,22 +6203,18 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               Then after horizontally translating by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x_0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x_0
+                $
+              </Math>
               {" "}
               the roots mosey over to{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = x_0\pm\sqrt&#123;y_0&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = x_0\pm\sqrt&#123;y_0&#125;
+                $
+              </Math>
               :
             </VerticalChunk>
             <div
@@ -6637,22 +6232,18 @@ const Article = () => {
                 about
               </i>
               {" "}the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               axis (here{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  a \approx 1.7
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                a \approx 1.7
+                $
+              </Math>
               ):
             </VerticalChunk>
             <div
@@ -6664,13 +6255,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               So the roots are at:{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = x_0 \pm \sqrt&#123;y_0&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = x_0 \pm \sqrt&#123;y_0&#125;
+                $
+              </Math>
               .
               (Like we found them after the second step.)
             </VerticalChunk>
@@ -6686,22 +6275,18 @@ const Article = () => {
             {" "}
             Use the results of the previous two exercises
             to find the value(s) of{" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}such that 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                Ax^2 + Bx = 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              Ax^2 + Bx = 0
+              $
+            </Math>
             {" "}for constants{" "}
             <NoBreak>
               <Math>
@@ -6712,22 +6297,18 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                B
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              B
+              $
+            </Math>
             {" "}such 
             that{" "}
-            <NoBreak>
-              <Math>
-                $
-                A \ne 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              A \ne 0
+              $
+            </Math>
             .
           </VerticalChunk>
           <div
@@ -6748,13 +6329,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               obviously has solution{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = 0
+                $
+              </Math>
               {" "}to start
               with, so we{" "}
               <i>
@@ -6798,13 +6377,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               and the other root is the value of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               such that
             </VerticalChunk>
@@ -6840,13 +6417,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               to be{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0
+                $
+              </Math>
               {" "}you either need the first term to
               be{" "}
               <NoBreak>
@@ -6887,42 +6462,34 @@ const Article = () => {
               </NoBreak>
               {" "}
               product of two things is{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0
+                $
+              </Math>
               {" "}if and only if
               one of the two things is{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0
+                $
+              </Math>
               .)
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
               So the roots are{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = 0
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = -B/A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = -B/A
+                $
+              </Math>
               .
             </VerticalChunk>
             <VerticalChunk
@@ -6933,22 +6500,18 @@ const Article = () => {
               </i>
               , 
               however, we will use the fact that{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = Ax^2 + Bx
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = Ax^2 + Bx
+                $
+              </Math>
               {" "}
               is obtained from{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = x^2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = x^2
+                $
+              </Math>
               {" "}by the following
               sequence of transformations (cf. Exercise 14):
             </VerticalChunk>
@@ -6956,39 +6519,33 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               1. vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B^2 \over 4A^2&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B^2 \over 4A^2&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B \over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B \over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -6996,13 +6553,11 @@ const Article = () => {
             <VerticalChunk>
               (We put the vertical translation first.)
               By Exercise 15, the roots of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = Ax^2 + Bx
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = Ax^2 + Bx
+                $
+              </Math>
               {" "}
               are thus at
             </VerticalChunk>
@@ -7019,21 +6574,17 @@ const Article = () => {
             <VerticalChunk>
               which looks a little different than our 
               previous result of{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = 0
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = -B/A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = -B/A
+                $
+              </Math>
               {" "}
               until you realize that
             </VerticalChunk>
@@ -7060,13 +6611,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               and even though{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;B\over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;B\over 2A&#125;
+                $
+              </Math>
               {" "}could be 
               negative, the “
               <NoBreak>
@@ -7121,13 +6670,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               so here too we find that the roots are{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x = 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x = 0
+                $
+              </Math>
               {" "}
               and{" "}
               <NoBreak>
@@ -7151,21 +6698,17 @@ const Article = () => {
             </b>
             {" "}
             True or false (
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}and{" "}
-            <NoBreak>
-              <Math>
-                $
-                g
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g
+              $
+            </Math>
             {" "}are functions):
           </VerticalChunk>
           <div
@@ -7180,46 +6723,38 @@ const Article = () => {
                cols={2}>
             <Item>
               i.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g = (x \ra f(g(x)))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g = (x \ra f(g(x)))
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               ii.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g \circ f = (x \ra f(g(x)))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g \circ f = (x \ra f(g(x)))
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               iii.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g = (x \ra g(f(x)))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g = (x \ra g(f(x)))
+                $
+              </Math>
               {" "}{" "}
             </Item>
             <Item>
               iv.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  g \circ f = (x \ra g(f(x)))
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                g \circ f = (x \ra g(f(x)))
+                $
+              </Math>
               {" "}{" "}
             </Item>
           </Grid>
@@ -7230,22 +6765,18 @@ const Article = () => {
             <VerticalChunk>
               The true statements are i, iv, because
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f \circ g
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f \circ g
+                $
+              </Math>
               {" "}is the function that maps an 
               input{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
@@ -7278,21 +6809,17 @@ const Article = () => {
             </b>
             {" "}
             If{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}and{" "}
-            <NoBreak>
-              <Math>
-                $
-                g
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g
+              $
+            </Math>
             {" "}are functions then we define 
             (and not just us but people in general)
           </VerticalChunk>
@@ -7329,22 +6856,18 @@ const Article = () => {
             </NoBreak>
             {" "}if you like), 
             i.e., to be the function that applies{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}and
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                g
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g
+              $
+            </Math>
             {" "}separately and then takes the sum,
             and we define{" "}
           </VerticalChunk>
@@ -7381,22 +6904,18 @@ const Article = () => {
             </NoBreak>
             {" "}if you like, hehe),
             i.e., to be the function that applies{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             {" "}and 
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                g
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g
+              $
+            </Math>
             {" "}separately and then takes the product.
             (These definitions are similar to how we define
           </VerticalChunk>
@@ -7451,30 +6970,24 @@ const Article = () => {
                indent={true}>
             Given these definitions, which of the following
             equalities hold, in general for all functions{" "}
-            <NoBreak>
-              <Math>
-                $
-                f
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              f
+              $
+            </Math>
             ,
             {" "}
-            <NoBreak>
-              <Math>
-                $
-                g
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              g
+              $
+            </Math>
             {" "}and{" "}
-            <NoBreak>
-              <Math>
-                $
-                h
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              h
+              $
+            </Math>
             ?
           </VerticalChunk>
           <div
@@ -7567,13 +7080,11 @@ const Article = () => {
               {" "}switched (but addition is
               commutative, so it doesn't matter); the fourth
               equality is true: it is the definition of “
-              <NoBreak>
-                <Math>
-                  $
-                  \circ
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \circ
+                $
+              </Math>
               ”.
             </VerticalChunk>
           </Solution>
@@ -7630,21 +7141,17 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                C
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              C
+              $
+            </Math>
             {" "}such that{" "}
-            <NoBreak>
-              <Math>
-                $
-                A \ne 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              A \ne 0
+              $
+            </Math>
             ?
           </VerticalChunk>
           <div
@@ -7701,13 +7208,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               so that, altogether,{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  Ax^2 + Bx + C
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                Ax^2 + Bx + C
+                $
+              </Math>
               {" "}
               becomes
             </VerticalChunk>
@@ -7758,39 +7263,33 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               1. horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B \over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B \over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               2. vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -7802,39 +7301,33 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               1. vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B \over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B \over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -7853,13 +7346,11 @@ const Article = () => {
             </b>
             {" "}
             What are the roots (i.e., solutions){" "}
-            <NoBreak>
-              <Math>
-                $
-                x
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              x
+              $
+            </Math>
             {" "}of
           </VerticalChunk>
           <div
@@ -7891,21 +7382,17 @@ const Article = () => {
               ,
             </NoBreak>
             {" "}{" "}
-            <NoBreak>
-              <Math>
-                $
-                C
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              C
+              $
+            </Math>
             {" "}such that{" "}
-            <NoBreak>
-              <Math>
-                $
-                A \ne 0
-                $
-              </Math>
-            </NoBreak>
+            <Math>
+              $
+              A \ne 0
+              $
+            </Math>
             ?
           </VerticalChunk>
           <div
@@ -7926,13 +7413,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               is obtained from the curve{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y = x^2
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y = x^2
+                $
+              </Math>
               {" "}by the following sequence of 
               transformations (cf. Exercise 19):
             </VerticalChunk>
@@ -7940,39 +7425,33 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplayItalic>
               1. vertical translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  -&#123;B \over 2A&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                -&#123;B \over 2A&#125;
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
                  class="spacer" />
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  A
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                A
+                $
+              </Math>
               {" "}{" "}
             </CentralDisplayItalic>
             <div
@@ -8013,13 +7492,11 @@ const Article = () => {
               </i>
               , 
               the curve detaches from the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}axis never
               to see it again, and there are no roots!
             </VerticalChunk>
@@ -8050,21 +7527,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               by Exercise 15.{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \rightarrow
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \rightarrow
+                $
+              </Math>
               {" "}~The End~{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  \leftarrow
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                \leftarrow
+                $
+              </Math>
               {" "}{" "}
             </VerticalChunk>
             <div
@@ -8200,13 +7673,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               because{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  4A^2 &gt; 0
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                4A^2 &gt; 0
+                $
+              </Math>
               {" "}for all{" "}
               <NoBreak>
                 <Math>
@@ -8267,21 +7738,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               ...
             </VerticalChunk>
             <div
@@ -8292,30 +7759,24 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               {" "}becomes the value to use for{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               in “
-              <NoBreak>
-                <Math>
-                  $
-                  x^3
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x^3
+                $
+              </Math>
               ”:
             </VerticalChunk>
             <div
@@ -8338,21 +7799,17 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...we also pair the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               ...
             </VerticalChunk>
             <div
@@ -8363,30 +7820,24 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               {" "}becomes the value to use for{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               in “
-              <NoBreak>
-                <Math>
-                  $
-                  y \ra x^3y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y \ra x^3y
+                $
+              </Math>
               ”:
             </VerticalChunk>
             <div
@@ -8412,37 +7863,29 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               {" "}and the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               {" "}with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  8
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                8
+                $
+              </Math>
               ...
             </VerticalChunk>
             <div
@@ -8453,46 +7896,36 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  6
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                6
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  8
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                8
+                $
+              </Math>
               {" "}become respectively the 
               values to use for{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                y
+                $
+              </Math>
               {" "}in “
-              <NoBreak>
-                <Math>
-                  $
-                  x^3y
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x^3y
+                $
+              </Math>
               ”:
             </VerticalChunk>
             <div
@@ -8515,13 +7948,11 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  f
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                f
+                $
+              </Math>
               {" "}with{" "}
               <NoBreak>
                 <Math>
@@ -8533,13 +7964,11 @@ const Article = () => {
               </NoBreak>
               {" "}the 
               {" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}with{" "}
               <NoBreak>
                 <Math>
@@ -8550,21 +7979,17 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}and the{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                h
+                $
+              </Math>
               {" "}with{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0.1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0.1
+                $
+              </Math>
               ...
             </VerticalChunk>
             <div
@@ -8584,21 +8009,17 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  5
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                5
+                $
+              </Math>
               {" "}and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  0.1
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                0.1
+                $
+              </Math>
               {" "}become
               respectively the values to use for{" "}
               <NoBreak>
@@ -8610,30 +8031,24 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  x
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                x
+                $
+              </Math>
               {" "}
               and{" "}
-              <NoBreak>
-                <Math>
-                  $
-                  h
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                h
+                $
+              </Math>
               {" "}in “
-              <NoBreak>
-                <Math>
-                  $
-                  &#123;f(x + h) - f(x)\over h&#125;
-                  $
-                </Math>
-              </NoBreak>
+              <Math>
+                $
+                &#123;f(x + h) - f(x)\over h&#125;
+                $
+              </Math>
               ”:
             </VerticalChunk>
             <div
