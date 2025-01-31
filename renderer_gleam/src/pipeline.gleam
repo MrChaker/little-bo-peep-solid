@@ -14,11 +14,14 @@ import desugarers/convert_int_attributes_to_float.{
 }
 import desugarers/counter.{counter_desugarer}
 import desugarers/counter_handles.{counter_handles_desugarer}
+import desugarers/encode_spaces_in_first_and_last_child.{encode_spaces_in_first_and_last_child}
 import desugarers/fold_tags_into_text.{fold_tags_into_text}
 import desugarers/free_children.{free_children}
+import desugarers/generate_lbp_table_of_contents.{generate_lbp_table_of_contents}
+import desugarers/group_siblings_not_separated_by_blank_lines.{group_siblings_not_separated_by_blank_lines}
+import desugarers/insert_first_and_last_child_tags.{insert_first_and_last_child_tags}
 import desugarers/insert_indent.{insert_indent}
 import desugarers/pair_bookends.{pair_bookends}
-import desugarers/reinsert_math_dolar.{reinsert_math_dolar}
 import desugarers/remove_empty_chunks.{remove_empty_chunks}
 import desugarers/remove_empty_lines.{remove_empty_lines}
 import desugarers/remove_vertical_chunks_with_no_text_child.{
@@ -27,11 +30,9 @@ import desugarers/remove_vertical_chunks_with_no_text_child.{
 import desugarers/remove_attributes.{remove_attributes}
 import desugarers/rename_when_child_of.{rename_when_child_of}
 import desugarers/split_by_indexed_regexes.{split_by_indexed_regexes}
-import desugarers/group_siblings_not_separated_by_blank_lines.{group_siblings_not_separated_by_blank_lines}
 import desugarers/surround_elements_by.{surround_elements_by}
 import desugarers/unwrap_tags.{unwrap_tags}
 import desugarers/wrap_math_with_no_break.{wrap_math_with_no_break}
-import desugarers/generate_lbp_table_of_contents.{generate_lbp_table_of_contents}
 import infrastructure.{type Pipe} as infra
 
 pub fn our_pipeline() -> List(Pipe) {
@@ -262,7 +263,18 @@ pub fn our_pipeline() -> List(Pipe) {
     add_counter_attributes([#("Solution", "Exercises", "solution_number", 0)]),
     add_counter_attributes([#("Exercise", "Exercises", "exercise_number", 0)]),
     concatenate_text_nodes(),
-    reinsert_math_dolar(),
+    insert_first_and_last_child_tags([
+      #("Math", "OpeningSingleDollar", "ClosingSingleDollar"),
+      #("MathBlock", "OpeningDoubleDollar", "ClosingDoubleDollar"),
+    ]),
+    fold_tags_into_text(
+      [
+        #("OpeningSingleDollar", "$"),
+        #("ClosingSingleDollar", "$"),
+        #("OpeningDoubleDollar", "$$"),
+        #("ClosingDoubleDollar", "$$"),
+      ]
+    ),
     absorb_next_sibling_while([
       #("VerticalChunk", "ImageRight"),
       #("VerticalChunk", "ImageLeft"),
@@ -306,6 +318,6 @@ pub fn our_pipeline() -> List(Pipe) {
     ]),
     generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
     generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
-    remove_attributes(["counter", "handle"])
+    remove_attributes(["counter", "handle", "type"]),
   ]
 }
