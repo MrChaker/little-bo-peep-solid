@@ -9,7 +9,11 @@ type TableProps = ParentProps &
   };
 
 const Table = (props: TableProps) => {
-  return <table class={twJoin("slice", props.class)}>{props.children}</table>;
+  return (
+    <div class={`slice`}>
+      <table class={twJoin("lines ", props.class)}>{props.children}</table>
+    </div>
+  );
 };
 
 export default Table;

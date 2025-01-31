@@ -1,3 +1,5 @@
+import desugarers/unwrap_tags_if_no_attributes
+import desugarers/insert_bookend_text_if_no_attributes.{insert_bookend_text_if_no_attributes}
 import gleam/option.{Some, None}
 import desugarers/absorb_next_sibling_while.{absorb_next_sibling_while}
 import desugarers/add_counter_attributes.{add_counter_attributes}
@@ -19,7 +21,7 @@ import desugarers/fold_tags_into_text.{fold_tags_into_text}
 import desugarers/free_children.{free_children}
 import desugarers/generate_lbp_table_of_contents.{generate_lbp_table_of_contents}
 import desugarers/group_siblings_not_separated_by_blank_lines.{group_siblings_not_separated_by_blank_lines}
-import desugarers/insert_first_and_last_child_tags.{insert_first_and_last_child_tags}
+import desugarers/insert_bookend_tags.{insert_bookend_tags}
 import desugarers/insert_indent.{insert_indent}
 import desugarers/pair_bookends.{pair_bookends}
 import desugarers/remove_empty_chunks.{remove_empty_chunks}
@@ -263,7 +265,7 @@ pub fn our_pipeline() -> List(Pipe) {
     add_counter_attributes([#("Solution", "Exercises", "solution_number", 0)]),
     add_counter_attributes([#("Exercise", "Exercises", "exercise_number", 0)]),
     concatenate_text_nodes(),
-    insert_first_and_last_child_tags([
+    insert_bookend_tags([
       #("Math", "OpeningSingleDollar", "ClosingSingleDollar"),
       #("MathBlock", "OpeningDoubleDollar", "ClosingDoubleDollar"),
     ]),
@@ -319,5 +321,27 @@ pub fn our_pipeline() -> List(Pipe) {
     generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
     generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
     remove_attributes(["counter", "handle", "type"]),
+    // unwrap_tags(["VerticalChunk"]),
+    // insert_bookend_tags([#("i", "3p", "3p")]),
+    // fold_tags_into_text([#("3p", "   ")]),
+    // encode_spaces_in_first_and_last_child(["i", "b", "strong"]),
+    // insert_bookend_text_if_no_attributes([
+    //   #("i", "_", "_"),
+    //   #("b", "*", "*"),
+    //   #("strong", "*", "*"),
+    // ]),
+    // unwrap_tags_if_no_attributes.unwrap_tags_if_no_attributes(["i", "b", "strong"]),
+    // insert_bookend_tags([
+    //   #("i", "OpeningUnderscore", "ClosingUnderscore"),
+    //   #("b", "OpeningAsterisk", "ClosingAsterisk"),
+    //   #("strong", "OpeningAsterisk", "ClosingAsterisk"),
+    // ]),
+    // fold_tags_into_text([
+    //   #("OpeningUnderscore", "_"),
+    //   #("ClosingUnderscore", "_"),
+    //   #("OpeningAsterisk", "*"),
+    //   #("ClosingAsterisk", "*"),
+    // ]),
+    // concatenate_text_nodes(),
   ]
 }

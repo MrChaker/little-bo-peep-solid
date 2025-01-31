@@ -1,5 +1,26 @@
 |> Section
-    type intro
+
+    |> div
+        type s
+
+        |> i
+
+            hello world
+            goodbye
+            |> img
+            byyeee
+
+        |> i
+
+            hello world
+            goodbye
+            |> img
+        |> i
+            font-size 45
+
+            hello world
+            goodbye
+            |> img
 
     *Square Roots.*
     You mght remember that “minus times minus 

@@ -38,9 +38,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f : \rr \ra \rr 
-          $$
+          $$f : \rr \ra \rr $$
         </MathBlock>
         <div
              class="spacer" />
@@ -50,18 +48,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f' : \rr \ra \rr
-          $$
+          $$f' : \rr \ra \rr$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           that gives the slope of{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}at each point. 
           In other words
@@ -69,54 +63,40 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f'(a)
-          $$
+          $$f'(a)$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is the slope of the graph{" "}
           <Math>
-            $
-            y = f(x)
-            $
+            $y = f(x)$
           </Math>
           {" "}at
           {" "}
           <NoBreak>
             <Math>
-              $
-              x = a
-              $
+              $x = a$
             </Math>
             .
           </NoBreak>
           {" "}And—surprise!—each pair of graphs
           above is a pair of the form{" "}
           <Math>
-            $
-            y = f(x)
-            $
+            $y = f(x)$
           </Math>
           {" "}[
           <Math>
-            $
-            =
-            $
+            $=$
           </Math>
           {" "}
           “before”],{" "}
           <Math>
-            $
-            y = f'(x)
-            $
+            $y = f'(x)$
           </Math>
           {" "}[
           <Math>
-            $
-            =
-            $
+            $=$
           </Math>
           {" "}“after”]. (Meaning,
           the “after” graph records the slope of the 
@@ -131,44 +111,32 @@ const Article = () => {
         <VerticalChunk>
           Note that{" "}
           <Math>
-            $
-            f'\!
-            $
+            $f'\!$
           </Math>
           {" "}(read “
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}prime”) remains 
           undefined where{" "}
           <Math>
-            $
-            y = f(x)
-            $
+            $y = f(x)$
           </Math>
           {" "}has a sharp “corner” 
           and no well-defined slope. By opposition, if 
           there is a well-defined tangent line to 
           {" "}
           <Math>
-            $
-            y = f(x)
-            $
+            $y = f(x)$
           </Math>
           {" "}at{" "}
           <Math>
-            $
-            x = a
-            $
+            $x = a$
           </Math>
           {" "}the slope of this
           tangent line supplies the value of{" "}
           <Math>
-            $
-            f'(a)
-            $
+            $f'(a)$
           </Math>
           :
         </VerticalChunk>
@@ -189,18 +157,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f'(a) = \te&#123;[slope of tangent line to $y = f(x)$ at $x = a$]&#125;
-          $$
+          $$f'(a) = \te&#123;[slope of tangent line to $y = f(x)$ at $x = a$]&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           ...with the understanding that{" "}
           <Math>
-            $
-            f'(a)
-            $
+            $f'(a)$
           </Math>
           {" "}is 
           undefined if a tangent line does not exist 
@@ -233,9 +197,7 @@ const Article = () => {
           {" "}
           A function{" "}
           <Math>
-            $
-            f : \rr \ra \rr
-            $
+            $f : \rr \ra \rr$
           </Math>
           {" "}is
         </VerticalChunk>
@@ -250,18 +212,14 @@ const Article = () => {
           if{" "}
           <NoBreak>
             <Math>
-              $
-              \dom\,f' = \dom\,f
-              $
+              $\dom\,f' = \dom\,f$
             </Math>
             .
           </NoBreak>
           {" "}Also, if{" "}
           <NoBreak>
             <Math>
-              $
-              a, b \in \rr
-              $
+              $a, b \in \rr$
             </Math>
             ,
           </NoBreak>
@@ -269,17 +227,13 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              a &lt; b
-              $
+              $a &lt; b$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}is
         </VerticalChunk>
@@ -288,9 +242,7 @@ const Article = () => {
         <CentralDisplayItalic>
           differentiable on{" "}
           <Math>
-            $
-            [a,b]
-            $
+            $[a,b]$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -300,17 +252,13 @@ const Article = () => {
           if{" "}
           <NoBreak>
             <Math>
-              $
-              [a,b] \subseteq \dom \,f'
-              $
+              $[a,b] \subseteq \dom \,f'$
             </Math>
             .
           </NoBreak>
           {" "}Lastly,{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}is
         </VerticalChunk>
@@ -319,9 +267,7 @@ const Article = () => {
         <CentralDisplayItalic>
           differentiable at{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -330,9 +276,7 @@ const Article = () => {
         <VerticalChunk>
           if{" "}
           <Math>
-            $
-            a \in \dom\,f'
-            $
+            $a \in \dom\,f'$
           </Math>
           .
         </VerticalChunk>
@@ -410,24 +354,18 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra B
-          $$
+          $$x \ra B$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           for some{" "}
           <Math>
-            $
-            B \in \rr
-            $
+            $B \in \rr$
           </Math>
           {" "}independent of{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           .
           The graph of the constant function is the line{" "}
@@ -435,9 +373,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = B
-          $$
+          $$y = B$$
         </MathBlock>
         <div
              class="spacer" />
@@ -445,9 +381,7 @@ const Article = () => {
           of slope{" "}
           <NoBreak>
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             .
           </NoBreak>
@@ -456,9 +390,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra B)' = (x \ra 0)
-          $$
+          $$(x \ra B)' = (x \ra 0)$$
           <ImageLeft
                src="/images/svg_ch4_constant_derivative_cloud.svg" />
         </MathBlock>
@@ -468,9 +400,7 @@ const Article = () => {
           because at each{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -value
           </NoBreak>
@@ -478,9 +408,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             ,
           </NoBreak>
@@ -493,9 +421,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra 0
-          $$
+          $$x \ra 0$$
         </MathBlock>
         <div
              class="spacer" />
@@ -548,9 +474,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra Ax + B
-          $$
+          $$x \ra Ax + B$$
         </MathBlock>
         <div
              class="spacer" />
@@ -558,32 +482,24 @@ const Article = () => {
           for constants{" "}
           <NoBreak>
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            B \in \rr
-            $
+            $B \in \rr$
           </Math>
           .
           The graph of{" "}
           <Math>
-            $
-            x \ra Ax + B
-            $
+            $x \ra Ax + B$
           </Math>
           {" "}is a line of 
           slope{" "}
           <NoBreak>
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             ,
           </NoBreak>
@@ -592,9 +508,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra Ax + B)' = (x \ra A)
-          $$
+          $$(x \ra Ax + B)' = (x \ra A)$$
           <ImageLeft
                src="/images/svg_ch4_affine_derivative_cloud.svg" />
         </MathBlock>
@@ -603,34 +517,26 @@ const Article = () => {
         <VerticalChunk>
           because the slope of a line of slope{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}is
           {" "}
           <NoBreak>
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             ,
           </NoBreak>
           {" "}no matter where you put yourself on the
           line. In particular,{" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}plays no role in the
           derivative! (
           <NoBreak>
             <Math>
-              $
-              \,
-              $
+              $\,$
             </Math>
             Just
           </NoBreak>
@@ -639,18 +545,14 @@ const Article = () => {
           trace of{" "}
           <NoBreak>
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             's
           </NoBreak>
           {" "}value—and for the same reason
           that{" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}effects a vertical translation, which
           does not change the slope of anything.)
@@ -665,15 +567,11 @@ const Article = () => {
           ~ the derivative of the affine function 
           {" "}
           <Math>
-            $
-            y = ax + b
-            $
+            $y = ax + b$
           </Math>
           {" "}is the constant function{" "}
           <Math>
-            $
-            y = a
-            $
+            $y = a$
           </Math>
           {" "}~
         </CentralDisplayItalic>
@@ -693,25 +591,19 @@ const Article = () => {
         <VerticalChunk>
           (The “linear term” of{" "}
           <Math>
-            $
-            y = ax + b
-            $
+            $y = ax + b$
           </Math>
           {" "}is{" "}
           <NoBreak>
             <Math>
-              $
-              ax
-              $
+              $ax$
             </Math>
             ,
           </NoBreak>
           {" "}
           of coefficient{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           .)
         </VerticalChunk>
@@ -729,9 +621,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra 3x + 1)' = (x \ra 3)
-            $$
+            $$(x \ra 3x + 1)' = (x \ra 3)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -741,9 +631,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra Ax + B)' = (x \ra A)
-            $$
+            $$(x \ra Ax + B)' = (x \ra A)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -751,17 +639,13 @@ const Article = () => {
             with{" "}
             <NoBreak>
               <Math>
-                $
-                A = 3
-                $
+                $A = 3$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              B = 1
-              $
+              $B = 1$
             </Math>
             .
           </VerticalChunk>
@@ -780,9 +664,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra 12 - x)' = (x \ra -1)
-            $$
+            $$(x \ra 12 - x)' = (x \ra -1)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -792,9 +674,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra Ax + B)' = (x \ra A)
-            $$
+            $$(x \ra Ax + B)' = (x \ra A)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -802,17 +682,13 @@ const Article = () => {
             with{" "}
             <NoBreak>
               <Math>
-                $
-                A = -1
-                $
+                $A = -1$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              B = 12
-              $
+              $B = 12$
             </Math>
             .
           </VerticalChunk>
@@ -832,18 +708,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;$y$ axis units for $f'$&#125; \,= &#123;\te&#123;$y$ axis units for $\f$&#125; \over \te&#123;$x$ axis units for $\f$&#125;&#125;
-          $$
+          $$\te&#123;$y$ axis units for $f'$&#125; \,= &#123;\te&#123;$y$ axis units for $\f$&#125; \over \te&#123;$x$ axis units for $\f$&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           because a value output by{" "}
           <Math>
-            $
-            \f'
-            $
+            $\f'$
           </Math>
           {" "}is the
           {" "}
@@ -854,9 +726,7 @@ const Article = () => {
           graph{" "}
           <NoBreak>
             <Math>
-              $
-              y = f(x)
-              $
+              $y = f(x)$
             </Math>
             ,
           </NoBreak>
@@ -865,25 +735,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;$x$ axis units for $f'$&#125;\, = \rt&#123;0.02&#125;\,\te&#123;$x$ axis units for $f$&#125;
-          $$
+          $$\te&#123;$x$ axis units for $f'$&#125;\, = \rt&#123;0.02&#125;\,\te&#123;$x$ axis units for $f$&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           because an input for{" "}
           <Math>
-            $
-            \f'
-            $
+            $\f'$
           </Math>
           {" "}is, originally, 
           an input for{" "}
           <Math>
-            $
-            \f
-            $
+            $\f$
           </Math>
           .
         </VerticalChunk>
@@ -897,16 +761,12 @@ const Article = () => {
             <VerticalChunk>
               seconds on the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}axis, meters on the 
               {" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis
             </VerticalChunk>
@@ -924,16 +784,12 @@ const Article = () => {
               <VerticalChunk>
                 seconds on the{" "}
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 {" "}axis, meters per
                 second on the{" "}
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 {" "}axis
               </VerticalChunk>
@@ -946,16 +802,12 @@ const Article = () => {
             <VerticalChunk>
               years on the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}axis, dollars on the
               {" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis
             </VerticalChunk>
@@ -973,16 +825,12 @@ const Article = () => {
               <VerticalChunk>
                 years on the{" "}
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 {" "}axis, dollars per
                 year on the{" "}
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 {" "}axis
               </VerticalChunk>
@@ -995,9 +843,7 @@ const Article = () => {
           Units might additionally prompt us to refer
           to{" "}
           <Math>
-            $
-            f'
-            $
+            $f'$
           </Math>
           {" "}as the
         </VerticalChunk>
@@ -1012,9 +858,7 @@ const Article = () => {
           of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             ,
           </NoBreak>
@@ -1031,9 +875,7 @@ const Article = () => {
           rate of change of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             .
           </NoBreak>
@@ -1058,34 +900,26 @@ const Article = () => {
           </i>
           {" "}of{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}is the derivative
           of the derivative of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             .
           </NoBreak>
           {" "}It is written “
           <Math>
-            $
-            f''
-            $
+            $f''$
           </Math>
           ”:
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \,\,\,f'' = (f')'.
-          $$
+          $$\,\,\,f'' = (f')'.$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1095,13 +929,11 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \begin&#123;align&#125;
+          $$\begin&#123;align&#125;
           \up&#123;0.95&#125;f''' &= (f'')'\\
           \up&#123;1.25&#125;f'''' &= (f''')'\\
           \up&#123;1.25&#125;f''''\psa' &= (f'''')'\\
-          \end&#123;align&#125;
-          $$
+          \end&#123;align&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1122,9 +954,7 @@ const Article = () => {
           {" "}derivatives of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             .
           </NoBreak>
@@ -1134,9 +964,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f^&#123;(n)&#125;
-          $$
+          $$f^&#123;(n)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1144,18 +972,14 @@ const Article = () => {
           for the{" "}
           <NoBreak>
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             -th
           </NoBreak>
           {" "}derivative of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             ,
           </NoBreak>
@@ -1165,9 +989,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f^&#123;(7)&#125;
-          $$
+          $$f^&#123;(7)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1177,9 +999,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f'''''''
-          $$
+          $$f'''''''$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1202,9 +1022,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra 3x + 1)'' = (x \ra 0)
-            $$
+            $$(x \ra 3x + 1)'' = (x \ra 0)$$
             <ImageRight
                  src="/images/svg_ch4_3x_plus_one_and_second_cloud.svg" />
           </MathBlock>
@@ -1217,9 +1035,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra 3x + 1)' = (x \ra 3)
-          $$
+          $$(x \ra 3x + 1)' = (x \ra 3)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1229,9 +1045,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra 3)' = (x \ra 0)
-          $$
+          $$(x \ra 3)' = (x \ra 0)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1241,9 +1055,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra 3x + 1)'' =  ((x \ra 3x + 1)')' = (x \ra 3)' = (x \ra 0)
-          $$
+          $$(x \ra 3x + 1)'' =  ((x \ra 3x + 1)')' = (x \ra 3)' = (x \ra 0)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1265,9 +1077,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \,\,\,(x \ra ax + b)'' = (x \ra 0)
-            $$
+            $$\,\,\,(x \ra ax + b)'' = (x \ra 0)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1275,9 +1085,7 @@ const Article = () => {
             for all{" "}
             <NoBreak>
               <Math>
-                $
-                a, b \in \rr
-                $
+                $a, b \in \rr$
               </Math>
               ,
             </NoBreak>
@@ -1366,29 +1174,21 @@ const Article = () => {
           already—you can't see the difference between
           slope{" "}
           <Math>
-            $
-            100
-            $
+            $100$
           </Math>
           {" "}and slope{" "}
           <Math>
-            $
-            1000
-            $
+            $1000$
           </Math>
           {" "}very well, at most
           scales—nor between{" "}
           <Math>
-            $
-            -1000
-            $
+            $-1000$
           </Math>
           {" "}and{" "}
           <NoBreak>
             <Math>
-              $
-              -100
-              $
+              $-100$
             </Math>
             ,
           </NoBreak>
@@ -1484,9 +1284,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra 3x + 1)'' = (x \ra 0)
-            $$
+            $$(x \ra 3x + 1)'' = (x \ra 0)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1496,9 +1294,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            y = 3x + 1
-            $$
+            $$y = 3x + 1$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1506,9 +1302,7 @@ const Article = () => {
             is neither “bending upwards” nor “bending 
             downwards”—
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             {" "}is neither positive, nor negative.
           </VerticalChunk>
@@ -1586,9 +1380,7 @@ const Article = () => {
              indent={true}>
           Note that the units on the{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}axis of the
           second derivative are given by
@@ -1596,11 +1388,9 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;$y$ axis units for $f'$&#125; \over \te&#123;$x$ axis units for $f'$&#125;&#125; = 
+          $$&#123;\te&#123;$y$ axis units for $f'$&#125; \over \te&#123;$x$ axis units for $f'$&#125;&#125; = 
           &#123;\te&#123;m&#125;/\te&#123;s&#125; \over \te&#123;s&#125;&#125; = 
-          &#123;\te&#123;m&#125; \over \rt&#123;0.1&#125;\te&#123;s&#125;\!&#123;\,&#125;^2&#125;
-          $$
+          &#123;\te&#123;m&#125; \over \rt&#123;0.1&#125;\te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1608,18 +1398,14 @@ const Article = () => {
           because{" "}
           <NoBreak>
             <Math>
-              $
-              f'' = (f')'
-              $
+              $f'' = (f')'$
             </Math>
             .
           </NoBreak>
           {" "}The point is, a tangent
           to the graph{" "}
           <Math>
-            $
-            y = f'(t)
-            $
+            $y = f'(t)$
           </Math>
           {" "}has a “rise” measured
           in meters per second and a “run” measured in 
@@ -1637,11 +1423,9 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;m&#125;/\te&#123;s&#125; \over \te&#123;s&#125;&#125; 
+          $$&#123;\te&#123;m&#125;/\te&#123;s&#125; \over \te&#123;s&#125;&#125; 
           = &#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125; \times &#123;1 \over \te&#123;s&#125;&#125;
-          = &#123;\te&#123;m&#125; \over \te&#123;s&#125;\!&#123;\,&#125;^2&#125;
-          $$
+          = &#123;\te&#123;m&#125; \over \te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1653,9 +1437,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;difference in velocity&#125; \over \te&#123;amount of time&#125;&#125;
-          $$
+          $$&#123;\te&#123;difference in velocity&#125; \over \te&#123;amount of time&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1692,11 +1474,9 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          %\left[&#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^2&#125;\right]
+          $$%\left[&#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^2&#125;\right]
           &#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^2&#125;
-          %\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2
-          $$
+          %\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1735,9 +1515,7 @@ const Article = () => {
           to be a number of m
           <NoBreak>
             <Math>
-              $
-              /
-              $
+              $/$
             </Math>
             s
           </NoBreak>
@@ -1749,9 +1527,7 @@ const Article = () => {
           a number of m
           <NoBreak>
             <Math>
-              $
-              /
-              $
+              $/$
             </Math>
             s
           </NoBreak>
@@ -1769,9 +1545,7 @@ const Article = () => {
             Over a period of{" "}
             <NoBreak>
               <Math>
-                $
-                10
-                $
+                $10$
               </Math>
               s,
             </NoBreak>
@@ -1781,9 +1555,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;
-            $$
+            $$2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1793,9 +1565,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;) \times\, (10\te&#123;s&#125;) = 20&#123;\te&#123;m&#125;/\te&#123;s&#125;&#125;
-            $$
+            $$(2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;) \times\, (10\te&#123;s&#125;) = 20&#123;\te&#123;m&#125;/\te&#123;s&#125;&#125;$$
             <ImageRight
                  src="/images/svg_ch4_unit_cancellation_cloud.svg" />
           </MathBlock>
@@ -1807,10 +1577,8 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (\te&#123;rate of change&#125;) \times \te&#123;(amount of time)&#125;\\
-            = \te&#123;(amount of change)&#125;
-            $$
+            $$(\te&#123;rate of change&#125;) \times \te&#123;(amount of time)&#125;\\
+            = \te&#123;(amount of change)&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1820,9 +1588,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (\te&#123;acceleration&#125;) \times (\te&#123;amount of time&#125;) =\\ (\te&#123;change in velocity&#125;)
-            $$
+            $$(\te&#123;acceleration&#125;) \times (\te&#123;amount of time&#125;) =\\ (\te&#123;change in velocity&#125;)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1863,9 +1629,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^3&#125;
-          $$
+          $$&#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^3&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1946,9 +1710,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f, g : \rr \ra \rr
-          $$
+          $$f, g : \rr \ra \rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1958,38 +1720,28 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f \circ g = (x \ra f(g(x)))
-          $$
+          $$f \circ g = (x \ra f(g(x)))$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f + g = (x \ra f(x) + g(x))
-          $$
+          $$f + g = (x \ra f(x) + g(x))$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          fg = (x \ra f(x)g
-          (x))
-          $$
+          $$fg = (x \ra f(x)g
+          (x))$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;f/g&#125; = (x \ra &#123;f(x)/g(x)&#125;)
-          $$
+          $$&#123;f/g&#125; = (x \ra &#123;f(x)/g(x)&#125;)$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f - g = (x \ra f(x) - g(x))
-          $$
+          $$f - g = (x \ra f(x) - g(x))$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2004,9 +1756,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f \circ g
-          $$
+          $$f \circ g$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2015,9 +1765,7 @@ const Article = () => {
           the little circle “
           <NoBreak>
             <Math>
-              $
-              \circ
-              $
+              $\circ$
             </Math>
             ”
           </NoBreak>
@@ -2031,9 +1779,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f + g
-          $$
+          $$f + g$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2043,9 +1789,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          fg
-          $$
+          $$fg$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2055,17 +1799,13 @@ const Article = () => {
           (i.e.{" "}
           <NoBreak>
             <Math>
-              $
-              f/g
-              $
+              $f/g$
             </Math>
             )
           </NoBreak>
           {" "}and difference (i.e.,{" "}
           <Math>
-            $
-            f - g
-            $
+            $f - g$
           </Math>
           {" "}of
           functions are defined above for the first time.
@@ -2115,29 +1855,21 @@ const Article = () => {
             <VerticalChunk>
               (The derivative is{" "}
               <Math>
-                $
-                1/2
-                $
+                $1/2$
               </Math>
               {" "}when the slope is{" "}
               <Math>
-                $
-                1/2
-                $
+                $1/2$
               </Math>
               ,
               is{" "}
               <Math>
-                $
-                -1/2
-                $
+                $-1/2$
               </Math>
               {" "}when the slope is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -1/2
-                  $
+                  $-1/2$
                 </Math>
                 ,
               </NoBreak>
@@ -2159,9 +1891,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            y = &#123;1\over x&#125;
-            $$
+            $$y = &#123;1\over x&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -2170,9 +1900,7 @@ const Article = () => {
             large positive number, near{" "}
             <NoBreak>
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               ?
             </NoBreak>
@@ -2186,9 +1914,7 @@ const Article = () => {
             <VerticalChunk>
               The graph of{" "}
               <Math>
-                $
-                y = &#123;1 \over x&#125;
-                $
+                $y = &#123;1 \over x&#125;$
               </Math>
               {" "}looks like so:
             </VerticalChunk>
@@ -2203,9 +1929,7 @@ const Article = () => {
               near{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = 0
-                  $
+                  $x = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -2294,9 +2018,7 @@ const Article = () => {
             time, with hours (hr) on the{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -axis
             </NoBreak>
@@ -2304,9 +2026,7 @@ const Article = () => {
             and kilometers (km) on the{" "}
             <NoBreak>
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -axis,
             </NoBreak>
@@ -2321,9 +2041,7 @@ const Article = () => {
             <VerticalChunk>
               The units on the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis become kilometers,
               kilometers per hour, and kilometers per
@@ -2332,16 +2050,12 @@ const Article = () => {
               another derivative is taken, divide the
               units of the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis by the units of the 
               {" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}axis.) These are the position, velocity,
               and acceleration of the car as a function
@@ -2375,9 +2089,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x \ra x + 1) \,+\, (u \ra 2u + 1) \,=\, (t \ra 3t + 2)
-            $$
+            $$(x \ra x + 1) \,+\, (u \ra 2u + 1) \,=\, (t \ra 3t + 2)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -2390,9 +2102,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra x + 1) \,+\, (u \ra 2u + 1)
-              $$
+              $$(x \ra x + 1) \,+\, (u \ra 2u + 1)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2409,15 +2119,11 @@ const Article = () => {
             <VerticalChunk>
               because{" "}
               <Math>
-                $
-                x \ra x + 1
-                $
+                $x \ra x + 1$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                u \ra 2u + 1
-                $
+                $u \ra 2u + 1$
               </Math>
               {" "}are
               both functions. Now by definition, the sum
@@ -2425,33 +2131,25 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f + g
-              $$
+              $$f + g$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               of functions{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}is the function
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x \ra f(x) + g(x)
-              $$
+              $$x \ra f(x) + g(x)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2462,37 +2160,31 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \begin&#123;align&#125;
+              $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(5) \\
               =& \,\,\,(x \ra x + 1)(5) + (u \ra 2u + 1)(5) \up&#123;1.5&#125; \\
               =& \,\,\,(5 + 1) + (2\cdot 5 + 1) \up&#123;1.5&#125; \\
               =& \,\,\,3\cdot 5 + 2 = 17 \up&#123;1.5&#125;
-              \end&#123;align&#125;
-              $$
+              \end&#123;align&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               and—with a general input{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               —
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \begin&#123;align&#125;
+              $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(t) \\
               =& \,\,\,(x \ra x + 1)(t) + (u \ra 2u + 1)(t) \up&#123;1.5&#125; \\
               =& \,\,\,(t + 1) + (2t + 1) \up&#123;1.5&#125; \\
               =& \,\,\,3t + 2 \up&#123;1.5&#125;
-              \end&#123;align&#125;
-              $$
+              \end&#123;align&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2502,32 +2194,24 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra x + 1) \,+\, (u \ra 2u + 1)
-              $$
+              $$(x \ra x + 1) \,+\, (u \ra 2u + 1)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is the function that maps each real number{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                3t + 2
-                $
+                $3t + 2$
               </Math>
               ,
               i.e., is equal to the function{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t \ra 3t + 2
-                  $
+                  $t \ra 3t + 2$
                 </Math>
                 .
               </NoBreak>
@@ -2544,30 +2228,24 @@ const Article = () => {
               {" "}
               One can also do the main computation with{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               in place of{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               :
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \begin&#123;align&#125;
+              $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(x) \\
               =& \,\,\,(x \ra x + 1)(x) + (u \ra 2u + 1)(x) \up&#123;1.5&#125; \\
               =& \,\,\,(x + 1) + (2x + 1) \up&#123;1.5&#125; \\
               =& \,\,\,3x + 2 \up&#123;1.5&#125;
-              \end&#123;align&#125;
-              $$
+              \end&#123;align&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2575,24 +2253,18 @@ const Article = () => {
               Here we have two different{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 's:
               </NoBreak>
               {" "}the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}that
               denotes the input, and the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}that is used as
               a placeholder to describe how the first function
@@ -2623,23 +2295,17 @@ const Article = () => {
               The pattern to respect is that, each time 
               you take a derivative, the units on the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               axis stay the same, while the units on the
               {" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis become divided by those on the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               axis. This gives the unique solutions:
@@ -2660,9 +2326,7 @@ const Article = () => {
               A unit of “
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 ”
               </NoBreak>
@@ -2711,18 +2375,14 @@ const Article = () => {
               “
               <NoBreak>
                 <Math>
-                  $
-                  23\%
-                  $
+                  $23\%$
                 </Math>
                 ”
               </NoBreak>
               {" "}and “
               <NoBreak>
                 <Math>
-                  $
-                  23/100
-                  $
+                  $23/100$
                 </Math>
                 ”
               </NoBreak>
@@ -2730,16 +2390,12 @@ const Article = () => {
               indistinguishable when read out loud; they
               are both  read “
               <Math>
-                $
-                23
-                $
+                $23$
               </Math>
               {" "}over{" "}
               <NoBreak>
                 <Math>
-                  $
-                  100
-                  $
+                  $100$
                 </Math>
                 ”;
               </NoBreak>
@@ -2765,27 +2421,21 @@ const Article = () => {
             (I.e., which is{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                f'
-                $
+                $f'$
               </Math>
               ,
             </NoBreak>
             {" "}and{" "}
             <NoBreak>
               <Math>
-                $
-                f''
-                $
+                $f''$
               </Math>
               ,
             </NoBreak>
@@ -2805,31 +2455,23 @@ const Article = () => {
               (hehe): if “
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ”
               </NoBreak>
               {" "}is the original function 
               then{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}is on the left,{" "}
               <Math>
-                $
-                f'
-                $
+                $f'$
               </Math>
               {" "}is in the 
               middle, and{" "}
               <Math>
-                $
-                f''
-                $
+                $f''$
               </Math>
               {" "}is on the right:
             </VerticalChunk>
@@ -2843,17 +2485,13 @@ const Article = () => {
               For example, the graph on the left 
               has a slope that starts at{" "}
               <Math>
-                $
-                \sim\!-1
-                $
+                $\sim\!-1$
               </Math>
               {" "}and
               ends at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \sim\!1
-                  $
+                  $\sim\!1$
                 </Math>
                 ,
               </NoBreak>
@@ -2873,22 +2511,16 @@ const Article = () => {
               Moreover the middle graph has slope
               close to{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}at either end, and some
               slope near{" "}
               <Math>
-                $
-                1.5
-                $
+                $1.5$
               </Math>
               {" "}or{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               {" "}towards the middle,
               matching the{" "}
@@ -2931,16 +2563,12 @@ const Article = () => {
           <VerticalChunk>
             ...what can you say about{" "}
             <Math>
-              $
-              g'(x)
-              $
+              $g'(x)$
             </Math>
             ?
             (Produce the best sketch of{" "}
             <Math>
-              $
-              g'(x)
-              $
+              $g'(x)$
             </Math>
             {" "}that
             you can, taking into account all the
@@ -2961,53 +2589,39 @@ const Article = () => {
             <VerticalChunk>
               To start with, the slope of{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}seems to be
               about{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -1.5
-                  $
+                  $-1.5$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}and (a bit greater than){" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               {" "}
               at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -2
-                  $
+                  $x = -2$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                x = 2
-                $
+                $x = 2$
               </Math>
               {" "}respectively:
             </VerticalChunk>
@@ -3022,9 +2636,7 @@ const Article = () => {
               to interpolate a basic approximation to the graph 
               {" "}
               <Math>
-                $
-                y = g'(x)
-                $
+                $y = g'(x)$
               </Math>
               :
             </VerticalChunk>
@@ -3037,52 +2649,38 @@ const Article = () => {
             <VerticalChunk>
               But the graph of{" "}
               <Math>
-                $
-                g''(x)
-                $
+                $g''(x)$
               </Math>
               {" "}indicates more,
               namely that{" "}
               <Math>
-                $
-                g'(x)
-                $
+                $g'(x)$
               </Math>
               {" "}has a slope that rises 
               from{" "}
               <Math>
-                $
-                \approx 0.2
-                $
+                $\approx 0.2$
               </Math>
               {" "}near the left edge of 
               the graph up to{" "}
               <Math>
-                $
-                1.3
-                $
+                $1.3$
               </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = 0.5
-                  $
+                  $x = 0.5$
                 </Math>
                 ,
               </NoBreak>
               {" "}before 
               falling again to{" "}
               <Math>
-                $
-                0.6
-                $
+                $0.6$
               </Math>
               {" "}past{" "}
               <Math>
-                $
-                x = 2
-                $
+                $x = 2$
               </Math>
               :
             </VerticalChunk>
@@ -3142,9 +2740,7 @@ const Article = () => {
             ...sketch{" "}
             <NoBreak>
               <Math>
-                $
-                y = h'(x)
-                $
+                $y = h'(x)$
               </Math>
               ,
             </NoBreak>
@@ -3158,22 +2754,16 @@ const Article = () => {
             <VerticalChunk>
               Firstly, the graph of{" "}
               <Math>
-                $
-                h(x)
-                $
+                $h(x)$
               </Math>
               {" "}seems to have
               slope{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}around{" "}
               <Math>
-                $
-                x = 0.6
-                $
+                $x = 0.6$
               </Math>
               ...
             </VerticalChunk>
@@ -3187,9 +2777,7 @@ const Article = () => {
               ...which gives us one data point on the
               curve{" "}
               <Math>
-                $
-                y = h'(x)
-                $
+                $y = h'(x)$
               </Math>
               {" "}to start with...
             </VerticalChunk>
@@ -3202,30 +2790,22 @@ const Article = () => {
             <VerticalChunk>
               ...moreover, by the graph of{" "}
               <Math>
-                $
-                h''(x)
-                $
+                $h''(x)$
               </Math>
               ,
               the slope of{" "}
               <Math>
-                $
-                h'(x)
-                $
+                $h'(x)$
               </Math>
               {" "}is near{" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               {" "}on an
               interval that is approximately (say)
               {" "}
               <Math>
-                $
-                [-0.85,0.7]
-                $
+                $[-0.85,0.7]$
               </Math>
               ....
             </VerticalChunk>
@@ -3239,16 +2819,12 @@ const Article = () => {
               ...so, as a second step, we can extend
               the graph of{" "}
               <Math>
-                $
-                h'(x)
-                $
+                $h'(x)$
               </Math>
               {" "}by a segment of slope
               {" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               {" "}on this interval:
             </VerticalChunk>
@@ -3261,46 +2837,34 @@ const Article = () => {
             <VerticalChunk>
               (To achieve a passable slope of{" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               {" "}we
               modeled ourselves on a nearby grid segment.) 
               Next,{" "}
               <Math>
-                $
-                h(x)
-                $
+                $h(x)$
               </Math>
               {" "}has slope{" "}
               <Math>
-                $
-                \approx 1.2
-                $
+                $\approx 1.2$
               </Math>
               {" "}at
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -2
-                  $
+                  $x = -2$
                 </Math>
                 ,
               </NoBreak>
               {" "}and slope{" "}
               <Math>
-                $
-                \approx -0.9
-                $
+                $\approx -0.9$
               </Math>
               {" "}(?) at
               {" "}
               <Math>
-                $
-                x = 2
-                $
+                $x = 2$
               </Math>
               :
             </VerticalChunk>
@@ -3314,9 +2878,7 @@ const Article = () => {
               This gives us two more points on the graph
               {" "}
               <Math>
-                $
-                y = h'(x)
-                $
+                $y = h'(x)$
               </Math>
               :
             </VerticalChunk>
@@ -3330,22 +2892,16 @@ const Article = () => {
               Then, because the second derivative has
               value{" "}
               <Math>
-                $
-                \approx -1/3
-                $
+                $\approx -1/3$
               </Math>
               {" "}for{" "}
               <Math>
-                $
-                x \leq -1.6
-                $
+                $x \leq -1.6$
               </Math>
               {" "}
               (about) and for{" "}
               <Math>
-                $
-                x \geq 1.5
-                $
+                $x \geq 1.5$
               </Math>
               {" "}(about)...
             </VerticalChunk>
@@ -3359,9 +2915,7 @@ const Article = () => {
               ...we extend these two new data points by
               segments of slope{" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               ...
             </VerticalChunk>
@@ -3375,16 +2929,12 @@ const Article = () => {
               ...on the relevant intervals. (I.e., for 
               {" "}
               <Math>
-                $
-                x \leq -1.6
-                $
+                $x \leq -1.6$
               </Math>
               {" "}and for{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x \geq 1.5
-                  $
+                  $x \geq 1.5$
                 </Math>
                 .)
               </NoBreak>
@@ -3402,30 +2952,22 @@ const Article = () => {
             <VerticalChunk>
               Since{" "}
               <Math>
-                $
-                h''(x)
-                $
+                $h''(x)$
               </Math>
               {" "}shows that the two 
               connectors have slopes of about{" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               {" "}
               at their edges and slopes of about{" "}
               <Math>
-                $
-                -1.4
-                $
+                $-1.4$
               </Math>
               {" "}
               and{" "}
               <Math>
-                $
-                -1.6
-                $
+                $-1.6$
               </Math>
               {" "}(respectively) near their
               middles...
@@ -3450,17 +2992,13 @@ const Article = () => {
             <VerticalChunk>
               ...to give them a slope of{" "}
               <Math>
-                $
-                -1/3
-                $
+                $-1/3$
               </Math>
               {" "}at
               their endpoints, and slopes of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -1.4
-                  $
+                  $-1.4$
                 </Math>
                 ,
               </NoBreak>
@@ -3468,9 +3006,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  -1.6
-                  $
+                  $-1.6$
                 </Math>
                 ,
               </NoBreak>
@@ -3487,9 +3023,7 @@ const Article = () => {
               {" "}
               Here is the actual graph of{" "}
               <Math>
-                $
-                h'
-                $
+                $h'$
               </Math>
               :
             </VerticalChunk>
@@ -3509,17 +3043,13 @@ const Article = () => {
             {" "}
             If you scale the graph of a function{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}
             vertically by a factor{" "}
             <NoBreak>
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               —i.e.,
             </NoBreak>
@@ -3527,18 +3057,14 @@ const Article = () => {
             each output by{" "}
             <NoBreak>
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               —is
             </NoBreak>
             {" "}the derivative 
             also scaled by{" "}
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             ?
           </VerticalChunk>
@@ -3552,9 +3078,7 @@ const Article = () => {
               putative function{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
@@ -3571,16 +3095,12 @@ const Article = () => {
               The second graph truly is the first
               graph vertically scaled by a factor{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               ,
               because the scale on the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis has
               been doubled. This means that the ratio
@@ -3588,9 +3108,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\te&#123;rise&#125;\over \te&#123;run&#125;&#125;
-              $$
+              $$&#123;\te&#123;rise&#125;\over \te&#123;run&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3598,9 +3116,7 @@ const Article = () => {
               has doubled in the second graph, because
               “rise” has doubled (each{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinate
               is twice as large!), whereas “run” stays
@@ -3782,17 +3298,13 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
               {" "}and{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -axes:
             </VerticalChunk>
@@ -3879,9 +3391,7 @@ const Article = () => {
               Geometrically, if we use the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
@@ -3889,23 +3399,17 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -components
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                v_x
-                $
+                $v_x$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                v_y
-                $
+                $v_y$
               </Math>
               {" "}of the 
               velocity to draw an arrow emanating 
@@ -3937,9 +3441,7 @@ const Article = () => {
               drift at the exact same{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
@@ -3947,23 +3449,17 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -velocities
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                v_x
-                $
+                $v_x$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                v_y
-                $
+                $v_y$
               </Math>
               {" "}that you
               measured at the root of the arrow for
@@ -3972,28 +3468,20 @@ const Article = () => {
               in that one unit of time, no more no less, 
               because the particle would cover{" "}
               <Math>
-                $
-                v_x
-                $
+                $v_x$
               </Math>
               {" "}
               units in{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                v_y
-                $
+                $v_y$
               </Math>
               {" "}units in{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               .
               And speed being
@@ -4048,9 +3536,7 @@ const Article = () => {
               each arrow originates at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (0, 0)
-                  $
+                  $(0, 0)$
                 </Math>
                 .)
               </NoBreak>
@@ -4079,17 +3565,13 @@ const Article = () => {
               instant—this is the subtlety of calculus!)
               The velocity vectors have length{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}because
               the speed is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 ,
               </NoBreak>
@@ -4118,9 +3600,7 @@ const Article = () => {
               lengths of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 ,
               </NoBreak>
@@ -4140,9 +3620,7 @@ const Article = () => {
               From the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates,
               </NoBreak>
@@ -4153,16 +3631,12 @@ const Article = () => {
             <CentralDisplayItalic>
               the velocity in{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}of the red particle
               is the position in{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}of the blue particle
             </CentralDisplayItalic>
@@ -4177,16 +3651,12 @@ const Article = () => {
             <CentralDisplayItalic>
               the rate of change of the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               of the red particle is the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               of the blue particle
@@ -4197,18 +3667,14 @@ const Article = () => {
               ...because “velocity in{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
               {" "}is the same
               as “rate of change of the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate”.
             </VerticalChunk>
@@ -4218,9 +3684,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
@@ -4228,18 +3692,14 @@ const Article = () => {
               particles on the same graph, the rate of
               change of the red particle's{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               will equal the value of the blue particle's
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate.
               </NoBreak>
@@ -4250,18 +3710,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (1, 0)
-              $$
+              $$(1, 0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               at time{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               :
             </VerticalChunk>
@@ -4275,9 +3731,7 @@ const Article = () => {
               If we add the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
@@ -4297,17 +3751,13 @@ const Article = () => {
               If needed, here is an illustration of 
               one{" "}
               <Math>
-                $
-                360^\circ
-                $
+                $360^\circ$
               </Math>
               {" "}rotation of the particles
               of Note 3,  with each curve being an 
               {" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate:
             </VerticalChunk>
@@ -4355,9 +3805,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
@@ -4395,32 +3843,24 @@ const Article = () => {
             and tracking their{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinates?
             </NoBreak>
             {" "}(This
             graph is an exact{" "}
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             &#x200b;
             <Math>
-              $
-              \times
-              $
+              $\times$
             </Math>
             {" "}[“two
             x”] vertical dilation of the graph in Exercise
             12.) Should we use a circle of radius{" "}
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             ,
             or make the points go twice as fast? Or both?
@@ -4437,25 +3877,19 @@ const Article = () => {
             <VerticalChunk>
               The values oscillate between{" "}
               <Math>
-                $
-                +2
-                $
+                $+2$
               </Math>
               {" "}and
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  -2
-                  $
+                  $-2$
                 </Math>
                 ,
               </NoBreak>
               {" "}so we need a circle of radius{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               {" "}
               to generate these curves. Also the
@@ -4511,9 +3945,7 @@ const Article = () => {
             Exercise 12 exhibits a function{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               —in
             </NoBreak>
@@ -4521,9 +3953,7 @@ const Article = () => {
             four different functions{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               —such
             </NoBreak>
@@ -4532,9 +3962,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f' \ne f
-            $$
+            $$f' \ne f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4544,9 +3972,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f'' \ne f
-            $$
+            $$f'' \ne f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4556,9 +3982,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f''' \ne f
-            $$
+            $$f''' \ne f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4568,9 +3992,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f^&#123;(4)&#125; = f
-            $$
+            $$f^&#123;(4)&#125; = f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4579,54 +4001,42 @@ const Article = () => {
             “
             <NoBreak>
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               ”
             </NoBreak>
             {" "}instead of “
             <NoBreak>
               <Math>
-                $
-                4
-                $
+                $4$
               </Math>
               ”?
             </NoBreak>
             {" "}I.e., find a function
             {" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}such that
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f^&#123;(n)&#125; \ne f
-            $$
+            $$f^&#123;(n)&#125; \ne f$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             for{" "}
             <Math>
-              $
-              n = 1, 2, 3, 4
-              $
+              $n = 1, 2, 3, 4$
             </Math>
             {" "}but
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f^&#123;(5)&#125; = f
-            $$
+            $$f^&#123;(5)&#125; = f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4645,9 +4055,7 @@ const Article = () => {
               is the one centered at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (0, 0)
-                  $
+                  $(0, 0)$
                 </Math>
                 ,
               </NoBreak>
@@ -4723,9 +4131,7 @@ const Article = () => {
               can apply a similar approximation again,
               advancing the particles by{" "}
               <Math>
-                $
-                &#123;1\over 10&#125;
-                $
+                $&#123;1\over 10&#125;$
               </Math>
               th
               of [the current approximation to] their
@@ -4741,9 +4147,7 @@ const Article = () => {
             <VerticalChunk>
               Applying the same process for{" "}
               <Math>
-                $
-                8
-                $
+                $8$
               </Math>
               {" "}more
               steps:
@@ -4782,9 +4186,7 @@ const Article = () => {
               being namely the blue particle's position 
               vector at the fourth step (
               <Math>
-                $
-                t = &#123;4\over 10&#125;
-                $
+                $t = &#123;4\over 10&#125;$
               </Math>
               )...
             </VerticalChunk>
@@ -4802,17 +4204,13 @@ const Article = () => {
                  indent={true}>
               If we stop{" "}
               <Math>
-                $
-                10
-                $
+                $10$
               </Math>
               {" "}times as often,
               advancing the clock by{" "}
               <NoBreak>
                 <Math>
-                  $
-                  &#123;1\over 100&#125;
-                  $
+                  $&#123;1\over 100&#125;$
                 </Math>
                 th
               </NoBreak>
@@ -4821,15 +4219,11 @@ const Article = () => {
               becomes just a blur (still going from
               {" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                t = 1
-                $
+                $t = 1$
               </Math>
               ):
             </VerticalChunk>
@@ -4847,9 +4241,7 @@ const Article = () => {
               come from a “
               <NoBreak>
                 <Math>
-                  $
-                  &#123;1\over 100&#125;
-                  $
+                  $&#123;1\over 100&#125;$
                 </Math>
                 th”
               </NoBreak>
@@ -4857,9 +4249,7 @@ const Article = () => {
               while the orange dots are the old positions
               obtained from a “
               <Math>
-                $
-                &#123;1\over 10&#125;
-                $
+                $&#123;1\over 10&#125;$
               </Math>
               th”
               approximation:
@@ -4883,9 +4273,7 @@ const Article = () => {
             <VerticalChunk>
               In any case, even the “
               <Math>
-                $
-                &#123;1\over 100&#125;
-                $
+                $&#123;1\over 100&#125;$
               </Math>
               th”
               approximation is just an approximation,
@@ -4893,9 +4281,7 @@ const Article = () => {
               do converge to a set of “true” particle
               paths, as pictured in Fig
               <Math>
-                $
-                .
-                $
+                $.$
               </Math>
               {" "}1, that can
               be computed by some wizards; as time can
@@ -4940,9 +4326,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f
-              $$
+              $$f$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4953,33 +4337,25 @@ const Article = () => {
                  indent={true}>
               For example let{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}be the function that,
               given a time{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t
-                  $
+                  $t$
                 </Math>
                 ,
               </NoBreak>
               {" "}outputs the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               of the red particle at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t
-                  $
+                  $t$
                 </Math>
                 ;
               </NoBreak>
@@ -4993,9 +4369,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5003,9 +4377,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5016,16 +4388,12 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f'
-                $
+                $f'$
               </Math>
               {" "}is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5039,9 +4407,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5049,9 +4415,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5062,16 +4426,12 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f''
-                $
+                $f''$
               </Math>
               {" "}is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5085,9 +4445,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5095,9 +4453,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5108,16 +4464,12 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f'''
-                $
+                $f'''$
               </Math>
               {" "}is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5131,9 +4483,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5141,9 +4491,7 @@ const Article = () => {
               is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5155,16 +4503,12 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f''''
-                $
+                $f''''$
               </Math>
               {" "}is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5178,9 +4522,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5188,9 +4530,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5201,15 +4541,11 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f''''' = f^&#123;(5)&#125;
-                $
+                $f''''' = f^&#123;(5)&#125;$
               </Math>
               {" "}equals{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               .
             </VerticalChunk>
@@ -5225,9 +4561,7 @@ const Article = () => {
               If you graph the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
@@ -5238,9 +4572,7 @@ const Article = () => {
               the derivative of blue, etc; the function 
               {" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}can be taken to be any one of these
               curves:
@@ -5262,41 +4594,31 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
               {" "}vis-à-vis{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinates.
               You can also define{" "}
               <Math>
-                $
-                f(t)
-                $
+                $f(t)$
               </Math>
               {" "}to be, e.g.,
               the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinate
               </NoBreak>
               {" "}of the red particle
               at time{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               .
             </VerticalChunk>
@@ -5313,18 +4635,14 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinates
               </NoBreak>
@@ -5333,34 +4651,26 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
               {" "}is some other{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate,
               </NoBreak>
               {" "}
               and the rate of change of each{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinate
               is some other{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinate.
             </VerticalChunk>
@@ -5407,9 +4717,7 @@ const Article = () => {
               {" "}initial
               position, or else you won't have{" "}
               <Math>
-                $
-                f \ne f'
-                $
+                $f \ne f'$
               </Math>
               {" "}
               etc) and stipulate the same rules, namely
@@ -5426,9 +4734,7 @@ const Article = () => {
               (now{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 -dimensional)
               </NoBreak>
@@ -5446,9 +4752,7 @@ const Article = () => {
               (now{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 -dimensional)
               </NoBreak>
@@ -5461,9 +4765,7 @@ const Article = () => {
               functions obtained are each a solution
               {" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}to the problem. (But this solution will
               typically look more chaotic than the curves
@@ -5499,17 +4801,13 @@ const Article = () => {
               the long-term evolution of the system, if
               you were shown just the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinates,
               or just the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinates,
               </NoBreak>
@@ -5527,9 +4825,7 @@ const Article = () => {
             {" "}
             If we seek a function{" "}
             <Math>
-              $
-              f : \rr \ra \rr
-              $
+              $f : \rr \ra \rr$
             </Math>
             {" "}
             such that
@@ -5537,31 +4833,23 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f^&#123;(17)&#125; = f
-            $$
+            $$f^&#123;(17)&#125; = f$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             and such that{" "}
             <Math>
-              $
-              f \ne 0
-              $
+              $f \ne 0$
             </Math>
             {" "}(or:{" "}
             <Math>
-              $
-              f \ne (x \ra 0)
-              $
+              $f \ne (x \ra 0)$
             </Math>
             ,
             pedantically) and such that{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}grows relatively
             slowly in either the positive or negative direction
@@ -5575,9 +4863,7 @@ const Article = () => {
             <VerticalChunk>
               Take{" "}
               <Math>
-                $
-                17
-                $
+                $17$
               </Math>
               {" "}particles equally spaced out along
               the unit circle, such as these (shown here 
@@ -5595,9 +4881,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\Large 1&#125;
-              $$
+              $$&#123;\Large 1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5607,9 +4891,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\Large 5&#125;
-              $$
+              $$&#123;\Large 5&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5618,9 +4900,7 @@ const Article = () => {
               velocity of each particle equal to the
               position of the particle that is{" "}
               <Math>
-                $
-                4
-                $
+                $4$
               </Math>
               {" "}later;
               in the configuration above, the velocity
@@ -5643,16 +4923,12 @@ const Article = () => {
               the circle for time forward/backward,
               respectively. Taking{" "}
               <Math>
-                $
-                f(t)
-                $
+                $f(t)$
               </Math>
               {" "}to be the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
@@ -5660,9 +4936,7 @@ const Article = () => {
               or{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -5670,25 +4944,19 @@ const Article = () => {
               (e.g., particle{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 )
               </NoBreak>
               {" "}at time{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}gives an
               oscillating function whose{" "}
               <NoBreak>
                 <Math>
-                  $
-                  17
-                  $
+                  $17$
                 </Math>
                 th
               </NoBreak>
@@ -5697,43 +4965,33 @@ const Article = () => {
               the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
               {" "}of particle{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}is the
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
               {" "}of particle{" "}
               <NoBreak>
                 <Math>
-                  $
-                  5
-                  $
+                  $5$
                 </Math>
                 ,
               </NoBreak>
               {" "}etc, until
               we make it all the way back to particle{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               ),
               and that grows comparatively slowly over
@@ -5761,27 +5019,21 @@ const Article = () => {
               ...and if you take the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinates
               </NoBreak>
               {" "}of
               the particles over time, with time{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}
               corresponding to the original configuration
               depicted where particle 1 is at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (1, 0)
-                  $
+                  $(1, 0)$
                 </Math>
                 ,
               </NoBreak>
@@ -5858,16 +5110,12 @@ const Article = () => {
               particles so that particle 5 is at
               {" "}
               <Math>
-                $
-                90^\circ
-                $
+                $90^\circ$
               </Math>
               {" "}exactly from particle 1, 
               particle 9 is at{" "}
               <Math>
-                $
-                90^\circ
-                $
+                $90^\circ$
               </Math>
               {" "}exactly from
               particle 5, and so on, until we reach
@@ -5912,18 +5160,14 @@ const Article = () => {
               a cycle of length 17 in order for us to
               later extract a function{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}such that{" "}
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f^&#123;(17)&#125; = f
-              $$
+              $$f^&#123;(17)&#125; = f$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5957,9 +5201,7 @@ const Article = () => {
               trajectories end up like so (shown only for
               {" "}
               <Math>
-                $
-                t \geq 0
-                $
+                $t \geq 0$
               </Math>
               ):
             </VerticalChunk>
@@ -6027,9 +5269,7 @@ const Article = () => {
               is tracing a circle centered at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (0, 0)
-                  $
+                  $(0, 0)$
                 </Math>
                 —at
               </NoBreak>
@@ -6039,9 +5279,7 @@ const Article = () => {
               circle could be centered anywhere, not
               necessarily at{" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               !)
             </VerticalChunk>
@@ -6071,9 +5309,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            &#123;f(x+h) - f(x) \over h&#125;
-            $$
+            $$&#123;f(x+h) - f(x) \over h&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6101,9 +5337,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;f(x + h) - f(x)\over h&#125;
-              $$
+              $$&#123;f(x + h) - f(x)\over h&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6120,9 +5354,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x, f(x))
-              $$
+              $$(x, f(x))$$
               <ImageLeft
                    src="/images/svg_ch4_new_quatient_x_fx_cloud.svg" />
             </MathBlock>
@@ -6134,9 +5366,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + h, f(x + h))
-              $$
+              $$(x + h, f(x + h))$$
               <ImageRight
                    src="/images/svg_ch4_new_quatient_x_fxplush_cloud.svg"
                    offset_y="-0.5em" />
@@ -6147,9 +5377,7 @@ const Article = () => {
               at the other end. (This is also the case
               if{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}is negative, by the way.)
             </VerticalChunk>
@@ -6186,17 +5414,13 @@ const Article = () => {
               {" "}[through{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (x, f(x))
-                  $
+                  $(x, f(x))$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                (x+h, f(x+h))
-                $
+                $(x+h, f(x+h))$
               </Math>
               ].
               “Secant” is a general term for “line passing
@@ -6214,32 +5438,24 @@ const Article = () => {
               {" "}
               If we let{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}drop to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}and if{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}is
               differentiable at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ,
               </NoBreak>
@@ -6250,9 +5466,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f'(x)
-              $$
+              $$f'(x)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6267,9 +5481,7 @@ const Article = () => {
               of the tangent, which is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f'(x)
-                  $
+                  $f'(x)$
                 </Math>
                 .
               </NoBreak>
@@ -6277,9 +5489,7 @@ const Article = () => {
               cannot directly set{" "}
               <NoBreak>
                 <Math>
-                  $
-                  h = 0
-                  $
+                  $h = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -6288,9 +5498,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;f(x+0)-f(x)\over 0&#125; = &#123;0 \over 0&#125;
-              $$
+              $$&#123;f(x+0)-f(x)\over 0&#125; = &#123;0 \over 0&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6310,32 +5518,24 @@ const Article = () => {
             In this exercise we consider two points
             in time{" "}
             <Math>
-              $
-              t_0
-              $
+              $t_0$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              t_0 + \Delta&#123;&#125;t
-              $
+              $t_0 + \Delta&#123;&#125;t$
             </Math>
             {" "}(here
             “
             <NoBreak>
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               ”,
             </NoBreak>
             {" "}read “delta{" "}
             <NoBreak>
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               ”,
             </NoBreak>
@@ -6352,45 +5552,33 @@ const Article = () => {
           <VerticalChunk>
             We also consider quantities{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}
             that are changing with time;{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}
             have some value at{" "}
             <NoBreak>
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               ,
             </NoBreak>
             {" "}and, say, grow
             to be larger at{" "}
             <Math>
-              $
-              t_0 + \Delta&#123;&#125;t
-              $
+              $t_0 + \Delta&#123;&#125;t$
             </Math>
             :
           </VerticalChunk>
@@ -6407,9 +5595,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large AB
-            $$
+            $$\Large AB$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6421,15 +5607,11 @@ const Article = () => {
             To introduce an unsolicited metaphor,
             imagine{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}as
           </VerticalChunk>
@@ -6445,9 +5627,7 @@ const Article = () => {
             {" "}
             <NoBreak>
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               ,
             </NoBreak>
@@ -6455,39 +5635,29 @@ const Article = () => {
             time{" "}
             <NoBreak>
               <Math>
-                $
-                t_0 + \Delta&#123;&#125;t
-                $
+                $t_0 + \Delta&#123;&#125;t$
               </Math>
               .
             </NoBreak>
             {" "}So great is their
             terror that{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}have decided to 
             scurry across the hallway one at a time.
             First{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}will go, then{" "}
             <NoBreak>
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               .
             </NoBreak>
@@ -6498,9 +5668,7 @@ const Article = () => {
             on the{" "}
             <NoBreak>
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               -number
             </NoBreak>
@@ -6518,21 +5686,15 @@ const Article = () => {
                 <VerticalChunk>
                   when{" "}
                   <Math>
-                    $
-                    A
-                    $
+                    $A$
                   </Math>
                   {" "}and{" "}
                   <Math>
-                    $
-                    B
-                    $
+                    $B$
                   </Math>
                   {" "}are both still at{" "}
                   <Math>
-                    $
-                    t_0
-                    $
+                    $t_0$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -6542,28 +5704,20 @@ const Article = () => {
                 <VerticalChunk>
                   when{" "}
                   <Math>
-                    $
-                    A
-                    $
+                    $A$
                   </Math>
                   {" "}has made it to{" "}
                   <Math>
-                    $
-                    t_0 + \Delta&#123;&#125;t
-                    $
+                    $t_0 + \Delta&#123;&#125;t$
                   </Math>
                   ,
                   and{" "}
                   <Math>
-                    $
-                    B
-                    $
+                    $B$
                   </Math>
                   {" "}is still at{" "}
                   <Math>
-                    $
-                    t_0
-                    $
+                    $t_0$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -6576,9 +5730,7 @@ const Article = () => {
                       when{" "}
                       <NoBreak>
                         <Math>
-                          $
-                          B
-                          $
+                          $B$
                         </Math>
                         's
                       </NoBreak>
@@ -6588,22 +5740,16 @@ const Article = () => {
                   </del>
                   &ensp;when{" "}
                   <Math>
-                    $
-                    A
-                    $
+                    $A$
                   </Math>
                   {" "}and{" "}
                   <Math>
-                    $
-                    B
-                    $
+                    $B$
                   </Math>
                   {" "}have both made it
                   to{" "}
                   <Math>
-                    $
-                    t_0 + \Delta&#123;&#125;t
-                    $
+                    $t_0 + \Delta&#123;&#125;t$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -6614,39 +5760,29 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large AB
-            $$
+            $$\Large AB$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             changes in two increments: first as{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}
             makes it to the other side of the hallway
             (and{" "}
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             {" "}grows bigger); then as{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}joins
             him/her (and{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}grows bigger). In an
             equation:
@@ -6660,23 +5796,17 @@ const Article = () => {
           <VerticalChunk>
             If we divide the above equation by{" "}
             <Math>
-              $
-              \Delta&#123;&#125;t
-              $
+              $\Delta&#123;&#125;t$
             </Math>
             {" "}
             and let{" "}
             <Math>
-              $
-              \Delta&#123;&#125;t
-              $
+              $\Delta&#123;&#125;t$
             </Math>
             {" "}drop to{" "}
             <NoBreak>
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               ,
             </NoBreak>
@@ -6690,9 +5820,7 @@ const Article = () => {
             <VerticalChunk>
               Dividing by{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               :
             </VerticalChunk>
@@ -6705,16 +5833,12 @@ const Article = () => {
             <VerticalChunk>
               As{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
@@ -6724,93 +5848,69 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (AB)'(t_0)
-              $$
+              $$(AB)'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               where we view{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}as functions
               of time with, therefore, the product{" "}
               <Math>
-                $
-                AB
-                $
+                $AB$
               </Math>
               {" "}
               also becoming a function of time. (By 
               definition,{" "}
               <Math>
-                $
-                AB
-                $
+                $AB$
               </Math>
               {" "}is the function
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              t \rightarrow A(t)B(t)
-              $$
+              $$t \rightarrow A(t)B(t)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               where{" "}
               <Math>
-                $
-                A(t)
-                $
+                $A(t)$
               </Math>
               {" "}is the value of{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}at time 
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  t
-                  $
+                  $t$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                B(t)
-                $
+                $B(t)$
               </Math>
               {" "}is the value of{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}at time
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  t
-                  $
+                  $t$
                 </Math>
                 .)
               </NoBreak>
@@ -6819,9 +5919,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;
-              $$
+              $$&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6832,40 +5930,30 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f'(t_0)
-              $$
+              $$f'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}assuming
               {" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}is differentiable at{" "}
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               {" "}(cf.
               Exercise 16 Note 3), and
@@ -6882,18 +5970,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;
-              $$
+              $$&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               for{" "}
               <Math>
-                $
-                f = AB
-                $
+                $f = AB$
               </Math>
               .
               <ImageLeft
@@ -6908,16 +5992,12 @@ const Article = () => {
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 .
               </NoBreak>
@@ -6928,9 +6008,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;A(t_0 + \Delta&#123;&#125;t)B(t_0) - A(t_0)B(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$&#123;A(t_0 + \Delta&#123;&#125;t)B(t_0) - A(t_0)B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6939,9 +6017,7 @@ const Article = () => {
               “
               <NoBreak>
                 <Math>
-                  $
-                  B(t_0)
-                  $
+                  $B(t_0)$
                 </Math>
                 ”,
               </NoBreak>
@@ -6951,9 +6027,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              B(t_0)\cdot&#123;A(t_0 + \Delta&#123;&#125;t) - A(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$B(t_0)\cdot&#123;A(t_0 + \Delta&#123;&#125;t) - A(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6963,9 +6037,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              B(t_0)\cdot&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$B(t_0)\cdot&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6973,9 +6045,7 @@ const Article = () => {
               for{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f = A
-                  $
+                  $f = A$
                 </Math>
                 ,
               </NoBreak>
@@ -6984,25 +6054,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              B(t_0) \cdot A'(t_0)
-              $$
+              $$B(t_0) \cdot A'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta t
-                $
+                $\Delta t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
@@ -7021,25 +6085,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A(t_0)B'(t_0)
-              $$
+              $$A(t_0)B'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
@@ -7050,9 +6108,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;A(t_0 + \Delta&#123;&#125;t)B(t_0+\Delta&#123;&#125;t) - A(t_0+ \Delta&#123;&#125;t)B(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$&#123;A(t_0 + \Delta&#123;&#125;t)B(t_0+\Delta&#123;&#125;t) - A(t_0+ \Delta&#123;&#125;t)B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7062,18 +6118,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A(t_0 + \Delta&#123;&#125;t)\cdot&#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$A(t_0 + \Delta&#123;&#125;t)\cdot&#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by factoring out the common term{" "}
               <Math>
-                $
-                A(t_0 + \Delta&#123;&#125;t)
-                $
+                $A(t_0 + \Delta&#123;&#125;t)$
               </Math>
               ;
               and
@@ -7081,9 +6133,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;
-              $$
+              $$&#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7093,46 +6143,34 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              B'(t_0)
-              $$
+              $$B'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}like before
               (when we had{" "}
               <Math>
-                $
-                AB
-                $
+                $AB$
               </Math>
               {" "}or{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}instead of{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               )
               whereas
@@ -7140,9 +6178,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A(t_0 + \Delta&#123;&#125;t)
-              $$
+              $$A(t_0 + \Delta&#123;&#125;t)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7152,25 +6188,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A(t_0)
-              $$
+              $$A(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 —so
               </NoBreak>
@@ -7178,9 +6208,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  A(t_0)B'(t_0)
-                  $
+                  $A(t_0)B'(t_0)$
                 </Math>
                 .
               </NoBreak>
@@ -7196,22 +6224,16 @@ const Article = () => {
             <VerticalChunk>
               of{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t_0
-                  $
+                  $t_0$
                 </Math>
                 —that
               </NoBreak>
@@ -7228,28 +6250,20 @@ const Article = () => {
             <VerticalChunk>
               as well, which implies that{" "}
               <Math>
-                $
-                A(t_0 + \Delta&#123;&#125;t)
-                $
+                $A(t_0 + \Delta&#123;&#125;t)$
               </Math>
               {" "}
               approaches{" "}
               <Math>
-                $
-                A(t_0)
-                $
+                $A(t_0)$
               </Math>
               {" "}as{" "}
               <Math>
-                $
-                \Delta t
-                $
+                $\Delta t$
               </Math>
               {" "}approaches{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               .)
             </VerticalChunk>
@@ -7261,38 +6275,28 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (AB)'(t_0)
-              $$
+              $$(AB)'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              B(t_0)A'(t_0)
-              $$
+              $$B(t_0)A'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A(t_0)B'(t_0)
-              $$
+              $$A(t_0)B'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                \Delta&#123;&#125;t
-                $
+                $\Delta&#123;&#125;t$
               </Math>
               {" "}approaches{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}and, in fact, 
               because the equation holds no matter how
@@ -7302,9 +6306,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (AB)'(t_0) = B(t_0)A'(t_0) + A(t_0)B'(t_0)
-              $$
+              $$(AB)'(t_0) = B(t_0)A'(t_0) + A(t_0)B'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7312,25 +6314,19 @@ const Article = () => {
               for functions{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A
-                  $
+                  $A$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}differentiable at
               a point{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t_0
-                  $
+                  $t_0$
                 </Math>
                 .
               </NoBreak>
@@ -7359,9 +6355,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (AB)'(t_0) = A'(t_0)B(t_0) + A(t_0)B'(t_0)
-              $$
+              $$(AB)'(t_0) = A'(t_0)B(t_0) + A(t_0)B'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7369,18 +6363,14 @@ const Article = () => {
               with “
               <NoBreak>
                 <Math>
-                  $
-                  A'(t_0)B(t_0)
-                  $
+                  $A'(t_0)B(t_0)$
                 </Math>
                 ”
               </NoBreak>
               {" "}in the middle. (But
               which is the same, of course, as{" "}
               <Math>
-                $
-                B(t_0)A'(t_0)
-                $
+                $B(t_0)A'(t_0)$
               </Math>
               .)
             </VerticalChunk>
@@ -7399,9 +6389,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (f + g)' = f' + g'
-            $$
+            $$(f + g)' = f' + g'$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7410,18 +6398,14 @@ const Article = () => {
             functions{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               .
             </NoBreak>
@@ -7497,9 +6481,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)
-              $$
+              $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7509,9 +6491,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f + g)' = f' + g'
-              $$
+              $$(f + g)' = f' + g'$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7521,9 +6501,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)' = f'g + fg'
-              $$
+              $$(fg)' = f'g + fg'$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7532,23 +6510,17 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                g:
-                $
+                $g:$
               </Math>
               {" "}{" "}
               <Math>
-                $
-                \rr \ra \rr
-                $
+                $\rr \ra \rr$
               </Math>
               .)
             </VerticalChunk>
@@ -7566,9 +6538,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)
-              $$
+              $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7578,9 +6548,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)' = f'g + fg'
-              $$
+              $$(fg)' = f'g + fg'$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7597,30 +6565,22 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)
-              $$
+              $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               holds “for{" "}
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               {" "}at which{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}are
               differentiable”, while
@@ -7628,9 +6588,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)' = f'g + fg'
-              $$
+              $$(fg)' = f'g + fg'$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7638,17 +6596,13 @@ const Article = () => {
               holds “for differentiable functions{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               ”.)
             </VerticalChunk>
@@ -7667,9 +6621,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (f + g)' = f' + g'
-            $$
+            $$(f + g)' = f' + g'$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7679,9 +6631,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (fg)' = f'g + fg'
-            $$
+            $$(fg)' = f'g + fg'$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7689,17 +6639,13 @@ const Article = () => {
             for differentiable{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}are deemed 
             “differentiation formulas”, then what is a
@@ -7721,35 +6667,27 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (cf)' = cf'
-              $$
+              $$(cf)' = cf'$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               for all differentiable functions{" "}
               <Math>
-                $
-                f : \rr \ra \rr
-                $
+                $f : \rr \ra \rr$
               </Math>
               ,
               for all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c \in \rr
-                  $
+                  $c \in \rr$
                 </Math>
                 ,
               </NoBreak>
               {" "}mentioned in Exercise 10
               for{" "}
               <Math>
-                $
-                c = 2
-                $
+                $c = 2$
               </Math>
               .
             </VerticalChunk>
@@ -7767,9 +6705,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (cf)' = c \cdot f'
-              $$
+              $$(cf)' = c \cdot f'$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7778,25 +6714,19 @@ const Article = () => {
               left- and right-hand sides. (The difference being
               namely “(
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}times{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 )
               </NoBreak>
               {" "}prime” on the left vs. “c
               times (
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}prime)” on the right.)
             </VerticalChunk>
@@ -7821,26 +6751,20 @@ const Article = () => {
             of two functions{" "}
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              g: \rr \ra \rr
-              $
+              $g: \rr \ra \rr$
             </Math>
             {" "}{" "}
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g
-            $$
+            $$f + g$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7850,9 +6774,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g = (x \ra f(x) + g(x))
-            $$
+            $$f + g = (x \ra f(x) + g(x))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7862,9 +6784,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f \circ g = (x \ra f(g(x)))
-            $$
+            $$f \circ g = (x \ra f(g(x)))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7875,24 +6795,18 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            cf
-            $$
+            $$cf$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             where{" "}
             <Math>
-              $
-              c \in \rr
-              $
+              $c \in \rr$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              f : \rr \ra \rr
-              $
+              $f : \rr \ra \rr$
             </Math>
             ?
           </VerticalChunk>
@@ -7906,9 +6820,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              cf = (x \ra cf(x))
-              $$
+              $$cf = (x \ra cf(x))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7916,9 +6828,7 @@ const Article = () => {
               where the product “
               <NoBreak>
                 <Math>
-                  $
-                  cf(x)
-                  $
+                  $cf(x)$
                 </Math>
                 ”
               </NoBreak>
@@ -7926,15 +6836,11 @@ const Article = () => {
               multiplication between two real numbers,
               because{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}is a real number and{" "}
               <Math>
-                $
-                f(x)
-                $
+                $f(x)$
               </Math>
               {" "}is
               a real number! (In this way, the product of
@@ -7946,24 +6852,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              fg = (x \ra f(x)g(x))
-              $$
+              $$fg = (x \ra f(x)g(x))$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               of the product of two functions from{" "}
               <Math>
-                $
-                \rr
-                $
+                $\rr$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                \rr
-                $
+                $\rr$
               </Math>
               ,
               or with the case of function addition, that
@@ -7974,9 +6874,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              cf = (x \ra c)f
-              $$
+              $$cf = (x \ra c)f$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7998,9 +6896,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              fg = (x \ra f(x)g(x))
-              $$
+              $$fg = (x \ra f(x)g(x))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8026,18 +6922,14 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g = (x \ra f(x) + f(x))
-            $$
+            $$f + g = (x \ra f(x) + f(x))$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             for a sum of functions{" "}
             <Math>
-              $
-              f, g : \rr \ra \rr
-              $
+              $f, g : \rr \ra \rr$
             </Math>
             {" "}
             can also be written
@@ -8045,9 +6937,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (f + g)(x) = f(x) + g(x)
-            $$
+            $$(f + g)(x) = f(x) + g(x)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -8055,9 +6945,7 @@ const Article = () => {
             in the sense that either of these equations tells
             you how{" "}
             <Math>
-              $
-              f + g
-              $
+              $f + g$
             </Math>
             {" "}acts on an arbitrary input. (Which
             is what you need to do, to define a function. A
@@ -8066,9 +6954,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g = (x \ra f(x) + f(x))
-            $$
+            $$f + g = (x \ra f(x) + f(x))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -8077,9 +6963,7 @@ const Article = () => {
             “
             <NoBreak>
               <Math>
-                $
-                f + g
-                $
+                $f + g$
               </Math>
               ”
             </NoBreak>
@@ -8094,30 +6978,22 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f \circ g
-            $$
+            $$f \circ g$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            fg
-            $$
+            $$fg$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f/g
-            $$
+            $$f/g$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f - g
-            $$
+            $$f - g$$
           </MathBlock>
           <div
                class="spacer" />
@@ -8136,30 +7012,22 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g)(x) = f(g(x))
-              $$
+              $$(f \circ g)(x) = f(g(x))$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)(u) = f(u)g(u)
-              $$
+              $$(fg)(u) = f(u)g(u)$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f/g)(z) = f(z)/g(z)
-              $$
+              $$(f/g)(z) = f(z)/g(z)$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f - g)(t) = f(t) - g(t)
-              $$
+              $$(f - g)(t) = f(t) - g(t)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8183,9 +7051,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h) \,\times\, &#123;A_i(t_0 + h) - A_i(t_0)\over h&#125; \,\times\, A_&#123;i + 1&#125;(t_0) \,\times\, \cdots  \,\times\, A_n(t_0)
-            $$
+            $$A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h) \,\times\, &#123;A_i(t_0 + h) - A_i(t_0)\over h&#125; \,\times\, A_&#123;i + 1&#125;(t_0) \,\times\, \cdots  \,\times\, A_n(t_0)$$
             <ImageRight
                  src="/images/svg_ch4_big_product_parchment_cloud.svg" />
           </MathBlock>
@@ -8194,37 +7060,27 @@ const Article = () => {
           <VerticalChunk>
             ...approach as{" "}
             <Math>
-              $
-              h
-              $
+              $h$
             </Math>
             {" "}goes to{" "}
             <NoBreak>
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               ,
             </NoBreak>
             {" "}if{" "}
             <Math>
-              $
-              A_1, \dots, A_n
-              $
+              $A_1, \dots, A_n$
             </Math>
             {" "}
             {" "}
             <Math>
-              $
-              : \rr \ra \rr
-              $
+              $: \rr \ra \rr$
             </Math>
             {" "}are differentiable at the point{" "}
             <Math>
-              $
-              t_0
-              $
+              $t_0$
             </Math>
             ?
           </VerticalChunk>
@@ -8249,9 +7105,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f(x + h) - f(x)\over h
-              $$
+              $$f(x + h) - f(x)\over h$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8259,18 +7113,14 @@ const Article = () => {
               with{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f = A_i
-                  $
+                  $f = A_i$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = t_0
-                  $
+                  $x = t_0$
                 </Math>
                 ,
               </NoBreak>
@@ -8280,25 +7130,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A_i'(t_0)
-              $$
+              $$A_i'(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
@@ -8306,33 +7150,25 @@ const Article = () => {
               that each of the functions{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A_1
-                  $
+                  $A_1$
                 </Math>
                 ,
               </NoBreak>
               {" "}...,{" "}
               <Math>
-                $
-                A_n
-                $
+                $A_n$
               </Math>
               {" "}
               (including{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A_i
-                  $
+                  $A_i$
                 </Math>
                 )
               </NoBreak>
               {" "}is differentiable at{" "}
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               .
             </VerticalChunk>
@@ -8341,15 +7177,11 @@ const Article = () => {
               Next down in order of interesting-ness we presumably
               have the terms{" "}
               <Math>
-                $
-                A_1(t_0 + h)
-                $
+                $A_1(t_0 + h)$
               </Math>
               {" "}through{" "}
               <Math>
-                $
-                A_&#123;i-1&#125;(t_0 + h)
-                $
+                $A_&#123;i-1&#125;(t_0 + h)$
               </Math>
               {" "}
               at the beginning of the product...
@@ -8373,15 +7205,11 @@ const Article = () => {
             <VerticalChunk>
               of{" "}
               <Math>
-                $
-                A_1
-                $
+                $A_1$
               </Math>
               {" "}at{" "}
               <Math>
-                $
-                t_0
-                $
+                $t_0$
               </Math>
               {" "}implies the
             </VerticalChunk>
@@ -8395,16 +7223,12 @@ const Article = () => {
             <VerticalChunk>
               of{" "}
               <Math>
-                $
-                A_1
-                $
+                $A_1$
               </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t_0
-                  $
+                  $t_0$
                 </Math>
                 ,
               </NoBreak>
@@ -8413,9 +7237,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A_1(t_0 + h)
-              $$
+              $$A_1(t_0 + h)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8425,25 +7247,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A_1(t_0)
-              $$
+              $$A_1(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 .
               </NoBreak>
@@ -8451,24 +7267,18 @@ const Article = () => {
               technicalities concerning a generic function
               {" "}
               <Math>
-                $
-                f : \rr \ra \rr
-                $
+                $f : \rr \ra \rr$
               </Math>
               {" "}are mentioned in the solution
               to Exercise 17.) Similarly for{" "}
               <Math>
-                $
-                A_2(t_0 + h)
-                $
+                $A_2(t_0 + h)$
               </Math>
               ,
               etc, up to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A_&#123;i-1&#125;(t_0 + h)
-                  $
+                  $A_&#123;i-1&#125;(t_0 + h)$
                 </Math>
                 ,
               </NoBreak>
@@ -8477,9 +7287,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h)
-              $$
+              $$A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8489,25 +7297,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A_1(t_0) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0)
-              $$
+              $$A_1(t_0) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}approaches{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 .
               </NoBreak>
@@ -8523,9 +7325,7 @@ const Article = () => {
               Lastly one has the tail end of the product,
               where{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}does not even appear:
             </VerticalChunk>
@@ -8538,9 +7338,7 @@ const Article = () => {
             <VerticalChunk>
               Because{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}does not appear here, the tail end
             </VerticalChunk>
@@ -8554,9 +7352,7 @@ const Article = () => {
             <VerticalChunk>
               where it is, irrespective of the value of{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               .
               So that was easy! Altogether, the answer is
@@ -8572,9 +7368,7 @@ const Article = () => {
               ...with a lone “
               <NoBreak>
                 <Math>
-                  $
-                  A_i'
-                  $
+                  $A_i'$
                 </Math>
                 ”
               </NoBreak>
@@ -8601,9 +7395,7 @@ const Article = () => {
             this function is the{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
             </NoBreak>
@@ -8655,9 +7447,7 @@ const Article = () => {
               quarter-revolutions appear to take up exactly
               {" "}
               <Math>
-                $
-                t = 11
-                $
+                $t = 11$
               </Math>
               {" "}units of time (!!!!!!!!!!!) (or maybe
               just a{" "}
@@ -8666,9 +7456,7 @@ const Article = () => {
               </i>
               {" "}less than{" "}
               <Math>
-                $
-                11
-                $
+                $11$
               </Math>
               {" "}units, if
               you zoom in):
@@ -8685,9 +7473,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;11 \over 7&#125;
-              $$
+              $$\Large &#123;11 \over 7&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8698,9 +7484,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 4 \cdot &#123;11 \over 7&#125; = &#123;44 \over 7&#125;
-              $$
+              $$\Large 4 \cdot &#123;11 \over 7&#125; = &#123;44 \over 7&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8721,16 +7505,12 @@ const Article = () => {
               half-a-part-in-a-thousand too large 
               (
               <Math>
-                $
-                0.040249943...\%
-                $
+                $0.040249943...\%$
               </Math>
               {" "}too large) (or just: 
               &lt;span class="nobreak"&gt;“
               <Math>
-                $
-                0.00040249943...
-                $
+                $0.00040249943...$
               </Math>
               &lt;/span&gt;
               too large”), which is strikingly good, all things
@@ -8750,9 +7530,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;44 \over 7&#125; = 6.285714\dots
-              $$
+              $$\Large &#123;44 \over 7&#125; = 6.285714\dots$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8760,9 +7538,7 @@ const Article = () => {
               is a bit larger than{" "}
               <NoBreak>
                 <Math>
-                  $
-                  6
-                  $
+                  $6$
                 </Math>
                 ,
               </NoBreak>
@@ -8782,9 +7558,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;11 \over 7&#125; = 1.571428\dots
-              $$
+              $$\Large &#123;11 \over 7&#125; = 1.571428\dots$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8792,9 +7566,7 @@ const Article = () => {
               is about{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1.6
-                  $
+                  $1.6$
                 </Math>
                 ,
               </NoBreak>
@@ -8846,9 +7618,7 @@ const Article = () => {
             {" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinates
             </NoBreak>
@@ -8856,9 +7626,7 @@ const Article = () => {
             and{" "}
             <NoBreak>
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinates
             </NoBreak>
@@ -8875,9 +7643,7 @@ const Article = () => {
             Where is Pacman at{" "}
             <NoBreak>
               <Math>
-                $
-                t = 49
-                $
+                $t = 49$
               </Math>
               s?
             </NoBreak>
@@ -8886,9 +7652,7 @@ const Article = () => {
             {" "}
             <NoBreak>
               <Math>
-                $
-                t = 40
-                $
+                $t = 40$
               </Math>
               s—you
             </NoBreak>
@@ -8935,9 +7699,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \pm 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-              $$
+              $$\pm 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8948,9 +7710,7 @@ const Article = () => {
                    class="ch4_pacman1_inline_number_pellet" />
               the velocity might seem more like{" "}
               <Math>
-                $
-                -6.8\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $-6.8\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               {" "}
               at the least, but we've already made more
@@ -8960,9 +7720,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (\te&#123;velocity&#125;) \times (\te&#123;amount of time&#125;) = (\te&#123;displacement&#125;)
-              $$
+              $$(\te&#123;velocity&#125;) \times (\te&#123;amount of time&#125;) = (\te&#123;displacement&#125;)$$
               <ImageRight
                    src="/images/svg_ch4_pacman1_velocity_times_amt_time_cloud.svg" />
             </MathBlock>
@@ -8993,9 +7751,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  -6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.5\te&#123;s&#125;\,\,=\,\,-3.375\,\te&#123;cells&#125;
-                  $
+                  $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.5\te&#123;s&#125;\,\,=\,\,-3.375\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9012,9 +7768,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  -6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;
-                  $
+                  $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9029,9 +7783,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9046,9 +7798,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,2.7\,\te&#123;cells&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,2.7\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9063,9 +7813,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  -6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;
-                  $
+                  $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9080,9 +7828,7 @@ const Article = () => {
                      class="ch4_pacman1_inline_number_pellet" />
                 {" "}{" "}
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -9118,9 +7864,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              3
-              $$
+              $$3$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9128,9 +7872,7 @@ const Article = () => {
               cells is the smallest amount that Pacman
               can travel vertically when changing{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinate,
               between two moments of horizontal motion.
@@ -9139,9 +7881,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              4
-              $$
+              $$4$$
               <ImageLeft
                    src="/images/svg_ch4_pacman1_disp_4_cloud.svg"
                    width="700px" />
@@ -9154,9 +7894,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6
-              $$
+              $$6$$
               <ImageLeft
                    src="/images/svg_ch4_pacman1_disp_6_cloud.svg"
                    width="1400px" />
@@ -9169,9 +7907,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              7
-              $$
+              $$7$$
               <ImageLeft
                    src="/images/svg_ch4_pacman1_disp_7_cloud.svg"
                    width="700px" />
@@ -9181,9 +7917,7 @@ const Article = () => {
             <VerticalChunk>
               cells, with{" "}
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               {" "}not being a possibility.
               In the horizontal direction,
@@ -9192,18 +7926,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              3, 6, \te&#123; and &#125; 9
-              $$
+              $$3, 6, \te&#123; and &#125; 9$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               (and{" "}
               <Math>
-                $
-                12
-                $
+                $12$
               </Math>
               {" "}and ...) which is even more restrictive.
               Now if each of our duration 
@@ -9212,9 +7942,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \pm&#123;&#125;0.2\te&#123;s&#125;
-              $$
+              $$\pm&#123;&#125;0.2\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9224,9 +7952,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,\pm&#123;&#125;0.2\te&#123;s&#125;\,=\,\pm1.35\te&#123;c&#125;
-              $$
+              $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,\pm&#123;&#125;0.2\te&#123;s&#125;\,=\,\pm1.35\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9234,9 +7960,7 @@ const Article = () => {
               from the truth, give or take the small
               difference between{" "}
               <Math>
-                $
-                6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               {" "}
               and the actual velocity. So
@@ -9244,9 +7968,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -2.7\te&#123;c&#125;
-              $$
+              $$-2.7\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9256,9 +7978,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -3\te&#123;c&#125;
-              $$
+              $$-3\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9268,9 +7988,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -4\te&#123;c&#125;
-              $$
+              $$-4\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9279,18 +7997,14 @@ const Article = () => {
               vertical displacements within{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \pm1.35
-                  $
+                  $\pm1.35$
                 </Math>
                 c
               </NoBreak>
               {" "}of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -2.7
-                  $
+                  $-2.7$
                 </Math>
                 c.
               </NoBreak>
@@ -9316,16 +8030,12 @@ const Article = () => {
                    class="ch4_pacman1_inline_number_pellet" />
               &ensp;equal{" "}
               <Math>
-                $
-                -3\te&#123;c&#125;
-                $
+                $-3\te&#123;c&#125;$
               </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  3\te&#123;c&#125;
-                  $
+                  $3\te&#123;c&#125;$
                 </Math>
                 ,
               </NoBreak>
@@ -9345,21 +8055,15 @@ const Article = () => {
               right/down/right and last
               ~
               <Math>
-                $
-                3.2
-                $
+                $3.2$
               </Math>
               s/~
               <Math>
-                $
-                0.4
-                $
+                $0.4$
               </Math>
               s/~
               <Math>
-                $
-                1.3
-                $
+                $1.3$
               </Math>
               s
               respectively:
@@ -9408,9 +8112,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,3.2\te&#123;s&#125;\,=\,21.6\te&#123;c&#125;
-              $$
+              $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,3.2\te&#123;s&#125;\,=\,21.6\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9434,9 +8136,7 @@ const Article = () => {
               but this is confirmed by the fact that the next
               two displacements are “down by{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}and to the right”;
               specifically, since
@@ -9444,9 +8144,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,0.4\te&#123;s&#125;\,=\,-2.7\te&#123;c&#125;
-              $$
+              $$-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,0.4\te&#123;s&#125;\,=\,-2.7\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9458,25 +8156,19 @@ const Article = () => {
               &ensp;must be{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -3
-                  $
+                  $-3$
                 </Math>
                 c
               </NoBreak>
               {" "}or{" "}
               <Math>
-                $
-                -4
-                $
+                $-4$
               </Math>
               c;
               must actually be{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -3
-                  $
+                  $-3$
                 </Math>
                 c
               </NoBreak>
@@ -9510,9 +8202,7 @@ const Article = () => {
               So at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 49
-                  $
+                  $t = 49$
                 </Math>
                 s,
               </NoBreak>
@@ -9560,9 +8250,7 @@ const Article = () => {
           <VerticalChunk>
             ...and asking for Pacman's position at{" "}
             <Math>
-              $
-              t = 34
-              $
+              $t = 34$
             </Math>
             s.
           </VerticalChunk>
@@ -9577,9 +8265,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-              $$
+              $$\approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9592,9 +8278,7 @@ const Article = () => {
               For example, take the instant{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t \approx 23.7
-                  $
+                  $t \approx 23.7$
                 </Math>
                 s,
               </NoBreak>
@@ -9602,27 +8286,21 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
               {" "}and &lt;span class="nobreak"&gt;
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -velocities&lt;/span&gt;
               </NoBreak>
               {" "}are 
               both about (?){" "}
               <Math>
-                $
-                4.8\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $4.8\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -9638,24 +8316,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (4.8, 4.8)
-              $$
+              $$(4.8, 4.8)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               in units of{" "}
               <Math>
-                $
-                \te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               {" "}at{" "}
               <Math>
-                $
-                t \approx 23.7
-                $
+                $t \approx 23.7$
               </Math>
               s,
               and the speed, being the length of the velocity
@@ -9664,9 +8336,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;4.8^2 + 4.8^2&#125; = \sqrt&#123;2&#125; \times 4.8 = 6.788...
-              $$
+              $$\sqrt&#123;4.8^2 + 4.8^2&#125; = \sqrt&#123;2&#125; \times 4.8 = 6.788...$$
               <ImageLeft
                    src="/images/svg_ch4_pacman2_4_point_8_cloud.svg" />
             </MathBlock>
@@ -9676,9 +8346,7 @@ const Article = () => {
               (Pythagoras!)
               in units of{" "}
               <Math>
-                $
-                \te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               {" "}as well,
               and
@@ -9686,9 +8354,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6.788... \approx 6.75
-              $$
+              $$6.788... \approx 6.75$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9696,9 +8362,7 @@ const Article = () => {
               which supports, in this case, the hypothesis that
               Pacman's speed is{" "}
               <Math>
-                $
-                \approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $\approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               {" "}
               regardless of the direction of travel.
@@ -9708,9 +8372,7 @@ const Article = () => {
               For more verification, take{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 26\te&#123;s&#125;
-                  $
+                  $t = 26\te&#123;s&#125;$
                 </Math>
                 ,
               </NoBreak>
@@ -9720,9 +8382,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (6.5, -2)
-              $$
+              $$(6.5, -2)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9741,9 +8401,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;6.5^2 + 2^2&#125; = \sqrt&#123;46.25&#125; = 6.800...
-              $$
+              $$\sqrt&#123;6.5^2 + 2^2&#125; = \sqrt&#123;46.25&#125; = 6.800...$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9751,9 +8409,7 @@ const Article = () => {
               cells per second, Again close to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
                 </Math>
                 .
               </NoBreak>
@@ -9763,16 +8419,12 @@ const Article = () => {
                  indent={true}>
               For two more verifications take{" "}
               <Math>
-                $
-                t = 27\te&#123;s&#125;
-                $
+                $t = 27\te&#123;s&#125;$
               </Math>
               {" "}
               and{" "}
               <Math>
-                $
-                t = 30\te&#123;s&#125;
-                $
+                $t = 30\te&#123;s&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -9785,27 +8437,21 @@ const Article = () => {
             <VerticalChunk>
               The speed at{" "}
               <Math>
-                $
-                t = 27\te&#123;s&#125;
-                $
+                $t = 27\te&#123;s&#125;$
               </Math>
               {" "}is approximately
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;3^2 + 6.2^2&#125; = \sqrt&#123;47.44&#125; = 6.888
-              $$
+              $$\sqrt&#123;3^2 + 6.2^2&#125; = \sqrt&#123;47.44&#125; = 6.888$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               cells per second, while the speed at{" "}
               <Math>
-                $
-                t = 30\te&#123;s&#125;
-                $
+                $t = 30\te&#123;s&#125;$
               </Math>
               {" "}
               is approximately
@@ -9813,9 +8459,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;5.6^2 + 3.6^2&#125; = \sqrt&#123;44.32&#125; = 6.657
-              $$
+              $$\sqrt&#123;5.6^2 + 3.6^2&#125; = \sqrt&#123;44.32&#125; = 6.657$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9824,9 +8468,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
                 </Math>
                 !
               </NoBreak>
@@ -9834,9 +8476,7 @@ const Article = () => {
               verification (truly the last, we promise)
               consider{" "}
               <Math>
-                $
-                t = 31\te&#123;s&#125;
-                $
+                $t = 31\te&#123;s&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -9852,9 +8492,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;2.6^2 + 6.2^2&#125; = \sqrt&#123;45.2&#125; = 6.723...
-              $$
+              $$\sqrt&#123;2.6^2 + 6.2^2&#125; = \sqrt&#123;45.2&#125; = 6.723...$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9862,9 +8500,7 @@ const Article = () => {
               cells per second, again close to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                  $
+                  $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
                 </Math>
                 !
               </NoBreak>
@@ -9878,9 +8514,7 @@ const Article = () => {
               regardless of direction, namely something in
               the vicinity of{" "}
               <Math>
-                $
-                6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
-                $
+                $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
               </Math>
               .
             </VerticalChunk>
@@ -9888,15 +8522,11 @@ const Article = () => {
                  indent={true}>
               Now consider the time interval from{" "}
               <Math>
-                $
-                t = 22.7\te&#123;s&#125;
-                $
+                $t = 22.7\te&#123;s&#125;$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                t = 24.7\te&#123;s&#125;
-                $
+                $t = 24.7\te&#123;s&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -9910,18 +8540,14 @@ const Article = () => {
               Both the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -
               </NoBreak>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -velocities
               </NoBreak>
@@ -9943,9 +8569,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;
-              $$
+              $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9958,9 +8582,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 3\te&#123;s&#125; = 20.25\te&#123;c&#125;
-              $$
+              $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 3\te&#123;s&#125; = 20.25\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9970,9 +8592,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \approx &#123;11 \over 7&#125;
-              $$
+              $$\approx &#123;11 \over 7&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -9980,9 +8600,7 @@ const Article = () => {
               for the quarter-circumference of a unit circle
               (cf
               <Math>
-                $
-                .
-                $
+                $.$
               </Math>
               {" "}Exercise 24), this would indicate that
               the curve (which is a quarter-circle, as 
@@ -9991,9 +8609,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \approx &#123;20.25\te&#123;c&#125; \over 11/7&#125; = &#123;7 \times 20.25\te&#123;c&#125; \over 11&#125; = &#123;141.75\te&#123;c&#125; \over 11&#125; = 12.886...\te&#123;c&#125;
-              $$
+              $$\approx &#123;20.25\te&#123;c&#125; \over 11/7&#125; = &#123;7 \times 20.25\te&#123;c&#125; \over 11&#125; = &#123;141.75\te&#123;c&#125; \over 11&#125; = 12.886...\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10002,40 +8618,30 @@ const Article = () => {
               last step. But the possible radii are{" "}
               <NoBreak>
                 <Math>
-                  $
-                  3
-                  $
+                  $3$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               ,
               {" "}
               <Math>
-                $
-                9
-                $
+                $9$
               </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  12
-                  $
+                  $12$
                 </Math>
                 .
               </NoBreak>
               {" "}This all but rules out all of the
               maze curves except the one that has radius{" "}
               <Math>
-                $
-                12
-                $
+                $12$
               </Math>
               ,
               and that allows a traversal that starts upward
@@ -10105,9 +8711,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;
-              $$
+              $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10117,26 +8721,20 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 2\te&#123;s&#125;
-              $$
+              $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 2\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               (the second curve likewise lasted{" "}
               <Math>
-                $
-                2\te&#123;s&#125;
-                $
+                $2\te&#123;s&#125;$
               </Math>
               ,
               not{" "}
               <NoBreak>
                 <Math>
-                  $
-                  3\te&#123;s&#125;
-                  $
+                  $3\te&#123;s&#125;$
                 </Math>
                 )
               </NoBreak>
@@ -10144,17 +8742,13 @@ const Article = () => {
               the first curve two-thirds of whatever we previously 
               computed (because{" "}
               <Math>
-                $
-                2\te&#123;s&#125;
-                $
+                $2\te&#123;s&#125;$
               </Math>
               {" "}is two-thirds of
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  3\te&#123;s&#125;
-                  $
+                  $3\te&#123;s&#125;$
                 </Math>
                 ),
               </NoBreak>
@@ -10163,9 +8757,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;2 \over 3&#125; \times 12.886...\te&#123;c&#125;
-              $$
+              $$&#123;2 \over 3&#125; \times 12.886...\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10179,9 +8771,7 @@ const Article = () => {
               actually had radii{" "}
               <NoBreak>
                 <Math>
-                  $
-                  9
-                  $
+                  $9$
                 </Math>
                 ,
               </NoBreak>
@@ -10190,9 +8780,7 @@ const Article = () => {
               one-inside track (the two rightward motions are 
               easily seen to be ~
               <Math>
-                $
-                3\te&#123;c&#125;
-                $
+                $3\te&#123;c&#125;$
               </Math>
               {" "}each):
             </VerticalChunk>
@@ -10209,9 +8797,7 @@ const Article = () => {
               which must surely be the bottom-right curve of
               radius{" "}
               <Math>
-                $
-                12
-                $
+                $12$
               </Math>
               :
             </VerticalChunk>
@@ -10225,9 +8811,7 @@ const Article = () => {
               Indeed, the curve lasts ~
               <NoBreak>
                 <Math>
-                  $
-                  2.7
-                  $
+                  $2.7$
                 </Math>
                 s,
               </NoBreak>
@@ -10236,9 +8820,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 2.7\te&#123;s&#125; = 18.225\te&#123;c&#125;
-              $$
+              $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 2.7\te&#123;s&#125; = 18.225\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10248,18 +8830,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;11 \over 7&#125; \cdot 12\te&#123;c&#125; = 18.85...\te&#123;c&#125;
-              $$
+              $$&#123;11 \over 7&#125; \cdot 12\te&#123;c&#125; = 18.85...\te&#123;c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               confirming the radius of{" "}
               <Math>
-                $
-                12\te&#123;c&#125;
-                $
+                $12\te&#123;c&#125;$
               </Math>
               {" "}and the location
               of the curve.
@@ -10307,9 +8885,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 34\te&#123;s&#125;
-                  $
+                  $t = 34\te&#123;s&#125;$
                 </Math>
                 —Pacman
               </NoBreak>
@@ -10318,9 +8894,7 @@ const Article = () => {
               motion; since the left-and-then-right-again 
               motion did obviously not bring Pacman{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}cells
               over to the left (which is the next place 
@@ -10381,16 +8955,12 @@ const Article = () => {
               each of these purple intervals (we're going to
               assume that what looks like{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
@@ -10449,9 +9019,7 @@ const Article = () => {
               For bumps lying below the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -axis
               </NoBreak>
@@ -10489,9 +9057,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large a
-              $$
+              $$\Large a$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10500,9 +9066,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  a \approx 1
-                  $
+                  $a \approx 1$
                 </Math>
                 ),
               </NoBreak>
@@ -10513,9 +9077,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large c
-              $$
+              $$\Large c$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10526,18 +9088,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large c + a
-              $$
+              $$\Large c + a$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               since we add{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}to the slope each time we go over
               a positive bump. 
@@ -10546,18 +9104,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large (c + a) + (-a) = c
-              $$
+              $$\Large (c + a) + (-a) = c$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               when we pass over a negative bump, with{" "}
               <Math>
-                $
-                -a
-                $
+                $-a$
               </Math>
               {" "}being
               the (negative) area of a negative bump.)
@@ -10579,17 +9133,13 @@ const Article = () => {
               In this example{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c \approx 0.2
-                  $
+                  $c \approx 0.2$
                 </Math>
                 ,
               </NoBreak>
               {" "}but{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}can be any
               value—this is not constrained by the second derivative.
@@ -10602,24 +9152,18 @@ const Article = () => {
                  indent={true}>
               For another example, if{" "}
               <Math>
-                $
-                c = -a/2
-                $
+                $c = -a/2$
               </Math>
               ,
               meaning{" "}
               <Math>
-                $
-                c \approx -1/2
-                $
+                $c \approx -1/2$
               </Math>
               ,
               the graph ends up a perfectly balanced see-saw that 
               stays confined to a bounded range of{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -values:
             </VerticalChunk>
@@ -10640,17 +9184,13 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  c + a = 0
-                  $
+                  $c + a = 0$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                c = -a \approx -1
-                $
+                $c = -a \approx -1$
               </Math>
               :
             </VerticalChunk>
@@ -10687,9 +9227,7 @@ const Article = () => {
               to choose—is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c
-                  $
+                  $c$
                 </Math>
                 —while
               </NoBreak>
@@ -10703,17 +9241,13 @@ const Article = () => {
               of the solution, however, we should also determine
               this rise here, if we can, as a function of{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}
               and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 ,
               </NoBreak>
@@ -10753,25 +9287,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6c
-              $$
+              $$\Large 1.6c$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               where{" "}
               <Math>
-                $
-                1.6 = 0.8 + 0.8
-                $
+                $1.6 = 0.8 + 0.8$
               </Math>
               {" "}is the length (run) of
               the connector curve, because{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}is the{" "}
               <i>
@@ -10793,18 +9321,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6(c + a)
-              $$
+              $$\Large 1.6(c + a)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is an upper bound on the rise, because{" "}
               <Math>
-                $
-                c + a
-                $
+                $c + a$
               </Math>
               {" "}is the
               {" "}
@@ -10828,9 +9352,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large c
-              $$
+              $$\Large c$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10838,9 +9360,7 @@ const Article = () => {
               where the function has slope{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c
-                  $
+                  $c$
                 </Math>
                 ,
               </NoBreak>
@@ -10849,9 +9369,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large c + a
-              $$
+              $$\Large c + a$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10859,9 +9377,7 @@ const Article = () => {
               where the function has slope{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c + a
-                  $
+                  $c + a$
                 </Math>
                 ,
               </NoBreak>
@@ -10883,9 +9399,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6c
-              $$
+              $$\Large 1.6c$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -10909,9 +9423,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6(a + c)
-              $$
+              $$\Large 1.6(a + c)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11002,9 +9514,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6\cdot (c + &#123;a\over 2&#125;)
-              $$
+              $$\Large 1.6\cdot (c + &#123;a\over 2&#125;)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11015,9 +9525,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6
-              $$
+              $$\Large 1.6$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11029,24 +9537,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large c + &#123;a \over 2&#125;
-              $$
+              $$\Large c + &#123;a \over 2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               that is, indeed, the average of{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                c + a
-                $
+                $c + a$
               </Math>
               ).
               For concave connector curves the
@@ -11068,9 +9570,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1.6\cdot (c + &#123;a\over 2&#125;)
-              $$
+              $$\Large 1.6\cdot (c + &#123;a\over 2&#125;)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11104,9 +9604,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            fg = (u \ra f(u)g(u))
-            $$
+            $$fg = (u \ra f(u)g(u))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11117,18 +9615,14 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (fg)h = f(gh)
-            $$
+            $$(fg)h = f(gh)$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             for all functions{" "}
             <Math>
-              $
-              f, g, h : \rr \ra \rr
-              $
+              $f, g, h : \rr \ra \rr$
             </Math>
             ,
             or, namely, to show that
@@ -11138,24 +9632,18 @@ const Article = () => {
           <CentralDisplayItalic>
             (
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}times{" "}
             <NoBreak>
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               )
             </NoBreak>
             {" "}times{" "}
             <Math>
-              $
-              h
-              $
+              $h$
             </Math>
             {" "}{" "}
           </CentralDisplayItalic>
@@ -11169,21 +9657,15 @@ const Article = () => {
           <CentralDisplayItalic>
             {" "}{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}times (
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}times{" "}
             <Math>
-              $
-              h
-              $
+              $h$
             </Math>
             )
           </CentralDisplayItalic>
@@ -11192,9 +9674,7 @@ const Article = () => {
           <VerticalChunk>
             for all functions{" "}
             <Math>
-              $
-              f, g, h : \rr \ra \rr
-              $
+              $f, g, h : \rr \ra \rr$
             </Math>
             .
           </VerticalChunk>
@@ -11208,9 +9688,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              ((fg)h)(u)
-              $$
+              $$((fg)h)(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11220,9 +9698,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f(gh))(u)
-              $$
+              $$(f(gh))(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11230,9 +9706,7 @@ const Article = () => {
               for an arbitrary input{" "}
               <NoBreak>
                 <Math>
-                  $
-                  u \in \rr
-                  $
+                  $u \in \rr$
                 </Math>
                 ,
               </NoBreak>
@@ -11242,9 +9716,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)h
-              $$
+              $$(fg)h$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11254,9 +9726,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f(gh)
-              $$
+              $$f(gh)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11274,9 +9744,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              ((fg)h)(u) = (fg)(u) \cdot h(u)
-              $$
+              $$((fg)h)(u) = (fg)(u) \cdot h(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11287,9 +9755,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f(gh))(u) = f(u) \cdot (gh)(u)
-              $$
+              $$(f(gh))(u) = f(u) \cdot (gh)(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11299,9 +9765,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (fg)(u) = f(u) \cdot g(u)
-              $$
+              $$(fg)(u) = f(u) \cdot g(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11311,9 +9775,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (gh)(u) = g(u) \cdot h(u)
-              $$
+              $$(gh)(u) = g(u) \cdot h(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11323,9 +9785,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              ((fg)h)(u) = (f(u) \cdot g(u)) \cdot h(u)
-              $$
+              $$((fg)h)(u) = (f(u) \cdot g(u)) \cdot h(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11335,9 +9795,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f(gh))(u) = f(u) \cdot (g(u) \cdot h(u))
-              $$
+              $$(f(gh))(u) = f(u) \cdot (g(u) \cdot h(u))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11347,9 +9805,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f(u) \cdot g(u)) \cdot h(u) = f(u) \cdot (g(u) \cdot h(u))
-              $$
+              $$(f(u) \cdot g(u)) \cdot h(u) = f(u) \cdot (g(u) \cdot h(u))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11365,9 +9821,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              ((fg)h)(u)
-              $$
+              $$((fg)h)(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11377,9 +9831,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f(gh))(u)
-              $$
+              $$(f(gh))(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11387,9 +9839,7 @@ const Article = () => {
               for arbitrary{" "}
               <NoBreak>
                 <Math>
-                  $
-                  u
-                  $
+                  $u$
                 </Math>
                 ,
               </NoBreak>
@@ -11441,9 +9891,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              fgh
-              $$
+              $$fgh$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11452,16 +9900,12 @@ const Article = () => {
               it doesn't matter whether we think of this 
               product as{" "}
               <Math>
-                $
-                (fg)h
-                $
+                $(fg)h$
               </Math>
               {" "}or{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f(gh)
-                  $
+                  $f(gh)$
                 </Math>
                 ,
               </NoBreak>
@@ -11483,9 +9927,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g = g + f
-            $$
+            $$f + g = g + f$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11495,9 +9937,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            fg = gf
-            $$
+            $$fg = gf$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11505,9 +9945,7 @@ const Article = () => {
             for all{" "}
             <NoBreak>
               <Math>
-                $
-                f, g : \rr \ra \rr
-                $
+                $f, g : \rr \ra \rr$
               </Math>
               ,
             </NoBreak>
@@ -11516,9 +9954,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            a + b = b + a
-            $$
+            $$a + b = b + a$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11528,9 +9964,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            ab = ba
-            $$
+            $$ab = ba$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11538,9 +9972,7 @@ const Article = () => {
             for all{" "}
             <NoBreak>
               <Math>
-                $
-                a, b \in \rr
-                $
+                $a, b \in \rr$
               </Math>
               .
             </NoBreak>
@@ -11555,18 +9987,14 @@ const Article = () => {
             <VerticalChunk>
               Given an arbitrary{" "}
               <Math>
-                $
-                u \in \rr
-                $
+                $u \in \rr$
               </Math>
               {" "}we have
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f + g)(u) = f(u) + g(u)
-              $$
+              $$(f + g)(u) = f(u) + g(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11576,9 +10004,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (g + f)(u) = g(u) + f(u)
-              $$
+              $$(g + f)(u) = g(u) + f(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11588,9 +10014,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f(u) + g(u) = g(u) + f(u)
-              $$
+              $$f(u) + g(u) = g(u) + f(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11598,15 +10022,11 @@ const Article = () => {
               by the commutativity of real number addition
               [
               <Math>
-                $
-                f(u)
-                $
+                $f(u)$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                g(u)
-                $
+                $g(u)$
               </Math>
               {" "}are both real numbers—the
             </VerticalChunk>
@@ -11623,9 +10043,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              a + b = b + a
-              $$
+              $$a + b = b + a$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11633,18 +10051,14 @@ const Article = () => {
               for all real numbers{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b
-                  $
+                  $b$
                 </Math>
                 ,
               </NoBreak>
@@ -11654,9 +10068,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f + g)(u) = (g + f)(u)
-              $$
+              $$(f + g)(u) = (g + f)(u)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11664,9 +10076,7 @@ const Article = () => {
               for all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  u \in \rr
-                  $
+                  $u \in \rr$
                 </Math>
                 ,
               </NoBreak>
@@ -11675,9 +10085,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f + g = g + f
-              $$
+              $$f + g = g + f$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11691,13 +10099,11 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \begin&#123;align&#125;
+              $$\begin&#123;align&#125;
               (fg)(u) &= f(u) \cdot g(u) \\
               &= g(u) \cdot f(u) \up&#123;1.5&#125;\\
               &= (gf)(u) \up&#123;1.5&#125;
-              \end&#123;align&#125;
-              $$
+              \end&#123;align&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11705,9 +10111,7 @@ const Article = () => {
               for arbitrary{" "}
               <NoBreak>
                 <Math>
-                  $
-                  u\in \rr
-                  $
+                  $u\in \rr$
                 </Math>
                 ,
               </NoBreak>
@@ -11720,9 +10124,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              ab = ba
-              $$
+              $$ab = ba$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11730,9 +10132,7 @@ const Article = () => {
               for all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a, b \in \rr
-                  $
+                  $a, b \in \rr$
                 </Math>
                 ,
               </NoBreak>
@@ -11741,9 +10141,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              fg
-              $$
+              $$fg$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11753,18 +10151,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              gf
-              $$
+              $$gf$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               agree on an arbitrary input, hence{" "}
               <Math>
-                $
-                fg = gf
-                $
+                $fg = gf$
               </Math>
               {" "}by
               definition of function equality.
@@ -11784,9 +10178,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large f : \rr \ra \rr
-            $$
+            $$\Large f : \rr \ra \rr$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11794,26 +10186,20 @@ const Article = () => {
             gives the amount raised as a function of position;
             specifically,{" "}
             <Math>
-              $
-              &#123;f(x)&#125;
-              $
+              $&#123;f(x)&#125;$
             </Math>
             {" "}is the total number of 
             {" "}
             <NoBreak>
               <Math>
-                $
-                \te&#123;\$&#125;
-                $
+                $\te&#123;\$&#125;$
               </Math>
               's
             </NoBreak>
             {" "}earned by virtue of running 
             {" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}meters from the start of the race; 
             a second function
@@ -11821,9 +10207,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large g : \rr \ra \rr
-            $$
+            $$\Large g : \rr \ra \rr$$
           </MathBlock>
           <div
                class="spacer" />
@@ -11831,16 +10215,12 @@ const Article = () => {
             gives the position of the rat as a function of time;
             specifically,{" "}
             <Math>
-              $
-              &#123;g(t)&#125;
-              $
+              $&#123;g(t)&#125;$
             </Math>
             {" "}is the position from the start,
             in meters, reached by the rat at{" "}
             <Math>
-              $
-              t
-              $
+              $t$
             </Math>
             {" "}seconds after the
             start of the race.
@@ -11849,9 +10229,7 @@ const Article = () => {
                indent={true}>
             In this case, what does{" "}
             <Math>
-              $
-              f \circ g
-              $
+              $f \circ g$
             </Math>
             {" "}compute?
           </VerticalChunk>
@@ -11864,25 +10242,19 @@ const Article = () => {
               the amount earned by the rat as a function of time. In 
               more detail,{" "}
               <Math>
-                $
-                (f \circ g)(t)
-                $
+                $(f \circ g)(t)$
               </Math>
               {" "}
               is the number of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \te&#123;\$&#125;
-                  $
+                  $\te&#123;\$&#125;$
                 </Math>
                 's
               </NoBreak>
               {" "}earned by the rat at{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}
               seconds after the start of the race.
@@ -11901,27 +10273,21 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              g(t)
-              $$
+              $$g(t)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is the position in meters of the rat{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}
               seconds after start, by definition 
               of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 ,
               </NoBreak>
@@ -11931,9 +10297,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f(g(t))
-              $$
+              $$f(g(t))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11941,17 +10305,13 @@ const Article = () => {
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \te&#123;\$&#125;
-                  $
+                  $\te&#123;\$&#125;$
                 </Math>
                 's
               </NoBreak>
               {" "}in total, by definition of{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               .
               And
@@ -11959,9 +10319,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f(g(t))
-              $$
+              $$f(g(t))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -11971,18 +10329,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g)(t)
-              $$
+              $$(f \circ g)(t)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by definition of “
               <Math>
-                $
-                \circ
-                $
+                $\circ$
               </Math>
               ”.
             </VerticalChunk>
@@ -12001,9 +10355,7 @@ const Article = () => {
               occurs inside{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f \circ g
-                  $
+                  $f \circ g$
                 </Math>
                 :
               </NoBreak>
@@ -12024,9 +10376,7 @@ const Article = () => {
               {" "}
               To emphasize,{" "}
               <Math>
-                $
-                f(x)
-                $
+                $f(x)$
               </Math>
               {" "}is the
             </VerticalChunk>
@@ -12040,16 +10390,12 @@ const Article = () => {
             <VerticalChunk>
               amount earned when position{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}is reached.
               In real life{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               's
               graph might therefore look something like this, 
@@ -12065,9 +10411,7 @@ const Article = () => {
               In the above the rat earns{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \te&#123;\$&#125;
-                  $
+                  $\te&#123;\$&#125;$
                 </Math>
                 3
               </NoBreak>
@@ -12077,9 +10421,7 @@ const Article = () => {
               Or 
               {" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}
               could look like this,
@@ -12094,9 +10436,7 @@ const Article = () => {
             <VerticalChunk>
               In our mathematicians' imaginations, however,{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}
               might also look like this, nice and differentiable,
@@ -12124,9 +10464,7 @@ const Article = () => {
             {" "}
             What does{" "}
             <Math>
-              $
-              (f \circ g)'
-              $
+              $(f \circ g)'$
             </Math>
             {" "}compute,
             keeping the same setup as in Exercise 34?
@@ -12142,9 +10480,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g)'(t)
-              $$
+              $$(f \circ g)'(t)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12152,9 +10488,7 @@ const Article = () => {
               is the dollars-per-second rate which the rat is
               fundraising at{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}seconds after the start of the race.
             </VerticalChunk>
@@ -12167,17 +10501,13 @@ const Article = () => {
               {" "}
               You don't need to know anything about “
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ”
               or “
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 ”
               </NoBreak>
@@ -12185,9 +10515,7 @@ const Article = () => {
               know what “
               <NoBreak>
                 <Math>
-                  $
-                  f \circ g
-                  $
+                  $f \circ g$
                 </Math>
                 ”
               </NoBreak>
@@ -12207,15 +10535,11 @@ const Article = () => {
             previous two exercises, assume that the functions
             {" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}have these graphs:
           </VerticalChunk>
@@ -12235,9 +10559,7 @@ const Article = () => {
               At{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 2
-                  $
+                  $t = 2$
                 </Math>
                 s
               </NoBreak>
@@ -12246,18 +10568,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;5\over 3\up&#123;1&#125;&#125;[&#123;\te&#123;m/s&#125;&#125;]
-              $$
+              $$&#123;5\over 3\up&#123;1&#125;&#125;[&#123;\te&#123;m/s&#125;&#125;]$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by the slope of this line segment on{" "}
               <Math>
-                $
-                y = g(t)
-                $
+                $y = g(t)$
               </Math>
               :
             </VerticalChunk>
@@ -12271,9 +10589,7 @@ const Article = () => {
               Moreover at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 2
-                  $
+                  $t = 2$
                 </Math>
                 s
               </NoBreak>
@@ -12281,18 +10597,14 @@ const Article = () => {
               has reached
               {" "}
               <Math>
-                $
-                2 \cdot (5/3) = 10/3 = 3.\overline&#123;33&#125;
-                $
+                $2 \cdot (5/3) = 10/3 = 3.\overline&#123;33&#125;$
               </Math>
               m,
               where the dollars-per-meter earnings
               rate is one-tenth of a dollar per meter, by
               the slope of this segment on the graph{" "}
               <Math>
-                $
-                y = f(x)
-                $
+                $y = f(x)$
               </Math>
               :
             </VerticalChunk>
@@ -12305,41 +10617,31 @@ const Article = () => {
             <VerticalChunk>
               Multiplying the{" "}
               <Math>
-                $
-                5/3
-                $
+                $5/3$
               </Math>
               {" "}meters-per-second velocity
               by the{" "}
               <Math>
-                $
-                1/10
-                $
+                $1/10$
               </Math>
               {" "}dollars-per-meter rate gives
               us the dollars-per-second rate at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 2
-                  $
+                  $t = 2$
                 </Math>
                 s
               </NoBreak>
               {" "}(our 
               final answer—recall that{" "}
               <Math>
-                $
-                (f \circ g)'(2)
-                $
+                $(f \circ g)'(2)$
               </Math>
               {" "}is 
               the dollars-per-second rate at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 2
-                  $
+                  $t = 2$
                 </Math>
                 s,
               </NoBreak>
@@ -12348,9 +10650,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \left(&#123;5\over 3\up&#123;1&#125;&#125;\left[&#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;\right]\right) \times \left(&#123;1 \over 10\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;m&#125;&#125;\right]\right) = &#123;5\over 30\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;s&#125;&#125;\right].
-              $$
+              $$\left(&#123;5\over 3\up&#123;1&#125;&#125;\left[&#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;\right]\right) \times \left(&#123;1 \over 10\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;m&#125;&#125;\right]\right) = &#123;5\over 30\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;s&#125;&#125;\right].$$
               <ImageRight
                    src="/images/svg_ch4_f_g_actual_exercise_cloud.svg" />
             </MathBlock>
@@ -12362,9 +10662,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;5 \over 3&#125; = 1.6666...
-              $$
+              $$&#123;5 \over 3&#125; = 1.6666...$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12374,9 +10672,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;0.1666...&#125;[\te&#123;\$/s&#125;]
-              $$
+              $$&#123;0.1666...&#125;[\te&#123;\$/s&#125;]$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12390,9 +10686,7 @@ const Article = () => {
               </span>
               point{" "}
               <Math>
-                $
-                666...
-                $
+                $666...$
               </Math>
               {" "}cents per second.
             </VerticalChunk>
@@ -12410,9 +10704,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;5 \over 30&#125; = &#123;1 \over 6&#125;
-              $$
+              $$&#123;5 \over 30&#125; = &#123;1 \over 6&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12424,25 +10716,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;1 \over 6&#125; = 0.1666...
-              $$
+              $$&#123;1 \over 6&#125; = 0.1666...$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               as, indeed,{" "}
               <Math>
-                $
-                0.1666...
-                $
+                $0.1666...$
               </Math>
               {" "}is half of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0.333...
-                  $
+                  $0.333...$
                 </Math>
                 !
               </NoBreak>
@@ -12464,9 +10750,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (f \circ g)'(t)
-            $$
+            $$(f \circ g)'(t)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -12475,31 +10759,23 @@ const Article = () => {
             {" "}
             <NoBreak>
               <Math>
-                $
-                f, g : \rr \ra \rr
-                $
+                $f, g : \rr \ra \rr$
               </Math>
               .
             </NoBreak>
             {" "}(If it helps, interpret{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}
             and{" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}exactly as in the scenario of the fundraising
             race, cf
             <Math>
-              $
-              .
-              $
+              $.$
             </Math>
             {" "}Exercises 34-37.)
           </VerticalChunk>
@@ -12513,9 +10789,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              g'(t)\cdot f'(g(t))
-              $$
+              $$g'(t)\cdot f'(g(t))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12524,48 +10798,36 @@ const Article = () => {
               fundraising race—one must multiply the meters-per-second
               velocity at time{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}(that is,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g'(t)
-                  $
+                  $g'(t)$
                 </Math>
                 )
               </NoBreak>
               {" "}by the dollars-per-meter 
               earnings rate at position{" "}
               <Math>
-                $
-                g(t)
-                $
+                $g(t)$
               </Math>
               {" "}(that is,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f'(g(t))
-                  $
+                  $f'(g(t))$
                 </Math>
                 )
               </NoBreak>
               {" "}to obtain
               the final dollars-per-second earning rate at time{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               {" "}
               (that is,{" "}
               <Math>
-                $
-                (f \circ g)'(t)
-                $
+                $(f \circ g)'(t)$
               </Math>
               ).
             </VerticalChunk>
@@ -12577,9 +10839,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              g'(2) \cdot f'(g(2))
-              $$
+              $$g'(2) \cdot f'(g(2))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12587,44 +10847,34 @@ const Article = () => {
               since, indeed,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g(2) = 3.333...
-                  $
+                  $g(2) = 3.333...$
                 </Math>
                 .
               </NoBreak>
               {" "}[Remember that we ended
               up multiplying{" "}
               <Math>
-                $
-                g'(2) = &#123;5\over 3&#125;\te&#123;m/s&#125;
-                $
+                $g'(2) = &#123;5\over 3&#125;\te&#123;m/s&#125;$
               </Math>
               {" "}by 
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  f'(3.333...) = &#123;1\over 10&#125;\te&#123;\$/s&#125;
-                  $
+                  $f'(3.333...) = &#123;1\over 10&#125;\te&#123;\$/s&#125;$
                 </Math>
                 —the
               </NoBreak>
               {" "}“
               <NoBreak>
                 <Math>
-                  $
-                  3.333...
-                  $
+                  $3.333...$
                 </Math>
                 ”
               </NoBreak>
               {" "}is
               {" "}
               <Math>
-                $
-                g(2)
-                $
+                $g(2)$
               </Math>
               .])
             </VerticalChunk>
@@ -12654,9 +10904,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g)'(x) = f'(g(x))g'(x)
-              $$
+              $$(f \circ g)'(x) = f'(g(x))g'(x)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12664,26 +10912,20 @@ const Article = () => {
               ...with “
               <NoBreak>
                 <Math>
-                  $
-                  g'(x)
-                  $
+                  $g'(x)$
                 </Math>
                 ”
               </NoBreak>
               {" "}last. (And “
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
               {" "}instead of “
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               ”.)
             </VerticalChunk>
@@ -12700,24 +10942,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g)' = (f' \circ g)g'
-              $$
+              $$(f \circ g)' = (f' \circ g)g'$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...where the right-hand-side is the product of{" "}
               <Math>
-                $
-                g'
-                $
+                $g'$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                f' \circ g
-                $
+                $f' \circ g$
               </Math>
               .
             </VerticalChunk>
@@ -12735,18 +10971,14 @@ const Article = () => {
             going at three times unit speed (“speed{" "}
             <NoBreak>
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               ”
             </NoBreak>
             {" "}in common
             parlance) clockwise around a circle of radius{" "}
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             .
             What path does the velocity vector describe 
@@ -12755,9 +10987,7 @@ const Article = () => {
             is at{" "}
             <NoBreak>
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               ,
             </NoBreak>
@@ -12771,17 +11001,13 @@ const Article = () => {
             <VerticalChunk>
               The velocity vector is an arrow of length{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}
               tangent to a circle of radius{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2
-                  $
+                  $2$
                 </Math>
                 ,
               </NoBreak>
@@ -12798,22 +11024,16 @@ const Article = () => {
               If we bring the tail of the vector back to
               {" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               {" "}we find an arrow of length{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}
               tracing a circle of radius{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               :
             </VerticalChunk>
@@ -12832,9 +11052,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;2\cdot (\te&#123;circumference of a unit circle&#125;) \over \te&#123;3&#125;&#125;
-              $$
+              $$&#123;2\cdot (\te&#123;circumference of a unit circle&#125;) \over \te&#123;3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -12843,9 +11061,7 @@ const Article = () => {
               is twice the circumference of a unit circle,
               and the particle is going at speed{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               .
             </VerticalChunk>
@@ -12896,32 +11112,24 @@ const Article = () => {
               The velocity vector of Exercise 39 travels
               in a circle of radius{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}in the same amount
               of time that the position vector 
               travels around a circle of radius{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               .
               The speed of the velocity vector is therefore
               {" "}
               <Math>
-                $
-                1.5
-                $
+                $1.5$
               </Math>
               {" "}times the speed of the position vector,
               or{" "}
               <Math>
-                $
-                1.5 \times 3 = 4.5
-                $
+                $1.5 \times 3 = 4.5$
               </Math>
               .
             </VerticalChunk>
@@ -12931,9 +11139,7 @@ const Article = () => {
               the acceleration vector is therefore
               a vector of length{" "}
               <Math>
-                $
-                4.5
-                $
+                $4.5$
               </Math>
               {" "}(= the speed of the 
               velocity vector) brushed clockwise along 
@@ -12982,16 +11188,12 @@ const Article = () => {
             and jerk vector of a particle going around a circle
             of radius{" "}
             <Math>
-              $
-              3
-              $
+              $3$
             </Math>
             {" "}at speed{" "}
             <NoBreak>
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               .
             </NoBreak>
@@ -13005,9 +11207,7 @@ const Article = () => {
               The velocity vector has length{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2
-                  $
+                  $2$
                 </Math>
                 ,
               </NoBreak>
@@ -13015,9 +11215,7 @@ const Article = () => {
               particle has speed{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2
-                  $
+                  $2$
                 </Math>
                 .
               </NoBreak>
@@ -13039,16 +11237,12 @@ const Article = () => {
               Moreover (!) the speed of the velocity vector is 
               {" "}
               <Math>
-                $
-                2/3
-                $
+                $2/3$
               </Math>
               {" "}the speed of the particle, because the 
               velocity vector goes around a circle of{" "}
               <Math>
-                $
-                2/3
-                $
+                $2/3$
               </Math>
               {" "}the 
               radius in the same amount of time. So the velocity 
@@ -13057,9 +11251,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 2 \cdot &#123;2\over 3&#125; = &#123;4\over 3&#125;
-              $$
+              $$\Large 2 \cdot &#123;2\over 3&#125; = &#123;4\over 3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13068,9 +11260,7 @@ const Article = () => {
               described as “the velocity vector of the velocity
               vector”—has length{" "}
               <Math>
-                $
-                &#123;4\over 3&#125;
-                $
+                $&#123;4\over 3&#125;$
               </Math>
               {" "}(the speed of the
               velocity vector), and looks like so (in either representation):
@@ -13091,26 +11281,20 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;4\over 3&#125;\cdot &#123;2\over 3&#125; = &#123;8 \over 9&#125;
-              $$
+              $$\Large &#123;4\over 3&#125;\cdot &#123;2\over 3&#125; = &#123;8 \over 9&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by virtue of circling a circle of radius{" "}
               <Math>
-                $
-                2/3
-                $
+                $2/3$
               </Math>
               {" "}
               that of the velocity vector, that has speed{" "}
               <NoBreak>
                 <Math>
-                  $
-                  4/3
-                  $
+                  $4/3$
                 </Math>
                 ,
               </NoBreak>
@@ -13120,9 +11304,7 @@ const Article = () => {
               length of the jerk vector, that is exactly opposite
               to the velocity vector, being twice{" "}
               <Math>
-                $
-                90^\circ
-                $
+                $90^\circ$
               </Math>
               {" "}away:
             </VerticalChunk>
@@ -13147,18 +11329,14 @@ const Article = () => {
               If the particle's original path is centered at
               {" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               {" "}then that path constitutes a fourth
               circle obeying the same pattern
               of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2/3
-                  $
+                  $2/3$
                 </Math>
                 -ratios
               </NoBreak>
@@ -13181,16 +11359,12 @@ const Article = () => {
             Imagine a single particle in a one-dimensional
             world, whose velocity equals its position; at{" "}
             <Math>
-              $
-              t = 0
-              $
+              $t = 0$
             </Math>
             ,
             the particle is sitting at{" "}
             <Math>
-              $
-              x = 1
-              $
+              $x = 1$
             </Math>
             :
           </VerticalChunk>
@@ -13205,9 +11379,7 @@ const Article = () => {
             ever reach{" "}
             <NoBreak>
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               ?
             </NoBreak>
@@ -13232,15 +11404,11 @@ const Article = () => {
             <VerticalChunk>
               The interval from{" "}
               <Math>
-                $
-                0.5
-                $
+                $0.5$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}
               takes{" "}
@@ -13252,9 +11420,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;0.5 \over 1&#125; = 0.5
-              $$
+              $$&#123;0.5 \over 1&#125; = 0.5$$
               <ImageLeft
                    src="/images/svg_ch4_one_particle_speed_equals_time_cloud.svg" />
             </MathBlock>
@@ -13264,9 +11430,7 @@ const Article = () => {
               time to cross, because the maximum speed of the particle
               inside of that interval is{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               .
               Similarly, the interval from{" "}
@@ -13274,9 +11438,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = 0.25
-              $$
+              $$x = 0.25$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13286,9 +11448,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = 0.5
-              $$
+              $$x = 0.5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13302,9 +11462,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;0.25 \over 0.5&#125; = 0.5
-              $$
+              $$&#123;0.25 \over 0.5&#125; = 0.5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13312,9 +11470,7 @@ const Article = () => {
               time to cross, because the maximum speed of the particle
               inside of that interval is{" "}
               <Math>
-                $
-                0.5
-                $
+                $0.5$
               </Math>
               !
               And, again, the interval from{" "}
@@ -13322,9 +11478,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = 0.125
-              $$
+              $$x = 0.125$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13334,9 +11488,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = 0.25
-              $$
+              $$x = 0.25$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13346,9 +11498,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;0.125 \over 0.25&#125; = 0.5
-              $$
+              $$&#123;0.125 \over 0.25&#125; = 0.5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13357,9 +11507,7 @@ const Article = () => {
               inside of that interval is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0.25
-                  $
+                  $0.25$
                 </Math>
                 .
               </NoBreak>
@@ -13373,9 +11521,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              0.5
-              $$
+              $$0.5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13396,27 +11542,21 @@ const Article = () => {
               infinitely much time to make it to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = 0
-                  $
+                  $x = 0$
                 </Math>
                 ,
               </NoBreak>
               {" "}where the
               “infinitely” comes from adding infinitely many{" "}
               <Math>
-                $
-                0.5
-                $
+                $0.5$
               </Math>
               's
               together! (In other words, the particle never makes it to
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = 0
-                  $
+                  $x = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -13441,9 +11581,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              100,\, 300,\, 900,\, 2700
-              $$
+              $$100,\, 300,\, 900,\, 2700$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13451,9 +11589,7 @@ const Article = () => {
               is a (finite) geometric progression, because each number
               is the previous number multiplied by{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               ,
               and
@@ -13461,9 +11597,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              1,\, 0.5,\, 0.25,\, 0.125,\, 0.0625,\, \ldots
-              $$
+              $$1,\, 0.5,\, 0.25,\, 0.125,\, 0.0625,\, \ldots$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -13471,9 +11605,7 @@ const Article = () => {
               is an (infinite) geometric progression, because each number
               is the previous multiplied by{" "}
               <Math>
-                $
-                0.5
-                $
+                $0.5$
               </Math>
               .
             </VerticalChunk>
@@ -13491,9 +11623,7 @@ const Article = () => {
             line; at time{" "}
             <NoBreak>
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               ,
             </NoBreak>
@@ -13501,18 +11631,14 @@ const Article = () => {
             is at{" "}
             <NoBreak>
               <Math>
-                $
-                x = -1
-                $
+                $x = -1$
               </Math>
               ,
             </NoBreak>
             {" "}while the second one (blue)
             is at{" "}
             <Math>
-              $
-              x = 1
-              $
+              $x = 1$
             </Math>
             :
           </VerticalChunk>
@@ -13528,16 +11654,12 @@ const Article = () => {
             give a qualitative sketch of the
             position-as-a-function-of-time (time on the{" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}
             axis, position on the{" "}
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             {" "}axis) of the two 
             particles. If we add also the graph of the position
@@ -13552,37 +11674,27 @@ const Article = () => {
             <VerticalChunk>
               For{" "}
               <Math>
-                $
-                t &gt; 0
-                $
+                $t &gt; 0$
               </Math>
               {" "}the yellow and blue particles
               approach{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}in a kind of “radioactive decay”
               pattern; for{" "}
               <Math>
-                $
-                t &lt; 0
-                $
+                $t &lt; 0$
               </Math>
               ,
               they spin
               off to{" "}
               <Math>
-                $
-                -\infty
-                $
+                $-\infty$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                \infty
-                $
+                $\infty$
               </Math>
               {" "}respectively at an
               accelerating rate:
@@ -13598,22 +11710,16 @@ const Article = () => {
               mix, it is simply the mirror image of the
               blue particle's position through the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis
               (
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis that is ironically labeled “
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               ”):
             </VerticalChunk>
@@ -13631,9 +11737,7 @@ const Article = () => {
             <CentralDisplayItalic>
               the slope equals the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -value
             </CentralDisplayItalic>
@@ -13647,9 +11751,7 @@ const Article = () => {
             <CentralDisplayItalic>
               the slope equals minus the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -value
             </CentralDisplayItalic>
@@ -13664,25 +11766,19 @@ const Article = () => {
               “symmetries” that the problem statement asks about, though.)
               As taking a mirror image through the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}axis
               negates slopes without affecting{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -coordinates,
               while both the blue and red graphs have the same
               value at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 0
-                  $
+                  $t = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -13701,18 +11797,14 @@ const Article = () => {
               {" "}
               <Math>
                 $
-                
                 \pm 1
-                
                 $
               </Math>
               {" "}
               at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 0
-                  $
+                  $t = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -13720,15 +11812,11 @@ const Article = () => {
               because each corresponding particle position 
               is either{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}or{" "}
               <Math>
-                $
-                -1
-                $
+                $-1$
               </Math>
               .
             </VerticalChunk>
@@ -13745,23 +11833,17 @@ const Article = () => {
             Four particles are placed 
             at intervals of{" "}
             <Math>
-              $
-              90^\circ
-              $
+              $90^\circ$
             </Math>
             {" "}
             around a circle of radius{" "}
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             {" "}
             centered at{" "}
             <Math>
-              $
-              (2, 4)
-              $
+              $(2, 4)$
             </Math>
             {" "}in the plane:
           </VerticalChunk>
@@ -13780,9 +11862,7 @@ const Article = () => {
             {" "}
             <NoBreak>
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               ,
             </NoBreak>
@@ -13790,9 +11870,7 @@ const Article = () => {
             particles evolve? Discuss both positive and 
             negative values of{" "}
             <Math>
-              $
-              t
-              $
+              $t$
             </Math>
             .
           </VerticalChunk>
@@ -13803,9 +11881,7 @@ const Article = () => {
             <VerticalChunk>
               At{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}
               the particles have position vectors that
@@ -13817,9 +11893,7 @@ const Article = () => {
               will become more “up and to the right”, 
               and so on—broadly speaking, for{" "}
               <Math>
-                $
-                t &gt; 0
-                $
+                $t &gt; 0$
               </Math>
               {" "}
               there will ensue
@@ -13828,9 +11902,7 @@ const Article = () => {
               that goes up and to the right,
               off to{" "}
               <Math>
-                $
-                (+\infty, +\infty)
-                $
+                $(+\infty, +\infty)$
               </Math>
               .
               <ImageRight
@@ -13839,9 +11911,7 @@ const Article = () => {
             <VerticalChunk>
               For{" "}
               <Math>
-                $
-                t &lt; 0
-                $
+                $t &lt; 0$
               </Math>
               {" "}motion will be
               down and to the left, at least initially—it
@@ -13850,9 +11920,7 @@ const Article = () => {
               what will happen for larger negative
               values of{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               .
             </VerticalChunk>
@@ -13912,18 +11980,14 @@ const Article = () => {
             <VerticalChunk>
               At{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}the white particles are just a
               translate of the original particles, such
               that the circle on which they lie is 
               centered at{" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               :
             </VerticalChunk>
@@ -13937,16 +12001,12 @@ const Article = () => {
               The black particles, for their part, are
               piled on top of one another at{" "}
               <Math>
-                $
-                (x, y) = (2, 4)
-                $
+                $(x, y) = (2, 4)$
               </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 0
-                  $
+                  $t = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -13974,9 +12034,7 @@ const Article = () => {
               rotate at unit speed around their circle of
               radius{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}centered at the origin, just like
               the particles discussed in the solution to
@@ -13994,16 +12052,12 @@ const Article = () => {
               half-line through
               {" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (2, 4)
-                  $
+                  $(2, 4)$
                 </Math>
                 ,
               </NoBreak>
@@ -14065,16 +12119,12 @@ const Article = () => {
               This means that if we introduce gradations
               to the afore-mentioned half-line through{" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               {" "}
               and{" "}
               <Math>
-                $
-                (2, 4)
-                $
+                $(2, 4)$
               </Math>
               ...
             </VerticalChunk>
@@ -14107,22 +12157,16 @@ const Article = () => {
               red particle from Exercise 41, being
               at position{" "}
               <Math>
-                $
-                x = 2\sqrt&#123;5&#125;
-                $
+                $x = 2\sqrt&#123;5&#125;$
               </Math>
               {" "}
               instead of at position{" "}
               <Math>
-                $
-                x = 1
-                $
+                $x = 1$
               </Math>
               {" "}at{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               .
               (!!)
@@ -14146,9 +12190,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14160,9 +12202,7 @@ const Article = () => {
               the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -14178,9 +12218,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x : \rr \ra \rr
-                  $
+                  $_x : \rr \ra \rr$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14199,9 +12237,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(2)
-                  $
+                  $_x(2)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14212,9 +12248,7 @@ const Article = () => {
               is the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -14223,9 +12257,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  t = 2
-                  $
+                  $t = 2$
                 </Math>
                 ,
               </NoBreak>
@@ -14240,9 +12272,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14254,9 +12284,7 @@ const Article = () => {
               the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -14277,9 +12305,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14287,9 +12313,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14301,18 +12325,14 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -coordinate
               </NoBreak>
               {" "}of the purple-white particle 
               is the value of the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               of the yellow-white particle; we also have
@@ -14326,9 +12346,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' + 
-                  $
+                  $_x\,\!\!\!' + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14336,9 +12354,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14346,9 +12362,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14356,9 +12370,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14375,9 +12387,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  (
-                  $
+                  $($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14385,9 +12395,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14395,9 +12403,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x)' = 
-                  $
+                  $_x)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14405,9 +12411,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14415,9 +12419,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14457,9 +12459,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x = 
-                  $
+                  $_x = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14467,9 +12467,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14477,9 +12475,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14491,9 +12487,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y = 
-                  $
+                  $_y = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14501,9 +12495,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14511,9 +12503,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14525,9 +12515,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x = 
-                  $
+                  $_x = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14535,9 +12523,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14545,9 +12531,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14559,9 +12543,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y = 
-                  $
+                  $_y = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14569,9 +12551,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14579,9 +12559,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14593,9 +12571,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x = 
-                  $
+                  $_x = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14603,9 +12579,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14613,9 +12587,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14627,9 +12599,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y = 
-                  $
+                  $_y = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14637,9 +12607,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14647,9 +12615,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14661,9 +12627,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x = 
-                  $
+                  $_x = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14671,9 +12635,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14681,9 +12643,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14695,9 +12655,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y = 
-                  $
+                  $_y = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14705,9 +12663,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14715,9 +12671,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14744,9 +12698,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = (
-                  $
+                  $_x\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14754,9 +12706,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14764,9 +12714,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_x\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14774,9 +12722,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14784,9 +12730,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x =
-                  $
+                  $_x =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14794,9 +12738,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14808,9 +12750,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = (
-                  $
+                  $_y\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14818,9 +12758,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14828,9 +12766,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_y\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14838,9 +12774,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14848,9 +12782,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y =
-                  $
+                  $_y =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14858,9 +12790,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14872,9 +12802,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = (
-                  $
+                  $_x\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14882,9 +12810,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14892,9 +12818,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_x\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14902,9 +12826,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14912,9 +12834,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x =
-                  $
+                  $_x =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14922,9 +12842,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -14936,9 +12854,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = (
-                  $
+                  $_y\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14946,9 +12862,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14956,9 +12870,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_y\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14966,9 +12878,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14976,9 +12886,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y =
-                  $
+                  $_y =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -14986,9 +12894,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15000,9 +12906,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = (
-                  $
+                  $_x\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15010,9 +12914,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15020,9 +12922,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_x\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15030,9 +12930,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15040,9 +12938,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x =
-                  $
+                  $_x =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15050,9 +12946,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15064,9 +12958,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = (
-                  $
+                  $_y\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15074,9 +12966,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15084,9 +12974,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_y\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15094,9 +12982,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15104,9 +12990,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y =
-                  $
+                  $_y =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15114,9 +12998,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15128,9 +13010,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = (
-                  $
+                  $_x\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15138,9 +13018,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15148,9 +13026,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_x\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15158,9 +13034,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x + 
-                  $
+                  $_x + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15168,9 +13042,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x =
-                  $
+                  $_x =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15178,9 +13050,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15192,9 +13062,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = (
-                  $
+                  $_y\,\!\!\!' = ($
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15202,9 +13070,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15212,9 +13078,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\!\rt&#123;0.05&#125;)' = 
-                  $
+                  $_y\!\rt&#123;0.05&#125;)' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15222,9 +13086,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y + 
-                  $
+                  $_y + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15232,9 +13094,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y =
-                  $
+                  $_y =$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15242,9 +13102,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15263,9 +13121,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15273,9 +13129,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15287,9 +13141,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = 
-                  $
+                  $_y\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15297,33 +13149,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
-                </Math>
-                {" "}{" "}
-              </VerticalChunk>
-              <VerticalChunk
-                   indent={true}>
-                <br />
-                <InlineImage
-                     src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                     class="ch4_inline_blackwhite_particles" />
-                {" "}{" "}
-                <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
-                </Math>
-                {" "}{" "}
-                <InlineImage
-                     src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                     class="ch4_inline_blackwhite_particles" />
-                {" "}{" "}
-                <Math>
-                  $
-                  _x
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15335,9 +13161,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15345,9 +13169,27 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_x$
+                </Math>
+                {" "}{" "}
+              </VerticalChunk>
+              <VerticalChunk
+                   indent={true}>
+                <br />
+                <InlineImage
+                     src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
+                     class="ch4_inline_blackwhite_particles" />
+                {" "}{" "}
+                <Math>
+                  $_y\,\!\!\!' = $
+                </Math>
+                {" "}{" "}
+                <InlineImage
+                     src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
+                     class="ch4_inline_blackwhite_particles" />
+                {" "}{" "}
+                <Math>
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15359,9 +13201,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15369,9 +13209,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15383,9 +13221,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = 
-                  $
+                  $_y\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15393,9 +13229,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15407,9 +13241,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x\,\!\!\!' = 
-                  $
+                  $_x\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15417,9 +13249,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x
-                  $
+                  $_x$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15431,9 +13261,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y\,\!\!\!' = 
-                  $
+                  $_y\,\!\!\!' = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15441,9 +13269,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y
-                  $
+                  $_y$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15457,9 +13283,7 @@ const Article = () => {
               is the position vector of the yellow particle); 
               for seconders, evaluating these definitions at{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}gives...
             </VerticalChunk>
@@ -15472,9 +13296,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 
-                  $
+                  $_x(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15482,9 +13304,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) + 
-                  $
+                  $_x(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15492,9 +13312,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15502,9 +13320,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15516,9 +13332,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 
-                  $
+                  $_y(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15526,9 +13340,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) + 
-                  $
+                  $_y(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15536,9 +13348,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15546,9 +13356,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15560,9 +13368,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 
-                  $
+                  $_x(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15570,9 +13376,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) + 
-                  $
+                  $_x(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15580,9 +13384,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15590,9 +13392,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15604,9 +13404,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 
-                  $
+                  $_y(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15614,9 +13412,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) + 
-                  $
+                  $_y(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15624,9 +13420,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15634,9 +13428,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15648,9 +13440,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 
-                  $
+                  $_x(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15658,9 +13448,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) + 
-                  $
+                  $_x(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15668,9 +13456,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15678,9 +13464,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15692,9 +13476,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 
-                  $
+                  $_y(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15702,9 +13484,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) + 
-                  $
+                  $_y(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15712,9 +13492,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15722,9 +13500,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15736,9 +13512,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 
-                  $
+                  $_x(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15746,9 +13520,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) + 
-                  $
+                  $_x(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15756,9 +13528,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15766,9 +13536,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15780,9 +13548,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 
-                  $
+                  $_y(0) = $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15790,9 +13556,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) + 
-                  $
+                  $_y(0) + $
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15800,9 +13564,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15810,9 +13572,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15831,9 +13591,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15841,9 +13599,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15855,9 +13611,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15865,9 +13619,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15879,9 +13631,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15889,9 +13639,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15903,9 +13651,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15913,9 +13659,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15927,9 +13671,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15937,9 +13679,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15951,9 +13691,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15961,9 +13699,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15975,9 +13711,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0) = 2\,\,+
-                  $
+                  $_x(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -15985,9 +13719,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _x(0)
-                  $
+                  $_x(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -15999,9 +13731,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0) = 2\,\,+
-                  $
+                  $_y(0) = 2\,\,+$
                 </Math>
                 {" "}{" "}
                 <InlineImage
@@ -16009,9 +13739,7 @@ const Article = () => {
                      class="ch4_inline_blackwhite_particles" />
                 {" "}{" "}
                 <Math>
-                  $
-                  _y(0)
-                  $
+                  $_y(0)$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -16022,9 +13750,7 @@ const Article = () => {
               ...cutting out the middle computation, which is to
               say that the positions at time{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}of our 
               newly-defined particles{" "}
@@ -16046,17 +13772,13 @@ const Article = () => {
               &ensp;are the translate of the white particle
               positions at{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               {" "}back up and to the right
               by the vector{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (2, 4)
-                  $
+                  $(2, 4)$
                 </Math>
                 ,
               </NoBreak>
@@ -16097,9 +13819,7 @@ const Article = () => {
                    class="ch4_inline_blackwhite_particles" />
               &ensp;are in the desired place at{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               !
             </VerticalChunk>
@@ -16131,9 +13851,7 @@ const Article = () => {
               can be understood as four particles rotating at 
               unit speed around a circle of radius{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}(the 
               white particles) where the center of circle (the 
@@ -16141,9 +13859,7 @@ const Article = () => {
               a half-line. In particular, the particles remain
               at constant distance from one another for all{" "}
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               ,
               whether that seems intuitive or not.
@@ -16154,9 +13870,7 @@ const Article = () => {
               the particle trajectories
               end up like so, locally around{" "}
               <Math>
-                $
-                t = 0
-                $
+                $t = 0$
               </Math>
               :
             </VerticalChunk>
@@ -16169,17 +13883,13 @@ const Article = () => {
             <VerticalChunk>
               The above plot goes from{" "}
               <Math>
-                $
-                t = -5
-                $
+                $t = -5$
               </Math>
               {" "}to 
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  t \approx 1
-                  $
+                  $t \approx 1$
                 </Math>
                 —winding
               </NoBreak>
@@ -16187,9 +13897,7 @@ const Article = () => {
               near-perfect counterclockwise circular motion,
               as the black particles rush up to{" "}
               <Math>
-                $
-                (0, 0)
-                $
+                $(0, 0)$
               </Math>
               {" "}
               and come to a near-halt rather fast,
@@ -16206,9 +13914,7 @@ const Article = () => {
               When we said that, for{" "}
               <NoBreak>
                 <Math>
-                  $
-                  t &gt; 0
-                  $
+                  $t &gt; 0$
                 </Math>
                 ,
               </NoBreak>
@@ -16281,9 +13987,7 @@ const Article = () => {
               —a vector-valued quantity, or{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \pm
-                  $
+                  $\pm$
                 </Math>
                 -valued
               </NoBreak>
@@ -16302,25 +14006,19 @@ const Article = () => {
             {" "}
             Find a nonzero function{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and a nonzero
             constant{" "}
             <Math>
-              $
-              a \in \rr
-              $
+              $a \in \rr$
             </Math>
             {" "}such that
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f'(x) = f(x + a)
-            $$
+            $$f'(x) = f(x + a)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -16328,9 +14026,7 @@ const Article = () => {
             for all{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               .
             </NoBreak>
@@ -16354,18 +14050,14 @@ const Article = () => {
               but is also the horizontal translate of the red curve by
               {" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}units to the left, where
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              a
-              $$
+              $$a$$
               <ImageLeft
                    src="/images/svg_ch4_cosine_recall_cloud.svg" />
             </MathBlock>
@@ -16377,9 +14069,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f
-              $$
+              $$f$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -16389,9 +14079,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              f'(x) = f(x + a)
-              $$
+              $$f'(x) = f(x + a)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -16401,39 +14089,29 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = f(x + a)
-              $$
+              $$y = f(x + a)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is the horizontal translate of{" "}
               <Math>
-                $
-                y = f(x)
-                $
+                $y = f(x)$
               </Math>
               {" "}by{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}
               units to the left, in general for any function
               {" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}and constant{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a \in \rr
-                  $
+                  $a \in \rr$
                 </Math>
                 ,
               </NoBreak>
@@ -16528,93 +14206,71 @@ const Article = () => {
                     the associativity of function multiplication is
                     the fact that{" "}
                     <Math>
-                      $
-                      (f \circ g) \circ h = f \circ (g \circ h)
-                      $
+                      $(f \circ g) \circ h = f \circ (g \circ h)$
                     </Math>
                     {" "}
                     for all functions{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        f
-                        $
+                        $f$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        g
-                        $
+                        $g$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <Math>
-                      $
-                      h
-                      $
+                      $h$
                     </Math>
                     {" "}such that 
                     {" "}
                     <NoBreak>
                       <Math>
-                        $
-                        h : D \ra C
-                        $
+                        $h : D \ra C$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        g : C \ra B
-                        $
+                        $g : C \ra B$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <Math>
-                      $
-                      f : B \ra A
-                      $
+                      $f : B \ra A$
                     </Math>
                     {" "}
                     [for arbitrary sets{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        A
-                        $
+                        $A$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        B
-                        $
+                        $B$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <NoBreak>
                       <Math>
-                        $
-                        C
-                        $
+                        $C$
                       </Math>
                       ,
                     </NoBreak>
                     {" "}{" "}
                     <Math>
-                      $
-                      D
-                      $
+                      $D$
                     </Math>
                     ]
                   </i>
@@ -16628,15 +14284,11 @@ const Article = () => {
                     the associativity of function multiplication is
                     the fact that{" "}
                     <Math>
-                      $
-                      f(gh) = (fg)h
-                      $
+                      $f(gh) = (fg)h$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      f, g, h : \rr \ra \rr
-                      $
+                      $f, g, h : \rr \ra \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16650,15 +14302,11 @@ const Article = () => {
                     the associativity of function addition is
                     the fact that{" "}
                     <Math>
-                      $
-                      f + (g + h) = (f + g) + h
-                      $
+                      $f + (g + h) = (f + g) + h$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      f, g, h : \rr \ra \rr
-                      $
+                      $f, g, h : \rr \ra \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16672,15 +14320,11 @@ const Article = () => {
                     the commutativity of function multiplication is
                     the fact that{" "}
                     <Math>
-                      $
-                      fg = gf
-                      $
+                      $fg = gf$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      f, g : \rr \ra \rr
-                      $
+                      $f, g : \rr \ra \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16694,15 +14338,11 @@ const Article = () => {
                     the commutativity of function addition is
                     the fact that{" "}
                     <Math>
-                      $
-                      f + g = g + f
-                      $
+                      $f + g = g + f$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      f, g : \rr \ra \rr
-                      $
+                      $f, g : \rr \ra \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16724,15 +14364,11 @@ const Article = () => {
                     the associativity of [real number] multiplication is
                     the fact that{" "}
                     <Math>
-                      $
-                      a(bc) = (ab)c
-                      $
+                      $a(bc) = (ab)c$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      a, b, c \in \rr
-                      $
+                      $a, b, c \in \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16746,15 +14382,11 @@ const Article = () => {
                     the associativity of [real number] addition is
                     the fact that{" "}
                     <Math>
-                      $
-                      a + (b + c) = (a + b) + c
-                      $
+                      $a + (b + c) = (a + b) + c$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      a, b, c \in \rr
-                      $
+                      $a, b, c \in \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16768,15 +14400,11 @@ const Article = () => {
                     the commutativity of [real number] multiplication is
                     the fact that{" "}
                     <Math>
-                      $
-                      ab = ba
-                      $
+                      $ab = ba$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      a, b \in \rr
-                      $
+                      $a, b \in \rr$
                     </Math>
                     {" "}{" "}
                   </i>
@@ -16790,15 +14418,11 @@ const Article = () => {
                     the commutativity of [real number] addition is
                     the fact that{" "}
                     <Math>
-                      $
-                      a + b = b + a
-                      $
+                      $a + b = b + a$
                     </Math>
                     {" "}for all{" "}
                     <Math>
-                      $
-                      a, b \in \rr
-                      $
+                      $a, b \in \rr$
                     </Math>
                     {" "}{" "}
                   </i>

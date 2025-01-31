@@ -29,18 +29,14 @@ const Article = () => {
           “
           <NoBreak>
             <Math>
-              $
-              \&#123;
-              $
+              $\&#123;$
             </Math>
             ”
           </NoBreak>
           {" "}and ending “
           <NoBreak>
             <Math>
-              $
-              \&#125;
-              $
+              $\&#125;$
             </Math>
             ”
           </NoBreak>
@@ -54,32 +50,24 @@ const Article = () => {
           numbers{" "}
           <NoBreak>
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            2
-            $
+            $2$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            3
-            $
+            $3$
           </Math>
           {" "}(and nothing else):
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1, 2, 3\&#125;
-          $$
+          $$\Large\&#123;1, 2, 3\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -89,9 +77,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1\&#125;
-          $$
+          $$\Large\&#123;1\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -99,9 +85,7 @@ const Article = () => {
           is a set containing just the number{" "}
           <NoBreak>
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             ,
           </NoBreak>
@@ -110,26 +94,20 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1, 3\&#125;
-          $$
+          $$\Large\&#123;1, 3\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is a set containing just the numbers{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}
           and{" "}
           <NoBreak>
             <Math>
-              $
-              3
-              $
+              $3$
             </Math>
             ,
           </NoBreak>
@@ -138,9 +116,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;\&#125;
-          $$
+          $$\Large\&#123;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -198,16 +174,12 @@ const Article = () => {
         <VerticalChunk>
           to which{" "}
           <Math>
-            $
-            \&#123;1, 3\&#125;
-            $
+            $\&#123;1, 3\&#125;$
           </Math>
           {" "}would answer “yes”, but
           {" "}
           <Math>
-            $
-            \&#123; 1\&#125;
-            $
+            $\&#123; 1\&#125;$
           </Math>
           {" "}would answer “no”, or
         </VerticalChunk>
@@ -221,22 +193,16 @@ const Article = () => {
         <VerticalChunk>
           to which{" "}
           <Math>
-            $
-            \&#123;1\&#125;
-            $
+            $\&#123;1\&#125;$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            \&#123;1, 3\&#125;
-            $
+            $\&#123;1, 3\&#125;$
           </Math>
           {" "}would
           both answer “no”, but{" "}
           <Math>
-            $
-            \&#123;1, 2, 3\&#125;
-            $
+            $\&#123;1, 2, 3\&#125;$
           </Math>
           {" "}would
           answer “yes”.
@@ -248,9 +214,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \in A
-          $$
+          $$\Large x \in A$$
         </MathBlock>
         <div
              class="spacer" />
@@ -262,15 +226,11 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}contains{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -284,16 +244,12 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}answers “yes” to the
           question “do you contain{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           ?”
         </CentralDisplayItalic>
@@ -307,15 +263,11 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}in{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -329,15 +281,11 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}is in{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -351,15 +299,11 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}is an element of{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -374,18 +318,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 1 \in \&#123;1, 2\&#125;
-          $$
+          $$\Large 1 \in \&#123;1, 2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is true, because{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}{" "}
           <i>
@@ -395,9 +335,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              \&#123;1, 2\&#125;
-              $
+              $\&#123;1, 2\&#125;$
             </Math>
             ,
           </NoBreak>
@@ -406,18 +344,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 3 \in \&#123;1, 2\&#125;
-          $$
+          $$\Large 3 \in \&#123;1, 2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is false, because{" "}
           <Math>
-            $
-            3
-            $
+            $3$
           </Math>
           {" "}{" "}
           <i>
@@ -427,9 +361,7 @@ const Article = () => {
           an element of the set{" "}
           <NoBreak>
             <Math>
-              $
-              \&#123;1, 2\&#125;
-              $
+              $\&#123;1, 2\&#125;$
             </Math>
             .
           </NoBreak>
@@ -454,9 +386,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;2, 1\&#125;
-          $$
+          $$\Large\&#123;2, 1\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -466,9 +396,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1, 2\&#125;
-          $$
+          $$\Large\&#123;1, 2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -494,9 +422,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1, 1, 2\&#125;
-          $$
+          $$\Large\&#123;1, 1, 2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -506,9 +432,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\&#123;1, 2\&#125;
-          $$
+          $$\Large\&#123;1, 2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -601,9 +525,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#125;
-          $$
+          $$\Large \&#123;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -613,9 +535,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \phi
-          $$
+          $$\Large \phi$$
         </MathBlock>
         <div
              class="spacer" />
@@ -641,9 +561,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#123;\&#123;\&#123;\&#125;\&#125;\&#125;\&#125;
-          $$
+          $$\Large \&#123;\&#123;\&#123;\&#123;\&#125;\&#125;\&#125;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -655,18 +573,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#123;\&#123;\phi\&#125;\&#125;\&#125;
-          $$
+          $$\Large \&#123;\&#123;\&#123;\phi\&#125;\&#125;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           for the same thing, given that{" "}
           <Math>
-            $
-            \phi = \&#123;\&#125;
-            $
+            $\phi = \&#123;\&#125;$
           </Math>
           .
         </VerticalChunk>
@@ -677,9 +591,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
-          $$
+          $$\Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;$$
           <ImageRight
                offset_x="1em"
                src="/images/svg_empty_set_cloud.svg" />
@@ -693,9 +605,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123; \&#123;\&#125; \&#125;
-          $$
+          $$\Large \&#123; \&#123;\&#125; \&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -703,17 +613,13 @@ const Article = () => {
           answers “yes” to the question “do you contain 
           {" "}
           <Math>
-            $
-            \&#123;\&#125;
-            $
+            $\&#123;\&#125;$
           </Math>
           ?”
           (a.k.a., “do you contain{" "}
           <NoBreak>
             <Math>
-              $
-              \phi
-              $
+              $\phi$
             </Math>
             ?”)
           </NoBreak>
@@ -723,9 +629,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#125;
-          $$
+          $$\Large \&#123;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -744,9 +648,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;\&#123;\&#123;\&#125;\&#125; \&#125; \ne \&#123;\&#123;\&#125;\&#125;
-          $$
+          $$\Large \&#123;\&#123;\&#123;\&#125;\&#125; \&#125; \ne \&#123;\&#123;\&#125;\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -770,41 +672,31 @@ const Article = () => {
           {" "}
           of two sets{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}and
           {" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}is written{" "}
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large A \cup B
-          $$
+          $$\Large A \cup B$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           and consists of the set of all things that are either in{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}or in 
           {" "}
           <Math>
-            $
-            B.
-            $
+            $B.$
           </Math>
           {" "}
           For example,
@@ -812,9 +704,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;1, 2\&#125; \cup \&#123;2, 5\&#125; = \&#123;1, 2, 5\&#125;
-          $$
+          $$\Large \&#123;1, 2\&#125; \cup \&#123;2, 5\&#125; = \&#123;1, 2, 5\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -822,37 +712,27 @@ const Article = () => {
           as{" "}
           <NoBreak>
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            2
-            $
+            $2$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            5
-            $
+            $5$
           </Math>
           {" "}are the only elements to find
           themselves either in
           {" "}
           <Math>
-            $
-            \&#123;1, 2\&#125;
-            $
+            $\&#123;1, 2\&#125;$
           </Math>
           {" "}or in{" "}
           <Math>
-            $
-            \&#123;2, 5\&#125;
-            $
+            $\&#123;2, 5\&#125;$
           </Math>
           .
           The so-called{" "}
@@ -861,41 +741,31 @@ const Article = () => {
           </i>
           {" "}of two sets{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}and
           {" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}is written{" "}
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large A \cap B
-          $$
+          $$\Large A \cap B$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           and consists of the set of all things that are both in{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}and in 
           {" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           .
           For example,
@@ -903,31 +773,23 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \&#123;1, 2\&#125; \cap \&#123;2, 5\&#125; = \&#123;2\&#125;
-          $$
+          $$\Large \&#123;1, 2\&#125; \cap \&#123;2, 5\&#125; = \&#123;2\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           as{" "}
           <Math>
-            $
-            2
-            $
+            $2$
           </Math>
           {" "}is the only element that is both in
           {" "}
           <Math>
-            $
-            \&#123;1, 2\&#125;
-            $
+            $\&#123;1, 2\&#125;$
           </Math>
           {" "}and in{" "}
           <Math>
-            $
-            \&#123;2, 5\&#125;
-            $
+            $\&#123;2, 5\&#125;$
           </Math>
           .
         </VerticalChunk>
@@ -938,9 +800,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \in (A \cup B)
-          $$
+          $$\Large x \in (A \cup B)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -950,9 +810,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \in A
-          $$
+          $$\Large x \in A$$
         </MathBlock>
         <div
              class="spacer" />
@@ -966,9 +824,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \in B
-          $$
+          $$\Large x \in B$$
         </MathBlock>
         <div
              class="spacer" />
@@ -981,9 +837,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \in (A \cup B) \iff (x \in A) \vee (x \in B)
-          $$
+          $$\Large x \in (A \cup B) \iff (x \in A) \vee (x \in B)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -995,40 +849,28 @@ const Article = () => {
         <CentralDisplayItalic>
           an element{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}is in the thing I call “
           <Math>
-            $
-            A \cup B
-            $
+            $A \cup B$
           </Math>
           ”
           if and only if{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}is in{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}or{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}is in{" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -1038,9 +880,7 @@ const Article = () => {
           as “
           <NoBreak>
             <Math>
-              $
-              \!\!\iff\!\!
-              $
+              $\!\!\iff\!\!$
             </Math>
             ”
           </NoBreak>
@@ -1048,9 +888,7 @@ const Article = () => {
           “
           <NoBreak>
             <Math>
-              $
-              \vee
-              $
+              $\vee$
             </Math>
             ”
           </NoBreak>
@@ -1061,9 +899,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large \wedge
-          $$
+          $$\Large \wedge$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1089,9 +925,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\rr
-          $$
+          $$\Large\rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1106,9 +940,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\zz
-          $$
+          $$\Large\zz$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1124,25 +956,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\nn
-          $$
+          $$\Large\nn$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           which contains only those integers that are greater than{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}(i.e.,
           {" "}
           <Math>
-            $
-            \nn = \&#123;1, 2, 3, \ldots \&#125;
-            $
+            $\nn = \&#123;1, 2, 3, \ldots \&#125;$
           </Math>
           ).
         </VerticalChunk>
@@ -1159,9 +985,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large [a, b]
-          $$
+          $$\Large [a, b]$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1174,18 +998,14 @@ const Article = () => {
           greater than or equal to{" "}
           <NoBreak>
             <Math>
-              $
-              a
-              $
+              $a$
             </Math>
             ,
           </NoBreak>
           {" "}and less than or equal to{" "}
           <NoBreak>
             <Math>
-              $
-              b
-              $
+              $b$
             </Math>
             .
           </NoBreak>
@@ -1194,9 +1014,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large [a, b)
-          $$
+          $$\Large [a, b)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1209,18 +1027,14 @@ const Article = () => {
           greater than or equal to{" "}
           <NoBreak>
             <Math>
-              $
-              a
-              $
+              $a$
             </Math>
             ,
           </NoBreak>
           {" "}and less than{" "}
           <NoBreak>
             <Math>
-              $
-              b
-              $
+              $b$
             </Math>
             .
           </NoBreak>
@@ -1233,9 +1047,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (-\infty, \infty) = \rr
-          $$
+          $$\Large (-\infty, \infty) = \rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1245,9 +1057,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (-\infty, \infty)
-          $$
+          $$\Large (-\infty, \infty)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1269,9 +1079,7 @@ const Article = () => {
         <VerticalChunk>
           which is all of{" "}
           <Math>
-            $
-            \rr
-            $
+            $\rr$
           </Math>
           .
         </VerticalChunk>
@@ -1296,9 +1104,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\overline&#123;\rr&#125;
-          $$
+          $$\Large\overline&#123;\rr&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1306,9 +1112,7 @@ const Article = () => {
           and which consists of all the numbers in{" "}
           <NoBreak>
             <Math>
-              $
-              \rr
-              $
+              $\rr$
             </Math>
             ,
           </NoBreak>
@@ -1316,18 +1120,14 @@ const Article = () => {
           symbols “
           <NoBreak>
             <Math>
-              $
-              -\infty
-              $
+              $-\infty$
             </Math>
             ”,
           </NoBreak>
           {" "}“
           <NoBreak>
             <Math>
-              $
-              \infty
-              $
+              $\infty$
             </Math>
             ”
           </NoBreak>
@@ -1336,9 +1136,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large\overline&#123;\rr&#125; = \rr \cup \&#123;-\infty, \infty\&#125;
-          $$
+          $$\Large\overline&#123;\rr&#125; = \rr \cup \&#123;-\infty, \infty\&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1349,25 +1147,19 @@ const Article = () => {
              indent={true}>
           You can view{" "}
           <Math>
-            $
-            \overline&#123;\rr&#125;
-            $
+            $\overline&#123;\rr&#125;$
           </Math>
           {" "}as a kind “closed interval”
           version of{" "}
           <NoBreak>
             <Math>
-              $
-              \rr
-              $
+              $\rr$
             </Math>
             ,
           </NoBreak>
           {" "}that is, think of{" "}
           <Math>
-            $
-            \overline&#123;\rr&#125;
-            $
+            $\overline&#123;\rr&#125;$
           </Math>
           {" "}as being
           the closed interval
@@ -1375,9 +1167,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large [-\infty, \infty]
-          $$
+          $$\Large [-\infty, \infty]$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1405,9 +1195,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0.5+ \infty
-          $$
+          $$\Large 0.5+ \infty$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1419,25 +1207,19 @@ const Article = () => {
           . (It is defined to be{" "}
           <NoBreak>
             <Math>
-              $
-              \infty
-              $
+              $\infty$
             </Math>
             ,
           </NoBreak>
           {" "}in case you're curious.
           In fact, one has{" "}
           <Math>
-            $
-            a + \infty = \infty
-            $
+            $a + \infty = \infty$
           </Math>
           {" "}for any{" "}
           <NoBreak>
             <Math>
-              $
-              a \ne -\infty
-              $
+              $a \ne -\infty$
             </Math>
             .)
           </NoBreak>
@@ -1451,9 +1233,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (-\infty) + \infty
-          $$
+          $$\Large (-\infty) + \infty$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1465,16 +1245,12 @@ const Article = () => {
           {" "}value—the same way, say, that division by
           {" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}is undefined in{" "}
           <NoBreak>
             <Math>
-              $
-              \rr
-              $
+              $\rr$
             </Math>
             .
           </NoBreak>

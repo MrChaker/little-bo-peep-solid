@@ -51,9 +51,7 @@ const Article = () => {
         <VerticalChunk>
           The whole expression is read{" "}
           <Math>
-            $
-            \mathit&#123;10&#125;
-            $
+            $\mathit&#123;10&#125;$
           </Math>
           {" "}{" "}
           <i>
@@ -62,9 +60,7 @@ const Article = () => {
           {" "}{" "}
           <NoBreak>
             <Math>
-              $
-              \mathit&#123;3&#125;
-              $
+              $\mathit&#123;3&#125;$
             </Math>
             ,
           </NoBreak>
@@ -90,74 +86,54 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;\hspace&#123;0.2ex&#125;n&#125;
-          $$
+          $$\Large 10^&#123;\hspace&#123;0.2ex&#125;n&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           as follows, if{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}is a nonnegative integer: start
           from{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}and multiply by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}times. We also define
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-n&#125;
-          $$
+          $$\Large 10^&#123;-n&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           as follows, if{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}is a positive integer: start from{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}and divide
           by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}times.{" "}
         </VerticalChunk>
@@ -168,37 +144,27 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^4 = 1 \times 10 \times 10 \times 10 \times 10 = 10000
-          $$
+          $$\Large 10^4 = 1 \times 10 \times 10 \times 10 \times 10 = 10000$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^3 = 1 \times 10 \times 10 \times 10 = 1000
-          $$
+          $$\Large 10^3 = 1 \times 10 \times 10 \times 10 = 1000$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^2 = 1 \times 10 \times 10 = 100
-          $$
+          $$\Large 10^2 = 1 \times 10 \times 10 = 100$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^1 = 1 \times 10 = 10
-          $$
+          $$\Large 10^1 = 1 \times 10 = 10$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^0 = 1 = 1
-          $$
+          $$\Large 10^0 = 1 = 1$$
           <ImageLeft
                src="/images/svg_ten_to_the_0_cloud.svg" />
         </MathBlock>
@@ -207,15 +173,11 @@ const Article = () => {
         <VerticalChunk>
           (where, in the last line,{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}is multiplied by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}{" "}
           <i>
@@ -227,30 +189,22 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-1&#125; = 1\,/\,10 = 0.1
-          $$
+          $$\Large 10^&#123;-1&#125; = 1\,/\,10 = 0.1$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-2&#125; = (1\,/\, 10)\,/\,10 = 0.01
-          $$
+          $$\Large 10^&#123;-2&#125; = (1\,/\, 10)\,/\,10 = 0.01$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-3&#125; = ((1\,/\, 10)\,/\,10)\,/\,10 = 0.001
-          $$
+          $$\Large 10^&#123;-3&#125; = ((1\,/\, 10)\,/\,10)\,/\,10 = 0.001$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-4&#125; = (((1\,/\, 10)\,/\,10)\,/\, 10)\,/\, 10 = 0.0001
-          $$
+          $$\Large 10^&#123;-4&#125; = (((1\,/\, 10)\,/\,10)\,/\, 10)\,/\, 10 = 0.0001$$
         </MathBlock>
         <div
              class="spacer" />
@@ -261,23 +215,17 @@ const Article = () => {
              indent={true}>
           As{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}successive divisions
           by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}is the same as one division by{" "}
           <NoBreak>
             <Math>
-              $
-              10^n
-              $
+              $10^n$
             </Math>
             ,
           </NoBreak>
@@ -286,9 +234,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-n&#125; = &#123;1 \over 10^&#123;\hspace&#123;0.2ex&#125;n&#125;&#125;\tag&#123;A&#125;
-          $$
+          $$\Large 10^&#123;-n&#125; = &#123;1 \over 10^&#123;\hspace&#123;0.2ex&#125;n&#125;&#125;\tag&#123;A&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -296,17 +242,13 @@ const Article = () => {
           for every positive integer{" "}
           <NoBreak>
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             ,
           </NoBreak>
           {" "}which gives an alternate means of computing{" "}
           <Math>
-            $
-            10^&#123;-n&#125;
-            $
+            $10^&#123;-n&#125;$
           </Math>
           .
           Moreover, (A) actually holds for
@@ -322,18 +264,14 @@ const Article = () => {
           integer{" "}
           <NoBreak>
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             ,
           </NoBreak>
           {" "}which is mildly important. In more
           detail, (A) holds for{" "}
           <Math>
-            $
-            n = 0
-            $
+            $n = 0$
           </Math>
           {" "}by inspection, and (A) 
           is equivalent to the identity
@@ -343,52 +281,40 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;-n&#125;10^n = 1 \tag&#123;AA&#125;
-          $$
+          $$\Large 10^&#123;-n&#125;10^n = 1 \tag&#123;AA&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           which holds for{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}if and only if it holds for
           {" "}
           <NoBreak>
             <Math>
-              $
-              -n
-              $
+              $-n$
             </Math>
             .
           </NoBreak>
           {" "}(By which we mean: replacing “
           <NoBreak>
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             ”
           </NoBreak>
           {" "}by “
           <Math>
-            $
-            -n
-            $
+            $-n$
           </Math>
           ”
           in (AA) lands you right back on (AA), due to the fact
           that{" "}
           <NoBreak>
             <Math>
-              $
-              -&#123;(-n)&#125; = n
-              $
+              $-&#123;(-n)&#125; = n$
             </Math>
             .)
           </NoBreak>
@@ -396,9 +322,7 @@ const Article = () => {
           positive values of{" "}
           <NoBreak>
             <Math>
-              $
-              \hspace&#123;0.05em&#125;n
-              $
+              $\hspace&#123;0.05em&#125;n$
             </Math>
             ,
           </NoBreak>
@@ -406,9 +330,7 @@ const Article = () => {
           for all negative values of{" "}
           <NoBreak>
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             ,
           </NoBreak>
@@ -425,24 +347,18 @@ const Article = () => {
           {" "}
           Numbers{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}such that
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large ab = 1
-          $$
+          $$\Large ab = 1$$
         </MathBlock>
         <div
              class="spacer" />
@@ -454,15 +370,11 @@ const Article = () => {
           .
           If{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}are reciprocal, then 
           these equations are satisfied...
@@ -470,9 +382,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large ab = 1 \qquad a = &#123;1 \over b&#125; \qquad b = &#123;1 \over a&#125;
-          $$
+          $$\Large ab = 1 \qquad a = &#123;1 \over b&#125; \qquad b = &#123;1 \over a&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -490,15 +400,11 @@ const Article = () => {
         <VerticalChunk>
           of{" "}
           <Math>
-            $
-            10^n
-            $
+            $10^n$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            10^&#123;-n&#125;
-            $
+            $10^&#123;-n&#125;$
           </Math>
           .
         </VerticalChunk>
@@ -517,24 +423,18 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 2^&#123;-2&#125;
-          $$
+          $$\Large 2^&#123;-2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is defined as{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}divided by{" "}
           <Math>
-            $
-            2
-            $
+            $2$
           </Math>
           {" "}twice, etc.
         </VerticalChunk>
@@ -543,9 +443,7 @@ const Article = () => {
           However, a small quirk occurs for base{" "}
           <NoBreak>
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             :
           </NoBreak>
@@ -553,59 +451,45 @@ const Article = () => {
           divide by{" "}
           <NoBreak>
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             ,
           </NoBreak>
           {" "}negative powers of{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}remain undefined. E.g.,
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0^&#123;-2&#125;
-          $$
+          $$\Large 0^&#123;-2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           would be “
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}divided by{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}twice”, but this
           is undefined. 
           Hence{" "}
           <NoBreak>
             <Math>
-              $
-              0^&#123;-1&#125;
-              $
+              $0^&#123;-1&#125;$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <NoBreak>
             <Math>
-              $
-              0^&#123;-2&#125;
-              $
+              $0^&#123;-2&#125;$
             </Math>
             ,
           </NoBreak>
@@ -615,70 +499,52 @@ const Article = () => {
              indent={true}>
           Also (in case you're wondering){" "}
           <Math>
-            $
-            0^0 = 1
-            $
+            $0^0 = 1$
           </Math>
           .
           You can see this by writing down the first few powers of{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}in descending order:
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0^3 = 1 \times 0 \times 0 \times 0 = 0
-          $$
+          $$\Large 0^3 = 1 \times 0 \times 0 \times 0 = 0$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0^2 = 1 \times 0 \times 0 = 0
-          $$
+          $$\Large 0^2 = 1 \times 0 \times 0 = 0$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0^1 = 1 \times 0 = 0
-          $$
+          $$\Large 0^1 = 1 \times 0 = 0$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 0^0 = 1 = 1
-          $$
+          $$\Large 0^0 = 1 = 1$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           In other words, every positive power of{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}is zero, 
           but when it comes to{" "}
           <Math>
-            $
-            0^0
-            $
+            $0^0$
           </Math>
           ,
           the ‘
           <NoBreak>
             <Math>
-              $
-              0\hspace&#123;0.12ex&#125;
-              $
+              $0\hspace&#123;0.12ex&#125;$
             </Math>
             ’
           </NoBreak>
@@ -686,18 +552,14 @@ const Article = () => {
           exponent “wins out” over the ‘
           <NoBreak>
             <Math>
-              $
-              0\hspace&#123;0.12ex&#125;
-              $
+              $0\hspace&#123;0.12ex&#125;$
             </Math>
             ’
           </NoBreak>
           {" "}in the base, 
           making the result{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           .
         </VerticalChunk>
@@ -706,9 +568,7 @@ const Article = () => {
           Note that mathematicians sometimes refer 
           to a power with an exponent of{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}as an
         </VerticalChunk>
@@ -727,9 +587,7 @@ const Article = () => {
         <CentralDisplayItalic>
           an empty product is{" "}
           <Math>
-            $
-            \mathit&#123;1&#125;
-            $
+            $\mathit&#123;1&#125;$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -740,24 +598,18 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             ”,
           </NoBreak>
           {" "}and that if you start at{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}and don't
           multiply anything in, you stay at{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           .
         </VerticalChunk>
@@ -776,50 +628,36 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;13&#125; \times 10^&#123;14&#125; = 10^&#123;\hspace&#123;0.1ex&#125;27&#125;
-          $$
+          $$\Large 10^&#123;13&#125; \times 10^&#123;14&#125; = 10^&#123;\hspace&#123;0.1ex&#125;27&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           because{" "}
           <Math>
-            $
-            13
-            $
+            $13$
           </Math>
           {" "}multiplications by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}followed
           by{" "}
           <Math>
-            $
-            14
-            $
+            $14$
           </Math>
           {" "}multiplications by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}makes{" "}
           <Math>
-            $
-            13 + 14 = 27
-            $
+            $13 + 14 = 27$
           </Math>
           {" "}
           multiplications by{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           .
         </VerticalChunk>
@@ -830,30 +668,22 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^&#123;\hspace&#123;0.1ex&#125;n&#125; \times 10^&#123;\hspace&#123;0.1ex&#125;m&#125; = 10^&#123;\hspace&#123;0.1ex&#125;n + m&#125;
-          $$
+          $$\Large 10^&#123;\hspace&#123;0.1ex&#125;n&#125; \times 10^&#123;\hspace&#123;0.1ex&#125;m&#125; = 10^&#123;\hspace&#123;0.1ex&#125;n + m&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           for all{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            m
-            $
+            $m$
           </Math>
           {" "}(and other bases than{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           ),
           which is known as
@@ -885,9 +715,7 @@ const Article = () => {
           “
           <NoBreak>
             <Math>
-              $
-              10^n \times 10^m
-              $
+              $10^n \times 10^m$
             </Math>
             ”
           </NoBreak>
@@ -899,9 +727,7 @@ const Article = () => {
           refers to “
           <NoBreak>
             <Math>
-              $
-              10^&#123;n+m&#125;
-              $
+              $10^&#123;n+m&#125;$
             </Math>
             ”.
           </NoBreak>
@@ -922,38 +748,28 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (10^&#123;13&#125;)^&#123;14&#125; = 10^&#123;13\cdot 14&#125;
-          $$
+          $$\Large (10^&#123;13&#125;)^&#123;14&#125; = 10^&#123;13\cdot 14&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           because multiplying{" "}
           <Math>
-            $
-            14
-            $
+            $14$
           </Math>
           {" "}times by{" "}
           <Math>
-            $
-            10^&#123;13&#125;
-            $
+            $10^&#123;13&#125;$
           </Math>
           {" "}is like
           multiplying{" "}
           <Math>
-            $
-            13\cdot 14
-            $
+            $13\cdot 14$
           </Math>
           {" "}times by{" "}
           <NoBreak>
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             .
           </NoBreak>
@@ -963,25 +779,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (10^n)^m = 10^&#123;nm&#125;
-          $$
+          $$\Large (10^n)^m = 10^&#123;nm&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           for all{" "}
           <Math>
-            $
-            n
-            $
+            $n$
           </Math>
           {" "}and{" "}
           <NoBreak>
             <Math>
-              $
-              m
-              $
+              $m$
             </Math>
             .
           </NoBreak>
@@ -995,30 +805,22 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large a^&#123;b^&#123;c&#125;&#125;
-          $$
+          $$\Large a^&#123;b^&#123;c&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}to the power{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}to the power{" "}
           <Math>
-            $
-            c
-            $
+            $c$
           </Math>
           ”]
           there is a seeming ambiguity: does it mean
@@ -1026,30 +828,22 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large a^&#123;\left(b^&#123;c&#125;\right)&#125;
-          $$
+          $$\Large a^&#123;\left(b^&#123;c&#125;\right)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}to the power [
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}to the power{" "}
           <Math>
-            $
-            c
-            $
+            $c$
           </Math>
           ]”]
           or does it mean
@@ -1057,33 +851,25 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large (a^&#123;b&#125;)^&#123;c&#125;
-          $$
+          $$\Large (a^&#123;b&#125;)^&#123;c&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“[
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}to the power{" "}
           <NoBreak>
             <Math>
-              $
-              b
-              $
+              $b$
             </Math>
             ]
           </NoBreak>
           {" "}to the power{" "}
           <Math>
-            $
-            c
-            $
+            $c$
           </Math>
           ”]...?
           Well, because the second way can be written
@@ -1091,9 +877,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large a^&#123;bc&#125;
-          $$
+          $$\Large a^&#123;bc&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1104,9 +888,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large a^&#123;b^c&#125;
-          $$
+          $$\Large a^&#123;b^c&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1116,9 +898,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large a^&#123;\left(b^c\right)&#125;
-          $$
+          $$\Large a^&#123;\left(b^c\right)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1139,9 +919,7 @@ const Article = () => {
           various integer powers of{" "}
           <NoBreak>
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             ,
           </NoBreak>
@@ -1149,9 +927,7 @@ const Article = () => {
           that many of our ancestors chose to count in base
           {" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           .
         </VerticalChunk>
@@ -1160,9 +936,7 @@ const Article = () => {
           In English, e.g., these are some of the “famous”
           powers of{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           :
         </VerticalChunk>
@@ -1185,9 +959,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    n
-                    $
+                    $n$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1197,9 +969,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    \,\,10^n
-                    $
+                    $\,\,10^n$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1217,9 +987,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    0
-                    $
+                    $0$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1229,9 +997,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1
-                    $
+                    $1$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1253,9 +1019,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1
-                    $
+                    $1$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1265,9 +1029,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    10
-                    $
+                    $10$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1289,9 +1051,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    2
-                    $
+                    $2$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1301,9 +1061,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    100
-                    $
+                    $100$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1325,9 +1083,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    3
-                    $
+                    $3$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1337,9 +1093,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1000
-                    $
+                    $1000$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1361,9 +1115,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    6
-                    $
+                    $6$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1373,9 +1125,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1\,000\,000
-                    $
+                    $1\,000\,000$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1397,9 +1147,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    9
-                    $
+                    $9$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1409,9 +1157,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1\,000\,000\,000
-                    $
+                    $1\,000\,000\,000$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1433,9 +1179,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    12
-                    $
+                    $12$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1445,9 +1189,7 @@ const Article = () => {
                 <VerticalChunk>
                   {" "}{" "}
                   <Math>
-                    $
-                    1\,000\,000\,000\,000
-                    $
+                    $1\,000\,000\,000\,000$
                   </Math>
                   {" "}{" "}
                 </VerticalChunk>
@@ -1486,9 +1228,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 1000 \times 1000 = 1000\hspace&#123;0.3ex&#125;000
-          $$
+          $$\Large 1000 \times 1000 = 1000\hspace&#123;0.3ex&#125;000$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1498,9 +1238,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 10^3 \times 10^3 = 10^6
-          $$
+          $$\Large 10^3 \times 10^3 = 10^6$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1585,9 +1323,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      n
-                      $
+                      $n$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1597,9 +1333,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      \,\,10^n
-                      $
+                      $\,\,10^n$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1617,9 +1351,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      -1
-                      $
+                      $-1$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1629,9 +1361,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      0.1
-                      $
+                      $0.1$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1653,9 +1383,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      -2
-                      $
+                      $-2$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1665,9 +1393,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      0.01
-                      $
+                      $0.01$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1689,9 +1415,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      -3
-                      $
+                      $-3$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1701,9 +1425,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      0.001
-                      $
+                      $0.001$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1725,9 +1447,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      -6
-                      $
+                      $-6$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1737,9 +1457,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      0.000001
-                      $
+                      $0.000001$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1761,9 +1479,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      -9
-                      $
+                      $-9$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1773,9 +1489,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      0.000000001
-                      $
+                      $0.000000001$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1801,15 +1515,11 @@ const Article = () => {
           In passing, note how the standard decimal expansion
           for{" "}
           <Math>
-            $
-            10^&#123;-1&#125;
-            $
+            $10^&#123;-1&#125;$
           </Math>
           {" "}contains exactly one{" "}
           <Math>
-            $
-            &#123;0&#125;
-            $
+            $&#123;0&#125;$
           </Math>
           :
         </VerticalChunk>
@@ -1822,16 +1532,12 @@ const Article = () => {
         <VerticalChunk>
           Likewise, the standard decimal expansion for{" "}
           <Math>
-            $
-            10^&#123;-2&#125;
-            $
+            $10^&#123;-2&#125;$
           </Math>
           {" "}
           contains exactly two{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           's...
         </VerticalChunk>
@@ -1870,18 +1576,14 @@ const Article = () => {
         <VerticalChunk>
           is{" "}
           <Math>
-            $
-            10^&#123;-3&#125;
-            $
+            $10^&#123;-3&#125;$
           </Math>
           {" "}meters, i.e., one thousandth of
           a meter, because “milli” happens to be the prefix
           for{" "}
           <NoBreak>
             <Math>
-              $
-              10^&#123;-3&#125;
-              $
+              $10^&#123;-3&#125;$
             </Math>
             .
           </NoBreak>
@@ -1921,9 +1623,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-1&#125;
-                      $
+                      $10^&#123;-1&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1945,9 +1645,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-2&#125;
-                      $
+                      $10^&#123;-2&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1969,9 +1667,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-3&#125;
-                      $
+                      $10^&#123;-3&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -1993,9 +1689,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-6&#125;
-                      $
+                      $10^&#123;-6&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2017,9 +1711,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-9&#125;
-                      $
+                      $10^&#123;-9&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2041,9 +1733,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-12&#125;
-                      $
+                      $10^&#123;-12&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2065,9 +1755,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;-15&#125;
-                      $
+                      $10^&#123;-15&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2095,9 +1783,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              10^&#123;-3&#125;
-              $
+              $10^&#123;-3&#125;$
             </Math>
             .)
           </NoBreak>
@@ -2121,38 +1807,28 @@ const Article = () => {
           have a diameter of
           {" "}
           <Math>
-            $
-            7
-            $
+            $7$
           </Math>
           ~
           <Math>
-            $
-            9
-            $
+            $9$
           </Math>
           {" "}{" "}
           <NoBreak>
             <Math>
-              $
-              \mu\textrm&#123;m&#125;
-              $
+              $\mu\textrm&#123;m&#125;$
             </Math>
             )
           </NoBreak>
           {" "}(nb: “
           <Math>
-            $
-            \mu
-            $
+            $\mu$
           </Math>
           ”
           stands for “micro” and “
           <NoBreak>
             <Math>
-              $
-              \mu
-              $
+              $\mu$
             </Math>
             m”
           </NoBreak>
@@ -2172,9 +1848,7 @@ const Article = () => {
           about{" "}
           <NoBreak>
             <Math>
-              $
-              2.5
-              $
+              $2.5$
             </Math>
             nm
           </NoBreak>
@@ -2191,9 +1865,7 @@ const Article = () => {
           for positve powers of{" "}
           <NoBreak>
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             .
           </NoBreak>
@@ -2201,9 +1873,7 @@ const Article = () => {
           to{" "}
           <NoBreak>
             <Math>
-              $
-              10^&#123;15&#125;
-              $
+              $10^&#123;15&#125;$
             </Math>
             ,
           </NoBreak>
@@ -2242,9 +1912,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^1
-                      $
+                      $10^1$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2266,9 +1934,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;2&#125;
-                      $
+                      $10^&#123;2&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2290,9 +1956,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;3&#125;
-                      $
+                      $10^&#123;3&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2314,9 +1978,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;6&#125;
-                      $
+                      $10^&#123;6&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2338,9 +2000,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;9&#125;
-                      $
+                      $10^&#123;9&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2362,9 +2022,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;12&#125;
-                      $
+                      $10^&#123;12&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2386,9 +2044,7 @@ const Article = () => {
                   <VerticalChunk>
                     {" "}{" "}
                     <Math>
-                      $
-                      10^&#123;15&#125;
-                      $
+                      $10^&#123;15&#125;$
                     </Math>
                     {" "}{" "}
                   </VerticalChunk>
@@ -2424,9 +2080,7 @@ const Article = () => {
           is a thousand meters
           [b/
           <Math>
-            $
-            \!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;
-            $
+            $\!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;$
           </Math>
           {" "}“kilo” = thousand], 
           while a
@@ -2441,9 +2095,7 @@ const Article = () => {
         <VerticalChunk>
           is a trillion bytes [b/
           <Math>
-            $
-            \!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;
-            $
+            $\!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;$
           </Math>
           {" "}“tera” = trillion].
           (In case you don't know, by the way, 
@@ -2460,9 +2112,7 @@ const Article = () => {
           {" "}is a unit of computer memory
           that is equal to{" "}
           <Math>
-            $
-            8
-            $
+            $8$
           </Math>
           {" "}{" "}
           <i>
@@ -2492,9 +2142,7 @@ const Article = () => {
           <i>
             logarithm base{" "}
             <Math>
-              $
-              \mathit&#123;10&#125;
-              $
+              $\mathit&#123;10&#125;$
             </Math>
             {" "}{" "}
           </i>
@@ -2508,9 +2156,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 100
-          $$
+          $$\Large 100$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2518,9 +2164,7 @@ const Article = () => {
           can be uniquely written as “ten to the power
           something”. To wit,{" "}
           <Math>
-            $
-            100
-            $
+            $100$
           </Math>
           {" "}is, of course,
         </VerticalChunk>
@@ -2529,9 +2173,7 @@ const Article = () => {
         <CentralDisplayItalic>
           ten to the power{" "}
           <Math>
-            $
-            \mathit&#123;2&#125;
-            $
+            $\mathit&#123;2&#125;$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -2543,24 +2185,18 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large 2
-          $$
+          $$\Large 2$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is the logarithm base{" "}
           <Math>
-            $
-            10
-            $
+            $10$
           </Math>
           {" "}of{" "}
           <Math>
-            $
-            100
-            $
+            $100$
           </Math>
           .
         </VerticalChunk>
@@ -2578,9 +2214,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 99 = 10^&#123;1.99563519...&#125;
-            $$
+            $$\Large 99 = 10^&#123;1.99563519...&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -2588,16 +2222,12 @@ const Article = () => {
             under an extended definition of exponentiation that allows us to 
             compute{" "}
             <Math>
-              $
-              10^x
-              $
+              $10^x$
             </Math>
             {" "}for every{" "}
             <NoBreak>
               <Math>
-                $
-                x \in \rr
-                $
+                $x \in \rr$
               </Math>
               .
             </NoBreak>
@@ -2607,24 +2237,18 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 1.99563519...
-            $$
+            $$\Large 1.99563519...$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             is the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of{" "}
             <Math>
-              $
-              99
-              $
+              $99$
             </Math>
             .
           </VerticalChunk>
@@ -2643,9 +2267,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 98 = 10^&#123;1.99122607...&#125;
-            $$
+            $$\Large 98 = 10^&#123;1.99122607...&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -2655,24 +2277,18 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 1.99122607...
-            $$
+            $$\Large 1.99122607...$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             is the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of{" "}
             <Math>
-              $
-              98
-              $
+              $98$
             </Math>
             .
           </VerticalChunk>
@@ -2691,30 +2307,22 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 0.1 = 10^&#123;-1&#125;
-            $$
+            $$\Large 0.1 = 10^&#123;-1&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of{" "}
             <Math>
-              $
-              0.1
-              $
+              $0.1$
             </Math>
             {" "}is{" "}
             <Math>
-              $
-              -1
-              $
+              $-1$
             </Math>
             .
           </VerticalChunk>
@@ -2733,9 +2341,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 0.00001 = 10^&#123;-5&#125;
-            $$
+            $$\Large 0.00001 = 10^&#123;-5&#125;$$
             <ImageRight
                  src="/images/svg_ten_to_the_-5_cloud.svg" />
           </MathBlock>
@@ -2744,21 +2350,15 @@ const Article = () => {
           <VerticalChunk>
             the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of{" "}
             <Math>
-              $
-              0.00001
-              $
+              $0.00001$
             </Math>
             {" "}is{" "}
             <Math>
-              $
-              -5
-              $
+              $-5$
             </Math>
             .
           </VerticalChunk>
@@ -2779,23 +2379,17 @@ const Article = () => {
             Compute{" "}
             <NoBreak>
               <Math>
-                $
-                2^&#123;-2&#125;
-                $
+                $2^&#123;-2&#125;$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              2^&#123;-3&#125;
-              $
+              $2^&#123;-3&#125;$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              2^&#123;-4&#125;
-              $
+              $2^&#123;-4&#125;$
             </Math>
             {" "}by hand.
           </VerticalChunk>
@@ -2807,9 +2401,7 @@ const Article = () => {
               Since{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2^&#123;-1&#125; = 1/2 = 0.5
-                  $
+                  $2^&#123;-1&#125; = 1/2 = 0.5$
                 </Math>
                 ,
               </NoBreak>
@@ -2818,23 +2410,17 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 2^&#123;-2&#125; = &#123;2^&#123;-1&#125;\over 2&#125; = &#123;0.5 \over 2&#125; = 0.25
-              $$
+              $$\Large 2^&#123;-2&#125; = &#123;2^&#123;-1&#125;\over 2&#125; = &#123;0.5 \over 2&#125; = 0.25$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 2^&#123;-3&#125; = &#123;2^&#123;-2&#125;\over 2&#125; = &#123;0.25 \over 2&#125; = 0.125
-              $$
+              $$\Large 2^&#123;-3&#125; = &#123;2^&#123;-2&#125;\over 2&#125; = &#123;0.25 \over 2&#125; = 0.125$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 2^&#123;-4&#125; = &#123;2^&#123;-3&#125;\over 2&#125; = &#123;0.125 \over 2&#125; = 0.0625
-              $$
+              $$\Large 2^&#123;-4&#125; = &#123;2^&#123;-3&#125;\over 2&#125; = &#123;0.125 \over 2&#125; = 0.0625$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2850,16 +2436,12 @@ const Article = () => {
               {" "}
               For the last computation,{" "}
               <Math>
-                $
-                0.125
-                $
+                $0.125$
               </Math>
               {" "}can be viewed 
               as twelve hundredths plus{" "}
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               {" "}thousandths:
             </VerticalChunk>
@@ -2873,15 +2455,11 @@ const Article = () => {
               Half of twelve hundredths is six hundredths, and 
               half of{" "}
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               {" "}thousandths is{" "}
               <Math>
-                $
-                2.5
-                $
+                $2.5$
               </Math>
               {" "}thousandths:
             </VerticalChunk>
@@ -2894,15 +2472,11 @@ const Article = () => {
             <VerticalChunk>
               ...so{" "}
               <Math>
-                $
-                0.125/2
-                $
+                $0.125/2$
               </Math>
               {" "}is{" "}
               <Math>
-                $
-                0.06 + 0.0025 = 0.0625
-                $
+                $0.06 + 0.0025 = 0.0625$
               </Math>
               .
             </VerticalChunk>
@@ -2918,9 +2492,7 @@ const Article = () => {
             {" "}
             Compute{" "}
             <Math>
-              $
-              100/16
-              $
+              $100/16$
             </Math>
             {" "}by hand.
           </VerticalChunk>
@@ -2934,9 +2506,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;1 \over 16&#125; = &#123;1 \over 2\cdot 2\cdot 2\cdot 2&#125; = 2^&#123;-4&#125; = 0.0625
-              $$
+              $$\Large &#123;1 \over 16&#125; = &#123;1 \over 2\cdot 2\cdot 2\cdot 2&#125; = 2^&#123;-4&#125; = 0.0625$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2946,32 +2516,24 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;100 \over 16&#125; = 100 \cdot &#123;1 \over 16&#125; = 100\cdot 0.0625 = 6.25
-              $$
+              $$\Large &#123;100 \over 16&#125; = 100 \cdot &#123;1 \over 16&#125; = 100\cdot 0.0625 = 6.25$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               and that's all there is to it! (Or you could repeatedly divide{" "}
               <Math>
-                $
-                100
-                $
+                $100$
               </Math>
               {" "}by{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               ,
               until you reach{" "}
               <NoBreak>
                 <Math>
-                  $
-                  6.25
-                  $
+                  $6.25$
                 </Math>
                 ,
               </NoBreak>
@@ -3004,9 +2566,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 10^4 \times 10^4 = 10^8
-              $$
+              $$\Large 10^4 \times 10^4 = 10^8$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3017,9 +2577,7 @@ const Article = () => {
               </i>
               {" "}since{" "}
               <Math>
-                $
-                10^8 = 10^2 \times 10^6
-                $
+                $10^8 = 10^2 \times 10^6$
               </Math>
               {" "}is a hundred times a 
               million. Similarly, “万万万” is{" "}
@@ -3027,9 +2585,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 10^4 \times 10^4 \times 10^4 = 10^&#123;12&#125;
-              $$
+              $$\Large 10^4 \times 10^4 \times 10^4 = 10^&#123;12&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3116,9 +2672,7 @@ const Article = () => {
             <VerticalChunk>
               There are{" "}
               <Math>
-                $
-                10^3
-                $
+                $10^3$
               </Math>
               {" "}millimeters in a meter 
               (
@@ -3127,17 +2681,13 @@ const Article = () => {
               </i>
               {" "}= thousandth) and{" "}
               <Math>
-                $
-                10^3
-                $
+                $10^3$
               </Math>
               {" "}meters
               in a kilometer, so there are 
               {" "}
               <Math>
-                $
-                10^3 \times 10^3 = 10^6
-                $
+                $10^3 \times 10^3 = 10^6$
               </Math>
               {" "}
               millimeters in a kilometer.
@@ -3147,9 +2697,7 @@ const Article = () => {
               From there, it automatically follows that
               there are{" "}
               <Math>
-                $
-                1/10^6 = 10^&#123;-6&#125;
-                $
+                $1/10^6 = 10^&#123;-6&#125;$
               </Math>
               {" "}kilometers in
               a millimeter.
@@ -3159,23 +2707,17 @@ const Article = () => {
               (Or you can run the reverse reasoning: 
               There are{" "}
               <Math>
-                $
-                10^&#123;-3&#125;
-                $
+                $10^&#123;-3&#125;$
               </Math>
               {" "}kilometers in a meter, 
               and{" "}
               <Math>
-                $
-                10^&#123;-3&#125;
-                $
+                $10^&#123;-3&#125;$
               </Math>
               {" "}meters in a millimeter, 
               so{" "}
               <Math>
-                $
-                10^&#123;-3&#125; \times 10^&#123;-3&#125; = 10^&#123;-6&#125;
-                $
+                $10^&#123;-3&#125; \times 10^&#123;-3&#125; = 10^&#123;-6&#125;$
               </Math>
               {" "}
               kilometers in a millimeter.)
@@ -3192,9 +2734,7 @@ const Article = () => {
             {" "}
             How many kilometers is{" "}
             <Math>
-              $
-              10^&#123;24&#125;
-              $
+              $10^&#123;24&#125;$
             </Math>
             {" "}millimeters?
           </VerticalChunk>
@@ -3208,9 +2748,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1\textrm&#123;mm&#125; = 10^&#123;-6&#125;\textrm&#123;km&#125;
-              $$
+              $$\Large 1\textrm&#123;mm&#125; = 10^&#123;-6&#125;\textrm&#123;km&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3220,9 +2758,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 10^&#123;24&#125; \textrm&#123;mm&#125; = 10^&#123;24&#125;\cdot 10^&#123;-6&#125;\textrm&#123;km&#125; = 10^&#123;18&#125;\textrm&#123;km&#125;
-              $$
+              $$\Large 10^&#123;24&#125; \textrm&#123;mm&#125; = 10^&#123;24&#125;\cdot 10^&#123;-6&#125;\textrm&#123;km&#125; = 10^&#123;18&#125;\textrm&#123;km&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3230,9 +2766,7 @@ const Article = () => {
               by direct substitution. (You can do that with
               units.) The answer is therefore:{" "}
               <Math>
-                $
-                10^&#123;18&#125;
-                $
+                $10^&#123;18&#125;$
               </Math>
               .
             </VerticalChunk>
@@ -3248,9 +2782,7 @@ const Article = () => {
             {" "}
             If the US yearly budget is{" "}
             <Math>
-              $
-              4
-              $
+              $4$
             </Math>
             {" "}trillion
             dollars, what percentage of the budget is
@@ -3263,30 +2795,22 @@ const Article = () => {
             <VerticalChunk>
               One hundred billion is{" "}
               <Math>
-                $
-                10\%
-                $
+                $10\%$
               </Math>
               {" "}of one trillion [cf.: 
               {" "}
               <Math>
-                $
-                10^2 \times 10^9 = &#123;1 \over 10&#125;\times 10^&#123;12&#125;
-                $
+                $10^2 \times 10^9 = &#123;1 \over 10&#125;\times 10^&#123;12&#125;$
               </Math>
               ]
               and one trillion is a quarter of{" "}
               <Math>
-                $
-                4
-                $
+                $4$
               </Math>
               {" "}
               trillion, so the answer is{" "}
               <Math>
-                $
-                &#123;1\over 4&#125;\cdot 10\% = 2.5\%
-                $
+                $&#123;1\over 4&#125;\cdot 10\% = 2.5\%$
               </Math>
               .
             </VerticalChunk>
@@ -3319,9 +2843,7 @@ const Article = () => {
             {" "}
             What is the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of one trillion?
           </VerticalChunk>
@@ -3333,17 +2855,13 @@ const Article = () => {
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  12
-                  $
+                  $12$
                 </Math>
                 ,
               </NoBreak>
               {" "}because one trillion is{" "}
               <Math>
-                $
-                10^&#123;12&#125;
-                $
+                $10^&#123;12&#125;$
               </Math>
               .
             </VerticalChunk>
@@ -3359,15 +2877,11 @@ const Article = () => {
             {" "}
             What is the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of{" "}
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             ?
           </VerticalChunk>
@@ -3379,17 +2893,13 @@ const Article = () => {
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}because{" "}
               <Math>
-                $
-                1 = 10^0
-                $
+                $1 = 10^0$
               </Math>
               .
             </VerticalChunk>
@@ -3405,9 +2915,7 @@ const Article = () => {
             {" "}
             What is the logarithm base{" "}
             <Math>
-              $
-              10
-              $
+              $10$
             </Math>
             {" "}of:{" "}
             <i>
@@ -3425,10 +2933,8 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              %\Large 10^&#123;12&#125;\times 10^&#123;9&#125;\times 10^&#123;6&#125;\times 10^3 = 10^&#123;12+9+6+3&#125; = 10^&#123;30&#125;
-              \Large 10^&#123;12&#125;\times 10^&#123;9&#125;\times 10^&#123;6&#125;\times 10^3 = 10^&#123;12+9+6+3&#125;
-              $$
+              $$%\Large 10^&#123;12&#125;\times 10^&#123;9&#125;\times 10^&#123;6&#125;\times 10^3 = 10^&#123;12+9+6+3&#125; = 10^&#123;30&#125;
+              \Large 10^&#123;12&#125;\times 10^&#123;9&#125;\times 10^&#123;6&#125;\times 10^3 = 10^&#123;12+9+6+3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3436,18 +2942,14 @@ const Article = () => {
               the answer is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  12+9+6+3
-                  $
+                  $12+9+6+3$
                 </Math>
                 ,
               </NoBreak>
               {" "}i.e.,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  30
-                  $
+                  $30$
                 </Math>
                 .
               </NoBreak>
@@ -3468,9 +2970,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large &#123;10^6 \cdot 10^&#123;-12&#125; \cdot 10^&#123;10&#125; \over 10^&#123;-4&#125;\cdot 10^&#123;-4&#125;&#125; 
-            $$
+            $$\Large &#123;10^6 \cdot 10^&#123;-12&#125; \cdot 10^&#123;10&#125; \over 10^&#123;-4&#125;\cdot 10^&#123;-4&#125;&#125; $$
           </MathBlock>
           <div
                class="spacer" />
@@ -3482,9 +2982,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;10^6 \cdot 10^&#123;-12&#125; \cdot 10^&#123;10&#125; \over 10^&#123;-4&#125;\cdot 10^&#123;-4&#125;&#125; = &#123;10^&#123;6-12+10&#125; \over 10^&#123;-4 -4&#125;&#125; = &#123;10^4 \over 10^&#123;-8&#125;&#125;
-              $$
+              $$\Large &#123;10^6 \cdot 10^&#123;-12&#125; \cdot 10^&#123;10&#125; \over 10^&#123;-4&#125;\cdot 10^&#123;-4&#125;&#125; = &#123;10^&#123;6-12+10&#125; \over 10^&#123;-4 -4&#125;&#125; = &#123;10^4 \over 10^&#123;-8&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3494,9 +2992,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;10^4 \over 10^&#123;-8&#125;&#125; = 10^4 \cdot &#123;1 \over 10^&#123;-8&#125;&#125; = 10^4\cdot 10^&#123;-(-8)&#125;
-              $$
+              $$\Large &#123;10^4 \over 10^&#123;-8&#125;&#125; = 10^4 \cdot &#123;1 \over 10^&#123;-8&#125;&#125; = 10^4\cdot 10^&#123;-(-8)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3506,18 +3002,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 10^4\cdot 10^&#123;-(-8)&#125; = 10^4\cdot 10^8 = 10^&#123;4 + 8&#125; = 10^&#123;12&#125;
-              $$
+              $$\Large 10^4\cdot 10^&#123;-(-8)&#125; = 10^4\cdot 10^8 = 10^&#123;4 + 8&#125; = 10^&#123;12&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               so the answer is{" "}
               <Math>
-                $
-                10^&#123;12&#125;
-                $
+                $10^&#123;12&#125;$
               </Math>
               .
             </VerticalChunk>
@@ -3548,9 +3040,7 @@ const Article = () => {
             <VerticalChunk>
               Presumably, there are{" "}
               <Math>
-                $
-                1000
-                $
+                $1000$
               </Math>
               {" "}“millibits”
               (whatever those are, we can go along with
@@ -3562,18 +3052,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1000 \times 8 \times 10^6 = 8 \times 10^9
-              $$
+              $$\Large 1000 \times 8 \times 10^6 = 8 \times 10^9$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               or{" "}
               <Math>
-                $
-                8
-                $
+                $8$
               </Math>
               {" "}billion “millibits” per gigabyte.
               (But to reiterate, there is no such thing 
@@ -3599,9 +3085,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 6.25
-            $$
+            $$\Large 6.25$$
           </MathBlock>
           <div
                class="spacer" />
@@ -3610,9 +3094,7 @@ const Article = () => {
             (i.e., the value of{" "}
             <NoBreak>
               <Math>
-                $
-                100/16
-                $
+                $100/16$
               </Math>
               )
             </NoBreak>
@@ -3620,9 +3102,7 @@ const Article = () => {
             famous for being equal to{" "}
             <NoBreak>
               <Math>
-                $
-                2.5^2
-                $
+                $2.5^2$
               </Math>
               .
             </NoBreak>
@@ -3632,9 +3112,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large 25^2 = 625
-            $$
+            $$\Large 25^2 = 625$$
           </MathBlock>
           <div
                class="spacer" />
@@ -3643,9 +3121,7 @@ const Article = () => {
             finds{" "}
             <NoBreak>
               <Math>
-                $
-                2.5^2 = 6.25
-                $
+                $2.5^2 = 6.25$
               </Math>
               .)
             </NoBreak>
@@ -3655,9 +3131,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large &#123;100 \over 16&#125; = 2.5^2
-            $$
+            $$\Large &#123;100 \over 16&#125; = 2.5^2$$
           </MathBlock>
           <div
                class="spacer" />
@@ -3674,9 +3148,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;100 \over 16&#125; = &#123;10^2 \over 4^2&#125; = \left(\!&#123;10\over 4&#125;\!\right)^&#123;\!\!2&#125; = \left(\!&#123;5\over 2&#125;\!\right)^&#123;\!\!2&#125;
-              $$
+              $$\Large &#123;100 \over 16&#125; = &#123;10^2 \over 4^2&#125; = \left(\!&#123;10\over 4&#125;\!\right)^&#123;\!\!2&#125; = \left(\!&#123;5\over 2&#125;\!\right)^&#123;\!\!2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3684,9 +3156,7 @@ const Article = () => {
               and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  5/2 = 2.5
-                  $
+                  $5/2 = 2.5$
                 </Math>
                 .
               </NoBreak>
@@ -3707,25 +3177,19 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large &#123;10^n \over \vphantom&#123;10^&#123;A^n&#125;&#125;10^m&#125; = 10^&#123;n-m&#125;
-            $$
+            $$\Large &#123;10^n \over \vphantom&#123;10^&#123;A^n&#125;&#125;10^m&#125; = 10^&#123;n-m&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             for all integers{" "}
             <Math>
-              $
-              n
-              $
+              $n$
             </Math>
             {" "}and{" "}
             <NoBreak>
               <Math>
-                $
-                m
-                $
+                $m$
               </Math>
               .
             </NoBreak>
@@ -3759,9 +3223,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;1 \over 10^m&#125; = 10^&#123;-m&#125;
-              $$
+              $$\Large &#123;1 \over 10^m&#125; = 10^&#123;-m&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3800,9 +3262,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \left(&#123;a\over b&#125;\right)^&#123;\!-1&#125; = &#123;1 \over \left( &#123;a \over b&#125;\right)&#125; 
-              $$
+              $$\Large \left(&#123;a\over b&#125;\right)^&#123;\!-1&#125; = &#123;1 \over \left( &#123;a \over b&#125;\right)&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3812,9 +3272,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;1 \over \left( &#123;a \over b&#125;\right)&#125; = &#123;b \over a&#125;
-              $$
+              $$\Large &#123;1 \over \left( &#123;a \over b&#125;\right)&#125; = &#123;b \over a&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3822,9 +3280,7 @@ const Article = () => {
               for all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a, b \ne 0
-                  $
+                  $a, b \ne 0$
                 </Math>
                 ,
               </NoBreak>
@@ -3845,23 +3301,17 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large &#123;L \over T&#125;
-            $$
+            $$\Large &#123;L \over T&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large &#123;M (L/T) \over T&#125;
-            $$
+            $$\Large &#123;M (L/T) \over T&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large \left.&#123;ML \over T^2 &#125; \right/ \left(&#123;L^2&#125; &#123;(L/T) \over L&#125;\right) 
-            $$
+            $$\Large \left.&#123;ML \over T^2 &#125; \right/ \left(&#123;L^2&#125; &#123;(L/T) \over L&#125;\right) $$
           </MathBlock>
           <div
                class="spacer" />
@@ -3871,9 +3321,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large M^aL^bT^c
-            $$
+            $$\Large M^aL^bT^c$$
           </MathBlock>
           <div
                class="spacer" />
@@ -3881,26 +3329,20 @@ const Article = () => {
             ...for some integer exponents{" "}
             <NoBreak>
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                b
-                $
+                $b$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              c
-              $
+              $c$
             </Math>
             .
           </VerticalChunk>
@@ -3914,9 +3356,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;L \over T&#125; = LT^&#123;-1&#125; = M^0L^1T^&#123;-1&#125;
-              $$
+              $$\Large &#123;L \over T&#125; = LT^&#123;-1&#125; = M^0L^1T^&#123;-1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3926,9 +3366,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;L \over T&#125; = L\cdot &#123;1\over T&#125; = LT^&#123;-1&#125;
-              $$
+              $$\Large &#123;L \over T&#125; = L\cdot &#123;1\over T&#125; = LT^&#123;-1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3938,9 +3376,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;M (L/T) \over T&#125; = MLT^&#123;-2&#125; = M^1L^1T^&#123;-2&#125;
-              $$
+              $$\Large &#123;M (L/T) \over T&#125; = MLT^&#123;-2&#125; = M^1L^1T^&#123;-2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3950,9 +3386,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large &#123;L/T \over T&#125; = &#123;L\over T&#125;\cdot&#123;1 \over T&#125; = &#123;L \over T^2&#125; = LT^&#123;-2&#125;
-              $$
+              $$\Large &#123;L/T \over T&#125; = &#123;L\over T&#125;\cdot&#123;1 \over T&#125; = &#123;L \over T^2&#125; = LT^&#123;-2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3962,9 +3396,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \left.&#123;ML \over T^2 &#125; \right/ \left(&#123;L^2&#125; &#123;(L/T) \over L&#125;\right) = ML^&#123;-1&#125;T^&#123;-1&#125; = M^1L^&#123;-1&#125;T^&#123;-1&#125;
-              $$
+              $$\Large \left.&#123;ML \over T^2 &#125; \right/ \left(&#123;L^2&#125; &#123;(L/T) \over L&#125;\right) = ML^&#123;-1&#125;T^&#123;-1&#125; = M^1L^&#123;-1&#125;T^&#123;-1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3974,9 +3406,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large L^2&#123;L/T\over L&#125; = L^2&#123;1/T \over 1&#125; = &#123;L^2\over T&#125;
-              $$
+              $$\Large L^2&#123;L/T\over L&#125; = L^2&#123;1/T \over 1&#125; = &#123;L^2\over T&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3986,9 +3416,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \left.&#123;ML \over T^2 &#125; \right/ &#123;L^2\over T&#125; = &#123;ML\over T^2&#125;\cdot &#123;T\over L^2&#125; = &#123;M \over TL&#125; = MT^&#123;-1&#125;L^&#123;-1&#125;
-              $$
+              $$\Large \left.&#123;ML \over T^2 &#125; \right/ &#123;L^2\over T&#125; = &#123;ML\over T^2&#125;\cdot &#123;T\over L^2&#125; = &#123;M \over TL&#125; = MT^&#123;-1&#125;L^&#123;-1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3996,17 +3424,13 @@ const Article = () => {
               given that{" "}
               <NoBreak>
                 <Math>
-                  $
-                  &#123;1\over T&#125; = T^&#123;-1&#125;
-                  $
+                  $&#123;1\over T&#125; = T^&#123;-1&#125;$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                &#123;1\over L&#125;=L^&#123;-1&#125;
-                $
+                $&#123;1\over L&#125;=L^&#123;-1&#125;$
               </Math>
               .
             </VerticalChunk>
@@ -4023,32 +3447,24 @@ const Article = () => {
             Find integers{" "}
             <NoBreak>
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              b
-              $
+              $b$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              c
-              $
+              $c$
             </Math>
             {" "}such that
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large v^aF^b\mu^c\rho = 1
-            $$
+            $$\Large v^aF^b\mu^c\rho = 1$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4056,62 +3472,46 @@ const Article = () => {
             where{" "}
             <NoBreak>
               <Math>
-                $
-                v
-                $
+                $v$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                F
-                $
+                $F$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              \mu
-              $
+              $\mu$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              \rho
-              $
+              $\rho$
             </Math>
             {" "}are defined as below.
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large v = &#123;L \over T&#125;
-            $$
+            $$\Large v = &#123;L \over T&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large F = &#123;ML \over T^2&#125;
-            $$
+            $$\Large F = &#123;ML \over T^2&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large \mu = &#123;M \over TL &#125;
-            $$
+            $$\Large \mu = &#123;M \over TL &#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \Large \rho = &#123;M \over L^3&#125;
-            $$
+            $$\Large \rho = &#123;M \over L^3&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4121,67 +3521,51 @@ const Article = () => {
               Firstly we can rewrite{" "}
               <NoBreak>
                 <Math>
-                  $
-                  v
-                  $
+                  $v$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  F
-                  $
+                  $F$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \mu
-                  $
+                  $\mu$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                \rho
-                $
+                $\rho$
               </Math>
               {" "}
               in the canonical form{" "}
               <Math>
-                $
-                M^xL^yT^z
-                $
+                $M^xL^yT^z$
               </Math>
               {" "}
               for integers{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                z
-                $
+                $z$
               </Math>
               {" "}(as in the previous
               exercise):
@@ -4189,30 +3573,22 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large v = LT^&#123;-1&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large v = LT^&#123;-1&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large F = MLT^&#123;-2&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large F = MLT^&#123;-2&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \mu = MT^&#123;-1&#125;L^&#123;-1&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large \mu = MT^&#123;-1&#125;L^&#123;-1&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \rho = ML^&#123;-3&#125;
-              $$
+              $$\Large \rho = ML^&#123;-3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4220,35 +3596,27 @@ const Article = () => {
               (Ok.) Nextly, we compute{" "}
               <NoBreak>
                 <Math>
-                  $
-                  v^a
-                  $
+                  $v^a$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  F^b
-                  $
+                  $F^b$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                \mu^c
-                $
+                $\mu^c$
               </Math>
               {" "}
               by applying the fourth law of exponents (note e.g.
               that{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (T^&#123;-1&#125;)^a = T^&#123;(-1)a&#125; = T^&#123;-a&#125;
-                  $
+                  $(T^&#123;-1&#125;)^a = T^&#123;(-1)a&#125; = T^&#123;-a&#125;$
                 </Math>
                 ,
               </NoBreak>
@@ -4257,55 +3625,41 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large v^a = L^aT^&#123;-a&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large v^a = L^aT^&#123;-a&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large F^b = M^&#123;b&#125;L^bT^&#123;-2b&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large F^b = M^&#123;b&#125;L^bT^&#123;-2b&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \mu^c = M^cT^&#123;-c&#125;L^&#123;-c&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;
-              $$
+              $$\Large \mu^c = M^cT^&#123;-c&#125;L^&#123;-c&#125; \vphantom&#123;\rho = ML^&#123;-3&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large \rho = ML^&#123;-3&#125;
-              $$
+              $$\Large \rho = ML^&#123;-3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               (In the last line we just restated{" "}
               <Math>
-                $
-                \rho
-                $
+                $\rho$
               </Math>
               .)
               Then{" "}
               <Math>
-                $
-                v^aF^b\mu^c\rho
-                $
+                $v^aF^b\mu^c\rho$
               </Math>
               {" "}becomes
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large M^&#123;b+c+1&#125;L^&#123;a+b-c-3&#125;T^&#123;-a-2b-c&#125;
-              $$
+              $$\Large M^&#123;b+c+1&#125;L^&#123;a+b-c-3&#125;T^&#123;-a-2b-c&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4313,9 +3667,7 @@ const Article = () => {
               by multiplying everything together and using
               additivity of exponents. (E.g.,{" "}
               <Math>
-                $
-                M^bM^cM = M^&#123;b+c+1&#125;
-                $
+                $M^bM^cM = M^&#123;b+c+1&#125;$
               </Math>
               ,
               and so on.) This expression equals{" "}
@@ -4323,9 +3675,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large 1
-              $$
+              $$\Large 1$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4334,26 +3684,20 @@ const Article = () => {
               independently of the values of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  M
-                  $
+                  $M$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  L
-                  $
+                  $L$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                T
-                $
+                $T$
               </Math>
               {" "}
               if and only if...
@@ -4370,46 +3714,34 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                b
-                $
+                $b$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}such that these three equations...
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large b + c + 1 = 0
-              $$
+              $$\Large b + c + 1 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large a + b - c - 3 = 0
-              $$
+              $$\Large a + b - c - 3 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large -a -2b - c = 0
-              $$
+              $$\Large -a -2b - c = 0$$
               <ImageRight
                    offset_y="1em"
                    src="/images/svg_add_equations_cloud.svg" />
@@ -4423,9 +3755,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large -b -2c -3 = 0
-              $$
+              $$\Large -b -2c -3 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4436,9 +3766,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large -c -2 = 0
-              $$
+              $$\Large -c -2 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4446,27 +3774,21 @@ const Article = () => {
               which implies that{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -c = 2
-                  $
+                  $-c = 2$
                 </Math>
                 ,
               </NoBreak>
               {" "}i.e., that{" "}
               <NoBreak>
                 <Math>
-                  $
-                  c = -2
-                  $
+                  $c = -2$
                 </Math>
                 .
               </NoBreak>
               {" "}
               Plugging{" "}
               <Math>
-                $
-                c = -2
-                $
+                $c = -2$
               </Math>
               {" "}into the first of our three
               equations, we find
@@ -4474,9 +3796,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large b + (-2) + 1 = 0
-              $$
+              $$\Large b + (-2) + 1 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4486,9 +3806,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large b - 1 = 0
-              $$
+              $$\Large b - 1 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4496,9 +3814,7 @@ const Article = () => {
               which implies that{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b = 1
-                  $
+                  $b = 1$
                 </Math>
                 .
               </NoBreak>
@@ -4506,17 +3822,13 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  b = 1
-                  $
+                  $b = 1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                c = -2
-                $
+                $c = -2$
               </Math>
               {" "}in our second equation above
               gives us{" "}
@@ -4524,58 +3836,44 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large a + 1 - (-2) - 3 = 0
-              $$
+              $$\Large a + 1 - (-2) - 3 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               which implies that{" "}
               <Math>
-                $
-                a = 0
-                $
+                $a = 0$
               </Math>
               {" "}since{" "}
               <Math>
-                $
-                1-(-2)-3 = 0
-                $
+                $1-(-2)-3 = 0$
               </Math>
               .
               (One can finally check that 
               setting{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a=0
-                  $
+                  $a=0$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b = 1
-                  $
+                  $b = 1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                c=-2
-                $
+                $c=-2$
               </Math>
               {" "}satisfies that
               third equation,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -a-2b-c=0
-                  $
+                  $-a-2b-c=0$
                 </Math>
                 ,
               </NoBreak>
@@ -4586,25 +3884,19 @@ const Article = () => {
               In summary, the solution is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a = 0
-                  $
+                  $a = 0$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                b = 1
-                $
+                $b = 1$
               </Math>
               ,
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  c = -2
-                  $
+                  $c = -2$
                 </Math>
                 ;
               </NoBreak>
@@ -4613,9 +3905,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large v^0 F^1 \mu^&#123;-2&#125; \rho = 1
-              $$
+              $$\Large v^0 F^1 \mu^&#123;-2&#125; \rho = 1$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4623,34 +3913,26 @@ const Article = () => {
               under the given definitions of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  v
-                  $
+                  $v$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  F
-                  $
+                  $F$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                \mu
-                $
+                $\mu$
               </Math>
               {" "}
               and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \rho
-                  $
+                  $\rho$
                 </Math>
                 ,
               </NoBreak>
@@ -4660,9 +3942,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Large F\mu^&#123;-2&#125;\rho = 1
-              $$
+              $$\Large F\mu^&#123;-2&#125;\rho = 1$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4670,17 +3950,13 @@ const Article = () => {
               (since{" "}
               <NoBreak>
                 <Math>
-                  $
-                  v^0 = 1
-                  $
+                  $v^0 = 1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                F^1 = F
-                $
+                $F^1 = F$
               </Math>
               ).
             </VerticalChunk>

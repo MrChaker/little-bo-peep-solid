@@ -18,8 +18,7 @@ const Article = () => {
     <Chapter
          number={2}
          title="Slopes">
-      <Section
-           type="intro">
+      <Section>
         <VerticalChunk>
           {" "}{" "}
           <b>
@@ -55,9 +54,7 @@ const Article = () => {
           ...assuming that numbers on the{" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -axis
           </NoBreak>
@@ -65,9 +62,7 @@ const Article = () => {
           going up and that numbers on the{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -axis
           </NoBreak>
@@ -91,9 +86,7 @@ const Article = () => {
           For example, the line below has slope 1, because
           it goes up by{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}unit for each unit to the right:
         </VerticalChunk>
@@ -109,9 +102,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              -0.5
-              $
+              $-0.5$
             </Math>
             ,
           </NoBreak>
@@ -121,9 +112,7 @@ const Article = () => {
           </i>
           {" "}{" "}
           <Math>
-            $
-            0.5
-            $
+            $0.5$
           </Math>
           {" "}units
           with each unit to the right:
@@ -153,17 +142,13 @@ const Article = () => {
           distinct points{" "}
           <NoBreak>
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           {" "}on the line:
         </VerticalChunk>
@@ -175,9 +160,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           \te&#123;slope&#125; = &#123;\te&#123;vertical change from A to B&#125; \over \te&#123;horizontal change from A to B&#125;&#125; 
-          $$
+          $$ \te&#123;slope&#125; = &#123;\te&#123;vertical change from A to B&#125; \over \te&#123;horizontal change from A to B&#125;&#125; $$
         </MathBlock>
         <div
              class="spacer" />
@@ -193,9 +176,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           A = (x_1, y_1) 
-          $$
+          $$ A = (x_1, y_1) $$
         </MathBlock>
         <div
              class="spacer" />
@@ -205,9 +186,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           B = (x_2, y_2) 
-          $$
+          $$ B = (x_2, y_2) $$
         </MathBlock>
         <div
              class="spacer" />
@@ -217,9 +196,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           x_2 - x_1 
-          $$
+          $$ x_2 - x_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -229,9 +206,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           y_2 - y_1 
-          $$
+          $$ y_2 - y_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -243,16 +218,12 @@ const Article = () => {
           {" "}the vertical change,
           respectively, from{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             ,
           </NoBreak>
@@ -261,9 +232,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
-          $$
+          $$\te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;$$
           <ImageRight
                offset_y="-1rem"
                src="/images/32.svg" />
@@ -291,9 +260,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            A = (-2, 5)
-            $$
+            $$A = (-2, 5)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -303,9 +270,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            B = (4, 1)
-            $$
+            $$B = (4, 1)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -315,9 +280,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            &#123;1 - 5 \over 4 - (-2)&#125; = &#123;-4 \over 6&#125; = - &#123;2 \over 3&#125;.
-            $$
+            $$&#123;1 - 5 \over 4 - (-2)&#125; = &#123;-4 \over 6&#125; = - &#123;2 \over 3&#125;.$$
           </MathBlock>
         </Example>
         <div
@@ -330,25 +293,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           1 - 5 
-          $$
+          $$ 1 - 5 $$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is the vertical change from{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             ,
           </NoBreak>
@@ -357,24 +314,18 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           4 - (-2) 
-          $$
+          $$ 4 - (-2) $$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           is the horizontal change from{" "}
           <Math>
-            $
-            A
-            $
+            $A$
           </Math>
           {" "}to{" "}
           <Math>
-            $
-            B
-            $
+            $B$
           </Math>
           .)
         </VerticalChunk>
@@ -393,9 +344,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           x_2 - x_1 
-          $$
+          $$ x_2 - x_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -405,9 +354,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           y_2 - y_1 
-          $$
+          $$ y_2 - y_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -432,9 +379,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           x_2 - x_1 
-          $$
+          $$ x_2 - x_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -444,9 +389,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           y_2 - y_1 
-          $$
+          $$ y_2 - y_1 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -465,9 +408,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  x_2 - x_1
-                  $
+                  $x_2 - x_1$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -476,9 +417,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  y_2 - y_1
-                  $
+                  $y_2 - y_1$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -491,9 +430,7 @@ const Article = () => {
             </td>
             <td>
               <MathBlock>
-                $$
-                &#123;y_2-y_1 \over x_2-x_1&#125;
-                $$
+                $$&#123;y_2-y_1 \over x_2-x_1&#125;$$
               </MathBlock>
             </td>
           </tr>
@@ -502,9 +439,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  +
-                  $
+                  $+$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -513,9 +448,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  +
-                  $
+                  $+$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -528,9 +461,7 @@ const Article = () => {
             </td>
             <td>
               <MathBlock>
-                $$
-                &#123;+ \over +&#125; = \,+
-                $$
+                $$&#123;+ \over +&#125; = \,+$$
               </MathBlock>
             </td>
           </tr>
@@ -539,9 +470,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  -
-                  $
+                  $-$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -550,9 +479,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  -
-                  $
+                  $-$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -565,9 +492,7 @@ const Article = () => {
             </td>
             <td>
               <MathBlock>
-                $$
-                &#123;- \over -&#125; = \,+
-                $$
+                $$&#123;- \over -&#125; = \,+$$
               </MathBlock>
             </td>
           </tr>
@@ -576,9 +501,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  +
-                  $
+                  $+$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -587,9 +510,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  -
-                  $
+                  $-$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -602,9 +523,7 @@ const Article = () => {
             </td>
             <td>
               <MathBlock>
-                $$
-                &#123;- \over +&#125; = \,-
-                $$
+                $$&#123;- \over +&#125; = \,-$$
               </MathBlock>
             </td>
           </tr>
@@ -613,9 +532,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  -
-                  $
+                  $-$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -624,9 +541,7 @@ const Article = () => {
               <VerticalChunk>
                 {" "}{" "}
                 <Math>
-                  $
-                  +
-                  $
+                  $+$
                 </Math>
                 {" "}{" "}
               </VerticalChunk>
@@ -639,9 +554,7 @@ const Article = () => {
             </td>
             <td>
               <MathBlock>
-                $$
-                \frac&#123;+&#125;&#123;-&#125; = \,-
-                $$
+                $$\frac&#123;+&#125;&#123;-&#125; = \,-$$
               </MathBlock>
             </td>
           </tr>
@@ -657,15 +570,11 @@ const Article = () => {
           verify that the slope formula gives the same
           answer if{" "}
           <Math>
-            $
-            (x_1, y_1)
-            $
+            $(x_1, y_1)$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            (x_2, y_2)
-            $
+            $(x_2, y_2)$
           </Math>
           {" "}swap
           places, or, namely, to show that the fractions
@@ -676,9 +585,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; 
-          $$
+          $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
         <div
              class="spacer" />
@@ -688,9 +595,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125; 
-          $$
+          $$ &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125; $$
           <ImageLeft
                offset_y="-3.5rem"
                src="/images/39.svg" />
@@ -703,9 +608,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; 
-          $$
+          $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
         <div
              class="spacer" />
@@ -728,9 +631,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           x_2 - x_1 = 0 
-          $$
+          $$ x_2 - x_1 = 0 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -757,9 +658,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           x_2 - x_1 = 0 
-          $$
+          $$ x_2 - x_1 = 0 $$
         </MathBlock>
         <div
              class="spacer" />
@@ -767,15 +666,11 @@ const Article = () => {
           can also occur another way, namely if the points
           {" "}
           <Math>
-            $
-            (x_1, y_1)
-            $
+            $(x_1, y_1)$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            (x_2, y_2)
-            $
+            $(x_2, y_2)$
           </Math>
           {" "}coincide. In that
           case, more precisely, the slope formula evaluates
@@ -784,9 +679,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-           \frac&#123;y_2 - y_1&#125;&#123;x_2 - x_1&#125; = \frac&#123;0&#125;&#123;0&#125; 
-          $$
+          $$ \frac&#123;y_2 - y_1&#125;&#123;x_2 - x_1&#125; = \frac&#123;0&#125;&#123;0&#125; $$
         </MathBlock>
         <div
              class="spacer" />
@@ -794,9 +687,7 @@ const Article = () => {
           which could be anything. (Technically, “
           <NoBreak>
             <Math>
-              $
-              0/0
-              $
+              $0/0$
             </Math>
             ”
           </NoBreak>
@@ -817,9 +708,7 @@ const Article = () => {
           Some people remember the slope formula as “slope
           equals rise over run” (i.e., “
           <Math>
-            $
-            \te&#123;slope&#125; =
-            $
+            $\te&#123;slope&#125; =$
           </Math>
           {" "}{" "}
           <InlineImage
@@ -843,9 +732,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at arrival&#125;&#125;\right)\,\, - \,\,\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at start&#125;&#125;\right)
-          $$
+          $$\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at arrival&#125;&#125;\right)\,\, - \,\,\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at start&#125;&#125;\right)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -854,17 +741,13 @@ const Article = () => {
           differences “
           <NoBreak>
             <Math>
-              $
-              x_2 - x_1\!
-              $
+              $x_2 - x_1\!$
             </Math>
             ”,
           </NoBreak>
           {" "}“
           <Math>
-            $
-            y_2 - y_1\!
-            $
+            $y_2 - y_1\!$
           </Math>
           ”
           that appear in the slope formula.
@@ -900,42 +783,32 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; = \frac&#123;\Delta y&#125;&#123;\Delta x&#125;
-          $$
+          $$\te&#123;slope&#125; = \frac&#123;\Delta y&#125;&#123;\Delta x&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           where the foreign-looking symbols{" "}
           <Math>
-            $
-            \Delta x
-            $
+            $\Delta x$
           </Math>
           ,
           {" "}
           <Math>
-            $
-            \Delta y
-            $
+            $\Delta y$
           </Math>
           {" "}can be thought of as shorthands for
           “
           <NoBreak>
             <Math>
-              $
-              x_2 - x_1
-              $
+              $x_2 - x_1$
             </Math>
             ”,
           </NoBreak>
           {" "}“
           <NoBreak>
             <Math>
-              $
-              y_2 - y_1
-              $
+              $y_2 - y_1$
             </Math>
             ”
           </NoBreak>
@@ -944,17 +817,13 @@ const Article = () => {
           phrases “change in{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             ”,
           </NoBreak>
           {" "}“change in{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           ”.)
         </VerticalChunk>
@@ -973,9 +842,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;
-          $$
+          $$\te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -985,9 +852,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;
-          $$
+          $$\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -998,9 +863,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;run&#125; = &#123;\te&#123;rise&#125; \over \te&#123;slope&#125;&#125;
-          $$
+          $$\te&#123;run&#125; = &#123;\te&#123;rise&#125; \over \te&#123;slope&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1031,24 +894,18 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = ax + b
-          $$
+          $$y = ax + b$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           where{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}are constants defines a line in
           the Cartesian plane. E.g.:
@@ -1064,9 +921,7 @@ const Article = () => {
           Note that, assuming said{" "}
           <NoBreak>
             <Math>
-              $
-              y = ax + b
-              $
+              $y = ax + b$
             </Math>
             ,
           </NoBreak>
@@ -1075,9 +930,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = a\cdot 0 + b = b
-          $$
+          $$y = a\cdot 0 + b = b$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1085,25 +938,19 @@ const Article = () => {
           at{" "}
           <NoBreak>
             <Math>
-              $
-              x = 0
-              $
+              $x = 0$
             </Math>
             ,
           </NoBreak>
           {" "}so{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}is the height of the line at
           {" "}
           <NoBreak>
             <Math>
-              $
-              x = 0
-              $
+              $x = 0$
             </Math>
             .
           </NoBreak>
@@ -1114,9 +961,7 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           -intercept
         </CentralDisplayItalic>
@@ -1125,25 +970,19 @@ const Article = () => {
         <VerticalChunk>
           of the line, because{" "}
           <Math>
-            $
-            x = 0
-            $
+            $x = 0$
           </Math>
           {" "}is where the line
           crosses the{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}axis. But the point
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (0, b)
-          $$
+          $$(0, b)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1155,9 +994,7 @@ const Article = () => {
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           -intercept
         </CentralDisplayItalic>
@@ -1167,26 +1004,20 @@ const Article = () => {
           of the line, so the term “
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -intercept”
           </NoBreak>
           {" "}might
           either refer to the value{" "}
           <Math>
-            $
-            b
-            $
+            $b$
           </Math>
           {" "}or to the point
           {" "}
           <NoBreak>
             <Math>
-              $
-              (0,b)
-              $
+              $(0,b)$
             </Math>
             ,
           </NoBreak>
@@ -1194,9 +1025,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              x = 1
-              $
+              $x = 1$
             </Math>
             ,
           </NoBreak>
@@ -1205,85 +1034,61 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = a\cdot 1 + b = a + b
-          $$
+          $$y = a\cdot 1 + b = a + b$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           so{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}increases by{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}between{" "}
           <Math>
-            $
-            x = 0
-            $
+            $x = 0$
           </Math>
           {" "}and
           {" "}
           <NoBreak>
             <Math>
-              $
-              x = 1
-              $
+              $x = 1$
             </Math>
             .
           </NoBreak>
           {" "}In fact,{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}increases by{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}each time
           {" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}increases by 1, so, by our own definition of
           slope—the increase in{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}per unit increase in
           {" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           —
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}is the slope of{" "}
           <Math>
-            $
-            y = ax + b
-            $
+            $y = ax + b$
           </Math>
           .
         </VerticalChunk>
@@ -1301,9 +1106,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            y = 100x - 3
-            $$
+            $$y = 100x - 3$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1319,26 +1122,20 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = ax + b
-          $$
+          $$y = ax + b$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           cannot describe a vertical line, because{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}is
           the slope, while a vertical line has no slope, so
           what would{" "}
           <Math>
-            $
-            a
-            $
+            $a$
           </Math>
           {" "}be equal to? Instead, a vertical
           line is described by an equation of the form
@@ -1346,9 +1143,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x = c
-          $$
+          $$x = c$$
           <ImageLeft
                use_squiggle_on_mobile={false}
                offset_x="4rem"
@@ -1360,9 +1155,7 @@ const Article = () => {
         <VerticalChunk>
           (see Fig. 1) where{" "}
           <Math>
-            $
-            c \in \rr
-            $
+            $c \in \rr$
           </Math>
           {" "}is a constant, 
           similarly to the more familiar equation
@@ -1370,18 +1163,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = b
-          $$
+          $$y = b$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           for a horizontal line, where{" "}
           <Math>
-            $
-            b \in \rr
-            $
+            $b \in \rr$
           </Math>
           {" "}is a
           constant.
@@ -1393,18 +1182,14 @@ const Article = () => {
           “
           <NoBreak>
             <Math>
-              $
-              y = ax + b
-              $
+              $y = ax + b$
             </Math>
             ”
           </NoBreak>
           {" "}or “
           <NoBreak>
             <Math>
-              $
-              x = c
-              $
+              $x = c$
             </Math>
             ”.
           </NoBreak>
@@ -1413,9 +1198,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x + y = 3
-          $$
+          $$x + y = 3$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1425,9 +1208,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          y = 3 - x
-          $$
+          $$y = 3 - x$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1435,24 +1216,18 @@ const Article = () => {
           and thus describes a line of{" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -intercept
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            3
-            $
+            $3$
           </Math>
           {" "}
           and slope{" "}
           <Math>
-            $
-            -1
-            $
+            $-1$
           </Math>
           .
           <ImageRight
@@ -1473,18 +1248,14 @@ const Article = () => {
           If the{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -
           </NoBreak>
           {" "}and{" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -axes
           </NoBreak>
@@ -1494,9 +1265,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125;
-          $$
+          $$&#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1504,15 +1273,11 @@ const Article = () => {
           as should make sense, given that the slope is a
           change in{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}divided by a change in{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           .
         </VerticalChunk>
@@ -1520,16 +1285,12 @@ const Article = () => {
              indent={true}>
           For example, if the units on the{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}axis are
           meters (“m”) and the units on the{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}axis are
           seconds (“s”) then the slope has units
@@ -1537,9 +1298,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125; = &#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;
-          $$
+          $$&#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125; = &#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1564,9 +1323,7 @@ const Article = () => {
         <VerticalChunk>
           The slope of the graph is{" "}
           <Math>
-            $
-            0.75
-            $
+            $0.75$
           </Math>
           {" "}{" "}
           <i>
@@ -1588,9 +1345,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; \left(\!= &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;\right) = &#123;3\te&#123;m&#125; \over 4\te&#123;s&#125;&#125; = 0.75\te&#123;m&#125;/\te&#123;s&#125;
-          $$
+          $$\te&#123;slope&#125; \left(\!= &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;\right) = &#123;3\te&#123;m&#125; \over 4\te&#123;s&#125;&#125; = 0.75\te&#123;m&#125;/\te&#123;s&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1629,29 +1384,21 @@ const Article = () => {
         <VerticalChunk>
           whenever the{" "}
           <Math>
-            $
-            y
-            $
+            $y$
           </Math>
           {" "}axis has dimensions of length and
           the{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}axis has dimensions of time—whether the
           slope turns out to be{" "}
           <Math>
-            $
-            \te&#123;m&#125;/\te&#123;s&#125;
-            $
+            $\te&#123;m&#125;/\te&#123;s&#125;$
           </Math>
           {" "}or{" "}
           <Math>
-            $
-            \te&#123;km&#125;/\te&#123;s&#125;
-            $
+            $\te&#123;km&#125;/\te&#123;s&#125;$
           </Math>
           {" "}
           or km/hour, etc, depends on the exact units involved.)
@@ -1672,9 +1419,7 @@ const Article = () => {
           common case when the{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -axis
           </NoBreak>
@@ -1684,9 +1429,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;
-          $$
+          $$\te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1696,10 +1439,8 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          “\rt&#123;0.1&#125;\te&#123;rate of change&#125; \,\,=\,\,
-          &#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125; \over \te&#123;amount of time&#125;&#125;\rt&#123;0.1&#125;”
-          $$
+          $$“\rt&#123;0.1&#125;\te&#123;rate of change&#125; \,\,=\,\,
+          &#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125; \over \te&#123;amount of time&#125;&#125;\rt&#123;0.1&#125;”$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1708,9 +1449,7 @@ const Article = () => {
           change on the{" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -axis”.
           </NoBreak>
@@ -1743,9 +1482,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            0.75\te&#123;m&#125;/\te&#123;s&#125; \times 5\te&#123;s&#125; = 3.75\te&#123;m&#125;
-            $$
+            $$0.75\te&#123;m&#125;/\te&#123;s&#125; \times 5\te&#123;s&#125; = 3.75\te&#123;m&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1755,13 +1492,11 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \begin&#123;array&#125;&#123;c&#125;
+            $$\begin&#123;array&#125;&#123;c&#125;
             \rt&#123;0.08&#125;
             (\te&#123;rate of change&#125;) \times \te&#123;(amount of time)&#125;\\
             = \te&#123;(amount of change)&#125;\rt&#123;0.05&#125;
-            \end&#123;array&#125;
-            $$
+            \end&#123;array&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1769,16 +1504,12 @@ const Article = () => {
             found in the second line of the table. (Indeed,
             {" "}
             <Math>
-              $
-              0.75
-              $
+              $0.75$
             </Math>
             m
             <NoBreak>
               <Math>
-                $
-                /
-                $
+                $/$
               </Math>
               s
             </NoBreak>
@@ -1799,9 +1530,7 @@ const Article = () => {
             for the balloon to go up by (say){" "}
             <NoBreak>
               <Math>
-                $
-                4
-                $
+                $4$
               </Math>
               m
             </NoBreak>
@@ -1810,9 +1539,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
-            $$
+            $$\frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;$$
             <ImageRight
                  style="width:930px"
                  offset_x="-6rem"
@@ -1826,11 +1553,9 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \te&#123;“&#125;\rt&#123;0.1&#125;
+            $$\te&#123;“&#125;\rt&#123;0.1&#125;
             \te&#123;amount of time&#125; \,\,=\,\, \frac&#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125;&#125;&#123;\te&#123;rate of change&#125;&#125;
-            \rt&#123;0.1&#125;\te&#123;”&#125;
-            $$
+            \rt&#123;0.1&#125;\te&#123;”&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1857,9 +1582,7 @@ const Article = () => {
           “the{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -axis
           </NoBreak>
@@ -1876,9 +1599,7 @@ const Article = () => {
           “the{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -axis
           </NoBreak>
@@ -1968,16 +1689,12 @@ const Article = () => {
             {" "}
             True or false: Lines of slope{" "}
             <Math>
-              $
-              -1 \over 2
-              $
+              $-1 \over 2$
             </Math>
             {" "}
             are perpendicular to lines of slope{" "}
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             .
           </VerticalChunk>
@@ -2012,9 +1729,7 @@ const Article = () => {
               In more detail, the two triangles are related
               by a{" "}
               <Math>
-                $
-                90^\circ
-                $
+                $90^\circ$
               </Math>
               {" "}rotation and so, likewise,
               are the lines defined by their hypotenuses!
@@ -2030,17 +1745,13 @@ const Article = () => {
               {" "}
               More generally, a line of slope{" "}
               <Math>
-                $
-                p
-                $
+                $p$
               </Math>
               {" "}is
               perpendicular to a line of slope{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -1/p
-                  $
+                  $-1/p$
                 </Math>
                 ,
               </NoBreak>
@@ -2048,9 +1759,7 @@ const Article = () => {
               all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  p \ne 0
-                  $
+                  $p \ne 0$
                 </Math>
                 .
               </NoBreak>
@@ -2080,18 +1789,14 @@ const Article = () => {
               (If the axes are oriented the usual way then 
               the above drawing covers all the cases{" "}
               <Math>
-                $
-                p &gt; 0
-                $
+                $p &gt; 0$
               </Math>
               ,
               whereas if we flip the two number axes to point
               down/left the above drawing covers all the cases 
               {" "}
               <Math>
-                $
-                p &lt; 0
-                $
+                $p &lt; 0$
               </Math>
               —magic!)
             </VerticalChunk>
@@ -2108,15 +1813,11 @@ const Article = () => {
             Find the general equation of a line of slope
             {" "}
             <Math>
-              $
-              p
-              $
+              $p$
             </Math>
             {" "}passing through a point{" "}
             <Math>
-              $
-              (x_0, y_0)
-              $
+              $(x_0, y_0)$
             </Math>
             .
             (Hint: Start from the slope formula.)
@@ -2128,25 +1829,19 @@ const Article = () => {
             <VerticalChunk>
               A point{" "}
               <Math>
-                $
-                (x,y) \ne (x_0,y_0)
-                $
+                $(x,y) \ne (x_0,y_0)$
               </Math>
               {" "}is on the
               line of slope{" "}
               <Math>
-                $
-                p
-                $
+                $p$
               </Math>
               {" "}if and only if
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               p = &#123;y - y_0 \over x - x_0&#125; 
-              $$
+              $$ p = &#123;y - y_0 \over x - x_0&#125; $$
               <ImageLeft
                    use_squiggle_on_mobile={false}
                    offset_y="-7.1rem"
@@ -2162,9 +1857,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               \,\,&#123;y - y_0 \over x - x_0&#125; 
-              $$
+              $$ \,\,&#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2172,16 +1865,12 @@ const Article = () => {
               is the slope of the line segment from
               {" "}
               <Math>
-                $
-                (x_0,y_0)
-                $
+                $(x_0,y_0)$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (x,y)
-                  $
+                  $(x,y)$
                 </Math>
                 ,
               </NoBreak>
@@ -2189,15 +1878,11 @@ const Article = () => {
               and sufficient for this segment to have slope
               {" "}
               <Math>
-                $
-                p
-                $
+                $p$
               </Math>
               {" "}in order for the point{" "}
               <Math>
-                $
-                (x,y)
-                $
+                $(x,y)$
               </Math>
               {" "}to be on
               the line!
@@ -2209,9 +1894,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               p = &#123;y - y_0 \over x - x_0&#125; 
-              $$
+              $$ p = &#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2219,9 +1902,7 @@ const Article = () => {
               is not an entirely satisfactory answer,
               because the point{" "}
               <Math>
-                $
-                (x,y) = (x_0,y_0)
-                $
+                $(x,y) = (x_0,y_0)$
               </Math>
               {" "}itself
               does not satisfy the equation. (We find
@@ -2229,9 +1910,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               p = &#123;0 \over 0&#125; 
-              $$
+              $$ p = &#123;0 \over 0&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2239,18 +1918,14 @@ const Article = () => {
               if we plug in{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = x_0
-                  $
+                  $x = x_0$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y = y_0
-                  $
+                  $y = y_0$
                 </Math>
                 ,
               </NoBreak>
@@ -2265,9 +1940,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              p = &#123;y - y_0 \over x - x_0&#125;
-              $$
+              $$p = &#123;y - y_0 \over x - x_0&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2275,9 +1948,7 @@ const Article = () => {
               on both sides by{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x-x_0
-                  $
+                  $x-x_0$
                 </Math>
                 ,
               </NoBreak>
@@ -2287,18 +1958,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              p(x-x_0) = y-y_0
-              $$
+              $$p(x-x_0) = y-y_0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               which is satisfied by the point{" "}
               <Math>
-                $
-                (x,y) = (x_0,y_0)
-                $
+                $(x,y) = (x_0,y_0)$
               </Math>
               {" "}
               as well as by every other point on the line.
@@ -2308,9 +1975,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
-              $$
+              $$\te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;$$
               <ImageRight
                    offset_y="-0.5rem"
                    offset_x="2.5rem"
@@ -2335,9 +2000,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y - y_0 = p(x - x_0)
-              $$
+              $$y - y_0 = p(x - x_0)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2347,33 +2010,25 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = p(x - x_0) + y_0
-              $$
+              $$y = p(x - x_0) + y_0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               with{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}isolated on the left-hand side. From
               there one can also distribute{" "}
               <Math>
-                $
-                p(x-x_0)
-                $
+                $p(x-x_0)$
               </Math>
               ,
               obtaining (after putting “
               <NoBreak>
                 <Math>
-                  $
-                  -px_0
-                  $
+                  $-px_0$
                 </Math>
                 ”
               </NoBreak>
@@ -2382,9 +2037,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = px + y_0 - px_0
-              $$
+              $$y = px + y_0 - px_0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2394,9 +2047,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = ax + b
-              $$
+              $$y = ax + b$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2404,17 +2055,13 @@ const Article = () => {
               with{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a = p
-                  $
+                  $a = p$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                b = y_0 - px_0
-                $
+                $b = y_0 - px_0$
               </Math>
               .
             </VerticalChunk>
@@ -2466,9 +2113,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;1\te&#123;m&#125; \over 1\te&#123;s&#125;&#125; = 1\te&#123;m&#125;/\te&#123;s&#125;
-              $$
+              $$&#123;1\te&#123;m&#125; \over 1\te&#123;s&#125;&#125; = 1\te&#123;m&#125;/\te&#123;s&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2476,18 +2121,14 @@ const Article = () => {
               between{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -4
-                  $
+                  $-4$
                 </Math>
                 s
               </NoBreak>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -3
-                  $
+                  $-3$
                 </Math>
                 s,
               </NoBreak>
@@ -2495,9 +2136,7 @@ const Article = () => {
               goes up by one meter during a one second
               period, so the vertical velocity is 1m
               <Math>
-                $
-                /
-                $
+                $/$
               </Math>
               s
               for that time interval, etc.
@@ -2543,18 +2182,14 @@ const Article = () => {
               For the time interval from{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2
-                  $
+                  $2$
                 </Math>
                 s
               </NoBreak>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2.5
-                  $
+                  $2.5$
                 </Math>
                 s,
               </NoBreak>
@@ -2564,9 +2199,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               &#123;-2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = -\rt&#123;0.07&#125;4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; 
-              $$
+              $$ &#123;-2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = -\rt&#123;0.07&#125;4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2575,18 +2208,14 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  2.5
-                  $
+                  $2.5$
                 </Math>
                 s
               </NoBreak>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  3
-                  $
+                  $3$
                 </Math>
                 s
               </NoBreak>
@@ -2595,9 +2224,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               &#123;2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = 4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; 
-              $$
+              $$ &#123;2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = 4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2605,9 +2232,7 @@ const Article = () => {
               because{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2/0.5 = 4
-                  $
+                  $2/0.5 = 4$
                 </Math>
                 .
               </NoBreak>
@@ -2618,15 +2243,11 @@ const Article = () => {
               {" "}
               does{" "}
               <Math>
-                $
-                0.5
-                $
+                $0.5$
               </Math>
               {" "}go into{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               ?)
             </VerticalChunk>
@@ -2646,9 +2267,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-             y_0 - px_0 
-            $$
+            $$ y_0 - px_0 $$
           </MathBlock>
           <div
                class="spacer" />
@@ -2656,24 +2275,18 @@ const Article = () => {
             is the{" "}
             <NoBreak>
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -intercept
             </NoBreak>
             {" "}of the line of slope{" "}
             <Math>
-              $
-              p
-              $
+              $p$
             </Math>
             {" "}
             through the point{" "}
             <Math>
-              $
-              (x_0,y_0)
-              $
+              $(x_0,y_0)$
             </Math>
             {" "}by using a drawing
             and “rise equals slope times run”.
@@ -2695,25 +2308,19 @@ const Article = () => {
               The rise from the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -intercept
               </NoBreak>
               {" "}to{" "}
               <Math>
-                $
-                (x_0, y_0)
-                $
+                $(x_0, y_0)$
               </Math>
               {" "}
               is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  px_0
-                  $
+                  $px_0$
                 </Math>
                 ,
               </NoBreak>
@@ -2723,18 +2330,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y_0 - px_0
-              $$
+              $$y_0 - px_0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               -intercept.
             </VerticalChunk>
@@ -2749,16 +2352,12 @@ const Article = () => {
               {" "}Our drawing makes some implicit
               assumptions, such as{" "}
               <Math>
-                $
-                p &gt; 0
-                $
+                $p &gt; 0$
               </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x_0 &gt; 0
-                  $
+                  $x_0 &gt; 0$
                 </Math>
                 .
               </NoBreak>
@@ -2767,9 +2366,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               px_0 
-              $$
+              $$ px_0 $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2777,37 +2374,27 @@ const Article = () => {
               is the rise from the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -intercept
               </NoBreak>
               {" "}to
               {" "}
               <Math>
-                $
-                (x_0, y_0)
-                $
+                $(x_0, y_0)$
               </Math>
               {" "}regardless of the sign of{" "}
               <Math>
-                $
-                p
-                $
+                $p$
               </Math>
               {" "}or
               {" "}
               <Math>
-                $
-                x_0
-                $
+                $x_0$
               </Math>
               {" "}(because{" "}
               <Math>
-                $
-                x_0
-                $
+                $x_0$
               </Math>
               {" "}is the run in all cases),
               making
@@ -2815,9 +2402,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-               y_0 - px_0 
-              $$
+              $$ y_0 - px_0 $$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2825,9 +2410,7 @@ const Article = () => {
               the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -intercept
               </NoBreak>

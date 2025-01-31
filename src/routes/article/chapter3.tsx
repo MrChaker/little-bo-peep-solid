@@ -18,8 +18,7 @@ const Article = () => {
     <Chapter
          number={3}
          title="Functions">
-      <Section
-           type="intro">
+      <Section>
         <VerticalChunk>
           {" "}{" "}
           <b>
@@ -58,9 +57,7 @@ const Article = () => {
           In the above picture, the name of the function
           is “
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           ”.
         </VerticalChunk>
@@ -71,25 +68,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;f(x)&#125;
-          $$
+          $$&#123;f(x)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           (which is read “
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}of{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             ”,
           </NoBreak>
@@ -97,25 +88,19 @@ const Article = () => {
           important) for the result of passing an input
           {" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}to a function{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             .
           </NoBreak>
           {" "}For example, if the rule
           according to which{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}processes inputs is
         </VerticalChunk>
@@ -132,40 +117,30 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;f(2) = 4&#125;
-          $$
+          $$&#123;f(2) = 4&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}of{" "}
           <Math>
-            $
-            2
-            $
+            $2$
           </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
-              $
-              4
-              $
+              $4$
             </Math>
             ”]
           </NoBreak>
           {" "}because{" "}
           <NoBreak>
             <Math>
-              $
-              2^2 = 4
-              $
+              $2^2 = 4$
             </Math>
             ,
           </NoBreak>
@@ -174,40 +149,30 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;f(3) = 9&#125;
-          $$
+          $$&#123;f(3) = 9&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}of{" "}
           <Math>
-            $
-            3
-            $
+            $3$
           </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
-              $
-              9
-              $
+              $9$
             </Math>
             ”]
           </NoBreak>
           {" "}because{" "}
           <NoBreak>
             <Math>
-              $
-              3^2 = 9
-              $
+              $3^2 = 9$
             </Math>
             ,
           </NoBreak>
@@ -216,9 +181,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123; f(0.1) = 0.01&#125;
-          $$
+          $$&#123; f(0.1) = 0.01&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -226,9 +189,7 @@ const Article = () => {
           [...] because{" "}
           <NoBreak>
             <Math>
-              $
-              0.1^2 = 0.01
-              $
+              $0.1^2 = 0.01$
             </Math>
             ,
           </NoBreak>
@@ -237,31 +198,23 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;f(x) = x^2&#125;
-          $$
+          $$&#123;f(x) = x^2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           [“
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}of{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}equals{" "}
           <NoBreak>
             <Math>
-              $
-              x^2
-              $
+              $x^2$
             </Math>
             ”]
           </NoBreak>
@@ -279,9 +232,7 @@ const Article = () => {
           of{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             !!
           </NoBreak>
@@ -312,9 +263,7 @@ const Article = () => {
           without giving it a name, such as “
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             ”.
           </NoBreak>
@@ -325,25 +274,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \lambda&#123;&#125;x.x^2
-          $$
+          $$\lambda&#123;&#125;x.x^2$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           to mean “the function that maps{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}to{" "}
           <NoBreak>
             <Math>
-              $
-              x^2
-              $
+              $x^2$
             </Math>
             ”
           </NoBreak>
@@ -353,9 +296,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \lambda&#123;&#125;z.z^2
-          $$
+          $$\lambda&#123;&#125;z.z^2$$
         </MathBlock>
         <div
              class="spacer" />
@@ -371,9 +312,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Huge \lambda
-          $$
+          $$\Huge \lambda$$
         </MathBlock>
         <div
              class="spacer" />
@@ -384,9 +323,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \rightarrow x^2
-          $$
+          $$x \rightarrow x^2$$
         </MathBlock>
         <div
              class="spacer" />
@@ -400,9 +337,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra x^2)(0.1)
-          $$
+          $$(x \ra x^2)(0.1)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -411,9 +346,7 @@ const Article = () => {
           square, of{" "}
           <NoBreak>
             <Math>
-              $
-              0.1
-              $
+              $0.1$
             </Math>
             ”.
           </NoBreak>
@@ -422,9 +355,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (x \ra x^2)(0.1) = 0.01
-          $$
+          $$(x \ra x^2)(0.1) = 0.01$$
         </MathBlock>
         <div
              class="spacer" />
@@ -432,9 +363,7 @@ const Article = () => {
           ...the same as an equation of the form 
           “
           <Math>
-            $
-            f(\dots) = \dots
-            $
+            $f(\dots) = \dots$
           </Math>
           ”.
         </VerticalChunk>
@@ -445,30 +374,22 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (\lambda x.x^3)(10) = 1000
-          $$
+          $$(\lambda x.x^3)(10) = 1000$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (\lambda u.u^5)(10) = 100000
-          $$
+          $$(\lambda u.u^5)(10) = 100000$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (v \ra v^2)(10) = 100
-          $$
+          $$(v \ra v^2)(10) = 100$$
         </MathBlock>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          (z \ra z^3)(10) + (t \ra t^2)(5) = 1025.
-          $$
+          $$(z \ra z^3)(10) + (t \ra t^2)(5) = 1025.$$
         </MathBlock>
         <div
              class="spacer" />
@@ -500,14 +421,12 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra \begin&#123;cases&#125;
+          $$x \ra \begin&#123;cases&#125;
           \ldots & \te&#123;if $\ldots$&#125;\\
           \ldots & \te&#123;if $\ldots$&#125;\\
           \vdots & \vdots\\
           \ldots & \te&#123;$\ldots$&#125;
-          \end&#123;cases&#125;
-          $$
+          \end&#123;cases&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -517,9 +436,7 @@ const Article = () => {
           value of{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             .
           </NoBreak>
@@ -528,14 +445,12 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          g(x) = \begin&#123;cases&#125;
+          $$g(x) = \begin&#123;cases&#125;
           \ldots & \te&#123;if $\ldots$&#125;\\
           \ldots & \te&#123;if $\ldots$&#125;\\
           \vdots & \vdots\\
           \ldots & \te&#123;$\ldots$&#125;
-          \end&#123;cases&#125;
-          $$
+          \end&#123;cases&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -543,9 +458,7 @@ const Article = () => {
           in the case where the function has a name, such
           as “
           <Math>
-            $
-            g
-            $
+            $g$
           </Math>
           ”.
         </VerticalChunk>
@@ -564,13 +477,11 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \te&#123;VX-11/78A&#125;(x) = \begin&#123;cases&#125; 
+            $$\te&#123;VX-11/78A&#125;(x) = \begin&#123;cases&#125; 
             3.5 & \te&#123;if $x = 0$&#125;,\\
             2.5\up&#123;1.1&#125; & \te&#123;if $x = 1$&#125;,\\
             \te&#123;undefined&#125;\up&#123;1.1&#125; & \te&#123;if $x \ne 0, 1$&#125;
-            \end&#123;cases&#125;
-            $$
+            \end&#123;cases&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -580,9 +491,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \te&#123;VX-11/78A&#125;(0) = 3.5,
-            $$
+            $$\te&#123;VX-11/78A&#125;(0) = 3.5,$$
           </MathBlock>
           <div
                class="spacer" />
@@ -592,9 +501,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \te&#123;VX-11/78A&#125;(1) = 2.5,
-            $$
+            $$\te&#123;VX-11/78A&#125;(1) = 2.5,$$
           </MathBlock>
           <div
                class="spacer" />
@@ -602,15 +509,11 @@ const Article = () => {
             aaand... and these are the only two values of 
             {" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}for which VX-11/78A
             <Math>
-              $
-              (x)
-              $
+              $(x)$
             </Math>
             {" "}is defined, as 
             specified.
@@ -707,9 +610,7 @@ const Article = () => {
           the function is defined. The{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -coordinate
           </NoBreak>
@@ -718,9 +619,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -coordinate
           </NoBreak>
@@ -751,25 +650,19 @@ const Article = () => {
           ...
           <NoBreak>
             <Math>
-              $
-              (0, 3.5)
-              $
+              $(0, 3.5)$
             </Math>
             ,
           </NoBreak>
           {" "}because VX-78/11A maps{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}to 
           {" "}
           <NoBreak>
             <Math>
-              $
-              3.5
-              $
+              $3.5$
             </Math>
             ,
           </NoBreak>
@@ -785,23 +678,17 @@ const Article = () => {
           ...
           <NoBreak>
             <Math>
-              $
-              (1, 2.5)
-              $
+              $(1, 2.5)$
             </Math>
             ,
           </NoBreak>
           {" "}because VX-78/11A maps{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}to{" "}
           <Math>
-            $
-            2.5
-            $
+            $2.5$
           </Math>
           .
         </VerticalChunk>
@@ -816,29 +703,21 @@ const Article = () => {
             {" "}
             Here is a graph of{" "}
             <Math>
-              $
-              x \ra x^2
-              $
+              $x \ra x^2$
             </Math>
             {" "}on the interval
             {" "}
             <Math>
-              $
-              [-1, 1]
-              $
+              $[-1, 1]$
             </Math>
             {" "}(meaning: going from{" "}
             <Math>
-              $
-              x = -1
-              $
+              $x = -1$
             </Math>
             {" "}to 
             {" "}
             <Math>
-              $
-              x = 1
-              $
+              $x = 1$
             </Math>
             ):
           </VerticalChunk>
@@ -853,9 +732,7 @@ const Article = () => {
             could discuss, let us name, say, the point 
             {" "}
             <Math>
-              $
-              (0.75, 0.5625)
-              $
+              $(0.75, 0.5625)$
             </Math>
             ...
           </VerticalChunk>
@@ -869,16 +746,12 @@ const Article = () => {
             ...which finds itself on the graph, namely, 
             because the square of{" "}
             <Math>
-              $
-              0.75
-              $
+              $0.75$
             </Math>
             {" "}is 
             {" "}
             <Math>
-              $
-              0.5625 = 9/16
-              $
+              $0.5625 = 9/16$
             </Math>
             .
             <ImageLeft
@@ -903,33 +776,25 @@ const Article = () => {
           </i>
           {" "}of a function{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           —written
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \dom\, f
-          $$
+          $$\dom\, f$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           —is the set of inputs{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}for which{" "}
           <Math>
-            $
-            f(x)
-            $
+            $f(x)$
           </Math>
           {" "}is
           defined.
@@ -948,34 +813,26 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \dom\,\rt&#123;0.1&#125; \te&#123;VX-11/78A&#125; = \left\&#123; 0\rt&#123;0.1&#125;, 1 \right\&#125;
-            $$
+            $$\dom\,\rt&#123;0.1&#125; \te&#123;VX-11/78A&#125; = \left\&#123; 0\rt&#123;0.1&#125;, 1 \right\&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             because VX-11/78A
             <Math>
-              $
-              (x)
-              $
+              $(x)$
             </Math>
             {" "}is only defined at{" "}
             <NoBreak>
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               ,
             </NoBreak>
             {" "}
             {" "}
             <Math>
-              $
-              1
-              $
+              $1$
             </Math>
             .
           </VerticalChunk>
@@ -995,13 +852,11 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \te&#123;DM-1700&#125;(x) = 
+            $$\te&#123;DM-1700&#125;(x) = 
             \begin&#123;cases&#125; 
             0             & \te&#123;if $x \leq 0$ or $x \geq 1$&#125;,\\
             1 - x\up&#123;1.1&#125; & \te&#123;if $0 &lt; x &lt; 1$&#125;
-            \end&#123;cases&#125;
-            $$
+            \end&#123;cases&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1011,25 +866,19 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \dom\,\rt&#123;0.1&#125; \te&#123;DM-1700&#125; = \rr
-            $$
+            $$\dom\,\rt&#123;0.1&#125; \te&#123;DM-1700&#125; = \rr$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             because{" "}
             <Math>
-              $
-              \te&#123;DM-1700&#125;(x)
-              $
+              $\te&#123;DM-1700&#125;(x)$
             </Math>
             {" "}is defined for all
             {" "}
             <Math>
-              $
-              x \in \rr
-              $
+              $x \in \rr$
             </Math>
             .
           </VerticalChunk>
@@ -1045,9 +894,7 @@ const Article = () => {
             {" "}
             If{" "}
             <Math>
-              $
-              g : \rr \ra \rr
-              $
+              $g : \rr \ra \rr$
             </Math>
             {" "}(we are going to explain 
             this notation imminently) is the function given 
@@ -1056,9 +903,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            g(x) = \sqrt&#123;x - 1^&#123;\color&#123;white&#125;*\!\!&#125;&#125;
-            $$
+            $$g(x) = \sqrt&#123;x - 1^&#123;\color&#123;white&#125;*\!\!&#125;&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1068,11 +913,9 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \begin&#123;align&#125;
+            $$\begin&#123;align&#125;
             \dom\, g &\,=\, [1, \infty)
-            \end&#123;align&#125;
-            $$
+            \end&#123;align&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1085,22 +928,16 @@ const Article = () => {
             {" "}
             (i.e., we need{" "}
             <Math>
-              $
-              x - 1 \geq 0
-              $
+              $x - 1 \geq 0$
             </Math>
             {" "}in order for{" "}
             <Math>
-              $
-              g(x)
-              $
+              $g(x)$
             </Math>
             {" "}
             to be defined, i.e., we need{" "}
             <Math>
-              $
-              x \geq 1
-              $
+              $x \geq 1$
             </Math>
             ).
           </VerticalChunk>
@@ -1116,18 +953,14 @@ const Article = () => {
             {" "}
             If{" "}
             <Math>
-              $
-              h : \rr \ra \rr
-              $
+              $h : \rr \ra \rr$
             </Math>
             {" "}is defined by
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            h(x) = \frac&#123;1&#125;&#123;x+1&#125;
-            $$
+            $$h(x) = \frac&#123;1&#125;&#123;x+1&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -1137,28 +970,22 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \begin&#123;align&#125;
+            $$\begin&#123;align&#125;
             \dom\,h \,=\, \rr\back\&#123;-1\&#125; =\, (-\infty,-1) \cup (-1,\infty)
-            \end&#123;align&#125;
-            $$
+            \end&#123;align&#125;$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             because{" "}
             <Math>
-              $
-              1/(x+1)
-              $
+              $1/(x+1)$
             </Math>
             {" "}is well-defined if and only if
             division by 0 is avoided, i.e., if and only if 
             {" "}
             <Math>
-              $
-              x \ne -1
-              $
+              $x \ne -1$
             </Math>
             .
           </VerticalChunk>
@@ -1178,18 +1005,14 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f : \rr \ra \rr
-          $$
+          $$f : \rr \ra \rr$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           means that{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}is a function
         </VerticalChunk>
@@ -1198,15 +1021,11 @@ const Article = () => {
         <CentralDisplayItalic>
           from{" "}
           <Math>
-            $
-            \rr
-            $
+            $\rr$
           </Math>
           {" "}to{" "}
           <Math>
-            $
-            \rr
-            $
+            $\rr$
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
@@ -1218,9 +1037,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \dom f \subseteq \rr
-          $$
+          $$\dom f \subseteq \rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1229,9 +1046,7 @@ const Article = () => {
           <i>
             the domain of{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}is a subset of 
             the set of real numbers
@@ -1241,9 +1056,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \&#123;f(x) : x \in \dom f\&#125; \subseteq \rr
-          $$
+          $$\&#123;f(x) : x \in \dom f\&#125; \subseteq \rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1252,9 +1065,7 @@ const Article = () => {
           <i>
             the set of values output by{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}
             is a subset of the set of real numbers
@@ -1268,9 +1079,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f : A \ra B
-          $$
+          $$f : A \ra B$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1280,25 +1089,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \dom f \subseteq A
-          $$
+          $$\dom f \subseteq A$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           (i.e., that{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}only accepts values from{" "}
           <NoBreak>
             <Math>
-              $
-              A
-              $
+              $A$
             </Math>
             )
           </NoBreak>
@@ -1308,25 +1111,19 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \&#123;f(x) : x \in \dom f\&#125; \subseteq B
-          $$
+          $$\&#123;f(x) : x \in \dom f\&#125; \subseteq B$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           (i.e., that{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}only outputs values from{" "}
           <NoBreak>
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             ),
           </NoBreak>
@@ -1373,9 +1170,7 @@ const Article = () => {
         <VerticalChunk>
           observes that a graph [
           <Math>
-            $
-            =
-            $
+            $=$
           </Math>
           {" "}{" "}
           <i>
@@ -1386,9 +1181,7 @@ const Article = () => {
           only if every{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             -value
           </NoBreak>
@@ -1396,9 +1189,7 @@ const Article = () => {
           corresponds to at most one{" "}
           <NoBreak>
             <Math>
-              $
-              y
-              $
+              $y$
             </Math>
             -value
           </NoBreak>
@@ -1546,9 +1337,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \Large x \ra 0^x
-          $$
+          $$\Large x \ra 0^x$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1558,12 +1347,10 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          0^x = 
+          $$0^x = 
           \begin&#123;cases&#125; 0 & \te&#123;if &#125; x &gt; 0\\
           1 & \te&#123;if &#125; x = 0\\
-          \te&#123;undefined&#125; & \te&#123;if &#125;x &lt; 0 \end&#123;cases&#125;
-          $$
+          \te&#123;undefined&#125; & \te&#123;if &#125;x &lt; 0 \end&#123;cases&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1571,16 +1358,12 @@ const Article = () => {
           which implies a discontinuity in the graph of
           {" "}
           <Math>
-            $
-            y = 0^x
-            $
+            $y = 0^x$
           </Math>
           {" "}at{" "}
           <NoBreak>
             <Math>
-              $
-              x = 0
-              $
+              $x = 0$
             </Math>
             ,
           </NoBreak>
@@ -1605,17 +1388,13 @@ const Article = () => {
             Distinguishing “
             <NoBreak>
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               ”
             </NoBreak>
             {" "}and “
             <Math>
-              $
-              f(x)
-              $
+              $f(x)$
             </Math>
             ”.
           </b>
@@ -1625,9 +1404,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;VX-11/78A&#125;&#125;
-          $$
+          $$&#123;\te&#123;VX-11/78A&#125;&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1637,9 +1414,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          &#123;\te&#123;VX-11/78A&#125;(x)&#125;
-          $$
+          $$&#123;\te&#123;VX-11/78A&#125;(x)&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1667,9 +1442,7 @@ const Article = () => {
           (Well, provided{" "}
           <NoBreak>
             <Math>
-              $
-              x \in \&#123;0, 1\&#125;
-              $
+              $x \in \&#123;0, 1\&#125;$
             </Math>
             ,
           </NoBreak>
@@ -1677,9 +1450,7 @@ const Article = () => {
           well-defined at all.) Likewise, if{" "}
           <NoBreak>
             <Math>
-              $
-              f : \rr \ra \rr
-              $
+              $f : \rr \ra \rr$
             </Math>
             ,
           </NoBreak>
@@ -1689,9 +1460,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f
-          $$
+          $$f$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1701,9 +1470,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f(x)
-          $$
+          $$f(x)$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1731,9 +1498,7 @@ const Article = () => {
           Amusingly, though, if we add “
           <NoBreak>
             <Math>
-              $
-              x \ra
-              $
+              $x \ra$
             </Math>
             ”
           </NoBreak>
@@ -1741,9 +1506,7 @@ const Article = () => {
           of “
           <NoBreak>
             <Math>
-              $
-              f(x)
-              $
+              $f(x)$
             </Math>
             ”
           </NoBreak>
@@ -1761,9 +1524,7 @@ const Article = () => {
           apply{" "}
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             .
           </NoBreak>
@@ -1772,9 +1533,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f = (x \ra f(x))
-          $$
+          $$f = (x \ra f(x))$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1796,9 +1555,7 @@ const Article = () => {
         <VerticalChunk>
           {" "}{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}because that would lead to a circular 
           definition. But that doesn't make the equality 
@@ -1808,27 +1565,21 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f = (x \ra f(x)) = (x \ra (t \ra f(t))(x))
-          $$
+          $$f = (x \ra f(x)) = (x \ra (t \ra f(t))(x))$$
         </MathBlock>
         <div
              class="spacer" />
         <VerticalChunk>
           ...where we use the fact that{" "}
           <Math>
-            $
-            f = (t \ra f(t))
-            $
+            $f = (t \ra f(t))$
           </Math>
           {" "}
           in the second equality. You could keep going, 
           replacing each time “
           <NoBreak>
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             ”
           </NoBreak>
@@ -1846,17 +1597,13 @@ const Article = () => {
             Distinguishing “
             <NoBreak>
               <Math>
-                $
-                x^3
-                $
+                $x^3$
               </Math>
               ”
             </NoBreak>
             {" "}and “
             <Math>
-              $
-              x \ra x^3
-              $
+              $x \ra x^3$
             </Math>
             ”.
           </b>
@@ -1866,9 +1613,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^3
-          $$
+          $$x^3$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1890,9 +1635,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra x^3
-          $$
+          $$x \ra x^3$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1909,18 +1652,14 @@ const Article = () => {
           So “
           <NoBreak>
             <Math>
-              $
-              x^3
-              $
+              $x^3$
             </Math>
             ”
           </NoBreak>
           {" "}and “
           <NoBreak>
             <Math>
-              $
-              x \ra x^3
-              $
+              $x \ra x^3$
             </Math>
             ”
           </NoBreak>
@@ -1937,9 +1676,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^3 + x^2
-          $$
+          $$x^3 + x^2$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1958,18 +1695,14 @@ const Article = () => {
           {" "}
           A function{" "}
           <Math>
-            $
-            f
-            $
+            $f$
           </Math>
           {" "}of the form
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          f(x) = a_kx^k + a_&#123;k-1&#125;x^&#123;k-1&#125; + \dots + a_2x^2 + a_1x + a_0
-          $$
+          $$f(x) = a_kx^k + a_&#123;k-1&#125;x^&#123;k-1&#125; + \dots + a_2x^2 + a_1x + a_0$$
         </MathBlock>
         <div
              class="spacer" />
@@ -1983,9 +1716,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          a_0,\,a_1,\, \ldots,\, a_k \in \rr
-          $$
+          $$a_0,\,a_1,\, \ldots,\, a_k \in \rr$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2003,18 +1734,14 @@ const Article = () => {
           of the polynomial is{" "}
           <NoBreak>
             <Math>
-              $
-              k
-              $
+              $k$
             </Math>
             ,
           </NoBreak>
           {" "}if{" "}
           <NoBreak>
             <Math>
-              $
-              a_k \ne 0
-              $
+              $a_k \ne 0$
             </Math>
             .
           </NoBreak>
@@ -2024,9 +1751,7 @@ const Article = () => {
           the polynomial is just the constant{" "}
           <NoBreak>
             <Math>
-              $
-              0
-              $
+              $0$
             </Math>
             ,
           </NoBreak>
@@ -2045,9 +1770,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          2x + \sqrt&#123;2&#125;
-          $$
+          $$2x + \sqrt&#123;2&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2057,9 +1780,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^2 - 10
-          $$
+          $$x^2 - 10$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2069,9 +1790,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^&#123;100&#125; + x^&#123;99&#125; + x^&#123;98&#125; + \dots + x^4 + x^3 + x^2 + x + 1
-          $$
+          $$x^&#123;100&#125; + x^&#123;99&#125; + x^&#123;98&#125; + \dots + x^4 + x^3 + x^2 + x + 1$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2087,8 +1806,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          \begin&#123;array&#125;&#123;c|c|c&#125;
+          $$\begin&#123;array&#125;&#123;c|c|c&#125;
           \,\,\,\,\te&#123;degree&#125;\,\,\,\, & \te&#123;name&#125; & \,\,\,\,\te&#123;example&#125;\,\,\,\,\Rule&#123;0pt&#125;&#123;0.8em&#125;&#123;0.5em&#125; \\ \hline
           -\infty & \te&#123;zero&#125; & 0\Rule&#123;0pt&#125;&#123;1.1em&#125;&#123;0.0em&#125;\\
           \te&#123;0&#125; & \te&#123;constant&#125; & 1 + \sqrt&#123;5^&#123;\color&#123;white&#125;*\!\!\!&#125;&#125;\\
@@ -2097,8 +1815,7 @@ const Article = () => {
           \te&#123;3&#125; & \te&#123;cubic&#125; & x^3 - 1\\
           \te&#123;4&#125; & \te&#123;quartic&#125; & 1 - x^4\\
           \te&#123;5&#125; & \te&#123;quintic&#125; & x^5
-          \end&#123;array&#125;
-          $$
+          \end&#123;array&#125;$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2129,9 +1846,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x \ra a_1x
-          $$
+          $$x \ra a_1x$$
         </MathBlock>
         <div
              class="spacer" />
@@ -2139,9 +1854,7 @@ const Article = () => {
           for a constant{" "}
           <NoBreak>
             <Math>
-              $
-              a_1 \in \rr
-              $
+              $a_1 \in \rr$
             </Math>
             .
           </NoBreak>
@@ -2149,9 +1862,7 @@ const Article = () => {
           restricted than an affine function, because
           there is no constant{" "}
           <Math>
-            $
-            a_0
-            $
+            $a_0$
           </Math>
           !
         </VerticalChunk>
@@ -2173,23 +1884,17 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              2
-              $
+              $2$
             </Math>
             ,
           </NoBreak>
           {" "}{" "}
           <Math>
-            $
-            1
-            $
+            $1$
           </Math>
           {" "}and{" "}
           <Math>
-            $
-            0
-            $
+            $0$
           </Math>
           {" "}are called the{" "}
           <i>
@@ -2210,9 +1915,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          a_7x^7 + a_6x^6 + a_5x^5 + a_4x^4 + a_3x^3 - a_2x^2 + a_1x + a_0
-          $$
+          $$a_7x^7 + a_6x^6 + a_5x^5 + a_4x^4 + a_3x^3 - a_2x^2 + a_1x + a_0$$
           <ImageRight
                src="/images/svg_ch3_quadratic_linear_constant_cloud.svg" />
         </MathBlock>
@@ -2222,9 +1925,7 @@ const Article = () => {
           then the quadratic term is{" "}
           <NoBreak>
             <Math>
-              $
-              -a_2x^2
-              $
+              $-a_2x^2$
             </Math>
             ,
           </NoBreak>
@@ -2232,9 +1933,7 @@ const Article = () => {
           {" "}
           <NoBreak>
             <Math>
-              $
-              a_2x^2
-              $
+              $a_2x^2$
             </Math>
             ,
           </NoBreak>
@@ -2245,25 +1944,19 @@ const Article = () => {
           Note that the linear term can also be viewed as
           the “
           <Math>
-            $
-            x^1
-            $
+            $x^1$
           </Math>
           {" "}term” while the constant term can
           also be viewed as the “
           <Math>
-            $
-            x^0
-            $
+            $x^0$
           </Math>
           {" "}term”; because
         </VerticalChunk>
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^1 = x
-          $$
+          $$x^1 = x$$
           <ImageRight
                src="/images/svg_ch3_a1_x1_cloud.svg" />
         </MathBlock>
@@ -2273,9 +1966,7 @@ const Article = () => {
           for all{" "}
           <NoBreak>
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             ,
           </NoBreak>
@@ -2284,9 +1975,7 @@ const Article = () => {
         <div
              class="spacer" />
         <MathBlock>
-          $$
-          x^0 = 1
-          $$
+          $$x^0 = 1$$
           <ImageRight
                src="/images/svg_ch3_a0_x0_cloud.svg" />
         </MathBlock>
@@ -2295,16 +1984,12 @@ const Article = () => {
         <VerticalChunk>
           for all{" "}
           <Math>
-            $
-            x
-            $
+            $x$
           </Math>
           {" "}(even{" "}
           <NoBreak>
             <Math>
-              $
-              x = 0
-              $
+              $x = 0$
             </Math>
             ),
           </NoBreak>
@@ -2336,9 +2021,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x \ra \begin&#123;cases&#125; x & \te&#123;if $x \geq 0$,&#125;\\ -x\!\!\up&#123;1.2&#125; & \te&#123;if $x &lt; 0$&#125;\end&#123;cases&#125;
-              $$
+              $$x \ra \begin&#123;cases&#125; x & \te&#123;if $x \geq 0$,&#125;\\ -x\!\!\up&#123;1.2&#125; & \te&#123;if $x &lt; 0$&#125;\end&#123;cases&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2346,18 +2029,14 @@ const Article = () => {
               because{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -(-1) = 1
-                  $
+                  $-(-1) = 1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  -(-5) = 5
-                  $
+                  $-(-5) = 5$
                 </Math>
                 ,
               </NoBreak>
@@ -2386,9 +2065,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              |x| = \sqrt&#123;x^2&#125;
-              $$
+              $$|x| = \sqrt&#123;x^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2396,17 +2073,13 @@ const Article = () => {
               because{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \sqrt&#123;(-1)^2&#125; = 1
-                  $
+                  $\sqrt&#123;(-1)^2&#125; = 1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                \sqrt&#123;(-5)^2&#125; = 5
-                $
+                $\sqrt&#123;(-5)^2&#125; = 5$
               </Math>
               ,
               etc.{" "}
@@ -2449,36 +2122,28 @@ const Article = () => {
             <Item>
               i.{" "}
               <Math>
-                $
-                (\lambda u.u^3)(0.5)
-                $
+                $(\lambda u.u^3)(0.5)$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               ii.{" "}
               <Math>
-                $
-                (u \ra u^2)(x + 1)
-                $
+                $(u \ra u^2)(x + 1)$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               iii.{" "}
               <Math>
-                $
-                (\lambda t.t - 1)(100) \cdot (\lambda t.t + 1)(100)
-                $
+                $(\lambda t.t - 1)(100) \cdot (\lambda t.t + 1)(100)$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               iv.{" "}
               <Math>
-                $
-                (u \ra u^2)(a + b)
-                $
+                $(u \ra u^2)(a + b)$
               </Math>
               {" "}{" "}
             </Item>
@@ -2503,36 +2168,28 @@ const Article = () => {
               <Item>
                 i.{" "}
                 <Math>
-                  $
-                  0.5^3 = 0.125
-                  $
+                  $0.5^3 = 0.125$
                 </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 ii.{" "}
                 <Math>
-                  $
-                  (x + 1)^2 = x^2 + 2x + 1
-                  $
+                  $(x + 1)^2 = x^2 + 2x + 1$
                 </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 iii.{" "}
                 <Math>
-                  $
-                  (100 - 1) \cdot (100 + 1) = 9999
-                  $
+                  $(100 - 1) \cdot (100 + 1) = 9999$
                 </Math>
                 {" "}{" "}
               </Item>
               <Item>
                 iv.{" "}
                 <Math>
-                  $
-                  (a + b)^2 = a^2 + 2ab + b^2
-                  $
+                  $(a + b)^2 = a^2 + 2ab + b^2$
                 </Math>
                 {" "}{" "}
               </Item>
@@ -2554,9 +2211,7 @@ const Article = () => {
             {" "}of a real number{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               ,
             </NoBreak>
@@ -2565,9 +2220,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \lfloor x \rfloor,
-            $$
+            $$\lfloor x \rfloor,$$
           </MathBlock>
           <div
                class="spacer" />
@@ -2576,32 +2229,24 @@ const Article = () => {
             to{" "}
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               .
             </NoBreak>
             {" "}(Start at{" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}and travel left on the 
             number line until you meet an integer; but if
             {" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}is already an integer, stay there; the 
             place you land is{" "}
             <Math>
-              $
-              \lfloor x \rfloor
-              $
+              $\lfloor x \rfloor$
             </Math>
             .)
           </VerticalChunk>
@@ -2609,9 +2254,7 @@ const Article = () => {
                indent={true}>
             Sketch the graph{" "}
             <Math>
-              $
-              y = \floor&#123;x&#125;
-              $
+              $y = \floor&#123;x&#125;$
             </Math>
             .
           </VerticalChunk>
@@ -2622,9 +2265,7 @@ const Article = () => {
             to use “
             <NoBreak>
               <Math>
-                $
-                \floor&#123;x&#125;
-                $
+                $\floor&#123;x&#125;$
               </Math>
               ”
             </NoBreak>
@@ -2641,31 +2282,23 @@ const Article = () => {
             <VerticalChunk>
               As{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}grows, so does{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \floor&#123;x&#125;
-                  $
+                  $\floor&#123;x&#125;$
                 </Math>
                 ,
               </NoBreak>
               {" "}but
               {" "}
               <Math>
-                $
-                \floor&#123;x&#125;
-                $
+                $\floor&#123;x&#125;$
               </Math>
               {" "}only “levels up” each time{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               reaches a new integer, and “flatlines”
@@ -2681,45 +2314,33 @@ const Article = () => {
             <VerticalChunk>
               (For example,{" "}
               <Math>
-                $
-                \floor&#123;1&#125; = 1
-                $
+                $\floor&#123;1&#125; = 1$
               </Math>
               {" "}because the 
               greatest integer less than or equal to{" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}
               is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                \floor&#123;-0.5&#125; = -1
-                $
+                $\floor&#123;-0.5&#125; = -1$
               </Math>
               {" "}because the greatest
               integer less than or equal to{" "}
               <Math>
-                $
-                -0.5
-                $
+                $-0.5$
               </Math>
               {" "}is{" "}
               <Math>
-                $
-                -1
-                $
+                $-1$
               </Math>
               ,
               and so on.)
@@ -2739,23 +2360,17 @@ const Article = () => {
             <VerticalChunk>
               The red dot to the left of{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}has{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               -coordinate
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  \floor&#123;x&#125;
-                  $
+                  $\floor&#123;x&#125;$
                 </Math>
                 ,
               </NoBreak>
@@ -2764,9 +2379,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x - \floor&#123;x&#125;
-              $$
+              $$x - \floor&#123;x&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2776,9 +2389,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = x - \floor&#123;x&#125;
-              $$
+              $$y = x - \floor&#123;x&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -2786,9 +2397,7 @@ const Article = () => {
               because the{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 -coordinate
               </NoBreak>
@@ -2801,9 +2410,7 @@ const Article = () => {
               displacement starts at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y = 0
-                  $
+                  $y = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -2826,9 +2433,7 @@ const Article = () => {
             ‘
             <NoBreak>
               <Math>
-                $
-                \lfloor \cdot \rfloor
-                $
+                $\lfloor \cdot \rfloor$
               </Math>
               ’
             </NoBreak>
@@ -2848,9 +2453,7 @@ const Article = () => {
               input by{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2
-                  $
+                  $2$
                 </Math>
                 ,
               </NoBreak>
@@ -2868,9 +2471,7 @@ const Article = () => {
               only by a horizontal dilation; dividing the 
               input by{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               {" "}“undoes” the dilation, at which 
               point it suffices to apply the function pictured
@@ -2880,34 +2481,26 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;x/2 - \lfloor x/2 \rfloor&#125;
-              $$
+              $$&#123;x/2 - \lfloor x/2 \rfloor&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...as obtained by “sticking”{" "}
               <Math>
-                $
-                x/2
-                $
+                $x/2$
               </Math>
               {" "}(the halved 
               input) in place of “
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
               {" "}in “
               <Math>
-                $
-                \,x - \lfloor x \rfloor
-                $
+                $\,x - \lfloor x \rfloor$
               </Math>
               ”,
               the formula for the function from Exercise 4.
@@ -2973,16 +2566,12 @@ const Article = () => {
               {" "}of the functions 
               {" "}
               <Math>
-                $
-                \f
-                $
+                $\f$
               </Math>
               {" "}and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 ;
               </NoBreak>
@@ -2999,15 +2588,11 @@ const Article = () => {
               ...(compared to the drawing at the top of the
               chapter), then the composition of{" "}
               <Math>
-                $
-                \f
-                $
+                $\f$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               ,
               written
@@ -3015,9 +2600,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\f \circ g&#125;
-              $$
+              $$&#123;\f \circ g&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3029,15 +2612,11 @@ const Article = () => {
             <CentralDisplayItalic>
               “
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}of{" "}
               <Math>
-                $
-                \hlfbk&#123;&#125;g
-                $
+                $\hlfbk&#123;&#125;g$
               </Math>
               ”
             </CentralDisplayItalic>
@@ -3048,9 +2627,7 @@ const Article = () => {
               everything—that little circle “
               <NoBreak>
                 <Math>
-                  $
-                  \circ
-                  $
+                  $\circ$
                 </Math>
                 ”
               </NoBreak>
@@ -3064,18 +2641,14 @@ const Article = () => {
               gluing{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 's
               </NoBreak>
               {" "}box to the right of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  \f
-                  $
+                  $\f$
                 </Math>
                 's
               </NoBreak>
@@ -3092,17 +2665,13 @@ const Article = () => {
               In other words,{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 's
               </NoBreak>
               {" "}output is passed on to{" "}
               <Math>
-                $
-                \f
-                $
+                $\f$
               </Math>
               {" "}
               for further processing. (A certain movie called
@@ -3121,9 +2690,7 @@ const Article = () => {
             <VerticalChunk>
               {" "}{" "}
               <Math>
-                $
-                f \circ g
-                $
+                $f \circ g$
               </Math>
               {" "}is a{" "}
               <i>
@@ -3132,15 +2699,11 @@ const Article = () => {
               , defined as the
               above assemblage of “
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}first,{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}second”.)
             </VerticalChunk>
@@ -3155,26 +2718,20 @@ const Article = () => {
               {" "}
               For a formal definition of “
               <Math>
-                $
-                f \circ g
-                $
+                $f \circ g$
               </Math>
               ”—something
               not based on pictures—one need only specify what
               {" "}
               <Math>
-                $
-                f \circ g
-                $
+                $f \circ g$
               </Math>
               {" "}does to inputs. Specifically:
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \,&#123;(f \circ g)(x) = f(g(x))&#125;.
-              $$
+              $$\,&#123;(f \circ g)(x) = f(g(x))&#125;.$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3185,25 +2742,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\dom f \circ g = \&#123;x\, \in\, \dom g:\, g(x)\, \in\, \dom f\&#125;&#125;
-              $$
+              $$&#123;\dom f \circ g = \&#123;x\, \in\, \dom g:\, g(x)\, \in\, \dom f\&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               which is to say that the domain of{" "}
               <Math>
-                $
-                f \circ g
-                $
+                $f \circ g$
               </Math>
               {" "}
               consists of all{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}such that:{" "}
               <b>
@@ -3211,17 +2762,13 @@ const Article = () => {
               </b>
               {" "}{" "}
               <Math>
-                $
-                g(x)
-                $
+                $g(x)$
               </Math>
               {" "}
               exists (a.k.a, “
               <NoBreak>
                 <Math>
-                  $
-                  x \in \dom g
-                  $
+                  $x \in \dom g$
                 </Math>
                 ”)
               </NoBreak>
@@ -3232,15 +2779,11 @@ const Article = () => {
               </b>
               {" "}{" "}
               <Math>
-                $
-                f(g(x))
-                $
+                $f(g(x))$
               </Math>
               {" "}exists (a.k.a., “
               <Math>
-                $
-                g(x) \in \dom f
-                $
+                $g(x) \in \dom f$
               </Math>
               ”).
             </VerticalChunk>
@@ -3258,9 +2801,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;(f \circ g)(x) = f(g(x))&#125;
-              $$
+              $$&#123;(f \circ g)(x) = f(g(x))&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3272,21 +2813,15 @@ const Article = () => {
             <CentralDisplay>
               “
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}of{" "}
               <Math>
-                $
-                \hlfbk&#123;&#125;g
-                $
+                $\hlfbk&#123;&#125;g$
               </Math>
               {" "}of{" "}
               <Math>
-                $
-                x\hspace&#123;0.1em&#125;
-                $
+                $x\hspace&#123;0.1em&#125;$
               </Math>
               ”
             </CentralDisplay>
@@ -3296,39 +2831,29 @@ const Article = () => {
               since “
               <NoBreak>
                 <Math>
-                  $
-                  f \circ g
-                  $
+                  $f \circ g$
                 </Math>
                 ”
               </NoBreak>
               {" "}is read “
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}of{" "}
               <Math>
-                $
-                g\rt&#123;0.1&#125;
-                $
+                $g\rt&#123;0.1&#125;$
               </Math>
               ”,
               and “
               <NoBreak>
                 <Math>
-                  $
-                  f(\dots)
-                  $
+                  $f(\dots)$
                 </Math>
                 ”
               </NoBreak>
               {" "}is read “
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}of ...”.
             </VerticalChunk>
@@ -3365,9 +2890,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              2 \cdot(x/2 - \fl&#123;x/2&#125;)
-              $$
+              $$2 \cdot(x/2 - \fl&#123;x/2&#125;)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3377,9 +2900,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x - 2\fl&#123;x/2&#125;
-              $$
+              $$x - 2\fl&#123;x/2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3387,9 +2908,7 @@ const Article = () => {
               because all we have to do is to multiply 
               Exercise 5's formula by{" "}
               <Math>
-                $
-                2
-                $
+                $2$
               </Math>
               .
             </VerticalChunk>
@@ -3400,9 +2919,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x/3 - \fl&#123;x/3&#125;
-              $$
+              $$x/3 - \fl&#123;x/3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3410,9 +2927,7 @@ const Article = () => {
               because the problem is similar to Exercise 5 
               except with a factor{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}horizontal dilation.
             </VerticalChunk>
@@ -3442,9 +2957,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x-1)/3 - \fl&#123;(x-1)/3&#125;
-              $$
+              $$(x-1)/3 - \fl&#123;(x-1)/3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3452,9 +2965,7 @@ const Article = () => {
               as obtained by substituting “
               <NoBreak>
                 <Math>
-                  $
-                  x - 1
-                  $
+                  $x - 1$
                 </Math>
                 ”
               </NoBreak>
@@ -3462,18 +2973,14 @@ const Article = () => {
               (the input, minus{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1
-                  $
+                  $1$
                 </Math>
                 )
               </NoBreak>
               {" "}in place of “
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
@@ -3481,18 +2988,14 @@ const Article = () => {
               “
               <NoBreak>
                 <Math>
-                  $
-                  \,x/3 - \fl&#123;x/3&#125;
-                  $
+                  $\,x/3 - \fl&#123;x/3&#125;$
                 </Math>
                 ”,
               </NoBreak>
               {" "}the formula for the 
               second graph. Then we multiply that by{" "}
               <Math>
-                $
-                3
-                $
+                $3$
               </Math>
               {" "}
               (to go from ”
@@ -3514,9 +3017,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              3 \cdot ((x-1)/3 - \fl&#123;(x-1)/3&#125;)
-              $$
+              $$3 \cdot ((x-1)/3 - \fl&#123;(x-1)/3&#125;)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3526,10 +3027,8 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-                 
-              (x - 1) - 3\fl&#123;(x-1)/3&#125;
-              $$
+              $$   
+              (x - 1) - 3\fl&#123;(x-1)/3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3539,9 +3038,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x - 1 - 3\fl&#123;(x-1)/3&#125;
-              $$
+              $$x - 1 - 3\fl&#123;(x-1)/3&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3564,18 +3061,14 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            \cos \dblcol \rr \ra \rr
-            $$
+            $$\cos \dblcol \rr \ra \rr$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             (the “hollow dot colon” means that{" "}
             <Math>
-              $
-              \dom \cos = \rr
-              $
+              $\dom \cos = \rr$
             </Math>
             )
             is a function whose graph looks like so...
@@ -3592,9 +3085,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            &#123;x \ra \cos(1000x)&#125;
-            $$
+            $$&#123;x \ra \cos(1000x)&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -3613,16 +3104,12 @@ const Article = () => {
             <VerticalChunk>
               Consider how to “read off” a value of{" "}
               <Math>
-                $
-                y = \cos(1000x)
-                $
+                $y = \cos(1000x)$
               </Math>
               {" "}
               from the graph{" "}
               <Math>
-                $
-                y = \cos(x)
-                $
+                $y = \cos(x)$
               </Math>
               :
             </VerticalChunk>
@@ -3653,9 +3140,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x, y)
-              $$
+              $$(x, y)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3666,9 +3151,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (1000x, y)
-              $$
+              $$(1000x, y)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -3688,33 +3171,25 @@ const Article = () => {
               {" "}
               One can also reason that a small change in{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               results in a large change in{" "}
               <NoBreak>
                 <Math>
-                  $
-                  1000x
-                  $
+                  $1000x$
                 </Math>
                 ,
               </NoBreak>
               {" "}so that 
               {" "}
               <Math>
-                $
-                \cos(1000x)
-                $
+                $\cos(1000x)$
               </Math>
               {" "}must “cycle” much faster through 
               values than{" "}
               <Math>
-                $
-                \cos(x)
-                $
+                $\cos(x)$
               </Math>
               {" "}does.
             </VerticalChunk>
@@ -3735,17 +3210,13 @@ const Article = () => {
             <CustomBlock
                  style="font-size:1.1em">
               <MathBlock>
-                $$
-                \tag&#123;A&#125;(f \circ (g \circ h))(x)
-                $$
+                $$\tag&#123;A&#125;(f \circ (g \circ h))(x)$$
               </MathBlock>
             </CustomBlock>
             without using “
             <NoBreak>
               <Math>
-                $
-                \circ
-                $
+                $\circ$
               </Math>
               ”,
             </NoBreak>
@@ -3758,22 +3229,16 @@ const Article = () => {
             <CustomBlock
                  style="font-size:1.1em">
               <MathBlock>
-                $$
-                \tag&#123;AA&#125;(r \circ s)(x) = r(s(x))
-                $$
+                $$\tag&#123;AA&#125;(r \circ s)(x) = r(s(x))$$
               </MathBlock>
             </CustomBlock>
             (where{" "}
             <Math>
-              $
-              r
-              $
+              $r$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              s
-              $
+              $s$
             </Math>
             {" "}are functions); plz
             note that you will have to apply (AA) 
@@ -3789,9 +3254,7 @@ const Article = () => {
             {" "}copy of the symbol “
             <NoBreak>
               <Math>
-                $
-                \circ
-                $
+                $\circ$
               </Math>
               ”
             </NoBreak>
@@ -3803,9 +3266,7 @@ const Article = () => {
             {" "}copies of 
             “
             <Math>
-              $
-              \circ
-              $
+              $\circ$
             </Math>
             ”!!
           </VerticalChunk>
@@ -3817,36 +3278,28 @@ const Article = () => {
               Setting “
               <NoBreak>
                 <Math>
-                  $
-                  r
-                  $
+                  $r$
                 </Math>
                 ”
               </NoBreak>
               {" "}to “
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ”
               </NoBreak>
               {" "}and “
               <NoBreak>
                 <Math>
-                  $
-                  s
-                  $
+                  $s$
                 </Math>
                 ”
               </NoBreak>
               {" "}to “
               <NoBreak>
                 <Math>
-                  $
-                  (g \circ h)
-                  $
+                  $(g \circ h)$
                 </Math>
                 ”
               </NoBreak>
@@ -3862,18 +3315,14 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (f \circ (g \circ h))(x) = \f((g \circ h)(x))
-                  $$
+                  $$(f \circ (g \circ h))(x) = \f((g \circ h)(x))$$
                 </MathBlock>
               </CustomBlock>
               ...which already constitutes progress towards
               our goal, since only one copy of “
               <NoBreak>
                 <Math>
-                  $
-                  \circ
-                  $
+                  $\circ$
                 </Math>
                 ”
               </NoBreak>
@@ -3885,9 +3334,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (g \circ h)(x) = g(h(x))
-                  $$
+                  $$(g \circ h)(x) = g(h(x))$$
                 </MathBlock>
               </CustomBlock>
               by the “definitional equation” again, so
@@ -3897,9 +3344,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  f((g \circ h)(x)) = \f(g(h(x)))
-                  $$
+                  $$f((g \circ h)(x)) = \f(g(h(x)))$$
                 </MathBlock>
               </CustomBlock>
               ...and this completes the computation!
@@ -3934,18 +3379,14 @@ const Article = () => {
             “
             <NoBreak>
               <Math>
-                $
-                f \circ (g \circ h)
-                $
+                $f \circ (g \circ h)$
               </Math>
               ”
             </NoBreak>
             {" "}instead of 
             “
             <Math>
-              $
-              (f \circ g) \circ h
-              $
+              $(f \circ g) \circ h$
             </Math>
             ”.
           </VerticalChunk>
@@ -3975,25 +3416,19 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  ((f \circ g) \circ h)(x) = (f \circ g)(h(x))
-                  $$
+                  $$((f \circ g) \circ h)(x) = (f \circ g)(h(x))$$
                 </MathBlock>
               </CustomBlock>
               ...by setting{" "}
               <NoBreak>
                 <Math>
-                  $
-                  r = f \circ g
-                  $
+                  $r = f \circ g$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                s = h
-                $
+                $s = h$
               </Math>
               {" "}in
               the definitional equation, and the second step
@@ -4004,26 +3439,20 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (f \circ g)(h(x)) = \f(g(h(x)))
-                  $$
+                  $$(f \circ g)(h(x)) = \f(g(h(x)))$$
                 </MathBlock>
               </CustomBlock>
               ...by setting{" "}
               <NoBreak>
                 <Math>
-                  $
-                  r = f
-                  $
+                  $r = f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  s = g
-                  $
+                  $s = g$
                 </Math>
                 ,
               </NoBreak>
@@ -4031,17 +3460,13 @@ const Article = () => {
               replacing “
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
               {" "}by “
               <Math>
-                $
-                h(x)
-                $
+                $h(x)$
               </Math>
               ”.
             </VerticalChunk>
@@ -4061,9 +3486,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (f \circ (g \circ h))(x)
-                  $$
+                  $$(f \circ (g \circ h))(x)$$
                 </MathBlock>
               </CustomBlock>
               and
@@ -4073,9 +3496,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  ((f \circ g) \circ h)(x)
-                  $$
+                  $$((f \circ g) \circ h)(x)$$
                 </MathBlock>
               </CustomBlock>
               both evaluate to
@@ -4085,9 +3506,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  f(g(h(x)))
-                  $$
+                  $$f(g(h(x)))$$
                 </MathBlock>
               </CustomBlock>
               actually implies that
@@ -4097,9 +3516,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  f \circ (g \circ h)
-                  $$
+                  $$f \circ (g \circ h)$$
                 </MathBlock>
               </CustomBlock>
               and
@@ -4109,30 +3526,22 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (f \circ g) \circ h
-                  $$
+                  $$(f \circ g) \circ h$$
                 </MathBlock>
               </CustomBlock>
               are the same function; this function is namely
               the function that maps{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                f(g(h(x)))
-                $
+                $f(g(h(x)))$
               </Math>
               {" "}for 
               all{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}(or
             </VerticalChunk>
@@ -4141,9 +3550,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  x \ra f(g(h(x)))
-                  $$
+                  $$x \ra f(g(h(x)))$$
                 </MathBlock>
               </CustomBlock>
               in lambda notation).
@@ -4164,9 +3571,7 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  f \circ g \circ half
-                  $$
+                  $$f \circ g \circ half$$
                 </MathBlock>
               </CustomBlock>
               without any parentheses. (The point is: either
@@ -4189,34 +3594,26 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  &#123;(a + b) + c = a + (b + c)&#125;
-                  $$
+                  $$&#123;(a + b) + c = a + (b + c)&#125;$$
                 </MathBlock>
               </CustomBlock>
               for all numbers{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b
-                  $
+                  $b$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}is known as the
             </VerticalChunk>
@@ -4235,34 +3632,26 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (ab)c = a(bc)
-                  $$
+                  $$(ab)c = a(bc)$$
                 </MathBlock>
               </CustomBlock>
               for all numbers{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b
-                  $
+                  $b$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                c
-                $
+                $c$
               </Math>
               {" "}is known as the
             </VerticalChunk>
@@ -4282,34 +3671,26 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  &#123;(f \circ g) \circ h  =  f \circ (g \circ h)&#125;
-                  $$
+                  $$&#123;(f \circ g) \circ h  =  f \circ (g \circ h)&#125;$$
                 </MathBlock>
               </CustomBlock>
               for all functions{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}is known 
               as the
@@ -4353,102 +3734,76 @@ const Article = () => {
               In the above{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A
-                  $
+                  $A$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  B
-                  $
+                  $B$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <NoBreak>
                 <Math>
-                  $
-                  C
-                  $
+                  $C$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                D
-                $
+                $D$
               </Math>
               {" "}are sets 
               while the arrows encode functions{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}
               and{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}that, respectively in reverse order, 
               go from{" "}
               <Math>
-                $
-                D
-                $
+                $D$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  C
-                  $
+                  $C$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                C
-                $
+                $C$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  B
-                  $
+                  $B$
                 </Math>
                 ,
               </NoBreak>
               {" "}and{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A
-                  $
+                  $A$
                 </Math>
                 .
               </NoBreak>
@@ -4460,9 +3815,7 @@ const Article = () => {
             <CentralDisplay>
               {" "}{" "}
               <Math>
-                $
-                \Large h(
-                $
+                $\Large h($
               </Math>
               {" "}{" "}
               <InlineImage
@@ -4471,9 +3824,7 @@ const Article = () => {
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               {" "}{" "}
               <Math>
-                $
-                \Large&#123;&#125;) =
-                $
+                $\Large&#123;&#125;) =$
               </Math>
               {" "}{" "}
               <InlineImage
@@ -4499,9 +3850,7 @@ const Article = () => {
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               in set{" "}
               <Math>
-                $
-                D
-                $
+                $D$
               </Math>
               {" "}lands at{" "}
             </VerticalChunk>
@@ -4516,9 +3865,7 @@ const Article = () => {
               in set{" "}
               <NoBreak>
                 <Math>
-                  $
-                  C
-                  $
+                  $C$
                 </Math>
                 ,
               </NoBreak>
@@ -4530,9 +3877,7 @@ const Article = () => {
               {" "}
               {" "}
               <Math>
-                $
-                \Large g(h(
-                $
+                $\Large g(h($
               </Math>
               {" "}{" "}
               <InlineImage
@@ -4541,9 +3886,7 @@ const Article = () => {
                    src="/images/svg_ch3_composition_icon_clubs.svg" />
               {" "}{" "}
               <Math>
-                $
-                \Large&#123;&#125;))&#123;&#125;=
-                $
+                $\Large&#123;&#125;))&#123;&#125;=$
               </Math>
               {" "}{" "}
               <InlineImage
@@ -4570,9 +3913,7 @@ const Article = () => {
                    src="/images/svg_ch3_composition_icon_die_3.svg" />
               in set{" "}
               <Math>
-                $
-                C
-                $
+                $C$
               </Math>
               {" "}lands at
             </VerticalChunk>
@@ -4587,9 +3928,7 @@ const Article = () => {
               in set{" "}
               <NoBreak>
                 <Math>
-                  $
-                  B
-                  $
+                  $B$
                 </Math>
                 ,
               </NoBreak>
@@ -4600,23 +3939,17 @@ const Article = () => {
               Under this representation one can “compute”
               {" "}
               <Math>
-                $
-                f \circ g \circ h
-                $
+                $f \circ g \circ h$
               </Math>
               {" "}by gluing arrows end-to-end.
               First, say, obliviate set{" "}
               <Math>
-                $
-                C
-                $
+                $C$
               </Math>
               {" "}in the middle 
               right, then do the same with set{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}in the
               middle left:
@@ -4631,15 +3964,11 @@ const Article = () => {
             <VerticalChunk>
               We can also get rid of{" "}
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               {" "}first,{" "}
               <Math>
-                $
-                C
-                $
+                $C$
               </Math>
               {" "}second:
             </VerticalChunk>
@@ -4654,17 +3983,13 @@ const Article = () => {
               The first order of computation corresponds
               to the parenthetization “
               <Math>
-                $
-                f \circ (g \circ h)
-                $
+                $f \circ (g \circ h)$
               </Math>
               ”
               while the second corresponds to the 
               parenthetization “
               <Math>
-                $
-                (f \circ g) \circ h
-                $
+                $(f \circ g) \circ h$
               </Math>
               ”.
               Intuitively, the reason they come out the 
@@ -4715,15 +4040,11 @@ const Article = () => {
               We have taken for granted the fact that two 
               functions{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                g
-                $
+                $g$
               </Math>
               {" "}are “equal” if and only
               if they produce the same outupt for every 
@@ -4747,38 +4068,28 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\textrm&#123;VX-11/78A&#125; = \&#123;(0, 3.5), (1, 2.5)\&#125;&#125;
-              $$
+              $$&#123;\textrm&#123;VX-11/78A&#125; = \&#123;(0, 3.5), (1, 2.5)\&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               because VX-11/78A maps{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}to{" "}
               <Math>
-                $
-                3.5
-                $
+                $3.5$
               </Math>
               {" "}and maps 
               {" "}
               <Math>
-                $
-                1
-                $
+                $1$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  2.5
-                  $
+                  $2.5$
                 </Math>
                 .
               </NoBreak>
@@ -4789,23 +4100,17 @@ const Article = () => {
               <CustomBlock
                    style="font-size:1.1em">
                 <MathBlock>
-                  $$
-                  (a, b)
-                  $$
+                  $$(a, b)$$
                 </MathBlock>
               </CustomBlock>
               means that input{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}produces output{" "}
               <NoBreak>
                 <Math>
-                  $
-                  b
-                  $
+                  $b$
                 </Math>
                 .)
               </NoBreak>
@@ -4852,9 +4157,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            x^2 + 10x + 30
-            $$
+            $$x^2 + 10x + 30$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4864,9 +4167,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (x + \dots)^2 + \,\dots
-            $$
+            $$(x + \dots)^2 + \,\dots$$
           </MathBlock>
           <div
                class="spacer" />
@@ -4874,17 +4175,13 @@ const Article = () => {
             for some numbers “
             <NoBreak>
               <Math>
-                $
-                \dots
-                $
+                $\dots$
               </Math>
               ”
             </NoBreak>
             {" "}and “
             <Math>
-              $
-              \dots
-              $
+              $\dots$
             </Math>
             ”.
           </VerticalChunk>
@@ -4898,9 +4195,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + 5)^2 + 5
-              $$
+              $$(x + 5)^2 + 5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4910,28 +4205,22 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \begin&#123;align&#125;
+              $$\begin&#123;align&#125;
               \,\,\,\,(x + 5)^2
               &= x^2 + (2\cdot 5)x + 5^2 \\
               &= \up&#123;1.4&#125; x^2 + 10x + 25
-              \end&#123;align&#125;
-              $$
+              \end&#123;align&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               and adding{" "}
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               {" "}gives{" "}
               <Math>
-                $
-                x^2 + 10x + 30
-                $
+                $x^2 + 10x + 30$
               </Math>
               .
             </VerticalChunk>
@@ -4960,9 +4249,7 @@ const Article = () => {
               Put an unknown “
               <NoBreak>
                 <Math>
-                  $
-                  U
-                  $
+                  $U$
                 </Math>
                 ”
               </NoBreak>
@@ -4970,9 +4257,7 @@ const Article = () => {
               of dots and an unknown “
               <NoBreak>
                 <Math>
-                  $
-                  V
-                  $
+                  $V$
                 </Math>
                 ”
               </NoBreak>
@@ -4982,9 +4267,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + U)^2 + V = x^2 + 10x + 30
-              $$
+              $$(x + U)^2 + V = x^2 + 10x + 30$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -4995,9 +4278,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x^2 + 2Ux + U^2 + V = x^2 + 10x + 30.
-              $$
+              $$x^2 + 2Ux + U^2 + V = x^2 + 10x + 30.$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5007,25 +4288,19 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 )
               </NoBreak>
               {" "}the coefficients of{" "}
               <Math>
-                $
-                x^2
-                $
+                $x^2$
               </Math>
               {" "}on both 
               sides of the equation must be equal, the 
               coefficients of{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}on both sides of the
               equation must be equal, and the constant
@@ -5035,9 +4310,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              1 = 1
-              $$
+              $$1 = 1$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5045,9 +4318,7 @@ const Article = () => {
               (equating the coefficients of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x^2
-                  $
+                  $x^2$
                 </Math>
                 ),
               </NoBreak>
@@ -5056,9 +4327,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              2U = 10
-              $$
+              $$2U = 10$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5066,9 +4335,7 @@ const Article = () => {
               (equating the coefficients of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ),
               </NoBreak>
@@ -5077,9 +4344,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              U^2 + V = 30
-              $$
+              $$U^2 + V = 30$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5091,9 +4356,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              2U = 10
-              $$
+              $$2U = 10$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5101,42 +4364,32 @@ const Article = () => {
               implies{" "}
               <NoBreak>
                 <Math>
-                  $
-                  U = 5
-                  $
+                  $U = 5$
                 </Math>
                 ,
               </NoBreak>
               {" "}so{" "}
               <Math>
-                $
-                U^2 + V = 30
-                $
+                $U^2 + V = 30$
               </Math>
               {" "}becomes
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  25 + V = 30
-                  $
+                  $25 + V = 30$
                 </Math>
                 ,
               </NoBreak>
               {" "}and 
               {" "}
               <Math>
-                $
-                V = 30 - 25 = 5
-                $
+                $V = 30 - 25 = 5$
               </Math>
               .
               So{" "}
               <NoBreak>
                 <Math>
-                  $
-                  U = V = 5
-                  $
+                  $U = V = 5$
                 </Math>
                 ,
               </NoBreak>
@@ -5148,18 +4401,14 @@ const Article = () => {
               ,
               because the only number{" "}
               <Math>
-                $
-                U
-                $
+                $U$
               </Math>
               {" "}that satisfies
             </VerticalChunk>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              2U = 10
-              $$
+              $$2U = 10$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5167,17 +4416,13 @@ const Article = () => {
               is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  U = 5
-                  $
+                  $U = 5$
                 </Math>
                 ,
               </NoBreak>
               {" "}and the only number{" "}
               <Math>
-                $
-                V
-                $
+                $V$
               </Math>
               {" "}that
               satisfies{" "}
@@ -5185,18 +4430,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              25 + V = 30
-              $$
+              $$25 + V = 30$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is{" "}
               <Math>
-                $
-                V = 5
-                $
+                $V = 5$
               </Math>
               .)
             </VerticalChunk>
@@ -5215,24 +4456,18 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            x^2 + 10x + 30 = 0
-            $$
+            $$x^2 + 10x + 30 = 0$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             (cf
             <Math>
-              $
-              .
-              $
+              $.$
             </Math>
             {" "}Exercise 21) has no solutions{" "}
             <Math>
-              $
-              x \in \rr
-              $
+              $x \in \rr$
             </Math>
             .
           </VerticalChunk>
@@ -5246,9 +4481,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + 5)^2 + 5 = 0
-              $$
+              $$(x + 5)^2 + 5 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5258,9 +4491,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + 5)^2 = -5
-              $$
+              $$(x + 5)^2 = -5$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5284,18 +4515,14 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            x^2 + 10x - 30 = 0
-            $$
+            $$x^2 + 10x - 30 = 0$$
           </MathBlock>
           <div
                class="spacer" />
           <VerticalChunk>
             has two solutions{" "}
             <Math>
-              $
-              x \in \rr
-              $
+              $x \in \rr$
             </Math>
             .
           </VerticalChunk>
@@ -5309,34 +4536,26 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + 5)^2 - 55 = 0
-              $$
+              $$(x + 5)^2 - 55 = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               because{" "}
               <Math>
-                $
-                (x + 5)^2 = x^2 + 10x + 25
-                $
+                $(x + 5)^2 = x^2 + 10x + 25$
               </Math>
               {" "}
               and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  25 - 55 = -30
-                  $
+                  $25 - 55 = -30$
                 </Math>
                 .
               </NoBreak>
               {" "}Passing{" "}
               <Math>
-                $
-                55
-                $
+                $55$
               </Math>
               {" "}to the
               other side, we find
@@ -5344,9 +4563,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x + 5)^2 = 55
-              $$
+              $$(x + 5)^2 = 55$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5356,9 +4573,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \,x + 5 = \pm\sqrt&#123;55&#125;
-              $$
+              $$\,x + 5 = \pm\sqrt&#123;55&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5368,9 +4583,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \,x = -5 \pm\sqrt&#123;55&#125;
-              $$
+              $$\,x = -5 \pm\sqrt&#123;55&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5394,9 +4607,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            &#123;y = x^2&#125;
-            $$
+            $$&#123;y = x^2&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -5406,9 +4617,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            &#123;y = Ax^2 + Bx&#125;
-            $$
+            $$&#123;y = Ax^2 + Bx&#125;$$
           </MathBlock>
           <div
                class="spacer" />
@@ -5416,24 +4625,18 @@ const Article = () => {
             for constants{" "}
             <NoBreak>
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}such that{" "}
             <NoBreak>
               <Math>
-                $
-                A \ne 0
-                $
+                $A \ne 0$
               </Math>
               ?
             </NoBreak>
@@ -5449,9 +4652,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;Ax^2 + Bx&#125;
-              $$
+              $$&#123;Ax^2 + Bx&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5461,9 +4662,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;A\Big(x^2 + &#123;B \over A&#125;x\Big)&#125;
-              $$
+              $$&#123;A\Big(x^2 + &#123;B \over A&#125;x\Big)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5473,9 +4672,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;x^2 + &#123;B \over A&#125;x&#125;
-              $$
+              $$&#123;x^2 + &#123;B \over A&#125;x&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5485,9 +4682,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;
-              $$
+              $$&#123;\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5497,9 +4692,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;Ax^2 + Bx&#125;
-              $$
+              $$&#123;Ax^2 + Bx&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5509,18 +4702,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;
-              $$
+              $$&#123;A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               that can be seen as descending from{" "}
               <Math>
-                $
-                y = x^2
-                $
+                $y = x^2$
               </Math>
               {" "}
               in three steps:
@@ -5528,51 +4717,37 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = x^2&#125;
-              $$
+              $$&#123;y = x^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2&#125;
-              $$
+              $$&#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;
-              $$
+              $$&#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;.
-              $$
+              $$&#123;y = A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;.$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5585,9 +4760,7 @@ const Article = () => {
             <CentralDisplayItalic>
               vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5598,25 +4771,19 @@ const Article = () => {
               a factor{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A
-                  $
+                  $A$
                 </Math>
                 ,
               </NoBreak>
               {" "}because we multiply the
               value of{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}by{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A
-                  $
+                  $A$
                 </Math>
                 .
               </NoBreak>
@@ -5628,9 +4795,7 @@ const Article = () => {
             <CentralDisplayItalic>
               vertical translation by{" "}
               <Math>
-                $
-                &#123;-&#123;B^2 \over 4A^2&#125;&#125;
-                $
+                $&#123;-&#123;B^2 \over 4A^2&#125;&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5641,24 +4806,18 @@ const Article = () => {
               graph by{" "}
               <NoBreak>
                 <Math>
-                  $
-                  &#123;B^2 \over 4A^2&#125;
-                  $
+                  $&#123;B^2 \over 4A^2&#125;$
                 </Math>
                 ,
               </NoBreak>
               {" "}because we add 
               {" "}
               <Math>
-                $
-                -&#123;B^2 \over 4A^2&#125;
-                $
+                $-&#123;B^2 \over 4A^2&#125;$
               </Math>
               {" "}to the value of{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               .
               The first step, on the other hand, is
@@ -5676,9 +4835,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ),
               </NoBreak>
@@ -5686,9 +4843,7 @@ const Article = () => {
               on”) to the current value of{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y
-                  $
+                  $y$
                 </Math>
                 .
               </NoBreak>
@@ -5703,9 +4858,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = f(x + a)&#125;
-              $$
+              $$&#123;y = f(x + a)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5713,9 +4866,7 @@ const Article = () => {
               (for some constant{" "}
               <NoBreak>
                 <Math>
-                  $
-                  a
-                  $
+                  $a$
                 </Math>
                 )
               </NoBreak>
@@ -5725,24 +4876,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = f(x)&#125;
-              $$
+              $$&#123;y = f(x)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by going{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}units to the right. The larger{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}
               is, thus, the further{" "}
@@ -5750,9 +4895,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = f(x + a)&#125;
-              $$
+              $$&#123;y = f(x + a)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -5762,51 +4905,39 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = f(x + 20)&#125;
-              $$
+              $$&#123;y = f(x + 20)&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               has value{" "}
               <Math>
-                $
-                f(0)
-                $
+                $f(0)$
               </Math>
               {" "}at{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -20
-                  $
+                  $x = -20$
                 </Math>
                 ,
               </NoBreak>
               {" "}and if you replace
               {" "}
               <Math>
-                $
-                20
-                $
+                $20$
               </Math>
               {" "}with something larger, that position (i.e., 
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -20
-                  $
+                  $x = -20$
                 </Math>
                 )
               </NoBreak>
               {" "}drifts even further off to the left!
               In any case, the graph{" "}
               <Math>
-                $
-                y = f(x + a)
-                $
+                $y = f(x + a)$
               </Math>
               {" "}is the
             </VerticalChunk>
@@ -5820,15 +4951,11 @@ const Article = () => {
             <VerticalChunk>
               translate by{" "}
               <Math>
-                $
-                a
-                $
+                $a$
               </Math>
               {" "}units of{" "}
               <Math>
-                $
-                y = f(x)
-                $
+                $y = f(x)$
               </Math>
               {" "}
               and, as a consequence, the first step effects a
@@ -5838,9 +4965,7 @@ const Article = () => {
             <CentralDisplayItalic>
               leftward translation by{" "}
               <Math>
-                $
-                &#123;B\over 2A&#125;
-                $
+                $&#123;B\over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5850,9 +4975,7 @@ const Article = () => {
               of the curve{" "}
               <NoBreak>
                 <Math>
-                  $
-                  y = x^2
-                  $
+                  $y = x^2$
                 </Math>
                 ,
               </NoBreak>
@@ -5863,9 +4986,7 @@ const Article = () => {
             <CentralDisplayItalic>
               horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B\over 2A&#125;
-                $
+                $-&#123;B\over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5877,9 +4998,7 @@ const Article = () => {
               {" "}
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 -axis,
               </NoBreak>
@@ -5896,9 +5015,7 @@ const Article = () => {
             <CentralDisplayItalic>
               1. horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B \over 2A&#125;
-                $
+                $-&#123;B \over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5907,9 +5024,7 @@ const Article = () => {
             <CentralDisplayItalic>
               2. vertical translation by{" "}
               <Math>
-                $
-                &#123;-&#123;B^2 \over 4A^2&#125;&#125;
-                $
+                $&#123;-&#123;B^2 \over 4A^2&#125;&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5918,9 +5033,7 @@ const Article = () => {
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -5943,51 +5056,37 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = x^2&#125;
-              $$
+              $$&#123;y = x^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = x^2 - &#123;B^2 \over 4A^2&#125;&#125;
-              $$
+              $$&#123;y = x^2 - &#123;B^2 \over 4A^2&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;
-              $$
+              $$&#123;y = \,\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;\downarrow&#125;
-              $$
+              $$&#123;\downarrow&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;y = A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;
-              $$
+              $$&#123;y = A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;\right]&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6001,9 +5100,7 @@ const Article = () => {
               replaces “
               <NoBreak>
                 <Math>
-                  $
-                  x
-                  $
+                  $x$
                 </Math>
                 ”
               </NoBreak>
@@ -6022,39 +5119,29 @@ const Article = () => {
             Let{" "}
             <NoBreak>
               <Math>
-                $
-                x_0 \in \rr
-                $
+                $x_0 \in \rr$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              y_0 \in \rr
-              $
+              $y_0 \in \rr$
             </Math>
             {" "}and 
             {" "}
             <Math>
-              $
-              a \in \rr
-              $
+              $a \in \rr$
             </Math>
             {" "}with{" "}
             <NoBreak>
               <Math>
-                $
-                y_0 \geq 0
-                $
+                $y_0 \geq 0$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              a \ne 0.
-              $
+              $a \ne 0.$
             </Math>
             {" "}
             If you apply these transformations...
@@ -6064,9 +5151,7 @@ const Article = () => {
           <CentralDisplayItalic>
             1. vertical translation by{" "}
             <Math>
-              $
-              -y_0
-              $
+              $-y_0$
             </Math>
             {" "}{" "}
           </CentralDisplayItalic>
@@ -6075,9 +5160,7 @@ const Article = () => {
           <CentralDisplayItalic>
             2. horizontal translation by{" "}
             <Math>
-              $
-              x_0
-              $
+              $x_0$
             </Math>
             {" "}{" "}
           </CentralDisplayItalic>
@@ -6086,9 +5169,7 @@ const Article = () => {
           <CentralDisplayItalic>
             3. vertical scaling by{" "}
             <Math>
-              $
-              a
-              $
+              $a$
             </Math>
             {" "}{" "}
           </CentralDisplayItalic>
@@ -6098,9 +5179,7 @@ const Article = () => {
             ...to the curve{" "}
             <NoBreak>
               <Math>
-                $
-                y = x^2
-                $
+                $y = x^2$
               </Math>
               ,
             </NoBreak>
@@ -6112,16 +5191,12 @@ const Article = () => {
             </i>
             {" "}are values of{" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}such 
             that{" "}
             <Math>
-              $
-              y = 0
-              $
+              $y = 0$
             </Math>
             .)
           </VerticalChunk>
@@ -6133,23 +5208,17 @@ const Article = () => {
               Start by noting that the point 
               {" "}
               <Math>
-                $
-                (\sqrt&#123;y_0&#125;, y_0)
-                $
+                $(\sqrt&#123;y_0&#125;, y_0)$
               </Math>
               {" "}is on the curve{" "}
               <Math>
-                $
-                y = x^2
-                $
+                $y = x^2$
               </Math>
               ,
               as well as the point{" "}
               <NoBreak>
                 <Math>
-                  $
-                  (-\sqrt&#123;y_0&#125;, y_0)
-                  $
+                  $(-\sqrt&#123;y_0&#125;, y_0)$
                 </Math>
                 ,
               </NoBreak>
@@ -6157,15 +5226,11 @@ const Article = () => {
               because
               {" "}
               <Math>
-                $
-                (\sqrt&#123;y_0&#125;)^2 = (-\sqrt&#123;y_0&#125;)^2 =
-                $
+                $(\sqrt&#123;y_0&#125;)^2 = (-\sqrt&#123;y_0&#125;)^2 =$
               </Math>
               {" "}{" "}
               <Math>
-                $
-                y_0;
-                $
+                $y_0;$
               </Math>
               {" "}
               here is a sketch of the situation before 
@@ -6181,16 +5246,12 @@ const Article = () => {
             <VerticalChunk>
               After vertically translating by{" "}
               <Math>
-                $
-                -y_0
-                $
+                $-y_0$
               </Math>
               {" "}
               the roots will therefore be at{" "}
               <Math>
-                $
-                x = \pm\sqrt&#123;y_0&#125;
-                $
+                $x = \pm\sqrt&#123;y_0&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -6204,16 +5265,12 @@ const Article = () => {
             <VerticalChunk>
               Then after horizontally translating by{" "}
               <Math>
-                $
-                x_0
-                $
+                $x_0$
               </Math>
               {" "}
               the roots mosey over to{" "}
               <Math>
-                $
-                x = x_0\pm\sqrt&#123;y_0&#125;
-                $
+                $x = x_0\pm\sqrt&#123;y_0&#125;$
               </Math>
               :
             </VerticalChunk>
@@ -6233,16 +5290,12 @@ const Article = () => {
               </i>
               {" "}the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               axis (here{" "}
               <Math>
-                $
-                a \approx 1.7
-                $
+                $a \approx 1.7$
               </Math>
               ):
             </VerticalChunk>
@@ -6256,9 +5309,7 @@ const Article = () => {
             <VerticalChunk>
               So the roots are at:{" "}
               <Math>
-                $
-                x = x_0 \pm \sqrt&#123;y_0&#125;
-                $
+                $x = x_0 \pm \sqrt&#123;y_0&#125;$
               </Math>
               .
               (Like we found them after the second step.)
@@ -6276,38 +5327,28 @@ const Article = () => {
             Use the results of the previous two exercises
             to find the value(s) of{" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}such that 
             {" "}
             <Math>
-              $
-              Ax^2 + Bx = 0
-              $
+              $Ax^2 + Bx = 0$
             </Math>
             {" "}for constants{" "}
             <NoBreak>
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              B
-              $
+              $B$
             </Math>
             {" "}such 
             that{" "}
             <Math>
-              $
-              A \ne 0
-              $
+              $A \ne 0$
             </Math>
             .
           </VerticalChunk>
@@ -6321,18 +5362,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              Ax^2 + Bx = 0
-              $$
+              $$Ax^2 + Bx = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               obviously has solution{" "}
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               {" "}to start
               with, so we{" "}
@@ -6345,9 +5382,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              Ax^2 + Bx = x(Ax + B)
-              $$
+              $$Ax^2 + Bx = x(Ax + B)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6357,9 +5392,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x(Ax + B) = 0
-              $$
+              $$x(Ax + B) = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6369,18 +5402,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = 0
-              $$
+              $$x = 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               and the other root is the value of{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               such that
@@ -6388,9 +5417,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              Ax + B = 0
-              $$
+              $$Ax + B = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6398,9 +5425,7 @@ const Article = () => {
               which is{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -B/A
-                  $
+                  $x = -B/A$
                 </Math>
                 .
               </NoBreak>
@@ -6409,35 +5434,27 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x(Ax + B)
-              $$
+              $$x(Ax + B)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               to be{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}you either need the first term to
               be{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}leading us to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = 0
-                  $
+                  $x = 0$
                 </Math>
                 ,
               </NoBreak>
@@ -6445,34 +5462,26 @@ const Article = () => {
               term to be{" "}
               <NoBreak>
                 <Math>
-                  $
-                  0
-                  $
+                  $0$
                 </Math>
                 ,
               </NoBreak>
               {" "}leading us to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  Ax + B = 0
-                  $
+                  $Ax + B = 0$
                 </Math>
                 —the
               </NoBreak>
               {" "}
               product of two things is{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               {" "}if and only if
               one of the two things is{" "}
               <Math>
-                $
-                0
-                $
+                $0$
               </Math>
               .)
             </VerticalChunk>
@@ -6480,15 +5489,11 @@ const Article = () => {
                  indent={true}>
               So the roots are{" "}
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                x = -B/A
-                $
+                $x = -B/A$
               </Math>
               .
             </VerticalChunk>
@@ -6501,16 +5506,12 @@ const Article = () => {
               , 
               however, we will use the fact that{" "}
               <Math>
-                $
-                y = Ax^2 + Bx
-                $
+                $y = Ax^2 + Bx$
               </Math>
               {" "}
               is obtained from{" "}
               <Math>
-                $
-                y = x^2
-                $
+                $y = x^2$
               </Math>
               {" "}by the following
               sequence of transformations (cf. Exercise 14):
@@ -6520,9 +5521,7 @@ const Article = () => {
             <CentralDisplayItalic>
               1. vertical translation by{" "}
               <Math>
-                $
-                -&#123;B^2 \over 4A^2&#125;
-                $
+                $-&#123;B^2 \over 4A^2&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -6531,9 +5530,7 @@ const Article = () => {
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B \over 2A&#125;
-                $
+                $-&#123;B \over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -6542,9 +5539,7 @@ const Article = () => {
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -6554,9 +5549,7 @@ const Article = () => {
               (We put the vertical translation first.)
               By Exercise 15, the roots of{" "}
               <Math>
-                $
-                y = Ax^2 + Bx
-                $
+                $y = Ax^2 + Bx$
               </Math>
               {" "}
               are thus at
@@ -6564,10 +5557,8 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \tag&#123;A&#125;
-              x = -&#123;B\over 2A&#125; \pm \sqrt&#123;B^2 \over 4A^2&#125;
-              $$
+              $$\tag&#123;A&#125;
+              x = -&#123;B\over 2A&#125; \pm \sqrt&#123;B^2 \over 4A^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6575,15 +5566,11 @@ const Article = () => {
               which looks a little different than our 
               previous result of{" "}
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                x = -B/A
-                $
+                $x = -B/A$
               </Math>
               {" "}
               until you realize that
@@ -6591,9 +5578,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \pm \sqrt&#123;B^2 \over 4A^2&#125; = \pm &#123;B \over 2A&#125;
-              $$
+              $$\pm \sqrt&#123;B^2 \over 4A^2&#125; = \pm &#123;B \over 2A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6603,26 +5588,20 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \left(&#123;B \over 2A&#125;\right)^&#123;\!2&#125; = &#123;B^2 \over 4A^2&#125;
-              $$
+              $$\left(&#123;B \over 2A&#125;\right)^&#123;\!2&#125; = &#123;B^2 \over 4A^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               and even though{" "}
               <Math>
-                $
-                &#123;B\over 2A&#125;
-                $
+                $&#123;B\over 2A&#125;$
               </Math>
               {" "}could be 
               negative, the “
               <NoBreak>
                 <Math>
-                  $
-                  \pm
-                  $
+                  $\pm$
                 </Math>
                 ”
               </NoBreak>
@@ -6638,9 +5617,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = -&#123;B\over 2A&#125; \pm &#123;B \over 2A&#125;
-              $$
+              $$x = -&#123;B\over 2A&#125; \pm &#123;B \over 2A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6650,9 +5627,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -&#123;B\over 2A&#125; + &#123;B \over 2A&#125; = 0
-              $$
+              $$-&#123;B\over 2A&#125; + &#123;B \over 2A&#125; = 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -6662,26 +5637,20 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -&#123;B\over 2A&#125; - &#123;B \over 2A&#125; = -&#123;2B\over 2A&#125; = -&#123;B\over A&#125;
-              $$
+              $$-&#123;B\over 2A&#125; - &#123;B \over 2A&#125; = -&#123;2B\over 2A&#125; = -&#123;B\over A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               so here too we find that the roots are{" "}
               <Math>
-                $
-                x = 0
-                $
+                $x = 0$
               </Math>
               {" "}
               and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x = -B/A
-                  $
+                  $x = -B/A$
                 </Math>
                 .
               </NoBreak>
@@ -6699,15 +5668,11 @@ const Article = () => {
             {" "}
             True or false (
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}are functions):
           </VerticalChunk>
@@ -6724,36 +5689,28 @@ const Article = () => {
             <Item>
               i.{" "}
               <Math>
-                $
-                f \circ g = (x \ra f(g(x)))
-                $
+                $f \circ g = (x \ra f(g(x)))$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               ii.{" "}
               <Math>
-                $
-                g \circ f = (x \ra f(g(x)))
-                $
+                $g \circ f = (x \ra f(g(x)))$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               iii.{" "}
               <Math>
-                $
-                f \circ g = (x \ra g(f(x)))
-                $
+                $f \circ g = (x \ra g(f(x)))$
               </Math>
               {" "}{" "}
             </Item>
             <Item>
               iv.{" "}
               <Math>
-                $
-                g \circ f = (x \ra g(f(x)))
-                $
+                $g \circ f = (x \ra g(f(x)))$
               </Math>
               {" "}{" "}
             </Item>
@@ -6766,23 +5723,17 @@ const Article = () => {
               The true statements are i, iv, because
               {" "}
               <Math>
-                $
-                f \circ g
-                $
+                $f \circ g$
               </Math>
               {" "}is the function that maps an 
               input{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}to{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f(g(x))
-                  $
+                  $f(g(x))$
                 </Math>
                 ,
               </NoBreak>
@@ -6790,9 +5741,7 @@ const Article = () => {
               for{" "}
               <NoBreak>
                 <Math>
-                  $
-                  g \circ f
-                  $
+                  $g \circ f$
                 </Math>
                 .
               </NoBreak>
@@ -6810,15 +5759,11 @@ const Article = () => {
             {" "}
             If{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}are functions then we define 
             (and not just us but people in general)
@@ -6826,9 +5771,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f + g
-            $$
+            $$f + g$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6838,9 +5781,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            t \ra f(t) + g(t)
-            $$
+            $$t \ra f(t) + g(t)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6848,25 +5789,19 @@ const Article = () => {
             (use ‘
             <NoBreak>
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               ’
             </NoBreak>
             {" "}if you like), 
             i.e., to be the function that applies{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and
             {" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}separately and then takes the sum,
             and we define{" "}
@@ -6874,9 +5809,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            fg
-            $$
+            $$fg$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6886,9 +5819,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            z \ra f(z)g(z)
-            $$
+            $$z \ra f(z)g(z)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6896,25 +5827,19 @@ const Article = () => {
             (use ‘
             <NoBreak>
               <Math>
-                $
-                t
-                $
+                $t$
               </Math>
               ’
             </NoBreak>
             {" "}if you like, hehe),
             i.e., to be the function that applies{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             {" "}and 
             {" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}separately and then takes the product.
             (These definitions are similar to how we define
@@ -6922,9 +5847,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f \circ g
-            $$
+            $$f \circ g$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6934,9 +5857,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            u \ra f(g(u))
-            $$
+            $$u \ra f(g(u))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -6944,9 +5865,7 @@ const Article = () => {
             for the symbol “
             <NoBreak>
               <Math>
-                $
-                \circ
-                $
+                $\circ$
               </Math>
               ”,
             </NoBreak>
@@ -6971,52 +5890,38 @@ const Article = () => {
             Given these definitions, which of the following
             equalities hold, in general for all functions{" "}
             <Math>
-              $
-              f
-              $
+              $f$
             </Math>
             ,
             {" "}
             <Math>
-              $
-              g
-              $
+              $g$
             </Math>
             {" "}and{" "}
             <Math>
-              $
-              h
-              $
+              $h$
             </Math>
             ?
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f \circ (g + h) = (x \ra f(g(x)) + f(h(x)))
-            $$
+            $$f \circ (g + h) = (x \ra f(g(x)) + f(h(x)))$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            f \circ (g + h) = (x \ra f(g(x) + h(x)))
-            $$
+            $$f \circ (g + h) = (x \ra f(g(x) + h(x)))$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (g + h) \circ f = (x \ra h(f(x)) + g(f(x)))
-            $$
+            $$(g + h) \circ f = (x \ra h(f(x)) + g(f(x)))$$
           </MathBlock>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (g + h) \circ f = (x \ra (g + h)(f(x)))
-            $$
+            $$(g + h) \circ f = (x \ra (g + h)(f(x)))$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7029,9 +5934,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \circ g) + (f \circ h)
-              $$
+              $$(f \circ g) + (f \circ h)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7039,9 +5942,7 @@ const Article = () => {
               not{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f \circ (g + h)
-                  $
+                  $f \circ (g + h)$
                 </Math>
                 ;
               </NoBreak>
@@ -7052,9 +5953,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra g(f(x)) + h(f(x)))
-              $$
+              $$(x \ra g(f(x)) + h(f(x)))$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7062,18 +5961,14 @@ const Article = () => {
               with “
               <NoBreak>
                 <Math>
-                  $
-                  g
-                  $
+                  $g$
                 </Math>
                 ”
               </NoBreak>
               {" "}and “
               <NoBreak>
                 <Math>
-                  $
-                  h
-                  $
+                  $h$
                 </Math>
                 ”
               </NoBreak>
@@ -7081,9 +5976,7 @@ const Article = () => {
               commutative, so it doesn't matter); the fourth
               equality is true: it is the definition of “
               <Math>
-                $
-                \circ
-                $
+                $\circ$
               </Math>
               ”.
             </VerticalChunk>
@@ -7103,9 +5996,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            y = x^2
-            $$
+            $$y = x^2$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7115,9 +6006,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            y = Ax^2 + Bx + C
-            $$
+            $$y = Ax^2 + Bx + C$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7125,32 +6014,24 @@ const Article = () => {
             for constants{" "}
             <NoBreak>
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              C
-              $
+              $C$
             </Math>
             {" "}such that{" "}
             <Math>
-              $
-              A \ne 0
-              $
+              $A \ne 0$
             </Math>
             ?
           </VerticalChunk>
@@ -7164,9 +6045,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              Ax^2 + Bx + C
-              $$
+              $$Ax^2 + Bx + C$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7176,9 +6055,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A\Big(x^2 + &#123;B \over A&#125;x + &#123;C\over A&#125;\Big)
-              $$
+              $$A\Big(x^2 + &#123;B \over A&#125;x + &#123;C\over A&#125;\Big)$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7188,9 +6065,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x^2 + &#123;B \over A&#125;x
-              $$
+              $$x^2 + &#123;B \over A&#125;x$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7200,18 +6075,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;
-              $$
+              $$\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               so that, altogether,{" "}
               <Math>
-                $
-                Ax^2 + Bx + C
-                $
+                $Ax^2 + Bx + C$
               </Math>
               {" "}
               becomes
@@ -7219,9 +6090,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125; + &#123;C\over A&#125;\right]
-              $$
+              $$A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125; + &#123;C\over A&#125;\right]$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7231,9 +6100,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 - 4AC\over 4A^2&#125;\right]
-              $$
+              $$A\left[\Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 - 4AC\over 4A^2&#125;\right]$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7245,9 +6112,7 @@ const Article = () => {
               the term “
               <NoBreak>
                 <Math>
-                  $
-                  -&#123;B^2\over 4A&#125;
-                  $
+                  $-&#123;B^2\over 4A&#125;$
                 </Math>
                 ”
               </NoBreak>
@@ -7264,9 +6129,7 @@ const Article = () => {
             <CentralDisplayItalic>
               1. horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B \over 2A&#125;
-                $
+                $-&#123;B \over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7275,9 +6138,7 @@ const Article = () => {
             <CentralDisplayItalic>
               2. vertical translation by{" "}
               <Math>
-                $
-                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                $
+                $&#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7286,9 +6147,7 @@ const Article = () => {
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7302,9 +6161,7 @@ const Article = () => {
             <CentralDisplayItalic>
               1. vertical translation by{" "}
               <Math>
-                $
-                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                $
+                $&#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7313,9 +6170,7 @@ const Article = () => {
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B \over 2A&#125;
-                $
+                $-&#123;B \over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7324,9 +6179,7 @@ const Article = () => {
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7347,18 +6200,14 @@ const Article = () => {
             {" "}
             What are the roots (i.e., solutions){" "}
             <Math>
-              $
-              x
-              $
+              $x$
             </Math>
             {" "}of
           </VerticalChunk>
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            Ax^2 + Bx + C = 0
-            $$
+            $$Ax^2 + Bx + C = 0$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7366,32 +6215,24 @@ const Article = () => {
             for constants{" "}
             <NoBreak>
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <NoBreak>
               <Math>
-                $
-                B
-                $
+                $B$
               </Math>
               ,
             </NoBreak>
             {" "}{" "}
             <Math>
-              $
-              C
-              $
+              $C$
             </Math>
             {" "}such that{" "}
             <Math>
-              $
-              A \ne 0
-              $
+              $A \ne 0$
             </Math>
             ?
           </VerticalChunk>
@@ -7405,18 +6246,14 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              y = Ax^2 + Bx + C
-              $$
+              $$y = Ax^2 + Bx + C$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               is obtained from the curve{" "}
               <Math>
-                $
-                y = x^2
-                $
+                $y = x^2$
               </Math>
               {" "}by the following sequence of 
               transformations (cf. Exercise 19):
@@ -7426,9 +6263,7 @@ const Article = () => {
             <CentralDisplayItalic>
               1. vertical translation by{" "}
               <Math>
-                $
-                &#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;
-                $
+                $&#123;-&#123;B^2 - 4AC \over 4A^2&#125;&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7437,9 +6272,7 @@ const Article = () => {
             <CentralDisplayItalic>
               2. horizontal translation by{" "}
               <Math>
-                $
-                -&#123;B \over 2A&#125;
-                $
+                $-&#123;B \over 2A&#125;$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7448,9 +6281,7 @@ const Article = () => {
             <CentralDisplayItalic>
               3. vertical scaling by{" "}
               <Math>
-                $
-                A
-                $
+                $A$
               </Math>
               {" "}{" "}
             </CentralDisplayItalic>
@@ -7467,9 +6298,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;B^2 - 4AC \over 4A^2&#125; &lt; 0
-              $$
+              $$&#123;B^2 - 4AC \over 4A^2&#125; &lt; 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7479,9 +6308,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              -&#123;B^2 - 4AC \over 4A^2&#125; &gt; 0
-              $$
+              $$-&#123;B^2 - 4AC \over 4A^2&#125; &gt; 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7493,9 +6320,7 @@ const Article = () => {
               , 
               the curve detaches from the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}axis never
               to see it again, and there are no roots!
@@ -7507,9 +6332,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;B^2 - 4AC \over 4A^2&#125; \geq 0
-              $$
+              $$&#123;B^2 - 4AC \over 4A^2&#125; \geq 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7519,24 +6342,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = -&#123;B \over 2A&#125; \pm \sqrt&#123;B^2 - 4AC \over 4A^2&#125;
-              $$
+              $$x = -&#123;B \over 2A&#125; \pm \sqrt&#123;B^2 - 4AC \over 4A^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               by Exercise 15.{" "}
               <Math>
-                $
-                \rightarrow
-                $
+                $\rightarrow$
               </Math>
               {" "}~The End~{" "}
               <Math>
-                $
-                \leftarrow
-                $
+                $\leftarrow$
               </Math>
               {" "}{" "}
             </VerticalChunk>
@@ -7554,9 +6371,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \pm\sqrt&#123;B^2 - 4AC \over 4A^2&#125; = \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;
-              $$
+              $$\pm\sqrt&#123;B^2 - 4AC \over 4A^2&#125; = \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7566,9 +6381,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \pm E = \pm F
-              $$
+              $$\pm E = \pm F$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7579,9 +6392,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              |E| = |F|
-              $$
+              $$|E| = |F|$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7591,9 +6402,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              E^2 = F^2
-              $$
+              $$E^2 = F^2$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7604,9 +6413,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = -&#123;B \over 2A&#125; \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;
-              $$
+              $$x = -&#123;B \over 2A&#125; \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7616,9 +6423,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              x = &#123;&#123;-B \pm \sqrt&#123;B^2 - 4AC&#125;&#125; \over 2A&#125;
-              $$
+              $$x = &#123;&#123;-B \pm \sqrt&#123;B^2 - 4AC&#125;&#125; \over 2A&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7639,9 +6444,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;B^2 - 4AC \over 4A^2&#125; &lt; 0
-              $$
+              $$&#123;B^2 - 4AC \over 4A^2&#125; &lt; 0$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7651,9 +6454,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              \sqrt&#123;B^2 - 4AC \over 4A^2&#125;
-              $$
+              $$\sqrt&#123;B^2 - 4AC \over 4A^2&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -7665,25 +6466,19 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;B^2 - 4AC \over 4A^2&#125; &lt; 0\iff B^2 - 4AC &lt; 0
-              $$
+              $$&#123;B^2 - 4AC \over 4A^2&#125; &lt; 0\iff B^2 - 4AC &lt; 0$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               because{" "}
               <Math>
-                $
-                4A^2 &gt; 0
-                $
+                $4A^2 &gt; 0$
               </Math>
               {" "}for all{" "}
               <NoBreak>
                 <Math>
-                  $
-                  A \ne 0
-                  $
+                  $A \ne 0$
                 </Math>
                 ,
               </NoBreak>
@@ -7711,9 +6506,7 @@ const Article = () => {
           <div
                class="spacer" />
           <MathBlock>
-            $$
-            (f \ra x \ra h \ra &#123;f(x+h) - f(x)\over h&#125;)(x \ra x^2)(5)(0.1)
-            $$
+            $$(f \ra x \ra h \ra &#123;f(x+h) - f(x)\over h&#125;)(x \ra x^2)(5)(0.1)$$
           </MathBlock>
           <div
                class="spacer" />
@@ -7730,24 +6523,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra x^3)(6)
-              $$
+              $$(x \ra x^3)(6)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}with{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               ...
             </VerticalChunk>
@@ -7760,22 +6547,16 @@ const Article = () => {
             <VerticalChunk>
               ...and{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               {" "}becomes the value to use for{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               in “
               <Math>
-                $
-                x^3
-                $
+                $x^3$
               </Math>
               ”:
             </VerticalChunk>
@@ -7791,24 +6572,18 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra y \ra x^3y)(6)
-              $$
+              $$(x \ra y \ra x^3y)(6)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...we also pair the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}with{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               ...
             </VerticalChunk>
@@ -7821,22 +6596,16 @@ const Article = () => {
             <VerticalChunk>
               ...and{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               {" "}becomes the value to use for{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               in “
               <Math>
-                $
-                y \ra x^3y
-                $
+                $y \ra x^3y$
               </Math>
               ”:
             </VerticalChunk>
@@ -7855,36 +6624,26 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (x \ra y \ra x^3y)(6)(8)
-              $$
+              $$(x \ra y \ra x^3y)(6)(8)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}with{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               {" "}and the{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}with{" "}
               <Math>
-                $
-                8
-                $
+                $8$
               </Math>
               ...
             </VerticalChunk>
@@ -7897,34 +6656,24 @@ const Article = () => {
             <VerticalChunk>
               ...and{" "}
               <Math>
-                $
-                6
-                $
+                $6$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                8
-                $
+                $8$
               </Math>
               {" "}become respectively the 
               values to use for{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                y
-                $
+                $y$
               </Math>
               {" "}in “
               <Math>
-                $
-                x^3y
-                $
+                $x^3y$
               </Math>
               ”:
             </VerticalChunk>
@@ -7940,55 +6689,41 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              (f \ra x \ra h \ra &#123;f(x+h) - f(x)\over h&#125;)(x \ra x^2)(5)(0.1)
-              $$
+              $$(f \ra x \ra h \ra &#123;f(x+h) - f(x)\over h&#125;)(x \ra x^2)(5)(0.1)$$
             </MathBlock>
             <div
                  class="spacer" />
             <VerticalChunk>
               ...we pair the{" "}
               <Math>
-                $
-                f
-                $
+                $f$
               </Math>
               {" "}with{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x \ra x^2
-                  $
+                  $x \ra x^2$
                 </Math>
                 ,
               </NoBreak>
               {" "}the 
               {" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}with{" "}
               <NoBreak>
                 <Math>
-                  $
-                  5
-                  $
+                  $5$
                 </Math>
                 ,
               </NoBreak>
               {" "}and the{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}with{" "}
               <Math>
-                $
-                0.1
-                $
+                $0.1$
               </Math>
               ...
             </VerticalChunk>
@@ -8002,52 +6737,38 @@ const Article = () => {
               ...and{" "}
               <NoBreak>
                 <Math>
-                  $
-                  x \ra x^2
-                  $
+                  $x \ra x^2$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                5
-                $
+                $5$
               </Math>
               {" "}and{" "}
               <Math>
-                $
-                0.1
-                $
+                $0.1$
               </Math>
               {" "}become
               respectively the values to use for{" "}
               <NoBreak>
                 <Math>
-                  $
-                  f
-                  $
+                  $f$
                 </Math>
                 ,
               </NoBreak>
               {" "}{" "}
               <Math>
-                $
-                x
-                $
+                $x$
               </Math>
               {" "}
               and{" "}
               <Math>
-                $
-                h
-                $
+                $h$
               </Math>
               {" "}in “
               <Math>
-                $
-                &#123;f(x + h) - f(x)\over h&#125;
-                $
+                $&#123;f(x + h) - f(x)\over h&#125;$
               </Math>
               ”:
             </VerticalChunk>
@@ -8063,9 +6784,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;(x \ra x^2)(5 + 0.1) - (x \ra x^2)(5) \over 0.1&#125;
-              $$
+              $$&#123;(x \ra x^2)(5 + 0.1) - (x \ra x^2)(5) \over 0.1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8075,9 +6794,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;(x \ra x^2)(5.1) - (x \ra x^2)(5) \over 0.1&#125;
-              $$
+              $$&#123;(x \ra x^2)(5.1) - (x \ra x^2)(5) \over 0.1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8087,9 +6804,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;5.1^2 - 5^2 \over 0.1&#125;
-              $$
+              $$&#123;5.1^2 - 5^2 \over 0.1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8099,9 +6814,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;26.01 - 25 \over 0.1&#125;
-              $$
+              $$&#123;26.01 - 25 \over 0.1&#125;$$
             </MathBlock>
             <div
                  class="spacer" />
@@ -8115,9 +6828,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <MathBlock>
-              $$
-              &#123;1.01 \over 0.1&#125; = 1.01 \times 10 = 10.1
-              $$
+              $$&#123;1.01 \over 0.1&#125; = 1.01 \times 10 = 10.1$$
             </MathBlock>
             <div
                  class="spacer" />
