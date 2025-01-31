@@ -20,21 +20,31 @@ const Article = () => {
          title="A Few Refreshers">
       <Section>
         <div>
-          _&ensp;&ensp;&ensp;hello world
-          goodbye
-          <img />
-          byyeee&ensp;&ensp;&ensp;_
-          _&ensp;&ensp;&ensp;hello world
-          goodbye
-          <img />
-          &ensp;&ensp;&ensp;_
-          <i
-               font-size={45}>
-            &ensp;&ensp;&ensp;hello world
+          {" "}{" "}
+          <i>
+            hello world
             goodbye
             <img />
-            &ensp;&ensp;&ensp;
+            byyeee
           </i>
+          {" "}{" "}
+          {" "}{" "}
+          <i>
+            hello world
+            goodbye
+            <img />
+            {" "}{" "}
+          </i>
+          {" "}{" "}
+          {" "}{" "}
+          <i
+               font-size={45}>
+            hello world
+            goodbye
+            <img />
+            {" "}{" "}
+          </i>
+          {" "}{" "}
         </div>
       </Section>
     </Chapter>

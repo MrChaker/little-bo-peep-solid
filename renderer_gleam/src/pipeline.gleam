@@ -1,3 +1,4 @@
+import desugarers/extract_starting_and_ending_spaces
 import desugarers/unwrap_tags_if_no_attributes
 import desugarers/insert_bookend_text_if_no_attributes.{insert_bookend_text_if_no_attributes}
 import gleam/option.{Some, None}
@@ -324,6 +325,9 @@ pub fn our_pipeline() -> List(Pipe) {
     // unwrap_tags(["VerticalChunk"]),
     // insert_bookend_tags([#("i", "3p", "3p")]),
     // fold_tags_into_text([#("3p", "   ")]),
+    // extract_starting_and_ending_spaces.extract_starting_and_ending_spaces([
+    //   "i"
+    // ])
     // encode_spaces_in_first_and_last_child(["i", "b", "strong"]),
     // insert_bookend_text_if_no_attributes([
     //   #("i", "_", "_"),
