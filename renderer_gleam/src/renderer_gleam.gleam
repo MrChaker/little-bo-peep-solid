@@ -75,10 +75,10 @@ fn lbp_chapter_bootcamp_common_emitter(
   fragment_type: FragmentType,
   number: Int,
 ) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
-  let blame = BlamedAttribute(blame_us("lbp_fragment_emitterL65"), "number", ins(number))
+  let number_attribute = BlamedAttribute(blame_us("lbp_fragment_emitterL65"), "number", ins(number))
 
-  use with_attribute <- infra.on_error_on_ok(
-    over: infra.prepend_unique_key_attribute(fragment, blame),
+  use fragment <- infra.on_error_on_ok(
+    over: infra.prepend_unique_key_attribute(fragment, number_attribute),
     with_on_error: fn(_) { Error(NumberAttributeAlreadyExists(fragment_type, number)) }
   )
 
@@ -108,7 +108,7 @@ fn lbp_chapter_bootcamp_common_emitter(
       BlamedLine(blame_us("lbp_fragment_emitter"), 0, "const Article = () => {"),
       BlamedLine(blame_us("lbp_fragment_emitter"), 2, "return ("),
     ],
-    vxml_parser.vxml_to_jsx_blamed_lines(with_attribute, 4),
+    vxml_parser.vxml_to_jsx_blamed_lines(fragment, 4),
     [
       BlamedLine(blame_us("lbp_fragment_emitter"), 2, ");"),
       BlamedLine(blame_us("lbp_fragment_emitter"), 0, "};"),
@@ -184,7 +184,10 @@ fn cli_usage_supplementary() {
 
 pub fn main() {
   use amendments <- infra.on_error_on_ok(
-    vr.process_command_line_arguments(argv.load().arguments, [#("--prettier", True)]),
+    vr.process_command_line_arguments(
+      argv.load().arguments,
+      [#("--prettier", True)]
+    ),
     fn (error) {
       io.println("")
       io.println("command line error: " <> ins(error))
@@ -212,7 +215,7 @@ pub fn main() {
     |> vr.amend_renderer_paramaters_by_command_line_amendment(amendments)
 
   let debug_options = vr.empty_renderer_debug_options("../renderer_artifacts")
-    |> vr.amend_renderer_debug_options_by_command_line_amendment(amendments)
+    |> vr.amend_renderer_debug_options_by_command_line_amendment(amendments, renderer.pipeline)
 
   case vr.run_renderer(
     renderer,
