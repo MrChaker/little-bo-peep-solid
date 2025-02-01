@@ -37,7 +37,7 @@ const VerticalChunk = (
         store.show_areas && "test-bg"
       )}
       style={props.style}>
-      <div>{props.children}</div>
+      <p>{props.children}</p>
     </div>
   );
 };

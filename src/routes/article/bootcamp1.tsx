@@ -20,7 +20,6 @@ const Article = () => {
          title="Sets">
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Notation.
           </b>
@@ -125,14 +124,13 @@ const Article = () => {
           <i>
             empty
           </i>
-          {" "}set, a set with no elements!{" "}
+          {" "}set, a set with no elements!
         </VerticalChunk>
       </Section>
       <div
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             What it does.
           </b>
@@ -237,7 +235,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          or{" "}
+          or
         </VerticalChunk>
         <div
              class="spacer" />
@@ -274,7 +272,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          or{" "}
+          or
         </VerticalChunk>
         <div
              class="spacer" />
@@ -292,7 +290,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          or{" "}
+          or
         </VerticalChunk>
         <div
              class="spacer" />
@@ -365,14 +363,12 @@ const Article = () => {
             </Math>
             .
           </NoBreak>
-          {" "}{" "}
         </VerticalChunk>
       </Section>
       <div
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Set Equality.
           </b>
@@ -515,7 +511,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Second notation for the empty set.
           </b>
@@ -549,7 +544,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Sets within sets.
           </b>
@@ -660,7 +654,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Set union and set intersection.
           </b>
@@ -679,7 +672,7 @@ const Article = () => {
           <Math>
             $B$
           </Math>
-          {" "}is written{" "}
+          {" "}is written
         </VerticalChunk>
         <div
              class="spacer" />
@@ -748,7 +741,7 @@ const Article = () => {
           <Math>
             $B$
           </Math>
-          {" "}is written{" "}
+          {" "}is written
         </VerticalChunk>
         <div
              class="spacer" />
@@ -815,11 +808,9 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          {" "}{" "}
           <i>
             or
           </i>
-          {" "}{" "}
         </VerticalChunk>
         <div
              class="spacer" />
@@ -911,7 +902,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Sets encountered in calculus.
           </b>
@@ -920,7 +910,6 @@ const Article = () => {
           <i>
             the real numbers
           </i>
-          {" "}{" "}
         </VerticalChunk>
         <div
              class="spacer" />
@@ -935,7 +924,6 @@ const Article = () => {
           <i>
             the integers
           </i>
-          {" "}{" "}
         </VerticalChunk>
         <div
              class="spacer" />
@@ -951,7 +939,6 @@ const Article = () => {
           <i>
             the natural numbers
           </i>
-          {" "}{" "}
         </VerticalChunk>
         <div
              class="spacer" />
@@ -1088,7 +1075,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Sets not encountered in calculus.
           </b>

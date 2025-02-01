@@ -20,7 +20,6 @@ const Article = () => {
          title="Slopes">
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Slopes.
           </b>
@@ -132,7 +131,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Measuring Slope.
           </b>
@@ -250,7 +248,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 1.
             </b>
@@ -334,7 +331,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Sign Combinations.
           </b>
@@ -406,20 +402,16 @@ const Article = () => {
           <tr>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $x_2 - x_1$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $y_2 - y_1$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
@@ -437,20 +429,16 @@ const Article = () => {
           <tr>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $+$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $+$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
@@ -468,20 +456,16 @@ const Article = () => {
           <tr>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $-$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $-$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
@@ -499,20 +483,16 @@ const Article = () => {
           <tr>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $+$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $-$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
@@ -530,20 +510,16 @@ const Article = () => {
           <tr>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $-$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $+$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </td>
             <td>
@@ -621,7 +597,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Pathological Cases.
           </b>
@@ -700,7 +675,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             “Rise over Run”.
           </b>
@@ -773,7 +747,6 @@ const Article = () => {
              class="spacer" />
         <Pause />
         <VerticalChunk>
-          {" "}{" "}
           <i>
             An Additional Miscellaneous Notation.
           </i>
@@ -832,7 +805,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Solving for “rise” and “run”.
           </b>
@@ -884,7 +856,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Slopes and Line Equations.
           </b>
@@ -1096,7 +1067,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 2.
             </b>
@@ -1240,7 +1210,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Slopes and Units.
           </b>
@@ -1471,7 +1440,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 3.
             </b>
@@ -1521,7 +1489,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 4.
             </b>
@@ -1569,7 +1536,6 @@ const Article = () => {
       <Section
            divider={false}>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Postscript: Units vs Dimensions.
           </b>
@@ -1682,7 +1648,6 @@ const Article = () => {
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 1.
             </b>
@@ -1738,7 +1703,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -1805,7 +1769,6 @@ const Article = () => {
         <Exercise
              exercise_number={1}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 2.
             </b>
@@ -1990,7 +1953,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -2070,7 +2032,6 @@ const Article = () => {
         <Exercise
              exercise_number={2}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 3.
             </b>
@@ -2145,7 +2106,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -2174,7 +2134,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -2256,7 +2215,6 @@ const Article = () => {
         <Exercise
              exercise_number={3}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 4.
             </b>
@@ -2345,7 +2303,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>

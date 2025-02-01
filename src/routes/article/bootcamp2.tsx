@@ -20,7 +20,6 @@ const Article = () => {
          title="Powers of 10">
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Terminology.
           </b>
@@ -76,7 +75,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Integer powers of 10.
           </b>
@@ -135,7 +133,7 @@ const Article = () => {
           <Math>
             $n$
           </Math>
-          {" "}times.{" "}
+          {" "}times.
         </VerticalChunk>
         <VerticalChunk
              indent={true}>
@@ -340,7 +338,6 @@ const Article = () => {
              class="spacer" />
         <Pause />
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Vocabulary.
           </b>
@@ -413,7 +410,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Other bases.
           </b>
@@ -618,7 +614,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Additivity of exponents.
           </b>
@@ -738,7 +733,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             The third law of exponents.
           </b>
@@ -796,7 +790,7 @@ const Article = () => {
             .
           </NoBreak>
           {" "}This is known as “the third law 
-          of exponents”.{" "}
+          of exponents”.
         </VerticalChunk>
         <VerticalChunk
              indent={true}>
@@ -883,7 +877,7 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           by the third law of exponents, the second way already has  
-          “its own” notation, and therefore the convention is that...{" "}
+          “its own” notation, and therefore the convention is that...
         </VerticalChunk>
         <div
              class="spacer" />
@@ -893,7 +887,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          ...absolutely always means...{" "}
+          ...absolutely always means...
         </VerticalChunk>
         <div
              class="spacer" />
@@ -910,7 +904,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Famous powers of 10.
           </b>
@@ -957,21 +950,17 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $n$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $\,\,10^n$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
@@ -985,31 +974,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $0$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     one
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1017,31 +1000,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $10$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     ten
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1049,31 +1026,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $2$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $100$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     hundred
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1081,31 +1052,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $3$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1000$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     thousand
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1113,31 +1078,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $6$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1\,000\,000$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     million
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1145,31 +1104,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $9$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1\,000\,000\,000$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     billion
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1177,31 +1130,25 @@ const Article = () => {
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $12$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <Math>
                     $1\,000\,000\,000\,000$
                   </Math>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
               <td
                    class="align-center">
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     trillion
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </td>
             </tr>
@@ -1212,7 +1159,6 @@ const Article = () => {
         <Pause />
         <VerticalChunk>
           One can note that
-          {" "}
         </VerticalChunk>
         <div
              class="spacer" />
@@ -1222,7 +1168,6 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          {" "}
           because
         </VerticalChunk>
         <div
@@ -1255,7 +1200,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          and{" "}
+          and
         </VerticalChunk>
         <div
              class="spacer" />
@@ -1293,7 +1238,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Negative exponent prefixes.
           </b>
@@ -1321,21 +1265,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $n$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $\,\,10^n$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
@@ -1349,31 +1289,25 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $-1$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $0.1$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       one tenth
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1381,31 +1315,25 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $-2$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $0.01$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       one hundredth
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1413,31 +1341,25 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $-3$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $0.001$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       one thousandth
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1445,31 +1367,25 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $-6$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $0.000001$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       one millionth
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1477,31 +1393,25 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $-9$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $0.000000001$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       one trillionth
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1621,21 +1531,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-1&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       deci
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1643,21 +1549,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-2&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       centi
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1665,21 +1567,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-3&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       milli
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1687,21 +1585,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-6&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       micro
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1709,21 +1603,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-9&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       nano
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1731,21 +1621,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-12&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       pico
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1753,21 +1639,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;-15&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       femto
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1856,7 +1738,6 @@ const Article = () => {
         </VerticalChunk>
         <VerticalChunk
              indent={true}>
-          {" "}{" "}
           <b>
             Positive exponent prefixes.
           </b>
@@ -1910,21 +1791,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^1$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       deca
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1932,21 +1809,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;2&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       hecto
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1954,21 +1827,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;3&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       kilo
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1976,21 +1845,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;6&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       mega
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -1998,21 +1863,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;9&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       giga
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -2020,21 +1881,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;12&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       tera
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -2042,21 +1899,17 @@ const Article = () => {
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <Math>
                       $10^&#123;15&#125;$
                     </Math>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
                 <td
                      class="align-center">
                   <VerticalChunk>
-                    {" "}{" "}
                     <i>
                       peta
                     </i>
-                    {" "}{" "}
                   </VerticalChunk>
                 </td>
               </tr>
@@ -2099,7 +1952,7 @@ const Article = () => {
           </Math>
           {" "}“tera” = trillion].
           (In case you don't know, by the way, 
-          a{" "}
+          a
         </VerticalChunk>
         <div
              class="spacer" />
@@ -2109,7 +1962,7 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          {" "}is a unit of computer memory
+          is a unit of computer memory
           that is equal to{" "}
           <Math>
             $8$
@@ -2130,7 +1983,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Logarithms base 10.
           </b>
@@ -2204,7 +2056,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 1.
             </b>
@@ -2232,7 +2083,7 @@ const Article = () => {
               .
             </NoBreak>
             {" "}
-            So{" "}
+            So
           </VerticalChunk>
           <div
                class="spacer" />
@@ -2257,7 +2108,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 2.
             </b>
@@ -2272,7 +2122,7 @@ const Article = () => {
           <div
                class="spacer" />
           <VerticalChunk>
-            under the same extended definition, so{" "}
+            under the same extended definition, so
           </VerticalChunk>
           <div
                class="spacer" />
@@ -2297,7 +2147,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 3.
             </b>
@@ -2331,7 +2180,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 4.
             </b>
@@ -2371,7 +2219,6 @@ const Article = () => {
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 1.
             </b>
@@ -2425,11 +2272,10 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              respectively.{" "}
+              respectively.
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
-              {" "}{" "}
               <i>
                 Notes.
               </i>
@@ -2485,7 +2331,6 @@ const Article = () => {
         <Exercise
              exercise_number={1}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 2.
             </b>
@@ -2544,7 +2389,6 @@ const Article = () => {
         <Exercise
              exercise_number={2}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 3.
             </b>
@@ -2580,7 +2424,7 @@ const Article = () => {
                 $10^8 = 10^2 \times 10^6$
               </Math>
               {" "}is a hundred times a 
-              million. Similarly, “万万万” is{" "}
+              million. Similarly, “万万万” is
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -2596,7 +2440,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Notes.
               </i>
@@ -2657,7 +2500,6 @@ const Article = () => {
         <Exercise
              exercise_number={3}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 4.
             </b>
@@ -2727,7 +2569,6 @@ const Article = () => {
         <Exercise
              exercise_number={4}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 5.
             </b>
@@ -2753,7 +2594,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              by the previous problem, so{" "}
+              by the previous problem, so
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -2775,7 +2616,6 @@ const Article = () => {
         <Exercise
              exercise_number={5}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 6.
             </b>
@@ -2818,7 +2658,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Postscript
               </i>
@@ -2836,7 +2675,6 @@ const Article = () => {
         <Exercise
              exercise_number={6}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 7.
             </b>
@@ -2852,7 +2690,6 @@ const Article = () => {
           <Solution
                solution_number={6}>
             <VerticalChunk>
-              {" "}{" "}
               <NoBreak>
                 <Math>
                   $12$
@@ -2870,7 +2707,6 @@ const Article = () => {
         <Exercise
              exercise_number={7}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 8.
             </b>
@@ -2890,7 +2726,6 @@ const Article = () => {
           <Solution
                solution_number={7}>
             <VerticalChunk>
-              {" "}{" "}
               <NoBreak>
                 <Math>
                   $0$
@@ -2908,7 +2743,6 @@ const Article = () => {
         <Exercise
              exercise_number={8}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 9.
             </b>
@@ -2928,7 +2762,7 @@ const Article = () => {
           <Solution
                solution_number={8}>
             <VerticalChunk>
-              Since{" "}
+              Since
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -2953,14 +2787,12 @@ const Article = () => {
                 </Math>
                 .
               </NoBreak>
-              {" "}{" "}
             </VerticalChunk>
           </Solution>
         </Exercise>
         <Exercise
              exercise_number={9}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 10.
             </b>
@@ -3018,7 +2850,6 @@ const Article = () => {
         <Exercise
              exercise_number={10}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 11.
             </b>
@@ -3075,12 +2906,11 @@ const Article = () => {
         <Exercise
              exercise_number={11}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 12.
             </b>
             {" "}
-            It so happens that{" "}
+            It so happens that
           </VerticalChunk>
           <div
                class="spacer" />
@@ -3090,7 +2920,6 @@ const Article = () => {
           <div
                class="spacer" />
           <VerticalChunk>
-            {" "}
             (i.e., the value of{" "}
             <NoBreak>
               <Math>
@@ -3167,7 +2996,6 @@ const Article = () => {
         <Exercise
              exercise_number={12}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 13.
             </b>
@@ -3236,7 +3064,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Notes.
               </i>
@@ -3291,12 +3118,11 @@ const Article = () => {
         <Exercise
              exercise_number={13}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 14.
             </b>
             {" "}
-            Rewrite each of these expressions...{" "}
+            Rewrite each of these expressions...
           </VerticalChunk>
           <div
                class="spacer" />
@@ -3439,7 +3265,6 @@ const Article = () => {
         <Exercise
              exercise_number={14}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 15.
             </b>
@@ -3670,7 +3495,7 @@ const Article = () => {
                 $M^bM^cM = M^&#123;b+c+1&#125;$
               </Math>
               ,
-              and so on.) This expression equals{" "}
+              and so on.) This expression equals
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -3680,7 +3505,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}
               independently of the values of{" "}
               <NoBreak>
                 <Math>
@@ -3750,7 +3574,7 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               ...are satisfied! Adding the second and 
-              third equation together, we find{" "}
+              third equation together, we find
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -3761,7 +3585,7 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               and adding this last equation to the first
-              equation above, we find{" "}
+              equation above, we find
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -3831,7 +3655,7 @@ const Article = () => {
                 $c = -2$
               </Math>
               {" "}in our second equation above
-              gives us{" "}
+              gives us
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -3900,7 +3724,7 @@ const Article = () => {
                 </Math>
                 ;
               </NoBreak>
-              {" "}we have discovered that{" "}
+              {" "}we have discovered that
             </VerticalChunk>
             <div
                  class="spacer" />

@@ -1,6 +1,3 @@
-import desugarers/extract_starting_and_ending_spaces
-import desugarers/unwrap_tags_if_no_attributes
-import desugarers/insert_bookend_text_if_no_attributes.{insert_bookend_text_if_no_attributes}
 import gleam/option.{Some, None}
 import desugarers/absorb_next_sibling_while.{absorb_next_sibling_while}
 import desugarers/add_counter_attributes.{add_counter_attributes}
@@ -17,23 +14,25 @@ import desugarers/convert_int_attributes_to_float.{
 }
 import desugarers/counter.{counter_desugarer}
 import desugarers/counter_handles.{counter_handles_desugarer}
-import desugarers/encode_spaces_in_first_and_last_child.{encode_spaces_in_first_and_last_child}
 import desugarers/fold_tags_into_text.{fold_tags_into_text}
 import desugarers/free_children.{free_children}
 import desugarers/generate_lbp_table_of_contents.{generate_lbp_table_of_contents}
+import desugarers/group_consecutive_children_avoiding.{group_consecutive_children_avoiding}
 import desugarers/group_siblings_not_separated_by_blank_lines.{group_siblings_not_separated_by_blank_lines}
 import desugarers/insert_bookend_tags.{insert_bookend_tags}
 import desugarers/insert_indent.{insert_indent}
+import desugarers/lbp_distribute_slices.{lbp_distribute_slices}
 import desugarers/pair_bookends.{pair_bookends}
+import desugarers/remove_attributes.{remove_attributes}
 import desugarers/remove_empty_chunks.{remove_empty_chunks}
 import desugarers/remove_empty_lines.{remove_empty_lines}
-import desugarers/remove_vertical_chunks_with_no_text_child.{
-  remove_vertical_chunks_with_no_text_child,
-}
-import desugarers/remove_attributes.{remove_attributes}
+import desugarers/remove_vertical_chunks_with_no_text_child.{remove_vertical_chunks_with_no_text_child}
+import desugarers/remove_starting_and_ending_empty_lines.{remove_starting_and_ending_empty_lines}
+import desugarers/remove_starting_and_ending_spaces.{remove_starting_and_ending_spaces}
+import desugarers/rename_tag.{rename_tag}
 import desugarers/rename_when_child_of.{rename_when_child_of}
-import desugarers/split_by_indexed_regexes.{split_by_indexed_regexes}
 import desugarers/surround_elements_by.{surround_elements_by}
+import desugarers/split_by_indexed_regexes.{split_by_indexed_regexes}
 import desugarers/unwrap_tags.{unwrap_tags}
 import desugarers/wrap_math_with_no_break.{wrap_math_with_no_break}
 import infrastructure.{type Pipe} as infra
@@ -120,18 +119,32 @@ pub fn our_pipeline() -> List(Pipe) {
     // VerticalChunk **********
     // ************************
     // 8.
-    surround_elements_by(#(
-      [
-        "MathBlock", "Image", "Table", "Exercises", "Solution", "Example",
-        "Section", "Exercise", "List", "Grid", "ImageLeft", "ImageRight",
-        "Pause",
-      ],
-      "WriterlyBlankLine",
-      "WriterlyBlankLine",
-    )),
-    group_siblings_not_separated_by_blank_lines(
-      #("VerticalChunk", ["MathBlock"]),
+    group_consecutive_children_avoiding(
+      #(
+        "VerticalChunk",
+        [
+          "VerticalChunk",
+          "WriterlyBlankLine", 
+          "MathBlock", "Image", "Table", "Exercises", "Solution", "Example",
+          "Section", "Exercise", "List", "Grid", "ImageLeft", "ImageRight",
+          "Pause", "ul", "li", "ol"
+        ],
+        ["MathBlock"],
+      )
     ),
+    unwrap_tags(["WriterlyBlakLine"]),
+    // surround_elements_by(#(
+    //   [
+    //     "MathBlock", "Image", "Table", "Exercises", "Solution", "Example",
+    //     "Section", "Exercise", "List", "Grid", "ImageLeft", "ImageRight",
+    //     "Pause", "ul", "li", "ol"
+    //   ],
+    //   "WriterlyBlankLine",
+    //   "WriterlyBlankLine",
+    // )),
+    // group_siblings_not_separated_by_blank_lines(
+    //   #("VerticalChunk", ["MathBlock"]),
+    // ),
     rename_when_child_of([
       #("VerticalChunk", "Item", "List"),
       #("VerticalChunk", "Item", "Grid")
@@ -322,6 +335,8 @@ pub fn our_pipeline() -> List(Pipe) {
     generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
     generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
     remove_attributes(["counter", "handle", "type"]),
+    remove_starting_and_ending_spaces(["VerticalChunk"]),
+    remove_starting_and_ending_empty_lines(["VerticalChunk"]),
     // unwrap_tags(["VerticalChunk"]),
     // insert_bookend_tags([#("i", "3p", "3p")]),
     // fold_tags_into_text([#("3p", "   ")]),
@@ -347,5 +362,7 @@ pub fn our_pipeline() -> List(Pipe) {
     //   #("ClosingAsterisk", "*"),
     // ]),
     // concatenate_text_nodes(),
+    // rename_tag(#("VerticalChunk", "p")),
+    // lbp_distribute_slices(),
   ]
 }

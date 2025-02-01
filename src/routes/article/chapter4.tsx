@@ -24,7 +24,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Definitions.
           </b>
@@ -183,14 +182,13 @@ const Article = () => {
              class="spacer" />
         <VerticalChunk>
           (In other words, “half-tangents” do not actually 
-          count as tangents.){" "}
+          count as tangents.)
         </VerticalChunk>
       </Section>
       <div
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Vocabulary.
           </b>
@@ -285,7 +283,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Sketching a Derivative.
           </b>
@@ -344,12 +341,11 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Derivative of a constant function.
           </b>
           {" "}
-          A constant function is a function of the form{" "}
+          A constant function is a function of the form
         </VerticalChunk>
         <div
              class="spacer" />
@@ -368,7 +364,7 @@ const Article = () => {
             $x$
           </Math>
           .
-          The graph of the constant function is the line{" "}
+          The graph of the constant function is the line
         </VerticalChunk>
         <div
              class="spacer" />
@@ -464,7 +460,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Derivative of an affine function.
           </b>
@@ -611,7 +606,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 1.
             </b>
@@ -654,7 +648,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 2.
             </b>
@@ -698,7 +691,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Units of the Derivative.
           </b>
@@ -777,24 +769,23 @@ const Article = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
-          <ul>
-            <li>
-              <VerticalChunk>
-                seconds on the{" "}
-                <Math>
-                  $x$
-                </Math>
-                {" "}axis, meters per
-                second on the{" "}
-                <Math>
-                  $y$
-                </Math>
-                {" "}axis
-              </VerticalChunk>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <VerticalChunk>
+              seconds on the{" "}
+              <Math>
+                $x$
+              </Math>
+              {" "}axis, meters per
+              second on the{" "}
+              <Math>
+                $y$
+              </Math>
+              {" "}axis
+            </VerticalChunk>
+          </li>
+        </ul>
+        <VerticalChunk>
           ...while if the “before” graph has units of...
         </VerticalChunk>
         <ul>
@@ -818,24 +809,23 @@ const Article = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
-          <ul>
-            <li>
-              <VerticalChunk>
-                years on the{" "}
-                <Math>
-                  $x$
-                </Math>
-                {" "}axis, dollars per
-                year on the{" "}
-                <Math>
-                  $y$
-                </Math>
-                {" "}axis
-              </VerticalChunk>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <VerticalChunk>
+              years on the{" "}
+              <Math>
+                $x$
+              </Math>
+              {" "}axis, dollars per
+              year on the{" "}
+              <Math>
+                $y$
+              </Math>
+              {" "}axis
+            </VerticalChunk>
+          </li>
+        </ul>
+        <VerticalChunk>
           ...and so on.
         </VerticalChunk>
         <VerticalChunk
@@ -889,7 +879,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             The second derivative.
           </b>
@@ -1012,7 +1001,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 3.
             </b>
@@ -1067,7 +1055,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 4.
             </b>
@@ -1105,7 +1092,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Geometric interpretation of the second derivative.
           </b>
@@ -1219,7 +1205,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Vocabulary #1.
           </b>
@@ -1253,7 +1238,6 @@ const Article = () => {
         <div
              class="spacer" />
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Vocabulary #2.
           </b>
@@ -1274,7 +1258,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 5.
             </b>
@@ -1312,7 +1295,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             The Second Derivative of Position.
           </b>
@@ -1537,7 +1519,6 @@ const Article = () => {
              class="spacer" />
         <Example>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Example 6.
             </b>
@@ -1602,7 +1583,6 @@ const Article = () => {
            class="spacer" />
       <Section>
         <VerticalChunk>
-          {" "}{" "}
           <b>
             The Jerk.
           </b>
@@ -1698,7 +1678,6 @@ const Article = () => {
              class="spacer" />
         <Pause />
         <VerticalChunk>
-          {" "}{" "}
           <b>
             Postscript: Sums, Products, Quotients,
             and Differences of Functions.
@@ -1818,7 +1797,6 @@ const Article = () => {
         <Exercise
              exercise_number={0}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 1.
             </b>
@@ -1881,7 +1859,6 @@ const Article = () => {
         <Exercise
              exercise_number={1}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 2.
             </b>
@@ -1941,7 +1918,6 @@ const Article = () => {
         <Exercise
              exercise_number={2}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 3.
             </b>
@@ -1977,7 +1953,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -1989,19 +1964,17 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
               {" "}
-              “first derivative” is a synonym of “derivative”.{" "}
+              “first derivative” is a synonym of “derivative”.
             </VerticalChunk>
           </Solution>
         </Exercise>
         <Exercise
              exercise_number={3}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 4.
             </b>
@@ -2078,7 +2051,6 @@ const Article = () => {
         <Exercise
              exercise_number={4}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 5.
             </b>
@@ -2221,7 +2193,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -2275,7 +2246,6 @@ const Article = () => {
         <Exercise
              exercise_number={5}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 6.
             </b>
@@ -2318,7 +2288,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -2411,7 +2380,6 @@ const Article = () => {
         <Exercise
              exercise_number={6}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 7.
             </b>
@@ -2547,7 +2515,6 @@ const Article = () => {
         <Exercise
              exercise_number={7}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 8.
             </b>
@@ -2701,13 +2668,12 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              ...achieving our final answer.{" "}
+              ...achieving our final answer.
             </VerticalChunk>
             <div
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -2723,7 +2689,6 @@ const Article = () => {
         <Exercise
              exercise_number={8}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 9.
             </b>
@@ -3016,7 +2981,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -3036,7 +3000,6 @@ const Article = () => {
         <Exercise
              exercise_number={9}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 10.
             </b>
@@ -3128,7 +3091,6 @@ const Article = () => {
         <Exercise
              exercise_number={10}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 11.
             </b>
@@ -3197,7 +3159,6 @@ const Article = () => {
         <Exercise
              exercise_number={11}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 12.
             </b>
@@ -3246,7 +3207,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -3262,7 +3222,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -3287,7 +3246,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 3.
               </i>
@@ -3323,7 +3281,7 @@ const Article = () => {
                 is
               </i>
               {" "}
-              two-dimensional.){" "}
+              two-dimensional.)
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
@@ -3337,7 +3295,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}
               is encoded by a pair of numbers—sometimes
               known as the{" "}
               <i>
@@ -3743,7 +3700,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 4.
               </i>
@@ -3776,7 +3732,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 5.
               </i>
@@ -3833,7 +3788,6 @@ const Article = () => {
         <Exercise
              exercise_number={12}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 13.
             </b>
@@ -3905,7 +3859,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -3937,7 +3890,6 @@ const Article = () => {
         <Exercise
              exercise_number={13}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 14.
             </b>
@@ -4386,7 +4338,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <Math>
                 $f'$
               </Math>
@@ -4398,7 +4349,7 @@ const Article = () => {
                 -coordinate
               </NoBreak>
               {" "}of the blue 
-              particle; and since{" "}
+              particle; and since
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -4424,7 +4375,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <Math>
                 $f''$
               </Math>
@@ -4462,7 +4412,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <Math>
                 $f'''$
               </Math>
@@ -4501,7 +4450,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <Math>
                 $f''''$
               </Math>
@@ -4539,7 +4487,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <Math>
                 $f''''' = f^&#123;(5)&#125;$
               </Math>
@@ -4553,7 +4500,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -4585,7 +4531,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -4626,7 +4571,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 3.
               </i>
@@ -4678,7 +4622,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 4.
               </i>
@@ -4721,7 +4664,7 @@ const Article = () => {
               </Math>
               {" "}
               etc) and stipulate the same rules, namely
-              that the{" "}
+              that the
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -4769,13 +4712,12 @@ const Article = () => {
               </Math>
               {" "}to the problem. (But this solution will
               typically look more chaotic than the curves
-              from Note 1.){" "}
+              from Note 1.)
             </VerticalChunk>
             <div
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 5.
               </i>
@@ -4818,7 +4760,6 @@ const Article = () => {
         <Exercise
              exercise_number={14}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 15.
             </b>
@@ -4854,7 +4795,7 @@ const Article = () => {
             {" "}grows relatively
             slowly in either the positive or negative direction
             of the number line, insofar as such things are 
-            concerned, what would our options be?{" "}
+            concerned, what would our options be?
           </VerticalChunk>
           <div
                class="spacer" />
@@ -5001,7 +4942,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -5098,7 +5038,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -5133,36 +5072,35 @@ const Article = () => {
               To parse the above figure, understand
               that:
             </VerticalChunk>
-            <VerticalChunk
-                 indent={true}>
-              <ul
-                   style="margin:20px 20px 0px 50px">
-                <li>
-                  <VerticalChunk>
-                    the red arrows indicate which particle
-                    takes its velocity from the position
-                    of which other particle; for example,
-                    particle 1 has velocity equal to the
-                    position of particle 5
-                  </VerticalChunk>
-                </li>
-                <li>
-                  <VerticalChunk>
-                    particles that occupy the same starting
-                    position on the unit circle appear
-                    stacked together, as a representation
-                    device; for example, particle 2 has the
-                    same starting position as particle 5
-                  </VerticalChunk>
-                </li>
-              </ul>
+            <ul
+                 style="margin:20px 20px 0px 50px">
+              <li>
+                <VerticalChunk>
+                  the red arrows indicate which particle
+                  takes its velocity from the position
+                  of which other particle; for example,
+                  particle 1 has velocity equal to the
+                  position of particle 5
+                </VerticalChunk>
+              </li>
+              <li>
+                <VerticalChunk>
+                  particles that occupy the same starting
+                  position on the unit circle appear
+                  stacked together, as a representation
+                  device; for example, particle 2 has the
+                  same starting position as particle 5
+                </VerticalChunk>
+              </li>
+            </ul>
+            <VerticalChunk>
               (Note that the red arrows have to form
               a cycle of length 17 in order for us to
               later extract a function{" "}
               <Math>
                 $f$
               </Math>
-              {" "}such that{" "}
+              {" "}such that
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -5217,54 +5155,53 @@ const Article = () => {
               have also highlighted two particle trajectories
               in this figure:
             </VerticalChunk>
-            <VerticalChunk
-                 indent={true}>
-              <ul
-                   style="margin:1em 1em 0em 2.5em">
-                <li>
-                  <VerticalChunk>
-                    in{" "}
-                    <span
-                         style="border:1px solid blue">
-                      <VerticalChunk>
-                        blue
-                      </VerticalChunk>
-                    </span>
-                    , particle 1, the last particle
-                    to be (noticeably*) “peeled off” from
-                    the circle (*all particles are 
-                    instantaneously peeled off from the 
-                    circle to{" "}
-                    <i>
-                      some
-                    </i>
-                    {" "}degree, as one 
-                    particle's slight deviation affects
-                    the next, that affects the next, etc)
-                  </VerticalChunk>
-                </li>
-                <li>
-                  <VerticalChunk>
-                    in{" "}
-                    <span
-                         style="border:1px solid red">
-                      <VerticalChunk>
-                        red
-                      </VerticalChunk>
-                    </span>
-                    , particle 14, the{" "}
-                    <i>
-                      first
-                    </i>
-                    {" "}particle
-                    to leave the circle—but because its
-                    velocity vector is given by particle 1,
-                    which itself starts by going around in
-                    a circle, it, too, starts out by going
-                    around in a circle!
-                  </VerticalChunk>
-                </li>
-              </ul>
+            <ul
+                 style="margin:1em 1em 0em 2.5em">
+              <li>
+                <VerticalChunk>
+                  in{" "}
+                  <span
+                       style="border:1px solid blue">
+                    <VerticalChunk>
+                      blue
+                    </VerticalChunk>
+                  </span>
+                  , particle 1, the last particle
+                  to be (noticeably*) “peeled off” from
+                  the circle (*all particles are 
+                  instantaneously peeled off from the 
+                  circle to{" "}
+                  <i>
+                    some
+                  </i>
+                  {" "}degree, as one 
+                  particle's slight deviation affects
+                  the next, that affects the next, etc)
+                </VerticalChunk>
+              </li>
+              <li>
+                <VerticalChunk>
+                  in{" "}
+                  <span
+                       style="border:1px solid red">
+                    <VerticalChunk>
+                      red
+                    </VerticalChunk>
+                  </span>
+                  , particle 14, the{" "}
+                  <i>
+                    first
+                  </i>
+                  {" "}particle
+                  to leave the circle—but because its
+                  velocity vector is given by particle 1,
+                  which itself starts by going around in
+                  a circle, it, too, starts out by going
+                  around in a circle!
+                </VerticalChunk>
+              </li>
+            </ul>
+            <VerticalChunk>
               (The point is: if your velocity vector 
               is tracing a circle centered at{" "}
               <NoBreak>
@@ -5288,7 +5225,6 @@ const Article = () => {
         <Exercise
              exercise_number={15}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 16.
             </b>
@@ -5349,7 +5285,7 @@ const Article = () => {
               , 
               and is more precisely equal to the slope
               of the pale brown line going through the
-              point{" "}
+              point
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -5385,7 +5321,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -5401,7 +5336,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -5431,7 +5365,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 3.
               </i>
@@ -5470,9 +5403,7 @@ const Article = () => {
             </MathBlock>
             <div
                  class="spacer" />
-            <VerticalChunk>
-              {" "}{" "}
-            </VerticalChunk>
+            <VerticalChunk />
             <VerticalChunk
                  indent={true}>
               because the secant approaches the tangent,
@@ -5510,7 +5441,6 @@ const Article = () => {
         <Exercise
              exercise_number={16}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 17.
             </b>
@@ -5590,7 +5520,7 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             More specifically, we are interested in
-            the change in the value of the product{" "}
+            the change in the value of the product
           </VerticalChunk>
           <div
                class="spacer" />
@@ -5678,83 +5608,80 @@ const Article = () => {
                  offset_y="-0.5em"
                  offset_x="0.5em" />
           </VerticalChunk>
+          <ol
+               style="margin:0 1.5em 1em 2em">
+            <li
+                 style="margin-top:0.5em">
+              <VerticalChunk>
+                when{" "}
+                <Math>
+                  $A$
+                </Math>
+                {" "}and{" "}
+                <Math>
+                  $B$
+                </Math>
+                {" "}are both still at{" "}
+                <Math>
+                  $t_0$
+                </Math>
+              </VerticalChunk>
+            </li>
+            <li
+                 style="margin-top:0.5em">
+              <VerticalChunk>
+                when{" "}
+                <Math>
+                  $A$
+                </Math>
+                {" "}has made it to{" "}
+                <Math>
+                  $t_0 + \Delta&#123;&#125;t$
+                </Math>
+                ,
+                and{" "}
+                <Math>
+                  $B$
+                </Math>
+                {" "}is still at{" "}
+                <Math>
+                  $t_0$
+                </Math>
+              </VerticalChunk>
+            </li>
+            <li
+                 style="margin-top:0.5em">
+              <VerticalChunk>
+                <del>
+                  <VerticalChunk>
+                    when{" "}
+                    <NoBreak>
+                      <Math>
+                        $B$
+                      </Math>
+                      's
+                    </NoBreak>
+                    {" "}tail is sticking out of the
+                    cat's mouth, and
+                  </VerticalChunk>
+                </del>
+                &ensp;when{" "}
+                <Math>
+                  $A$
+                </Math>
+                {" "}and{" "}
+                <Math>
+                  $B$
+                </Math>
+                {" "}have both made it
+                to{" "}
+                <Math>
+                  $t_0 + \Delta&#123;&#125;t$
+                </Math>
+              </VerticalChunk>
+            </li>
+          </ol>
           <VerticalChunk>
-            <ol
-                 style="margin:0 1.5em 1em 2em">
-              <li
-                   style="margin-top:0.5em">
-                <VerticalChunk>
-                  when{" "}
-                  <Math>
-                    $A$
-                  </Math>
-                  {" "}and{" "}
-                  <Math>
-                    $B$
-                  </Math>
-                  {" "}are both still at{" "}
-                  <Math>
-                    $t_0$
-                  </Math>
-                  {" "}{" "}
-                </VerticalChunk>
-              </li>
-              <li
-                   style="margin-top:0.5em">
-                <VerticalChunk>
-                  when{" "}
-                  <Math>
-                    $A$
-                  </Math>
-                  {" "}has made it to{" "}
-                  <Math>
-                    $t_0 + \Delta&#123;&#125;t$
-                  </Math>
-                  ,
-                  and{" "}
-                  <Math>
-                    $B$
-                  </Math>
-                  {" "}is still at{" "}
-                  <Math>
-                    $t_0$
-                  </Math>
-                  {" "}{" "}
-                </VerticalChunk>
-              </li>
-              <li
-                   style="margin-top:0.5em">
-                <VerticalChunk>
-                  <del>
-                    <VerticalChunk>
-                      when{" "}
-                      <NoBreak>
-                        <Math>
-                          $B$
-                        </Math>
-                        's
-                      </NoBreak>
-                      {" "}tail is sticking out of the
-                      cat's mouth, and
-                    </VerticalChunk>
-                  </del>
-                  &ensp;when{" "}
-                  <Math>
-                    $A$
-                  </Math>
-                  {" "}and{" "}
-                  <Math>
-                    $B$
-                  </Math>
-                  {" "}have both made it
-                  to{" "}
-                  <Math>
-                    $t_0 + \Delta&#123;&#125;t$
-                  </Math>
-                  {" "}{" "}
-                </VerticalChunk>
-              </li>
-            </ol>
             Correspondingly, the product
           </VerticalChunk>
           <div
@@ -5925,7 +5852,7 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               is a Newton quotient (cf. Exercise 16),
-              that approaches{" "}
+              that approaches
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -6032,7 +5959,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              that, you will notice, has the form{" "}
+              that, you will notice, has the form
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -6330,7 +6257,6 @@ const Article = () => {
                 </Math>
                 .
               </NoBreak>
-              {" "}{" "}
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
@@ -6344,7 +6270,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -6379,7 +6304,6 @@ const Article = () => {
         <Exercise
              exercise_number={17}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 18.
             </b>
@@ -6462,7 +6386,6 @@ const Article = () => {
         <Exercise
              exercise_number={18}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 19.
             </b>
@@ -6528,7 +6451,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -6611,7 +6533,6 @@ const Article = () => {
         <Exercise
              exercise_number={19}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 20.
             </b>
@@ -6695,12 +6616,11 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
               {" "}
-              You can also write{" "}
+              You can also write
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -6735,7 +6655,6 @@ const Article = () => {
         <Exercise
              exercise_number={20}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 21.
             </b>
@@ -6759,7 +6678,6 @@ const Article = () => {
             <Math>
               $g: \rr \ra \rr$
             </Math>
-            {" "}{" "}
           </VerticalChunk>
           <div
                class="spacer" />
@@ -6790,7 +6708,7 @@ const Article = () => {
                class="spacer" />
           <VerticalChunk>
             and so on, what is the similar, most logical
-            definition for{" "}
+            definition for
           </VerticalChunk>
           <div
                class="spacer" />
@@ -6847,7 +6765,7 @@ const Article = () => {
               a function by a real number “bootstraps”
               off of the ordinary product of real numbers—this
               is already similar to what happens for the
-              definition...{" "}
+              definition...
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -6912,7 +6830,6 @@ const Article = () => {
         <Exercise
              exercise_number={21}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 22.
             </b>
@@ -7041,7 +6958,6 @@ const Article = () => {
         <Exercise
              exercise_number={22}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 23.
             </b>
@@ -7356,7 +7272,7 @@ const Article = () => {
               </Math>
               .
               So that was easy! Altogether, the answer is
-              therefore:{" "}
+              therefore:
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -7379,7 +7295,6 @@ const Article = () => {
         <Exercise
              exercise_number={23}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 24.
             </b>
@@ -7496,7 +7411,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -7520,7 +7434,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -7589,7 +7502,6 @@ const Article = () => {
         <Exercise
              exercise_number={24}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 25.
             </b>
@@ -7753,7 +7665,6 @@ const Article = () => {
                 <Math>
                   $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.5\te&#123;s&#125;\,\,=\,\,-3.375\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <ImageRight
                    src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg" />
@@ -7770,7 +7681,6 @@ const Article = () => {
                 <Math>
                   $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -7785,7 +7695,6 @@ const Article = () => {
                 <Math>
                   $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -7800,7 +7709,6 @@ const Article = () => {
                 <Math>
                   $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,2.7\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -7815,7 +7723,6 @@ const Article = () => {
                 <Math>
                   $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -7830,7 +7737,6 @@ const Article = () => {
                 <Math>
                   $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -7947,7 +7853,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              each computed displacement is at most{" "}
+              each computed displacement is at most
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -8214,14 +8120,13 @@ const Article = () => {
               <InlineImage
                    src="/images/svg_ch4_pacman1_pellet8_inline.svg"
                    class="ch4_pacman1_inline_number_pellet" />
-              , Pacman is immediately to the left of the ghost cage.{" "}
+              , Pacman is immediately to the left of the ghost cage.
             </VerticalChunk>
           </Solution>
         </Exercise>
         <Exercise
              exercise_number={25}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 26.
             </b>
@@ -8815,7 +8720,7 @@ const Article = () => {
                 </Math>
                 s,
               </NoBreak>
-              {" "}and{" "}
+              {" "}and
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -8825,7 +8730,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              is approximately the same as{" "}
+              is approximately the same as
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -8908,7 +8813,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -8922,7 +8826,6 @@ const Article = () => {
         <Exercise
              exercise_number={26}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 27.
             </b>
@@ -9052,7 +8955,7 @@ const Article = () => {
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
-              Put{" "}
+              Put
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9083,7 +8986,7 @@ const Article = () => {
                  class="spacer" />
             <VerticalChunk>
               for the slope of a “low slope” line segment. Then a
-              “high slope” line segment has slope{" "}
+              “high slope” line segment has slope
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9385,7 +9288,7 @@ const Article = () => {
               climbs up/down along an S-shaped curve outside
               of those intervals, adhering
               to a slope that is given by the value of the
-              second derivative:{" "}
+              second derivative:
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9394,7 +9297,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              The afore-mentioned lower bound of{" "}
+              The afore-mentioned lower bound of
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9418,7 +9321,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              Whereas the afore-mentioned upper bound of{" "}
+              Whereas the afore-mentioned upper bound of
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9594,7 +9497,6 @@ const Article = () => {
         <Exercise
              exercise_number={27}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 28.
             </b>
@@ -9711,7 +9613,7 @@ const Article = () => {
                 ,
               </NoBreak>
               {" "}in order to
-              show that{" "}
+              show that
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -9849,7 +9751,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -9881,7 +9782,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -9917,7 +9817,6 @@ const Article = () => {
         <Exercise
              exercise_number={28}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 29.
             </b>
@@ -9949,7 +9848,7 @@ const Article = () => {
               </Math>
               ,
             </NoBreak>
-            {" "}using the fact that{" "}
+            {" "}using the fact that
           </VerticalChunk>
           <div
                class="spacer" />
@@ -10090,7 +9989,7 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              by definition of function equality.{" "}
+              by definition of function equality.
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
@@ -10168,7 +10067,6 @@ const Article = () => {
         <Exercise
              exercise_number={29}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 30.
             </b>
@@ -10263,7 +10161,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -10302,7 +10199,6 @@ const Article = () => {
             <div
                  class="spacer" />
             <VerticalChunk>
-              {" "}{" "}
               <NoBreak>
                 <Math>
                   $\te&#123;\$&#125;$
@@ -10344,7 +10240,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -10359,7 +10254,6 @@ const Article = () => {
                 </Math>
                 :
               </NoBreak>
-              {" "}{" "}
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -10369,7 +10263,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 3.
               </i>
@@ -10425,7 +10318,7 @@ const Article = () => {
               </Math>
               {" "}
               could look like this,
-              with discrete “unlocks”:{" "}
+              with discrete “unlocks”:
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -10457,7 +10350,6 @@ const Article = () => {
         <Exercise
              exercise_number={30}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 31.
             </b>
@@ -10494,7 +10386,6 @@ const Article = () => {
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -10519,14 +10410,13 @@ const Article = () => {
                 </Math>
                 ”
               </NoBreak>
-              {" "}is.{" "}
+              {" "}is.
             </VerticalChunk>
           </Solution>
         </Exercise>
         <Exercise
              exercise_number={31}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 32.
             </b>
@@ -10681,7 +10571,7 @@ const Article = () => {
               <span
                    style="font-family:Clicker Script;font-size:1.3em;">
                 <VerticalChunk>
-                  ~sixteen~{" "}
+                  ~sixteen~
                 </VerticalChunk>
               </span>
               point{" "}
@@ -10694,7 +10584,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Postscript.
               </i>
@@ -10740,12 +10629,11 @@ const Article = () => {
         <Exercise
              exercise_number={32}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 33.
             </b>
             {" "}
-            Conjecture a general formula for{" "}
+            Conjecture a general formula for
           </VerticalChunk>
           <div
                class="spacer" />
@@ -10890,7 +10778,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -10933,11 +10820,10 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
-              {" "}One can also write the chain rule very succinctly like so...{" "}
+              {" "}One can also write the chain rule very succinctly like so...
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -10962,7 +10848,6 @@ const Article = () => {
         <Exercise
              exercise_number={33}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 34.
             </b>
@@ -11069,7 +10954,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -11086,12 +10970,11 @@ const Article = () => {
         <Exercise
              exercise_number={34}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 35.
             </b>
             {" "}
-            What is the{" "}
+            What is the
           </VerticalChunk>
           <div
                class="spacer" />
@@ -11164,7 +11047,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -11179,7 +11061,6 @@ const Article = () => {
         <Exercise
              exercise_number={35}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 36.
             </b>
@@ -11321,7 +11202,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -11351,7 +11231,6 @@ const Article = () => {
         <Exercise
              exercise_number={36}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 37.
             </b>
@@ -11383,7 +11262,6 @@ const Article = () => {
               </Math>
               ?
             </NoBreak>
-            {" "}{" "}
           </VerticalChunk>
           <div
                class="spacer" />
@@ -11415,7 +11293,6 @@ const Article = () => {
               <i>
                 at least
               </i>
-              {" "}{" "}
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -11433,7 +11310,7 @@ const Article = () => {
                 $1$
               </Math>
               .
-              Similarly, the interval from{" "}
+              Similarly, the interval from
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -11457,7 +11334,6 @@ const Article = () => {
               <i>
                 at least
               </i>
-              {" "}{" "}
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -11473,7 +11349,7 @@ const Article = () => {
                 $0.5$
               </Math>
               !
-              And, again, the interval from{" "}
+              And, again, the interval from
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -11516,7 +11392,6 @@ const Article = () => {
               <i>
                 at least
               </i>
-              {" "}{" "}
             </VerticalChunk>
             <div
                  class="spacer" />
@@ -11614,7 +11489,6 @@ const Article = () => {
         <Exercise
              exercise_number={37}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 38.
             </b>
@@ -11825,7 +11699,6 @@ const Article = () => {
         <Exercise
              exercise_number={38}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 39.
             </b>
@@ -12040,7 +11913,7 @@ const Article = () => {
               the particles discussed in the solution to
               Exercise 12, that obey a similar set of
               constraints
-              (albeit with a different set of colors).{" "}
+              (albeit with a different set of colors).
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
@@ -12192,7 +12065,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12220,7 +12092,6 @@ const Article = () => {
                 <Math>
                   $_x : \rr \ra \rr$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12239,7 +12110,6 @@ const Article = () => {
                 <Math>
                   $_x(2)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12274,7 +12144,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12315,7 +12184,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12372,7 +12240,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12385,7 +12252,6 @@ const Article = () => {
                  class="spacer" />
             <CentralDisplay>
               <VerticalChunk>
-                {" "}{" "}
                 <Math>
                   $($
                 </Math>
@@ -12421,7 +12287,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12477,7 +12342,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12505,7 +12369,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12533,7 +12396,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12561,7 +12423,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12589,7 +12450,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12617,7 +12477,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12645,7 +12504,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12673,7 +12531,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -12740,7 +12597,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12792,7 +12648,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12844,7 +12699,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12896,7 +12750,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -12948,7 +12801,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13000,7 +12852,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13052,7 +12903,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13104,7 +12954,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -13131,7 +12980,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13151,7 +12999,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13171,7 +13018,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13191,7 +13037,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13211,7 +13056,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13231,7 +13075,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13251,7 +13094,6 @@ const Article = () => {
                 <Math>
                   $_x$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13271,7 +13113,6 @@ const Article = () => {
                 <Math>
                   $_y$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -13322,7 +13163,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13358,7 +13198,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13394,7 +13233,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13430,7 +13268,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13466,7 +13303,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13502,7 +13338,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13538,7 +13373,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13574,7 +13408,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -13601,7 +13434,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13621,7 +13453,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13641,7 +13472,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13661,7 +13491,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13681,7 +13510,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13701,7 +13529,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13721,7 +13548,6 @@ const Article = () => {
                 <Math>
                   $_x(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
               <VerticalChunk
                    indent={true}>
@@ -13741,7 +13567,6 @@ const Article = () => {
                 <Math>
                   $_y(0)$
                 </Math>
-                {" "}{" "}
               </VerticalChunk>
             </CentralDisplay>
             <div
@@ -13906,7 +13731,6 @@ const Article = () => {
             </VerticalChunk>
             <VerticalChunk
                  indent={true}>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>
@@ -13938,7 +13762,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 2.
               </i>
@@ -13999,7 +13822,6 @@ const Article = () => {
         <Exercise
              exercise_number={39}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 40.
             </b>
@@ -14030,7 +13852,6 @@ const Article = () => {
               </Math>
               .
             </NoBreak>
-            {" "}{" "}
           </VerticalChunk>
           <div
                class="spacer" />
@@ -14124,70 +13945,67 @@ const Article = () => {
         <Exercise
              exercise_number={40}>
           <VerticalChunk>
-            {" "}{" "}
             <b>
               Exercise 41.
             </b>
             {" "}
             Express the...
           </VerticalChunk>
-          <VerticalChunk
-               indent={true}>
-            <ul
-                 style="margin:1em 0 0 2.5em">
-              <li>
-                <VerticalChunk>
-                  associativity of function composition
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  associativity of function kmultiplication
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  associativity of function addition&lt;/li&gt;
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  commutativity of function multiplication&lt;/li&gt;
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  commutativity of function addition&lt;/li&gt;
-                </VerticalChunk>
-              </li>
-            </ul>
+          <ul
+               style="margin:1em 0 0 2.5em">
+            <li>
+              <VerticalChunk>
+                associativity of function composition
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                associativity of function kmultiplication
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                associativity of function addition&lt;/li&gt;
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                commutativity of function multiplication&lt;/li&gt;
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                commutativity of function addition&lt;/li&gt;
+              </VerticalChunk>
+            </li>
+          </ul>
+          <VerticalChunk>
             ...as well as the..
           </VerticalChunk>
-          <VerticalChunk
-               indent={true}>
-            <ul
-                 style="margin:1em 0 0 2.5em">
-              <li>
-                <VerticalChunk>
-                  associativity of real number multiplication
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  associativity of real number addition
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  commutativity of real number multiplication
-                </VerticalChunk>
-              </li>
-              <li>
-                <VerticalChunk>
-                  commutativity of real number addition
-                </VerticalChunk>
-              </li>
-            </ul>
+          <ul
+               style="margin:1em 0 0 2.5em">
+            <li>
+              <VerticalChunk>
+                associativity of real number multiplication
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                associativity of real number addition
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                commutativity of real number multiplication
+              </VerticalChunk>
+            </li>
+            <li>
+              <VerticalChunk>
+                commutativity of real number addition
+              </VerticalChunk>
+            </li>
+          </ul>
+          <VerticalChunk>
             ...in the form of self-contained, formal statements.
           </VerticalChunk>
           <div
@@ -14201,7 +14019,6 @@ const Article = () => {
                  style="margin:1em 0 0 2.5em">
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the associativity of function multiplication is
                     the fact that{" "}
@@ -14274,12 +14091,10 @@ const Article = () => {
                     </Math>
                     ]
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the associativity of function multiplication is
                     the fact that{" "}
@@ -14292,12 +14107,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the associativity of function addition is
                     the fact that{" "}
@@ -14310,12 +14123,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the commutativity of function multiplication is
                     the fact that{" "}
@@ -14328,12 +14139,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the commutativity of function addition is
                     the fact that{" "}
@@ -14346,7 +14155,6 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
             </ul>
@@ -14359,7 +14167,6 @@ const Article = () => {
                  style="margin:1em 0 0 2.5em">
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the associativity of [real number] multiplication is
                     the fact that{" "}
@@ -14372,12 +14179,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the associativity of [real number] addition is
                     the fact that{" "}
@@ -14390,12 +14195,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the commutativity of [real number] multiplication is
                     the fact that{" "}
@@ -14408,12 +14211,10 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
               <li>
                 <VerticalChunk>
-                  {" "}{" "}
                   <i>
                     the commutativity of [real number] addition is
                     the fact that{" "}
@@ -14426,7 +14227,6 @@ const Article = () => {
                     </Math>
                     {" "}{" "}
                   </i>
-                  {" "}{" "}
                 </VerticalChunk>
               </li>
             </ul>
@@ -14434,7 +14234,6 @@ const Article = () => {
                  class="spacer" />
             <Pause />
             <VerticalChunk>
-              {" "}{" "}
               <i>
                 Note 1.
               </i>

@@ -1,29 +1,7 @@
 |> Section
 
-    |> div
-        type s
-
-        |> i
-
-            hello world
-            goodbye
-            |> img
-            byyeee
-
-        |> i
-
-            hello world
-            goodbye
-            |> img
-        |> i
-            font-size 45
-
-            hello world
-            goodbye
-            |> img
-
     *Square Roots.*
-    You mght remember that “minus times minus 
+    You might remember that “minus times minus 
     is plus” and that “plus times plus is plus”.
     (Why? The enemy of my enemy is my friend.)
     So any nonzero number multiplied by itself
@@ -160,6 +138,7 @@
 
 
 |> Section
+    type sec1
 
     *Fractions and Division.*
     An elementary fraction, or division, such as
@@ -828,8 +807,6 @@
                 offset_x -4rem
                 offset_y -1rem
                 use_squiggle_on_mobile false
-
-                $10^{15}\fw\te{mm} = 10^{15}\fw(10^{-6}\fw\te{km}) = \dots$
 
             or _one billion_ kilometers. By 
             comparison, the distance from the Earth to
