@@ -16,8 +16,8 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Article = () => {
   return (
     <Bootcamp
-         number={1}
-         title="Sets">
+      number={1}
+      title="Sets">
       <Section>
         <VerticalChunk>
           <b>
@@ -63,23 +63,19 @@ const Article = () => {
           </Math>
           {" "}(and nothing else):
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1, 2, 3\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           Also,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is a set containing just the number{" "}
           <NoBreak>
@@ -90,13 +86,11 @@ const Article = () => {
           </NoBreak>
           {" "}while
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1, 3\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is a set containing just the numbers{" "}
           <Math>
@@ -112,13 +106,11 @@ const Article = () => {
           </NoBreak>
           {" "}etc. Even,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is an{" "}
           <i>
@@ -127,8 +119,7 @@ const Article = () => {
           {" "}set, a set with no elements!
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -138,37 +129,31 @@ const Article = () => {
           The “API” (a computer science notion,
           roughly meaning
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           the interface offered to the outside world
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           as in, for example, the buttons and clock 
           display and door handle of a microwave oven) 
           of a set consists of just one functionality: 
           a set can answer questions of the form
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain ... ?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and nothing else.
           For example, you could ask a set
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 3?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           to which{" "}
           <Math>
@@ -181,13 +166,11 @@ const Article = () => {
           </Math>
           {" "}would answer “no”, or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 2?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           to which{" "}
           <Math>
@@ -205,22 +188,18 @@ const Article = () => {
           {" "}would
           answer “yes”.
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Notation-wise, the expression
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large x \in A$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           means
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -232,13 +211,11 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -251,13 +228,11 @@ const Article = () => {
           </Math>
           ?”
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           equivalently. [One can also say
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -269,13 +244,11 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -287,13 +260,11 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -305,21 +276,18 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           depending on one's mood and/or tastes.]
           As in all of mathematics, any such statement 
           evaluates to either “true” or “false”.
           For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large 1 \in \&#123;1, 2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is true, because{" "}
           <Math>
@@ -339,13 +307,11 @@ const Article = () => {
           </NoBreak>
           {" "}whereas
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large 3 \in \&#123;1, 2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is false, because{" "}
           <Math>
@@ -365,8 +331,7 @@ const Article = () => {
           </NoBreak>
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -379,136 +344,111 @@ const Article = () => {
           all “do you contain ...?” questions.
           For example, while
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;2, 1\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           might look superficially different from
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1, 2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           these sets are actually one and the same, because they both
           answer “yes” to
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 1?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 2?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and answer “no” to all else. For that matter,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1, 1, 2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           might also look superficially different from
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\&#123;1, 2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           but since both sets answer “yes” to
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 1?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           do you contain 2?
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and answer “no” to all else,
           they are by definition the same.
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           (These examples demonstrate that human notation 
           is redundant: there are several different ways of 
           writing down the same set. They also demonstrate
           that sets do not keep track of the
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           order
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           nor of the
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           multiplicity
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           of their elements. Such notions are simply not part
           of the “API” of a set.)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Moreover, any empty set is equal to any other 
           empty set. Equality follows because both sets 
           answer all questions the same way: they both 
           answer “no” to everything. So there is
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           one
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and only one empty set. Therefore, mathematicians speak of
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           the
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           empty set—the one and only!
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -517,31 +457,26 @@ const Article = () => {
           {" "}
           While the empty set can be written
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           another available notation is
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \phi$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which is the Greek letter phi, read “fee”. (Or “fie”?
           Hum.) (Or you can just say “the empty set”, and
           keep it safe.)
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -552,25 +487,21 @@ const Article = () => {
           In fact, the result of doing this might even look like a little bit
           like a Russian doll (no?):
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#123;\&#123;\&#123;\&#125;\&#125;\&#125;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           The above is “a set containing a set containing a set
           containing a set containing the empty set”. Eschewing complete
           adherence to the Russian doll aesthetic, we could also write
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#123;\&#123;\phi\&#125;\&#125;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for the same thing, given that{" "}
           <Math>
@@ -578,31 +509,26 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Mind you, concerning this example, that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;$$
           <ImageRight
-               offset_x="1em"
-               src="/images/svg_empty_set_cloud.svg" />
+            offset_x="1em"
+            src="/images/svg_empty_set_cloud.svg" />
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           because a box containing an empty box is not the same
           thing as an empty box! Specifically,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123; \&#123;\&#125; \&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           answers “yes” to the question “do you contain 
           {" "}
@@ -620,13 +546,11 @@ const Article = () => {
           {" "}
           whereas
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           answers “no” to the same question. (Indeed, while the empty set
           {" "}
@@ -639,19 +563,16 @@ const Article = () => {
           </i>
           {" "}something.) Similarly,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;\&#123;\&#123;\&#125;\&#125; \&#125; \ne \&#123;\&#123;\&#125;\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           etc, etc: adding a new outer layer changes the whole set each time.
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -674,13 +595,11 @@ const Article = () => {
           </Math>
           {" "}is written
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large A \cup B$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and consists of the set of all things that are either in{" "}
           <Math>
@@ -694,13 +613,11 @@ const Article = () => {
           {" "}
           For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;1, 2\&#125; \cup \&#123;2, 5\&#125; = \&#123;1, 2, 5\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           as{" "}
           <NoBreak>
@@ -743,13 +660,11 @@ const Article = () => {
           </Math>
           {" "}is written
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large A \cap B$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and consists of the set of all things that are both in{" "}
           <Math>
@@ -763,13 +678,11 @@ const Article = () => {
           .
           For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \&#123;1, 2\&#125; \cap \&#123;2, 5\&#125; = \&#123;2\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           as{" "}
           <Math>
@@ -786,57 +699,47 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Note that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large x \in (A \cup B)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           if and only if
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large x \in A$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           <i>
             or
           </i>
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large x \in B$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           because that's how we defined “union”. (Replace “or”
           by “and” to get a definition of intersection.)
           In fact, a logician would define the union of two sets by an
           abstruse expression of the type
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large x \in (A \cup B) \iff (x \in A) \vee (x \in B)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           read
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           an element{" "}
           <Math>
@@ -865,8 +768,7 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           as “
           <NoBreak>
@@ -887,19 +789,16 @@ const Article = () => {
           similar definition for the intersection of two sets
           if we tell you that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large \wedge$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           means “and”.)
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -911,13 +810,11 @@ const Article = () => {
             the real numbers
           </i>
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\rr$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which is an infinite set containing all “ordinary”
           decimal numbers, or such as{" "}
@@ -925,13 +822,11 @@ const Article = () => {
             the integers
           </i>
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\zz$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which contains all “whole” numbers, including the
           negative ones. You might also encounter
@@ -940,13 +835,11 @@ const Article = () => {
             the natural numbers
           </i>
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\nn$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which contains only those integers that are greater than{" "}
           <Math>
@@ -959,8 +852,7 @@ const Article = () => {
           </Math>
           ).
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Secondly—and this pretty much wraps it up for those sets 
           that are commonly seen in calculus—you will
           encounter{" "}
@@ -969,13 +861,11 @@ const Article = () => {
           </i>
           . For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large [a, b]$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is a{" "}
           <i>
@@ -998,13 +888,11 @@ const Article = () => {
           </NoBreak>
           {" "}Or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large [a, b)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is a{" "}
           <i>
@@ -1027,27 +915,22 @@ const Article = () => {
           </NoBreak>
           {" "}Etc.
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Note that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large (-\infty, \infty) = \rr$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           since
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large (-\infty, \infty)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           (which is an{" "}
           <i>
@@ -1055,14 +938,12 @@ const Article = () => {
           </i>
           {" "}interval, by the way) means
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           the set of real numbers with no bound below,
           and no bound above
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which is all of{" "}
           <Math>
@@ -1071,8 +952,7 @@ const Article = () => {
           .
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -1087,13 +967,11 @@ const Article = () => {
           ,
           written
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\overline&#123;\rr&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and which consists of all the numbers in{" "}
           <NoBreak>
@@ -1119,18 +997,15 @@ const Article = () => {
           </NoBreak>
           {" "}as well:
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large\overline&#123;\rr&#125; = \rr \cup \&#123;-\infty, \infty\&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           (I.e., ...well, you get it!)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           You can view{" "}
           <Math>
             $\overline&#123;\rr&#125;$
@@ -1150,13 +1025,11 @@ const Article = () => {
           {" "}as being
           the closed interval
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large [-\infty, \infty]$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           with the two infinite endpoints{" "}
           <i>
@@ -1164,8 +1037,7 @@ const Article = () => {
           </i>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Does all this have any “real meaning”? Good question! The answer
           is:{" "}
           <i>
@@ -1173,18 +1045,15 @@ const Article = () => {
           </i>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           E.g. (to give you a brief flavor, before we move on forever from the topic),
           the value of something like
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large 0.5+ \infty$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           must be{" "}
           <i>
@@ -1216,13 +1085,11 @@ const Article = () => {
           </i>
           . For example, the expression
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\Large (-\infty) + \infty$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           has an{" "}
           <i>

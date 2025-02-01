@@ -16,8 +16,8 @@ import VerticalChunk from "~/components/VerticalChunk";
 const Article = () => {
   return (
     <Chapter
-         number={1}
-         title="A Few Refreshers">
+      number={1}
+      title="A Few Refreshers">
       <Section>
         <VerticalChunk>
           <b>
@@ -30,23 +30,19 @@ const Article = () => {
           So any nonzero number multiplied by itself
           is positive. For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(-2) \times (-2) = 4$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplay>
           and
         </CentralDisplay>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$2 \times 2 = 4$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           are both positive. But{" "}
           <Math>
@@ -68,19 +64,17 @@ const Article = () => {
           {" "}Hence, and whether 
           you like it or not,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;(-2)^2&#125; = 2$$
           <ImageRight
-               use_squiggle_on_mobile={false}
-               padding="40px"
-               offset_x="-3rem"
-               offset_y="-1rem"
-               src="/images/svg_cloud_minus_two_squared.svg" />
+            use_squiggle_on_mobile={false}
+            padding="40px"
+            offset_x="-3rem"
+            offset_y="-1rem"
+            src="/images/svg_cloud_minus_two_squared.svg" />
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and, in particular, it is{" "}
           <i>
@@ -88,13 +82,11 @@ const Article = () => {
           </i>
           {" "}true that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; x$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for every real number{" "}
           <NoBreak>
@@ -105,13 +97,11 @@ const Article = () => {
           </NoBreak>
           {" "}Instead we have
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; |x|$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for every real number{" "}
           <NoBreak>
@@ -131,8 +121,7 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           (Nb: If ever you want to indicate both 
           solutions of the equation{" "}
           <Math>
@@ -150,13 +139,11 @@ const Article = () => {
           This is what happens, for example, in the 
           maybe-well-known formula
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$x = &#123;-b \pm \sqrt&#123;b^2 - 4ac&#125; \over 2a&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for the solutions to the quadratic equation
           {" "}
@@ -165,28 +152,23 @@ const Article = () => {
           </Math>
           .)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           Now we can ponder, say,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;0.5&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           whose value is—by definition—the unique
           nonnegative solution to
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$x^2 = 0.5.$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           As beginners, there's nothing wrong with 
           trying to solve this equation by trial and
@@ -200,13 +182,11 @@ const Article = () => {
           {" "}for example,
           we find
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$x^2 = &#123;1\over 4&#125;\times&#123;1\over 4&#125; = &#123;1\over 16&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           so{" "}
           <Math>
@@ -228,13 +208,11 @@ const Article = () => {
           {" "}say, we 
           find
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$x^2 = &#123;1\over 2&#125;\times&#123;1\over 2&#125; = &#123;1\over 4&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which is better, since{" "}
           <Math>
@@ -266,13 +244,11 @@ const Article = () => {
           </NoBreak>
           {" "}we find
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$x^2 = &#123;3\over 4&#125;\times&#123;3\over 4&#125; = &#123;9\over 16&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           which—surprise!—is actually pretty close to 
           {" "}
@@ -312,19 +288,16 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           In last resort, and in reasonably good 
           agreement with our observations, a calculator 
           reveals that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;0.5&#125; = 0.7071067...$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           where the decimals trail off with no pattern. 
           (This number is irrational.) Even so, the fact 
@@ -343,8 +316,7 @@ const Article = () => {
           {" "}is 
           often perceived as counterintuitive.
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           You can think of it this way: multiplying a 
           value by{" "}
           <NoBreak>
@@ -368,13 +340,11 @@ const Article = () => {
           {" "}of that value—for 
           example, say,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$605 \cdot 0.7071 = 427.7955$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is{" "}
           <Math>
@@ -427,8 +397,7 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           The point is: if “
           <Math>
             $X\%$
@@ -464,8 +433,7 @@ const Article = () => {
           .
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -474,18 +442,15 @@ const Article = () => {
           {" "}
           An elementary fraction, or division, such as
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$&#123;50 \over 2&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           can be thought of in a few different ways:
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <List>
           <Item>
             Fifty halves (i.e.,{" "}
@@ -535,8 +500,7 @@ const Article = () => {
             ).
           </Item>
         </List>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           But{" "}
           <Math>
@@ -546,13 +510,11 @@ const Article = () => {
           things particularly nice! For a ratio of 
           decimals, such as, say,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$&#123;1 \over 0.01&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           our possible points of view are going to be
           more restricted. Thankfully, however, we can 
@@ -572,13 +534,11 @@ const Article = () => {
           {" "}as in the third option 
           above. And, indeed,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$&#123;1 \over 0.01&#125; \,=\,100$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           because{" "}
           <Math>
@@ -598,13 +558,11 @@ const Article = () => {
           {" "}For 
           that matter,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$&#123; 1 \over 0.001&#125; = 1000,\qquad&#123;1 \over 0.0001&#125; = 10000,\quad\,\,\,\,\textrm&#123;(etc)&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           by the same reasoning, which explains why 
           dividing by smaller and smaller numbers produces 
@@ -615,8 +573,7 @@ const Article = () => {
           </Math>
           {" "}is undefined).
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Pause />
         <VerticalChunk>
           <b>
@@ -634,13 +591,11 @@ const Article = () => {
           </NoBreak>
           {" "}E.g.:
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$&#123;1.42 \over 0.8&#125; = &#123;100 \cdot 1.42 \over 100 \cdot 0.8&#125; = &#123;142 \over 80&#125; = &#123;71 \over 40&#125;.$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           This example was chosen randomly, and, if you
           allow, we would like to see how large{" "}
@@ -650,8 +605,7 @@ const Article = () => {
           {" "}
           really is (one second!):
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\begin&#123;align&#125;
           &#123;71 \over 40&#125; \,&=\, &#123;40 + 30 + 1 \over 40&#125; \,=\, &#123;40 \over 40&#125; + &#123;30 \over 40&#125; + &#123;1 \over 40&#125;\\
@@ -659,8 +613,7 @@ const Article = () => {
           \,&=\, 1 + 0.75 + 0.025 = 1.775\up&#123;1.5&#125;
           \end&#123;align&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           ...so we find, among others, that{" "}
           <Math>
@@ -681,8 +634,7 @@ const Article = () => {
           {" "}(Interesting, no?)
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -693,23 +645,19 @@ const Article = () => {
           multiplies a sum can be brought “inside” the 
           sum. For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$5(10 + 2) \,=\, 5\!\cdot\!10 \,+\, 5\!\cdot\!2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           (five times twelve equals fifty plus ten), or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$a(b + c) = ab + ac$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           more generally. This property is known as the
           {" "}
@@ -723,8 +671,7 @@ const Article = () => {
           </i>
           {" "}for short.
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           (We might finally clarify that ‘
           <NoBreak>
             <Math>
@@ -743,85 +690,70 @@ const Article = () => {
           {" "}Moreover,
           when we write
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$5\!\cdot\!10 \,+\, 5\!\cdot\!2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           we really mean
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(5\!\cdot\!10) + (5\!\cdot\!2)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           as opposed to something else, such as
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$((5\!\cdot\!10) + 5)\!\cdot\! 2,$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           because multiplication takes precedence over 
           addition, by default.)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           A little more generally, one has such identities 
           as
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(C + D) \,=\, aC + bC + aD + bD$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           that come from multiplying every term of the first 
           parenthesis with every term of the second 
           parenthesis. Indeed,
           <ImageLeft
-               offset_y="-10px"
-               line={1.5}
-               src="/images/325.svg" />
+            offset_y="-10px"
+            line={1.5}
+            src="/images/325.svg" />
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(C + D) = (a + b)C + (a + b)D$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           by one application of distributivity, while
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)C = aC + bC$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)D = aD + bD$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           by distributivity again.
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -830,8 +762,7 @@ const Article = () => {
             {" "}
             One has
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$\begin&#123;align&#125;
             (10 + 2)(10 + 4) \,&=\, 10\!\cdot\!10 \,+\, 10\!\cdot\!4 \,+\, 2\!\cdot\!10 \,+\, 2\!\cdot\!4\\
@@ -839,8 +770,7 @@ const Article = () => {
             \,&=\, 168
             \end&#123;align&#125;$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             so{" "}
             <Math>
@@ -849,8 +779,7 @@ const Article = () => {
             .
           </VerticalChunk>
         </Example>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -859,8 +788,7 @@ const Article = () => {
             {" "}
             One has
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$\begin&#123;align&#125;
             (10 + 3)(10 + 3) \,&=\, 10\!\cdot\!10 \,+\, 10\!\cdot\!3 \,+\, 3\!\cdot\!10 \,+\, 3\!\cdot\!3\\
@@ -868,8 +796,7 @@ const Article = () => {
             \,&=\, 169
             \end&#123;align&#125;$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             so{" "}
             <Math>
@@ -878,8 +805,7 @@ const Article = () => {
             .
           </VerticalChunk>
         </Example>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           (The fact that{" "}
           <Math>
@@ -893,17 +819,14 @@ const Article = () => {
           {" "}is a bit curious 
           indeed.)
         </VerticalChunk>
-        <VerticalChunk
-             indent={true}>
+        <VerticalChunk indent={true}>
           If we start from the afore-mentioned identity
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(C + D) \,=\, aC + bC + aD + bD$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and set{" "}
           <NoBreak>
@@ -921,23 +844,19 @@ const Article = () => {
           </NoBreak>
           {" "}we find
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(a + b) \,=\, aa + ba + ab + bb$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or, equivalently,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)^2 = a^2 + 2ab + b^2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           since{" "}
           <NoBreak>
@@ -966,8 +885,7 @@ const Article = () => {
           , but such terminology is not very 
           important at this stage.)
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -977,8 +895,7 @@ const Article = () => {
             By the last formula (or “binomial expansion
             of degree two”),
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$\begin&#123;align&#125;
             \up&#123;1&#125; (10 + 3)^2 \,&=\, 10\!\cdot\!10 \,+\, 2\!\cdot\!3\!\cdot\!10 \,+\, 3\!\cdot\!3 \\
@@ -986,14 +903,12 @@ const Article = () => {
             \up&#123;1&#125; \,&=\, 169
             \end&#123;align&#125;$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             which agrees with Example 2.
           </VerticalChunk>
         </Example>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           On the other hand, setting{" "}
           <NoBreak>
@@ -1008,43 +923,35 @@ const Article = () => {
           </Math>
           {" "}in
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(C + D) = aC + aD + bC + bD$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           gives
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(a + (-b)) = aa + a(-b) + ba + b(-b)$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or, less pedantically,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(a - b) = aa - ab + ba - bb$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a + b)(a - b) = a^2 - b^2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           since{" "}
           <NoBreak>
@@ -1069,23 +976,19 @@ const Article = () => {
           </NoBreak>
           {" "}Note that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$a^2 - b^2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <CentralDisplayItalic>
           a difference of squares
         </CentralDisplayItalic>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           whence{" "}
           <i>
@@ -1102,8 +1005,7 @@ const Article = () => {
           {" "}that
           is.) (PS: “Factored” means “written as a product”.)
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -1112,13 +1014,11 @@ const Article = () => {
             {" "}
             Since
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$19 = 100 - 81 = 10^2 - 9^2$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             is a difference of squares,{" "}
             <Math>
@@ -1133,8 +1033,7 @@ const Article = () => {
             number, but nevermind.)
           </VerticalChunk>
         </Example>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -1143,43 +1042,35 @@ const Article = () => {
             {" "}
             The algebraic expression
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$1 - x^2$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             can be factored, because
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$1 = 1^2$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             implies that
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$1 - x^2$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             truly is “a difference of squares”. And, indeed,
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$1 - x^2 = (1 - x)(1 + x)$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             as per “
             <Math>
@@ -1188,8 +1079,7 @@ const Article = () => {
             ”.
           </VerticalChunk>
         </Example>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           In relation to distributivity, we should also 
           mention the simple but important fact that 
@@ -1204,28 +1094,23 @@ const Article = () => {
           {" "}the 
           difference. That is,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(-1)(a - b) \,=\, b - a$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           or, for short,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$-(a - b) \,=\, b - a$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           because, indeed,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\begin&#123;align&#125;
           (-1)(a - b) \,&=\, (-1)(a + (-b)) \\
@@ -1233,13 +1118,11 @@ const Article = () => {
           \,&=\, -a + b
           \end&#123;align&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           by distributivity (used in the second step).
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <Example>
           <VerticalChunk>
             <b>
@@ -1265,38 +1148,31 @@ const Article = () => {
           </VerticalChunk>
         </Example>
       </Section>
-      <div
-           class="spacer" />
-      <Section
-           divider={false}>
+      <div class="spacer" />
+      <Section divider={false}>
         <VerticalChunk>
           <b>
             Epilogue.
           </b>
           {" "}Do you remember the near miss between
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$12\cdot 14 \,=\, 168$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$13 \cdot 13 \,=\, 13^2 \,=\, 169$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           ...? Well if you observe, additionally, that
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\begin&#123;align&#125;
           11\,\cdot\,13 &= 12^2 - 1\\
@@ -1304,19 +1180,16 @@ const Article = () => {
           9\,\cdot\,11 &= 10^2 - 1
           \end&#123;align&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           (etc) you might become suspicious of a pattern! 
           But the mystery is rather thin: we have
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(n - 1)(n + 1) \,=\, n^2 - 1$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for{" "}
           <i>
@@ -1329,19 +1202,16 @@ const Article = () => {
           {" "}because of the 
           formula
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$(a - b)(a + b) \,=\, a^2 - b^2$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           for a difference of squares!
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
+      <div class="spacer" />
       <Section>
         <VerticalChunk>
           <b>
@@ -1350,13 +1220,11 @@ const Article = () => {
           {" "}
           A pair of algebraic expressions of the form
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$a + b,\, a - b$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is called a{" "}
           <i>
@@ -1364,34 +1232,27 @@ const Article = () => {
           </i>
           . For example,
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$n + 1,\, n - 1$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           is a conjugate pair, as is
         </VerticalChunk>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <MathBlock>
           $$\sqrt&#123;3&#125; + \sqrt&#123;2&#125;,\,\, \sqrt&#123;3&#125; - \sqrt&#123;2&#125;$$
         </MathBlock>
-        <div
-             class="spacer" />
+        <div class="spacer" />
         <VerticalChunk>
           and so on. (Generally speaking, conjugate pairs
           are good things to multiply together.)
         </VerticalChunk>
       </Section>
-      <div
-           class="spacer" />
-      <Exercises
-           labels={["0", "1"]}>
-        <Exercise
-             exercise_number={0}>
+      <div class="spacer" />
+      <Exercises labels={["0", "1"]}>
+        <Exercise exercise_number={0}>
           <VerticalChunk>
             <b>
               Exercise 1.
@@ -1399,13 +1260,12 @@ const Article = () => {
             {" "}
             True or false (and, if possible, explain):
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <Grid
-               center_on_overflow={true}
-               sm_cutoff={520}
-               sm_cols={2}
-               cols={3}>
+            center_on_overflow={true}
+            sm_cutoff={520}
+            sm_cols={2}
+            cols={3}>
             <Item>
               a.{" "}
               <Math>
@@ -1470,26 +1330,21 @@ const Article = () => {
               {" "}{" "}
             </Item>
           </Grid>
-          <div
-               class="spacer" />
-          <Solution
-               solution_number={0}>
+          <div class="spacer" />
+          <Solution solution_number={0}>
             <VerticalChunk>
               Part by part:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               a. (True) We have
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$0.9^2 = &#123;9 \over 10&#125;\cdot&#123;9 \over 10&#125; = &#123;81 \over 100&#125; = 0.81$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and{" "}
               <Math>
@@ -1497,19 +1352,16 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               b. (True) We have
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$0.1^2 = &#123;1 \over 10&#125; \cdot &#123;1 \over 10&#125; = &#123;1 \over 100&#125; = 0.01,$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and{" "}
               <Math>
@@ -1521,8 +1373,7 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               c. (True) In fact, 
@@ -1546,8 +1397,7 @@ const Article = () => {
               {" "}To 
               convince yourself, note that
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\,\, (\sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.1&#125;)^6 \\
@@ -1570,16 +1420,14 @@ const Article = () => {
               =& \,\, \up&#123;1.4&#125; 2
               \end&#123;align&#125;$$
               <ImageLeft
-                   offset_y="0.8rem"
-                   src="/images/17.svg" />
+                offset_y="0.8rem"
+                src="/images/17.svg" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\,\, (\sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.1&#125;)^6 \\
@@ -1601,11 +1449,9 @@ const Article = () => {
               \sqrt[2]&#123;\up&#123;0.65&#125;2&#125; \times \sqrt[2]&#123;\up&#123;0.65&#125;2&#125;\\
               =&\,\, \up&#123;1.4&#125; 2
               \end&#123;align&#125;$$
-              <ImageLeft
-                   src="/images/18.svg" />
+              <ImageLeft src="/images/18.svg" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               so{" "}
               <Math>
@@ -1614,21 +1460,18 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <VerticalChunk
-                 indent={true}>
+            <VerticalChunk indent={true}>
               Technically, however, a number{" "}
               <Math>
                 $x$
               </Math>
               {" "}such that
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$x^6 = 2$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is not necessarily{" "}
               <NoBreak>
@@ -1645,8 +1488,7 @@ const Article = () => {
               {" "}satisfies 
               this equation as well!
             </VerticalChunk>
-            <VerticalChunk
-                 indent={true}>
+            <VerticalChunk indent={true}>
               The last step, therefore, is to note that
               {" "}
               <Math>
@@ -1674,19 +1516,16 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               d. (True) In general,
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;\sqrt&#123;x&#125; \over \sqrt&#123;y&#125;&#125; = \sqrt&#123;\up&#123;0.7&#125;x \over y&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               for all{" "}
               <NoBreak>
@@ -1702,18 +1541,15 @@ const Article = () => {
               {" "}(you need each 
               root to be defined), so
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;\sqrt&#123;2&#125; \over 2&#125; = &#123;\sqrt&#123;2&#125; \over \sqrt&#123;4&#125;&#125; = \sqrt&#123;\up&#123;0.8&#125;2 \over 4&#125; = \sqrt&#123;0.5&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               ...ta-daa!
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1722,14 +1558,12 @@ const Article = () => {
               {" "}One can also proceed by “direct
               verification”:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\left(&#123;\sqrt&#123;2&#125; \over 2&#125;\right)^&#123;\!2&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;\cdot&#123;\sqrt&#123;2&#125; \over 2&#125;
               = &#123;\sqrt&#123;2&#125;\cdot\sqrt&#123;2&#125; \over 4&#125; = &#123;2 \over 4&#125; = 0.5.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (This, together with the fact that 
               {" "}
@@ -1744,8 +1578,7 @@ const Article = () => {
               </Math>
               .)
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               e. (True) Using the 
@@ -1759,24 +1592,20 @@ const Article = () => {
               </NoBreak>
               {" "}identity:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over \sqrt&#123;2&#125;&#125; = &#123;\sqrt&#123;1&#125; \over \sqrt&#123;2&#125;&#125; = \sqrt&#123;\up&#123;0.8&#125;1 \over 2&#125; = \sqrt&#123;0.5&#125;.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               Or by direct verification:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\left(&#123;1 \over \sqrt&#123;2&#125;&#125;\right)^&#123;\!2&#125; = &#123;1 \over \sqrt&#123;2&#125;&#125;\cdot&#123;1 \over \sqrt&#123;2&#125;&#125;
               = &#123;1 \over \sqrt&#123;2&#125;\cdot\sqrt&#123;2&#125;&#125; = &#123;1 \over 2&#125; = 0.5.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (And{" "}
               <Math>
@@ -1785,13 +1614,11 @@ const Article = () => {
               {" "}is nonnegative.)
               Or by reducing to part d:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over \sqrt&#123;2&#125;&#125; = &#123;\sqrt&#123;2&#125; \over \sqrt&#123;2&#125; \cdot \sqrt&#123;2&#125;&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (The point being: we already know that 
               {" "}
@@ -1800,29 +1627,24 @@ const Article = () => {
               </Math>
               {" "}by part d.)
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               f. (True) We have
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$2^&#123;30&#125; = 2^&#123;10&#125; \times 2^&#123;10&#125; \times 2^&#123;10&#125; = (2^&#123;10&#125;)^3$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$(2^&#123;10&#125;)^3 = (1024)^3 &gt; 1000^3.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1841,8 +1663,7 @@ const Article = () => {
               {" "}powers, mind
               you):
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;array&#125;&#123;c|c&#125;
               \,\,\,\,n\,\,\,\, & 2^n\dn&#123;0.3&#125; \\ \hline
@@ -1859,18 +1680,15 @@ const Article = () => {
               10 & 1024
               \end&#123;array&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               Among which, the fact that
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$2^&#123;10&#125; \approx 10^3$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               can be particularly useful to know! For 
               example, if a 1-millimeter-thick napkin is 
@@ -1882,38 +1700,32 @@ const Article = () => {
               each time, one obtains something of 
               thickness
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$2^&#123;50&#125;\fw\te&#123;mm&#125; = (2^&#123;10&#125;)^5\fw\te&#123;mm&#125; \approx (10^3)^5\fw\te&#123;mm&#125; = 10^&#123;15&#125;\fw\te&#123;mm&#125;.$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               As
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$1\fw\te&#123;mm&#125; = 10^&#123;-6&#125;\fw\te&#123;km&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               this is
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$10^&#123;9&#125;\fw\te&#123;km&#125;$$
               <ImageRight
-                   use_squiggle_on_mobile={false}
-                   offset_y="-1rem"
-                   offset_x="-4rem"
-                   src="/images/svg_ch1_ex_104.svg" />
+                use_squiggle_on_mobile={false}
+                offset_y="-1rem"
+                offset_x="-4rem"
+                src="/images/svg_ch1_ex_104.svg" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               or{" "}
               <i>
@@ -1929,23 +1741,19 @@ const Article = () => {
               (The point being: that we could go from the 
               relatively mysterious
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\te&#123;“&#125;2^&#123;50&#125;\fw\te&#123;mm&#125;\te&#123;”&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               to the relatively less mysterious
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\te&#123;“&#125;\fw10^&#123;15&#125;\te&#123;mm&#125;\te&#123;”&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               by the approximation{" "}
               <Math>
@@ -1953,16 +1761,14 @@ const Article = () => {
               </Math>
               .)
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               g. (True) As an inequality can be multiplied 
               on both sides by a positive number while 
               preserving the inequality, one has
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               & &#123;1 \over 0.95&#125; &gt; 1.05\\
@@ -1971,8 +1777,7 @@ const Article = () => {
               \iff & 1 &gt; 1 - 0.05^2\up&#123;1.4&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (using the fact that{" "}
               <NoBreak>
@@ -1983,13 +1788,11 @@ const Article = () => {
               </NoBreak>
               {" "}of
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\te&#123;“&#125;\,(a+b)(a-b) = a^2-b^2\,\te&#123;”&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               fame), and since the{" "}
               <i>
@@ -2010,8 +1813,7 @@ const Article = () => {
               </NoBreak>
               {" "}means “if and only if”.)
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2020,13 +1822,11 @@ const Article = () => {
               {" "}
               More generally, even though
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 1 - \epsilon&#125; &gt; 1 + \epsilon$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               for any small{" "}
               <NoBreak>
@@ -2050,48 +1850,39 @@ const Article = () => {
               </NoBreak>
               {" "}For example,
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 0.99&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is a good approximation to
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 0.99&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               while
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 0.999&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is a good approximation to
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 0.999&#125;,$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               etc.
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               h. (True) Here are the first few powers of{" "}
@@ -2106,11 +1897,10 @@ const Article = () => {
               {" "}
               simply changes the sign of the previous result):
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Grid
-                 place_items="end"
-                 cols={3}>
+              place_items="end"
+              cols={3}>
               <Item>
                 {" "}{" "}
                 <Math>
@@ -2217,8 +2007,7 @@ const Article = () => {
                 {" "}{" "}
               </Item>
             </Grid>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (Etc.) Obviously, even powers of{" "}
               <Math>
@@ -2259,29 +2048,24 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               i. (False) We have
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;100 \over 99&#125; = &#123;99 + 1 \over 99&#125; = 1 + &#123;1 \over 99&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;101 \over 100&#125; = &#123;100 + 1 \over 100&#125; = 1 + &#123;1 \over 100&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               so the smaller of the two fractions is{" "}
               <NoBreak>
@@ -2298,8 +2082,7 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2308,13 +2091,11 @@ const Article = () => {
               {" "}
               The difference
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 99&#125; - &#123;1 \over 100&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is interesting in its own right, being 
               connected to a famous infinite sum. To 
@@ -2327,13 +2108,11 @@ const Article = () => {
               forward by one unit and backwards by half a
               unit, stopping at the number
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$1 - &#123;1\over 2&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               by virtue of this back-and-forth movement. 
               The hare then proceeds to run forward by 
@@ -2348,8 +2127,7 @@ const Article = () => {
               {" "}of a unit,
               stopping at
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right) \\
@@ -2358,14 +2136,12 @@ const Article = () => {
               = \,&\, \left(1 - &#123;1 \over 3&#125;\right)^&#123;\color&#123;white&#125; a^&#123;a^a&#125;&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               for another break. Keeping with this pattern,
               the hare then stops at
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
@@ -2375,13 +2151,11 @@ const Article = () => {
               = \,&\, \left(1 - &#123;1 \over 4&#125;\right)^&#123;\color&#123;white&#125; a^&#123;a^a&#125;&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and then at
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
@@ -2392,8 +2166,7 @@ const Article = () => {
               = \,&\, \left(1 - &#123;1 \over 5&#125;\right)^&#123;\color&#123;white&#125; a^&#123;a^a&#125;&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and so on.
               Clearly, the successive positions at which 
@@ -2409,8 +2182,7 @@ const Article = () => {
               </i>
               {" "}sum
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
@@ -2422,8 +2194,7 @@ const Article = () => {
               + \,&\, \,\,\,\,\,\,\,\,\dots\up&#123;1.3&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is “equal” (in some sense) to{" "}
               <NoBreak>
@@ -2442,13 +2213,11 @@ const Article = () => {
               </NoBreak>
               {" "}term
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n&#125; - &#123;1 \over n+1&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               of the sum? (By the way, this{" "}
               <NoBreak>
@@ -2474,8 +2243,7 @@ const Article = () => {
               which is how we came to be reminded of this 
               infinite sum in the first place.) Well...
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &#123;1 \over n&#125; - &#123;1 \over n+1&#125; &= &#123;1 \over n&#125;\cdot&#123;n+1 \over n+1&#125;\, - \,
@@ -2484,37 +2252,31 @@ const Article = () => {
               &= &#123;1 \over n(n+1)&#125;\up&#123;1.5&#125;
               \end&#123;align&#125;$$
               <ImageRight
-                   y="12%"
-                   offset_y="3.5rem"
-                   src="/images/svg_ch1_ex_24.svg" />
+                y="12%"
+                offset_y="3.5rem"
+                src="/images/svg_ch1_ex_24.svg" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               ...it's that much. (For example,
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 1&#125; - &#123;1 \over 2&#125; = &#123;1 \over 1 \cdot 2&#125; = &#123;1 \over 2&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 2&#125; - &#123;1 \over 3&#125; = &#123;1 \over 2 \cdot 3&#125; = &#123;1 \over 6&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               and so on.) So the infinite sum
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
@@ -2527,35 +2289,29 @@ const Article = () => {
               = \,&\, 1\up&#123;1.5&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               can also be written
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 1 \cdot 2&#125; + &#123;1 \over 2 \cdot 3&#125; + &#123;1 \over 3 \cdot 4&#125; + &#123;1 \over 4 \cdot 5&#125; + &#123;1 \over
               5 \cdot 6&#125; + \dots \,=\, 1$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (or
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 2&#125; + &#123;1 \over 6&#125; + &#123;1 \over 12&#125; + &#123;1 \over 20&#125; + &#123;1 \over 30&#125; + \dots \,=\, 1$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               equivalently) which is not obvious at first 
               glance, and kind of interesting!
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2563,13 +2319,11 @@ const Article = () => {
               </i>
               {" "}The fact that
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n&#125; - &#123;1 \over n+1&#125; = &#123;1 \over n(n+1)&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               means, in particular, that 
               {" "}
@@ -2591,13 +2345,11 @@ const Article = () => {
               {" "}which is 
               sometimes handy to know. For example,
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 10&#125; - &#123;1 \over 11&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is approximately{" "}
               <NoBreak>
@@ -2608,13 +2360,11 @@ const Article = () => {
               </NoBreak>
               {" "}while
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 100&#125; - &#123;1 \over 101&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is approximately{" "}
               <NoBreak>
@@ -2628,8 +2378,7 @@ const Article = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise
-             exercise_number={1}>
+        <Exercise exercise_number={1}>
           <VerticalChunk>
             <b>
               Exercise 2.
@@ -2638,13 +2387,11 @@ const Article = () => {
             In the solution to Exercise 1, we observed how 
             the difference
           </VerticalChunk>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <MathBlock>
             $$&#123;1 \over n&#125; - &#123;1 \over n+1&#125;$$
           </MathBlock>
-          <div
-               class="spacer" />
+          <div class="spacer" />
           <VerticalChunk>
             is{" "}
             <i>
@@ -2686,68 +2433,57 @@ const Article = () => {
             </Math>
             ?
           </VerticalChunk>
-          <div
-               class="spacer" />
-          <Solution
-               solution_number={1}>
+          <div class="spacer" />
+          <Solution solution_number={1}>
             <VerticalChunk>
               Since
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n&#125; - &#123;1 \over n+1&#125; = &#123;1 \over n(n+1)&#125;$$
               <ImageRight
-                   use_squiggle_on_mobile={false}
-                   src="/images/svg_ch1_ex_25.svg"
-                   offset_y="1.2rem"
-                   offset_x="-6rem" />
+                use_squiggle_on_mobile={false}
+                src="/images/svg_ch1_ex_25.svg"
+                offset_y="1.2rem"
+                offset_x="-6rem" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               (as previously computed) is smaller than
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n^2&#125;$$
               <ImageRight
-                   use_squiggle_on_mobile={false}
-                   src="/images/ch1_ex_26.svg"
-                   offset_y="1.2rem"
-                   offset_x="-6rem" />
+                use_squiggle_on_mobile={false}
+                src="/images/ch1_ex_26.svg"
+                offset_y="1.2rem"
+                offset_x="-6rem" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               we will compute the difference
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n^2&#125; - &#123;1 \over n(n+1)&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               as opposed to the “other difference
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n(n+1)&#125; - &#123;1 \over n^2&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               to avoid a minus sign in the result. 
               (Computing the second difference and having 
               a minus sign does not constitute a mistake, 
               however.) Having said this, the difference is:
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$\begin&#123;align&#125;
               &#123;1 \over n^2&#125; - &#123;1 \over n(n+1)&#125; &= &#123;1 \over n^2&#125; \cdot &#123;n+1 \over n+1&#125; - &#123;1 \over n(n+1)&#125; \cdot
@@ -2756,13 +2492,12 @@ const Article = () => {
               &= &#123;1 \over n^2(n+1)&#125;\up&#123;1.5&#125;
               \end&#123;align&#125;$$
               <ImageRight
-                   clickable_on_desktop={true}
-                   y="12%"
-                   offset_y="2rem"
-                   src="/images/svg_ch1_ex_27.svg" />
+                clickable_on_desktop={true}
+                y="12%"
+                offset_y="2rem"
+                src="/images/svg_ch1_ex_27.svg" />
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               which, for large{" "}
               <NoBreak>
@@ -2773,13 +2508,11 @@ const Article = () => {
               </NoBreak>
               {" "}is roughly
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over n^3&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               since{" "}
               <Math>
@@ -2791,8 +2524,7 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2800,13 +2532,11 @@ const Article = () => {
               </i>
               {" "}Above, we estimated
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 10&#125; - &#123;1 \over 11&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               to be roughly{" "}
               <NoBreak>
@@ -2827,13 +2557,11 @@ const Article = () => {
               </Math>
               {" "}by
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 10^2\cdot 11&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               or close to{" "}
               <NoBreak>
@@ -2845,13 +2573,11 @@ const Article = () => {
               {" "}
               (So
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 10&#125; - &#123;1 \over 11&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is about{" "}
               <NoBreak>
@@ -2870,13 +2596,11 @@ const Article = () => {
               </NoBreak>
               {" "}(In fact,
             </VerticalChunk>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <MathBlock>
               $$&#123;1 \over 10^2\cdot 11&#125;$$
             </MathBlock>
-            <div
-                 class="spacer" />
+            <div class="spacer" />
             <VerticalChunk>
               is{" "}
               <i>
