@@ -19,7 +19,7 @@ const Article = () => {
       number={4}
       title="Derivatives">
       <Image src="/images/svg_ch4_ch_polaroids.svg" />
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -32,19 +32,19 @@ const Article = () => {
           </i>
           {" "}of a function
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f : \rr \ra \rr $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is a (new) function
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f' : \rr \ra \rr$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           that gives the slope of{" "}
           <Math>
@@ -53,11 +53,11 @@ const Article = () => {
           {" "}at each point. 
           In other words
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f'(a)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is the slope of the graph{" "}
           <Math>
@@ -93,9 +93,9 @@ const Article = () => {
           the “after” graph records the slope of the 
           “before” graph.) E.g.:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_explanation1.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Note that{" "}
           <Math>
@@ -128,7 +128,7 @@ const Article = () => {
           </Math>
           :
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_explanation2.svg" />
         <ImageRight
           src="/images/svg_ch4_explanation2_cloud.svg"
@@ -140,11 +140,11 @@ const Article = () => {
           we can
           succinctly describe the derivative by...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f'(a) = \te&#123;[slope of tangent line to $y = f(x)$ at $x = a$]&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...with the understanding that{" "}
           <Math>
@@ -159,15 +159,15 @@ const Article = () => {
           and therefore leaves a missing value for the 
           derivative:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_explanation_one_sided_tangent.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (In other words, “half-tangents” do not actually 
           count as tangents.)
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -180,11 +180,11 @@ const Article = () => {
           </Math>
           {" "}is
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           differentiable
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           if{" "}
           <NoBreak>
@@ -214,7 +214,7 @@ const Article = () => {
           </Math>
           {" "}is
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           differentiable on{" "}
           <Math>
@@ -222,7 +222,7 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           if{" "}
           <NoBreak>
@@ -237,7 +237,7 @@ const Article = () => {
           </Math>
           {" "}is
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           differentiable at{" "}
           <Math>
@@ -245,7 +245,7 @@ const Article = () => {
           </Math>
           {" "}{" "}
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           if{" "}
           <Math>
@@ -254,7 +254,7 @@ const Article = () => {
           .
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -265,15 +265,15 @@ const Article = () => {
           of the “before” function from the last “before”/“after” pair above
           (the one with the closed endpoints):
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_curve_to_sketch.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           One method is simply to eyeball the slope at 
           a few points along the curve, plot these 
           values and interpolate:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_first_derivative_sketch.svg" />
         <ImageRight src="/images/svg_ch4_polaroid_cloud.svg" />
         <VerticalChunk>
@@ -287,11 +287,11 @@ const Article = () => {
           smallest) value of the derivative in each 
           interval:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_second_derivative_sketch_pt1.svg" />
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_second_derivative_sketch_pt2.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           The result (at bottom right)
           is a charming “robosketch” of the true
@@ -299,7 +299,7 @@ const Article = () => {
           at least.)
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -308,11 +308,11 @@ const Article = () => {
           {" "}
           A constant function is a function of the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$x \ra B$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           for some{" "}
           <Math>
@@ -325,11 +325,11 @@ const Article = () => {
           .
           The graph of the constant function is the line
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = B$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           of slope{" "}
           <NoBreak>
@@ -340,12 +340,12 @@ const Article = () => {
           </NoBreak>
           {" "}So
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(x \ra B)' = (x \ra 0)$$
           <ImageLeft src="/images/svg_ch4_constant_derivative_cloud.svg" />
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because at each{" "}
           <NoBreak>
@@ -367,41 +367,41 @@ const Article = () => {
         <VerticalChunk indent={true}>
           If we refer to
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$x \ra 0$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           as the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           zero function
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           we can summarize the situation by saying that
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ the derivative of a constant function
           is the zero function ~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           or, more shortly,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ the derivative of a constant is zero ~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (the way people usually state it).
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -410,11 +410,11 @@ const Article = () => {
           {" "}
           An affine function is a function of the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$x \ra Ax + B$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           for constants{" "}
           <NoBreak>
@@ -442,12 +442,12 @@ const Article = () => {
           </NoBreak>
           {" "}so
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(x \ra Ax + B)' = (x \ra A)$$
           <ImageLeft src="/images/svg_ch4_affine_derivative_cloud.svg" />
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because the slope of a line of slope{" "}
           <Math>
@@ -494,7 +494,7 @@ const Article = () => {
         <VerticalChunk indent={true}>
           In words:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ the derivative of the affine function 
           {" "}
@@ -507,16 +507,16 @@ const Article = () => {
           </Math>
           {" "}~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Or, flexing our linguistic prowess a tad more:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ the derivative of an affine function is 
           the coefficient of its linear term ~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (The “linear term” of{" "}
           <Math>
@@ -536,7 +536,7 @@ const Article = () => {
           </Math>
           .)
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -545,19 +545,19 @@ const Article = () => {
             {" "}
             One has
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra 3x + 1)' = (x \ra 3)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             as per
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra Ax + B)' = (x \ra A)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             with{" "}
             <NoBreak>
@@ -573,7 +573,7 @@ const Article = () => {
             .
           </VerticalChunk>
         </Example>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -582,19 +582,19 @@ const Article = () => {
             {" "}
             One has
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra 12 - x)' = (x \ra -1)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             as per
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra Ax + B)' = (x \ra A)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             with{" "}
             <NoBreak>
@@ -611,7 +611,7 @@ const Article = () => {
           </VerticalChunk>
         </Example>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -620,11 +620,11 @@ const Article = () => {
           {" "}
           If units are present, we have
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;$y$ axis units for $f'$&#125; \,= &#123;\te&#123;$y$ axis units for $\f$&#125; \over \te&#123;$x$ axis units for $\f$&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because a value output by{" "}
           <Math>
@@ -645,11 +645,11 @@ const Article = () => {
           </NoBreak>
           {" "}and
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;$x$ axis units for $f'$&#125;\, = \rt&#123;0.02&#125;\,\te&#123;$x$ axis units for $f$&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because an input for{" "}
           <Math>
@@ -752,11 +752,11 @@ const Article = () => {
           </Math>
           {" "}as the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           rate of change
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           of{" "}
           <NoBreak>
@@ -767,11 +767,11 @@ const Article = () => {
           </NoBreak>
           {" "}or, depending, as the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           instantaneous
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           rate of change of{" "}
           <NoBreak>
@@ -786,7 +786,7 @@ const Article = () => {
           keeps changing from point to point.
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -815,15 +815,15 @@ const Article = () => {
           </Math>
           ”:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\,\,\,f'' = (f')'.$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Likewise, we have, e.g.,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\begin&#123;align&#125;
           \up&#123;0.95&#125;f''' &= (f'')'\\
@@ -831,7 +831,7 @@ const Article = () => {
           \up&#123;1.25&#125;f''''\psa' &= (f'''')'\\
           \end&#123;align&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           these being, namely, the{" "}
           <i>
@@ -856,11 +856,11 @@ const Article = () => {
           {" "}One can also 
           write
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f^&#123;(n)&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           for the{" "}
           <NoBreak>
@@ -879,25 +879,25 @@ const Article = () => {
           {" "}so that, for
           example,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f^&#123;(7)&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           means the same as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f'''''''$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           but with the advantage that you don't have to
           squint and start re-counting the apostrophes 
           several times over.
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -906,42 +906,42 @@ const Article = () => {
             {" "}
             We have
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra 3x + 1)'' = (x \ra 0)$$
             <ImageRight src="/images/svg_ch4_3x_plus_one_and_second_cloud.svg" />
           </MathBlock>
         </Example>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because, firstly,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(x \ra 3x + 1)' = (x \ra 3)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and, secondly,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(x \ra 3)' = (x \ra 0)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           so that, from start to finish,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(x \ra 3x + 1)'' =  ((x \ra 3x + 1)')' = (x \ra 3)' = (x \ra 0)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           where we unpeel the onion starting from the
           inside. (Physically difficult.)
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -950,11 +950,11 @@ const Article = () => {
             {" "}
             More generally,
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\,\,\,(x \ra ax + b)'' = (x \ra 0)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all{" "}
             <NoBreak>
@@ -966,14 +966,14 @@ const Article = () => {
             {" "}by a similar computation;
             a.k.a.:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             ~ the second derivative of an affine function is zero ~
             <ImageLeft src="/images/svg_ch4_adding_statements_cloud.svg" />
           </CentralDisplayItalic>
         </Example>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -987,9 +987,9 @@ const Article = () => {
           second derivative, whereas downward-bending graphs
           have a negative second derivative:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_bendiness.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Reason like this: the second derivative is{" "}
           <del>
@@ -1003,30 +1003,30 @@ const Article = () => {
           second derivative is negative, the slope is 
           decreasing. Moreover, an
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           increasing
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           slope gives curves a “bending upwards” shape, while a
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           decreasing
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           slope gives curves a “bending downward” shape!
         </VerticalChunk>
         <VerticalChunk indent={true}>
           To emphasize, if the second derivative is some
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplay>
           LARGE POSITIVE NUMBER
         </CentralDisplay>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           then the slope is increasing at that rate, 
           which could result in a sharp bend upwards
@@ -1058,11 +1058,11 @@ const Article = () => {
         <VerticalChunk indent={true}>
           Likewise, if the second derivative is some
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplay>
           LARGE NEGATIVE NUMBER
         </CentralDisplay>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           then the slope is decreasing at [the absolute 
           value of] that rate, which could result in 
@@ -1072,7 +1072,7 @@ const Article = () => {
           of a significant change in slope, once again).
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -1101,9 +1101,9 @@ const Article = () => {
           .
           Viz:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_convex_concave.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           <b>
             Vocabulary #2.
@@ -1117,9 +1117,9 @@ const Article = () => {
           interface between convex and concave sections
           of a graph:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_inflection_point.svg" />
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -1128,19 +1128,19 @@ const Article = () => {
             {" "}
             The fact that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra 3x + 1)'' = (x \ra 0)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             indicates that the graph
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$y = 3x + 1$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             is neither “bending upwards” nor “bending 
             downwards”—
@@ -1151,7 +1151,7 @@ const Article = () => {
           </VerticalChunk>
         </Example>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -1160,9 +1160,9 @@ const Article = () => {
           {" "}
           A graph of the form...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_position_by_time.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...describes{" "}
           <i>
@@ -1171,7 +1171,7 @@ const Article = () => {
           {" "}
           (look at the units); the derivative...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_position_by_time_der.svg" />
         <ImageRight src="/images/svg_ch4_position_by_time_cloud.svg" />
         <VerticalChunk>
@@ -1182,25 +1182,25 @@ const Article = () => {
           ;
           finally, the second derivative...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_position_by_time_der_der.svg" />
         <ImageLeft src="/images/svg_ch4_position_by_time_der_cloud.svg" />
         <VerticalChunk>
           ...describes
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           the rate of change of velocity
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           also known as the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           acceleration
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           as a function of time.
         </VerticalChunk>
@@ -1212,13 +1212,13 @@ const Article = () => {
           {" "}axis of the
           second derivative are given by
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;$y$ axis units for $f'$&#125; \over \te&#123;$x$ axis units for $f'$&#125;&#125; = 
           &#123;\te&#123;m&#125;/\te&#123;s&#125; \over \te&#123;s&#125;&#125; = 
           &#123;\te&#123;m&#125; \over \rt&#123;0.1&#125;\te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           because{" "}
           <NoBreak>
@@ -1236,29 +1236,29 @@ const Article = () => {
           in meters per second and a “run” measured in 
           seconds:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/svg_ch4_position_by_time_tangent.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           The ratio “rise over run” has the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;m&#125;/\te&#123;s&#125; \over \te&#123;s&#125;&#125; 
           = &#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125; \times &#123;1 \over \te&#123;s&#125;&#125;
           = &#123;\te&#123;m&#125; \over \te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which produces the above-mentioned units of
           the second derivative. Also note that a ratio of
           the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;difference in velocity&#125; \over \te&#123;amount of time&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is, indeed, an acceleration, in that acceleration
           is defined as “the increase in velocity per unit 
@@ -1267,15 +1267,15 @@ const Article = () => {
         <VerticalChunk indent={true}>
           To summarize:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ velocity is the derivative of position ~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           ~ acceleration is the derivative of velocity ~
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           <StarDivider />
           {" "}{" "}
@@ -1285,37 +1285,37 @@ const Article = () => {
           {" "}
           The exotic units
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$%\left[&#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^2&#125;\right]
           &#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^2&#125;
           %\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           can be read
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           meters per second squared
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which sounds pretty cryptic, unfortunately, or
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           meters per second per second
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which is better, or (slight difference!)
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           meters per second, per second
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which is even better because it “shows” acceleration
           to be a number of m
@@ -1339,7 +1339,7 @@ const Article = () => {
           </NoBreak>
           {" "}per second, no?)
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -1356,44 +1356,44 @@ const Article = () => {
             {" "}an object that is
             accelerating at a constant rate of
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             increases its velocity by
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;) \times\, (10\te&#123;s&#125;) = 20&#123;\te&#123;m&#125;/\te&#123;s&#125;&#125;$$
             <ImageRight src="/images/svg_ch4_unit_cancellation_cloud.svg" />
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             according to the template
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(\te&#123;rate of change&#125;) \times \te&#123;(amount of time)&#125;\\
             = \te&#123;(amount of change)&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             or, more specifically,
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(\te&#123;acceleration&#125;) \times (\te&#123;amount of time&#125;) =\\ (\te&#123;change in velocity&#125;)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             since acceleration is the rate of change of
             velocity.
           </VerticalChunk>
         </Example>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -1403,11 +1403,11 @@ const Article = () => {
           The rate of change of acceleration has a
           name as well, being known as the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           jerk
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           in physics. The units of jerk (or “the”
           units of jerk, since any units of same 
@@ -1417,19 +1417,19 @@ const Article = () => {
           </i>
           {" "}would do as well) are
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;m&#125; \over \,\te&#123;s&#125;\!&#123;\,&#125;^3&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           or
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           meters per second, per second, per second
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which is mildly amusing. Basically, the
           jerk specifies how many{" "}
@@ -1456,19 +1456,19 @@ const Article = () => {
           the movement of their train or subway car,
           etc. In fact,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           constant acceleration
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           zero jerk
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           are synonymous, insofar as the everyday 
           world is concerned—which is good, because
@@ -1476,7 +1476,6 @@ const Article = () => {
           mathematical realm, what with jerk being
           the derivative of acceleration!
         </VerticalChunk>
-        <div class="spacer" />
         <Pause />
         <VerticalChunk>
           <b>
@@ -1487,36 +1486,36 @@ const Article = () => {
           Coming briefly back to Chapter 3-related
           matters, if
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f, g : \rr \ra \rr$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           then
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f \circ g = (x \ra f(g(x)))$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f + g = (x \ra f(x) + g(x))$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$fg = (x \ra f(x)g
           (x))$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;f/g&#125; = (x \ra &#123;f(x)/g(x)&#125;)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f - g = (x \ra f(x) - g(x))$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           with each equation being a{" "}
           <i>
@@ -1525,11 +1524,11 @@ const Article = () => {
           . 
           The notation
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f \circ g$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           goes back to Exercise 5 of Chapter 3, with
           the little circle “
@@ -1546,19 +1545,19 @@ const Article = () => {
           </i>
           , while the sum
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$f + g$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and product
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$fg$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           of functions already appear in Exercise 18 of
           Chapter 3, also. On the other hand, the quotient
@@ -1577,7 +1576,7 @@ const Article = () => {
           functions are defined above for the first time.
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Exercises labels={["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"]}>
         <Exercise exercise_number={0}>
           <VerticalChunk>
@@ -1597,16 +1596,16 @@ const Article = () => {
             </i>
             {" "}a sharp corner):
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_slope_one_half_see_saw.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={0}>
             <VerticalChunk>
               That would be:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw_derivative.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (The derivative is{" "}
               <Math>
@@ -1641,11 +1640,11 @@ const Article = () => {
             {" "}
             Would the derivative of
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$y = &#123;1\over x&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             be a very large negative number, or a very
             large positive number, near{" "}
@@ -1658,7 +1657,7 @@ const Article = () => {
             {" "}Or would
             it depend on which side of 0 you are?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={1}>
             <VerticalChunk>
               The graph of{" "}
@@ -1667,9 +1666,9 @@ const Article = () => {
               </Math>
               {" "}looks like so:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_over_x.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               As one can see, the slope is very negative
               near{" "}
@@ -1692,15 +1691,15 @@ const Article = () => {
             {" "}
             Sketch the
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             second
           </CentralDisplayItalic>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             derivative of the graph in Exercise 1.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={2}>
             <VerticalChunk>
               The second derivative is zero wherever the
@@ -1709,9 +1708,8 @@ const Article = () => {
               this gives the second derivative the following 
               pockmarked appearance:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw_second_derivative.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1721,7 +1719,6 @@ const Article = () => {
               Taking even further derivatives produces
               the same graph back, over and over again.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1766,7 +1763,7 @@ const Article = () => {
             do the units become on the axes of the first
             and second derivatives?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={3}>
             <VerticalChunk>
               The units on the{" "}
@@ -1791,11 +1788,11 @@ const Article = () => {
               and acceleration of the car as a function
               of time:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units_derivative.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units_second_derivative.svg" />
           </Solution>
         </Exercise>
@@ -1808,29 +1805,29 @@ const Article = () => {
             Is the following equation correct, incorrect,
             or nonsensical?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(x \ra x + 1) \,+\, (u \ra 2u + 1) \,=\, (t \ra 3t + 2)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={4}>
             <VerticalChunk>
               The equation is true!
               Syntatically,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(x \ra x + 1) \,+\, (u \ra 2u + 1)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is a
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               sum of functions
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because{" "}
               <Math>
@@ -1843,11 +1840,11 @@ const Article = () => {
               {" "}are
               both functions. Now by definition, the sum
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f + g$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of functions{" "}
               <Math>
@@ -1859,16 +1856,16 @@ const Article = () => {
               </Math>
               {" "}is the function
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$x \ra f(x) + g(x)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               that maps a number to the sum of the individual
               values of the functions. So—for example—
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(5) \\
@@ -1877,7 +1874,7 @@ const Article = () => {
               =& \,\,\,3\cdot 5 + 2 = 17 \up&#123;1.5&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and—with a general input{" "}
               <Math>
@@ -1885,7 +1882,7 @@ const Article = () => {
               </Math>
               —
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(t) \\
@@ -1894,15 +1891,15 @@ const Article = () => {
               =& \,\,\,3t + 2 \up&#123;1.5&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which implies that, indeed,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(x \ra x + 1) \,+\, (u \ra 2u + 1)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the function that maps each real number{" "}
               <Math>
@@ -1922,7 +1919,6 @@ const Article = () => {
               </NoBreak>
               {" "}(!!)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1940,7 +1936,7 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\begin&#123;align&#125;
               & \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(x) \\
@@ -1949,7 +1945,7 @@ const Article = () => {
               =& \,\,\,3x + 2 \up&#123;1.5&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Here we have two different{" "}
               <NoBreak>
@@ -1982,9 +1978,9 @@ const Article = () => {
             Complete the missing units for each strip
             below, based on those units that are given:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_missing_units.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={5}>
             <VerticalChunk>
               The pattern to respect is that, each time 
@@ -2005,9 +2001,8 @@ const Article = () => {
               {" "}
               axis. This gives the unique solutions:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_missing_units_solution.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2023,11 +2018,11 @@ const Article = () => {
               </NoBreak>
               {" "}is a
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               dimensionless
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               unit. Dimensionless units arise when 
               quantities are divided by like quantities.
@@ -2035,19 +2030,19 @@ const Article = () => {
               fractions” or “pure ratios”. (Percentages
               are dimensionless—in fact the term
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               percentage
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is synonymous with
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               dimensionless ratio
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               though if you spoke to people about 
               “dimensionless ratios” they would look at 
@@ -2125,9 +2120,9 @@ const Article = () => {
             {" "}
             assuming that relationship exists.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_position_by_time_find_the_order.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={6}>
             <VerticalChunk>
               The graphs are already in the right order 
@@ -2154,9 +2149,9 @@ const Article = () => {
               </Math>
               {" "}is on the right:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_position_by_time_find_the_order_answer.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               For example, the graph on the left 
               has a slope that starts at{" "}
@@ -2177,9 +2172,9 @@ const Article = () => {
               since the graph in the middle is the
               derivative of the graph on the left!):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_position_by_time_find_the_order_first_pair.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Moreover the middle graph has slope
               close to{" "}
@@ -2203,9 +2198,9 @@ const Article = () => {
               {" "}of the graph
               on the right:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_position_by_time_find_the_order_second_pair.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Taking one more derivative would produce a
               zigzag, by the way.)
@@ -2221,9 +2216,9 @@ const Article = () => {
             {" "}
             Given these graphs...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_sketch_the_middle_a.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...what can you say about{" "}
             <Math>
@@ -2246,7 +2241,7 @@ const Article = () => {
             you're a human and not a machine, it can
             help!)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={7}>
             <VerticalChunk>
               To start with, the slope of{" "}
@@ -2287,9 +2282,9 @@ const Article = () => {
               </Math>
               {" "}respectively:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol1.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               This already gives us three points from which
               to interpolate a basic approximation to the graph 
@@ -2299,9 +2294,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol2.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               But the graph of{" "}
               <Math>
@@ -2340,20 +2335,19 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol3.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               As a second step, we thus “bend into shape”
               our previous sketch to produce these slopes...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol4.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...achieving our final answer.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2362,7 +2356,7 @@ const Article = () => {
               {" "}For reference, the actual 
               derivative looks like so:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol5.svg" />
           </Solution>
         </Exercise>
@@ -2374,9 +2368,9 @@ const Article = () => {
             {" "}
             Given these graphs...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_sketch_the_middle_b.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...sketch{" "}
             <NoBreak>
@@ -2388,7 +2382,7 @@ const Article = () => {
             {" "}analogously to
             Exercise 10.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={8}>
             <VerticalChunk>
               Firstly, the graph of{" "}
@@ -2406,9 +2400,9 @@ const Article = () => {
               </Math>
               ...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol1.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...which gives us one data point on the
               curve{" "}
@@ -2417,9 +2411,9 @@ const Article = () => {
               </Math>
               {" "}to start with...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol2.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...moreover, by the graph of{" "}
               <Math>
@@ -2442,9 +2436,9 @@ const Article = () => {
               </Math>
               ....
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol3.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...so, as a second step, we can extend
               the graph of{" "}
@@ -2458,7 +2452,7 @@ const Article = () => {
               </Math>
               {" "}on this interval:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol4.svg" />
             <ImageLeft src="/images/svg_ch4_sketch_the_middle_b_cloud.svg" />
             <VerticalChunk>
@@ -2495,9 +2489,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol5.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               This gives us two more points on the graph
               {" "}
@@ -2506,9 +2500,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol6.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Then, because the second derivative has
               value{" "}
@@ -2526,9 +2520,9 @@ const Article = () => {
               </Math>
               {" "}(about)...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol7.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...we extend these two new data points by
               segments of slope{" "}
@@ -2537,9 +2531,9 @@ const Article = () => {
               </Math>
               ...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol8.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...on the relevant intervals. (I.e., for 
               {" "}
@@ -2558,9 +2552,9 @@ const Article = () => {
               by some kind of “connector curves” of 
               yet-to-be-determined shape:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol9.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Since{" "}
               <Math>
@@ -2584,17 +2578,17 @@ const Article = () => {
               {" "}(respectively) near their
               middles...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol10.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...our final answer, given by the
               following sketch, is obtained by 
               “bending into shape” the connector curves...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol11.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...to give them a slope of{" "}
               <Math>
@@ -2618,7 +2612,6 @@ const Article = () => {
               </NoBreak>
               {" "}respectively, in their middles.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2631,7 +2624,7 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol12.svg" />
           </Solution>
         </Exercise>
@@ -2668,7 +2661,7 @@ const Article = () => {
             </Math>
             ?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={9}>
             <VerticalChunk>
               Yes, this is the case. For a joke way
@@ -2683,9 +2676,9 @@ const Article = () => {
               {" "}before and after
               scaling:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_scaling_figure.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The second graph truly is the first
               graph vertically scaled by a factor{" "}
@@ -2700,11 +2693,11 @@ const Article = () => {
               {" "}axis has
               been doubled. This means that the ratio
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;\te&#123;rise&#125;\over \te&#123;run&#125;&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               has doubled in the second graph, because
               “rise” has doubled (each{" "}
@@ -2728,34 +2721,34 @@ const Article = () => {
             below, on the part shown, greatest? And
             where is the
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             rate of change of the rate of change
           </CentralDisplayItalic>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             greatest?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_narrow_and_less_narrow_bends.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={10}>
             <VerticalChunk>
               The rate of change is the slope, which
               is greatest along the right-hand portion
               of the curve:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_steepest.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               On the other hand,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the rate of change
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               [a.k.a., second derivative] is the rate
               of change  of the slope, and that will
@@ -2763,9 +2756,9 @@ const Article = () => {
               where the slope is changing at the fastest 
               rate:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_curviest.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Well, believe us or not, but we're right!)
             </VerticalChunk>
@@ -2780,18 +2773,18 @@ const Article = () => {
             In the following graph, which curve might 
             be a derivative of which other curve?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_cosine_curves.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={11}>
             <VerticalChunk>
               As it happens—and by the exact method
               that we used to generate these curves—the
               blue is the derivative of the red:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_blue_red_only.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Likewise, the derivative of the blue
               is the yellow, the derivative of the yellow
@@ -2810,7 +2803,6 @@ const Article = () => {
               {" "}
               derivative of the red curve is itself.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2824,7 +2816,6 @@ const Article = () => {
               were always going to have an oscillatory
               pattern, as well.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2843,9 +2834,8 @@ const Article = () => {
               ahead of the original curve by half a
               bump, not the other way around:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_cresting.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2868,9 +2858,9 @@ const Article = () => {
               </Math>
               -axes:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_two_dimensional_vel.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The velocities of the two shadows
               encode the overall “two-dimensional”
@@ -2885,11 +2875,11 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Here's another point of view: just like
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               position
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is encoded by a pair of numbers—sometimes
               known as the{" "}
@@ -2900,11 +2890,11 @@ const Article = () => {
               the way, where “vector” is a term of art
               for “pair of numbers”—so the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is encoded by a pair of numbers—equally
               known as the{" "}
@@ -2915,20 +2905,20 @@ const Article = () => {
               is no coincidence, because the first
               coordinate of the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity vector
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the derivative of the first coordinate
               of the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               position vector
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and likewise for the second coordinate—two
               coordinates, two rates of change!
@@ -2963,19 +2953,19 @@ const Article = () => {
               is tangent to the curve, and the
               <ImageRight src="/images/svg_ch4_cosine_curves_tangent_velocity_cloud.svg" />
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               length
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the arrow is the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               speed
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the particle at that moment in time.
               More precisely, if you let the particle
@@ -3027,11 +3017,11 @@ const Article = () => {
               .
               And speed being
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               distance per unit time
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               the length of the arrow is, therefore,
               the speed!
@@ -3044,23 +3034,23 @@ const Article = () => {
               circle” = radius 1) (ps: We center the
               circle at the origin):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_unit_circle.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               position vectors
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the particles are as follows:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_unit_circle_position_vectors.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (You can't really see it so well, but
               each arrow originates at{" "}
@@ -3073,17 +3063,17 @@ const Article = () => {
               {" "}While
               the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity vectors
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               are as follows:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_unit_circle_velocity_vectors.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Like the position vectors, the 
               velocity vectors keep changing instant by 
@@ -3133,9 +3123,9 @@ const Article = () => {
               velocity vector is the blue particle's 
               position vector:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_unit_circle_equality.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               From the{" "}
               <NoBreak>
@@ -3146,7 +3136,7 @@ const Article = () => {
               </NoBreak>
               {" "}for example,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the velocity in{" "}
               <Math>
@@ -3159,12 +3149,12 @@ const Article = () => {
               </Math>
               {" "}of the blue particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               at any given moment in time. This also
               means:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the{" "}
               <Math>
@@ -3178,7 +3168,7 @@ const Article = () => {
               -coordinate
               of the blue particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...because “velocity in{" "}
               <NoBreak>
@@ -3222,11 +3212,11 @@ const Article = () => {
               curves from the problem statement, if we
               start the red particle at position
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(1, 0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               at time{" "}
               <Math>
@@ -3234,9 +3224,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_verified.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               If we add the{" "}
               <NoBreak>
@@ -3249,7 +3239,6 @@ const Article = () => {
               and yellow particles, we find the graph
               from the problem statement!
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -3269,15 +3258,14 @@ const Article = () => {
               </Math>
               -coordinate:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_rolling_wheel.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (If the above just looks like a 
               confusing mess then don't sweat it—it's
               not that important.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -3287,17 +3275,17 @@ const Article = () => {
               To reiterate, take a look at this
               figure again:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_curves_cresting.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The derivative is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               ahead
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the red particle, so that 
               {" "}
@@ -3362,9 +3350,9 @@ const Article = () => {
             or make the points go twice as fast? Or both?
             Or something else yet?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_scaled_cosine_curves.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={12}>
             <VerticalChunk>
               The values oscillate between{" "}
@@ -3393,7 +3381,6 @@ const Article = () => {
               (I.e.: speed 2, since the particles of
               Exercise 12 have unit speed.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -3407,11 +3394,11 @@ const Article = () => {
               etc—it doesn't matter. However, one should
               be aware that what amounts to
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               unit speed
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               under one set of units is no longer “unit
               speed” under a different set of units—this
@@ -3445,35 +3432,35 @@ const Article = () => {
             </NoBreak>
             {" "}that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f' \ne f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f'' \ne f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f''' \ne f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             but
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f^&#123;(4)&#125; = f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             surprise, surprise! Can you do the same with
             “
@@ -3497,11 +3484,11 @@ const Article = () => {
             </Math>
             {" "}such that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f^&#123;(n)&#125; \ne f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for{" "}
             <Math>
@@ -3509,15 +3496,15 @@ const Article = () => {
             </Math>
             {" "}but
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f^&#123;(5)&#125; = f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={13}>
             <VerticalChunk>
               We can naïvely try to imitiate how the
@@ -3534,25 +3521,25 @@ const Article = () => {
               {" "}by
               convention), instead of 4:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_position_vectors.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The idea would be that the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity vector
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the red particle is the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               position vector
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the blue particle, 
               likewise for the blue and yellow particles,
@@ -3560,17 +3547,17 @@ const Article = () => {
               For example, at the instant above, the
               velocity vectors would be as follows:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_velocity_vectors.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The velocity vectors are
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               NOT
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               tangent to the unit circle, and so the
               particles will leave the circle!
@@ -3580,9 +3567,9 @@ const Article = () => {
               velocity vectors, that would bring them
               to approximately these new positions:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_1_10th.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In the next one-tenth unit of time we 
               can apply a similar approximation again,
@@ -3595,9 +3582,9 @@ const Article = () => {
               velocity vectors. Skipping the construction
               lines:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_2_10th.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Applying the same process for{" "}
               <Math>
@@ -3606,24 +3593,24 @@ const Article = () => {
               {" "}more
               steps:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_10_10th.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               To be clear, in the above figure, the
               position of the red particle at, say, the
               fifth step...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_5_10th.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...is obtained by starting from the red
               particle's position at the fourth step...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_4_10th.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...and adding one-tenth of the approximation
               that we have to the red particle's velocity
@@ -3635,9 +3622,9 @@ const Article = () => {
               </Math>
               )...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_4_10th_b.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...and we do the same for each particle,
               to advance to the next step.
@@ -3668,9 +3655,9 @@ const Article = () => {
               </Math>
               ):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_100_100th_blur.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               To visualize such a fine-grained
               approximation we need to revert to drawing
@@ -3692,16 +3679,16 @@ const Article = () => {
               th”
               approximation:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_100_100th_points.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Zooming in a bit (or else we still can't
               see anything):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_after_100_100th_zoomed.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In any case, even the “
               <Math>
@@ -3737,11 +3724,11 @@ const Article = () => {
               whether or not you are one of the wizards,
               you can
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               guess
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               the existence of these five paths—sort 
               of “feel” that they exist! (This is a 
@@ -3751,11 +3738,11 @@ const Article = () => {
               We can also convert the paths into a 
               function
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               that satisfies the problem requirements.
             </VerticalChunk>
@@ -3787,7 +3774,7 @@ const Article = () => {
               {" "}then, to spell
               it all out, since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the 
               {" "}
@@ -3807,7 +3794,7 @@ const Article = () => {
               </NoBreak>
               {" "}of the blue particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <Math>
                 $f'$
@@ -3822,7 +3809,7 @@ const Article = () => {
               {" "}of the blue 
               particle; and since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the 
               {" "}
@@ -3842,7 +3829,7 @@ const Article = () => {
               </NoBreak>
               {" "}of the yellow particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <Math>
                 $f''$
@@ -3857,7 +3844,7 @@ const Article = () => {
               {" "}of the
               yellow particle; and since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the
               {" "}
@@ -3877,7 +3864,7 @@ const Article = () => {
               </NoBreak>
               {" "}of the green particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <Math>
                 $f'''$
@@ -3892,7 +3879,7 @@ const Article = () => {
               {" "}of the
               green particle; and since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the 
               {" "}
@@ -3913,7 +3900,7 @@ const Article = () => {
               {" "}of the purple
               particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <Math>
                 $f''''$
@@ -3928,7 +3915,7 @@ const Article = () => {
               {" "}of the
               purple particle; and since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the 
               {" "}
@@ -3948,7 +3935,7 @@ const Article = () => {
               </NoBreak>
               {" "}of the red particle
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <Math>
                 $f''''' = f^&#123;(5)&#125;$
@@ -3959,7 +3946,6 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -3985,9 +3971,8 @@ const Article = () => {
               {" "}can be taken to be any one of these
               curves:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_final_graph.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4026,7 +4011,6 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4076,7 +4060,6 @@ const Article = () => {
               </Math>
               -coordinate.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4101,9 +4084,9 @@ const Article = () => {
               the particles in a one-dimensional world,
               e.g., ...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_5_euler_one_dimensional.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...(the initial positions really don't
               matter much, as long as you don't give 
@@ -4120,11 +4103,11 @@ const Article = () => {
               etc) and stipulate the same rules, namely
               that the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (now{" "}
               <NoBreak>
@@ -4136,11 +4119,11 @@ const Article = () => {
               {" "}of the red particle
               be the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               position
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (now{" "}
               <NoBreak>
@@ -4164,7 +4147,6 @@ const Article = () => {
               typically look more chaotic than the curves
               from Note 1.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4175,13 +4157,13 @@ const Article = () => {
               solution is an instance in which you can say
               that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the whole is simpler than the parts
               <ImageLeft src="/images/svg_ch4_5_euler_hearts_left.svg" />
               <ImageRight src="/images/svg_ch4_5_euler_hearts_right.svg" />
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               in that you would never spot the symmetry
               at play, or have a chance of eyeballing
@@ -4215,11 +4197,11 @@ const Article = () => {
             {" "}
             such that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f^&#123;(17)&#125; = f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and such that{" "}
             <Math>
@@ -4239,7 +4221,7 @@ const Article = () => {
             of the number line, insofar as such things are 
             concerned, what would our options be?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={14}>
             <VerticalChunk>
               Take{" "}
@@ -4250,25 +4232,25 @@ const Article = () => {
               the unit circle, such as these (shown here 
               with position vectors):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_position_vectors.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Set the velocity of particle
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;\Large 1&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               equal to the position of particle
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;\Large 5&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and keep going by this pattern, making the
               velocity of each particle equal to the
@@ -4280,7 +4262,7 @@ const Article = () => {
               in the configuration above, the velocity
               vectors end up looking like so, for example:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_velocity_vector_1.svg" />
             <ImageRight src="/images/svg_ch4_17_velocity_vector_1_cloud.svg" />
             <VerticalChunk>
@@ -4368,7 +4350,6 @@ const Article = () => {
               and that grows comparatively slowly over
               time. ~The End~
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4378,9 +4359,9 @@ const Article = () => {
               In case you're curious, the actual spiral paths
               of the particles look like so:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_paths.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...and if you take the{" "}
               <NoBreak>
@@ -4412,9 +4393,9 @@ const Article = () => {
               </del>
               &ensp;functions that look like so:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_actual_functions.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               For example, the derivative of curve{" "}
               <InlineImage src="/images/svg_ch4_17_particle1_inline.svg" />
@@ -4422,9 +4403,9 @@ const Article = () => {
               <InlineImage src="/images/svg_ch4_17_particle5_inline.svg" />
               , highlighted in blue:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_actual_functions_with_highlights.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...and taking sixteen more derivatives 
               starting from curve{" "}
@@ -4447,7 +4428,6 @@ const Article = () => {
                 src="/images/svg_ch4_17_particle1_inline.svg" />
               !
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4474,9 +4454,9 @@ const Article = () => {
               order; then we have the following starting
               configuration:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_other_start.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               To parse the above figure, understand
               that:
@@ -4510,11 +4490,11 @@ const Article = () => {
               </Math>
               {" "}such that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f^&#123;(17)&#125; = f$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               but this is the case: the red arrows only
               “close the loop” after going through all
@@ -4525,11 +4505,11 @@ const Article = () => {
               velocity vectors are exactly tangent to
               the unit circle
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               EXCEPT
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for particle 14, whose velocity vector, 
               being the position of particle 1, is straight
@@ -4546,9 +4526,9 @@ const Article = () => {
               </Math>
               ):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_17_other_start_paths.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The particles shoot of to infinity in short
               order—the solution is much worse—for fun we
@@ -4627,40 +4607,40 @@ const Article = () => {
             {" "}
             Add elements to the following drawing...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_newton_quotient_unfinished.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...such that it becomes a “complete”
             illustration of this here algebraic 
             expression...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$&#123;f(x+h) - f(x) \over h&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...and reveal the “geometric meaning” of
             the expression, if any.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={15}>
             <VerticalChunk>
               This version pictures all the elements
               that appear in the fraction:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_newton_quotient_finished.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The point is: the fraction
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;f(x + h) - f(x)\over h&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is seen to have the form{" "}
               <i>
@@ -4671,23 +4651,23 @@ const Article = () => {
               of the pale brown line going through the
               point
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(x, f(x))$$
               <ImageLeft src="/images/svg_ch4_new_quatient_x_fx_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               at one end, and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(x + h, f(x + h))$$
               <ImageRight
                 src="/images/svg_ch4_new_quatient_x_fxplush_cloud.svg"
                 offset_y="-0.5em" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               at the other end. (This is also the case
               if{" "}
@@ -4696,7 +4676,6 @@ const Article = () => {
               </Math>
               {" "}is negative, by the way.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4710,7 +4689,6 @@ const Article = () => {
               </i>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4738,7 +4716,6 @@ const Article = () => {
               through two specified points on another
               curve”.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4772,11 +4749,11 @@ const Article = () => {
               Newton-quotient-a.k.a.-slope-of-the-secant
               approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f'(x)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk />
             <VerticalChunk indent={true}>
               because the secant approaches the tangent,
@@ -4799,11 +4776,11 @@ const Article = () => {
               </NoBreak>
               {" "}because
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;f(x+0)-f(x)\over 0&#125; = &#123;0 \over 0&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is undefined.)
             </VerticalChunk>
@@ -4843,9 +4820,9 @@ const Article = () => {
             standard notation for a small amount of
             time):
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_RATS_timeline.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             We also consider quantities{" "}
             <Math>
@@ -4879,18 +4856,18 @@ const Article = () => {
             </Math>
             :
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_RATS_timeline_with_A_B.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             More specifically, we are interested in
             the change in the value of the product
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\Large AB$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             over said course of time.
           </VerticalChunk>
@@ -4906,9 +4883,9 @@ const Article = () => {
             </Math>
             {" "}as
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_RATS_rats.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             that are crossing a hallway surveyed by
             a cat. One side of the hallway is time
@@ -5038,11 +5015,11 @@ const Article = () => {
           <VerticalChunk>
             Correspondingly, the product
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\Large AB$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             changes in two increments: first as{" "}
             <Math>
@@ -5066,9 +5043,9 @@ const Article = () => {
             {" "}grows bigger). In an
             equation:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_RATS_equation.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             If we divide the above equation by{" "}
             <Math>
@@ -5089,7 +5066,7 @@ const Article = () => {
             {" "}what does
             each term become?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={16}>
             <VerticalChunk>
               Dividing by{" "}
@@ -5098,9 +5075,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_RATS_equation_over_Dt.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               As{" "}
               <Math>
@@ -5116,11 +5093,11 @@ const Article = () => {
               {" "}the term
               on the left-hand side approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(AB)'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where we view{" "}
               <Math>
@@ -5143,11 +5120,11 @@ const Article = () => {
               </Math>
               {" "}is the function
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$t \rightarrow A(t)B(t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where{" "}
               <Math>
@@ -5183,20 +5160,20 @@ const Article = () => {
               </NoBreak>
               {" "}Indeed, a ratio of the form
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is a Newton quotient (cf. Exercise 16),
               that approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5221,17 +5198,17 @@ const Article = () => {
               {" "}(cf.
               Exercise 16 Note 3), and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_RATS_over_Dt_first_term.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               has the form
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0)\over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for{" "}
               <Math>
@@ -5261,11 +5238,11 @@ const Article = () => {
               when you write it out, that term becomes
               the algebraic expression
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;A(t_0 + \Delta&#123;&#125;t)B(t_0) - A(t_0)B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where every term on top contains a
               “
@@ -5278,19 +5255,19 @@ const Article = () => {
               {" "}that can therefore be factored
               out, giving us the equivalent expression
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$B(t_0)\cdot&#123;A(t_0 + \Delta&#123;&#125;t) - A(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               that, you will notice, has the form
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$B(t_0)\cdot&#123;f(t_0 + \Delta&#123;&#125;t) - f(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for{" "}
               <NoBreak>
@@ -5301,11 +5278,11 @@ const Article = () => {
               </NoBreak>
               {" "}and thus approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$B(t_0) \cdot A'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5328,11 +5305,11 @@ const Article = () => {
               right-hand side, the second term approaches{" "}
               <ImageRight src="/images/svg_ch4_RATS_second_term_cloud.svg" />
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A(t_0)B'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5349,19 +5326,19 @@ const Article = () => {
               reasons are slightly different! (Slightly.)
               Indeed, this term, written out, is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;A(t_0 + \Delta&#123;&#125;t)B(t_0+\Delta&#123;&#125;t) - A(t_0+ \Delta&#123;&#125;t)B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which is equal to
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A(t_0 + \Delta&#123;&#125;t)\cdot&#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by factoring out the common term{" "}
               <Math>
@@ -5370,19 +5347,19 @@ const Article = () => {
               ;
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;B(t_0+\Delta&#123;&#125;t) - B(t_0) \over \Delta&#123;&#125;t&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$B'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5411,19 +5388,19 @@ const Article = () => {
               )
               whereas
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A(t_0 + \Delta&#123;&#125;t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               —which is a bit different from before—approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5446,11 +5423,11 @@ const Article = () => {
               </NoBreak>
               {" "}(The
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               differentiability
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of{" "}
               <Math>
@@ -5470,11 +5447,11 @@ const Article = () => {
               {" "}we are tacitly
               assuming—implies
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               continuity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as well, which implies that{" "}
               <Math>
@@ -5499,19 +5476,19 @@ const Article = () => {
               Summarizing, the three terms separately
               approach
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(AB)'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$B(t_0)A'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A(t_0)B'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -5526,11 +5503,11 @@ const Article = () => {
               close we make each term to its respective limit
               above, one can conclude that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(AB)'(t_0) = B(t_0)A'(t_0) + A(t_0)B'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for functions{" "}
               <NoBreak>
@@ -5559,7 +5536,6 @@ const Article = () => {
               </i>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -5569,11 +5545,11 @@ const Article = () => {
               Keeping things alphabetical everywhere, the 
               same equation is more often written
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(AB)'(t_0) = A'(t_0)B(t_0) + A(t_0)B'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               with “
               <NoBreak>
@@ -5599,11 +5575,11 @@ const Article = () => {
             {" "}
             The identity
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(f + g)' = f' + g'$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             happens to be true for differentiable
             functions{" "}
@@ -5628,35 +5604,35 @@ const Article = () => {
             </i>
             , by the way.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={17}>
             <VerticalChunk>
               One can say
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the derivative of the sum is the sum of the
               derivatives
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               or
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the sum is the sum of
               the rates of change
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               or (we made this one up)
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the rate of change of the aggregate is the sum
               of the rates of change of the components
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (etc).
             </VerticalChunk>
@@ -5672,32 +5648,32 @@ const Article = () => {
             17 in the same terse style as the “sum rule”
             of Exercise 19, what do we obtain?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={18}>
             <VerticalChunk>
               The form of...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...that follows the style of...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f + g)' = f' + g'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...is...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)' = f'g + fg'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...this. (Valid for differentiable functions
               {" "}
@@ -5717,7 +5693,6 @@ const Article = () => {
               </Math>
               .)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -5726,19 +5701,19 @@ const Article = () => {
               {" "}
               Whereas
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an equality between real numbers,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)' = f'g + fg'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an equality between functions. So there is 
               a more-than-skin-deep difference between the
@@ -5748,11 +5723,11 @@ const Article = () => {
             <VerticalChunk indent={true}>
               (To wit,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)'(t_0) = f'(t_0)g(t_0) + f(t_0)g'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               holds “for{" "}
               <Math>
@@ -5769,11 +5744,11 @@ const Article = () => {
               {" "}are
               differentiable”, while
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)' = f'g + fg'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               holds “for differentiable functions{" "}
               <NoBreak>
@@ -5798,19 +5773,19 @@ const Article = () => {
             {" "}
             If the identities
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(f + g)' = f' + g'$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(fg)' = f'g + fg'$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for differentiable{" "}
             <NoBreak>
@@ -5833,16 +5808,16 @@ const Article = () => {
             {" "}(in possibly disguised form) prior 
             to this point?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={19}>
             <VerticalChunk>
               That would be the fact that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(cf)' = cf'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for all differentiable functions{" "}
               <Math>
@@ -5863,7 +5838,6 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -5872,11 +5846,11 @@ const Article = () => {
               {" "}
               You can also write
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(cf)' = c \cdot f'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               if it helps clarify the difference between the
               left- and right-hand sides. (The difference being
@@ -5926,36 +5900,36 @@ const Article = () => {
               $g: \rr \ra \rr$
             </Math>
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f + g$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             is defined by the equation
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f + g = (x \ra f(x) + g(x))$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             while their composition is defined by
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f \circ g = (x \ra f(g(x)))$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and so on, what is the similar, most logical
             definition for
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$cf$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             where{" "}
             <Math>
@@ -5967,16 +5941,16 @@ const Article = () => {
             </Math>
             ?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={20}>
             <VerticalChunk>
               The “logical” definition is:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$cf = (x \ra cf(x))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where the product “
               <NoBreak>
@@ -6002,11 +5976,11 @@ const Article = () => {
               is already similar to what happens for the
               definition...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$fg = (x \ra f(x)g(x))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the product of two functions from{" "}
               <Math>
@@ -6022,11 +5996,11 @@ const Article = () => {
               is a MORE CLEVER way of doing the definition.
               Which is to define
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$cf = (x \ra c)f$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where the right-hand-side is{" "}
               <i>
@@ -6042,11 +6016,11 @@ const Article = () => {
               DEFINED. (!) (To wit, the definition of
               function multiplication is that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$fg = (x \ra f(x)g(x))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of course.) (Wait we just mentioned that
               already.) Mathematicians LOVE to bootstrap off
@@ -6064,11 +6038,11 @@ const Article = () => {
             {" "}
             The definition
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f + g = (x \ra f(x) + f(x))$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for a sum of functions{" "}
             <Math>
@@ -6077,11 +6051,11 @@ const Article = () => {
             {" "}
             can also be written
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(f + g)(x) = f(x) + g(x)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             in the sense that either of these equations tells
             you how{" "}
@@ -6092,11 +6066,11 @@ const Article = () => {
             is what you need to do, to define a function. A
             slight subtlety is that the definition
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f + g = (x \ra f(x) + f(x))$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             announces more clearly via its notation that 
             “
@@ -6114,50 +6088,50 @@ const Article = () => {
             object, like a number, but this is a minor point.)
             Rewrite the definitions of
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f \circ g$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$fg$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f/g$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f - g$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             in the style of the second equation. For extra
             credit: use a different symbol each time to denote
             the input.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={21}>
             <VerticalChunk>
               E.g.:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f \circ g)(x) = f(g(x))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)(u) = f(u)g(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f/g)(z) = f(z)/g(z)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f - g)(t) = f(t) - g(t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Looking at these definitions we must really admit that
               we prefer the first form, with the arrow, found at the
@@ -6173,12 +6147,12 @@ const Article = () => {
             {" "}
             What does...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h) \,\times\, &#123;A_i(t_0 + h) - A_i(t_0)\over h&#125; \,\times\, A_&#123;i + 1&#125;(t_0) \,\times\, \cdots  \,\times\, A_n(t_0)$$
             <ImageRight src="/images/svg_ch4_big_product_parchment_cloud.svg" />
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...approach as{" "}
             <Math>
@@ -6206,24 +6180,24 @@ const Article = () => {
             </Math>
             ?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={22}>
             <VerticalChunk>
               We can start with the fraction in the
               middle of the product:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_big_product_fraction_outline.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               This is seen to be a Newton quotient
               (cf. Exercise 16)
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f(x + h) - f(x)\over h$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               with{" "}
               <NoBreak>
@@ -6242,11 +6216,11 @@ const Article = () => {
               {" "}per which
               (Exercise 16 Note 3), the fraction approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A_i'(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -6298,17 +6272,17 @@ const Article = () => {
               {" "}
               at the beginning of the product...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_big_product_prefix_outline.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...; here the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               differentiability
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of{" "}
               <Math>
@@ -6320,11 +6294,11 @@ const Article = () => {
               </Math>
               {" "}implies the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               continuity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of{" "}
               <Math>
@@ -6339,19 +6313,19 @@ const Article = () => {
               </NoBreak>
               {" "}which implies that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A_1(t_0 + h)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A_1(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -6385,19 +6359,19 @@ const Article = () => {
               </NoBreak>
               {" "}so
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               approaches
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$A_1(t_0) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as{" "}
               <Math>
@@ -6425,9 +6399,9 @@ const Article = () => {
               </Math>
               {" "}does not even appear:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_big_product_suffix_outline.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Because{" "}
               <Math>
@@ -6435,11 +6409,11 @@ const Article = () => {
               </Math>
               {" "}does not appear here, the tail end
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               stays put
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where it is, irrespective of the value of{" "}
               <Math>
@@ -6449,9 +6423,9 @@ const Article = () => {
               So that was easy! Altogether, the answer is
               therefore:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_big_product_final_answer.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...with a lone “
               <NoBreak>
@@ -6491,9 +6465,9 @@ const Article = () => {
             a rational approximation to the circumference
             of a unit circle.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_cosine_for_eta.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={23}>
             <VerticalChunk>
               Because the particle is going at unit speed the
@@ -6502,18 +6476,18 @@ const Article = () => {
               revolution of the circle. That is, for example, the
               length of this yellow interval:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta_with_yellow.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               One revolution around the circle is also
               made up of four quarter-revolutions, where
               each quarter-revolution of the circle is “half a bump”,
               on the graph:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta_with_two_yellows.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Going a bit further,{" "}
               <i>
@@ -6537,31 +6511,30 @@ const Article = () => {
               {" "}units, if
               you zoom in):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta_revealed.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Therefore
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large &#123;11 \over 7&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an approximation to the quarter-circumference of
               the circle, and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 4 \cdot &#123;11 \over 7&#125; = &#123;44 \over 7&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an approximation to the circumference of a unit
               circle.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -6583,7 +6556,6 @@ const Article = () => {
               too large”), which is strikingly good, all things
               considered.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -6592,11 +6564,11 @@ const Article = () => {
               {" "}
               Numerically, note that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large &#123;44 \over 7&#125; = 6.285714\dots$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is a bit larger than{" "}
               <NoBreak>
@@ -6609,17 +6581,17 @@ const Article = () => {
               what we see here for the length of a full
               revolution...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta_tau_verification.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...whereas
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large &#123;11 \over 7&#125; = 1.571428\dots$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is about{" "}
               <NoBreak>
@@ -6632,9 +6604,9 @@ const Article = () => {
               with what we can see on the graph about the
               length of a quarter-revolution:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta_eta_verification.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (So, we have some secondary “visual confirmation”
               of our approximations.)
@@ -6650,14 +6622,14 @@ const Article = () => {
             The graphs below are the horizontal and
             vertical velocities...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_pacman1_hor0.svg" />
           <ImageLeft
             src="/images/svg_ch4_pacman1_x_prime_t_scloud.svg"
             offset_y="1em" />
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_pacman1_ver0.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...of PACMAN, with unit of
             distance of one “cell”, or “c”—the distance 
@@ -6680,11 +6652,11 @@ const Article = () => {
             </NoBreak>
             {" "}increase towards the top:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image
             src="/images/svg_ch4_pacman1_maze.svg"
             height="590px" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             Where is Pacman at{" "}
             <NoBreak>
@@ -6705,36 +6677,36 @@ const Article = () => {
             {" "}have to figure that out from the 
             data!)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={24}>
             <VerticalChunk>
               Let's start by examining Pacman's first six displacements,
               appearing here in blue (positive displacements, going to the right 
               or up) and red (negative displacements, going to the left or down):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_hor1.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_ver1.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               We can estimate the duration of each
               displacement to the closest 10th of a second
               (mistakes of estimation can be made, we shall recover):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_hor2.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_ver2.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               We can also estimate the velocity to be
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\pm 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               when it is nonzero (for displacement
               <InlineImage
@@ -6749,12 +6721,12 @@ const Article = () => {
               significant errors while eyeballing the durations, so
               nevermind). Using
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(\te&#123;velocity&#125;) \times (\te&#123;amount of time&#125;) = (\te&#123;displacement&#125;)$$
               <ImageRight src="/images/svg_ch4_pacman1_velocity_times_amt_time_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               then gives us the following estimates for the
               <del>
@@ -6770,7 +6742,7 @@ const Article = () => {
               </del>
               &ensp;six displacements:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6784,7 +6756,7 @@ const Article = () => {
               </VerticalChunk>
               <ImageRight src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg" />
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6797,7 +6769,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6810,7 +6782,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6823,7 +6795,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6836,7 +6808,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -6849,15 +6821,15 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Given the horizontal/vertical alternation
               of displacements, this would nominally 
               imply the following set of initial motions:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_initial_displacements_before_rounding.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               But these are approximate numbers and the
               true values must be integers, except for
@@ -6873,11 +6845,11 @@ const Article = () => {
               the graphs, is horizontal, so yes.) In fact,
               if you look at the maze,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$3$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells is the smallest amount that Pacman
               can travel vertically when changing{" "}
@@ -6888,36 +6860,36 @@ const Article = () => {
               between two moments of horizontal motion.
               The next smallest possible amounts are
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$4$$
               <ImageLeft
                 src="/images/svg_ch4_pacman1_disp_4_cloud.svg"
                 width="700px" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6$$
               <ImageLeft
                 src="/images/svg_ch4_pacman1_disp_6_cloud.svg"
                 width="1400px" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$7$$
               <ImageLeft
                 src="/images/svg_ch4_pacman1_disp_7_cloud.svg"
                 width="700px" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells, with{" "}
               <Math>
@@ -6927,11 +6899,11 @@ const Article = () => {
               In the horizontal direction,
               the smallest amounts are
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$3, 6, \te&#123; and &#125; 9$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (and{" "}
               <Math>
@@ -6941,19 +6913,19 @@ const Article = () => {
               Now if each of our duration 
               measurements carries an error of no more than
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\pm&#123;&#125;0.2\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               each computed displacement is at most
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,\pm&#123;&#125;0.2\te&#123;s&#125;\,=\,\pm1.35\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               from the truth, give or take the small
               difference between{" "}
@@ -6963,27 +6935,27 @@ const Article = () => {
               {" "}
               and the actual velocity. So
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$-2.7\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               must be either
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$-3\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               or
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$-4\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               these being the only two posssible integer
               vertical displacements within{" "}
@@ -7004,9 +6976,9 @@ const Article = () => {
               Then, applying similar logic to each
               measurement, the initial motions must be:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_initial_motions.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The maze fits these constraints in only two places
               (note that
@@ -7031,11 +7003,11 @@ const Article = () => {
               {" "}in each
               case):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman1_maze_two_possibilities.svg"
               height="590px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Looking into the future, 
               the next three displacements are 
@@ -7055,11 +7027,11 @@ const Article = () => {
               s
               respectively:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_hor3.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman1_ver3.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Nb: Imagine translating these intervals to the left or right until
               the start of the interval is at an integer value: this is a good
@@ -7080,19 +7052,19 @@ const Article = () => {
               &ensp;equal to 6c not 7c, or else Pacman would 
               collide with a wall:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman1_maze_would_collide.svg"
               height="590px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,3.2\te&#123;s&#125;\,=\,21.6\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               it seems that displacement
               <InlineImage
@@ -7101,11 +7073,11 @@ const Article = () => {
               &ensp;brings Pacman all the way around the maze to
               the left edge of the ghost cage, like so...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman1_maze_bring_around.svg"
               height="590px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...though it is hard to measure that distance;
               but this is confirmed by the fact that the next
@@ -7116,11 +7088,11 @@ const Article = () => {
               {" "}and to the right”;
               specifically, since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\times\,0.4\te&#123;s&#125;\,=\,-2.7\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               displacement
               <InlineImage
@@ -7164,11 +7136,11 @@ const Article = () => {
                 class="ch4_pacman1_inline_number_pellet" />
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman1_maze_final_solution.svg"
               height="590px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               So at{" "}
               <NoBreak>
@@ -7197,20 +7169,20 @@ const Article = () => {
             {" "}
             Same question, but for the following maze...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image
             src="/images/svg_ch4_pacman2_maze.svg"
             height="551px" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...and for the following velocity data, with the 
             horizontal and vertical velocities
             superimposed on one graph (just a cosmetic 
             change—note that green is the vertical velocity)...
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_pacman2_frankenstein.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             ...and asking for Pacman's position at{" "}
             <Math>
@@ -7218,17 +7190,17 @@ const Article = () => {
             </Math>
             s.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={25}>
             <VerticalChunk>
               It seems well-advised to start by heuristically verifying
               that Pacman's speed remains
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               no matter the direction that Pacman is headed, as long as Pacman is
               in motion.
@@ -7263,17 +7235,17 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_at_23_7.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The velocity vector (cf. Exercise 12) is therefore about
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(4.8, 4.8)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               in units of{" "}
               <Math>
@@ -7287,12 +7259,12 @@ const Article = () => {
               and the speed, being the length of the velocity
               vector (cf. Exercise 12), is about
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\sqrt&#123;4.8^2 + 4.8^2&#125; = \sqrt&#123;2&#125; \times 4.8 = 6.788...$$
               <ImageLeft src="/images/svg_ch4_pacman2_4_point_8_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Pythagoras!)
               in units of{" "}
@@ -7302,11 +7274,11 @@ const Article = () => {
               {" "}as well,
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6.788... \approx 6.75$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which supports, in this case, the hypothesis that
               Pacman's speed is{" "}
@@ -7327,25 +7299,25 @@ const Article = () => {
               {" "}
               at which point the velocity vector is roughly
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(6.5, -2)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells per second:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_at_26.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               This gives a speed of
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\sqrt&#123;6.5^2 + 2^2&#125; = \sqrt&#123;46.25&#125; = 6.800...$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells per second, Again close to{" "}
               <NoBreak>
@@ -7368,9 +7340,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_at_27_and_30.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The speed at{" "}
               <Math>
@@ -7378,11 +7350,11 @@ const Article = () => {
               </Math>
               {" "}is approximately
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\sqrt&#123;3^2 + 6.2^2&#125; = \sqrt&#123;47.44&#125; = 6.888$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells per second, while the speed at{" "}
               <Math>
@@ -7391,11 +7363,11 @@ const Article = () => {
               {" "}
               is approximately
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\sqrt&#123;5.6^2 + 3.6^2&#125; = \sqrt&#123;44.32&#125; = 6.657$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells per second. Both close-ish to
               {" "}
@@ -7413,17 +7385,17 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_at_31.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               This yields a speed of
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\sqrt&#123;2.6^2 + 6.2^2&#125; = \sqrt&#123;45.2&#125; = 6.723...$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               cells per second, again close to{" "}
               <NoBreak>
@@ -7456,9 +7428,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_first_big_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Both the{" "}
               <NoBreak>
@@ -7479,37 +7451,37 @@ const Article = () => {
               of a curve. The curve starts with vertical motion
               and ends with horizontal motion:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_first_big_purple_annotations.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Thus Pacman starts the curve going up, and ends the curve
               going right. Moreover, it takes Pacman
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               to complete the curve (we know the curve is fully
               completed from the purely horizontal motion at
               either end), from which the curve must be
               approximately
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 3\te&#123;s&#125; = 20.25\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               in length! In turn, using the approximation
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\approx &#123;11 \over 7&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the quarter-circumference of a unit circle
               (cf
@@ -7520,11 +7492,11 @@ const Article = () => {
               the curve (which is a quarter-circle, as 
               all curves in this maze) has radius
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\approx &#123;20.25\te&#123;c&#125; \over 11/7&#125; = &#123;7 \times 20.25\te&#123;c&#125; \over 11&#125; = &#123;141.75\te&#123;c&#125; \over 11&#125; = 12.886...\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where we give up and use a calculator at the
               last step. But the possible radii are{" "}
@@ -7560,37 +7532,37 @@ const Article = () => {
               and ends rightward; we mean the upper left
               curve of the maze:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman2_upper_left_highlight.svg"
               height="551px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               From there, Pacman goes right for a bit, then
               takes another curve 3 seconds long, that starts
               rightward and ends downward:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_second_big_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...this second curve must, of course, be the
               upper right-hand corner of the maze, that has the
               appropriate length, position, and orientation:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman2_upper_right_highlight.svg"
               height="551px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               What is extremely strange, however, is that
               Pacman immediately follows the end of this curve
               with rightward motion:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_first_warning_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In fact, it is also strange that Pacman{" "}
               <i>
@@ -7600,26 +7572,26 @@ const Article = () => {
               the first curve with rightward motion (when that curve
               starts at the leftmost edge of the maze):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_second_warning_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Looking back over our work, 
               we find that we made a mistake when we wrote
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 3\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               the corrected version of that being of course
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$24.7\te&#123;s&#125; - 22.7\te&#123;s&#125; = 2\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (the second curve likewise lasted{" "}
               <Math>
@@ -7649,11 +7621,11 @@ const Article = () => {
               </NoBreak>
               {" "}i.e.,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;2 \over 3&#125; \times 12.886...\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the{" "}
               <i>
@@ -7677,11 +7649,11 @@ const Article = () => {
               </Math>
               {" "}each):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman2_corrected_highlights.svg"
               height="551px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Next, after some downward motion we are faced
               with a long, juicy, down-and-then-left curve,
@@ -7692,9 +7664,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_third_big_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Indeed, the curve lasts ~
               <NoBreak>
@@ -7705,19 +7677,19 @@ const Article = () => {
               </NoBreak>
               {" "}and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125; \times 2.7\te&#123;s&#125; = 18.225\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is approximately the same as
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;11 \over 7&#125; \cdot 12\te&#123;c&#125; = 18.85...\te&#123;c&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               confirming the radius of{" "}
               <Math>
@@ -7727,32 +7699,32 @@ const Article = () => {
               of the curve.
               Pacman's trajectory so far is then:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_pacman2_continued_highlights.svg"
               height="551px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Next Pacman seems to reverse course, and briefly
               re-enters the curve (going right and up a tiny bit):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_back_in_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               But then changes again, and re-exits the curve
               (going left and down a tiny bit):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Then Pacman goes left-and-then-right-again by
               some small amount:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               At this point—and in particular at 
               {" "}
@@ -7777,7 +7749,6 @@ const Article = () => {
               be at the bottom-left exit of the bottom-right
               maze corner, still.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -7799,18 +7770,18 @@ const Article = () => {
             Describe what a function might look like
             if its second derivative has this graph (broadly):
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_one_long_line.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={26}>
             <VerticalChunk>
               As the second derivative is the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               rate of change of the slope
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               places where the second derivative is zero are 
               places where the slope of the function is constant.
@@ -7831,25 +7802,25 @@ const Article = () => {
               where that starts and ends, the statement
               does say “broadly” anyway):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_with_purple.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               As
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               constant slope
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               means
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               line segment
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               the function will therefore be a 
               line segment, over each of the purple intervals!
@@ -7862,9 +7833,9 @@ const Article = () => {
               As it turns out, the area enclosed by the bump
               gives the total change in slope:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_positive_area.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (We won't argue this right now, but it's 
               sort-of-intuitive.)
@@ -7880,9 +7851,9 @@ const Article = () => {
               the total change in slope from one end of the bump
               to the other:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_negative_area.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In any case the areas are all the same{" "}
               <i>
@@ -7902,11 +7873,11 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Put
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large a$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the area of a positive bump (per appearances, 
               {" "}
@@ -7919,20 +7890,20 @@ const Article = () => {
               {" "}and
               <ImageRight src="/images/svg_ch4_one_long_line_a_is_about_1_cloud.svg" />
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large c$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the slope of a “low slope” line segment. Then a
               “high slope” line segment has slope
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large c + a$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               since we add{" "}
               <Math>
@@ -7942,11 +7913,11 @@ const Article = () => {
               a positive bump. 
               (And the slope goes back down to
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large (c + a) + (-a) = c$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               when we pass over a negative bump, with{" "}
               <Math>
@@ -7961,7 +7932,7 @@ const Article = () => {
               derivative is the one from the statement (faded in
               the background):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_solution_sketch_1.svg" />
             <ImageLeft src="/images/svg_ch4_one_long_line_c_is_approx_0_point_2_cloud.svg" />
             <VerticalChunk>
@@ -8001,7 +7972,7 @@ const Article = () => {
               </Math>
               -values:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_solution_sketch_2.svg" />
             <ImageLeft src="/images/svg_ch4_one_long_line_c_is_approx_minus_a_over_2_cloud.svg" />
             <VerticalChunk>
@@ -8024,25 +7995,25 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_solution_sketch_3.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Again, any of these graphs are
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               equally valid
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               solutions, and, for the last time,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               any amount of vertical translation can be introduced
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (you can move the graphs up and down). So in
               other words we have a “two-parameter family of
@@ -8076,9 +8047,9 @@ const Article = () => {
               {" "}i.e., the amount of rise between the end
               of one line segment and the start of the next:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_1.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In fact, is not entirely clear that there aren't
               possibly{" "}
@@ -8089,9 +8060,9 @@ const Article = () => {
               for the two different kinds of “connector curves”
               that exist (the concave ones and the convex ones):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_2.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (It will turn out that 
               the rises are all the same
@@ -8100,11 +8071,11 @@ const Article = () => {
               of a convex connector curve, note 
               that the rise is lower bounded by
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6c$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where{" "}
               <Math>
@@ -8123,17 +8094,17 @@ const Article = () => {
               {" "}found anywhere inside the connector
               curve:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_connector_curve_lower_bound.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Symmetrically,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6(c + a)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an upper bound on the rise, because{" "}
               <Math>
@@ -8147,19 +8118,19 @@ const Article = () => {
               {" "}anywhere inside the
               connector curve:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_connector_curve_upper_bound.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               To go any further we must add the first
               derivative to this sketch—the first derivative
               has value
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large c$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where the function has slope{" "}
               <NoBreak>
@@ -8170,11 +8141,11 @@ const Article = () => {
               </NoBreak>
               {" "}has value
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large c + a$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               where the function has slope{" "}
               <NoBreak>
@@ -8189,17 +8160,17 @@ const Article = () => {
               to a slope that is given by the value of the
               second derivative:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_3.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The afore-mentioned lower bound of
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6c$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               coincides with the area of a rectangle that{" "}
               <i>
@@ -8208,17 +8179,17 @@ const Article = () => {
               </i>
               {" "}the graph of the derivative:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_connector_curve_lower_bound_area.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Whereas the afore-mentioned upper bound of
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6(a + c)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               coincides with the area of a rectangle that
               {" "}
@@ -8227,39 +8198,39 @@ const Article = () => {
               </i>
               {" "}the graph of the derivative:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_connector_curve_upper_bound_area.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In other words, the rise of the convex connector
               curve is lower and upper bounded by these
               two areas. It will be helpful to write this
               as a pictorial inequality:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_one_long_line_inequality_1.svg"
               width="800px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               But we can tighten the inequality by dividing the
               areas halfway (we'll let you think about this 
               one—if you don't get it, don't worry, because we'll
               revisit the same topic in detail at some point):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_one_long_line_inequality_2.svg"
               width="800px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Or even:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_one_long_line_inequality_3.svg"
               width="800px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               If we take this logic to its bitter conclusion, we
               find the{" "}
@@ -8268,11 +8239,11 @@ const Article = () => {
               </i>
               quality:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               src="/images/svg_ch4_one_long_line_equality.svg"
               width="800px" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               And because the S-curve is centrally symmetric
               (the slopes at equal distance from the center are
@@ -8282,37 +8253,37 @@ const Article = () => {
               that the curve encloses exactly, by a geometric
               surgery:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_area_surgery.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Long story short, the area enclosed, which is
               also the rise of the connector curve, is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6\cdot (c + &#123;a\over 2&#125;)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...that can be read as “run times average slope”
               (because
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the run while the slope (first derivative)
               spends equal amounts of time, in equal measure,
               above and below the value
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large c + &#123;a \over 2&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               that is, indeed, the average of{" "}
               <Math>
@@ -8326,9 +8297,9 @@ const Article = () => {
               For concave connector curves the
               S-curve of the derivative is...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_concave_connector.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...flipped around from before, going from
               high to low, but the area enclosed by the S-curve
@@ -8336,19 +8307,19 @@ const Article = () => {
               connector curve. Hence, long story short—for the
               second time—all connector curves have rise
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 1.6\cdot (c + &#123;a\over 2&#125;)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and we can annotate our sketch of the
               “generic” solution with this additional piece of
               information, if we want. (Well...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_long_line_with_rises_shown.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...there, no one can accuse us of not doing the
               homework ourselves.)
@@ -8363,20 +8334,20 @@ const Article = () => {
             {" "}
             Apply the definition
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$fg = (u \ra f(u)g(u))$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             of function multiplication
             in order to show that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(fg)h = f(gh)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all functions{" "}
             <Math>
@@ -8385,7 +8356,7 @@ const Article = () => {
             ,
             or, namely, to show that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             (
             <Math>
@@ -8404,11 +8375,11 @@ const Article = () => {
             </Math>
             {" "}{" "}
           </CentralDisplayItalic>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             equals
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             {" "}{" "}
             <Math>
@@ -8424,7 +8395,7 @@ const Article = () => {
             </Math>
             )
           </CentralDisplayItalic>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all functions{" "}
             <Math>
@@ -8432,24 +8403,24 @@ const Article = () => {
             </Math>
             .
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={27}>
             <VerticalChunk>
               It is necessary and sufficient to show that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$((fg)h)(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the same as
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f(gh))(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for an arbitrary input{" "}
               <NoBreak>
@@ -8461,19 +8432,19 @@ const Article = () => {
               {" "}in order to
               show that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)h$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f(gh)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               are the same function. (Function equality is
               based on input-output behavior: two functions are
@@ -8484,60 +8455,60 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Starting up,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$((fg)h)(u) = (fg)(u) \cdot h(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the definition of function multiplication,
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f(gh))(u) = f(u) \cdot (gh)(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               likewise. Moreover,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(fg)(u) = f(u) \cdot g(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(gh)(u) = g(u) \cdot h(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the same definition again. Therefore,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$((fg)h)(u) = (f(u) \cdot g(u)) \cdot h(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               on the one hand, and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f(gh))(u) = f(u) \cdot (g(u) \cdot h(u))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               on the other hand. But
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f(u) \cdot g(u)) \cdot h(u) = f(u) \cdot (g(u) \cdot h(u))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the associativity of ordinary real number
               multiplication. (Not function multiplication:
@@ -8547,19 +8518,19 @@ const Article = () => {
               </i>
               .) So
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$((fg)h)(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               equals
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f(gh))(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for arbitrary{" "}
               <NoBreak>
@@ -8570,7 +8541,6 @@ const Article = () => {
               </NoBreak>
               {" "}which completes the proof.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -8579,24 +8549,23 @@ const Article = () => {
               {" "}
               In words, we have just established the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               associativity of function multiplication
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               while we had previously established the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               associativity of function composition
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (if you recall that one) in Exercise 9 of Chapter 
               3.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -8605,11 +8574,11 @@ const Article = () => {
               {" "}
               By this result, we can write
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$fgh$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               without any parentheses at all: 
               it doesn't matter whether we think of this 
@@ -8637,19 +8606,19 @@ const Article = () => {
             {" "}
             Prove that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f + g = g + f$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$fg = gf$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all{" "}
             <NoBreak>
@@ -8660,19 +8629,19 @@ const Article = () => {
             </NoBreak>
             {" "}using the fact that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$a + b = b + a$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$ab = ba$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all{" "}
             <NoBreak>
@@ -8685,7 +8654,7 @@ const Article = () => {
             (Prove something for functions by using the
             corresponding fact for numbers, namely.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={28}>
             <VerticalChunk>
               Given an arbitrary{" "}
@@ -8694,27 +8663,27 @@ const Article = () => {
               </Math>
               {" "}we have
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f + g)(u) = f(u) + g(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(g + f)(u) = g(u) + f(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the definition of function addition. But
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f(u) + g(u) = g(u) + f(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the commutativity of real number addition
               [
@@ -8727,19 +8696,19 @@ const Article = () => {
               </Math>
               {" "}are both real numbers—the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               commutativity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of real number addition is the fact that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$a + b = b + a$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for all real numbers{" "}
               <NoBreak>
@@ -8758,11 +8727,11 @@ const Article = () => {
               {" "}mentioned in the
               statement—so we can use this here]; thus
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f + g)(u) = (g + f)(u)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for all{" "}
               <NoBreak>
@@ -8773,18 +8742,18 @@ const Article = () => {
               </NoBreak>
               {" "}which implies
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f + g = g + f$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by definition of function equality.
             </VerticalChunk>
             <VerticalChunk indent={true}>
               For the second half we have, similarly,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\begin&#123;align&#125;
               (fg)(u) &= f(u) \cdot g(u) \\
@@ -8792,7 +8761,7 @@ const Article = () => {
               &= (gf)(u) \up&#123;1.5&#125;
               \end&#123;align&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for arbitrary{" "}
               <NoBreak>
@@ -8807,11 +8776,11 @@ const Article = () => {
               the middle equality is by commutativity of real
               number multiplication. [That would be the fact that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ab = ba$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for all{" "}
               <NoBreak>
@@ -8822,19 +8791,19 @@ const Article = () => {
               </NoBreak>
               {" "}as mentioned in the statement.] Hence
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$fg$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$gf$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               agree on an arbitrary input, hence{" "}
               <Math>
@@ -8853,11 +8822,11 @@ const Article = () => {
             {" "}
             A rat is running a fundraising race. The function
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\Large f : \rr \ra \rr$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             gives the amount raised as a function of position;
             specifically,{" "}
@@ -8880,11 +8849,11 @@ const Article = () => {
             {" "}meters from the start of the race; 
             a second function
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\Large g : \rr \ra \rr$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             gives the position of the rat as a function of time;
             specifically,{" "}
@@ -8906,7 +8875,7 @@ const Article = () => {
             </Math>
             {" "}compute?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={29}>
             <VerticalChunk>
               It computes
@@ -8930,7 +8899,6 @@ const Article = () => {
               {" "}
               seconds after the start of the race.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -8939,11 +8907,11 @@ const Article = () => {
               {" "}
               In even more detail,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$g(t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the position in meters of the rat{" "}
               <Math>
@@ -8961,11 +8929,11 @@ const Article = () => {
               {" "}at which position the rat has
               earned
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f(g(t))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               <NoBreak>
                 <Math>
@@ -8980,19 +8948,19 @@ const Article = () => {
               .
               And
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f(g(t))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f \circ g)(t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by definition of “
               <Math>
@@ -9000,7 +8968,6 @@ const Article = () => {
               </Math>
               ”.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9018,9 +8985,8 @@ const Article = () => {
                 :
               </NoBreak>
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_composition_units.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9033,11 +8999,11 @@ const Article = () => {
               </Math>
               {" "}is the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               ~ total ~
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               amount earned when position{" "}
               <Math>
@@ -9052,9 +9018,9 @@ const Article = () => {
               graph might therefore look something like this, 
               while inventing some numbers:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_first_example_of_f.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In the above the rat earns{" "}
               <NoBreak>
@@ -9075,9 +9041,9 @@ const Article = () => {
               could look like this,
               with discrete “unlocks”:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_second_example_of_f.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In our mathematicians' imaginations, however,{" "}
               <Math>
@@ -9088,9 +9054,9 @@ const Article = () => {
               with periods of negative slope (corresponding to
               parts of the course that momentarily lose you money):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_third_example_of_f.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (Etc.)
             </VerticalChunk>
@@ -9109,17 +9075,17 @@ const Article = () => {
             {" "}compute,
             keeping the same setup as in Exercise 34?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={30}>
             <VerticalChunk>
               It computes the dollars-per-second earnings rate 
               as a function of time. In full detail,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f \circ g)'(t)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the dollars-per-second rate which the rat is
               fundraising at{" "}
@@ -9175,11 +9141,11 @@ const Article = () => {
             </Math>
             {" "}have these graphs:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_f_g_actual_exercise_f.svg" />
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_f_g_actual_exercise_g.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={31}>
             <VerticalChunk>
               At{" "}
@@ -9191,11 +9157,11 @@ const Article = () => {
               </NoBreak>
               {" "}the rat is running at a velocity of
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;5\over 3\up&#123;1&#125;&#125;[&#123;\te&#123;m/s&#125;&#125;]$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the slope of this line segment on{" "}
               <Math>
@@ -9203,9 +9169,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_actual_exercise_g_with_slope.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Moreover at{" "}
               <NoBreak>
@@ -9229,9 +9195,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_f_g_actual_exercise_f_with_slope.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Multiplying the{" "}
               <Math>
@@ -9265,28 +9231,28 @@ const Article = () => {
               </NoBreak>
               {" "}by Exercise 35):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\left(&#123;5\over 3\up&#123;1&#125;&#125;\left[&#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;\right]\right) \times \left(&#123;1 \over 10\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;m&#125;&#125;\right]\right) = &#123;5\over 30\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;s&#125;&#125;\right].$$
               <ImageRight src="/images/svg_ch4_f_g_actual_exercise_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Or since
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;5 \over 3&#125; = 1.6666...$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               that would be
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;0.1666...&#125;[\te&#123;\$/s&#125;]$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               in decimal, i.e.,{" "}
               <span style="font-family:Clicker Script;font-size:1.3em;">
@@ -9300,7 +9266,6 @@ const Article = () => {
               </Math>
               {" "}cents per second.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9309,21 +9274,21 @@ const Article = () => {
               {" "}
               It turns out that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;5 \over 30&#125; = &#123;1 \over 6&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as we weren't really paying attention to the 
               possibility of simplifying the fraction. In
               particular,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;1 \over 6&#125; = 0.1666...$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               as, indeed,{" "}
               <Math>
@@ -9349,11 +9314,11 @@ const Article = () => {
             {" "}
             Conjecture a general formula for
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$(f \circ g)'(t)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for arbitrary (differentiable, say) functions
             {" "}
@@ -9379,16 +9344,16 @@ const Article = () => {
             </Math>
             {" "}Exercises 34-37.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={32}>
             <VerticalChunk>
               The sought-for formula is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$g'(t)\cdot f'(g(t))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because—to come back to the example of the 
               fundraising race—one must multiply the meters-per-second
@@ -9431,11 +9396,11 @@ const Article = () => {
               (For example, the solution to Exercise 36 can actually
               be written
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$g'(2) \cdot f'(g(2))$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               since, indeed,{" "}
               <NoBreak>
@@ -9478,7 +9443,6 @@ const Article = () => {
               </i>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9491,11 +9455,11 @@ const Article = () => {
               {" "}
               is more commonly written...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f \circ g)'(x) = f'(g(x))g'(x)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...with “
               <NoBreak>
@@ -9517,7 +9481,6 @@ const Article = () => {
               </Math>
               ”.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9525,11 +9488,11 @@ const Article = () => {
               </i>
               {" "}One can also write the chain rule very succinctly like so...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$(f \circ g)' = (f' \circ g)g'$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...where the right-hand-side is the product of{" "}
               <Math>
@@ -9576,7 +9539,7 @@ const Article = () => {
             {" "}what curve does the far end of the
             vector describe?) Over how much time?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={33}>
             <VerticalChunk>
               The velocity vector is an arrow of length{" "}
@@ -9594,9 +9557,9 @@ const Article = () => {
               {" "}brushed
               clockwise:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_velocity_vector_radius_2_speed_3_sketch_1.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               If we bring the tail of the vector back to
               {" "}
@@ -9614,20 +9577,20 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_velocity_vector_radius_2_speed_3_centered.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Lastly, the velocity vector does a full revolution
               of the red circle in the same amount of time that
               the particle does a full revolution of the blue circle,
               which is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;2\cdot (\te&#123;circumference of a unit circle&#125;) \over \te&#123;3&#125;&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because the circumference of the blue circle
               is twice the circumference of a unit circle,
@@ -9637,7 +9600,6 @@ const Article = () => {
               </Math>
               .
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9661,16 +9623,16 @@ const Article = () => {
             {" "}
             What is the
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <CentralDisplayItalic>
             acceleration vector
           </CentralDisplayItalic>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             (velocity vector of the velocity vector)
             of the particle from Exercise 39?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={34}>
             <VerticalChunk>
               The velocity vector of Exercise 39 travels
@@ -9708,17 +9670,16 @@ const Article = () => {
               velocity vector) brushed clockwise along 
               the path of the velocity vector:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_what_is_the_acceleration_vector_uncentered.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Or, if we translate the acceleration vector back 
               to the origin and trace out its path over time 
               (either way is fine):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_what_is_the_acceleration_vector_centered.svg" />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9753,7 +9714,7 @@ const Article = () => {
             </NoBreak>
             {" "}(Clockwise, say.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={35}>
             <VerticalChunk>
               The velocity vector has length{" "}
@@ -9775,11 +9736,11 @@ const Article = () => {
               looks like so, while attached to the particle path
               (top) or brought back to the origin (bottom):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_uncentered.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_centered.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Moreover (!) the speed of the velocity vector is 
               {" "}
@@ -9795,11 +9756,11 @@ const Article = () => {
               radius in the same amount of time. So the velocity 
               vector has speed
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large 2 \cdot &#123;2\over 3&#125; = &#123;4\over 3&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               from which the acceleration vector—that can be 
               described as “the velocity vector of the velocity
@@ -9810,19 +9771,19 @@ const Article = () => {
               {" "}(the speed of the
               velocity vector), and looks like so (in either representation):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_uncentered.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_centered.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Lastly the acceleration vector has speed
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\Large &#123;4\over 3&#125;\cdot &#123;2\over 3&#125; = &#123;8 \over 9&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by virtue of circling a circle of radius{" "}
               <Math>
@@ -9846,12 +9807,11 @@ const Article = () => {
               </Math>
               {" "}away:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_uncentered.svg" />
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_centered.svg" />
             <StarDivider />
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9874,7 +9834,7 @@ const Article = () => {
               </NoBreak>
               {" "}between the successive radii:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_with_position.svg" />
           </Solution>
         </Exercise>
@@ -9896,9 +9856,9 @@ const Article = () => {
             </Math>
             :
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_one_particle_at_1.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             If we play time backward, will the particle 
             ever reach{" "}
@@ -9909,7 +9869,7 @@ const Article = () => {
               ?
             </NoBreak>
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={36}>
             <VerticalChunk>
               Going back in time,
@@ -9917,9 +9877,9 @@ const Article = () => {
               the particle to cross each of the intervals defined by
               the following geometric progression* (*see Note 1):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_one_particle_interval_subdivision.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The interval from{" "}
               <Math>
@@ -9935,12 +9895,12 @@ const Article = () => {
                 at least
               </i>
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;0.5 \over 1&#125; = 0.5$$
               <ImageLeft src="/images/svg_ch4_one_particle_speed_equals_time_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               time to cross, because the maximum speed of the particle
               inside of that interval is{" "}
@@ -9950,30 +9910,30 @@ const Article = () => {
               .
               Similarly, the interval from
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$x = 0.25$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               to
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$x = 0.5$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               takes{" "}
               <i>
                 at least
               </i>
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;0.25 \over 0.5&#125; = 0.5$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               time to cross, because the maximum speed of the particle
               inside of that interval is{" "}
@@ -9983,27 +9943,27 @@ const Article = () => {
               !
               And, again, the interval from
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$x = 0.125$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               to
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$x = 0.25$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               takes at least
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;0.125 \over 0.25&#125; = 0.5$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               time to cross, because the maximum speed of the particle
               inside of that interval is{" "}
@@ -10019,22 +9979,22 @@ const Article = () => {
                 at least
               </i>
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$0.5$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               units of time to cross, because the length of each
               interval is half of the maximum speed within the interval!
               But there are infinitely many intervals, and, therefore,
               it takes
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               at least
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               infinitely much time to make it to{" "}
               <NoBreak>
@@ -10062,21 +10022,21 @@ const Article = () => {
             <VerticalChunk indent={true}>
               A so-called
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               geometric progression
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is a sequence of numbers in which each number
               is a fixed multiple of the previous number.
               For example,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$100,\, 300,\, 900,\, 2700$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is a (finite) geometric progression, because each number
               is the previous number multiplied by{" "}
@@ -10086,11 +10046,11 @@ const Article = () => {
               ,
               and
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$1,\, 0.5,\, 0.25,\, 0.125,\, 0.0625,\, \ldots$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is an (infinite) geometric progression, because each number
               is the previous multiplied by{" "}
@@ -10130,9 +10090,9 @@ const Article = () => {
             </Math>
             :
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_three_one_dimensional_particles.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             If the velocity of the yellow particle is set to track
             the position of the blue particle and vice-versa, 
@@ -10152,7 +10112,7 @@ const Article = () => {
             graphs, what symmetries
             exist altogether between the three graphs?
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={37}>
             <VerticalChunk>
               For{" "}
@@ -10182,9 +10142,9 @@ const Article = () => {
               {" "}respectively at an
               accelerating rate:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               If we add the graph of the red particle to the
               mix, it is simply the mirror image of the
@@ -10203,13 +10163,13 @@ const Article = () => {
               </Math>
               ”):
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow_red.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Indeed, for the red graph,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the slope equals the{" "}
               <Math>
@@ -10217,11 +10177,11 @@ const Article = () => {
               </Math>
               -value
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (velocity = position), while
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               the slope equals minus the{" "}
               <Math>
@@ -10229,7 +10189,7 @@ const Article = () => {
               </Math>
               -value
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the blue graph (velocity = position
               of yellow = minus own position). 
@@ -10259,9 +10219,9 @@ const Article = () => {
               image of one graph fits the constraints of the other
               and vice-versa:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_three_one_dimensional_particles_red_and_blue_symmetry.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Also note that all graphs have slopes of
               {" "}
@@ -10315,9 +10275,9 @@ const Article = () => {
             </Math>
             {" "}in the plane:
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image src="/images/svg_ch4_circle_at_2_4.svg" />
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             The velocity of each particle is set to 
             the position of the next particle clockwise
@@ -10339,7 +10299,7 @@ const Article = () => {
             </Math>
             .
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={38}>
             <VerticalChunk>
               At{" "}
@@ -10397,7 +10357,7 @@ const Article = () => {
               particles, comprising the original colors but
               in white and black flavors:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10433,7 +10393,7 @@ const Article = () => {
                   class="ch4_inline_blackwhite_particles" />
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               At{" "}
               <Math>
@@ -10448,9 +10408,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_circle_at_2_4_white_version.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The black particles, for their part, are
               piled on top of one another at{" "}
@@ -10468,9 +10428,9 @@ const Article = () => {
               that we draw as four quarter-pies
               of different colors, like a UNO card:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_circle_at_2_4_black_version.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               Within each group we set the velocity of
               the purple particle to the position of the
@@ -10518,36 +10478,36 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Also note that the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               speed
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of the black particles, being equal to the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               length of the velocity vector
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of said particles, is equal to the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               length of the position vector
               <ImageRight src="/images/svg_ch4_circle_at_2_4_position_equals_velocity_cloud.svg" />
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of said particles, is equal to the
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               distance to the origin
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               of said particles,
               since the length of the position vector is
@@ -10566,9 +10526,9 @@ const Article = () => {
               </Math>
               ...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_circle_at_2_4_UNO_with_gradated_line.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...indicating the distance to the origin,
               the black particles behave like a 
@@ -10577,9 +10537,9 @@ const Article = () => {
               it doesn't hurt) whose velocity is equal to
               its position on this line:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_circle_at_2_4_UNO_flat_half_line.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The behavior of such a particle is
               identical to the behavior of the red
@@ -10611,7 +10571,7 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Next we write
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10623,7 +10583,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the function that gives 
               the{" "}
@@ -10636,7 +10596,7 @@ const Article = () => {
               {" "}of the purple-white particle
               as a function of time (in more detail,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10648,11 +10608,11 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               to emphasize that WE ARE TALKING ABOUT A FUNCTION, e.g.,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10664,7 +10624,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the{" "}
               <NoBreak>
@@ -10684,7 +10644,7 @@ const Article = () => {
               </NoBreak>
               {" "}etc), and write
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10696,7 +10656,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               for the function that gives
               the{" "}
@@ -10713,7 +10673,7 @@ const Article = () => {
             <VerticalChunk indent={true}>
               For example,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10733,7 +10693,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because the rate of change of the 
               {" "}
@@ -10751,7 +10711,7 @@ const Article = () => {
               -coordinate
               of the yellow-white particle; we also have
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -10787,12 +10747,12 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by adding two such equations together; this can also be
               written
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <Math>
@@ -10832,7 +10792,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               by the sum rule; but this gives us an idea!; we can
               try to{" "}
@@ -10857,7 +10817,7 @@ const Article = () => {
                 class="ch4_inline_blackwhite_particles" />
               &ensp;by setting...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -11067,7 +11027,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...and see if these definitions satisfy the constraints
               of the problem! (We momentarily have two different
@@ -11079,7 +11039,7 @@ const Article = () => {
               particles are one and the same.)
               For starters...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -11481,11 +11441,11 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...or...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -11631,7 +11591,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...cutting out the middle computation, so the constraints
               relating particle velocities to particle positions are
@@ -11643,7 +11603,7 @@ const Article = () => {
               </Math>
               {" "}gives...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -11917,11 +11877,11 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...or...
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               <VerticalChunk>
                 <InlineImage
@@ -12067,7 +12027,7 @@ const Article = () => {
                 </Math>
               </VerticalChunk>
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               ...cutting out the middle computation, which is to
               say that the positions at time{" "}
@@ -12193,9 +12153,9 @@ const Article = () => {
               </Math>
               :
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_circle_at_2_4_solution_curves.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The above plot goes from{" "}
               <Math>
@@ -12234,11 +12194,11 @@ const Article = () => {
               </NoBreak>
               {" "}there ensues
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplay>
               “a [kind of] four-particle explosion”
             </CentralDisplay>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               in the first paragraph of the solution, the word 
               “explosion” might be misleading, implying increased
@@ -12246,7 +12206,6 @@ const Article = () => {
               not the case! (But we didn't know any better, back
               then.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -12256,35 +12215,35 @@ const Article = () => {
               As you might already have caught on, but is
               maybe worth emphasizing,
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               speed
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is not the same thing as
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               velocity
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because, specifically, speed is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               distance per unit time
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               —a nonnegative number—whereas velocity is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <CentralDisplayItalic>
               displacement per unit time
             </CentralDisplayItalic>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               —a vector-valued quantity, or{" "}
               <NoBreak>
@@ -12315,11 +12274,11 @@ const Article = () => {
             </Math>
             {" "}such that
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$f'(x) = f(x + a)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             for all{" "}
             <NoBreak>
@@ -12329,14 +12288,14 @@ const Article = () => {
               .
             </NoBreak>
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={39}>
             <VerticalChunk>
               Recall the curves from Exercise 12:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_ch4_cosine_recall.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The blue curve is the derivative of the red curve
               but is also the horizontal translate of the red curve by
@@ -12346,36 +12305,36 @@ const Article = () => {
               </Math>
               {" "}units to the left, where
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$a$$
               <ImageLeft src="/images/svg_ch4_cosine_recall_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the distance between adjacent bumps. Thus if
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the function that generates the red curve, then
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$f'(x) = f(x + a)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               using the fact that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y = f(x + a)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the horizontal translate of{" "}
               <Math>
@@ -12467,7 +12426,7 @@ const Article = () => {
           <VerticalChunk>
             ...in the form of self-contained, formal statements.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={40}>
             <VerticalChunk>
               For the functions:
@@ -12684,7 +12643,6 @@ const Article = () => {
                 </VerticalChunk>
               </li>
             </ul>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>

@@ -24,7 +24,7 @@ export const NoBreak = (props: ParentProps) => {
 };
 
 export const Pause = () => {
-  return <span></span>;
+  return <div class="spacer" />;
 };
 
 export const WriterlyBlankLine = () => {

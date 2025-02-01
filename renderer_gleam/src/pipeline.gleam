@@ -1,17 +1,13 @@
 import gleam/option.{Some, None}
 import desugarers/absorb_next_sibling_while.{absorb_next_sibling_while}
+import desugarers/add_before_tags_but_not_first_child_tags.{add_before_tags_but_not_first_child_tags}
+import desugarers/add_between_tags.{add_between_tags}
 import desugarers/add_counter_attributes.{add_counter_attributes}
 import desugarers/add_exercise_labels.{add_exercise_labels}
-import desugarers/add_spacer_divs_before.{add_spacer_divs_before}
-import desugarers/add_spacer_divs_between.{add_spacer_divs_between}
-import desugarers/add_title_counters_and_titles_with_handle_assignments.{
-  add_title_counters_and_titles_with_handle_assignments,
-}
+import desugarers/add_title_counters_and_titles_with_handle_assignments.{add_title_counters_and_titles_with_handle_assignments}
 import desugarers/change_attribute_value.{change_attribute_value}
 import desugarers/concatenate_text_nodes.{concatenate_text_nodes}
-import desugarers/convert_int_attributes_to_float.{
-  convert_int_attributes_to_float,
-}
+import desugarers/convert_int_attributes_to_float.{convert_int_attributes_to_float}
 import desugarers/counter.{counter_desugarer}
 import desugarers/counter_handles.{counter_handles_desugarer}
 import desugarers/fold_tags_into_text.{fold_tags_into_text}
@@ -305,32 +301,32 @@ pub fn our_pipeline() -> List(Pipe) {
     // ************************
     // Add spacers
     // ************************
-    add_spacer_divs_between([
-      #(#("MathBlock", "VerticalChunk"), "spacer"),
-      #(#("Example", "VerticalChunk"), "spacer"),
-      #(#("Image", "VerticalChunk"), "spacer"),
-      #(#("Table", "VerticalChunk"), "spacer"),
-      #(#("table", "VerticalChunk"), "spacer"),
-      #(#("Grid", "VerticalChunk"), "spacer"),
-      #(#("CentralDisplayItalic", "VerticalChunk"), "spacer"),
-      #(#("CentralDisplay", "VerticalChunk"), "spacer"),
-      #(#("List", "VerticalChunk"), "spacer"),
+    add_between_tags([
+      #(#("MathBlock", "VerticalChunk"), "Pause", []),
+      #(#("Example", "VerticalChunk"), "Pause", []),
+      #(#("Image", "VerticalChunk"), "Pause", []),
+      #(#("Table", "VerticalChunk"), "Pause", []),
+      #(#("table", "VerticalChunk"), "Pause", []),
+      #(#("Grid", "VerticalChunk"), "Pause", []),
+      #(#("CentralDisplayItalic", "VerticalChunk"), "Pause", []),
+      #(#("CentralDisplay", "VerticalChunk"), "Pause", []),
+      #(#("List", "VerticalChunk"), "Pause", []),
     ]),
-    add_spacer_divs_before([
-      #("Exercises", "spacer"),
-      #("Example", "spacer"),
-      #("Note", "spacer"),
-      #("Section", "spacer"),
-      #("MathBlock", "spacer"),
-      #("CentralDisplayItalic", "spacer"),
-      #("CentralDisplay", "spacer"),
-      #("Image", "spacer"),
-      #("Table", "spacer"),
-      #("table", "spacer"),
-      #("Grid", "spacer"),
-      #("Solution", "spacer"),
-      #("List", "spacer"),
-      #("Pause", "spacer"),
+    add_before_tags_but_not_first_child_tags([
+      #("Exercises", "Pause", []),
+      #("Example", "Pause", []),
+      #("Note", "Pause", []),
+      #("Section", "Pause", []),
+      #("MathBlock", "Pause", []),
+      #("CentralDisplayItalic", "Pause", []),
+      #("CentralDisplay", "Pause", []),
+      #("Image", "Pause", []),
+      #("Table", "Pause", []),
+      #("table", "Pause", []),
+      #("Grid", "Pause", []),
+      #("Grid", "Pause", []),
+      #("Solution", "Pause", []),
+      #("List", "Pause", []),
     ]),
     generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
     generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),

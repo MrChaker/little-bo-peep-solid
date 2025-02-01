@@ -32,18 +32,18 @@ const Article = () => {
           of how “steep” a line is. Here are a few examples
           (for an explanation of the values, see below):
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/chapter_2_1.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           To explain, the slope of a line is...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           the number of units the line goes up with each
           unit to the right
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...assuming that numbers on the{" "}
           <NoBreak>
@@ -64,12 +64,12 @@ const Article = () => {
           going right, as is usually the case. One can also
           describe slope as...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           the amount of vertical change per unit of
           horizontal change
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...more elegant!
         </VerticalChunk>
@@ -81,11 +81,11 @@ const Article = () => {
           </Math>
           {" "}unit for each unit to the right:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="pl-[2px]"
           src="/images/slope_1_example.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           On the other hand, the line below has slope
           {" "}
@@ -106,16 +106,16 @@ const Article = () => {
           {" "}units
           with each unit to the right:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="pl-[19.5px]"
           src="/images/slope_0.5_example.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (Etc.)
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -137,15 +137,15 @@ const Article = () => {
           </Math>
           {" "}on the line:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="mt-6 mb-2"
           src="/images/31.svg" />
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ \te&#123;slope&#125; = &#123;\te&#123;vertical change from A to B&#125; \over \te&#123;horizontal change from A to B&#125;&#125; $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Indeed, dividing the vertical change by the
           horizontal change gives the per-horizontal-unit
@@ -154,35 +154,35 @@ const Article = () => {
         <VerticalChunk indent={true}>
           More precisely, if
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ A = (x_1, y_1) $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ B = (x_2, y_2) $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           then
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           are the horizontal{" "}
           <i>
@@ -202,14 +202,14 @@ const Article = () => {
           </NoBreak>
           {" "}so
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;$$
           <ImageRight
             offset_y="-1rem"
             src="/images/32.svg" />
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           more succinctly. We call this the{" "}
           <i>
@@ -217,7 +217,7 @@ const Article = () => {
           </i>
           .
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -226,38 +226,38 @@ const Article = () => {
             {" "}
             A line that passes through the points
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$A = (-2, 5)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             and
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$B = (4, 1)$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             has slope
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$&#123;1 - 5 \over 4 - (-2)&#125; = &#123;-4 \over 6&#125; = - &#123;2 \over 3&#125;.$$
           </MathBlock>
         </Example>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           <StarDivider />
           (The main thing to understand about Example
           1 is that
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ 1 - 5 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is the vertical change from{" "}
           <Math>
@@ -272,11 +272,11 @@ const Article = () => {
           </NoBreak>
           {" "}while
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ 4 - (-2) $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is the horizontal change from{" "}
           <Math>
@@ -289,7 +289,7 @@ const Article = () => {
           .)
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -298,19 +298,19 @@ const Article = () => {
           {" "}
           Technically, quantities such as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           are not distances but{" "}
           <i>
@@ -328,25 +328,25 @@ const Article = () => {
         <VerticalChunk indent={true}>
           In particular, since
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           can be positive or negative, while
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           can be positive or negative or zero (more on
           zero below), the following sign combinations
           arise (lines of slope zero not included):
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Table
           lines={true}
           cols={[120, 120, 120, 120]}>
@@ -486,7 +486,7 @@ const Article = () => {
             </td>
           </tr>
         </Table>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           In fact, we{" "}
           <i>
@@ -508,36 +508,36 @@ const Article = () => {
             line={3.0}
             src="/images/38.svg" />
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           are somehow equal. But, indeed,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125; $$
           <ImageLeft
             offset_y="-3.5rem"
             src="/images/39.svg" />
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which verifies this hypothesis. In particular,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           are equally valid incarnations of the slope
           formula.
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -546,20 +546,20 @@ const Article = () => {
           {" "}
           If
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ x_2 - x_1 = 0 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           the slope formula “breaks down” in the sense that
           division by 0 is undefined. This occurs, e.g., if
           we attempt to measure the slope of a vertical
           line:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/40.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Indeed, vertical lines have{" "}
           <i>
@@ -568,11 +568,11 @@ const Article = () => {
           {" "}slope.
           Moreover the bad case
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ x_2 - x_1 = 0 $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           can also occur another way, namely if the points
           {" "}
@@ -587,11 +587,11 @@ const Article = () => {
           case, more precisely, the slope formula evaluates
           to
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$ \frac&#123;y_2 - y_1&#125;&#123;x_2 - x_1&#125; = \frac&#123;0&#125;&#123;0&#125; $$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           which could be anything. (Technically, “
           <NoBreak>
@@ -605,7 +605,7 @@ const Article = () => {
           lines pass through any given point!
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -624,21 +624,21 @@ const Article = () => {
             src="/images/rise-run.svg" />
           ”), following such a picture:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="pt-4 mb-4"
           width="300px"
           src="/images/44.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           In this context, note that, in physics, a
           one-dimensional displacement is measured as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at arrival&#125;&#125;\right)\,\, - \,\,\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at start&#125;&#125;\right)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           in accordance, namely, with the coordinate
           differences “
@@ -659,17 +659,16 @@ const Article = () => {
           (In order not to discriminate, maybe we should
           also include this picture:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="pt-4 mb-4"
           src="/images/47.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Then “rise” and “run” have their signs flipped,
           but the ratio rise-over-run is the same, as
           already mentioned.)
         </VerticalChunk>
-        <div class="spacer" />
         <Pause />
         <VerticalChunk>
           <i>
@@ -678,11 +677,11 @@ const Article = () => {
           {" "}
           The slope formula is occasionally written
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; = \frac&#123;\Delta y&#125;&#123;\Delta x&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           where the foreign-looking symbols{" "}
           <Math>
@@ -724,7 +723,7 @@ const Article = () => {
           ”.)
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -733,39 +732,39 @@ const Article = () => {
           {" "}
           Multiplying
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           on each side by “run” gives
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           or “rise equals slope times run”. After which,
           dividing each side by “slope”, we find
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;run&#125; = &#123;\te&#123;rise&#125; \over \te&#123;slope&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           or “run equals rise over slope”. Thus:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/48.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...as can sometimes be useful to know.
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -774,11 +773,11 @@ const Article = () => {
           {" "}An equation of the
           form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = ax + b$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           where{" "}
           <Math>
@@ -791,11 +790,11 @@ const Article = () => {
           {" "}are constants defines a line in
           the Cartesian plane. E.g.:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           width="640px"
           src="/images/49.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           Note that, assuming said{" "}
           <NoBreak>
@@ -806,11 +805,11 @@ const Article = () => {
           </NoBreak>
           {" "}one has
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = a\cdot 0 + b = b$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           at{" "}
           <NoBreak>
@@ -833,7 +832,7 @@ const Article = () => {
           </NoBreak>
           {" "}(FYI, this height is called the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -841,7 +840,7 @@ const Article = () => {
           </Math>
           -intercept
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           of the line, because{" "}
           <Math>
@@ -854,15 +853,15 @@ const Article = () => {
           </Math>
           {" "}axis. But the point
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$(0, b)$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is also sometimes called the
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           {" "}{" "}
           <Math>
@@ -870,7 +869,7 @@ const Article = () => {
           </Math>
           -intercept
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           of the line, so the term “
           <NoBreak>
@@ -902,11 +901,11 @@ const Article = () => {
           </NoBreak>
           {" "}we have
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = a\cdot 1 + b = a + b$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           so{" "}
           <Math>
@@ -961,7 +960,7 @@ const Article = () => {
           </Math>
           .
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -970,24 +969,24 @@ const Article = () => {
             {" "}
             The equation
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$y = 100x - 3$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             defines a line of slope 100.
           </VerticalChunk>
         </Example>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           On the other hand, an equation of the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = ax + b$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           cannot describe a vertical line, because{" "}
           <Math>
@@ -1002,7 +1001,7 @@ const Article = () => {
           {" "}be equal to? Instead, a vertical
           line is described by an equation of the form
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$x = c$$
           <ImageLeft
@@ -1011,7 +1010,7 @@ const Article = () => {
             offset_y="1rem"
             src="/images/svg_vertical_line_equation.svg" />
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (see Fig. 1) where{" "}
           <Math>
@@ -1020,11 +1019,11 @@ const Article = () => {
           {" "}is a constant, 
           similarly to the more familiar equation
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = b$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           for a horizontal line, where{" "}
           <Math>
@@ -1052,19 +1051,19 @@ const Article = () => {
           </NoBreak>
           {" "}For example,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$x + y = 3$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is equivalent to
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$y = 3 - x$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and thus describes a line of{" "}
           <NoBreak>
@@ -1089,7 +1088,7 @@ const Article = () => {
             src="/images/svg_3_plus_minus_one_times_x_cloud.svg" />
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section>
         <VerticalChunk>
           <b>
@@ -1113,11 +1112,11 @@ const Article = () => {
           {" "}have units then a line's
           slope has units
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           as should make sense, given that the slope is a
           change in{" "}
@@ -1143,11 +1142,11 @@ const Article = () => {
           {" "}axis are
           seconds (“s”) then the slope has units
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$&#123;\te&#123;$y$ axis units&#125; \over \te&#123;$x$ axis units&#125;&#125; = &#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           also known as{" "}
           <i>
@@ -1159,11 +1158,11 @@ const Article = () => {
           balloon, in meters, as a function of time elapsed,
           in seconds:
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image
           class="mt-[1.4em] mb-[1.2em]"
           src="/images/52.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           The slope of the graph is{" "}
           <Math>
@@ -1186,37 +1185,37 @@ const Article = () => {
           {" "}(if
           you had noticed):
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; \left(\!= &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;\right) = &#123;3\te&#123;m&#125; \over 4\te&#123;s&#125;&#125; = 0.75\te&#123;m&#125;/\te&#123;s&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           In fact, the slope is the balloon's upward
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           velocity
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           since velocity is defined as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           displacement over time
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           and this is precisely the form of the ratio “rise
           over run” for the current graph. (More generally,
           we have
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplay>
           “slope = velocity”
         </CentralDisplay>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           whenever the{" "}
           <Math>
@@ -1242,11 +1241,11 @@ const Article = () => {
         <VerticalChunk indent={true}>
           Terminology-wise, slopes are often known as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           rates of change
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           in the presence of units. More particularly, in the
           common case when the{" "}
@@ -1259,20 +1258,20 @@ const Article = () => {
           {" "}denotes time, the
           formula
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           can be rephrased as
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <MathBlock>
           $$“\rt&#123;0.1&#125;\te&#123;rate of change&#125; \,\,=\,\,
           &#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125; \over \te&#123;amount of time&#125;&#125;\rt&#123;0.1&#125;”$$
         </MathBlock>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           where “amount of change” is short for “amount of
           change on the{" "}
@@ -1286,14 +1285,14 @@ const Article = () => {
           three permutations of the slope formula into account
           gives us...
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Image src="/images/53.svg" />
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           ...these formulas, commonly useful in “applied”
           problems.
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -1303,15 +1302,15 @@ const Article = () => {
             The increase in height of the above balloon
             over a period of 5 seconds is
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$0.75\te&#123;m&#125;/\te&#123;s&#125; \times 5\te&#123;s&#125; = 3.75\te&#123;m&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             following the template
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\begin&#123;array&#125;&#123;c&#125;
             \rt&#123;0.08&#125;
@@ -1319,7 +1318,7 @@ const Article = () => {
             = \te&#123;(amount of change)&#125;\rt&#123;0.05&#125;
             \end&#123;array&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             found in the second line of the table. (Indeed,
             {" "}
@@ -1337,7 +1336,7 @@ const Article = () => {
             balloon's height.)
           </VerticalChunk>
         </Example>
-        <div class="spacer" />
+        <Pause />
         <Example>
           <VerticalChunk>
             <b>
@@ -1354,7 +1353,7 @@ const Article = () => {
             </NoBreak>
             {" "}is
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;$$
             <ImageRight
@@ -1362,23 +1361,23 @@ const Article = () => {
               offset_x="-6rem"
               src="/images/svg_ch2_ch_units_cloud.svg" />
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             following the template
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$\te&#123;“&#125;\rt&#123;0.1&#125;
             \te&#123;amount of time&#125; \,\,=\,\, \frac&#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125;&#125;&#123;\te&#123;rate of change&#125;&#125;
             \rt&#123;0.1&#125;\te&#123;”&#125;$$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             found in the third line of the table.
           </VerticalChunk>
         </Example>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Section divider={false}>
         <VerticalChunk>
           <b>
@@ -1387,7 +1386,7 @@ const Article = () => {
           {" "}
           Comparing
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplay>
           “the{" "}
           <NoBreak>
@@ -1398,11 +1397,11 @@ const Article = () => {
           </NoBreak>
           {" "}has dimensions of time”
         </CentralDisplay>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           with
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplay>
           “the{" "}
           <NoBreak>
@@ -1413,26 +1412,26 @@ const Article = () => {
           </NoBreak>
           {" "}has units of seconds”
         </CentralDisplay>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           one could easily be tricked into thinking that a
           “dimension” is the same thing as a “unit”. In
           fact, dimensions are broader categories, such as,
           namely,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           time
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           length
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           mass
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           each of which covers{" "}
           <i>
@@ -1442,37 +1441,37 @@ const Article = () => {
           For example, in the “time” dimension, one finds
           individual units of the type
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           years, seconds, minutes, hours, days
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (etc), while in
           the “length” dimension one finds
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           meters, kilometers, millimeters, yards, feet
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           (etc), and so on. (You can imagine some of the
           units found in the “mass” dimension, e.g..) On
           the other hand, dimensions can be multiplied and
           divided just like units. For example,
         </VerticalChunk>
-        <div class="spacer" />
+        <Pause />
         <CentralDisplayItalic>
           length over time
         </CentralDisplayItalic>
-        <div class="spacer" />
+        <Pause />
         <VerticalChunk>
           is another dimension, commonly known as...
           velocity!
         </VerticalChunk>
       </Section>
-      <div class="spacer" />
+      <Pause />
       <Exercises labels={["0", "1", "2", "3"]}>
         <Exercise exercise_number={0}>
           <VerticalChunk>
@@ -1491,12 +1490,12 @@ const Article = () => {
             </Math>
             .
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={0}>
             <VerticalChunk>
               This is true, as illustrated by the following pair of lines:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               class="relative w-fit"
               src="/images/55.svg">
@@ -1513,7 +1512,7 @@ const Article = () => {
                 offset_x="-7rem"
                 src="/images/57.svg" />
             </Image>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               In more detail, the two triangles are related
               by a{" "}
@@ -1523,7 +1522,6 @@ const Article = () => {
               {" "}rotation and so, likewise,
               are the lines defined by their hypotenuses!
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1552,7 +1550,7 @@ const Article = () => {
               </NoBreak>
               {" "}By a similar drawing:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               class="relative w-fit"
               src="/images/58.svg">
@@ -1569,7 +1567,7 @@ const Article = () => {
                 offset_x="-5rem"
                 src="/images/60.svg" />
             </Image>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               (If the axes are oriented the usual way then 
               the above drawing covers all the cases{" "}
@@ -1605,7 +1603,7 @@ const Article = () => {
             .
             (Hint: Start from the slope formula.)
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={1}>
             <VerticalChunk>
               A point{" "}
@@ -1619,7 +1617,7 @@ const Article = () => {
               </Math>
               {" "}if and only if
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ p = &#123;y - y_0 \over x - x_0&#125; $$
               <ImageLeft
@@ -1629,15 +1627,15 @@ const Article = () => {
                 img_position="top"
                 src="/images/62.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ \,\,&#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the slope of the line segment from
               {" "}
@@ -1667,11 +1665,11 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Unfortunately, the equation
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ p = &#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is not an entirely satisfactory answer,
               because the point{" "}
@@ -1681,11 +1679,11 @@ const Article = () => {
               {" "}itself
               does not satisfy the equation. (We find
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ p = &#123;0 \over 0&#125; $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               if we plug in{" "}
               <NoBreak>
@@ -1708,11 +1706,11 @@ const Article = () => {
             <VerticalChunk indent={true}>
               Instead, multiplying
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$p = &#123;y - y_0 \over x - x_0&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               on both sides by{" "}
               <NoBreak>
@@ -1724,11 +1722,11 @@ const Article = () => {
               {" "}we find the
               fraction-less equation
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$p(x-x_0) = y-y_0$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which is satisfied by the point{" "}
               <Math>
@@ -1739,7 +1737,7 @@ const Article = () => {
               This can be a final answer, and, pleasingly,
               has the form
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$\te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;$$
               <ImageRight
@@ -1747,11 +1745,10 @@ const Article = () => {
                 offset_x="2.5rem"
                 src="/images/svg_slope_times_run_equals_rise_cloud.svg" />
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which can also make it easy to remember!
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1760,19 +1757,19 @@ const Article = () => {
               {" "}
               The answer we gave is more often written
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y - y_0 = p(x - x_0)$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               with the two sides of the equation swapped, or
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y = p(x - x_0) + y_0$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               with{" "}
               <Math>
@@ -1793,19 +1790,19 @@ const Article = () => {
               </NoBreak>
               {" "}last)
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y = px + y_0 - px_0$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               which has the form
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y = ax + b$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               with{" "}
               <NoBreak>
@@ -1833,21 +1830,21 @@ const Article = () => {
             this graph (use the same time interval as the
             graph):
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Image
             class="pt-[22px] pb-[15px] pl-[90px]"
             src="/images/1.svg" />
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={2}>
             <VerticalChunk>
               Here is the “official” graph of the (vertical)
               velocity:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image
               class="pt-[21px] pb-[20px] pl-[46px]"
               src="/images/64.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               On each interval, the velocity is rate of
               change of the height, i.e., the{" "}
@@ -1858,11 +1855,11 @@ const Article = () => {
               the height. For example, the rate of change
               of the height is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$&#123;1\te&#123;m&#125; \over 1\te&#123;s&#125;&#125; = 1\te&#123;m&#125;/\te&#123;s&#125;$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               between{" "}
               <NoBreak>
@@ -1887,7 +1884,6 @@ const Article = () => {
               s
               for that time interval, etc.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1897,9 +1893,9 @@ const Article = () => {
               As explained in Chapter 3, an empty circle of
               this type
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/svg_empty_circle_alone.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               indicates a “missing” value. Specifically, in
               our case, the vertical velocity is{" "}
@@ -1911,7 +1907,6 @@ const Article = () => {
               corner. (Because the slope of the graph is not
               well-defined at such corners.)
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -1935,11 +1930,11 @@ const Article = () => {
               {" "}the
               slope is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ &#123;-2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = -\rt&#123;0.07&#125;4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               and similarly for the time interval from
               {" "}
@@ -1958,11 +1953,11 @@ const Article = () => {
               </NoBreak>
               {" "}the slope is
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ &#123;2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = 4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               because{" "}
               <NoBreak>
@@ -1997,11 +1992,11 @@ const Article = () => {
             Digressing on the second-to-last equation
             in the solution to Exercise 2, explain why
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <MathBlock>
             $$ y_0 - px_0 $$
           </MathBlock>
-          <div class="spacer" />
+          <Pause />
           <VerticalChunk>
             is the{" "}
             <NoBreak>
@@ -2022,14 +2017,14 @@ const Article = () => {
             {" "}by using a drawing
             and “rise equals slope times run”.
           </VerticalChunk>
-          <div class="spacer" />
+          <Pause />
           <Solution solution_number={3}>
             <VerticalChunk>
               E.g.:
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <Image src="/images/66.svg" />
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               The rise from the{" "}
               <NoBreak>
@@ -2053,11 +2048,11 @@ const Article = () => {
               {" "}as found by “rise equals slope times
               run”, implying that
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$y_0 - px_0$$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the{" "}
               <Math>
@@ -2065,7 +2060,6 @@ const Article = () => {
               </Math>
               -intercept.
             </VerticalChunk>
-            <div class="spacer" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2085,11 +2079,11 @@ const Article = () => {
               </NoBreak>
               {" "}But
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ px_0 $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               is the rise from the{" "}
               <NoBreak>
@@ -2119,11 +2113,11 @@ const Article = () => {
               {" "}is the run in all cases),
               making
             </VerticalChunk>
-            <div class="spacer" />
+            <Pause />
             <MathBlock>
               $$ y_0 - px_0 $$
             </MathBlock>
-            <div class="spacer" />
+            <Pause />
             <VerticalChunk>
               the{" "}
               <NoBreak>
