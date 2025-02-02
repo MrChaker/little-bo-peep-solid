@@ -10,9 +10,9 @@ type TableProps = ParentProps &
 
 const Table = (props: TableProps) => {
   return (
-    <div class={`slice`}>
-      <table class={twJoin("lines ", props.class)}>{props.children}</table>
-    </div>
+    <table class={props.class}>
+      {props.children}
+    </table>
   );
 };
 
