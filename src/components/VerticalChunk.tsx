@@ -6,12 +6,10 @@ import { useGlobalContext } from "../store/StoreProvider";
 const VerticalChunk = (
   props: ParentProps & SharedProps & { indent?: boolean },
 ) => {
-  let node_ref: HTMLDivElement | undefined;
   const { store,  } = useGlobalContext();
 
   return (
     <p
-      ref={node_ref}
       class={twJoin(
         "slice", 
         props.indent && "indent-10",

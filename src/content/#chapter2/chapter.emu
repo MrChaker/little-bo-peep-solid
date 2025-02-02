@@ -324,6 +324,7 @@
     lines pass through any given point!
 
 |> Section
+    handle rise
 
     *“Rise over Run”.*
     Some people remember the slope formula as “slope
@@ -334,7 +335,7 @@
             src images/rise-run.svg
             width 28px
         ”),
-    following such a picture:
+    &ensp;following such a picture:
 
     |> Image
         src images/44.svg

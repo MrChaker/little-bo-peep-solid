@@ -343,7 +343,7 @@
         by
         
         $$
-        g(x) = \sqrt{x - 1^{\color{white}*\!\!}}
+        g(x) = \sqrt{x - 1}
         $$
         
         then
@@ -1205,9 +1205,9 @@
 
         Rewrite
         
-        |> CustomBlock
-            style font-size:1.1em
-        
+        |> div
+            style font-size:1.1em;margin:1em 0em;
+
             $$
             \tag{A}(f \circ (g \circ h))(x)
             $$
@@ -1216,8 +1216,8 @@
         “definitional equation of function 
         composition”, which is namely
         
-        |> CustomBlock
-            style font-size:1.1em
+        |> div
+            style font-size:1.1em;margin:1em 0em;
 
             $$
             \tag{AA}(r \circ s)(x) = r(s(x))
@@ -1591,14 +1591,15 @@
             input but this is a actually subtle thing 
             that has to do with how functions are defined 
             “under the hood”. Specifically, mathematicians 
-            view functions as
+            view functions as 
             |> del
 
                 long
+            &ensp;
             |> del
 
                 lists of
-            sets of ordered pairs; for example—conceptual
+            &ensp;sets of ordered pairs; for example—conceptual
             cold water shock ahead—
 
             $$
@@ -1608,8 +1609,8 @@
             because VX-11/78A maps $0$ to $3.5$ and maps 
             $1$ to $2.5$. (The presence of an ordered pair
             
-            |> CustomBlock
-                style font-size:1.1em
+            |> div
+                style font-size:1.1em;margin:1em 0em;
 
                 $$
                 (a, b)
@@ -1632,7 +1633,7 @@
             |> del
 
                 list of
-            set of ordered pairs is equal, and, perforce, 
+            &ensp;set of ordered pairs is equal, and, perforce, 
             that the two functions are equal!!
 
     |> Exercise
