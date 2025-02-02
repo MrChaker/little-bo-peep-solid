@@ -144,124 +144,126 @@
     zero below), the following sign combinations
     arise (lines of slope zero not included):
 
-    |> Table
-        cols vec![120, 120, 120, 120]
-        lines true
+    |> table
+        class lines
+        style margin-top:0.5em;margin-bottom:0.5em;
+        |> colgroup
+            |> col
+                width 120
+            |> col
+                width 120
+            |> col
+                width 120
+            |> col
+                width 120
+        |> tbody
+            |> tr
+                |> td
 
-        |> tr
+                    $x_2 - x_1$
 
-            |> td
+                |> td
 
-                $x_2 - x_1$
+                    $y_2 - y_1$
 
-            |> td
+                |> td
 
-                $y_2 - y_1$
+                    |> img
+                        src images/33.svg
+                        width 50
+                        style padding-top:7px;padding-bottom:7px;
 
-            |> td
+                |> td
 
-                |> img
-                    src images/33.svg
-                    width 50
-                    style margin-top:7px; margin-bottom:7px;
+                    $$
+                    {y_2-y_1 \over x_2-x_1}
+                    $$
 
-            |> td
+            |> tr
+                |> td
 
-                $$
-                {y_2-y_1 \over x_2-x_1}
-                $$
+                    $+$
 
-        |> tr
+                |> td
 
-            |> td
+                    $+$
 
-                $+$
+                |> td
 
-            |> td
+                    |> img
+                        src images/34.svg
+                        style margin-top:7px;margin-bottom:7px;width:105px;
 
-                $+$
+                |> td
 
-            |> td
+                    $$
+                    {+ \over +} = \,+
+                    $$
 
-                |> img
-                    src images/34.svg
-                    width 105
-                    style margin-top:7px; margin-bottom:7px;
+            |> tr
+                |> td
 
-            |> td
+                    $-$
 
-                $$
-                {+ \over +} = \,+
-                $$
+                |> td
 
-        |> tr
+                    $-$
 
-            |> td
+                |> td
 
-                $-$
+                    |> img
+                        src images/35.svg
+                        width 105
+                        style margin-top:7px;margin-bottom:7px;
 
-            |> td
+                |> td
 
-                $-$
+                    $$
+                    {- \over -} = \,+
+                    $$
 
-            |> td
+            |> tr
+                |> td
 
-                |> img
-                    src images/35.svg
-                    width 105
-                    style margin-top:10px; margin-bottom:4px;
+                    $+$
 
-            |> td
+                |> td
 
-                $$
-                {- \over -} = \,+
-                $$
+                    $-$
 
-        |> tr
+                |> td
 
-            |> td
+                    |> img
+                        src images/36.svg
+                        width 105
+                        style margin-top:7px;margin-bottom:7px;
 
-                $+$
+                |> td
 
-            |> td
+                    $$
+                    {- \over +} = \,-
+                    $$
 
-                $-$
+            |> tr
+                |> td
 
-            |> td
+                    $-$
 
-                |> img
-                    src images/36.svg
-                    width 105
-                    style margin-top:10px; margin-bottom:4px;
+                |> td
 
-            |> td
+                    $+$
 
-                $$
-                {- \over +} = \,-
-                $$
+                |> td
+                    |> img
+                        src images/37.svg
+                        width 105
+                        style margin-top:7px;margin-bottom:7px;
 
-        |> tr
+                |> td
 
-            |> td
-
-                $-$
-
-            |> td
-
-                $+$
-
-            |> td
-
-                |> img
-                    src images/37.svg
-                    width 105
-                    style margin-top:10px; margin-bottom:4px;
-
-            |> td
-
-                $$
-                \frac{+}{-} = \,-
-                $$
+                    $$
+                    \frac{+}{-} = \,-
+                    $$
 
     In fact, we _should_ be able to algebraically
     verify that the slope formula gives the same
@@ -321,17 +323,18 @@
     undefined.) Indeed, infinitely many different
     lines pass through any given point!
 
-
 |> Section
 
     *“Rise over Run”.*
     Some people remember the slope formula as “slope
     equals rise over run” (i.e., “$\te{slope} =$
-    |> InlineImage
-        src images/rise-run.svg
-        width 28px
-        space_right true
-    ”), following such a picture:
+    |> span
+        class nobreak
+        |> InlineImage
+            src images/rise-run.svg
+            width 28px
+        ”),
+    following such a picture:
 
     |> Image
         src images/44.svg

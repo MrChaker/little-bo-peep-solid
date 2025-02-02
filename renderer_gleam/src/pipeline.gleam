@@ -1,3 +1,4 @@
+import desugarers/add_attributes
 import gleam/option.{Some, None}
 import desugarers/absorb_next_sibling_while.{absorb_next_sibling_while}
 import desugarers/add_before_tags_but_not_first_child_tags.{add_before_tags_but_not_first_child_tags}
@@ -123,7 +124,7 @@ pub fn our_pipeline() -> List(Pipe) {
           "WriterlyBlankLine", 
           "MathBlock", "Image", "Table", "Exercises", "Solution", "Example",
           "Section", "Exercise", "List", "Grid", "ImageLeft", "ImageRight",
-          "Pause", "ul", "li", "ol"
+          "Pause", "ul", "li", "ol", "table"
         ],
         ["MathBlock"],
       )
@@ -328,11 +329,14 @@ pub fn our_pipeline() -> List(Pipe) {
       #("Solution", "Pause", []),
       #("List", "Pause", []),
     ]),
-    generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
-    generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
-    remove_attributes(["counter", "handle", "type"]),
     remove_starting_and_ending_spaces(["VerticalChunk"]),
     remove_starting_and_ending_empty_lines(["VerticalChunk"]),
+    remove_attributes(["counter", "handle", "type"]),
+    // lbp_distribute_slices(),
+    // rename_tag(#("VerticalChunk", "p")),
+    // add_attributes.add_attributes([#("p", "class", "slice")]),
+    generate_lbp_table_of_contents(#("PanelAuthorSuppliedContent", "PanelTitle", "PanelItem", None)),
+    generate_lbp_table_of_contents(#("TOCAuthorSuppliedContent", "TOCTitle", "TOCItem", Some("Spacer"))),
     // unwrap_tags(["VerticalChunk"]),
     // insert_bookend_tags([#("i", "3p", "3p")]),
     // fold_tags_into_text([#("3p", "   ")]),
@@ -358,7 +362,5 @@ pub fn our_pipeline() -> List(Pipe) {
     //   #("ClosingAsterisk", "*"),
     // ]),
     // concatenate_text_nodes(),
-    // rename_tag(#("VerticalChunk", "p")),
-    // lbp_distribute_slices(),
   ]
 }

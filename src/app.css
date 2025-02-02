@@ -269,12 +269,12 @@ span .MathJax_SVG {
 table.lines tr td {
   text-align: center;
   border-left: thin solid black;
-  }
-table.lines tr td > * {
-  /* margin:1em; */
 }
 table.lines tr {
   border-bottom: thin solid black;
+}
+table.lines img {
+  display: inline-block;
 }
 table.lines tr td:first-child {
   border-left: none;

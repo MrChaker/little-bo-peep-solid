@@ -7,28 +7,10 @@ const VerticalChunk = (
   props: ParentProps & SharedProps & { indent?: boolean },
 ) => {
   let node_ref: HTMLDivElement | undefined;
-  const { store, set_store } = useGlobalContext();
+  const { store,  } = useGlobalContext();
 
-  // createEffect(() => {
-  //   let toggle = () => {
-  //     set_store({
-  //       ...store,
-  //       burger_background_on:
-  //         window.innerWidth - (node_ref?.getBoundingClientRect().right || 0) >
-  //         55 - 16,
-  //     });
-  //   };
-  //   toggle();
-  //   window.addEventListener("resize", toggle);
-  //   window.addEventListener("scroll", toggle);
-
-  //   onCleanup(() => {
-  //     window.removeEventListener("resize", toggle);
-  //     window.removeEventListener("scroll", toggle);
-  //   });
-  // });
   return (
-    <div
+    <p
       ref={node_ref}
       class={twJoin(
         "slice", 
@@ -36,9 +18,10 @@ const VerticalChunk = (
         props.class,
         store.show_areas && "test-bg"
       )}
-      style={props.style}>
-      <p>{props.children}</p>
-    </div>
+      style={props.style}
+    >
+      {props.children}
+    </p>
   );
 };
 

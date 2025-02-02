@@ -347,145 +347,152 @@ const Article = () => {
           arise (lines of slope zero not included):
         </VerticalChunk>
         <Pause />
-        <Table
-          lines={true}
-          cols={[120, 120, 120, 120]}>
-          <tr>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $x_2 - x_1$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $y_2 - y_1$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <img
-                style="margin-top:7px; margin-bottom:7px;"
-                width={50}
-                src="/images/33.svg" />
-            </td>
-            <td>
-              <MathBlock>
-                $$&#123;y_2-y_1 \over x_2-x_1&#125;$$
-              </MathBlock>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $+$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $+$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <img
-                style="margin-top:7px; margin-bottom:7px;"
-                width={105}
-                src="/images/34.svg" />
-            </td>
-            <td>
-              <MathBlock>
-                $$&#123;+ \over +&#125; = \,+$$
-              </MathBlock>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $-$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $-$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <img
-                style="margin-top:10px; margin-bottom:4px;"
-                width={105}
-                src="/images/35.svg" />
-            </td>
-            <td>
-              <MathBlock>
-                $$&#123;- \over -&#125; = \,+$$
-              </MathBlock>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $+$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $-$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <img
-                style="margin-top:10px; margin-bottom:4px;"
-                width={105}
-                src="/images/36.svg" />
-            </td>
-            <td>
-              <MathBlock>
-                $$&#123;- \over +&#125; = \,-$$
-              </MathBlock>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $-$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <VerticalChunk>
-                <Math>
-                  $+$
-                </Math>
-              </VerticalChunk>
-            </td>
-            <td>
-              <img
-                style="margin-top:10px; margin-bottom:4px;"
-                width={105}
-                src="/images/37.svg" />
-            </td>
-            <td>
-              <MathBlock>
-                $$\frac&#123;+&#125;&#123;-&#125; = \,-$$
-              </MathBlock>
-            </td>
-          </tr>
-        </Table>
+        <table
+          style="margin-top:0.5em;margin-bottom:0.5em;"
+          class="lines">
+          <colgroup>
+            <col width={120} />
+            <col width={120} />
+            <col width={120} />
+            <col width={120} />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $x_2 - x_1$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $y_2 - y_1$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <img
+                  style="padding-top:7px;padding-bottom:7px;"
+                  width={50}
+                  src="/images/33.svg" />
+              </td>
+              <td>
+                <MathBlock>
+                  $$&#123;y_2-y_1 \over x_2-x_1&#125;$$
+                </MathBlock>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $+$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $+$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <img
+                  style="margin-top:7px;margin-bottom:7px;width:105px;"
+                  src="/images/34.svg" />
+              </td>
+              <td>
+                <MathBlock>
+                  $$&#123;+ \over +&#125; = \,+$$
+                </MathBlock>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $-$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $-$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <img
+                  style="margin-top:7px;margin-bottom:7px;"
+                  width={105}
+                  src="/images/35.svg" />
+              </td>
+              <td>
+                <MathBlock>
+                  $$&#123;- \over -&#125; = \,+$$
+                </MathBlock>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $+$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $-$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <img
+                  style="margin-top:7px;margin-bottom:7px;"
+                  width={105}
+                  src="/images/36.svg" />
+              </td>
+              <td>
+                <MathBlock>
+                  $$&#123;- \over +&#125; = \,-$$
+                </MathBlock>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $-$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <VerticalChunk>
+                  <Math>
+                    $+$
+                  </Math>
+                </VerticalChunk>
+              </td>
+              <td>
+                <img
+                  style="margin-top:7px;margin-bottom:7px;"
+                  width={105}
+                  src="/images/37.svg" />
+              </td>
+              <td>
+                <MathBlock>
+                  $$\frac&#123;+&#125;&#123;-&#125; = \,-$$
+                </MathBlock>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <Pause />
         <VerticalChunk>
           In fact, we{" "}
@@ -618,11 +625,15 @@ const Article = () => {
             $\te&#123;slope&#125; =$
           </Math>
           {" "}{" "}
-          <InlineImage
-            space_right={true}
-            width="28px"
-            src="/images/rise-run.svg" />
-          ”), following such a picture:
+          <span class="nobreak">
+            <VerticalChunk>
+              <InlineImage
+                width="28px"
+                src="/images/rise-run.svg" />
+              ”),
+            </VerticalChunk>
+          </span>
+          following such a picture:
         </VerticalChunk>
         <Pause />
         <Image
