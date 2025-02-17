@@ -18,7 +18,7 @@ const Article = () => {
   return (
     <Chapter
       number={5}
-      title="The Trigonometric Functions">
+      title="Cos and Sin">
       <Section>
         <VerticalChunk>
           <b>

@@ -10,6 +10,7 @@ const TOCItem = (props: {
   let { store, } = useGlobalContext();
 
   return (
+    <>
     <a
       href={`/article/${props.href}`}
       class="text-column flex items-baseline justify-between !leading-9 lg:!leading-10 !text-3xl"
@@ -20,8 +21,23 @@ const TOCItem = (props: {
       <span class="sm:hidden !w-auto">
         {props.on_mobile == "" ? props.label : props.on_mobile}
       </span>
-      <span class="hidden sm:block !w-auto">{props.label}</span>
+      <span class="hidden sm:block w-fit text-right">{props.label}</span>
     </a>
+    {/* {
+      (props.article_type === 5) ? (
+        <a
+          href={`/article/${props.href}`}
+          class="text-column flex items-baseline justify-between !leading-9 lg:!leading-10 !text-3xl"
+          style={`width:${store.innerWidth > MOBILE_MAX_WIDTH ? DESKTOP_COLUMN_WIDTH : store.innerWidth}px;`}
+        >
+          <span class="!w-auto"></span>
+          <span class="w-fit">Functions</span>
+        </a>
+      ) : (
+        <></>
+      )
+    } */}
+    </>
   );
 };
 

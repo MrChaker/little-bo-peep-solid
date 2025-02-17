@@ -30,8 +30,8 @@ const TOCAuthorSuppliedContent = () => {
             href="chapter4" />
           <TOCItem
             article_type={5}
-            label="The Trigonometric Functions"
-            on_mobile="The Trigonometric Functions"
+            label="Cos and Sin"
+            on_mobile="Cos and Sin"
             href="chapter5" />
         </ul>
       </div>
