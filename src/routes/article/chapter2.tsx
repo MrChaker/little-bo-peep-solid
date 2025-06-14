@@ -15,7 +15,8 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
+import SectionsBreadcrumbs from "~/components/SectionsBreadcrumbs";
+import  { BreadcrumbItem } from "~/components/SectionsBreadcrumbsContainer";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
@@ -105,7 +106,7 @@ const Article = () => {
         <a
           class="prev_page"
           href="/article/chapter1" />
-        <Section id="section-1">
+        <Section id="section-::++SectionCounter">
           <VerticalChunk>
             <b>
               Definition.
@@ -160,7 +161,7 @@ const Article = () => {
           <VerticalChunk>
             ...more elegant!
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             For example, the line below has slope 1, because
             it goes up by{" "}
             <Math>
@@ -208,7 +209,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="section-2">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Measuring Slope.
@@ -241,7 +242,7 @@ const Rest = () => {
           horizontal change gives the per-horizontal-unit
           vertical change.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           More precisely, if
         </VerticalChunk>
         <Pause />
@@ -298,9 +299,9 @@ const Rest = () => {
           te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
           $$
           <ImageRight
-            offset_x="3em"
-            offset_y="-0.7em"
             src="/images/32.svg"
+            offset_y="-0.7em"
+            offset_x="3em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -315,7 +316,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 1.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             A line that passes through the points
@@ -390,7 +391,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-3">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Sign Combinations.
@@ -425,7 +426,7 @@ const Rest = () => {
           definition, is a nonnegative number, while a
           difference carries no such restriction.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           In particular, since
         </VerticalChunk>
         <Pause />
@@ -448,8 +449,8 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <Table
-          style="margin-top:0.5em;margin-bottom:0.5em;"
-          class="lines">
+          class="lines"
+          style="margin-top:0.5em;margin-bottom:0.5em;">
           <colgroup>
             <col width={120} />
             <col width={120} />
@@ -470,9 +471,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="padding-top:7px;padding-bottom:7px;"
+                  src="/images/33.svg"
                   width={50}
-                  src="/images/33.svg" />
+                  style="padding-top:7px;padding-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -495,8 +496,8 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;width:105px;"
-                  src="/images/34.svg" />
+                  src="/images/34.svg"
+                  style="margin-top:7px;margin-bottom:7px;width:105px;" />
               </td>
               <td>
                 <MathBlock>
@@ -519,9 +520,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/35.svg"
                   width={105}
-                  src="/images/35.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -544,9 +545,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/36.svg"
                   width={105}
-                  src="/images/36.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -569,9 +570,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/37.svg"
                   width={105}
-                  src="/images/37.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -602,9 +603,9 @@ const Rest = () => {
           {" "}swap
           places, or, namely, to show that the fractions
           <ImageRight
-            offset_x="-0.5em"
+            src="/images/svg_ch2_ch_swap_cloud.svg"
             line={3}
-            src="/images/svg_ch2_ch_swap_cloud.svg" />
+            offset_x="-0.5em" />
         </VerticalChunk>
         <Pause />
         <MathBlock>
@@ -618,9 +619,9 @@ const Rest = () => {
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125; $$
           <ImageLeft
-            offset_y="-60px"
-            offset_x="2.5em"
             src="/images/39.svg"
+            offset_x="2.5em"
+            offset_y="-60px"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -638,7 +639,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-4">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Pathological Cases.
@@ -707,7 +708,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-5">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             “Rise over Run”.
@@ -721,10 +722,11 @@ const Rest = () => {
               $\te&#123;slope&#125; =$
             </Math>
           </NoBreak>
+          {" "}{" "}
           <span class="nobreak">
             <InlineImage
-              width="28px"
-              src="/images/rise-run.svg" />
+              src="/images/rise-run.svg"
+              width="28px" />
             ”),
           </span>
           &ensp;following such a picture:
@@ -764,7 +766,7 @@ const Rest = () => {
           {" "}
           that appear in the slope formula.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           (In order not to discriminate, maybe we should
           also include this picture:
         </VerticalChunk>
@@ -799,6 +801,8 @@ const Rest = () => {
             </Math>
             ,
           </NoBreak>
+          {" "}
+          {" "}
           <Math>
             $\Delta y$
           </Math>
@@ -838,7 +842,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-6">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Solving for “rise” and “run”.
@@ -885,7 +889,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-7">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Slopes and Line Equations.
@@ -952,12 +956,14 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <NoBreak>
             <Math>
               $y$
             </Math>
             -intercept
           </NoBreak>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -982,12 +988,14 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <NoBreak>
             <Math>
               $y$
             </Math>
             -intercept
           </NoBreak>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -1074,6 +1082,7 @@ const Rest = () => {
             </Math>
             —
           </NoBreak>
+          {" "}{" "}
           <Math>
             $a$
           </Math>
@@ -1089,7 +1098,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 2.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             The equation
@@ -1139,9 +1148,9 @@ const Rest = () => {
           {" "}is a constant,
           similarly to the more familiar equation
           <ImageLeft
-            offset_x="1em"
+            src="/images/svg_ch2_ch_vertical_line_equation.svg"
             offset_y="-6em"
-            src="/images/svg_ch2_ch_vertical_line_equation.svg" />
+            offset_x="1em" />
         </VerticalChunk>
         <Pause />
         <MathBlock>
@@ -1156,7 +1165,7 @@ const Rest = () => {
           {" "}is a
           constant.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           One should also bear in mind that an equation can
           define a line without having either of the forms
           {" "}
@@ -1211,13 +1220,13 @@ const Rest = () => {
             .
           </NoBreak>
           <ImageRight
-            offset_x="2rem"
+            src="/images/svg_3_plus_minus_one_times_x_cloud.svg"
             line={1}
-            src="/images/svg_3_plus_minus_one_times_x_cloud.svg" />
+            offset_x="2rem" />
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-8">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Slopes and Units.
@@ -1261,7 +1270,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           For example, if the units on the{" "}
           <Math>
             $y$
@@ -1372,7 +1381,7 @@ const Rest = () => {
           {" "}
           or km/hour, etc, depends on the exact units involved.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Terminology-wise, slopes are often known as
         </VerticalChunk>
         <Pause />
@@ -1430,7 +1439,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 3.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             The increase in height of the above balloon
@@ -1466,6 +1475,7 @@ const Rest = () => {
               </Math>
               m
             </NoBreak>
+            {" "}{" "}
             <NoBreak>
               <Math>
                 $/$
@@ -1480,7 +1490,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 4.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             The amount of time required
@@ -1499,9 +1509,9 @@ const Rest = () => {
             frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
             $$
             <ImageRight
-              style="width:930px"
-              offset_x="-6rem"
               src="/images/svg_ch2_ch_units_cloud.svg"
+              offset_x="-6rem"
+              style="width:930px"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
@@ -1524,8 +1534,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-        id="section-9"
-        divider={false}>
+        divider={false}
+        id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Postscript: Units vs Dimensions.
@@ -1620,11 +1630,11 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 1.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               True or false: Lines of slope{" "}
@@ -1641,23 +1651,23 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={1}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               This is true, as illustrated by the following
               pair of lines:
             </VerticalChunk>
             <Pause />
             <Image
-              class="relative w-fit"
-              src="/images/55.svg">
+              src="/images/55.svg"
+              class="relative w-fit">
               <ImageRight
-                offset_x="-1.3rem"
+                src="/images/56.svg"
                 offset_y="5rem"
-                src="/images/56.svg" />
+                offset_x="-1.3rem" />
               <ImageLeft
-                offset_y="8rem"
+                src="/images/57.svg"
                 offset_x="-8rem"
-                src="/images/57.svg" />
+                offset_y="8rem" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -1673,7 +1683,7 @@ const Rest = () => {
             <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 1.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 More generally, a line of slope{" "}
@@ -1700,27 +1710,27 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
-                class="relative w-fit"
-                src="/images/58.svg">
+                src="/images/58.svg"
+                class="relative w-fit">
                 <ImageRight
-                  offset_x="-10%"
+                  src="/images/59.svg"
                   offset_y="27%"
-                  src="/images/59.svg" />
+                  offset_x="-10%" />
                 <ImageLeft
-                  offset_y="33%"
+                  src="/images/60.svg"
                   offset_x="-24%"
-                  src="/images/60.svg" />
+                  offset_y="33%" />
               </Image>
               <Pause />
               <StarDivider />
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
-          <ExerciseStatement id="_6_9597">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 2.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Find the general equation of a line of slope
@@ -1739,7 +1749,7 @@ const Rest = () => {
               (Hint: Start from the slope formula.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={2}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               A point{" "}
               <Math>
@@ -1756,9 +1766,9 @@ const Rest = () => {
             <MathBlock>
               $$ p = &#123;y - y_0 \over x - x_0&#125; $$
               <ImageLeft
-                offset_y="103px"
-                offset_x="7.5em"
                 src="/images/svg_ch2_ex_x0_y0_line_equation_cloud.svg"
+                offset_x="7.5em"
+                offset_y="103px"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -1796,7 +1806,7 @@ const Rest = () => {
               {" "}to be on
               the line!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Unfortunately, the equation
             </VerticalChunk>
             <Pause />
@@ -1837,7 +1847,7 @@ const Rest = () => {
               not a valid equality because the right-hand
               side is an undefined quantity.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Instead, multiplying
             </VerticalChunk>
             <Pause />
@@ -1881,9 +1891,9 @@ const Rest = () => {
               te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
               $$
               <ImageRight
-                offset_y="-0.5rem"
-                offset_x="2.5rem"
                 src="/images/svg_slope_times_run_equals_rise_cloud.svg"
+                offset_x="2.5rem"
+                offset_y="-0.5rem"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -1974,11 +1984,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={3}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 3.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Plot the vertical velocity of
@@ -1992,7 +2002,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/1.svg" />
           </ExerciseStatement>
-          <Solution solution_number={3}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Here is the “official” graph of the (vertical)
               velocity:
@@ -2051,13 +2061,7 @@ const Rest = () => {
                 Note 1.
               </i>
               {" "}
-              As explained in{" "}
-              <a
-                href="/article/chapter3?id=_15_5053"
-                class="handle-out-of-chapter-link">
-                Chapter 3
-              </a>
-              , an empty circle of
+              As explained in Chapter &gt;&gt;FunctionsCh, an empty circle of
               this type
             </VerticalChunk>
             <Pause />
@@ -2152,21 +2156,15 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={4}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 4.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Digressing on the second-to-last equation
-              in the solution to{" "}
-              <InChapterLink
-                href="/article/chapter2?id=_6_9597"
-                class="handle-in-chapter-link">
-                Exercise 2
-              </InChapterLink>
-              , explain why
+              in the solution to Exercise &gt;&gt;y0LineEquation, explain why
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -2196,7 +2194,7 @@ const Rest = () => {
               and “rise equals slope times run”.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={4}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               E.g.:
             </VerticalChunk>

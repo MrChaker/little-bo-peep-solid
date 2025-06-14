@@ -8,6 +8,8 @@ import "./app.css";
 import { StoreProvider } from "./store/StoreProvider";
 import HamburgerButton from "./components/HamburgerButton";
 import HamburgerPanel from "./components/HamburgerPanel";
+import SectionsBreadcrumbs from "./components/SectionsBreadcrumbsContainer";
+import SectionsBreadcrumbsContainer from "./components/SectionsBreadcrumbsContainer";
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
             <>
               <HamburgerButton />
               <HamburgerPanel />
+              <SectionsBreadcrumbsContainer />
               <Container>
                 <Suspense>{props.children}</Suspense>
               </Container>

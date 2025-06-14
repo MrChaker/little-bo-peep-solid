@@ -15,7 +15,8 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
+import SectionsBreadcrumbs from "~/components/SectionsBreadcrumbs";
+import  { BreadcrumbItem } from "~/components/SectionsBreadcrumbsContainer";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
@@ -121,7 +122,7 @@ const Article = () => {
           href="/article/chapter3" />
         <Image src="/images/svg_ch4_ch_polaroids.svg" />
         <Pause />
-        <Section id="section-1">
+        <Section id="section-::++SectionCounter">
           <VerticalChunk>
             <b>
               Definitions.
@@ -291,7 +292,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="section-2">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Vocabulary.
@@ -323,6 +324,8 @@ const Rest = () => {
             </Math>
             ,
           </NoBreak>
+          {" "}
+          {" "}
           <NoBreak>
             <Math>
               $a &lt; b$
@@ -341,6 +344,7 @@ const Rest = () => {
           <Math>
             $[a,b]$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -363,6 +367,7 @@ const Rest = () => {
           <Math>
             $a$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -376,7 +381,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-3">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Sketching a Derivative.
@@ -397,15 +402,15 @@ const Rest = () => {
         <Pause />
         <Image src="/images/svg_ch4_ch_curve_to_sketch_sketch.svg">
           <ImageRight
-            offset_x="-15%"
+            src="/images/svg_ch4_ch_curve_to_sketch_cloud.svg"
             offset_y="36%"
-            src="/images/svg_ch4_ch_curve_to_sketch_cloud.svg" />
+            offset_x="-15%" />
         </Image>
         <Pause />
         <VerticalChunk>
           ...voilà!
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           An alternate approach is to start by
           determining intervals on which the derivative
           is positive and negative, and then to
@@ -424,7 +429,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-4">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Derivative of a constant function.
@@ -477,8 +482,8 @@ const Rest = () => {
           (x \ra B)' = (x \ra 0)
           $$
           <ImageLeft
-            offset_x="8em"
             src="/images/svg_ch4_ch_constant_derivative_cloud.svg"
+            offset_x="8em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -500,7 +505,7 @@ const Rest = () => {
           </NoBreak>
           {" "}when you look up (down?) at the graph.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           If we refer to
         </VerticalChunk>
         <Pause />
@@ -540,7 +545,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-5">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Derivative of an affine function.
@@ -591,8 +596,8 @@ const Rest = () => {
           (x \ra Ax + B)' = (x \ra A)
           $$
           <ImageLeft
-            offset_x="7em"
             src="/images/svg_ch4_ch_affine_derivative_cloud.svg"
+            offset_x="7em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -640,7 +645,7 @@ const Rest = () => {
           {" "}effects a vertical translation, which
           does not change the slope of anything.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           In words:
         </VerticalChunk>
         <Pause />
@@ -691,7 +696,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 1.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             One has
@@ -734,7 +739,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 2.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             One has
@@ -775,7 +780,7 @@ const Rest = () => {
         </Example>
       </Section>
       <Pause />
-      <Section id="section-6">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Units of the Derivative.
@@ -831,7 +836,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           For example, if the “before” graph has units
           of...
         </VerticalChunk>
@@ -854,8 +859,8 @@ const Rest = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
           <ImageRight
-            offset_y="-0.6em"
-            src="/images/svg_ch4_ch_units1_cloud.svg" />
+            src="/images/svg_ch4_ch_units1_cloud.svg"
+            offset_y="-0.6em" />
         </VerticalChunk>
         <TextParent style="margin-top:1em;margin-bottom:1em;">
           <ul style="list-style-type:disc;">
@@ -895,8 +900,8 @@ const Rest = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
           <ImageLeft
-            offset_y="0.6em"
-            src="/images/svg_ch4_ch_units2_cloud.svg" />
+            src="/images/svg_ch4_ch_units2_cloud.svg"
+            offset_y="0.6em" />
         </VerticalChunk>
         <TextParent style="margin-top:1em;margin-bottom:1em;">
           <ul style="list-style-type:disc;">
@@ -917,7 +922,7 @@ const Rest = () => {
         <VerticalChunk>
           ...and so on.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Units might additionally prompt us to refer
           to{" "}
           <Math>
@@ -960,7 +965,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-7">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             The second derivative.
@@ -1087,7 +1092,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 3.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             We have
@@ -1098,9 +1103,9 @@ const Rest = () => {
             (x \ra 3x + 1)'' = (x \ra 0)
             $$
             <ImageRight
-              offset_y="0.1em"
-              offset_x="6em"
               src="/images/svg_ch4_3x_plus_one_and_second_cloud.svg"
+              offset_x="6em"
+              offset_y="0.1em"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
         </Example>
@@ -1143,7 +1148,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 4.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             More generally,
@@ -1175,7 +1180,7 @@ const Rest = () => {
         <StarDivider style="margin-top:1.5em;margin-bottom:0em" />
       </Section>
       <Pause />
-      <Section id="section-8">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Geometric interpretation of the second derivative.
@@ -1218,7 +1223,7 @@ const Rest = () => {
         <VerticalChunk>
           slope gives curves a “bending downward” shape!
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           To emphasize, if the second derivative is some
         </VerticalChunk>
         <Pause />
@@ -1254,7 +1259,7 @@ const Rest = () => {
           {" "}for that
           matter).
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Likewise, if the second derivative is some
         </VerticalChunk>
         <Pause />
@@ -1272,7 +1277,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-9">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Vocabulary #1.
@@ -1322,7 +1327,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 5.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             The fact that
@@ -1358,7 +1363,7 @@ const Rest = () => {
         </Example>
       </Section>
       <Pause />
-      <Section id="section-10">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             The Second Derivative of Position.
@@ -1389,7 +1394,7 @@ const Rest = () => {
           finally, the second derivative...
           <ImageLeft src="/images/svg_ch4_ch_position_by_time_der_cloud.svg" />
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           ...describes
         </VerticalChunk>
         <Pause />
@@ -1408,7 +1413,7 @@ const Rest = () => {
         <VerticalChunk>
           as a function of time.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Note that the units on the{" "}
           <Math>
             $y$
@@ -1474,7 +1479,7 @@ const Rest = () => {
           is defined as “the increase in velocity per unit
           time”.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           To summarize:
         </VerticalChunk>
         <Pause />
@@ -1555,7 +1560,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 6.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             Over a period of{" "}
@@ -1584,8 +1589,8 @@ const Rest = () => {
             (2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;) \times\, (10\te&#123;s&#125;) = 20&#123;\te&#123;m&#125;/\te&#123;s&#125;&#125;
             $$
             <ImageRight
-              offset_x="5em"
               src="/images/svg_ch4_ch_units_cancellation_cloud.svg"
+              offset_x="5em"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
@@ -1607,7 +1612,7 @@ const Rest = () => {
         </Example>
       </Section>
       <Pause />
-      <Section id="section-11">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             The Jerk.
@@ -1659,7 +1664,7 @@ const Rest = () => {
           </i>
           .
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           The word “jerk” is aptly chosen,
           too, considering that
         </VerticalChunk>
@@ -1793,13 +1798,8 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <VerticalChunk>
-          of functions already appear in{" "}
-          <a
-            href="/article/chapter3?id=_13_1624"
-            class="handle-out-of-chapter-link">
-            Exercise 18 of Chapter 3
-          </a>
-          , also. (On the other hand, the
+          of functions already appear in Exercise &gt;&gt;functionOperationsEx
+          of Chapter &gt;&gt;FunctionsCh, also. (On the other hand, the
           quotient (i.e.{" "}
           <NoBreak>
             <Math>
@@ -1826,11 +1826,11 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
-          <ExerciseStatement id="_16_6541">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 1.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Sketch the derivative of a function with the
@@ -1848,7 +1848,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_slope_one_half_see_saw.svg" />
           </ExerciseStatement>
-          <Solution solution_number={1}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               That would be:
             </VerticalChunk>
@@ -1884,11 +1884,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 2.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Would the derivative of
@@ -1913,7 +1913,7 @@ const Rest = () => {
               it depend on which side of 0 you are?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={2}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The graph of{" "}
               <Math>
@@ -1938,11 +1938,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={3}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 3.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Sketch the
@@ -1953,16 +1953,10 @@ const Rest = () => {
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
-              derivative of the graph in{" "}
-              <InChapterLink
-                href="/article/chapter4?id=_16_6541"
-                class="handle-in-chapter-link">
-                Exercise 1
-              </InChapterLink>
-              .
+              derivative of the graph in Exercise &gt;&gt;seeSaw.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={3}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The second derivative is zero wherever the
               first derivative is flat, and is undefined
@@ -1991,20 +1985,14 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={4}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 4.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
-              If we pretend that the graph of{" "}
-              <InChapterLink
-                href="/article/chapter4?id=_16_6541"
-                class="handle-in-chapter-link">
-                Exercise 1
-              </InChapterLink>
-              {" "}
+              If we pretend that the graph of Exercise &gt;&gt;seeSaw
               depicts the
               <del>
                 distance that a car has traveled
@@ -2031,7 +2019,7 @@ const Rest = () => {
               and second derivatives?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={4}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The units on the{" "}
               <Math>
@@ -2065,7 +2053,7 @@ const Rest = () => {
             <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 1.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 The second and third functions are respectively
@@ -2077,7 +2065,7 @@ const Rest = () => {
             <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 2.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 In a more physically realistic scenario the corners
@@ -2094,11 +2082,11 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={5}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 5.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Is the following equation correct, incorrect,
@@ -2111,7 +2099,7 @@ const Rest = () => {
               $$
             </MathBlock>
           </ExerciseStatement>
-          <Solution solution_number={5}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The equation makes sense and is true.
               Syntactically,
@@ -2291,11 +2279,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={6}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 6.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Complete the missing units for each strip
@@ -2304,7 +2292,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_missing_units.svg" />
           </ExerciseStatement>
-          <Solution solution_number={6}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The pattern to respect is that, each time
               you take a derivative, the units on the{" "}
@@ -2417,11 +2405,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={7}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 7.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Among the functions below, which is the
@@ -2453,7 +2441,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_ex_position_by_time_find_the_order.svg" />
           </ExerciseStatement>
-          <Solution solution_number={7}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The graphs are already in the right order:
               if{" "}
@@ -2538,11 +2526,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={8}>
-          <ExerciseStatement id="_17_6609">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 8.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Given these graphs...
@@ -2576,7 +2564,7 @@ const Rest = () => {
               help!)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={8}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               To start with, the slope of{" "}
               <Math>
@@ -2698,11 +2686,11 @@ const Rest = () => {
             <Image src="/images/svg_ch4_sketch_the_middle_a_sol5.svg" />
           </Solution>
         </Exercise>
-        <Exercise exercise_number={9}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 9.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Given these graphs...
@@ -2719,16 +2707,10 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}analogously to
-              {" "}
-              <InChapterLink
-                href="/article/chapter4?id=_17_6609"
-                class="handle-in-chapter-link">
-                Exercise 8
-              </InChapterLink>
-              .
+              Exercise &gt;&gt;funnyExerciseG.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={9}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Firstly, the graph of{" "}
               <Math>
@@ -2962,6 +2944,8 @@ const Rest = () => {
                 </Math>
                 ,
               </NoBreak>
+              {" "}
+              {" "}
               <NoBreak>
                 <Math>
                   $-1.6$
@@ -2988,11 +2972,11 @@ const Rest = () => {
             <Image src="/images/svg_ch4_sketch_the_middle_b_sol12.svg" />
           </Solution>
         </Exercise>
-        <Exercise exercise_number={10}>
-          <ExerciseStatement id="_18_2905">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 10.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If you scale the graph of a function{" "}
@@ -3025,7 +3009,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={10}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Yes, this is the case. For a joke way
               of seeing it, here is a graph of a
@@ -3082,11 +3066,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={11}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 11.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Where is the rate of change of the function
@@ -3104,7 +3088,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_narrow_and_less_narrow_bends.svg" />
           </ExerciseStatement>
-          <Solution solution_number={11}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The rate of change is the slope, which
               is greatest along the right-hand portion
@@ -3136,11 +3120,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={12}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 12.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               In the following graph, which curve might
@@ -3149,7 +3133,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_cosine_curves.svg" />
           </ExerciseStatement>
-          <Solution solution_number={12}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               As it happens—and by the exact method
               that we used to generate these curves—the
@@ -3247,7 +3231,7 @@ const Rest = () => {
               {" "}
               two-dimensional.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Here's another point of view: just like
             </VerticalChunk>
             <Pause />
@@ -3298,7 +3282,7 @@ const Rest = () => {
               and likewise for the second coordinate—two
               coordinates, two rates of change!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Geometrically, if we use the{" "}
               <NoBreak>
                 <Math>
@@ -3404,7 +3388,7 @@ const Rest = () => {
               the length of the arrow is, therefore,
               the speed!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Now consider not one but four particles,
               going around a unit circle in clockwise
               fashion, 90° apart in phase, at unit
@@ -3475,7 +3459,7 @@ const Rest = () => {
               {" "}are brushed
               in the direction of travel.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (Nb: When we draw a vector as an arrow
               we mean that the first coordinate of the
               vector is equal to the horizontal
@@ -3486,7 +3470,7 @@ const Rest = () => {
               arrow to the head of the arrow.)
               <ImageRight src="/images/svg_ch4_cosine_curves_vector_illustration_cloud.svg" />
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Due to the 90° rotations and uniform
               lengths of{" "}
               <NoBreak>
@@ -3570,7 +3554,7 @@ const Rest = () => {
                 -coordinate”.
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Concretely, if you graph the
               {" "}
               <NoBreak>
@@ -3711,11 +3695,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={13}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 13.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Apply the definition
@@ -3751,6 +3735,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <CentralDisplayItalic>
+              {" "}{" "}
               <NoBreak>
                 (
                 <Math>
@@ -3768,6 +3753,7 @@ const Rest = () => {
               <Math>
                 $h$
               </Math>
+              {" "}{" "}
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -3775,6 +3761,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <CentralDisplayItalic>
+              {" "}{" "}
               <Math>
                 $f$
               </Math>
@@ -3792,6 +3779,7 @@ const Rest = () => {
                 </Math>
                 )
               </NoBreak>
+              {" "}{" "}
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -3804,7 +3792,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={13}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               It is necessary and sufficient to show that
             </VerticalChunk>
@@ -3860,7 +3848,7 @@ const Rest = () => {
               same output under either function. See Note 6,
               Exercise 9, Chapter 3.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Starting up,
             </VerticalChunk>
             <Pause />
@@ -4026,11 +4014,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={14}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 14.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Prove that
@@ -4092,7 +4080,7 @@ const Rest = () => {
               corresponding fact for numbers, namely.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={14}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Given an arbitrary{" "}
               <Math>
@@ -4202,7 +4190,7 @@ const Rest = () => {
             <VerticalChunk>
               by definition of function equality.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For the second half we have, similarly,
             </VerticalChunk>
             <Pause />
@@ -4274,11 +4262,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={15}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 15.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               A rat is running a fundraising race. The function
@@ -4305,6 +4293,7 @@ const Rest = () => {
                 </Math>
                 x
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ meters from the start of the race;
@@ -4323,6 +4312,7 @@ const Rest = () => {
                 </Math>
                 &#123;g(t)&#125;
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ is the position from the start,
@@ -4330,6 +4320,7 @@ const Rest = () => {
                 </Math>
                 t
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ seconds after the
@@ -4341,7 +4332,7 @@ const Rest = () => {
               {" "}\circ g$ compute?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={15}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               It computes
               the amount earned by the rat as a function of time. In
@@ -4360,7 +4351,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 1.
+                Note ::++NoteCounter.
               </i>
               {" "}
               In even more detail,
@@ -4403,6 +4394,7 @@ const Rest = () => {
                 </Math>
                 f
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $.
@@ -4429,11 +4421,12 @@ const Rest = () => {
                 </Math>
                 \circ
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $”.
                   <Pause />
-                  _Note 2._
+                  _Note ::++NoteCounter._
                   If it helps,
                   here is a pictorialization of the
                   “units transformation pipeline” that
@@ -4444,16 +4437,17 @@ const Rest = () => {
               {" "}\circ{" "}
               <NoBreak>
                 g
-                <Math id="_19_1979">
+                <Math>
                   $:
                   <Pause />
                   <Image src="/images/svg_ch4_f_g_composition_units.svg" />
                   <Pause />
-                  _Note 3._
+                  _Note TotalEarnings&lt;&lt;::++NoteCounter._
                   To emphasize, $
                 </Math>
                 f(x)
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ is the
@@ -4462,6 +4456,7 @@ const Rest = () => {
                 </Math>
                 x
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ is reached.
@@ -4469,6 +4464,7 @@ const Rest = () => {
                 </Math>
                 f
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $'s
@@ -4480,6 +4476,7 @@ const Rest = () => {
                 </Math>
                 \te&#123;$&#125;
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $3 for the
@@ -4489,6 +4486,7 @@ const Rest = () => {
                 </Math>
                 f
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $ could look like this, with discrete
@@ -4512,11 +4510,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={16}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 16.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What does{" "}
@@ -4527,7 +4525,7 @@ const Rest = () => {
               keeping the same setup as in Exercise 34?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={16}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               It computes the dollars-per-second earnings rate
               as a function of time. In full detail,
@@ -4547,7 +4545,7 @@ const Rest = () => {
               </Math>
               {" "}seconds after the start of the race.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               <i>
                 Note 1.
               </i>
@@ -4582,11 +4580,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={17}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 17.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Continuing with the fundraising rat as in the
@@ -4616,7 +4614,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={17}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               At{" "}
               <NoBreak>
@@ -4793,11 +4791,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={18}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 18.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Conjecture a general formula for
@@ -4838,7 +4836,7 @@ const Rest = () => {
               {" "}Exercises 34-37.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={18}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The sought-for formula is
             </VerticalChunk>
@@ -4889,7 +4887,7 @@ const Rest = () => {
                 ).
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (For example, the solution to Exercise 36 can actually
               be written
             </VerticalChunk>
@@ -4938,7 +4936,7 @@ const Rest = () => {
                 .])
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Nb: This result is known as the{" "}
               <i>
                 chain rule
@@ -5019,11 +5017,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={19}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 19.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Sketch the velocity vector of a particle
@@ -5057,7 +5055,7 @@ const Rest = () => {
               vector describe?) Over how much time?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={19}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The velocity vector is an arrow of length{" "}
               <Math>
@@ -5138,11 +5136,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={20}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 20.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What is the
@@ -5157,7 +5155,7 @@ const Rest = () => {
               of the particle from Exercise 39?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={20}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The velocity vector of Exercise 39 travels
               in a circle of radius{" "}
@@ -5188,7 +5186,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               As the derivative of the velocity vector,
               the acceleration vector is therefore
               a vector of length{" "}
@@ -5222,11 +5220,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={21}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 21.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Sketch the velocity vector, acceleration vector,
@@ -5245,7 +5243,7 @@ const Rest = () => {
               {" "}(Clockwise, say.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={21}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The velocity vector has length{" "}
               <NoBreak>
@@ -5373,11 +5371,11 @@ const Rest = () => {
             <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_with_position.svg" />
           </Solution>
         </Exercise>
-        <Exercise exercise_number={22}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 22.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Sketch the velocity vector, acceleration vector,
@@ -5403,7 +5401,7 @@ const Rest = () => {
               lengths of the various vectors.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={22}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               While the particle goes around a circle of
               radius{" "}
@@ -5492,7 +5490,7 @@ const Rest = () => {
               vector. (Speed of velocity vector = length of
               acceleration vector.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Next, the ratio
             </VerticalChunk>
             <Pause />
@@ -5572,7 +5570,7 @@ const Rest = () => {
               times as large as the circle traced by the velocity
               vector, and the same pattern starts all over again!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (In other words, each time we take a derivative we
               find that the vector whose derivative we are taking
               has speed
@@ -5604,7 +5602,7 @@ const Rest = () => {
               {" "}times as large for the next
               derivative, etc, etc.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Concretely, the length of the jerk vector will be
             </VerticalChunk>
             <Pause />
@@ -5644,7 +5642,7 @@ const Rest = () => {
               {" "}etc.
               (Not that we needed to go beyond the jerk.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Coming back to a sketch of all this, if
             </VerticalChunk>
             <Pause />
@@ -5700,10 +5698,10 @@ const Rest = () => {
             <Pause />
             <StarDivider />
             <Pause />
-            <SolutionNote id="_20_9566">
+            <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 1.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 The ratio
@@ -5791,7 +5789,7 @@ const Rest = () => {
             <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 2.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 A common notation for the angular velocity of a
@@ -5869,11 +5867,11 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={23}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 23.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Four particles are moving at speed{" "}
@@ -5911,7 +5909,7 @@ const Rest = () => {
               particle?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={23}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Starting with the second part of the
               question, because the particles are going around
@@ -5952,7 +5950,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Keeping in mind that the jerk is
               {" "}
               <Math>
@@ -5977,11 +5975,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={24}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 24.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What are the dimensions of angular velocity?
@@ -5989,7 +5987,7 @@ const Rest = () => {
               “length over time”, ([L/T]).)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={24}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               <i>
                 Solution 1.
@@ -6049,7 +6047,7 @@ const Rest = () => {
               which is a “one over time” quantity, because
               radians are dimensionless.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Indeed, “radian” is
               short for “number of radii that fit inside the
               arc length”, which is one length
@@ -6059,11 +6057,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={25}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 25.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Imagine a single particle in a one-dimensional
@@ -6097,18 +6095,12 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={25}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Going back in time,
               examine how long it would take
               the particle to cross each of the intervals defined by
-              the following geometric progression* (*see{" "}
-              <InChapterLink
-                href="/article/chapter4?id=_21_6692"
-                class="handle-in-chapter-link">
-                Note 1
-              </InChapterLink>
-              ):
+              the following geometric progression* (*see Note &gt;&gt;GeometricProgression):
             </VerticalChunk>
             <Pause />
             <Image src="/images/svg_ch4_ex_one_particle_interval_subdivision.svg" />
@@ -6134,8 +6126,8 @@ const Rest = () => {
               &#123;0.5 \over 1&#125; = 0.5
               $$
               <ImageLeft
-                offset_x="6em"
                 src="/images/svg_ch4_one_particle_speed_equals_time_cloud.svg"
+                offset_x="6em"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -6281,10 +6273,10 @@ const Rest = () => {
               {" "}no matter how far back in time you look.)
             </VerticalChunk>
             <Pause />
-            <SolutionNote id="_21_6692">
+            <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 1.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 A so-called
@@ -6338,11 +6330,11 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={26}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 26.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Take a system of two particles on the real
@@ -6393,7 +6385,7 @@ const Rest = () => {
               exist altogether between the three graphs?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={26}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               For{" "}
               <Math>
@@ -6467,6 +6459,7 @@ const Rest = () => {
                 </Math>
                 -value
               </NoBreak>
+              {" "}{" "}
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -6481,6 +6474,7 @@ const Rest = () => {
                 </Math>
                 -value
               </NoBreak>
+              {" "}{" "}
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -6550,11 +6544,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={27}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 27.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Four particles are placed
@@ -6601,7 +6595,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={27}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               At{" "}
               <Math>
@@ -6629,11 +6623,11 @@ const Rest = () => {
                 .
               </NoBreak>
               <ImageRight
-                offset_x="-0.5em"
+                src="/images/svg_ch4_circle_at_2_4_with_some_vectors_cloud.svg"
                 offset_y="150px"
-                src="/images/svg_ch4_circle_at_2_4_with_some_vectors_cloud.svg" />
+                offset_x="-0.5em" />
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For{" "}
               <Math>
                 $t &lt; 0$
@@ -6651,13 +6645,13 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               HOWEVER.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               It is possible to say much more.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               To go deeper, we introduce eight new
               particles, comprising the original colors but
               in white and black flavors:
@@ -6665,36 +6659,36 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -6743,7 +6737,7 @@ const Rest = () => {
               the velocity of the yellow particle to the
               position of the green particle, etc.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               In this case the white particles will
               rotate at unit speed around their circle of
               radius{" "}
@@ -6756,7 +6750,7 @@ const Rest = () => {
               constraints
               (albeit with a different set of colors).
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               The black particles, for their part,
               behave as a single fused-together particle
               whose velocity is equal to its position,
@@ -6779,7 +6773,7 @@ const Rest = () => {
               line between them and the origin, meaning
               they are “stuck” to that line.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Also note that the
             </VerticalChunk>
             <Pause />
@@ -6802,8 +6796,8 @@ const Rest = () => {
             <CentralDisplayItalic>
               length of the position vector
               <ImageRight
-                offset_x="-4em"
-                src="/images/svg_ch4_ex_circle_at_2_4_position_equals_velocity_cloud.svg" />
+                src="/images/svg_ch4_ex_circle_at_2_4_position_equals_velocity_cloud.svg"
+                offset_x="-4em" />
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -6819,7 +6813,7 @@ const Rest = () => {
               since the length of the position vector is
               the distance to the origin.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               This means that if we introduce gradations
               to the afore-mentioned half-line through{" "}
               <Math>
@@ -6874,24 +6868,26 @@ const Rest = () => {
               {" "}
               (!!)
               <ImageLeft
-                line={-1}
-                src="/images/svg_ch4_ex_circle_at_2_4_sqrt_20_cloud.svg" />
+                src="/images/svg_ch4_ex_circle_at_2_4_sqrt_20_cloud.svg"
+                line={-1} />
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               This describes an “understandable”
               behavior of the black and white particles.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Next we write
             </VerticalChunk>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -6909,11 +6905,13 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x : \rr \ra \rr$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -6922,11 +6920,13 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(2)$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -6951,11 +6951,13 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -6971,23 +6973,27 @@ const Rest = () => {
               particle as a function of time, and so on
               for all the other particles.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For example,
             </VerticalChunk>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7013,29 +7019,37 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' \,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x +$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7044,33 +7058,43 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <CentralDisplay>
+              {" "}{" "}
               <Math>
                 $($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x + $
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7081,168 +7105,216 @@ const Rest = () => {
               </i>
               {" "}the original particles
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
               &ensp;by setting...
             </VerticalChunk>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7259,293 +7331,389 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' = ($
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\!\rt&#123;0.05&#125;)' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7554,101 +7722,133 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y\,\!\!\!' =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7665,197 +7865,261 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) =$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) \,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4black_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7864,101 +8128,133 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_x(0)$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0) = 2\,\,+$
               </Math>
+              {" "}{" "}
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4white_inline.svg" />
+              {" "}{" "}
               <Math>
                 $_y(0)$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -7970,20 +8266,20 @@ const Rest = () => {
               {" "}of our
               newly-defined particles
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
               &ensp;are the translate of the white particle
               positions at{" "}
               <Math>
@@ -8000,38 +8296,38 @@ const Rest = () => {
               {" "}which brings those
               positions back to the original positions of
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
               &ensp;as they appear in the problem statement! I.e.,
               our newly-defined
               particles
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
               &ensp;are in the desired place at{" "}
               <NoBreak>
                 <Math>
@@ -8040,28 +8336,28 @@ const Rest = () => {
                 !
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               In other words, the proposed definitions of
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p1_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p2_inline.svg" />
               ,
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p3_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
-                class="ch4_inline_blackwhite_particles" />
+                class="ch4_inline_blackwhite_particles"
+                src="/images/svg_ch4_circle_at_2_4_p4_inline.svg" />
               &ensp;“work” in the sense of satisfying all the conditions
               of the problem statement, and are, indeed, the
               solution we seek.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Qualitatively, this implies that the particles
               can be understood as four particles rotating at
               unit speed around a circle of radius{" "}
@@ -8082,7 +8378,7 @@ const Rest = () => {
               {" "}
               whether that seems intuitive or not.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Concretely,
               the particle trajectories
               end up like so, locally around{" "}
@@ -8120,7 +8416,7 @@ const Rest = () => {
               leaving only the residual motion of the white
               particles!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               <i>
                 Note 1.
               </i>
@@ -8197,11 +8493,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={28}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 28.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Find a nonzero function{" "}
@@ -8232,7 +8528,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={28}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Recall the curves from Exercise 12:
             </VerticalChunk>
@@ -8254,8 +8550,8 @@ const Rest = () => {
               a
               $$
               <ImageLeft
-                offset_x="200px"
                 src="/images/svg_ch4_ex_cosine_recall_cloud.svg"
+                offset_x="200px"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -8317,11 +8613,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={29}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 29.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Express the...
@@ -8368,7 +8664,7 @@ const Rest = () => {
               ...in the form of self-contained, formal statements.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={29}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               For the functions:
             </VerticalChunk>
@@ -8448,10 +8744,11 @@ const Rest = () => {
                       </Math>
                       ]
                     </NoBreak>
+                    {" "}{" "}
                   </i>
                   <ImageLeft
-                    offset_x="4em"
-                    src="/images/svg_ch4_ex_f_g_h_A_B_C_D_cloud.svg" />
+                    src="/images/svg_ch4_ex_f_g_h_A_B_C_D_cloud.svg"
+                    offset_x="4em" />
                 </li>
                 <li>
                   <i>
@@ -8464,6 +8761,7 @@ const Rest = () => {
                     <Math>
                       $f, g, h : \rr \ra \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8477,6 +8775,7 @@ const Rest = () => {
                     <Math>
                       $f, g, h : \rr \ra \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8490,6 +8789,7 @@ const Rest = () => {
                     <Math>
                       $f, g : \rr \ra \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8503,6 +8803,7 @@ const Rest = () => {
                     <Math>
                       $f, g : \rr \ra \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
               </ul>
@@ -8523,6 +8824,7 @@ const Rest = () => {
                     <Math>
                       $a, b, c \in \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8536,6 +8838,7 @@ const Rest = () => {
                     <Math>
                       $a, b, c \in \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8549,6 +8852,7 @@ const Rest = () => {
                     <Math>
                       $a, b \in \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
                 <li>
@@ -8562,6 +8866,7 @@ const Rest = () => {
                     <Math>
                       $a, b \in \rr$
                     </Math>
+                    {" "}{" "}
                   </i>
                 </li>
               </ul>
@@ -8579,11 +8884,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={30}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 30.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               How can we generate the following set of
@@ -8603,6 +8908,7 @@ const Rest = () => {
                 </Math>
                 &#x200b;
               </NoBreak>
+              {" "}{" "}
               <Math>
                 $\times$
               </Math>
@@ -8622,7 +8928,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_scaled_cosine_curves.svg" />
           </ExerciseStatement>
-          <Solution solution_number={30}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The values oscillate between{" "}
               <Math>
@@ -8651,38 +8957,35 @@ const Rest = () => {
               Exercise 12 have unit speed.)
             </VerticalChunk>
             <Pause />
-            <VerticalChunk>
-              <i>
-                Note 1.
-              </i>
-              {" "}
-              In this and in the previous exercise the
-              units of time and distance are “anonymous”:
-              distance could be meters, kilometers, or
-              anything, and time could be seconds, hours,
-              etc—it doesn't matter. However, one should
-              be aware that what amounts to
-            </VerticalChunk>
-            <Pause />
-            <CentralDisplayItalic>
-              unit speed
-            </CentralDisplayItalic>
-            <Pause />
-            <VerticalChunk>
-              under one set of units is no longer “unit
-              speed” under a different set of units—this
-              is not a “physical” property of the
-              particles, but, rather, a “mathematical”
-              property that holds only for one specific
-              “tweaking” of the units.
-            </VerticalChunk>
+            <SolutionNote>
+              <VerticalChunk>
+                <i>
+                  Note ::øøSolutionNoteCounter.
+                </i>
+                {" "}
+                In this and in the previous exercise the
+                units of time and distance are “anonymous”:
+                distance could be meters, kilometers, or
+                anything, and time could be seconds, hours,
+                etc—it doesn't matter. Either way,
+              </VerticalChunk>
+              <Pause />
+              <CentralDisplayItalic>
+                unit speed
+              </CentralDisplayItalic>
+              <Pause />
+              <VerticalChunk>
+                means that one unit of distance is traveled
+                per unit of time, whatever the units are.
+              </VerticalChunk>
+            </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={31}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 31.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Exercise 12 exhibits a function{" "}
@@ -8789,9 +9092,7 @@ const Rest = () => {
               ...?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution
-            solution_number={31}
-            id="_22_5742">
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We can naïvely try to imitiate how the
               curves of Exercise 16 are generated by
@@ -8921,7 +9222,7 @@ const Rest = () => {
               ...and we do the same for each particle,
               to advance to the next step.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               If we stop{" "}
               <Math>
                 $10$
@@ -9014,16 +9315,16 @@ const Rest = () => {
               form doubly-infinite spirals—in to infinity,
               out to infinity.
               <ImageLeft
-                children_y="2em"
-                children_x="50%"
+                offset_x="1.5em"
                 src="/images/svg_ch4_5_euler_spiral_figure.svg"
-                offset_x="1.5em">
+                children_x="50%"
+                children_y="2em">
                 <span font-size="1.4em">
                   Fig. 1
                 </span>
               </ImageLeft>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               In any case [take two] the point is that
               whether or not you are one of the wizards,
               you can
@@ -9038,7 +9339,7 @@ const Rest = () => {
               of “feel” that they exist! (This is a
               moral consolation prize, at least.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               We can also convert the paths into a
               function
             </VerticalChunk>
@@ -9052,7 +9353,7 @@ const Rest = () => {
             <VerticalChunk>
               that satisfies the problem requirements.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For example let{" "}
               <Math>
                 $f$
@@ -9260,7 +9561,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 4.
+                Note ::++NoteCounter.
               </i>
               {" "}
               If you graph the{" "}
@@ -9287,7 +9588,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 5.
+                Note ::++NoteCounter.
               </i>
               {" "}
               There is nothing special about
@@ -9330,7 +9631,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 6.
+                Note SeparationOfCoordinates&lt;&lt;::++NoteCounter.
               </i>
               {" "}
               It is worth noting that, in fact, the
@@ -9508,11 +9809,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={32}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 32.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If we seek a function{" "}
@@ -9552,7 +9853,7 @@ const Rest = () => {
               concerned, what would our options be?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={32}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Take{" "}
               <Math>
@@ -9747,8 +10048,8 @@ const Rest = () => {
               ...and taking sixteen more derivatives
               starting from curve
               <InlineImage
-                style="margin-right:0.8em"
-                src="/images/svg_ch4_17_particle5_inline.svg" />
+                src="/images/svg_ch4_17_particle5_inline.svg"
+                style="margin-right:0.8em" />
               we would go through curves
               <InlineImage src="/images/svg_ch4_17_particle9_inline.svg" />
               ,
@@ -9761,8 +10062,8 @@ const Rest = () => {
               <InlineImage src="/images/svg_ch4_17_particle14_inline.svg" />
               before finally coming back to curve
               <InlineImage
-                style="margin-right:0.1em"
-                src="/images/svg_ch4_17_particle1_inline.svg" />
+                src="/images/svg_ch4_17_particle1_inline.svg"
+                style="margin-right:0.1em" />
               !
             </VerticalChunk>
             <Pause />
@@ -9799,8 +10100,8 @@ const Rest = () => {
               that:
             </VerticalChunk>
             <TextParent>
-              <ul style="margin:20px 20px 0px 50px">
-                <li>
+              <ul style="margin:20px 20px 20px 50px;list-style-type:disc;">
+                <li style="margin-bottom:10px;">
                   the red arrows indicate which particle
                   takes its velocity from the position
                   of which other particle; for example,
@@ -9837,7 +10138,7 @@ const Rest = () => {
               “close the loop” after going through all
               17 particles!)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               In this starting configuration, all
               velocity vectors are exactly tangent to
               the unit circle
@@ -9875,12 +10176,13 @@ const Rest = () => {
               in this figure:
             </VerticalChunk>
             <TextParent>
-              <ul style="margin:1em 1em 0em 2.5em">
-                <li>
-                  in
-                  <span style="border:1px solid blue">
-                    blue
-                  </span>
+              <ul style="margin:20px 20px 20px 50px;list-style-type:disc;">
+                <li
+                  style="margin-bottom:10px;"
+                  in ="">
+                  <span
+                    style="border:1px solid blue"
+                    blue="" />
                   , particle 1, the last particle
                   to be (noticeably
                   <b>
@@ -9897,11 +10199,10 @@ const Rest = () => {
                   particle's slight deviation affects
                   the next, that affects the next, etc)
                 </li>
-                <li>
-                  in
-                  <span style="border:1px solid red">
-                    red
-                  </span>
+                <li in ="">
+                  <span
+                    style="border:1px solid red"
+                    red="" />
                   , particle 14, the{" "}
                   <i>
                     first
@@ -9938,11 +10239,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={33}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 33.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Add elements to the following drawing...
@@ -9967,9 +10268,7 @@ const Rest = () => {
               the expression, if any.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution
-            solution_number={33}
-            id="_23_9355">
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               This version pictures all the elements
               that appear in the fraction:
@@ -10016,8 +10315,8 @@ const Rest = () => {
               (x + h, f(x + h))
               $$
               <ImageRight
-                src="/images/svg_ch4_new_quatient_x_fxplush_cloud.svg"
                 offset_y="-0.5em"
+                src="/images/svg_ch4_new_quatient_x_fxplush_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -10032,7 +10331,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 7.
+                Note ::++NoteCounter.
               </i>
               {" "}
               A fraction of this form is called a{" "}
@@ -10045,7 +10344,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 8.
+                Note ::++NoteCounter.
               </i>
               {" "}
               The pale brown line is sometimes known as
@@ -10075,7 +10374,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 9.
+                Note LimitOfNewtonQuotient&lt;&lt;::++NoteCounter.
               </i>
               {" "}
               If we let{" "}
@@ -10145,11 +10444,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={34}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 34.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               In this exercise we consider two points
@@ -10236,7 +10535,7 @@ const Rest = () => {
             <VerticalChunk>
               over said course of time.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               To introduce an unsolicited metaphor,
               imagine{" "}
               <Math>
@@ -10304,9 +10603,9 @@ const Rest = () => {
               </NoBreak>
               {" "}line, to be clear):
               <ImageLeft
-                src="/images/svg_ch4_RATS_corridor_cloud.svg"
+                offset_x="0.5em"
                 offset_y="-0.5em"
-                offset_x="0.5em" />
+                src="/images/svg_ch4_RATS_corridor_cloud.svg" />
             </VerticalChunk>
             <TextParent>
               <ol style="margin:0 1.5em 0.5em 2em;list-style:auto;list-style-position:outside;">
@@ -10431,7 +10730,7 @@ const Rest = () => {
               each term become?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={34}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Dividing by{" "}
               <NoBreak>
@@ -10570,13 +10869,7 @@ const Rest = () => {
                 $t_0$
               </Math>
               {" "}(cf.
-              Exercise 16{" "}
-              <InChapterLink
-                href="/article/chapter4?id=_19_1979"
-                class="handle-in-chapter-link">
-                Note 3
-              </InChapterLink>
-              ), and
+              Exercise 16 Note &gt;&gt;TotalEarnings), and
             </VerticalChunk>
             <Pause />
             <Image src="/images/svg_ch4_RATS_over_Dt_first_term.svg" />
@@ -10601,12 +10894,12 @@ const Rest = () => {
               </NoBreak>
               <ImageLeft src="/images/svg_ch4_RATS_for_f_equals_AB_cloud.svg" />
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               The first term on the right-hand side, for
               its part, approaches
               <ImageRight src="/images/svg_ch4_RATS_first_term_cloud.svg" />
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               as{" "}
               <Math>
                 $\Delta&#123;&#125;t$
@@ -10691,7 +10984,7 @@ const Rest = () => {
               {" "}by the property
               of the Newton quotient.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Lastly the most interesting term is the
               second term on the right-hand side!
               Symmetrically to the first term on the
@@ -10887,7 +11180,7 @@ const Rest = () => {
                 .)
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Summarizing, the three terms separately
               approach
             </VerticalChunk>
@@ -10952,7 +11245,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Nb: This result is known as the{" "}
               <i>
                 product rule
@@ -10995,11 +11288,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={35}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 35.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               The identity
@@ -11036,7 +11329,7 @@ const Rest = () => {
               , by the way.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={35}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               One can say
             </VerticalChunk>
@@ -11069,11 +11362,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={36}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 36.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If we rewrite the “product rule” of Exercise
@@ -11081,7 +11374,7 @@ const Rest = () => {
               of Exercise 19, what do we obtain?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={36}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The form of...
             </VerticalChunk>
@@ -11164,7 +11457,7 @@ const Rest = () => {
               two forms. Also note that each form has its
               own “qualitatively distinct” qualifying conditions.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (To wit,
             </VerticalChunk>
             <Pause />
@@ -11215,11 +11508,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={37}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 37.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If the identities
@@ -11264,9 +11557,7 @@ const Rest = () => {
               to this point?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution
-            solution_number={37}
-            id="_24_4222">
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               That would be the fact that
             </VerticalChunk>
@@ -11305,7 +11596,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               <i>
-                Note 10.
+                Note DifferentiationFormulasClarification&lt;&lt;::++NoteCounter.
               </i>
               {" "}
               You can also write
@@ -11346,11 +11637,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={38}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 38.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               The solution to the previous exercise
@@ -11425,7 +11716,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={38}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               The “logical” definition is:
             </VerticalChunk>
@@ -11525,11 +11816,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={39}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 39.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               The definition
@@ -11622,7 +11913,7 @@ const Rest = () => {
               the input.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={39}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               E.g.:
             </VerticalChunk>
@@ -11658,11 +11949,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={40}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 40.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What does...
@@ -11693,6 +11984,8 @@ const Rest = () => {
               <Math>
                 $A_1, \dots, A_n$
               </Math>
+              {" "}
+              {" "}
               <Math>
                 $: \rr \ra \rr$
               </Math>
@@ -11705,7 +11998,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={40}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We can start with the fraction in the
               middle of the product:
@@ -11789,7 +12082,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Next down in order of interesting-ness we presumably
               have the terms{" "}
               <Math>
@@ -11932,7 +12225,7 @@ const Rest = () => {
               in the solution to Exercise 17, but that might
               have been.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Lastly one has the tail end of the product,
               where{" "}
               <Math>
@@ -11983,11 +12276,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={41}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 41.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               The function below is also the red
@@ -12014,7 +12307,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_cosine_for_eta.svg" />
           </ExerciseStatement>
-          <Solution solution_number={41}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Because the particle is going at unit speed the
               circumference of the unit circle is equal to the
@@ -12173,11 +12466,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={42}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 42.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               The graphs below are the horizontal and
@@ -12186,8 +12479,8 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_pacman1_hor0.svg">
               <ImageLeft
-                src="/images/svg_ch4_pacman1_x_prime_t_scloud.svg"
-                offset_y="1em" />
+                offset_y="1em"
+                src="/images/svg_ch4_pacman1_x_prime_t_scloud.svg" />
             </Image>
             <Pause />
             <Image src="/images/svg_ch4_pacman1_ver0.svg" />
@@ -12216,8 +12509,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman1_maze.svg"
-              height="590px" />
+              height="590px"
+              src="/images/svg_ch4_pacman1_maze.svg" />
             <Pause />
             <VerticalChunk>
               Where is Pacman at{" "}
@@ -12240,7 +12533,7 @@ const Rest = () => {
               data!)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={42}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Let's start by examining Pacman's first six displacements,
               appearing here in blue (positive displacements, going to the right
@@ -12274,8 +12567,8 @@ const Rest = () => {
             <VerticalChunk>
               when it is nonzero (for displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet5_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet5_inline.svg" />
               the velocity might seem more like{" "}
               <Math>
                 $-6.8\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;$
@@ -12309,63 +12602,75 @@ const Rest = () => {
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet1_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.5\te&#123;s&#125;\,\,=\,\,-3.375\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
               <ImageRight src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg" />
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet2_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet3_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet4_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,2.7\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet5_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.4\te&#123;s&#125;\,\,=\,\,-2.7\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
               <InlineImage
-                style="margin-right:1em"
+                class="ch4_pacman1_inline_number_pellet"
                 src="/images/svg_ch4_pacman1_pellet6_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                style="margin-right:1em" />
+              {" "}{" "}
               <Math>
                 $6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.9\te&#123;s&#125;\,\,=\,\,6.075\,\te&#123;cells&#125;$
               </Math>
+              {" "}{" "}
             </CentralDisplay>
             <Pause />
             <VerticalChunk>
@@ -12380,13 +12685,13 @@ const Rest = () => {
               But these are approximate numbers and the
               true values must be integers, except for
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet1_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet1_inline.svg" />
               . (Because we don't know where Pacman started
               out. For
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet6_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet6_inline.svg" />
               &ensp;the next displacement, if you look back at
               the graphs, is horizontal, so yes.) In fact,
               if you look at the maze,
@@ -12417,8 +12722,8 @@ const Rest = () => {
               4
               $$
               <ImageLeft
-                src="/images/svg_ch4_pacman1_disp_4_cloud.svg"
                 width="700px"
+                src="/images/svg_ch4_pacman1_disp_4_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -12431,8 +12736,8 @@ const Rest = () => {
               6
               $$
               <ImageLeft
-                src="/images/svg_ch4_pacman1_disp_6_cloud.svg"
                 width="1400px"
+                src="/images/svg_ch4_pacman1_disp_6_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -12445,8 +12750,8 @@ const Rest = () => {
               7
               $$
               <ImageLeft
-                src="/images/svg_ch4_pacman1_disp_7_cloud.svg"
                 width="700px"
+                src="/images/svg_ch4_pacman1_disp_7_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -12555,12 +12860,12 @@ const Rest = () => {
               The maze fits these constraints in only two places
               (note that
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet2_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet2_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet4_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet4_inline.svg" />
               &ensp;equal{" "}
               <Math>
                 $-3\te&#123;c&#125;$
@@ -12577,8 +12882,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman1_maze_two_possibilities.svg"
-              height="590px" />
+              height="590px"
+              src="/images/svg_ch4_pacman1_maze_two_possibilities.svg" />
             <Pause />
             <VerticalChunk>
               Looking into the future,
@@ -12592,12 +12897,14 @@ const Rest = () => {
                 </Math>
                 s/~
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $0.4$
                 </Math>
                 s/~
               </NoBreak>
+              {" "}{" "}
               <NoBreak>
                 <Math>
                   $1.3$
@@ -12617,25 +12924,25 @@ const Rest = () => {
               the start of the interval is at an integer value: this is a good
               way to estimate the length.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Because displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet7_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet7_inline.svg" />
               &ensp;is horizontal to the right the only possible
               remaining solution is the right-hand one,
               or else Pacman would collide with the ghost cage,
               with displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet6_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet6_inline.svg" />
               &ensp;equal to 6c not 7c, or else Pacman would
               collide with a wall:
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman1_maze_would_collide.svg"
-              height="590px" />
+              height="590px"
+              src="/images/svg_ch4_pacman1_maze_would_collide.svg" />
             <Pause />
             <VerticalChunk>
               Since
@@ -12650,15 +12957,15 @@ const Rest = () => {
             <VerticalChunk>
               it seems that displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet7_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet7_inline.svg" />
               &ensp;brings Pacman all the way around the maze to
               the left edge of the ghost cage, like so...
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman1_maze_bring_around.svg"
-              height="590px" />
+              height="590px"
+              src="/images/svg_ch4_pacman1_maze_bring_around.svg" />
             <Pause />
             <VerticalChunk>
               ...though it is hard to measure that distance;
@@ -12680,8 +12987,8 @@ const Rest = () => {
             <VerticalChunk>
               displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet8_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet8_inline.svg" />
               &ensp;must be{" "}
               <NoBreak>
                 <Math>
@@ -12706,27 +13013,27 @@ const Rest = () => {
               </NoBreak>
               {" "}since displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet9_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet9_inline.svg" />
               is to the right; so, notwithstanding the exact
               length of displacement
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet9_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet9_inline.svg" />
               , there is only one possibility for displacements
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet1_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet1_inline.svg" />
               through
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet8_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet8_inline.svg" />
               :
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman1_maze_final_solution.svg"
-              height="590px" />
+              height="590px"
+              src="/images/svg_ch4_pacman1_maze_final_solution.svg" />
             <Pause />
             <VerticalChunk>
               So at{" "}
@@ -12738,29 +13045,29 @@ const Rest = () => {
               </NoBreak>
               {" "}between displacements
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet7_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet7_inline.svg" />
               &ensp;and
               <InlineImage
-                src="/images/svg_ch4_pacman1_pellet8_inline.svg"
-                class="ch4_pacman1_inline_number_pellet" />
+                class="ch4_pacman1_inline_number_pellet"
+                src="/images/svg_ch4_pacman1_pellet8_inline.svg" />
               , Pacman is immediately to the left of the ghost cage.
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={43}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 43.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Same question, but for the following maze...
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman2_maze.svg"
-              height="551px" />
+              height="551px"
+              src="/images/svg_ch4_pacman2_maze.svg" />
             <Pause />
             <VerticalChunk>
               ...and for the following velocity data, with the
@@ -12781,7 +13088,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={43}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               It seems well-advised to start by heuristically verifying
               that Pacman's speed remains
@@ -12797,7 +13104,7 @@ const Rest = () => {
               no matter the direction that Pacman is headed, as long as Pacman is
               in motion.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For example, take the instant{" "}
               <NoBreak>
                 <Math>
@@ -12893,7 +13200,7 @@ const Rest = () => {
               {" "}
               regardless of the direction of travel.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For more verification, take{" "}
               <NoBreak>
                 <Math>
@@ -12937,7 +13244,7 @@ const Rest = () => {
               </NoBreak>
               {" "}(!)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For two more verifications take{" "}
               <Math>
                 $t = 27\te&#123;s&#125;$
@@ -13026,7 +13333,7 @@ const Rest = () => {
               {" "}
               (Closest so far, in fact.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               We now admit, after this “heuristic verification”,
               that Pacman goes approximately the same speed
               regardless of direction, namely something in
@@ -13038,7 +13345,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Now consider the time interval from{" "}
               <Math>
                 $t = 22.7\te&#123;s&#125;$
@@ -13147,6 +13454,8 @@ const Rest = () => {
                 </Math>
                 ,
               </NoBreak>
+              {" "}
+              {" "}
               <Math>
                 $9$
               </Math>
@@ -13172,8 +13481,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman2_upper_left_highlight.svg"
-              height="551px" />
+              height="551px"
+              src="/images/svg_ch4_pacman2_upper_left_highlight.svg" />
             <Pause />
             <VerticalChunk>
               From there, Pacman goes right for a bit, then
@@ -13190,8 +13499,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman2_upper_right_highlight.svg"
-              height="551px" />
+              height="551px"
+              src="/images/svg_ch4_pacman2_upper_right_highlight.svg" />
             <Pause />
             <VerticalChunk>
               What is extremely strange, however, is that
@@ -13301,8 +13610,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman2_corrected_highlights.svg"
-              height="551px" />
+              height="551px"
+              src="/images/svg_ch4_pacman2_corrected_highlights.svg" />
             <Pause />
             <VerticalChunk>
               Next, after some downward motion we are faced
@@ -13358,8 +13667,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_pacman2_continued_highlights.svg"
-              height="551px" />
+              height="551px"
+              src="/images/svg_ch4_pacman2_continued_highlights.svg" />
             <Pause />
             <VerticalChunk>
               Next Pacman seems to reverse course, and briefly
@@ -13418,11 +13727,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={44}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 44.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Describe what a function might look like
@@ -13431,7 +13740,7 @@ const Rest = () => {
             <Pause />
             <Image src="/images/svg_ch4_one_long_line.svg" />
           </ExerciseStatement>
-          <Solution solution_number={44}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               As the second derivative is the
             </VerticalChunk>
@@ -13483,7 +13792,7 @@ const Rest = () => {
               the function will therefore be a
               line segment, over each of the purple intervals!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Between these line segments, however, things
               happen, and there is a change in slope! The
               change in slope is given by the “amount of bump”
@@ -13528,7 +13837,7 @@ const Rest = () => {
               line segment, and vice-versa when we pass over a
               negative bump.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Put
             </VerticalChunk>
             <Pause />
@@ -13592,7 +13901,7 @@ const Rest = () => {
               {" "}being
               the (negative) area of a negative bump.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               With these variables in place, here is a generic
               illustration of a graph (in black) whose second
               derivative is the one from the statement (faded in
@@ -13622,7 +13931,7 @@ const Rest = () => {
               translation does not affect the derivative,
               much less the second derivative.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For another example, if{" "}
               <NoBreak>
                 <Math>
@@ -13658,7 +13967,7 @@ const Rest = () => {
               can also be vertically translated by any amount!
               (And same for any solution.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               For yet another example, here is a graph in which
               {" "}
               <NoBreak>
@@ -13709,7 +14018,7 @@ const Rest = () => {
               free to choose—is the amount of vertical
               translation.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               To claim a truly good “theoretical” understanding
               of the solution, however, we should also determine
               this rise here, if we can, as a function of{" "}
@@ -13901,8 +14210,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_one_long_line_inequality_1.svg"
-              width="800px" />
+              width="800px"
+              src="/images/svg_ch4_one_long_line_inequality_1.svg" />
             <Pause />
             <VerticalChunk>
               But we can tighten the inequality by dividing the
@@ -13912,16 +14221,16 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_one_long_line_inequality_2.svg"
-              width="800px" />
+              width="800px"
+              src="/images/svg_ch4_one_long_line_inequality_2.svg" />
             <Pause />
             <VerticalChunk>
               Or even:
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_one_long_line_inequality_3.svg"
-              width="800px" />
+              width="800px"
+              src="/images/svg_ch4_one_long_line_inequality_3.svg" />
             <Pause />
             <VerticalChunk>
               If we take this logic to its bitter conclusion, we
@@ -13933,8 +14242,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
-              src="/images/svg_ch4_one_long_line_equality.svg"
-              width="800px" />
+              width="800px"
+              src="/images/svg_ch4_one_long_line_equality.svg" />
             <Pause />
             <VerticalChunk>
               And because the S-curve is centrally symmetric

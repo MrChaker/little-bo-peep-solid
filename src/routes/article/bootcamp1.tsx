@@ -15,7 +15,8 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
+import SectionsBreadcrumbs from "~/components/SectionsBreadcrumbs";
+import  { BreadcrumbItem } from "~/components/SectionsBreadcrumbsContainer";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
@@ -91,7 +92,7 @@ const Article = () => {
         <a
           class="prev_page"
           href="/article/bootcamp2" />
-        <Section id="section-1">
+        <Section id="section-::++SectionCounter">
           <VerticalChunk>
             <b>
               Notation.
@@ -204,7 +205,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="section-2">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             What it does.
@@ -272,7 +273,7 @@ const Rest = () => {
           {" "}would
           answer “yes”.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Notation-wise, the expression
         </VerticalChunk>
         <Pause />
@@ -285,6 +286,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <Math>
             $A$
           </Math>
@@ -292,6 +294,7 @@ const Rest = () => {
           <Math>
             $x$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -299,6 +302,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <Math>
             $A$
           </Math>
@@ -310,6 +314,7 @@ const Rest = () => {
             </Math>
             ?”
           </NoBreak>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -317,6 +322,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <Math>
             $x$
           </Math>
@@ -324,6 +330,7 @@ const Rest = () => {
           <Math>
             $A$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -331,6 +338,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <Math>
             $x$
           </Math>
@@ -338,6 +346,7 @@ const Rest = () => {
           <Math>
             $A$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -345,6 +354,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
+          {" "}{" "}
           <Math>
             $x$
           </Math>
@@ -352,6 +362,7 @@ const Rest = () => {
           <Math>
             $A$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -409,7 +420,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-3">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Set Equality.
@@ -487,7 +498,7 @@ const Rest = () => {
           and answer “no” to all else,
           they are by definition the same.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           (These examples demonstrate that human notation
           is redundant: there are several different ways of
           writing down the same set. They also demonstrate
@@ -510,7 +521,7 @@ const Rest = () => {
           of their elements. Such notions are simply not part
           of the “API” of a set.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Moreover, any empty set is equal to any other
           empty set. Equality follows because both sets
           answer all questions the same way: they both
@@ -535,7 +546,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-4">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Second notation for the empty set.
@@ -567,7 +578,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-5">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Sets within sets.
@@ -606,7 +617,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Mind you, concerning this example, that
         </VerticalChunk>
         <Pause />
@@ -615,8 +626,8 @@ const Rest = () => {
           Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
           $$
           <ImageRight
-            offset_x="3em"
             src="/images/svg_bt1_bt_empty_set_cloud.svg"
+            offset_x="3em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -682,7 +693,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-6">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Set union and set intersection.
@@ -822,7 +833,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Note that
         </VerticalChunk>
         <Pause />
@@ -898,6 +909,7 @@ const Rest = () => {
           <Math>
             $B$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -934,7 +946,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-7">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Sets encountered in calculus.
@@ -996,7 +1008,7 @@ const Rest = () => {
             ).
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Secondly—and this pretty much wraps it up for those
           sets  that are commonly seen in calculus—you will
           encounter{" "}
@@ -1065,7 +1077,7 @@ const Rest = () => {
           </NoBreak>
           {" "}Etc.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Note that
         </VerticalChunk>
         <Pause />
@@ -1109,7 +1121,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-8">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Sets not encountered in calculus.
@@ -1167,7 +1179,7 @@ const Rest = () => {
         <VerticalChunk>
           (I.e., ...well, you get it!)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           You can view{" "}
           <Math>
             $\overline&#123;\rr&#125;$
@@ -1201,7 +1213,7 @@ const Rest = () => {
           </i>
           .
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Does all this have any “real meaning”? Good question!
           The answer is:{" "}
           <i>
@@ -1209,7 +1221,7 @@ const Rest = () => {
           </i>
           .
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           E.g. (to give you a brief flavor, before we move on
           forever from the topic), the value of something like
         </VerticalChunk>

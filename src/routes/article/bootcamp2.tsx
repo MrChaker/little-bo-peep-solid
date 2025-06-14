@@ -15,7 +15,8 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
+import SectionsBreadcrumbs from "~/components/SectionsBreadcrumbs";
+import  { BreadcrumbItem } from "~/components/SectionsBreadcrumbsContainer";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
@@ -102,7 +103,7 @@ const Article = () => {
         <a
           class="next_page"
           href="/article/bootcamp1" />
-        <Section id="section-1">
+        <Section id="section-::++SectionCounter">
           <VerticalChunk>
             <b>
               Terminology.
@@ -162,7 +163,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="section-2">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Integer powers of 10.
@@ -224,7 +225,7 @@ const Rest = () => {
           </Math>
           {" "}times.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           For example,
         </VerticalChunk>
         <Pause />
@@ -257,9 +258,9 @@ const Rest = () => {
           Large 10^0 = 1 = 1
           $$
           <ImageLeft
-            offset_x="4em"
-            offset_y="-0.2em"
             src="/images/svg_bt2_bt_alert_cloud.svg"
+            offset_y="-0.2em"
+            offset_x="4em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -307,7 +308,7 @@ const Rest = () => {
         <VerticalChunk>
           by the second definition.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           As{" "}
           <Math>
             $n$
@@ -327,7 +328,7 @@ const Rest = () => {
           {" "}one also has
         </VerticalChunk>
         <Pause />
-        <MathBlock id="_1_7685">
+        <MathBlock>
           $$Large 10^&#123;-n&#125; = &#123;1 \over 10^&#123;\hspace&#123;0.2ex&#125;n&#125;&#125;\tag&#123;A&#125;$$
         </MathBlock>
         <Pause />
@@ -347,13 +348,15 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}
-          Moreover, (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_7685"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
-          ) actually holds for
+          Moreover, (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n) actually holds for
         </VerticalChunk>
         <Pause />
         <CentralDisplayItalic>
@@ -369,30 +372,34 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}which is mildly important. In more
-          detail, (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_7685"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
-          ) holds for{" "}
+          detail, (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n) holds for{" "}
           <Math>
             $n = 0$
           </Math>
-          {" "}by inspection, and (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_7685"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
-          )
+          {" "}by inspection, and (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n)
           is equivalent to the identity
           <ImageLeft
-            line={2}
-            src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg" />
+            src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg"
+            line={2} />
         </VerticalChunk>
         <Pause />
-        <MathBlock id="_2_2987">
+        <MathBlock>
           $$Large 10^&#123;-n&#125;10^n = 1 \tag&#123;AA&#125;$$
         </MathBlock>
         <Pause />
@@ -426,19 +433,23 @@ const Rest = () => {
             ”
           </NoBreak>
           {" "}
-          in (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_2987"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
-          ) lands you right back on (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_2987"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
-          ), due to the fact
+          in (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n_reworked) lands you right back on (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n_reworked), due to the fact
           that{" "}
           <NoBreak>
             <Math>
@@ -446,13 +457,15 @@ const Rest = () => {
             </Math>
             .)
           </NoBreak>
-          {" "}(So, namely, if (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_2987"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
-          ) holds for all
+          {" "}(So, namely, if (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n_reworked) holds for all
           positive values of{" "}
           <NoBreak>
             <Math>
@@ -518,19 +531,23 @@ const Rest = () => {
         <Pause />
         <VerticalChunk>
           ...and any one of these equations implies the other two.
-          Thus, either of (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_7685"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
-          ) and (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_2987"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
-          )
+          Thus, either of (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n) and (&gt;&gt;10
+          <i>
+            to
+          </i>
+          the
+          <i>
+            minus
+          </i>
+          n_reworked)
           expresses the
         </VerticalChunk>
         <Pause />
@@ -553,7 +570,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-3">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Other bases.
@@ -580,7 +597,7 @@ const Rest = () => {
           </Math>
           {" "}twice, etc.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           However, a small quirk occurs for base{" "}
           <NoBreak>
             <Math>
@@ -640,7 +657,7 @@ const Rest = () => {
           {" "}etc, remain
           undefined.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Also (in case you're wondering){" "}
           <NoBreak>
             <Math>
@@ -720,7 +737,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           Note that mathematicians sometimes refer
           to a power with an exponent of{" "}
           <Math>
@@ -742,6 +759,7 @@ const Rest = () => {
           <Math>
             $\mathit&#123;1&#125;$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -768,7 +786,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-4">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Additivity of exponents.
@@ -814,7 +832,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           More generally,
         </VerticalChunk>
         <Pause />
@@ -888,7 +906,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-5">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             The third law of exponents.
@@ -949,7 +967,7 @@ const Rest = () => {
           {" "}This is known as “the third law
           of exponents”.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           On this subject, note that if one writes
         </VerticalChunk>
         <Pause />
@@ -1075,7 +1093,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-6">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Famous powers of 10.
@@ -1099,7 +1117,7 @@ const Rest = () => {
             .
           </NoBreak>
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           In English, e.g., these are some of the “famous”
           powers of{" "}
           <NoBreak>
@@ -1321,7 +1339,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-7">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Negative exponent prefixes.
@@ -1480,7 +1498,7 @@ const Rest = () => {
           ...and so on, which is a possible trick to check
           one's work and avoid mistakes.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           However, there also exist negative exponent
         </VerticalChunk>
         <Pause />
@@ -1628,7 +1646,7 @@ const Rest = () => {
           </NoBreak>
           {" "}(Well, anyway.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           To give an idea of scale,
         </VerticalChunk>
         <Pause />
@@ -1648,6 +1666,7 @@ const Rest = () => {
             </Math>
             ~
           </NoBreak>
+          {" "}{" "}
           <Math>
             $9$
           </Math>
@@ -1697,7 +1716,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-8">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Positive exponent prefixes.
@@ -1723,9 +1742,9 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <Table
-          margin-bottom="1em"
+          class="first-line"
           margin-top="1em"
-          class="first-line">
+          margin-bottom="1em">
           <colgroup>
             <col width="120px" />
             <col width="120px" />
@@ -1887,7 +1906,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-9">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Logarithms base 10.
@@ -1902,11 +1921,12 @@ const Rest = () => {
             <Math>
               $\mathit&#123;10&#125;$
             </Math>
+            {" "}{" "}
           </i>
           {" "}of that
           (positive) number.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           For example,
         </VerticalChunk>
         <Pause />
@@ -1930,6 +1950,7 @@ const Rest = () => {
           <Math>
             $\mathit&#123;2&#125;$
           </Math>
+          {" "}{" "}
         </CentralDisplayItalic>
         <Pause />
         <VerticalChunk>
@@ -1959,7 +1980,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 1.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             It so happens that
@@ -2012,7 +2033,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 2.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             It so happens that
@@ -2052,7 +2073,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 3.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             Since
@@ -2086,7 +2107,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 4.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             Since
@@ -2097,8 +2118,8 @@ const Rest = () => {
             Large 0.00001 = 10^&#123;-5&#125;
             $$
             <ImageRight
-              offset_x="0em"
               src="/images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg"
+              offset_x="0em"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
@@ -2123,11 +2144,11 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 1.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Compute{" "}
@@ -2148,7 +2169,7 @@ const Rest = () => {
               {" "}by hand.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={1}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Since{" "}
               <NoBreak>
@@ -2185,7 +2206,7 @@ const Rest = () => {
             <SolutionNote>
               <VerticalChunk>
                 <i>
-                  Note 1.
+                  Note ::øøSolutionNoteCounter.
                 </i>
                 {" "}
                 For the last computation,{" "}
@@ -2233,11 +2254,11 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 2.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Compute{" "}
@@ -2247,7 +2268,7 @@ const Rest = () => {
               {" "}by hand.
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={2}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We have
             </VerticalChunk>
@@ -2292,11 +2313,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={3}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 3.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If “万” is Chinese for{" "}
@@ -2307,7 +2328,7 @@ const Rest = () => {
               What about “万万万”?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={3}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               “万万” is “ten thousand ten thousand”, or
             </VerticalChunk>
@@ -2367,7 +2388,7 @@ const Rest = () => {
               times ten is a hundred and since a thousand
               times a thousand is a million.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (Similarly,
             </VerticalChunk>
             <Pause />
@@ -2390,18 +2411,18 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={4}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 4.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               How many millimeters in a kilometer?
               How many kilometers in a millimeter?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={4}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               There are{" "}
               <Math>
@@ -2425,7 +2446,7 @@ const Rest = () => {
               {" "}
               millimeters in a kilometer.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               From there, it automatically follows that
               there are{" "}
               <Math>
@@ -2434,7 +2455,7 @@ const Rest = () => {
               {" "}kilometers in
               a millimeter.
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               (Or you can run the reverse reasoning:
               There are{" "}
               <Math>
@@ -2455,11 +2476,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={5}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 5.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               How many kilometers is{" "}
@@ -2469,7 +2490,7 @@ const Rest = () => {
               {" "}millimeters?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={5}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We have
             </VerticalChunk>
@@ -2502,11 +2523,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={6}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 6.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               If the US yearly budget is{" "}
@@ -2518,7 +2539,7 @@ const Rest = () => {
               one hundred billion $?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={6}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               One hundred billion is{" "}
               <Math>
@@ -2562,11 +2583,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={7}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 7.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What is the logarithm base{" "}
@@ -2576,7 +2597,7 @@ const Rest = () => {
               {" "}of one trillion?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={7}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               <NoBreak>
                 <Math>
@@ -2594,11 +2615,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={8}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 8.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What is the logarithm base{" "}
@@ -2614,7 +2635,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={8}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               <NoBreak>
                 <Math>
@@ -2632,11 +2653,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={9}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 9.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               What is the logarithm base{" "}
@@ -2650,7 +2671,7 @@ const Rest = () => {
               ?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={9}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Since
             </VerticalChunk>
@@ -2679,11 +2700,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={10}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 10.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Evaluate:
@@ -2695,7 +2716,7 @@ const Rest = () => {
               $$
             </MathBlock>
           </ExerciseStatement>
-          <Solution solution_number={10}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We have
             </VerticalChunk>
@@ -2737,11 +2758,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={11}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 11.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               How many{" "}
@@ -2755,7 +2776,7 @@ const Rest = () => {
               ?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={11}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Presumably, there are{" "}
               <Math>
@@ -2791,11 +2812,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={12}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 12.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               It so happens that
@@ -2856,7 +2877,7 @@ const Rest = () => {
               by using some kind of algebra?
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={12}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               One has
             </VerticalChunk>
@@ -2879,11 +2900,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={13}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 13.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Prove that
@@ -2916,7 +2937,7 @@ const Rest = () => {
               {" "}bootcamp.)
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={13}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Here is the “proof” that your professor is
               hoping for:
@@ -2935,13 +2956,15 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <VerticalChunk>
-              stated earlier in the chapter as (
-              <InChapterLink
-                href="/article/bootcamp2?id=_1_7685"
-                class="handle-in-chapter-link">
-                A
-              </InChapterLink>
-              ), 
+              stated earlier in the chapter as (&gt;&gt;10
+              <i>
+                to
+              </i>
+              the
+              <i>
+                minus
+              </i>
+              n), 
               while the third equality uses additivity of exponents, 
               also stated earlier. (So: We are only using “known”
               facts, alongside some ordinary arithmetic.)
@@ -3000,11 +3023,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={14}>
-          <ExerciseStatement id="_3_1170">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 14.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Rewrite each of these expressions...
@@ -3062,7 +3085,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={14}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               We have (#1)
             </VerticalChunk>
@@ -3151,11 +3174,11 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={15}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 15.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               Find integers{" "}
@@ -3232,7 +3255,7 @@ const Rest = () => {
               $$
             </MathBlock>
           </ExerciseStatement>
-          <Solution solution_number={15}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Firstly we can rewrite{" "}
               <NoBreak>
@@ -3283,13 +3306,8 @@ const Rest = () => {
               <Math>
                 $z$
               </Math>
-              {" "}(as in{" "}
-              <InChapterLink
-                href="/article/bootcamp2?id=_3_1170"
-                class="handle-in-chapter-link">
-                Exercise 14
-              </InChapterLink>
-              ):
+              {" "}(as in Exercise
+              &gt;&gt;MLTrewrite):
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -3487,9 +3505,9 @@ const Rest = () => {
               Large -b -2c -3 = 0
               $$
               <ImageRight
-                offset_x="0.5em"
-                offset_y="-0.5em"
                 src="/images/svg_bt2_ex_equation_addition_cloud.svg"
+                offset_y="-0.5em"
+                offset_x="0.5em"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -3616,7 +3634,7 @@ const Rest = () => {
               </NoBreak>
               {" "}which it does.)
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               In summary, the solution is{" "}
               <NoBreak>
                 <Math>
@@ -3631,6 +3649,8 @@ const Rest = () => {
                 </Math>
                 ,
               </NoBreak>
+              {" "}
+              {" "}
               <NoBreak>
                 <Math>
                   $c = -2$

@@ -15,7 +15,8 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
+import SectionsBreadcrumbs from "~/components/SectionsBreadcrumbs";
+import  { BreadcrumbItem } from "~/components/SectionsBreadcrumbsContainer";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
@@ -26,8 +27,7 @@ const Article = () => {
   return (<>
       <Chapter
         number={1}
-        title="A Few Refreshers"
-        id="_5_3313">
+        title="A Few Refreshers">
         <SectionsBreadcrumbs>
           <BreadcrumbItem
             class="breadcrumb"
@@ -78,7 +78,7 @@ const Article = () => {
         <a
           class="prev_page"
           href="/" />
-        <Section id="section-1">
+        <Section id="section-::++SectionCounter">
           <VerticalChunk>
             <b>
               Square Roots.
@@ -137,9 +137,9 @@ const Article = () => {
           <MathBlock>
             $$\sqrt&#123;(-2)^2&#125; = 2$$
             <ImageRight
-              offset_x="5em"
-              offset_y="0em"
               src="/images/svg_ch1_ch_minus_two_squared_cloud.svg"
+              offset_y="0em"
+              offset_x="5em"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
@@ -195,7 +195,7 @@ const Article = () => {
               .
             </NoBreak>
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             (Nb: If ever you want to indicate both
             solutions of the equation{" "}
             <Math>
@@ -231,7 +231,7 @@ const Article = () => {
               .)
             </NoBreak>
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             We will next ponder
           </VerticalChunk>
           <Pause />
@@ -361,6 +361,8 @@ const Article = () => {
               </Math>
               ,
             </NoBreak>
+            {" "}
+            {" "}
             <Math>
               $\sqrt&#123;0.5&#125;$
             </Math>
@@ -377,7 +379,7 @@ const Article = () => {
               .
             </NoBreak>
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             In last resort, and in reasonably good
             agreement with our observations, a calculator
             reveals that
@@ -407,7 +409,7 @@ const Article = () => {
             {" "}is
             often perceived as counterintuitive.
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             You can think of it this way: multiplying a
             value by{" "}
             <NoBreak>
@@ -498,7 +500,7 @@ const Article = () => {
               .
             </NoBreak>
           </VerticalChunk>
-          <VerticalChunk indent={true}>
+          <VerticalChunk>
             The point is: if{" "}
             <NoBreak>
               “
@@ -549,7 +551,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="section-2">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Fractions and Division.
@@ -767,7 +769,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-3">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Distributivity.
@@ -807,7 +809,7 @@ const Rest = () => {
           </i>
           {" "}for short.
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           (We might finally clarify that{" "}
           <NoBreak>
             ‘
@@ -859,7 +861,7 @@ const Rest = () => {
           because multiplication takes precedence over
           addition, by default.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           A little more generally, one has such identities
           as
         </VerticalChunk>
@@ -869,9 +871,9 @@ const Rest = () => {
           (a + b)(C + D) \,=\, aC + bC + aD + bD
           $$
           <ImageLeft
-            offset_x="1em"
-            offset_y="-0.5em"
             src="/images/325.svg"
+            offset_y="-0.5em"
+            offset_x="1em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
@@ -910,7 +912,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 1.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             One has
@@ -940,7 +942,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 2.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             One has
@@ -980,7 +982,7 @@ const Rest = () => {
           {" "}is a bit curious
           indeed.)
         </VerticalChunk>
-        <VerticalChunk indent={true}>
+        <VerticalChunk>
           If we start from the afore-mentioned identity
         </VerticalChunk>
         <Pause />
@@ -1056,7 +1058,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 3.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             By the last formula (or “binomial expansion
@@ -1188,7 +1190,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 4.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             Since
@@ -1218,7 +1220,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 5.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             The algebraic expression
@@ -1324,7 +1326,7 @@ const Rest = () => {
         <Example>
           <VerticalChunk>
             <b>
-              Example 6.
+              Example ::øøExampleCounter.
             </b>
             {" "}
             We have{" "}
@@ -1348,8 +1350,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-        id="section-4"
-        divider={false}>
+        divider={false}
+        id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Epilogue.
@@ -1422,7 +1424,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="section-5">
+      <Section id="section-::++SectionCounter">
         <VerticalChunk>
           <b>
             Vocabulary.
@@ -1468,21 +1470,21 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
-          <ExerciseStatement id="_4_6773">
+        <Exercise exercise_number="::øøExerciseCounter">
+          <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 1.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
               True or false (and, if possible, explain):
             </VerticalChunk>
             <Pause />
             <Grid
-              center_on_overflow={true}
-              sm_cutoff={520}
+              cols={3}
               sm_cols={2}
-              cols={3}>
+              sm_cutoff={520}
+              center_on_overflow={true}>
               <Item>
                 a.{" "}
                 <Math>
@@ -1539,7 +1541,7 @@ const Rest = () => {
               </Item>
             </Grid>
           </ExerciseStatement>
-          <Solution solution_number={1}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Part by part:
             </VerticalChunk>
@@ -1635,8 +1637,8 @@ const Rest = () => {
               end&#123;align&#125;
               $$
               <ImageLeft
-                offset_y="0.8rem"
                 src="/images/17.svg"
+                offset_y="0.8rem"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -1682,7 +1684,7 @@ const Rest = () => {
                 .
               </NoBreak>
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               Technically, however, a number{" "}
               <Math>
                 $x$
@@ -1712,7 +1714,7 @@ const Rest = () => {
               {" "}satisfies
               this equation as well!
             </VerticalChunk>
-            <VerticalChunk indent={true}>
+            <VerticalChunk>
               The last step, therefore, is to note that
               {" "}
               <Math>
@@ -1970,10 +1972,10 @@ const Rest = () => {
               10^&#123;9&#125;\fw\te&#123;km&#125;
               $$
               <ImageRight
-                squiggle={false}
-                offset_y="-1rem"
-                offset_x="3rem"
                 src="/images/svg_ch1_ex_104.svg"
+                offset_x="3rem"
+                offset_y="-1rem"
+                squiggle={false}
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -2168,8 +2170,8 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Grid
-              place_items="end"
-              cols={3}>
+              cols={3}
+              place_items="end">
               <Math>
                 $ (-1)^1 = $
               </Math>
@@ -2483,8 +2485,8 @@ const Rest = () => {
               end&#123;align&#125;
               $$
               <ImageRight
-                offset_y="-0.5em"
                 src="/images/svg_ch1_ex_24.svg"
+                offset_y="-0.5em"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -2624,20 +2626,14 @@ const Rest = () => {
             </VerticalChunk>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
+        <Exercise exercise_number="::øøExerciseCounter">
           <ExerciseStatement>
             <VerticalChunk>
               <b>
-                Exercise 2.
+                Exercise ::øøExerciseCounter.
               </b>
               {" "}
-              In the solution to{" "}
-              <InChapterLink
-                href="/article/chapter1?id=_4_6773"
-                class="handle-in-chapter-link">
-                Exercise 1
-              </InChapterLink>
-              , we 
+              In the solution to Exercise &gt;&gt;TrueOrFalse, we 
               observed how the difference
             </VerticalChunk>
             <Pause />
@@ -2691,7 +2687,7 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
           </ExerciseStatement>
-          <Solution solution_number={2}>
+          <Solution solution_number="::øøExerciseCounter">
             <VerticalChunk>
               Since
             </VerticalChunk>
@@ -2701,10 +2697,10 @@ const Rest = () => {
               &#123;1 \over n&#125; - &#123;1 \over n+1&#125; = &#123;1 \over n(n+1)&#125;
               $$
               <ImageRight
-                squiggle={false}
-                src="/images/svg_ch1_ex_25.svg"
-                offset_y="1.2rem"
                 offset_x="5rem"
+                offset_y="1.2rem"
+                src="/images/svg_ch1_ex_25.svg"
+                squiggle={false}
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -2717,10 +2713,10 @@ const Rest = () => {
               &#123;1 \over n^2&#125;
               $$
               <ImageRight
-                squiggle={false}
-                src="/images/svg_ch1_ex_26.svg"
-                offset_y="1.2rem"
                 offset_x="11.5rem"
+                offset_y="1.2rem"
+                src="/images/svg_ch1_ex_26.svg"
+                squiggle={false}
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
@@ -2761,8 +2757,8 @@ const Rest = () => {
               end&#123;align&#125;
               $$
               <ImageRight
-                offset_y="-0.5em"
                 src="/images/svg_ch1_ex_27.svg"
+                offset_y="-0.5em"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
