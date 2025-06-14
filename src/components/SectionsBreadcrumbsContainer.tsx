@@ -130,7 +130,7 @@ const SectionsBreadcrumbsContainer = (props: ParentProps) => {
               <OutlinedText
                 onClick={() => getPrevArticle(true)}
                 class={twJoin(
-                  prevDisabled() && "!text-gray-600 cursor-default",
+                  prevDisabled() && "!text-stone-300 cursor-default",
                   "underline cursor-pointer",
                 )}>
                 &lt;&lt;prev
@@ -138,7 +138,7 @@ const SectionsBreadcrumbsContainer = (props: ParentProps) => {
               <OutlinedText
                 onClick={() => getNextArticle(true)}
                 class={twJoin(
-                  nextDisabled() && "!text-gray-600 cursor-default",
+                  nextDisabled() && "!text-stone-300 cursor-default",
                   "underline cursor-pointer",
                 )}>
                 next&gt;&gt;
