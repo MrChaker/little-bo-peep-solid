@@ -15,22 +15,83 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
+import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
+import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
 const Article = () => {
   useSetRoute();
+  useBreadcrumbs();
   return (<>
       <Bootcamp
         number={1}
         title="Sets">
+        <SectionsBreadcrumbs>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-0">
+            <InChapterLink href="?id=section-1">
+              notation
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-1">
+            <InChapterLink href="?id=section-2">
+              what it does
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-2">
+            <InChapterLink href="?id=section-3">
+              set equality
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-3">
+            <InChapterLink href="?id=section-4">
+              second notation for the empty set
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-4">
+            <InChapterLink href="?id=section-5">
+              sets within sets
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-5">
+            <InChapterLink href="?id=section-6">
+              set union and set intersection
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-6">
+            <InChapterLink href="?id=section-7">
+              sets encountered in calculus
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-7">
+            <InChapterLink href="?id=section-8">
+              sets not encountered in calculus
+            </InChapterLink>
+          </BreadcrumbItem>
+        </SectionsBreadcrumbs>
         <a
           class="next_page"
           href="/" />
         <a
           class="prev_page"
           href="/article/bootcamp2" />
-        <Section>
+        <Section id="section-1">
           <VerticalChunk>
             <b>
               Notation.
@@ -143,7 +204,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section>
+      <Section id="section-2">
         <VerticalChunk>
           <b>
             What it does.
@@ -348,7 +409,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-3">
         <VerticalChunk>
           <b>
             Set Equality.
@@ -363,7 +424,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\&#123;2, 1\&#125;
+          Large\&#123;2, 1\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -373,7 +434,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\&#123;1, 2\&#125;
+          Large\&#123;1, 2\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -396,7 +457,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\&#123;1, 1, 2\&#125;
+          Large\&#123;1, 1, 2\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -406,7 +467,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\&#123;1, 2\&#125;
+          Large\&#123;1, 2\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -474,7 +535,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-4">
         <VerticalChunk>
           <b>
             Second notation for the empty set.
@@ -485,7 +546,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#125;
+          Large \&#123;\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -495,7 +556,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \phi
+          Large \phi
           $$
         </MathBlock>
         <Pause />
@@ -506,7 +567,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-5">
         <VerticalChunk>
           <b>
             Sets within sets.
@@ -519,7 +580,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#123;\&#123;\&#123;\&#125;\&#125;\&#125;\&#125;
+          Large \&#123;\&#123;\&#123;\&#123;\&#125;\&#125;\&#125;\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -532,7 +593,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#123;\&#123;\phi\&#125;\&#125;\&#125;
+          Large \&#123;\&#123;\&#123;\phi\&#125;\&#125;\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -551,7 +612,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
+          Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
           $$
           <ImageRight
             offset_x="3em"
@@ -566,7 +627,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123; \&#123;\&#125; \&#125;
+          Large \&#123; \&#123;\&#125; \&#125;
           $$
         </MathBlock>
         <Pause />
@@ -591,7 +652,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#125;
+          Large \&#123;\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -611,7 +672,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;\&#123;\&#123;\&#125;\&#125; \&#125; \ne \&#123;\&#123;\&#125;\&#125;
+          Large \&#123;\&#123;\&#123;\&#125;\&#125; \&#125; \ne \&#123;\&#123;\&#125;\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -621,7 +682,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-6">
         <VerticalChunk>
           <b>
             Set union and set intersection.
@@ -666,7 +727,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;1, 2\&#125; \cup \&#123;2, 5\&#125; = \&#123;1, 2, 5\&#125;
+          Large \&#123;1, 2\&#125; \cup \&#123;2, 5\&#125; = \&#123;1, 2, 5\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -717,7 +778,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large A \cap B
+          Large A \cap B
           $$
         </MathBlock>
         <Pause />
@@ -739,7 +800,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \&#123;1, 2\&#125; \cap \&#123;2, 5\&#125; = \&#123;2\&#125;
+          Large \&#123;1, 2\&#125; \cap \&#123;2, 5\&#125; = \&#123;2\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -767,7 +828,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large x \in (A \cup B)
+          Large x \in (A \cup B)
           $$
         </MathBlock>
         <Pause />
@@ -777,7 +838,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large x \in A
+          Large x \in A
           $$
         </MathBlock>
         <i>
@@ -786,7 +847,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large x \in B
+          Large x \in B
           $$
         </MathBlock>
         <Pause />
@@ -799,7 +860,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large x \in (A \cup B) \iff (x \in A) \vee (x \in B)
+          Large x \in (A \cup B) \iff (x \in A) \vee (x \in B)
           $$
         </MathBlock>
         <Pause />
@@ -864,7 +925,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \wedge
+          Large \wedge
           $$
         </MathBlock>
         <Pause />
@@ -873,7 +934,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-7">
         <VerticalChunk>
           <b>
             Sets encountered in calculus.
@@ -888,7 +949,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\rr
+          Large\rr
           $$
         </MathBlock>
         <Pause />
@@ -902,7 +963,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\zz
+          Large\zz
           $$
         </MathBlock>
         <Pause />
@@ -917,7 +978,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\nn
+          Large\nn
           $$
         </MathBlock>
         <Pause />
@@ -947,7 +1008,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large [a, b]
+          Large [a, b]
           $$
         </MathBlock>
         <Pause />
@@ -977,7 +1038,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large [a, b)
+          Large [a, b)
           $$
         </MathBlock>
         <Pause />
@@ -1010,7 +1071,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large (-\infty, \infty) = \rr
+          Large (-\infty, \infty) = \rr
           $$
         </MathBlock>
         <Pause />
@@ -1020,7 +1081,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large (-\infty, \infty)
+          Large (-\infty, \infty)
           $$
         </MathBlock>
         <Pause />
@@ -1048,7 +1109,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-8">
         <VerticalChunk>
           <b>
             Sets not encountered in calculus.
@@ -1065,7 +1126,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\overline&#123;\rr&#125;
+          Large\overline&#123;\rr&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1099,7 +1160,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large\overline&#123;\rr&#125; = \rr \cup \&#123;-\infty, \infty\&#125;
+          Large\overline&#123;\rr&#125; = \rr \cup \&#123;-\infty, \infty\&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1129,7 +1190,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large [-\infty, \infty]
+          Large [-\infty, \infty]
           $$
         </MathBlock>
         <Pause />
@@ -1155,7 +1216,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large 0.5+ \infty
+          Large 0.5+ \infty
           $$
         </MathBlock>
         <Pause />
@@ -1194,7 +1255,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large (-\infty) + \infty
+          Large (-\infty) + \infty
           $$
         </MathBlock>
         <Pause />

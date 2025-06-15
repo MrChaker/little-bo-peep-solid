@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "Baskerville";
+  src: url("/fonts/Baskerville-Regular.ttf");
+}
+
+@font-face {
   font-family: "Baskerville Bold";
   src: url("/fonts/Baskerville-Bold.ttf");
 }
@@ -54,7 +59,8 @@ b {
   font-family: "Baskerville Bold";
 }
 
-i {
+i,
+em {
   font-family: "Baskerville Italic";
   font-style: normal;
 }
@@ -423,4 +429,52 @@ ol.l1 > li:before {
 .text-2rem {
   font-size: 2rem;
   line-height: 2.2rem;
+}
+
+.breadcrumb,
+.breadcrumb-prev-next {
+  position: relative;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.breadcrumb a {
+  text-indent: -1em;
+  padding-left: 1em;
+  display: block;
+}
+
+.breadcrumb:not(.highlighted):hover,
+.breadcrumb-prev-next span:hover,
+.panel-item:hover {
+  color: #19124c;
+}
+
+.breadcrumb i,
+.breadcrumb em {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.highlighted {
+  color: red;
+}
+
+.handle-in-chapter-link:hover,
+.handle-out-of-chapter-link:hover {
+  text-decoration: underline;
+}
+
+.e-link:hover {
+  background-color: #ffd42a;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 10px;
+}
+
+.c-link:hover {
+  background-color: #47ddff;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 10px;
 }

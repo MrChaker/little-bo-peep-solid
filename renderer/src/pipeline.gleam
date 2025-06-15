@@ -1,6 +1,6 @@
 import gleam/list
 import gleam/option.{None, Some}
-import infrastructure.{type Pipe}
+import infrastructure.{type Pipe} as infra
 import prefabricated_pipelines as pp
 import desugarer_names as dn
 
@@ -11,14 +11,14 @@ pub fn lbp_pipeline() -> List(Pipe) {
     // escaped dollar signs with ordinary dollars
     // ****
     pp.create_mathblock_and_math_elements(
-      #([ pp.DoubleDollar ], pp.DoubleDollar),
-      #([ pp.SingleDollar ], pp.SingleDollar),
+      #([ infra.DoubleDollar ], infra.DoubleDollar),
+      #([ infra.SingleDollar ], infra.SingleDollar),
     ),
     [
       dn.find_replace(#([#("\\$", "$")], ["Math", "MathBlock"])),
     ],
     // ****
-    // setting up counters and 
+    // setting up counters and
     // counter-related titles
     // ****
     [
@@ -27,13 +27,16 @@ pub fn lbp_pipeline() -> List(Pipe) {
         #("Book", "counter", "BootcampCounter"),
         #("Chapter", "counter", "ExampleCounter"),
         #("Chapter", "counter", "NoteCounter"),
+        #("Chapter", "counter", "SectionCounter"),
         #("Bootcamp", "counter", "ExampleCounter"),
+        #("Bootcamp", "counter", "SectionCounter"),
         #("Exercises", "counter", "ExerciseCounter"),
         #("Solution", "counter", "SolutionNoteCounter"),
         #("Chapter", "path", "/article/chapter::øøChapterCounter"),
         #("Bootcamp", "path", "/article/bootcamp::øøBootcampCounter"),
         #("Exercise", "exercise_number", "::øøExerciseCounter"),
         #("Solution", "solution_number", "::øøExerciseCounter"),
+        #("Section", "id", "section-::++SectionCounter"),
       ]),
       dn.associate_counter_by_prepending_incrementing_attribute([
         #("Chapter", "ChapterCounter"),
@@ -71,6 +74,7 @@ pub fn lbp_pipeline() -> List(Pipe) {
             "Solution", "SolutionNote", "StarDivider", "Table", "TextParent",
             "WriterlyBlankLine", "center", "li", "ul", "ol", "table", "colgroup",
             "thead", "tbody", "tr", "td", "section",
+            "DebugScope",
           ],
           ["MathBlock", "VerticalChunk", "CentralDisplay", "CentralDisplayItalic"],
         ),
@@ -80,6 +84,8 @@ pub fn lbp_pipeline() -> List(Pipe) {
     // ****
     // parse '__', '_|' delimiters, break
     // new elements out of parent VerticalChunk
+    // (why don't we do this before creating the VerticalChunk,
+    // and spare ourselves the free_children call?)
     // ****
     pp.symmetric_delim_splitting("__", "__", "CentralDisplayItalic", ["Mathblock", "Math"]),
     pp.asymmetric_delim_splitting("_\\|", "\\|_", "_|", "|_", "CentralDisplay", ["Mathblock", "Math"]),
@@ -102,25 +108,26 @@ pub fn lbp_pipeline() -> List(Pipe) {
     // ****
     [
       dn.wrap_math_with_no_break(),
-      dn.unwrap_when_single_child(["NoBreak"]),
+      dn.unwrap_when_zero_or_one_children(["NoBreak"]),
       dn.wrap_children_before_in(#("Exercise", "Solution", "ExerciseStatement")),
       dn.cut_paste_attribute_from_self_to_child(
         #("Exercise", "ExerciseStatement", "id"),
       ),
-
       // ************************
       // VerticalChunk cleanup
       // ************************
       dn.concatenate_text_nodes(),
+      dn.remove_text_nodes_with_singleton_empty_line(),
       dn.remove_starting_and_ending_spaces(["VerticalChunk"]),
       dn.remove_starting_and_ending_empty_lines(["VerticalChunk"]),
+      dn.remove_empty_chunks(),
+      dn.identity(),
       dn.unwrap_vertical_chunks_with_no_text_child(),
       dn.unwrap_when_descendant_of([#("VerticalChunk", ["td", "li"])]),
       dn.rename_when_child_of([
         #("VerticalChunk", "Item", "List"),
         #("VerticalChunk", "Item", "Grid"),
       ]),
-      dn.remove_empty_chunks(),
       // ************************
       // ImageLeft, ImageRight parent-finding
       // ************************
@@ -152,10 +159,14 @@ pub fn lbp_pipeline() -> List(Pipe) {
           "true",
         ),
       ]),
+      dn.rename_attributes([
+        #("margin-left", "marginLeft"),
+        #("margin-right", "marginRight"),
+      ]),
       // ************************
       // VerticalChunk indents
       // ************************
-      dn.insert_indent(),
+      dn.add_attribute_to_second_of_kind(#("VerticalChunk", "indent", "true")),
       // ************************
       // Add spacers
       // ************************
@@ -197,24 +208,33 @@ pub fn lbp_pipeline() -> List(Pipe) {
       // ************************
       dn.change_attribute_value([#("src", "/()")]),
       dn.remove_attributes(["counter", "handle", "type", "t", "path", "."]),
+      dn.rearrange_links([
+        #("Note <a href=0>_0_</a> of Exercise <a href=1>_1_</a> of Chapter <a href=2>_2_</a>", "<a href=0>Note _0_ of Exercise _1_ of Chapter _2_</a>"),
+        #("Note <a href=0>_0_</a> of Exercise <a href=1>_1_</a>", "<a href=0>Note _0_ of Exercise _1_</a>"),
+        #("Exercise <a href=1>_1_</a> of Chapter <a href=2>_2_</a>", "<a href=1>Exercise _1_ of Chapter _2_</a>"),
+        #("Chapter <a href=1>_1_</a>", "<a href=1>Chapter _1_</a>"),
+        #("Exercise <a href=1>_1_</a>", "<a href=1>Exercise _1_</a>"),
+        #("Note <a href='1'>_1_</a>", "<a href='1'>Note _1_</a>"),
+      ]),
       // ************************
       // contents
       // ************************
       dn.generate_lbp_table_of_contents(#(
-        "PanelAuthorSuppliedContent",
-        "PanelTitle",
-        "PanelItem",
+        "HamburgerPanelAuthorSuppliedContents",
+        "HamburgerPanelTitle",
+        "HamburgerPanelItem",
         None,
       )),
       dn.generate_lbp_table_of_contents(#(
-        "TOCAuthorSuppliedContent",
+        "TOCAuthorSuppliedContents",
         "TOCTitle",
         "TOCItem",
         Some("Spacer"),
       )),
       dn.generate_lbp_links(),
-      dn.reassign_text_node_blame_to_blame_of_first_nonempty_line_in_text_node(),
-     
+      dn.generate_lbp_sections_breadcrumbs(),
+      // dn.reassign_text_node_blame_to_blame_of_first_nonempty_line_in_text_node(),
+      dn.unwrap(["DebugScope"])
     ]
   ]
   |> list.flatten

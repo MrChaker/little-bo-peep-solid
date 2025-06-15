@@ -15,22 +15,70 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
+import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
+import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
 const Article = () => {
   useSetRoute();
+  useBreadcrumbs();
   return (<>
       <Chapter
         number={1}
-        title="A Few Refreshers">
+        title="A Few Refreshers"
+        id="_5_6782">
+        <SectionsBreadcrumbs>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-0">
+            <InChapterLink href="?id=section-1">
+              square roots
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-1">
+            <InChapterLink href="?id=section-2">
+              fractions and division
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-2">
+            <InChapterLink href="?id=section-3">
+              distributivity
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-3">
+            <InChapterLink href="?id=section-4">
+              epilogue
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-4">
+            <InChapterLink href="?id=section-5">
+              vocabulary
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-5">
+            <InChapterLink href="?id=exercises">
+              exercises
+            </InChapterLink>
+          </BreadcrumbItem>
+        </SectionsBreadcrumbs>
         <a
           class="next_page"
           href="/article/chapter2" />
         <a
           class="prev_page"
           href="/" />
-        <Section>
+        <Section id="section-1">
           <VerticalChunk>
             <b>
               Square Roots.
@@ -105,7 +153,7 @@ const Article = () => {
           <Pause />
           <MathBlock>
             $$
-            \sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; x
+            sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; x
             $$
           </MathBlock>
           <Pause />
@@ -122,7 +170,7 @@ const Article = () => {
           <Pause />
           <MathBlock>
             $$
-            \sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; |x|
+            sqrt&#123;x^&#123;2&#125;&#125; \rt&#123;0.1&#125; = \rt&#123;0.1&#125; |x|
             $$
           </MathBlock>
           <Pause />
@@ -189,7 +237,7 @@ const Article = () => {
           <Pause />
           <MathBlock>
             $$
-            \sqrt&#123;0.5&#125;
+            sqrt&#123;0.5&#125;
             $$
           </MathBlock>
           <Pause />
@@ -313,6 +361,8 @@ const Article = () => {
               </Math>
               ,
             </NoBreak>
+            {" "}
+            {" "}
             <Math>
               $\sqrt&#123;0.5&#125;$
             </Math>
@@ -337,7 +387,7 @@ const Article = () => {
           <Pause />
           <MathBlock>
             $$
-            \sqrt&#123;0.5&#125; = 0.7071067...
+            sqrt&#123;0.5&#125; = 0.7071067...
             $$
           </MathBlock>
           <Pause />
@@ -501,7 +551,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section>
+      <Section id="section-2">
         <VerticalChunk>
           <b>
             Fractions and Division.
@@ -690,11 +740,11 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \begin&#123;align&#125;
+          begin&#123;align&#125;
           &#123;71 \over 40&#125; \,&=\, &#123;40 + 30 + 1 \over 40&#125; \,=\, &#123;40 \over 40&#125; + &#123;30 \over 40&#125; + &#123;1 \over 40&#125;\\
-          \,&=\, 1 + &#123;3 \over 4&#125; + &#123;1 \over 4&#125;\!\cdot \!&#123;1 \over 10&#125;\up&#123;1.5&#125;\\
-          \,&=\, 1 + 0.75 + 0.025 = 1.775\up&#123;1.5&#125;
-          \end&#123;align&#125;
+          ,&=\, 1 + &#123;3 \over 4&#125; + &#123;1 \over 4&#125;\!\cdot \!&#123;1 \over 10&#125;\up&#123;1.5&#125;\\
+          ,&=\, 1 + 0.75 + 0.025 = 1.775\up&#123;1.5&#125;
+          end&#123;align&#125;
           $$
         </MathBlock>
         <Pause />
@@ -719,7 +769,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-3">
         <VerticalChunk>
           <b>
             Distributivity.
@@ -870,11 +920,11 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \begin&#123;align&#125;
+            begin&#123;align&#125;
             (10 + 2)(10 + 4) \,&=\, 10\!\cdot\!10 \,+\, 10\!\cdot\!4 \,+\, 2\!\cdot\!10 \,+\, 2\!\cdot\!4\\
-            \,&=\, 100 \,+\, 40 \,+\, 20 \,+\, 8\\
-            \,&=\, 168
-            \end&#123;align&#125;
+            ,&=\, 100 \,+\, 40 \,+\, 20 \,+\, 8\\
+            ,&=\, 168
+            end&#123;align&#125;
             $$
           </MathBlock>
           <Pause />
@@ -900,11 +950,11 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \begin&#123;align&#125;
+            begin&#123;align&#125;
             (10 + 3)(10 + 3) \,&=\, 10\!\cdot\!10 \,+\, 10\!\cdot\!3 \,+\, 3\!\cdot\!10 \,+\, 3\!\cdot\!3\\
-            \,&=\, 100 \,+\, 30 \,+\, 30 \,+\, 9\\
-            \,&=\, 169
-            \end&#123;align&#125;
+            ,&=\, 100 \,+\, 30 \,+\, 30 \,+\, 9\\
+            ,&=\, 169
+            end&#123;align&#125;
             $$
           </MathBlock>
           <Pause />
@@ -1017,11 +1067,11 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \begin&#123;align&#125;
-            \up&#123;1&#125; (10 + 3)^2 \,&=\, 10\!\cdot\!10 \,+\, 2\!\cdot\!3\!\cdot\!10 \,+\, 3\!\cdot\!3 \\
-            \up&#123;1&#125; \,&=\, 100 + 60 + 9 \\
-            \up&#123;1&#125; \,&=\, 169
-            \end&#123;align&#125;
+            begin&#123;align&#125;
+            up&#123;1&#125; (10 + 3)^2 \,&=\, 10\!\cdot\!10 \,+\, 2\!\cdot\!3\!\cdot\!10 \,+\, 3\!\cdot\!3 \\
+            up&#123;1&#125; \,&=\, 100 + 60 + 9 \\
+            up&#123;1&#125; \,&=\, 169
+            end&#123;align&#125;
             $$
           </MathBlock>
           <Pause />
@@ -1261,11 +1311,11 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \begin&#123;align&#125;
+          begin&#123;align&#125;
           (-1)(a - b) \,&=\, (-1)(a + (-b)) \\
-          \,&=\, (-1)a + (-1)(-b) \\
-          \,&=\, -a + b
-          \end&#123;align&#125;
+          ,&=\, (-1)a + (-1)(-b) \\
+          ,&=\, -a + b
+          end&#123;align&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1299,7 +1349,9 @@ const Rest = () => {
         </Example>
       </Section>
       <Pause />
-      <Section divider={false}>
+      <Section
+        id="section-4"
+        divider={false}>
         <VerticalChunk>
           <b>
             Epilogue.
@@ -1329,11 +1381,11 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \begin&#123;align&#125;
+          begin&#123;align&#125;
           11\,\cdot\,13 &= 12^2 - 1\\
           10\,\cdot\,12 &= 11^2 - 1\\
           9\,\cdot\,11 &= 10^2 - 1
-          \end&#123;align&#125;
+          end&#123;align&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1372,7 +1424,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-5">
         <VerticalChunk>
           <b>
             Vocabulary.
@@ -1407,7 +1459,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \sqrt&#123;3&#125; + \sqrt&#123;2&#125;,\,\, \sqrt&#123;3&#125; - \sqrt&#123;2&#125;
+          sqrt&#123;3&#125; + \sqrt&#123;2&#125;,\,\, \sqrt&#123;3&#125; - \sqrt&#123;2&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1419,7 +1471,7 @@ const Rest = () => {
       <Pause />
       <Exercises>
         <Exercise exercise_number={1}>
-          <ExerciseStatement id="_27535464898">
+          <ExerciseStatement id="_4_9941">
             <VerticalChunk>
               <b>
                 Exercise 1.
@@ -1563,26 +1615,26 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\,\, (\sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.1&#125;)^6 \\
               =&\,\, \up&#123;1.3&#125;
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\qquad\\
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\qquad\\
               =&\,\, \up&#123;1.3&#125;
               (\gbk\sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
               (\gbk\sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
               (\gbk\sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125; \times
-              \sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \\
+              sqrt[2]&#123;\up&#123;0.75&#125;\sqrt[3]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \\
               =& \,\, \up&#123;1.3&#125; (\sqrt[3]&#123;\up&#123;0.64&#125;2&#125;\rt&#123;0.1&#125;) \times (\sqrt[3]&#123;\up&#123;0.64&#125;2&#125;\rt&#123;0.1&#125;) \times
               (\sqrt[3]&#123;\up&#123;0.64&#125;2&#125;\rt&#123;0.1&#125;)\\
               =& \,\, \up&#123;1.4&#125; 2
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
               <ImageLeft
                 offset_y="0.8rem"
@@ -1596,26 +1648,26 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\,\, (\sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.1&#125;)^6 \\
               =&\,\, \up&#123;1.3&#125;
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\\
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\\
               =& \,\, \up&#123;1.3&#125;
               (\gbk\sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.11&#125;) \times
               (\gbk\sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
-              \sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.11&#125;)\\
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125; \times
+              sqrt[3]&#123;\up&#123;0.75&#125;\sqrt[2]&#123;2&#125;&#125;\rt&#123;0.11&#125;)\\
               =&\,\, \up&#123;1.3&#125;
-              \sqrt[2]&#123;\up&#123;0.65&#125;2&#125; \times \sqrt[2]&#123;\up&#123;0.65&#125;2&#125;\\
+              sqrt[2]&#123;\up&#123;0.65&#125;2&#125; \times \sqrt[2]&#123;\up&#123;0.65&#125;2&#125;\\
               =&\,\, \up&#123;1.4&#125; 2
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
               <ImageLeft
                 src="/images/18.svg"
@@ -1739,7 +1791,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \left(&#123;\sqrt&#123;2&#125; \over 2&#125;\right)^&#123;\!2&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;\cdot&#123;\sqrt&#123;2&#125; \over 2&#125;
+              left(&#123;\sqrt&#123;2&#125; \over 2&#125;\right)^&#123;\!2&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;\cdot&#123;\sqrt&#123;2&#125; \over 2&#125;
               = &#123;\sqrt&#123;2&#125;\cdot\sqrt&#123;2&#125; \over 4&#125; = &#123;2 \over 4&#125; = 0.5.
               $$
             </MathBlock>
@@ -1755,7 +1807,7 @@ const Rest = () => {
               <NoBreak>
                 <Math>
                   $&#123;\sqrt&#123;2&#125; \over 2&#125; =
-                  \sqrt&#123;0.5&#125;$
+                  sqrt&#123;0.5&#125;$
                 </Math>
                 .)
               </NoBreak>
@@ -1768,7 +1820,7 @@ const Rest = () => {
                 “
                 <Math>
                   $&#123;\sqrt&#123;x&#125; \over \sqrt&#123;y&#125;&#125; =
-                  \sqrt&#123;\up&#123;0.7&#125;x \over y&#125;$
+                  sqrt&#123;\up&#123;0.7&#125;x \over y&#125;$
                 </Math>
                 ”
               </NoBreak>
@@ -1787,7 +1839,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \left(&#123;1 \over \sqrt&#123;2&#125;&#125;\right)^&#123;\!2&#125; = &#123;1 \over \sqrt&#123;2&#125;&#125;\cdot&#123;1 \over \sqrt&#123;2&#125;&#125;
+              left(&#123;1 \over \sqrt&#123;2&#125;&#125;\right)^&#123;\!2&#125; = &#123;1 \over \sqrt&#123;2&#125;&#125;\cdot&#123;1 \over \sqrt&#123;2&#125;&#125;
               = &#123;1 \over \sqrt&#123;2&#125;\cdot\sqrt&#123;2&#125;&#125; = &#123;1 \over 2&#125; = 0.5.
               $$
             </MathBlock>
@@ -1856,8 +1908,8 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;array&#125;&#123;c|c&#125;
-              \,\,\,\,n\,\,\,\, & 2^n\dn&#123;0.3&#125; \\ \hline
+              begin&#123;array&#125;&#123;c|c&#125;
+              ,\,\,\,n\,\,\,\, & 2^n\dn&#123;0.3&#125; \\ \hline
               0 & 1 \up&#123;1.1&#125;\\
               1 & 2 \\
               2 & 4 \\
@@ -1869,7 +1921,7 @@ const Rest = () => {
               8 & 256 \\
               9 & 512 \\
               10 & 1024
-              \end&#123;array&#125;
+              end&#123;array&#125;
               $$
             </MathBlock>
             <Pause />
@@ -1945,7 +1997,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \te&#123;“&#125;2^&#123;50&#125;\fw\te&#123;mm&#125;\te&#123;”&#125;
+              te&#123;“&#125;2^&#123;50&#125;\fw\te&#123;mm&#125;\te&#123;”&#125;
               $$
             </MathBlock>
             <Pause />
@@ -1955,7 +2007,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \te&#123;“&#125;\fw10^&#123;15&#125;\te&#123;mm&#125;\te&#123;”&#125;
+              te&#123;“&#125;\fw10^&#123;15&#125;\te&#123;mm&#125;\te&#123;”&#125;
               $$
             </MathBlock>
             <Pause />
@@ -1977,12 +2029,12 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               & &#123;1 \over 0.95&#125; &gt; 1.05\\
-              \iff & 1 &gt; 1.05 \cdot 0.95\up&#123;1.4&#125;\\
-              \iff & 1 &gt; (1 + 0.05)(1 - 0.05)\up&#123;1.4&#125;\\
-              \iff & 1 &gt; 1 - 0.05^2\up&#123;1.4&#125;
-              \end&#123;align&#125;
+              iff & 1 &gt; 1.05 \cdot 0.95\up&#123;1.4&#125;\\
+              iff & 1 &gt; (1 + 0.05)(1 - 0.05)\up&#123;1.4&#125;\\
+              iff & 1 &gt; 1 - 0.05^2\up&#123;1.4&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -1999,7 +2051,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \te&#123;“&#125;\,(a+b)(a-b) = a^2-b^2\,\te&#123;”&#125;
+              te&#123;“&#125;\,(a+b)(a-b) = a^2-b^2\,\te&#123;”&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2235,7 +2287,7 @@ const Rest = () => {
               <NoBreak>
                 <Math>
                   $&#123;101
-                  \over 100&#125;$
+                  over 100&#125;$
                 </Math>
                 ,
               </NoBreak>
@@ -2299,12 +2351,12 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right) \\
               + \,&\, \left(&#123;1 \over 2&#125; - &#123;1 \over 3&#125;\right) \\
-              \hline
+              hline
               = \,&\, \left(1 - &#123;1 \over 3&#125;\right)
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2315,13 +2367,13 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
               + \,&\, \left(&#123;1 \over 2&#125; - &#123;1 \over 3&#125;\right)\\
               + \,&\, \left(&#123;1 \over 3&#125; - &#123;1 \over 4&#125;\right)\\
-              \hline
+              hline
               = \,&\, \left(1 - &#123;1 \over 4&#125;\right)
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2331,14 +2383,14 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
               + \,&\, \left(&#123;1 \over 2&#125; - &#123;1 \over 3&#125;\right)\\
               + \,&\, \left(&#123;1 \over 3&#125; - &#123;1 \over 4&#125;\right)\\
               + \,&\, \left(&#123;1 \over 4&#125; - &#123;1 \over 5&#125;\right)\\
-              \hline
+              hline
               = \,&\, \left(1 - &#123;1 \over 5&#125;\right)
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2360,7 +2412,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
               + \,&\, \left(&#123;1 \over 2&#125; - &#123;1 \over 3&#125;\right)\\
               + \,&\, \left(&#123;1 \over 3&#125; - &#123;1 \over 4&#125;\right)\\
@@ -2368,7 +2420,7 @@ const Rest = () => {
               + \,&\, \left(&#123;1 \over 5&#125; - &#123;1 \over 6&#125;\right)\\
               + \,&\, \left(&#123;1 \over 6&#125; - &#123;1 \over 7&#125;\right)\\
               + \,&\, \,\,\,\,\,\,\,\,\dots\up&#123;1.3&#125;
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2425,12 +2477,12 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &#123;1 \over n&#125; - &#123;1 \over n+1&#125; &= &#123;1 \over n&#125;\cdot&#123;n+1 \over n+1&#125;\, - \,
               &#123;1 \over n+1&#125;\cdot&#123;n \over n&#125;\up&#123;1.5&#125;\\
               &= &#123;n+1 \over n(n+1)&#125; - &#123;n \over n(n+1)&#125;\up&#123;1.5&#125;\\
               &= &#123;1 \over n(n+1)&#125;\up&#123;1.5&#125;
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
               <ImageRight
                 offset_y="-0.5em"
@@ -2464,7 +2516,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &\, \left(1 - &#123;1 \over 2&#125;\right)\\
               + \,&\, \left(&#123;1 \over 2&#125; - &#123;1 \over 3&#125;\right)\\
               + \,&\, \left(&#123;1 \over 3&#125; - &#123;1 \over 4&#125;\right)\\
@@ -2473,7 +2525,7 @@ const Rest = () => {
               + \,&\, \left(&#123;1 \over 6&#125; - &#123;1 \over 7&#125;\right)\\
               + \,&\, \,\,\,\,\,\,\,\,\dots\up&#123;1.3&#125;\dn&#123;1&#125;\\ \hline
               = \,&\, 1\up&#123;1.5&#125;
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2581,12 +2633,14 @@ const Rest = () => {
                 Exercise 2.
               </b>
               {" "}
-              In the solution to Exercise{" "}
-              <InChapterLink href="/article/chapter1?id=_27535464898">
-                1
+              In the solution to{" "}
+              <InChapterLink
+                href="/article/chapter1?id=_4_9941"
+                class="handle-in-chapter-link">
+                Exercise 1
               </InChapterLink>
-              , we observed how
-              the difference
+              , we 
+              observed how the difference
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -2701,12 +2755,12 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
+              begin&#123;align&#125;
               &#123;1 \over n^2&#125; - &#123;1 \over n(n+1)&#125; &= &#123;1 \over n^2&#125; \cdot &#123;n+1 \over n+1&#125; - &#123;1 \over n(n+1)&#125; \cdot
               &#123;n \over n&#125;\\
               &= &#123;n+1 \over n^2(n+1)&#125; - &#123;n \over n^2(n+1)&#125;\up&#123;1.5&#125;\\
               &= &#123;1 \over n^2(n+1)&#125;\up&#123;1.5&#125;
-              \end&#123;align&#125;
+              end&#123;align&#125;
               $$
               <ImageRight
                 offset_y="-0.5em"

@@ -6,6 +6,9 @@ dist
 .netlify
 .vinxi
 
+# Editor
+.zed/
+
 # Environment
 .env
 .env*.local
@@ -35,3 +38,4 @@ generated
 content_watcher/build
 renderer_gleam/build
 
+api

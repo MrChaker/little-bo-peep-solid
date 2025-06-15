@@ -15,34 +15,109 @@ import { List, Item } from "~/components/List";
 import { SectionDivider } from "~/components/SectionDivider";
 import { StarDivider } from "~/components/StarDivider";
 import VerticalChunk from "~/components/VerticalChunk";
+import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
 import useSetRoute from "~/hooks/useSetRoute";
 import useShowMore from "~/hooks/useShowMore";
+import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
 const Article = () => {
   useSetRoute();
+  useBreadcrumbs();
   return (<>
       <Chapter
         number={2}
         title="Slopes">
+        <SectionsBreadcrumbs>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-0">
+            <InChapterLink href="?id=section-1">
+              definition
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-1">
+            <InChapterLink href="?id=section-2">
+              measuring slope
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-2">
+            <InChapterLink href="?id=section-3">
+              sign combinations
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-3">
+            <InChapterLink href="?id=section-4">
+              pathological cases
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-4">
+            <InChapterLink href="?id=section-5">
+              “rise over run”
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-5">
+            <InChapterLink href="?id=section-6">
+              solving for “rise” and “run”
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-6">
+            <InChapterLink href="?id=section-7">
+              slopes and line equations
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-7">
+            <InChapterLink href="?id=section-8">
+              slopes and units
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-8">
+            <InChapterLink href="?id=section-9">
+              postscript: units vs dimensions
+            </InChapterLink>
+          </BreadcrumbItem>
+          <BreadcrumbItem
+            class="breadcrumb"
+            id="breadcrumb-9">
+            <InChapterLink href="?id=exercises">
+              exercises
+            </InChapterLink>
+          </BreadcrumbItem>
+        </SectionsBreadcrumbs>
         <a
           class="next_page"
           href="/article/chapter3" />
         <a
           class="prev_page"
           href="/article/chapter1" />
-        <Section>
+        <Section id="section-1">
           <VerticalChunk>
             <b>
-              Slopes.
+              Definition.
             </b>
-            {" "}
-            The{" "}
+            {" "}The{" "}
             <i>
               slope
             </i>
-            {" "}of a line is a mathematical measure
-            of how “steep” a line is. Here are a few examples
-            (for an explanation of the values, see below):
+            {" "}of a line is a
+            mathematical measure of how “steep” a line is.
+            Here are a few examples (for an explanation of
+            the values, see below):
           </VerticalChunk>
           <Pause />
           <Image src="/images/svg_ch2_ch_collection_of_examples.svg" />
@@ -133,7 +208,7 @@ const Rest = () => {
   return(<>
     { showMore() && <>
       <Pause />
-      <Section id="_2446425880">
+      <Section id="section-2">
         <VerticalChunk>
           <b>
             Measuring Slope.
@@ -220,7 +295,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
+          te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
           $$
           <ImageRight
             offset_x="3em"
@@ -315,7 +390,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="_23471158549">
+      <Section id="section-3">
         <VerticalChunk>
           <b>
             Sign Combinations.
@@ -501,7 +576,7 @@ const Rest = () => {
               <td>
                 <MathBlock>
                   $$
-                  \frac&#123;+&#125;&#123;-&#125; = \,-
+                  frac&#123;+&#125;&#123;-&#125; = \,-
                   $$
                 </MathBlock>
               </td>
@@ -563,7 +638,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-4">
         <VerticalChunk>
           <b>
             Pathological Cases.
@@ -632,7 +707,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section id="_83553253195">
+      <Section id="section-5">
         <VerticalChunk>
           <b>
             “Rise over Run”.
@@ -664,7 +739,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at arrival&#125;&#125;\right)\,\, - \,\,\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at start&#125;&#125;\right)
+          left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at arrival&#125;&#125;\right)\,\, - \,\,\left(&#123;\te&#123;coordinate&#125; \atop \te&#123;at start&#125;&#125;\right)
           $$
         </MathBlock>
         <Pause />
@@ -712,7 +787,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;slope&#125; = \frac&#123;\Delta y&#125;&#123;\Delta x&#125;
+          te&#123;slope&#125; = \frac&#123;\Delta y&#125;&#123;\Delta x&#125;
           $$
         </MathBlock>
         <Pause />
@@ -724,6 +799,8 @@ const Rest = () => {
             </Math>
             ,
           </NoBreak>
+          {" "}
+          {" "}
           <Math>
             $\Delta y$
           </Math>
@@ -763,7 +840,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-6">
         <VerticalChunk>
           <b>
             Solving for “rise” and “run”.
@@ -774,7 +851,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;
+          te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;
           $$
         </MathBlock>
         <Pause />
@@ -784,7 +861,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;
+          te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;
           $$
         </MathBlock>
         <Pause />
@@ -795,7 +872,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;run&#125; = &#123;\te&#123;rise&#125; \over \te&#123;slope&#125;&#125;
+          te&#123;run&#125; = &#123;\te&#123;rise&#125; \over \te&#123;slope&#125;&#125;
           $$
         </MathBlock>
         <Pause />
@@ -810,7 +887,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-7">
         <VerticalChunk>
           <b>
             Slopes and Line Equations.
@@ -1142,7 +1219,7 @@ const Rest = () => {
         </VerticalChunk>
       </Section>
       <Pause />
-      <Section>
+      <Section id="section-8">
         <VerticalChunk>
           <b>
             Slopes and Units.
@@ -1245,7 +1322,7 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;slope&#125; \left(\!= &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;\right) = &#123;3\te&#123;m&#125; \over 4\te&#123;s&#125;&#125; = 0.75\te&#123;m&#125;/\te&#123;s&#125;
+          te&#123;slope&#125; \left(\!= &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;\right) = &#123;3\te&#123;m&#125; \over 4\te&#123;s&#125;&#125; = 0.75\te&#123;m&#125;/\te&#123;s&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1374,11 +1451,11 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \begin&#123;array&#125;&#123;c&#125;
-            \rt&#123;0.08&#125;
+            begin&#123;array&#125;&#123;c&#125;
+            rt&#123;0.08&#125;
             (\te&#123;rate of change&#125;) \times \te&#123;(amount of time)&#125;\\
             = \te&#123;(amount of change)&#125;\rt&#123;0.05&#125;
-            \end&#123;array&#125;
+            end&#123;array&#125;
             $$
           </MathBlock>
           <Pause />
@@ -1421,7 +1498,7 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
+            frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
             $$
             <ImageRight
               style="width:930px"
@@ -1436,9 +1513,9 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \te&#123;“&#125;\rt&#123;0.1&#125;
-            \te&#123;amount of time&#125; \,\,=\,\, \frac&#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125;&#125;&#123;\te&#123;rate of change&#125;&#125;
-            \rt&#123;0.1&#125;\te&#123;”&#125;
+            te&#123;“&#125;\rt&#123;0.1&#125;
+            te&#123;amount of time&#125; \,\,=\,\, \frac&#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125;&#125;&#123;\te&#123;rate of change&#125;&#125;
+            rt&#123;0.1&#125;\te&#123;”&#125;
             $$
           </MathBlock>
           <Pause />
@@ -1449,8 +1526,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-        divider={false}
-        id="_50296316254">
+        id="section-9"
+        divider={false}>
         <VerticalChunk>
           <b>
             Postscript: Units vs Dimensions.
@@ -1642,7 +1719,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={2}>
-          <ExerciseStatement>
+          <ExerciseStatement id="_6_5054">
             <VerticalChunk>
               <b>
                 Exercise 2.
@@ -1803,7 +1880,7 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
+              te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
               $$
               <ImageRight
                 offset_y="-0.5rem"
@@ -1976,7 +2053,13 @@ const Rest = () => {
                 Note 1.
               </i>
               {" "}
-              As explained in Chapter 3, an empty circle of
+              As explained in{" "}
+              <a
+                href="/article/chapter3?id=_15_4246"
+                class="handle-out-of-chapter-link">
+                Chapter 3
+              </a>
+              , an empty circle of
               this type
             </VerticalChunk>
             <Pause />
@@ -2079,11 +2162,19 @@ const Rest = () => {
               </b>
               {" "}
               Digressing on the second-to-last equation
-              in the solution to Exercise 2, explain why
+              in the solution to{" "}
+              <InChapterLink
+                href="/article/chapter2?id=_6_5054"
+                class="handle-in-chapter-link">
+                Exercise 2
+              </InChapterLink>
+              , explain why
             </VerticalChunk>
             <Pause />
             <MathBlock>
-              $$ y_0 - px_0 $$
+              $$
+              y_0 - px_0
+              $$
             </MathBlock>
             <Pause />
             <VerticalChunk>
