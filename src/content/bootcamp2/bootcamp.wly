@@ -14,6 +14,7 @@
 
 
 |> Section
+    unary-counter=A_counter A
 
     *Integer powers of 10.*
     We define
@@ -70,9 +71,9 @@
     As $n$ successive divisions
     by $10$ is the same as one division by $10^n$, one also has
     |> MathBlock
-        handle=10_to_the_minus_n A
+        handle=10_to_the_minus_n ::++A_counter
 
-        \Large 10^{-n} = {1 \over 10^{\hspace{0.2ex}n}}\tag{A}
+        \Large 10^{-n} = {1 \over 10^{\hspace{0.2ex}n}}\tag{A_counter}
 
     for every positive integer $n$, which gives an alternate means of computing $10^{-n}$.
     Moreover, (>>10_to_the_minus_n) actually holds for

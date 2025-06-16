@@ -359,7 +359,10 @@ fn delete_files(ext: String,  dir: String) -> Nil {
 
 pub fn main() {
   use amendments <- infra.on_error_on_ok(
-    vr.process_command_line_arguments(argv.load().arguments, ["--prettier", "--emu-to-wly", "--wly-to-emu", "--delete-wly", "--delete-emu"]),
+    vr.process_command_line_arguments(
+      argv.load().arguments,
+      ["--prettier", "--emu-to-wly", "--wly-to-emu", "--delete-wly", "--delete-emu"],
+    ),
     fn(error) {
       io.println("")
       io.println("command line error: " <> ins(error))
