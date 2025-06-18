@@ -5,7 +5,38 @@ import { ExercisesStoreProvider } from "~/store/ExercisesStoreProvider";
 import { useGlobalContext } from "~/store/StoreProvider";
 import ActionArrows from "./ActionArrows";
 
-const AbstractArticle = (props: ParentProps & { id?: string }) => {
+const calculate_article_width = (
+  largest_centered_image_width?: number,
+  largest_side_image_width?: number,
+) => {
+  if (!largest_centered_image_width && !largest_side_image_width) return 3000;
+
+  if (!largest_centered_image_width)
+    return Number(largest_side_image_width) * 2 + 100;
+
+  if (!largest_side_image_width) return Number(largest_side_image_width) + 100;
+
+  return (
+    Math.max(largest_centered_image_width, largest_side_image_width * 2) + 100
+  );
+};
+
+const AbstractArticle = (
+  props: ParentProps & {
+    id?: string;
+    largest_centered_image_width?: number;
+    largest_side_image_width?: number;
+  },
+) => {
+  let { set_store } = useGlobalContext();
+  set_store(
+    "articleWidth",
+    calculate_article_width(
+      props.largest_centered_image_width,
+      props.largest_side_image_width,
+    ),
+  );
+
   return (
     <ExercisesStoreProvider>
       <span id={props.id}></span>

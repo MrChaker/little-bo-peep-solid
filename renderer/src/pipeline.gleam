@@ -234,7 +234,9 @@ pub fn lbp_pipeline() -> List(Pipe) {
       dn.generate_lbp_links(),
       dn.generate_lbp_sections_breadcrumbs(),
       // dn.reassign_text_node_blame_to_blame_of_first_nonempty_line_in_text_node(),
-      dn.unwrap(["DebugScope"])
+      dn.unwrap(["DebugScope"]),
+      dn.add_width_attribure_to_images(),
+      dn.find_out_largest_image_in_chapter(),
     ]
   ]
   |> list.flatten

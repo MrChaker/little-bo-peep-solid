@@ -47,6 +47,8 @@ const Container = (props: ParentProps) => {
   };
 
   createEffect(() => {
+    console.log(store.articleWidth);
+
     handleScroll();
     handleResize();
 
@@ -193,7 +195,7 @@ const Container = (props: ParentProps) => {
     <div
       id="Container"
       class="pb-14 -z-10 relative overflow-hidden"
-      style={`width:${3000 + (store.innerWidth > MOBILE_MAX_WIDTH ? DESKTOP_COLUMN_WIDTH : store.innerWidth)}px; opacity: ${store.saved_scroll_finished || store.scroll_is_at_0 ? "1" : "0"}`}>
+      style={`width:${store.articleWidth + (store.innerWidth > MOBILE_MAX_WIDTH ? DESKTOP_COLUMN_WIDTH : store.innerWidth)}px; opacity: ${store.saved_scroll_finished || store.scroll_is_at_0 ? "1" : "0"}`}>
       <EarlyImages />
       <Nav />
       <div

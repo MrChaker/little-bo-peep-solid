@@ -26,6 +26,8 @@ const Article = () => {
   return (<>
       <Bootcamp
         number={1}
+        largest_centered_image_width="0.0"
+        largest_side_image_width="300.0"
         title="Sets">
         <SectionsBreadcrumbs>
           <BreadcrumbItem
@@ -615,6 +617,7 @@ const Rest = () => {
           \Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
           $$
           <ImageRight
+            width="300.0px"
             offset_x="3em"
             src="/images/svg_bt1_bt_empty_set_cloud.svg"
             compensate_offset_x_for_large_text_columns={true} />
