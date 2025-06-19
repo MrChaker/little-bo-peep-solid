@@ -313,6 +313,12 @@ fn delete_files(ext: String,  dir: String) -> Nil {
           with: ["rm", "-f", "--cached", child],
           opt: [],
         )
+        let _ = shellout.command(
+          run: "rm",
+          in: ".",
+          with: [child],
+          opt: [],
+        )
         io.println("Deleted " <> child)
       }
       Ok(False), _ -> delete_files(ext, child)
