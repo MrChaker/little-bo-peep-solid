@@ -26,6 +26,8 @@ const Article = () => {
   return (<>
       <Chapter
         number={4}
+        largest_centered_image_width="1550.0"
+        largest_side_image_width="1.4e3"
         title="Derivatives">
         <SectionsBreadcrumbs>
           <BreadcrumbItem
@@ -119,7 +121,9 @@ const Article = () => {
         <a
           class="prev_page"
           href="/article/chapter3" />
-        <Image src="/images/svg_ch4_ch_polaroids.svg" />
+        <Image
+          width="510.0px"
+          src="/images/svg_ch4_ch_polaroids.svg" />
         <Pause />
         <Section id="section-1">
           <VerticalChunk>
@@ -207,7 +211,9 @@ const Article = () => {
             “before” graph.) E.g.:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch4_ch_explanation1.svg" />
+          <Image
+            width="1.0e3px"
+            src="/images/svg_ch4_ch_explanation1.svg" />
           <Pause />
           <VerticalChunk>
             Note that{" "}
@@ -247,7 +253,9 @@ const Article = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch4_ch_explanation2.svg" />
+          <Image
+            width="1050.0px"
+            src="/images/svg_ch4_ch_explanation2.svg" />
           <Pause />
           <VerticalChunk>
             In fact, we can
@@ -274,7 +282,9 @@ const Article = () => {
             value for the derivative:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch4_ch_one_sided_tangent.svg" />
+          <Image
+            width="600.0px"
+            src="/images/svg_ch4_ch_one_sided_tangent.svg" />
           <Pause />
           <VerticalChunk>
             (In other words, what one might describe as
@@ -389,7 +399,9 @@ const Rest = () => {
           (the one with the closed endpoints):
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_curve_to_sketch.svg" />
+        <Image
+          width="450.0px"
+          src="/images/svg_ch4_ch_curve_to_sketch.svg" />
         <Pause />
         <VerticalChunk>
           One method is simply to eyeball the slope at
@@ -397,8 +409,11 @@ const Rest = () => {
           values and interpolate:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_curve_to_sketch_sketch.svg">
+        <Image
+          width="850.0px"
+          src="/images/svg_ch4_ch_curve_to_sketch_sketch.svg">
           <ImageRight
+            width="450.0px"
             offset_x="-15%"
             offset_y="36%"
             src="/images/svg_ch4_ch_curve_to_sketch_cloud.svg" />
@@ -416,7 +431,9 @@ const Rest = () => {
           interval:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_second_sketch.svg" />
+        <Image
+          width="1250.0px"
+          src="/images/svg_ch4_ch_second_sketch.svg" />
         <Pause />
         <VerticalChunk>
           The result (at bottom right)
@@ -479,6 +496,7 @@ const Rest = () => {
           (x \ra B)' = (x \ra 0)
           $$
           <ImageLeft
+            width="430.0px"
             offset_x="8em"
             src="/images/svg_ch4_ch_constant_derivative_cloud.svg"
             compensate_offset_x_for_large_text_columns={true} />
@@ -593,6 +611,7 @@ const Rest = () => {
           (x \ra Ax + B)' = (x \ra A)
           $$
           <ImageLeft
+            width="430.0px"
             offset_x="7em"
             src="/images/svg_ch4_ch_affine_derivative_cloud.svg"
             compensate_offset_x_for_large_text_columns={true} />
@@ -789,7 +808,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \te&#123;$y$ axis units for $f'$&#125; \,= &#123;\te&#123;$y$ axis units for $\f$&#125; \over \te&#123;$x$ axis units for $\f$&#125;&#125;
-          \te&#123;$y$ axis units for $f'$&#125; \,= &#123;\te&#123;$y$ axis units for $\f$&#125; \over \te&#123;$x$ axis units for $\f$&#125;&#125;
           $$
         </MathBlock>
         <Pause />
@@ -816,7 +834,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \te&#123;$x$ axis units for $f'$&#125;\, = \rt&#123;0.02&#125;\,\te&#123;$x$ axis units for $f$&#125;
           \te&#123;$x$ axis units for $f'$&#125;\, = \rt&#123;0.02&#125;\,\te&#123;$x$ axis units for $f$&#125;
           $$
         </MathBlock>
@@ -858,6 +875,7 @@ const Rest = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
           <ImageRight
+            width="700.0px"
             offset_y="-0.6em"
             src="/images/svg_ch4_ch_units1_cloud.svg" />
         </VerticalChunk>
@@ -899,6 +917,7 @@ const Rest = () => {
         <VerticalChunk>
           ...then the “after” graph will have units of...
           <ImageLeft
+            width="700.0px"
             offset_y="0.6em"
             src="/images/svg_ch4_ch_units2_cloud.svg" />
         </VerticalChunk>
@@ -999,7 +1018,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \,\,\,f'' = (f')'.
-          \,\,\,f'' = (f')'.
           $$
         </MathBlock>
         <Pause />
@@ -1009,11 +1027,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \begin&#123;align&#125;
-          \up&#123;0.95&#125;f''' &amp;= (f'')'\\
-          \up&#123;1.25&#125;f'''' &amp;= (f''')'\\
-          \up&#123;1.25&#125;f''''\psa' &amp;= (f'''')'\\
-          \end&#123;align&#125;
           \begin&#123;align&#125;
           \up&#123;0.95&#125;f''' &amp;= (f'')'\\
           \up&#123;1.25&#125;f'''' &amp;= (f''')'\\
@@ -1108,6 +1121,7 @@ const Rest = () => {
             (x \ra 3x + 1)'' = (x \ra 0)
             $$
             <ImageRight
+              width="900.0px"
               offset_y="0.1em"
               offset_x="6em"
               src="/images/svg_ch4_3x_plus_one_and_second_cloud.svg"
@@ -1162,7 +1176,6 @@ const Rest = () => {
           <MathBlock>
             $$
             \,\,\,(x \ra ax + b)'' = (x \ra 0)
-            \,\,\,(x \ra ax + b)'' = (x \ra 0)
             $$
           </MathBlock>
           <Pause />
@@ -1200,14 +1213,15 @@ const Rest = () => {
           have a negative second derivative:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_bendiness.svg" />
+        <Image
+          width="1550.0px"
+          src="/images/svg_ch4_bendiness.svg" />
         <Pause />
         <VerticalChunk>
           Reason like this: the second derivative is{" "}
           <del>
             “the rate of change of the rate of change”.
           </del>
-          &amp;ensp;Sorry: “the rate of change of the slope”.
           &amp;ensp;Sorry: “the rate of change of the slope”.
           (Same difference.) Ergo, if the second derivative
           is positive, the slope is increasing; if the
@@ -1313,7 +1327,9 @@ const Rest = () => {
           Viz:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_convex_concave.svg" />
+        <Image
+          width="550.0px"
+          src="/images/svg_ch4_ch_convex_concave.svg" />
         <Pause />
         <VerticalChunk>
           <b>
@@ -1329,7 +1345,9 @@ const Rest = () => {
           of a graph:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_inflection_point.svg" />
+        <Image
+          width="500.0px"
+          src="/images/svg_ch4_ch_inflection_point.svg" />
         <Pause />
         <Example>
           <VerticalChunk>
@@ -1379,7 +1397,9 @@ const Rest = () => {
           A graph of the form...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_position_by_time.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch4_ch_position_by_time.svg" />
         <Pause />
         <VerticalChunk>
           ...describes{" "}
@@ -1390,7 +1410,9 @@ const Rest = () => {
           (look at the units); the derivative...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_position_by_time_der.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch4_ch_position_by_time_der.svg" />
         <Pause />
         <VerticalChunk>
           ...describes{" "}
@@ -1399,7 +1421,9 @@ const Rest = () => {
           </i>
           ;
           finally, the second derivative...
-          <ImageLeft src="/images/svg_ch4_ch_position_by_time_der_cloud.svg" />
+          <ImageLeft
+            width="1350.0px"
+            src="/images/svg_ch4_ch_position_by_time_der_cloud.svg" />
         </VerticalChunk>
         <VerticalChunk indent={true}>
           ...describes
@@ -1455,7 +1479,9 @@ const Rest = () => {
           seconds:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch4_ch_position_by_time_tangent.svg" />
+        <Image
+          width="550.0px"
+          src="/images/svg_ch4_ch_position_by_time_tangent.svg" />
         <Pause />
         <VerticalChunk>
           The ratio “rise over run” has the form
@@ -1596,6 +1622,7 @@ const Rest = () => {
             (2&#123;\te&#123;m&#125;/\te&#123;s&#125;\!&#123;\,&#125;^2&#125;) \times\, (10\te&#123;s&#125;) = 20&#123;\te&#123;m&#125;/\te&#123;s&#125;&#125;
             $$
             <ImageRight
+              width="350.0px"
               offset_x="5em"
               src="/images/svg_ch4_ch_units_cancellation_cloud.svg"
               compensate_offset_x_for_large_text_columns={true} />
@@ -1807,7 +1834,7 @@ const Rest = () => {
         <VerticalChunk>
           of functions already appear in{" "}
           <a
-            href="/article/chapter3?id=_13_943"
+            href="/article/chapter3?id=_13_8227"
             class="handle-out-of-chapter-link">
             Exercise 18 of Chapter 3
           </a>
@@ -1839,7 +1866,7 @@ const Rest = () => {
       <Pause />
       <Exercises>
         <Exercise exercise_number={1}>
-          <ExerciseStatement id="_16_1024">
+          <ExerciseStatement id="_16_2091">
             <VerticalChunk>
               <b>
                 Exercise 1.
@@ -1858,14 +1885,18 @@ const Rest = () => {
               {" "}a sharp corner):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw.svg" />
           </ExerciseStatement>
           <Solution solution_number={1}>
             <VerticalChunk>
               That would be:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw_derivative.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw_derivative.svg" />
             <Pause />
             <VerticalChunk>
               (The derivative is{" "}
@@ -1934,7 +1965,9 @@ const Rest = () => {
               {" "}looks like so:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_over_x.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_one_over_x.svg" />
             <Pause />
             <VerticalChunk>
               As one can see, the slope is very negative
@@ -1967,7 +2000,7 @@ const Rest = () => {
             <VerticalChunk>
               derivative of the graph in{" "}
               <InChapterLink
-                href="/article/chapter4?id=_16_1024"
+                href="/article/chapter4?id=_16_2091"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>
@@ -1983,7 +2016,9 @@ const Rest = () => {
               pockmarked appearance:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw_second_derivative.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw_second_derivative.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2012,7 +2047,7 @@ const Rest = () => {
               {" "}
               If we pretend that the graph of{" "}
               <InChapterLink
-                href="/article/chapter4?id=_16_1024"
+                href="/article/chapter4?id=_16_2091"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>
@@ -2066,11 +2101,17 @@ const Rest = () => {
               {" "}axis):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw_with_units.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units_derivative.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw_with_units_derivative.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_slope_one_half_see_saw_with_units_second_derivative.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch4_slope_one_half_see_saw_with_units_second_derivative.svg" />
             <Pause />
             <StarDivider />
             <Pause />
@@ -2098,7 +2139,9 @@ const Rest = () => {
                 slopes and sharp peaks. (This...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch4_ex_car_position_rounded.svg" />
+              <Image
+                width="390.0px"
+                src="/images/svg_ch4_ex_car_position_rounded.svg" />
               <Pause />
               <VerticalChunk>
                 ...idea.)
@@ -2193,12 +2236,6 @@ const Rest = () => {
               =&amp; \,\,\,(5 + 1) + (2\cdot 5 + 1) \up&#123;1.5&#125; \\
               =&amp; \,\,\,3\cdot 5 + 2 = 17 \up&#123;1.5&#125;
               \end&#123;align&#125;
-              \begin&#123;align&#125;
-              &amp; \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(5) \\
-              =&amp; \,\,\,(x \ra x + 1)(5) + (u \ra 2u + 1)(5) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,(5 + 1) + (2\cdot 5 + 1) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,3\cdot 5 + 2 = 17 \up&#123;1.5&#125;
-              \end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2214,12 +2251,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align&#125;
-              &amp; \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(t) \\
-              =&amp; \,\,\,(x \ra x + 1)(t) + (u \ra 2u + 1)(t) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,(t + 1) + (2t + 1) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,3t + 2 \up&#123;1.5&#125;
-              \end&#123;align&#125;
               \begin&#123;align&#125;
               &amp; \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(t) \\
               =&amp; \,\,\,(x \ra x + 1)(t) + (u \ra 2u + 1)(t) \up&#123;1.5&#125; \\
@@ -2289,12 +2320,6 @@ const Rest = () => {
               =&amp; \,\,\,(x + 1) + (2x + 1) \up&#123;1.5&#125; \\
               =&amp; \,\,\,3x + 2 \up&#123;1.5&#125;
               \end&#123;align&#125;
-              \begin&#123;align&#125;
-              &amp; \,\,\,((x \ra x + 1) \,+\, (u \ra 2u + 1))(x) \\
-              =&amp; \,\,\,(x \ra x + 1)(x) + (u \ra 2u + 1)(x) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,(x + 1) + (2x + 1) \up&#123;1.5&#125; \\
-              =&amp; \,\,\,3x + 2 \up&#123;1.5&#125;
-              \end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -2332,7 +2357,9 @@ const Rest = () => {
               below, based on those units that are given:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_missing_units.svg" />
+            <Image
+              width="650.0px"
+              src="/images/svg_ch4_missing_units.svg" />
           </ExerciseStatement>
           <Solution solution_number={6}>
             <VerticalChunk>
@@ -2355,7 +2382,9 @@ const Rest = () => {
               axis. This gives the unique solutions:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_missing_units_solution.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_missing_units_solution.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -2442,7 +2471,6 @@ const Rest = () => {
               the simple{" "}
               <i>
                 &amp;
-                &amp;
               </i>
               {" "}correct way!)
             </VerticalChunk>
@@ -2482,7 +2510,9 @@ const Rest = () => {
               assuming that relationship exists.)
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_position_by_time_find_the_order.svg" />
+            <Image
+              width="733.97px"
+              src="/images/svg_ch4_ex_position_by_time_find_the_order.svg" />
           </ExerciseStatement>
           <Solution solution_number={7}>
             <VerticalChunk>
@@ -2512,7 +2542,9 @@ const Rest = () => {
               {" "}is on the right:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_position_by_time_find_the_order_answer.svg" />
+            <Image
+              width="733.97px"
+              src="/images/svg_ch4_ex_position_by_time_find_the_order_answer.svg" />
             <Pause />
             <VerticalChunk>
               For example, the graph on the left
@@ -2535,7 +2567,9 @@ const Rest = () => {
               derivative of the graph on the left!):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_position_by_time_find_the_order_first_pair.svg" />
+            <Image
+              width="650.0px"
+              src="/images/svg_ch4_ex_position_by_time_find_the_order_first_pair.svg" />
             <Pause />
             <VerticalChunk>
               Moreover the middle graph has slope
@@ -2561,7 +2595,9 @@ const Rest = () => {
               on the right:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_position_by_time_find_the_order_second_pair.svg" />
+            <Image
+              width="650.0px"
+              src="/images/svg_ch4_ex_position_by_time_find_the_order_second_pair.svg" />
             <Pause />
             <VerticalChunk>
               (Taking one more derivative would produce a
@@ -2570,7 +2606,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={8}>
-          <ExerciseStatement id="_17_5765">
+          <ExerciseStatement id="_17_497">
             <VerticalChunk>
               <b>
                 Exercise 8.
@@ -2579,7 +2615,9 @@ const Rest = () => {
               Given these graphs...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_sketch_the_middle_a.svg" />
             <Pause />
             <VerticalChunk>
               ...what can you say about{" "}
@@ -2648,7 +2686,9 @@ const Rest = () => {
               {" "}respectively:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a_sol1.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_a_sol1.svg" />
             <Pause />
             <VerticalChunk>
               This already gives us three points from which
@@ -2662,7 +2702,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a_sol2.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_a_sol2.svg" />
             <Pause />
             <VerticalChunk>
               But the graph of{" "}
@@ -2705,14 +2747,18 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a_sol3.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_a_sol3.svg" />
             <Pause />
             <VerticalChunk>
               As a second step, we thus “bend into shape”
               our previous sketch to produce these slopes...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a_sol4.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_a_sol4.svg" />
             <Pause />
             <VerticalChunk>
               ...achieving our final answer.
@@ -2726,7 +2772,9 @@ const Rest = () => {
               derivative looks like so:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_a_sol5.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_a_sol5.svg" />
           </Solution>
         </Exercise>
         <Exercise exercise_number={9}>
@@ -2739,7 +2787,9 @@ const Rest = () => {
               Given these graphs...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_sketch_the_middle_b.svg" />
             <Pause />
             <VerticalChunk>
               ...sketch{" "}
@@ -2752,7 +2802,7 @@ const Rest = () => {
               {" "}analogously to
               {" "}
               <InChapterLink
-                href="/article/chapter4?id=_17_5765"
+                href="/article/chapter4?id=_17_497"
                 class="handle-in-chapter-link">
                 Exercise 8
               </InChapterLink>
@@ -2779,7 +2829,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol1.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol1.svg" />
             <Pause />
             <VerticalChunk>
               ...which gives us one data point on the
@@ -2790,7 +2842,9 @@ const Rest = () => {
               {" "}to start with...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol2.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol2.svg" />
             <Pause />
             <VerticalChunk>
               ...moreover, by the graph of{" "}
@@ -2820,7 +2874,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol3.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol3.svg" />
             <Pause />
             <VerticalChunk>
               ...so, as a second step, we can extend
@@ -2836,8 +2892,12 @@ const Rest = () => {
               {" "}on this interval:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol4.svg">
-              <ImageLeft src="/images/svg_ch4_sketch_the_middle_b_cloud.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol4.svg">
+              <ImageLeft
+                width="600.0px"
+                src="/images/svg_ch4_sketch_the_middle_b_cloud.svg" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -2877,7 +2937,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol5.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol5.svg" />
             <Pause />
             <VerticalChunk>
               This gives us two more points on the graph
@@ -2890,7 +2952,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol6.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol6.svg" />
             <Pause />
             <VerticalChunk>
               Then, because the second derivative has
@@ -2910,7 +2974,9 @@ const Rest = () => {
               {" "}(about)...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol7.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol7.svg" />
             <Pause />
             <VerticalChunk>
               ...we extend these two new data points by
@@ -2923,7 +2989,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol8.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol8.svg" />
             <Pause />
             <VerticalChunk>
               ...on the relevant intervals. (I.e., for
@@ -2944,7 +3012,9 @@ const Rest = () => {
               yet-to-be-determined shape:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol9.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol9.svg" />
             <Pause />
             <VerticalChunk>
               Since{" "}
@@ -2970,7 +3040,9 @@ const Rest = () => {
               middles...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol10.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol10.svg" />
             <Pause />
             <VerticalChunk>
               ...our final answer, given by the
@@ -2978,7 +3050,9 @@ const Rest = () => {
               “bending into shape” the connector curves...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol11.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol11.svg" />
             <Pause />
             <VerticalChunk>
               ...to give them a slope of{" "}
@@ -3018,11 +3092,13 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_sketch_the_middle_b_sol12.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_sketch_the_middle_b_sol12.svg" />
           </Solution>
         </Exercise>
         <Exercise exercise_number={10}>
-          <ExerciseStatement id="_18_1587">
+          <ExerciseStatement id="_18_9381">
             <VerticalChunk>
               <b>
                 Exercise 10.
@@ -3073,7 +3149,9 @@ const Rest = () => {
               scaling:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_scaling_figure.svg" />
+            <Image
+              width="670.0px"
+              src="/images/svg_ch4_scaling_figure.svg" />
             <Pause />
             <VerticalChunk>
               The second graph truly is the first
@@ -3135,7 +3213,9 @@ const Rest = () => {
               greatest?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_narrow_and_less_narrow_bends.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_narrow_and_less_narrow_bends.svg" />
           </ExerciseStatement>
           <Solution solution_number={11}>
             <VerticalChunk>
@@ -3144,7 +3224,9 @@ const Rest = () => {
               of the curve:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_steepest.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_narrow_and_less_narrow_bends_steepest.svg" />
             <Pause />
             <VerticalChunk>
               On the other hand,
@@ -3162,7 +3244,9 @@ const Rest = () => {
               rate:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_narrow_and_less_narrow_bends_curviest.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_narrow_and_less_narrow_bends_curviest.svg" />
             <Pause />
             <VerticalChunk>
               (Well, believe us or not, but we're right!)
@@ -3180,7 +3264,9 @@ const Rest = () => {
               be a derivative of which other curve?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves.svg" />
+            <Image
+              width="1.2e3px"
+              src="/images/svg_ch4_cosine_curves.svg" />
           </ExerciseStatement>
           <Solution solution_number={12}>
             <VerticalChunk>
@@ -3189,7 +3275,9 @@ const Rest = () => {
               blue is the derivative of the red:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_blue_red_only.svg" />
+            <Image
+              width="1.2e3px"
+              src="/images/svg_ch4_cosine_curves_blue_red_only.svg" />
             <Pause />
             <VerticalChunk>
               Likewise, the derivative of the blue
@@ -3241,7 +3329,9 @@ const Rest = () => {
               bump, not the other way around:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_cresting.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_cosine_curves_cresting.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -3267,7 +3357,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_two_dimensional_vel.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_cosine_curves_two_dimensional_vel.svg" />
             <Pause />
             <VerticalChunk>
               The velocities of the two shadows
@@ -3359,7 +3451,9 @@ const Rest = () => {
               velocity to draw an arrow emanating
               from a point on the curve, this arrow
               is tangent to the curve, and the
-              <ImageRight src="/images/svg_ch4_cosine_curves_tangent_velocity_cloud.svg" />
+              <ImageRight
+                width="800.0px"
+                src="/images/svg_ch4_cosine_curves_tangent_velocity_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <CentralDisplayItalic>
@@ -3446,7 +3540,9 @@ const Rest = () => {
               circle at the origin):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_unit_circle.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_cosine_curves_unit_circle.svg" />
             <Pause />
             <VerticalChunk>
               The
@@ -3460,7 +3556,9 @@ const Rest = () => {
               of the particles are as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_unit_circle_position_vectors.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_cosine_curves_unit_circle_position_vectors.svg" />
             <Pause />
             <VerticalChunk>
               (You can't really see it so well, but
@@ -3483,7 +3581,9 @@ const Rest = () => {
               are as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_unit_circle_velocity_vectors.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_cosine_curves_unit_circle_velocity_vectors.svg" />
             <Pause />
             <VerticalChunk>
               (Like the position vectors, the
@@ -3504,7 +3604,6 @@ const Rest = () => {
               {" "}{" "}
               <i>
                 &amp;
-                &amp;
               </i>
               {" "}are brushed
               in the direction of travel.
@@ -3518,7 +3617,9 @@ const Rest = () => {
               that the second coordinate is equal to the
               vertical displacement from the tail of the
               arrow to the head of the arrow.)
-              <ImageRight src="/images/svg_ch4_cosine_curves_vector_illustration_cloud.svg" />
+              <ImageRight
+                width="750.0px"
+                src="/images/svg_ch4_cosine_curves_vector_illustration_cloud.svg" />
             </VerticalChunk>
             <VerticalChunk indent={true}>
               Due to the 90° rotations and uniform
@@ -3536,7 +3637,9 @@ const Rest = () => {
               position vector:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_unit_circle_equality.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_cosine_curves_unit_circle_equality.svg" />
             <Pause />
             <VerticalChunk>
               From the{" "}
@@ -3652,7 +3755,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_verified.svg" />
+            <Image
+              width="1.2e3px"
+              src="/images/svg_ch4_cosine_curves_verified.svg" />
             <Pause />
             <VerticalChunk>
               If we add the{" "}
@@ -3688,7 +3793,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_rolling_wheel.svg" />
+            <Image
+              width="1.2e3px"
+              src="/images/svg_ch4_cosine_curves_rolling_wheel.svg" />
             <Pause />
             <VerticalChunk>
               (If the above just looks like a
@@ -3705,7 +3812,9 @@ const Rest = () => {
               figure again:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_curves_cresting.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_cosine_curves_cresting.svg" />
             <Pause />
             <VerticalChunk>
               The derivative is
@@ -4247,11 +4356,6 @@ const Rest = () => {
               &amp;= g(u) \cdot f(u) \up&#123;1.5&#125;\\
               &amp;= (gf)(u) \up&#123;1.5&#125;
               \end&#123;align&#125;
-              \begin&#123;align&#125;
-              (fg)(u) &amp;= f(u) \cdot g(u) \\
-              &amp;= g(u) \cdot f(u) \up&#123;1.5&#125;\\
-              &amp;= (gf)(u) \up&#123;1.5&#125;
-              \end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -4326,7 +4430,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large f : \rr \ra \rr
-              \Large f : \rr \ra \rr
               $$
             </MathBlock>
             <Pause />
@@ -4338,41 +4441,7 @@ const Rest = () => {
               </Math>
               {" "}is the total number of
               $'s earned by virtue of running
-              $'s earned by virtue of running
               {" "}
-              <Math>
-                $x$
-              </Math>
-              {" "}meters from the start of the race;
-              a second function
-            </VerticalChunk>
-            <Pause />
-            <MathBlock>
-              $$
-              \Large g : \rr \ra \rr
-              $$
-            </MathBlock>
-            <Pause />
-            <VerticalChunk>
-              gives the position of the rat as a function of time;
-              specifically,{" "}
-              <Math>
-                $&#123;g(t)&#125;$
-              </Math>
-              {" "}is the position from the start,
-              in meters, reached by the rat at{" "}
-              <Math>
-                $t$
-              </Math>
-              {" "}seconds after the
-              start of the race.
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
-              In this case, what does{" "}
-              <Math>
-                $f \circ g$
-              </Math>
-              {" "}compute?
               <Math>
                 $x$
               </Math>
@@ -4410,7 +4479,7 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution
             solution_number={15}
-            id="_19_4426">
+            id="_19_5745">
             <VerticalChunk>
               It computes
               the amount earned by the rat as a function of time. In
@@ -4467,13 +4536,10 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               $'s in total, by definition of{" "}
-              $'s in total, by definition of{" "}
               <NoBreak>
                 <Math>
                   $f$
-                  $f$
                 </Math>
-                .
                 .
               </NoBreak>
               {" "}
@@ -4498,30 +4564,7 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               by definition of{" "}
-              {" "}
-              And
-            </VerticalChunk>
-            <Pause />
-            <MathBlock>
-              $$
-              f(g(t))
-              $$
-            </MathBlock>
-            <Pause />
-            <VerticalChunk>
-              is
-            </VerticalChunk>
-            <Pause />
-            <MathBlock>
-              $$
-              (f \circ g)(t)
-              $$
-            </MathBlock>
-            <Pause />
-            <VerticalChunk>
-              by definition of{" "}
               <NoBreak>
-                “
                 “
                 <Math>
                   $\circ$
@@ -4542,58 +4585,14 @@ const Rest = () => {
               <NoBreak>
                 <Math>
                   $f \circ g$
-                  $\circ$
                 </Math>
-                ”.
-              </NoBreak>
-            </VerticalChunk>
-            <Pause />
-            <VerticalChunk>
-              <i>
-                Note 2.
-              </i>
-              {" "}
-              If it helps,
-              here is a pictorialization of the
-              “units transformation pipeline” that
-              occurs inside{" "}
-              <NoBreak>
-                <Math>
-                  $f \circ g$
-                </Math>
-                :
                 :
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_composition_units.svg" />
-            <Pause />
-            <VerticalChunk>
-              <i>
-                Note 3.
-              </i>
-              {" "}
-              To emphasize,{" "}
-              <Math>
-                $f(x)$
-              </Math>
-              {" "}is the
-            </VerticalChunk>
-            <Pause />
-            <CentralDisplayItalic>
-              ~ total ~
-            </CentralDisplayItalic>
-            <Pause />
-            <VerticalChunk>
-              amount earned when position{" "}
-              <Math>
-                $x$
-              </Math>
-              {" "}is reached.
-              In real life{" "}
-            </VerticalChunk>
-            <Pause />
-            <Image src="/images/svg_ch4_f_g_composition_units.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_f_g_composition_units.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -4621,9 +4620,7 @@ const Rest = () => {
               <NoBreak>
                 <Math>
                   $f$
-                  $f$
                 </Math>
-                's
                 's
               </NoBreak>
               {" "}
@@ -4631,25 +4628,16 @@ const Rest = () => {
               while inventing some numbers:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_first_example_of_f.svg" />
-            <Pause />
-            <VerticalChunk>
-              In the above the rat earns{" "}
-              {" "}
-              graph might therefore look something like this,
-              while inventing some numbers:
-            </VerticalChunk>
-            <Pause />
-            <Image src="/images/svg_ch4_f_g_first_example_of_f.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_first_example_of_f.svg" />
             <Pause />
             <VerticalChunk>
               In the above the rat earns{" "}
               <NoBreak>
                 <Math>
                   $\te&#123;\$&#125;$
-                  $\te&#123;\$&#125;$
                 </Math>
-                3
                 3
               </NoBreak>
               {" "}for the
@@ -4663,25 +4651,9 @@ const Rest = () => {
               “unlocks”:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_second_example_of_f.svg" />
-            <Pause />
-            <VerticalChunk>
-              In our mathematicians' imaginations, however,{" "}
-              <Math>
-                $f$
-              </Math>
-              {" "}for the
-              first 50m, after which the dollar-per-meter
-              rate is reduced.
-              Or{" "}
-              <Math>
-                $f$
-              </Math>
-              {" "}could look like this, with discrete
-              “unlocks”:
-            </VerticalChunk>
-            <Pause />
-            <Image src="/images/svg_ch4_f_g_second_example_of_f.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_second_example_of_f.svg" />
             <Pause />
             <VerticalChunk>
               In our mathematicians' imaginations, however,{" "}
@@ -4694,7 +4666,9 @@ const Rest = () => {
               parts of the course that momentarily lose you money):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_third_example_of_f.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_third_example_of_f.svg" />
             <Pause />
             <VerticalChunk>
               (Etc.)
@@ -4791,9 +4765,13 @@ const Rest = () => {
               {" "}have these graphs:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_actual_exercise_f.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_actual_exercise_f.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_f_g_actual_exercise_g.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_actual_exercise_g.svg" />
             <Pause />
             <VerticalChunk>
               In this case what is{" "}
@@ -4833,7 +4811,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_actual_exercise_g_with_slope.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_actual_exercise_g_with_slope.svg" />
             <Pause />
             <VerticalChunk>
               Moreover at{" "}
@@ -4864,7 +4844,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_f_g_actual_exercise_f_with_slope.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_f_g_actual_exercise_f_with_slope.svg" />
             <Pause />
             <VerticalChunk>
               Multiplying the{" "}
@@ -4903,9 +4885,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \left(&#123;5\over 3\up&#123;1&#125;&#125;\left[&#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;\right]\right) \times \left(&#123;1 \over 10\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;m&#125;&#125;\right]\right) = &#123;5\over 30\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;s&#125;&#125;\right].
-              \left(&#123;5\over 3\up&#123;1&#125;&#125;\left[&#123;\te&#123;m&#125; \over \te&#123;s&#125;&#125;\right]\right) \times \left(&#123;1 \over 10\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;m&#125;&#125;\right]\right) = &#123;5\over 30\up&#123;1&#125;&#125;\left[&#123;\te&#123;\$&#125; \over \te&#123;s&#125;&#125;\right].
               $$
               <ImageRight
+                width="700.0px"
                 src="/images/svg_ch4_f_g_actual_exercise_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -5265,7 +5247,9 @@ const Rest = () => {
               clockwise:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_velocity_vector_radius_2_speed_3_sketch_1.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_velocity_vector_radius_2_speed_3_sketch_1.svg" />
             <Pause />
             <VerticalChunk>
               If we bring the tail of the vector back to
@@ -5287,7 +5271,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_velocity_vector_radius_2_speed_3_centered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_velocity_vector_radius_2_speed_3_centered.svg" />
             <Pause />
             <VerticalChunk>
               Lastly, the velocity vector does a full revolution
@@ -5390,7 +5376,9 @@ const Rest = () => {
               the path of the velocity vector:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_what_is_the_acceleration_vector_uncentered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_what_is_the_acceleration_vector_uncentered.svg" />
             <Pause />
             <VerticalChunk>
               Or, if we translate the acceleration vector back
@@ -5398,7 +5386,9 @@ const Rest = () => {
               (either way is fine):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_what_is_the_acceleration_vector_centered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_what_is_the_acceleration_vector_centered.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -5457,9 +5447,13 @@ const Rest = () => {
               (top) or brought back to the origin (bottom):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_uncentered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_uncentered.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_centered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_centered.svg" />
             <Pause />
             <VerticalChunk>
               Moreover (!) the speed of the velocity vector is
@@ -5480,7 +5474,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large 2 \cdot &#123;2\over 3&#125; = &#123;4\over 3&#125;
-              \Large 2 \cdot &#123;2\over 3&#125; = &#123;4\over 3&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5495,9 +5488,13 @@ const Rest = () => {
               velocity vector), and looks like so (in either representation):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_uncentered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_uncentered.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_centered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_acceleration_centered.svg" />
             <Pause />
             <VerticalChunk>
               Lastly the acceleration vector has speed
@@ -5505,7 +5502,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;4\over 3&#125;\cdot &#123;2\over 3&#125; = &#123;8 \over 9&#125;
               \Large &#123;4\over 3&#125;\cdot &#123;2\over 3&#125; = &#123;8 \over 9&#125;
               $$
             </MathBlock>
@@ -5534,9 +5530,13 @@ const Rest = () => {
               {" "}away:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_uncentered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_uncentered.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_centered.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_jerk_centered.svg" />
             <Pause />
             <StarDivider />
             <Pause />
@@ -5562,7 +5562,9 @@ const Rest = () => {
               {" "}between the successive radii:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_velocity_vector_radius_3_speed_2_with_position.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_velocity_vector_radius_3_speed_2_with_position.svg" />
           </Solution>
         </Exercise>
         <Exercise exercise_number={22}>
@@ -5631,7 +5633,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large &#123;v \over r&#125;
-              \Large &#123;v \over r&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5643,7 +5644,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;v \over r&#125;
               \Large &#123;v \over r&#125;
               $$
             </MathBlock>
@@ -5659,7 +5659,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large v \cdot &#123;v \over r&#125; = &#123;v^2 \over r&#125;
               \Large v \cdot &#123;v \over r&#125; = &#123;v^2 \over r&#125;
               $$
             </MathBlock>
@@ -5694,7 +5693,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large &#123;\te&#123;speed&#125;\over \te&#123;radius&#125;&#125;
-              \Large &#123;\te&#123;speed&#125;\over \te&#123;radius&#125;&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5707,7 +5705,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large &#123;v \over r&#125;
-              \Large &#123;v \over r&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5718,7 +5715,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;\te&#123;speed&#125;\over \te&#123;radius&#125;&#125; = &#123;v \over r&#125;
               \Large &#123;\te&#123;speed&#125;\over \te&#123;radius&#125;&#125; = &#123;v \over r&#125;
               $$
             </MathBlock>
@@ -5731,7 +5727,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large &#123;\te&#123;length of acceleration vector&#125;\over \te&#123;radius&#125;&#125;
-              \Large &#123;\te&#123;length of acceleration vector&#125;\over \te&#123;radius&#125;&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5742,7 +5737,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;\te&#123;length of acceleration vector&#125;\over \te&#123;radius of velocity vector circle&#125;&#125;
               \Large &#123;\te&#123;length of acceleration vector&#125;\over \te&#123;radius of velocity vector circle&#125;&#125;
               $$
             </MathBlock>
@@ -5882,7 +5876,9 @@ const Rest = () => {
               it's unimportant):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_general_circular_motion_uncentered.svg">
+            <Image
+              width="540.0px"
+              src="/images/svg_ch4_ex_general_circular_motion_uncentered.svg">
               <VerticalChunk>
                 But if the position circle is centered at{" "}
                 <NoBreak>
@@ -5896,11 +5892,13 @@ const Rest = () => {
               </VerticalChunk>
             </Image>
             <Pause />
-            <Image src="/images/svg_ch4_ex_general_circular_motion_centered.svg" />
+            <Image
+              width="540.0px"
+              src="/images/svg_ch4_ex_general_circular_motion_centered.svg" />
             <Pause />
             <StarDivider />
             <Pause />
-            <SolutionNote id="_20_111">
+            <SolutionNote id="_20_6987">
               <VerticalChunk>
                 <i>
                   Note 1.
@@ -5952,7 +5950,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \Large &#123;\te&#123;number of radii per unit time&#125;&#125;
-                \Large &#123;\te&#123;number of radii per unit time&#125;&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -5962,7 +5959,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \Large &#123;\te&#123;radii per unit time&#125;&#125;
                 \Large &#123;\te&#123;radii per unit time&#125;&#125;
                 $$
               </MathBlock>
@@ -6065,7 +6061,6 @@ const Rest = () => {
                 extra symmetric{" "}
                 <i>
                   &amp;
-                  &amp;
                 </i>
                 {" "}typographically aligned.)
               </VerticalChunk>
@@ -6105,7 +6100,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_four_particles_radius_3.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch4_ex_four_particles_radius_3.svg" />
             <Pause />
             <VerticalChunk>
               Sketch the position vector, velocity vector,
@@ -6171,7 +6168,9 @@ const Rest = () => {
               particle—are therefore as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_four_particles_radius_3_four_minis.svg" />
+            <Image
+              width="520.0px"
+              src="/images/svg_ch4_ex_four_particles_radius_3_four_minis.svg" />
             <Pause />
             <VerticalChunk>
               (In particular, the purple particle's position
@@ -6221,7 +6220,9 @@ const Rest = () => {
               this simplifies...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_1_over_L_times_L_over_T_simplification.svg" />
+            <Image
+              width="349.056px"
+              src="/images/svg_ch4_ex_1_over_L_times_L_over_T_simplification.svg" />
             <Pause />
             <VerticalChunk>
               ...down to dimensions of “one over time”.
@@ -6287,7 +6288,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_one_particle_at_1.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch4_ex_one_particle_at_1.svg" />
             <Pause />
             <VerticalChunk>
               If we play time backward, will the particle
@@ -6307,14 +6310,16 @@ const Rest = () => {
               the particle to cross each of the intervals defined by
               the following geometric progression* (*see{" "}
               <InChapterLink
-                href="/article/chapter4?id=_21_3302"
+                href="/article/chapter4?id=_21_7889"
                 class="handle-in-chapter-link">
                 Note 1
               </InChapterLink>
               ):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_one_particle_interval_subdivision.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch4_ex_one_particle_interval_subdivision.svg" />
             <Pause />
             <VerticalChunk>
               The interval from{" "}
@@ -6337,6 +6342,7 @@ const Rest = () => {
               &#123;0.5 \over 1&#125; = 0.5
               $$
               <ImageLeft
+                width="400.0px"
                 offset_x="6em"
                 src="/images/svg_ch4_one_particle_speed_equals_time_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -6484,7 +6490,7 @@ const Rest = () => {
               {" "}no matter how far back in time you look.)
             </VerticalChunk>
             <Pause />
-            <SolutionNote id="_21_3302">
+            <SolutionNote id="_21_7889">
               <VerticalChunk>
                 <i>
                   Note 1.
@@ -6574,7 +6580,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_three_one_dimensional_particles.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_three_one_dimensional_particles.svg" />
             <Pause />
             <VerticalChunk>
               If the velocity of the yellow particle is set to track
@@ -6629,7 +6637,9 @@ const Rest = () => {
               accelerating rate:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow.svg" />
             <Pause />
             <VerticalChunk>
               If we add the graph of the red particle to the
@@ -6656,7 +6666,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow_red.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch4_three_one_dimensional_particles_blue_yellow_red.svg" />
             <Pause />
             <VerticalChunk>
               Indeed, for the red graph,
@@ -6719,14 +6731,15 @@ const Rest = () => {
               and vice-versa:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_three_one_dimensional_particles_red_and_blue_symmetry.svg" />
+            <Image
+              width="526.0px"
+              src="/images/svg_ch4_three_one_dimensional_particles_red_and_blue_symmetry.svg" />
             <Pause />
             <VerticalChunk>
               Also note that all graphs have slopes of
               {" "}
               <Math>
                 $
-                \pm 1
                 \pm 1
                 $
               </Math>
@@ -6779,7 +6792,9 @@ const Rest = () => {
               {" "}in the plane:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4.svg" />
+            <Image
+              width="387.198px"
+              src="/images/svg_ch4_circle_at_2_4.svg" />
             <Pause />
             <VerticalChunk>
               The velocity of each particle is set to
@@ -6833,6 +6848,7 @@ const Rest = () => {
                 .
               </NoBreak>
               <ImageRight
+                width="500.0px"
                 offset_x="-0.5em"
                 offset_y="150px"
                 src="/images/svg_ch4_circle_at_2_4_with_some_vectors_cloud.svg" />
@@ -6918,7 +6934,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4_white_version.svg" />
+            <Image
+              width="520.0px"
+              src="/images/svg_ch4_circle_at_2_4_white_version.svg" />
             <Pause />
             <VerticalChunk>
               The black particles, for their part, are
@@ -6938,7 +6956,9 @@ const Rest = () => {
               of different colors, like a UNO card:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4_black_version.svg" />
+            <Image
+              width="520.0px"
+              src="/images/svg_ch4_circle_at_2_4_black_version.svg" />
             <Pause />
             <VerticalChunk>
               Within each group we set the velocity of
@@ -7006,6 +7026,7 @@ const Rest = () => {
             <CentralDisplayItalic>
               length of the position vector
               <ImageRight
+                width="250.0px"
                 offset_x="-4em"
                 src="/images/svg_ch4_ex_circle_at_2_4_position_equals_velocity_cloud.svg" />
             </CentralDisplayItalic>
@@ -7039,7 +7060,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4_UNO_with_gradated_line.svg" />
+            <Image
+              width="520.0px"
+              src="/images/svg_ch4_circle_at_2_4_UNO_with_gradated_line.svg" />
             <Pause />
             <VerticalChunk>
               ...indicating the distance to the origin,
@@ -7050,7 +7073,9 @@ const Rest = () => {
               its position on this line:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4_UNO_flat_half_line.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_circle_at_2_4_UNO_flat_half_line.svg" />
             <Pause />
             <VerticalChunk>
               The behavior of such a particle is
@@ -7078,6 +7103,7 @@ const Rest = () => {
               {" "}
               (!!)
               <ImageLeft
+                width="330.0px"
                 line={-1}
                 src="/images/svg_ch4_ex_circle_at_2_4_sqrt_20_cloud.svg" />
             </VerticalChunk>
@@ -7299,7 +7325,6 @@ const Rest = () => {
               <InlineImage
                 src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
-              &amp;ensp;by setting...
               &amp;ensp;by setting...
             </VerticalChunk>
             <Pause />
@@ -8186,11 +8211,9 @@ const Rest = () => {
                 src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
               &amp;ensp;and
-              &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
-              &amp;ensp;are the translate of the white particle
               &amp;ensp;are the translate of the white particle
               positions at{" "}
               <Math>
@@ -8218,11 +8241,9 @@ const Rest = () => {
                 src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
               &amp;ensp;and
-              &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
-              &amp;ensp;as they appear in the problem statement! I.e.,
               &amp;ensp;as they appear in the problem statement! I.e.,
               our newly-defined
               particles
@@ -8238,11 +8259,9 @@ const Rest = () => {
                 src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
               &amp;ensp;and
-              &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
-              &amp;ensp;are in the desired place at{" "}
               &amp;ensp;are in the desired place at{" "}
               <NoBreak>
                 <Math>
@@ -8265,11 +8284,9 @@ const Rest = () => {
                 src="/images/svg_ch4_circle_at_2_4_p3_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
               &amp;ensp;and
-              &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_circle_at_2_4_p4_inline.svg"
                 class="ch4_inline_blackwhite_particles" />
-              &amp;ensp;“work” in the sense of satisfying all the conditions
               &amp;ensp;“work” in the sense of satisfying all the conditions
               of the problem statement, and are, indeed, the
               solution we seek.
@@ -8307,7 +8324,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_circle_at_2_4_solution_curves.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch4_circle_at_2_4_solution_curves.svg" />
             <Pause />
             <VerticalChunk>
               The above plot goes from{" "}
@@ -8450,7 +8469,9 @@ const Rest = () => {
               Recall the curves from Exercise 12:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_ex_cosine_recall.svg" />
+            <Image
+              width="830.0px"
+              src="/images/svg_ch4_ex_cosine_recall.svg" />
             <Pause />
             <VerticalChunk>
               The blue curve is the derivative of the red curve
@@ -8467,6 +8488,7 @@ const Rest = () => {
               a
               $$
               <ImageLeft
+                width="550.0px"
                 offset_x="200px"
                 src="/images/svg_ch4_ex_cosine_recall_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -8663,6 +8685,7 @@ const Rest = () => {
                     </NoBreak>
                   </i>
                   <ImageLeft
+                    width="430.0px"
                     offset_x="4em"
                     src="/images/svg_ch4_ex_f_g_h_A_B_C_D_cloud.svg" />
                 </li>
@@ -8815,7 +8838,6 @@ const Rest = () => {
                   $2$
                 </Math>
                 &amp;#x200b;
-                &amp;#x200b;
               </NoBreak>
               <Math>
                 $\times$
@@ -8834,7 +8856,9 @@ const Rest = () => {
               Or something else yet?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_scaled_cosine_curves.svg" />
+            <Image
+              width="1174.6px"
+              src="/images/svg_ch4_scaled_cosine_curves.svg" />
           </ExerciseStatement>
           <Solution solution_number={30}>
             <VerticalChunk>
@@ -9002,7 +9026,7 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution
             solution_number={31}
-            id="_22_1037">
+            id="_22_4498">
             <VerticalChunk>
               We can naïvely try to imitiate how the
               curves of Exercise 16 are generated by
@@ -9019,7 +9043,9 @@ const Rest = () => {
               convention), instead of 4:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_position_vectors.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_5_euler_position_vectors.svg" />
             <Pause />
             <VerticalChunk>
               The idea would be that the
@@ -9045,7 +9071,9 @@ const Rest = () => {
               velocity vectors would be as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_velocity_vectors.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_5_euler_velocity_vectors.svg" />
             <Pause />
             <VerticalChunk>
               The velocity vectors are
@@ -9065,7 +9093,9 @@ const Rest = () => {
               to approximately these new positions:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_1_10th.svg" />
+            <Image
+              width="540.0px"
+              src="/images/svg_ch4_5_euler_after_1_10th.svg" />
             <Pause />
             <VerticalChunk>
               In the next one-tenth unit of time we
@@ -9083,7 +9113,9 @@ const Rest = () => {
               lines:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_2_10th.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_2_10th.svg" />
             <Pause />
             <VerticalChunk>
               Applying the same process for{" "}
@@ -9094,7 +9126,9 @@ const Rest = () => {
               steps:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_10_10th.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_10_10th.svg" />
             <Pause />
             <VerticalChunk>
               To be clear, in the above figure, the
@@ -9102,14 +9136,18 @@ const Rest = () => {
               fifth step...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_5_10th.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_5_10th.svg" />
             <Pause />
             <VerticalChunk>
               ...is obtained by starting from the red
               particle's position at the fourth step...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_4_10th.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_4_10th.svg" />
             <Pause />
             <VerticalChunk>
               ...and adding one-tenth of the approximation
@@ -9126,7 +9164,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_4_10th_b.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_4_10th_b.svg" />
             <Pause />
             <VerticalChunk>
               ...and we do the same for each particle,
@@ -9161,7 +9201,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_100_100th_blur.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_100_100th_blur.svg" />
             <Pause />
             <VerticalChunk>
               To visualize such a fine-grained
@@ -9190,14 +9232,18 @@ const Rest = () => {
               approximation:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_100_100th_points.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_100_100th_points.svg" />
             <Pause />
             <VerticalChunk>
               Zooming in a bit (or else we still can't
               see anything):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_after_100_100th_zoomed.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch4_5_euler_after_100_100th_zoomed.svg" />
             <Pause />
             <VerticalChunk>
               In any case, even the{" "}
@@ -9225,6 +9271,7 @@ const Rest = () => {
               form doubly-infinite spirals—in to infinity,
               out to infinity.
               <ImageLeft
+                width="490.0px"
                 children_y="2em"
                 children_x="50%"
                 src="/images/svg_ch4_5_euler_spiral_figure.svg"
@@ -9494,7 +9541,9 @@ const Rest = () => {
               curves:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_final_graph.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_5_euler_final_graph.svg" />
             <Pause />
             <VerticalChunk>
               <i>
@@ -9617,7 +9666,9 @@ const Rest = () => {
               e.g., ...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_5_euler_one_dimensional.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_5_euler_one_dimensional.svg" />
             <Pause />
             <VerticalChunk>
               ...(the initial positions really don't
@@ -9692,8 +9743,12 @@ const Rest = () => {
             <Pause />
             <CentralDisplayItalic>
               the whole is simpler than the parts
-              <ImageLeft src="/images/svg_ch4_5_euler_hearts_left.svg" />
-              <ImageRight src="/images/svg_ch4_5_euler_hearts_right.svg" />
+              <ImageLeft
+                width="500.0px"
+                src="/images/svg_ch4_5_euler_hearts_left.svg" />
+              <ImageRight
+                width="500.0px"
+                src="/images/svg_ch4_5_euler_hearts_right.svg" />
             </CentralDisplayItalic>
             <Pause />
             <VerticalChunk>
@@ -9774,7 +9829,9 @@ const Rest = () => {
               with position vectors):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_position_vectors.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_17_position_vectors.svg" />
             <Pause />
             <VerticalChunk>
               Set the velocity of particle
@@ -9808,8 +9865,12 @@ const Rest = () => {
               vectors end up looking like so, for example:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_velocity_vector_1.svg">
-              <ImageRight src="/images/svg_ch4_17_velocity_vector_1_cloud.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_17_velocity_vector_1.svg">
+              <ImageRight
+                width="500.0px"
+                src="/images/svg_ch4_17_velocity_vector_1_cloud.svg" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -9910,7 +9971,9 @@ const Rest = () => {
               of the particles look like so:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_paths.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_17_paths.svg" />
             <Pause />
             <VerticalChunk>
               ...and if you take the{" "}
@@ -9940,10 +10003,11 @@ const Rest = () => {
                 paths
               </del>
               &amp;ensp;functions that look like so:
-              &amp;ensp;functions that look like so:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_actual_functions.svg" />
+            <Image
+              width="900.0px"
+              src="/images/svg_ch4_17_actual_functions.svg" />
             <Pause />
             <VerticalChunk>
               For example, the derivative of curve
@@ -9953,7 +10017,9 @@ const Rest = () => {
               , highlighted in blue:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_actual_functions_with_highlights.svg" />
+            <Image
+              width="900.0px"
+              src="/images/svg_ch4_17_actual_functions_with_highlights.svg" />
             <Pause />
             <VerticalChunk>
               ...and taking sixteen more derivatives
@@ -10004,7 +10070,9 @@ const Rest = () => {
               configuration:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_other_start.svg" />
+            <Image
+              width="480.0px"
+              src="/images/svg_ch4_17_other_start.svg" />
             <Pause />
             <VerticalChunk>
               To parse the above figure, understand
@@ -10078,7 +10146,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_17_other_start_paths.svg" />
+            <Image
+              width="880.0px"
+              src="/images/svg_ch4_17_other_start_paths.svg" />
             <Pause />
             <VerticalChunk>
               The particles shoot of to infinity in short
@@ -10090,9 +10160,6 @@ const Rest = () => {
               <ul style="margin:20px 20px 20px 50px;list-style-type:disc;">
                 <li style="margin-bottom:10px;">
                   in{" "}
-                  <span style="border:1px solid blue">
-                    blue
-                  </span>
                   <span style="border:1px solid blue">
                     blue
                   </span>
@@ -10110,9 +10177,6 @@ const Rest = () => {
                 </li>
                 <li>
                   in{" "}
-                  <span style="border:1px solid red">
-                    red
-                  </span>
                   <span style="border:1px solid red">
                     red
                   </span>
@@ -10162,7 +10226,9 @@ const Rest = () => {
               Add elements to the following drawing...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_newton_quotient_unfinished.svg" />
+            <Image
+              width="456.0px"
+              src="/images/svg_ch4_newton_quotient_unfinished.svg" />
             <Pause />
             <VerticalChunk>
               ...such that it becomes a “complete”
@@ -10183,13 +10249,15 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution
             solution_number={33}
-            id="_23_5039">
+            id="_23_3335">
             <VerticalChunk>
               This version pictures all the elements
               that appear in the fraction:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_newton_quotient_finished.svg" />
+            <Image
+              width="456.0px"
+              src="/images/svg_ch4_newton_quotient_finished.svg" />
             <Pause />
             <VerticalChunk>
               The point is: the fraction
@@ -10217,6 +10285,7 @@ const Rest = () => {
               (x, f(x))
               $$
               <ImageLeft
+                width="400.0px"
                 src="/images/svg_ch4_new_quatient_x_fx_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -10230,6 +10299,7 @@ const Rest = () => {
               (x + h, f(x + h))
               $$
               <ImageRight
+                width="400.0px"
                 src="/images/svg_ch4_new_quatient_x_fxplush_cloud.svg"
                 offset_y="-0.5em"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -10396,7 +10466,9 @@ const Rest = () => {
               time):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_timeline.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_RATS_timeline.svg" />
             <Pause />
             <VerticalChunk>
               We also consider quantities{" "}
@@ -10434,7 +10506,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_timeline_with_A_B.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch4_RATS_timeline_with_A_B.svg" />
             <Pause />
             <VerticalChunk>
               More specifically, we are interested in
@@ -10443,7 +10517,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large AB
               \Large AB
               $$
             </MathBlock>
@@ -10464,7 +10537,9 @@ const Rest = () => {
               {" "}as
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_rats.svg" />
+            <Image
+              width="180.0px"
+              src="/images/svg_ch4_RATS_rats.svg" />
             <Pause />
             <VerticalChunk>
               that are crossing a hallway surveyed by
@@ -10519,6 +10594,7 @@ const Rest = () => {
               </NoBreak>
               {" "}line, to be clear):
               <ImageLeft
+                width="750.0px"
                 src="/images/svg_ch4_RATS_corridor_cloud.svg"
                 offset_y="-0.5em"
                 offset_x="0.5em" />
@@ -10574,7 +10650,6 @@ const Rest = () => {
                     cat's mouth, and
                   </del>
                   &amp;ensp;when{" "}
-                  &amp;ensp;when{" "}
                   <Math>
                     $A$
                   </Math>
@@ -10596,7 +10671,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large AB
               \Large AB
               $$
             </MathBlock>
@@ -10625,7 +10699,9 @@ const Rest = () => {
               equation:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_equation.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_RATS_equation.svg" />
             <Pause />
             <VerticalChunk>
               If we divide the above equation by{" "}
@@ -10659,7 +10735,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_equation_over_Dt.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_RATS_equation_over_Dt.svg" />
             <Pause />
             <VerticalChunk>
               As{" "}
@@ -10789,14 +10867,16 @@ const Rest = () => {
               {" "}(cf.
               Exercise 16{" "}
               <InChapterLink
-                href="/article/chapter4?id=_19_4426"
+                href="/article/chapter4?id=_19_5745"
                 class="handle-in-chapter-link">
                 Note 3
               </InChapterLink>
               ), and
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_RATS_over_Dt_first_term.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch4_RATS_over_Dt_first_term.svg" />
             <Pause />
             <VerticalChunk>
               has the form
@@ -10816,12 +10896,16 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-              <ImageLeft src="/images/svg_ch4_RATS_for_f_equals_AB_cloud.svg" />
+              <ImageLeft
+                width="500.0px"
+                src="/images/svg_ch4_RATS_for_f_equals_AB_cloud.svg" />
             </VerticalChunk>
             <VerticalChunk indent={true}>
               The first term on the right-hand side, for
               its part, approaches
-              <ImageRight src="/images/svg_ch4_RATS_first_term_cloud.svg" />
+              <ImageRight
+                width="900.0px"
+                src="/images/svg_ch4_RATS_first_term_cloud.svg" />
             </VerticalChunk>
             <VerticalChunk indent={true}>
               as{" "}
@@ -10913,7 +10997,9 @@ const Rest = () => {
               second term on the right-hand side!
               Symmetrically to the first term on the
               right-hand side, the second term approaches
-              <ImageRight src="/images/svg_ch4_RATS_second_term_cloud.svg" />
+              <ImageRight
+                width="900.0px"
+                src="/images/svg_ch4_RATS_second_term_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -11483,7 +11569,7 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution
             solution_number={37}
-            id="_24_1496">
+            id="_24_1799">
             <VerticalChunk>
               That would be the fact that
             </VerticalChunk>
@@ -11890,6 +11976,7 @@ const Rest = () => {
               A_1(t_0 + h) \,\times\, \dots \,\times\, A_&#123;i-1&#125;(t_0 + h) \,\times\, &#123;A_i(t_0 + h) - A_i(t_0)\over h&#125; \,\times\, A_&#123;i + 1&#125;(t_0) \,\times\, \cdots  \,\times\, A_n(t_0)
               $$
               <ImageRight
+                width="700.0px"
                 src="/images/svg_ch4_big_product_parchment_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -11930,7 +12017,9 @@ const Rest = () => {
               middle of the product:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_big_product_fraction_outline.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_big_product_fraction_outline.svg" />
             <Pause />
             <VerticalChunk>
               This is seen to be a Newton quotient
@@ -12022,7 +12111,9 @@ const Rest = () => {
               at the beginning of the product...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_big_product_prefix_outline.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_big_product_prefix_outline.svg" />
             <Pause />
             <VerticalChunk>
               ...; here the
@@ -12160,7 +12251,9 @@ const Rest = () => {
               {" "}does not even appear:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_big_product_suffix_outline.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_big_product_suffix_outline.svg" />
             <Pause />
             <VerticalChunk>
               Because{" "}
@@ -12187,7 +12280,9 @@ const Rest = () => {
               therefore:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_big_product_final_answer.svg" />
+            <Image
+              width="700.0px"
+              src="/images/svg_ch4_big_product_final_answer.svg" />
             <Pause />
             <VerticalChunk>
               ...with a lone{" "}
@@ -12231,7 +12326,9 @@ const Rest = () => {
               of a unit circle.
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta.svg" />
           </ExerciseStatement>
           <Solution solution_number={41}>
             <VerticalChunk>
@@ -12242,7 +12339,9 @@ const Rest = () => {
               length of this yellow interval:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta_with_yellow.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta_with_yellow.svg" />
             <Pause />
             <VerticalChunk>
               One revolution around the circle is also
@@ -12251,7 +12350,9 @@ const Rest = () => {
               on the graph:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta_with_two_yellows.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta_with_two_yellows.svg" />
             <Pause />
             <VerticalChunk>
               Going a bit further,{" "}
@@ -12277,7 +12378,9 @@ const Rest = () => {
               you zoom in):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta_revealed.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta_revealed.svg" />
             <Pause />
             <VerticalChunk>
               Therefore
@@ -12285,7 +12388,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;11 \over 7&#125;
               \Large &#123;11 \over 7&#125;
               $$
             </MathBlock>
@@ -12297,7 +12399,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 4 \cdot &#123;11 \over 7&#125; = &#123;44 \over 7&#125;
               \Large 4 \cdot &#123;11 \over 7&#125; = &#123;44 \over 7&#125;
               $$
             </MathBlock>
@@ -12345,7 +12446,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large &#123;44 \over 7&#125; = 6.285714\dots
-              \Large &#123;44 \over 7&#125; = 6.285714\dots
               $$
             </MathBlock>
             <Pause />
@@ -12362,7 +12462,9 @@ const Rest = () => {
               revolution...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta_tau_verification.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta_tau_verification.svg" />
             <Pause />
             <VerticalChunk>
               ...whereas
@@ -12370,7 +12472,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large &#123;11 \over 7&#125; = 1.571428\dots
               \Large &#123;11 \over 7&#125; = 1.571428\dots
               $$
             </MathBlock>
@@ -12388,7 +12489,9 @@ const Rest = () => {
               length of a quarter-revolution:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_cosine_for_eta_eta_verification.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch4_cosine_for_eta_eta_verification.svg" />
             <Pause />
             <VerticalChunk>
               (So, we have some secondary “visual confirmation”
@@ -12407,13 +12510,18 @@ const Rest = () => {
               vertical velocities...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_hor0.svg">
+            <Image
+              width="1052.0px"
+              src="/images/svg_ch4_pacman1_hor0.svg">
               <ImageLeft
+                width="800.0px"
                 src="/images/svg_ch4_pacman1_x_prime_t_scloud.svg"
                 offset_y="1em" />
             </Image>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_ver0.svg" />
+            <Image
+              width="1052.0px"
+              src="/images/svg_ch4_pacman1_ver0.svg" />
             <Pause />
             <VerticalChunk>
               ...of PACMAN, with unit of
@@ -12439,6 +12547,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman1_maze.svg"
               height="590px" />
             <Pause />
@@ -12470,9 +12579,13 @@ const Rest = () => {
               or up) and red (negative displacements, going to the left or down):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_hor1.svg" />
+            <Image
+              width="420.0px"
+              src="/images/svg_ch4_pacman1_hor1.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_ver1.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch4_pacman1_ver1.svg" />
             <Pause />
             <VerticalChunk>
               We can estimate the duration of each
@@ -12480,9 +12593,13 @@ const Rest = () => {
               (mistakes of estimation can be made, we shall recover):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_hor2.svg" />
+            <Image
+              width="420.0px"
+              src="/images/svg_ch4_pacman1_hor2.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_ver2.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch4_pacman1_ver2.svg" />
             <Pause />
             <VerticalChunk>
               We can also estimate the velocity to be
@@ -12490,7 +12607,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \pm 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
               \pm 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
               $$
             </MathBlock>
@@ -12515,6 +12631,7 @@ const Rest = () => {
               (\te&#123;velocity&#125;) \times (\te&#123;amount of time&#125;) = (\te&#123;displacement&#125;)
               $$
               <ImageRight
+                width="800.0px"
                 src="/images/svg_ch4_pacman1_velocity_times_amt_time_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -12525,11 +12642,9 @@ const Rest = () => {
                 amount of travel
               </del>
               &amp;ensp;
-              &amp;ensp;
               <del>
                 during the
               </del>
-              &amp;ensp;six displacements:
               &amp;ensp;six displacements:
             </VerticalChunk>
             <Pause />
@@ -12541,7 +12656,9 @@ const Rest = () => {
               <Math>
                 $-6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;\,\,\times\,\,0.5\te&#123;s&#125;\,\,=\,\,-3.375\,\te&#123;cells&#125;$
               </Math>
-              <ImageRight src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg" />
+              <ImageRight
+                width="350.0px"
+                src="/images/svg_ch4_pacman1_cells_per_second_times_seconds_cloud.svg" />
             </CentralDisplay>
             <Pause />
             <CentralDisplay>
@@ -12600,7 +12717,9 @@ const Rest = () => {
               imply the following set of initial motions:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_initial_displacements_before_rounding.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_pacman1_initial_displacements_before_rounding.svg" />
             <Pause />
             <VerticalChunk>
               But these are approximate numbers and the
@@ -12613,7 +12732,6 @@ const Rest = () => {
               <InlineImage
                 src="/images/svg_ch4_pacman1_pellet6_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
-              &amp;ensp;the next displacement, if you look back at
               &amp;ensp;the next displacement, if you look back at
               the graphs, is horizontal, so yes.) In fact,
               if you look at the maze,
@@ -12706,7 +12824,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \pm&#123;&#125;0.2\te&#123;s&#125;
-              \pm&#123;&#125;0.2\te&#123;s&#125;
               $$
             </MathBlock>
             <Pause />
@@ -12777,7 +12894,9 @@ const Rest = () => {
               measurement, the initial motions must be:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_initial_motions.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_pacman1_initial_motions.svg" />
             <Pause />
             <VerticalChunk>
               The maze fits these constraints in only two places
@@ -12786,11 +12905,9 @@ const Rest = () => {
                 src="/images/svg_ch4_pacman1_pellet2_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
               &amp;ensp;and
-              &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_pacman1_pellet4_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
-              &amp;ensp;equal{" "}
               &amp;ensp;equal{" "}
               <Math>
                 $-3\te&#123;c&#125;$
@@ -12807,6 +12924,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman1_maze_two_possibilities.svg"
               height="590px" />
             <Pause />
@@ -12838,9 +12956,13 @@ const Rest = () => {
               respectively:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_hor3.svg" />
+            <Image
+              width="569.0px"
+              src="/images/svg_ch4_pacman1_hor3.svg" />
             <Pause />
-            <Image src="/images/svg_ch4_pacman1_ver3.svg" />
+            <Image
+              width="569.0px"
+              src="/images/svg_ch4_pacman1_ver3.svg" />
             <Pause />
             <VerticalChunk>
               (Nb: Imagine translating these intervals to the left or right until
@@ -12853,7 +12975,6 @@ const Rest = () => {
                 src="/images/svg_ch4_pacman1_pellet7_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
               &amp;ensp;is horizontal to the right the only possible
-              &amp;ensp;is horizontal to the right the only possible
               remaining solution is the right-hand one,
               or else Pacman would collide with the ghost cage,
               with displacement
@@ -12861,11 +12982,11 @@ const Rest = () => {
                 src="/images/svg_ch4_pacman1_pellet6_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
               &amp;ensp;equal to 6c not 7c, or else Pacman would
-              &amp;ensp;equal to 6c not 7c, or else Pacman would
               collide with a wall:
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman1_maze_would_collide.svg"
               height="590px" />
             <Pause />
@@ -12885,11 +13006,11 @@ const Rest = () => {
                 src="/images/svg_ch4_pacman1_pellet7_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
               &amp;ensp;brings Pacman all the way around the maze to
-              &amp;ensp;brings Pacman all the way around the maze to
               the left edge of the ghost cage, like so...
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman1_maze_bring_around.svg"
               height="590px" />
             <Pause />
@@ -12915,7 +13036,6 @@ const Rest = () => {
               <InlineImage
                 src="/images/svg_ch4_pacman1_pellet8_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
-              &amp;ensp;must be{" "}
               &amp;ensp;must be{" "}
               <NoBreak>
                 <Math>
@@ -12959,6 +13079,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman1_maze_final_solution.svg"
               height="590px" />
             <Pause />
@@ -12974,7 +13095,6 @@ const Rest = () => {
               <InlineImage
                 src="/images/svg_ch4_pacman1_pellet7_inline.svg"
                 class="ch4_pacman1_inline_number_pellet" />
-              &amp;ensp;and
               &amp;ensp;and
               <InlineImage
                 src="/images/svg_ch4_pacman1_pellet8_inline.svg"
@@ -12994,6 +13114,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman2_maze.svg"
               height="551px" />
             <Pause />
@@ -13004,7 +13125,9 @@ const Rest = () => {
               change—note that green is the vertical velocity)...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein.svg" />
             <Pause />
             <VerticalChunk>
               ...and asking for Pacman's position at{" "}
@@ -13024,7 +13147,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
               \approx 6.75\te&#123;c&#125;\hlfbk/\hlfbk\te&#123;s&#125;
               $$
             </MathBlock>
@@ -13066,7 +13188,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_at_23_7.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_at_23_7.svg" />
             <Pause />
             <VerticalChunk>
               The velocity vector (cf. Exercise 12) is therefore about
@@ -13098,9 +13222,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \sqrt&#123;4.8^2 + 4.8^2&#125; = \sqrt&#123;2&#125; \times 4.8 = 6.788...
-              \sqrt&#123;4.8^2 + 4.8^2&#125; = \sqrt&#123;2&#125; \times 4.8 = 6.788...
               $$
               <ImageLeft
+                width="500.0px"
                 src="/images/svg_ch4_pacman2_4_point_8_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -13152,7 +13276,9 @@ const Rest = () => {
               cells per second:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_at_26.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_at_26.svg" />
             <Pause />
             <VerticalChunk>
               This gives a speed of
@@ -13160,7 +13286,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sqrt&#123;6.5^2 + 2^2&#125; = \sqrt&#123;46.25&#125; = 6.800...
               \sqrt&#123;6.5^2 + 2^2&#125; = \sqrt&#123;46.25&#125; = 6.800...
               $$
             </MathBlock>
@@ -13190,7 +13315,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_at_27_and_30.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_at_27_and_30.svg" />
             <Pause />
             <VerticalChunk>
               The speed at{" "}
@@ -13202,7 +13329,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sqrt&#123;3^2 + 6.2^2&#125; = \sqrt&#123;47.44&#125; = 6.888
               \sqrt&#123;3^2 + 6.2^2&#125; = \sqrt&#123;47.44&#125; = 6.888
               $$
             </MathBlock>
@@ -13218,7 +13344,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sqrt&#123;5.6^2 + 3.6^2&#125; = \sqrt&#123;44.32&#125; = 6.657
               \sqrt&#123;5.6^2 + 3.6^2&#125; = \sqrt&#123;44.32&#125; = 6.657
               $$
             </MathBlock>
@@ -13243,7 +13368,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_at_31.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_at_31.svg" />
             <Pause />
             <VerticalChunk>
               This yields a speed of
@@ -13251,7 +13378,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sqrt&#123;2.6^2 + 6.2^2&#125; = \sqrt&#123;45.2&#125; = 6.723...
               \sqrt&#123;2.6^2 + 6.2^2&#125; = \sqrt&#123;45.2&#125; = 6.723...
               $$
             </MathBlock>
@@ -13293,7 +13419,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_first_big_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_first_big_purple.svg" />
             <Pause />
             <VerticalChunk>
               Both the{" "}
@@ -13316,7 +13444,9 @@ const Rest = () => {
               and ends with horizontal motion:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_first_big_purple_annotations.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_first_big_purple_annotations.svg" />
             <Pause />
             <VerticalChunk>
               Thus Pacman starts the curve going up, and ends the curve
@@ -13349,7 +13479,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \approx &#123;11 \over 7&#125;
-              \approx &#123;11 \over 7&#125;
               $$
             </MathBlock>
             <Pause />
@@ -13369,7 +13498,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \approx &#123;20.25\te&#123;c&#125; \over 11/7&#125; = &#123;7 \times 20.25\te&#123;c&#125; \over 11&#125; = &#123;141.75\te&#123;c&#125; \over 11&#125; = 12.886...\te&#123;c&#125;
               \approx &#123;20.25\te&#123;c&#125; \over 11/7&#125; = &#123;7 \times 20.25\te&#123;c&#125; \over 11&#125; = &#123;141.75\te&#123;c&#125; \over 11&#125; = 12.886...\te&#123;c&#125;
               $$
             </MathBlock>
@@ -13417,6 +13545,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman2_upper_left_highlight.svg"
               height="551px" />
             <Pause />
@@ -13426,7 +13555,9 @@ const Rest = () => {
               rightward and ends downward:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_second_big_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_second_big_purple.svg" />
             <Pause />
             <VerticalChunk>
               ...this second curve must, of course, be the
@@ -13435,6 +13566,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman2_upper_right_highlight.svg"
               height="551px" />
             <Pause />
@@ -13444,7 +13576,9 @@ const Rest = () => {
               with rightward motion:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_first_warning_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_first_warning_purple.svg" />
             <Pause />
             <VerticalChunk>
               In fact, it is also strange that Pacman{" "}
@@ -13456,7 +13590,9 @@ const Rest = () => {
               starts at the leftmost edge of the maze):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_second_warning_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_second_warning_purple.svg" />
             <Pause />
             <VerticalChunk>
               Looking back over our work,
@@ -13546,6 +13682,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman2_corrected_highlights.svg"
               height="551px" />
             <Pause />
@@ -13562,7 +13699,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_third_big_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_third_big_purple.svg" />
             <Pause />
             <VerticalChunk>
               Indeed, the curve lasts{" "}
@@ -13603,6 +13742,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1150.0px"
               src="/images/svg_ch4_pacman2_continued_highlights.svg"
               height="551px" />
             <Pause />
@@ -13611,21 +13751,27 @@ const Rest = () => {
               re-enters the curve (going right and up a tiny bit):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_back_in_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_back_in_purple.svg" />
             <Pause />
             <VerticalChunk>
               But then changes again, and re-exits the curve
               (going left and down a tiny bit):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
             <Pause />
             <VerticalChunk>
               Then Pacman goes left-and-then-right-again by
               some small amount:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
+            <Image
+              width="1030.0px"
+              src="/images/svg_ch4_pacman2_frankenstein_back_out_purple.svg" />
             <Pause />
             <VerticalChunk>
               At this point—and in particular at
@@ -13674,7 +13820,9 @@ const Rest = () => {
               if its second derivative has this graph (broadly):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line.svg" />
+            <Image
+              width="1.0e3px"
+              src="/images/svg_ch4_one_long_line.svg" />
           </ExerciseStatement>
           <Solution solution_number={44}>
             <VerticalChunk>
@@ -13706,7 +13854,9 @@ const Rest = () => {
               does say “broadly” anyway):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_with_purple.svg" />
+            <Image
+              width="1.0e3px"
+              src="/images/svg_ch4_one_long_line_with_purple.svg" />
             <Pause />
             <VerticalChunk>
               As
@@ -13737,7 +13887,9 @@ const Rest = () => {
               gives the total change in slope:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_positive_area.svg" />
+            <Image
+              width="1.0e3px"
+              src="/images/svg_ch4_one_long_line_positive_area.svg" />
             <Pause />
             <VerticalChunk>
               (We won't argue this right now, but it's
@@ -13755,7 +13907,9 @@ const Rest = () => {
               to the other:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_negative_area.svg" />
+            <Image
+              width="1.0e3px"
+              src="/images/svg_ch4_one_long_line_negative_area.svg" />
             <Pause />
             <VerticalChunk>
               In any case the areas are all the same{" "}
@@ -13780,7 +13934,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large a
-              \Large a
               $$
             </MathBlock>
             <Pause />
@@ -13794,12 +13947,13 @@ const Rest = () => {
                 ),
               </NoBreak>
               {" "}and
-              <ImageRight src="/images/svg_ch4_one_long_line_a_is_about_1_cloud.svg" />
+              <ImageRight
+                width="900.0px"
+                src="/images/svg_ch4_one_long_line_a_is_about_1_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <MathBlock>
               $$
-              \Large c
               \Large c
               $$
             </MathBlock>
@@ -13811,7 +13965,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large c + a
               \Large c + a
               $$
             </MathBlock>
@@ -13828,7 +13981,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large (c + a) + (-a) = c
               \Large (c + a) + (-a) = c
               $$
             </MathBlock>
@@ -13848,8 +14000,12 @@ const Rest = () => {
               the background):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_solution_sketch_1.svg">
-              <ImageLeft src="/images/svg_ch4_one_long_line_c_is_approx_0_point_2_cloud.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_one_long_line_solution_sketch_1.svg">
+              <ImageLeft
+                width="200.0px"
+                src="/images/svg_ch4_one_long_line_c_is_approx_0_point_2_cloud.svg" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -13898,8 +14054,12 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_solution_sketch_2.svg">
-              <ImageLeft src="/images/svg_ch4_one_long_line_c_is_approx_minus_a_over_2_cloud.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_one_long_line_solution_sketch_2.svg">
+              <ImageLeft
+                width="200.0px"
+                src="/images/svg_ch4_one_long_line_c_is_approx_minus_a_over_2_cloud.svg" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -13925,7 +14085,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_solution_sketch_3.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch4_one_long_line_solution_sketch_3.svg" />
             <Pause />
             <VerticalChunk>
               Again, any of these graphs are
@@ -13977,7 +14139,9 @@ const Rest = () => {
               of one line segment and the start of the next:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_1.svg" />
+            <Image
+              width="540.0px"
+              src="/images/svg_ch4_one_long_line_what_are_the_rises_1.svg" />
             <Pause />
             <VerticalChunk>
               In fact, is not entirely clear that there aren't
@@ -13990,7 +14154,9 @@ const Rest = () => {
               that exist (the concave ones and the convex ones):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_2.svg" />
+            <Image
+              width="540.0px"
+              src="/images/svg_ch4_one_long_line_what_are_the_rises_2.svg" />
             <Pause />
             <VerticalChunk>
               (It will turn out that
@@ -14003,7 +14169,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 1.6c
               \Large 1.6c
               $$
             </MathBlock>
@@ -14027,7 +14192,9 @@ const Rest = () => {
               curve:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_connector_curve_lower_bound.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_one_long_line_connector_curve_lower_bound.svg" />
             <Pause />
             <VerticalChunk>
               Symmetrically,
@@ -14035,7 +14202,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 1.6(c + a)
               \Large 1.6(c + a)
               $$
             </MathBlock>
@@ -14054,7 +14220,9 @@ const Rest = () => {
               connector curve:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_connector_curve_upper_bound.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_one_long_line_connector_curve_upper_bound.svg" />
             <Pause />
             <VerticalChunk>
               To go any further we must add the first
@@ -14064,7 +14232,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large c
               \Large c
               $$
             </MathBlock>
@@ -14082,7 +14249,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large c + a
               \Large c + a
               $$
             </MathBlock>
@@ -14102,7 +14268,9 @@ const Rest = () => {
               second derivative:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_what_are_the_rises_3.svg" />
+            <Image
+              width="730.0px"
+              src="/images/svg_ch4_one_long_line_what_are_the_rises_3.svg" />
             <Pause />
             <VerticalChunk>
               The afore-mentioned lower bound of
@@ -14110,7 +14278,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 1.6c
               \Large 1.6c
               $$
             </MathBlock>
@@ -14124,7 +14291,9 @@ const Rest = () => {
               {" "}the graph of the derivative:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_connector_curve_lower_bound_area.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_one_long_line_connector_curve_lower_bound_area.svg" />
             <Pause />
             <VerticalChunk>
               Whereas the afore-mentioned upper bound of
@@ -14132,7 +14301,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 1.6(a + c)
               \Large 1.6(a + c)
               $$
             </MathBlock>
@@ -14146,7 +14314,9 @@ const Rest = () => {
               {" "}the graph of the derivative:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_connector_curve_upper_bound_area.svg" />
+            <Image
+              width="800.0px"
+              src="/images/svg_ch4_one_long_line_connector_curve_upper_bound_area.svg" />
             <Pause />
             <VerticalChunk>
               In other words, the rise of the convex connector
@@ -14201,7 +14371,9 @@ const Rest = () => {
               surgery:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_area_surgery.svg" />
+            <Image
+              width="1090.0px"
+              src="/images/svg_ch4_one_long_line_area_surgery.svg" />
             <Pause />
             <VerticalChunk>
               Long story short, the area enclosed, which is
@@ -14210,7 +14382,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large 1.6\cdot (c + &#123;a\over 2&#125;)
               \Large 1.6\cdot (c + &#123;a\over 2&#125;)
               $$
             </MathBlock>
@@ -14223,7 +14394,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large 1.6
-              \Large 1.6
               $$
             </MathBlock>
             <Pause />
@@ -14235,7 +14405,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large c + &#123;a \over 2&#125;
               \Large c + &#123;a \over 2&#125;
               $$
             </MathBlock>
@@ -14257,7 +14426,9 @@ const Rest = () => {
               S-curve of the derivative is...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_concave_connector.svg" />
+            <Image
+              width="730.0px"
+              src="/images/svg_ch4_one_long_line_concave_connector.svg" />
             <Pause />
             <VerticalChunk>
               ...flipped around from before, going from
@@ -14270,7 +14441,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large 1.6\cdot (c + &#123;a\over 2&#125;)
-              \Large 1.6\cdot (c + &#123;a\over 2&#125;)
               $$
             </MathBlock>
             <Pause />
@@ -14280,7 +14450,9 @@ const Rest = () => {
               information, if we want. (Well...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch4_one_long_line_with_rises_shown.svg" />
+            <Image
+              width="730.0px"
+              src="/images/svg_ch4_one_long_line_with_rises_shown.svg" />
             <Pause />
             <VerticalChunk>
               ...there, no one can accuse us of not doing the

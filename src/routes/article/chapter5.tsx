@@ -26,6 +26,8 @@ const Article = () => {
   return (<>
       <Chapter
         number={5}
+        largest_centered_image_width="1850.0"
+        largest_side_image_width="900.0"
         title="The Trigonometric Functions">
         <SectionsBreadcrumbs>
           <BreadcrumbItem
@@ -208,7 +210,9 @@ const Article = () => {
             It is the one that has this graph:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_cosine.svg" />
+          <Image
+            width="1139.5px"
+            src="/images/svg_ch5_ch_cosine.svg" />
           <Pause />
           <VerticalChunk>
             It has a close cousin named ‘sin’.
@@ -238,7 +242,9 @@ const Article = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_cosine_and_sine.svg" />
+          <Image
+            width="1139.5px"
+            src="/images/svg_ch5_ch_cosine_and_sine.svg" />
           <Pause />
           <VerticalChunk>
             As far as standard definitions go,
@@ -338,7 +344,9 @@ const Article = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_cosine_and_sine_@0.5.svg" />
+          <Image
+            width="1.2e3px"
+            src="/images/svg_ch5_ch_cosine_and_sine_@0.5.svg" />
           <Pause />
           <VerticalChunk>
             Per the definitions,
@@ -381,7 +389,9 @@ const Article = () => {
             a calculator equipped with ‘sin’ and ‘cos’):
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_unit_circle_@0.5_smaller.svg" />
+          <Image
+            width="400.0px"
+            src="/images/svg_ch5_ch_unit_circle_@0.5_smaller.svg" />
           <Pause />
           <VerticalChunk>
             As a second example, the graphs indicate that
@@ -407,7 +417,9 @@ const Article = () => {
             {" "}in any case):
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_cosine_and_sine_@-3.svg" />
+          <Image
+            width="1.2e3px"
+            src="/images/svg_ch5_ch_cosine_and_sine_@-3.svg" />
           <Pause />
           <VerticalChunk>
             Indeed, going{" "}
@@ -466,7 +478,9 @@ const Article = () => {
             {" "}to be exact, it turns out):
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_unit_circle_@-3_smaller.svg" />
+          <Image
+            width="400.0px"
+            src="/images/svg_ch5_ch_unit_circle_@-3_smaller.svg" />
           <Pause />
           <VerticalChunk>
             For a last example,
@@ -499,7 +513,9 @@ const Article = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_cosine_and_sine_@minus_eta.svg" />
+          <Image
+            width="1.2e3px"
+            src="/images/svg_ch5_ch_cosine_and_sine_@minus_eta.svg" />
           <Pause />
           <VerticalChunk>
             Some thought reveals that this value of{" "}
@@ -531,7 +547,6 @@ const Article = () => {
           <Pause />
           <MathBlock>
             $$
-            \approx &#123;11\over 7&#125; = 1.\overline&#123;571428&#125;
             \approx &#123;11\over 7&#125; = 1.\overline&#123;571428&#125;
             $$
           </MathBlock>
@@ -578,7 +593,6 @@ const Article = () => {
           <MathBlock>
             $$
             \sin(x)
-            \sin(x)
             $$
           </MathBlock>
           <Pause />
@@ -618,7 +632,9 @@ const Article = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_unit_circle_with_new_definition.svg" />
+          <Image
+            width="720.0px"
+            src="/images/svg_ch5_ch_unit_circle_with_new_definition.svg" />
           <Pause />
           <VerticalChunk>
             In more detail, if you tilt your head  sideways,
@@ -685,7 +701,9 @@ const Article = () => {
             particle:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_unit_circle_with_sin_and_cos_particles.svg" />
+          <Image
+            width="440.0px"
+            src="/images/svg_ch5_ch_unit_circle_with_sin_and_cos_particles.svg" />
           <Pause />
           <VerticalChunk>
             ...to be contrasted with our first definition,
@@ -693,7 +711,9 @@ const Article = () => {
             two different axes:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_unit_circle_with_sincos_particle.svg" />
+          <Image
+            width="440.0px"
+            src="/images/svg_ch5_ch_unit_circle_with_sincos_particle.svg" />
           <Pause />
           <VerticalChunk>
             The second definition (former diagram) explains
@@ -772,7 +792,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_unit_circle_with_four_particles.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_unit_circle_with_four_particles.svg" />
         <Pause />
         <VerticalChunk>
           These labels are chosen
@@ -917,7 +939,9 @@ const Rest = () => {
           {" "}etc:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_four_curves.svg" />
+        <Image
+          width="1261.0px"
+          src="/images/svg_ch5_ch_four_curves.svg" />
         <Pause />
         <VerticalChunk>
           These are the same four curves that
@@ -928,13 +952,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin' = \cos
-          \sin' = \cos
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cos' = -\!\sin
           \cos' = -\!\sin
           $$
         </MathBlock>
@@ -1064,12 +1086,6 @@ const Rest = () => {
           \up&#123;1.7&#125;\sin(x + \eta) = \cos(x) \\
           \up&#123;1.7&#125;\cos(x - \eta) = \sin(x) \\
           \up&#123;1.7&#125;\dn&#123;0.5&#125;\cos(\eta/2 + x) = \sin(\eta/2 - x)
-          \displaylines&#123;
-          \up&#123;1.0&#125;\cos(-x) = \cos(x) \\
-          \up&#123;1.7&#125;\sin(-x) = -\sin(x) \\
-          \up&#123;1.7&#125;\sin(x + \eta) = \cos(x) \\
-          \up&#123;1.7&#125;\cos(x - \eta) = \sin(x) \\
-          \up&#123;1.7&#125;\dn&#123;0.5&#125;\cos(\eta/2 + x) = \sin(\eta/2 - x)
           &#125;
           $$
         </MathBlock>
@@ -1087,7 +1103,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Large \eta
           \Large \eta
           $$
         </MathBlock>
@@ -1135,7 +1150,9 @@ const Rest = () => {
           things to the author's way of seeing things):
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_identity_explanations.svg" />
+        <Image
+          width="780.0px"
+          src="/images/svg_ch5_ch_identity_explanations.svg" />
         <Pause />
         <VerticalChunk>
           Two more identities
@@ -1143,7 +1160,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \sin(\eta - x) = \cos(x)
           \sin(\eta - x) = \cos(x)
           $$
         </MathBlock>
@@ -1154,7 +1170,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos(\eta - x) = \sin(x)
           \cos(\eta - x) = \sin(x)
           $$
         </MathBlock>
@@ -1169,7 +1184,9 @@ const Rest = () => {
           plane:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_identity_explanations_more.svg" />
+        <Image
+          width="780.0px"
+          src="/images/svg_ch5_ch_identity_explanations_more.svg" />
         <Pause />
         <VerticalChunk>
           We also have these identities...
@@ -1177,11 +1194,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \displaylines&#123;
-          \up&#123;1.2&#125;\cos(x + 4\eta) = \cos(x)\\
-          \up&#123;1.7&#125;\sin(x + 4\eta) = \rt&#123;0.15&#125;\sin(x)\rt&#123;0.15&#125;\\
-          \up&#123;1.7&#125;\cos(x + 2\eta) = \rt&#123;0.15&#125;-\!\cos(x)\rt&#123;0.15&#125;\\
-          \up&#123;1.7&#125;\sin(x + 2\eta) = \rt&#123;0.15&#125;-\!\sin(x)\rt&#123;0.15&#125;
           \displaylines&#123;
           \up&#123;1.2&#125;\cos(x + 4\eta) = \cos(x)\\
           \up&#123;1.7&#125;\sin(x + 4\eta) = \rt&#123;0.15&#125;\sin(x)\rt&#123;0.15&#125;\\
@@ -1208,8 +1220,6 @@ const Rest = () => {
           $$
           \displaylines&#123;\up&#123;1.0&#125;\cos(x + \eta) = -\!\sin(x) \\
           \up&#123;1.7&#125;\sin(x - \eta) = -\!\cos(x)&#125;
-          \displaylines&#123;\up&#123;1.0&#125;\cos(x + \eta) = -\!\sin(x) \\
-          \up&#123;1.7&#125;\sin(x - \eta) = -\!\cos(x)&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1233,13 +1243,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin'(x) = \sin(x + \eta)
-          \sin'(x) = \sin(x + \eta)
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cos'(x) = \cos(x + \eta)
           \cos'(x) = \cos(x + \eta)
           $$
         </MathBlock>
@@ -1251,13 +1259,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin(x + \eta) = \cos(x)
-          \sin(x + \eta) = \cos(x)
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cos(x + \eta) = -\!\sin(x)
           \cos(x + \eta) = -\!\sin(x)
           $$
         </MathBlock>
@@ -1272,13 +1278,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin^&#123;(\ell)&#125;(x) = \sin(x + \ell\eta)
-          \sin^&#123;(\ell)&#125;(x) = \sin(x + \ell\eta)
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cos^&#123;(\ell)&#125;(x) = \cos(x + \ell\eta)
           \cos^&#123;(\ell)&#125;(x) = \cos(x + \ell\eta)
           $$
         </MathBlock>
@@ -1353,7 +1357,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos^2(x) + \sin^2(x) = 1 \tag&#123;*&#125;
-          \cos^2(x) + \sin^2(x) = 1 \tag&#123;*&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1392,7 +1395,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin^2(x) + \cos^2(x)
-          \sin^2(x) + \cos^2(x)
           $$
         </MathBlock>
         <Pause />
@@ -1403,7 +1405,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \sin^2(y)
           \sin^2(y)
           $$
         </MathBlock>
@@ -1424,7 +1425,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos^2(y)
           \cos^2(y)
           $$
         </MathBlock>
@@ -1487,7 +1487,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin^2(\theta) - \cos^2(\theta)
-          \sin^2(\theta) - \cos^2(\theta)
           $$
         </MathBlock>
         <Pause />
@@ -1518,7 +1517,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \,\cos^2(\theta) - \sin^2(\theta),
-          \,\cos^2(\theta) - \sin^2(\theta),
           $$
         </MathBlock>
         <Pause />
@@ -1544,7 +1542,7 @@ const Rest = () => {
           of an angle was briefly touched upon in
           {" "}
           <a
-            href="/article/chapter4?id=_24_1496"
+            href="/article/chapter4?id=_24_1799"
             class="handle-out-of-chapter-link">
             Note 10
           </a>
@@ -1556,7 +1554,9 @@ const Rest = () => {
           that arc:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_radian_definition.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_radian_definition.svg" />
         <Pause />
         <VerticalChunk>
           The definition implies that the radian
@@ -1564,7 +1564,9 @@ const Rest = () => {
           by the angle on a unit circle:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_radian_definition_radius_1.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_radian_definition_radius_1.svg" />
         <Pause />
         <VerticalChunk>
           In particular,{" "}
@@ -1578,13 +1580,17 @@ const Rest = () => {
           {" "}radians:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_radian_definition_90_degrees_is.svg" />
+        <Image
+          width="420.0px"
+          src="/images/svg_ch5_ch_radian_definition_90_degrees_is.svg" />
         <Pause />
         <VerticalChunk>
           To imprint this fact in our memories:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_radian_definition_90_imprint.svg" />
+        <Image
+          width="420.0px"
+          src="/images/svg_ch5_ch_radian_definition_90_imprint.svg" />
         <Pause />
         <VerticalChunk>
           (We will often leave out the “rad”—in fact,
@@ -1611,7 +1617,9 @@ const Rest = () => {
           {" "}radians:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_radian_definition_45_imprint.svg" />
+        <Image
+          width="420.0px"
+          src="/images/svg_ch5_ch_radian_definition_45_imprint.svg" />
         <Pause />
         <VerticalChunk>
           aaaand... and so on.
@@ -1648,7 +1656,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_x_displacement_and_x_radians.svg" />
+        <Image
+          width="430.0px"
+          src="/images/svg_ch5_ch_x_displacement_and_x_radians.svg" />
         <Pause />
         <VerticalChunk>
           In particular,
@@ -1656,7 +1666,9 @@ const Rest = () => {
           sin and cos like this...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_x_displacement_and_x_radians_displacement_definition.svg" />
+        <Image
+          width="420.0px"
+          src="/images/svg_ch5_ch_x_displacement_and_x_radians_displacement_definition.svg" />
         <Pause />
         <VerticalChunk>
           ...with the input appearing as a
@@ -1664,7 +1676,9 @@ const Rest = () => {
           like this...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch_ch_x_displacement_and_x_radians_radian_definition.svg" />
+        <Image
+          width="420.0px"
+          src="/images/svg_ch_ch_x_displacement_and_x_radians_radian_definition.svg" />
         <Pause />
         <VerticalChunk>
           ...with the input appearing as a radian.
@@ -1685,14 +1699,18 @@ const Rest = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch_5_ch_etaOver2_example_displacement_version.svg" />
+          <Image
+            width="420.0px"
+            src="/images/svg_ch_5_ch_etaOver2_example_displacement_version.svg" />
           <Pause />
           <VerticalChunk>
             ...like this, with the input appearing as a displacement,
             or else like this...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_etaOver2_example_angle_version.svg" />
+          <Image
+            width="420.0px"
+            src="/images/svg_ch5_ch_etaOver2_example_angle_version.svg" />
           <Pause />
           <VerticalChunk>
             ...with the input appearing as a radian.
@@ -1714,14 +1732,18 @@ const Rest = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_etaOver3_example_displacement_version.svg" />
+          <Image
+            width="420.0px"
+            src="/images/svg_ch5_ch_etaOver3_example_displacement_version.svg" />
           <Pause />
           <VerticalChunk>
             ...like this, with the input appearing as a displacement,
             or else like this...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_etaOver3_example_angle_version.svg" />
+          <Image
+            width="420.0px"
+            src="/images/svg_ch5_ch_etaOver3_example_angle_version.svg" />
           <Pause />
           <VerticalChunk>
             ...with the input appearing as a radian.
@@ -1769,7 +1791,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \eta\over 90
-          \eta\over 90
           $$
         </MathBlock>
         <Pause />
@@ -1806,7 +1827,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(90^\circ\hlfbk)
-          \cos(90^\circ\hlfbk)
           $$
         </MathBlock>
         <Pause />
@@ -1816,7 +1836,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos(\eta)
           \cos(\eta)
           $$
         </MathBlock>
@@ -1830,7 +1849,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos(\eta) = 0
           \cos(\eta) = 0
           $$
         </MathBlock>
@@ -1921,7 +1939,9 @@ const Rest = () => {
           family...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_that_family.svg" />
+        <Image
+          width="530.0px"
+          src="/images/svg_ch5_ch_that_family.svg" />
         <Pause />
         <VerticalChunk>
           ...look like this.) Vice-versa, every point
@@ -1946,7 +1966,9 @@ const Rest = () => {
           following points:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_main_angles_first.svg" />
+        <Image
+          width="720.0px"
+          src="/images/svg_ch5_ch_main_angles_first.svg" />
         <Pause />
         <VerticalChunk>
           Here
@@ -1974,13 +1996,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(45^\circ\hlfbk) = \sqrt&#123;0.5&#125;
-          \cos(45^\circ\hlfbk) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(45^\circ\hlfbk) = \sqrt&#123;0.5&#125;
           \sin(45^\circ\hlfbk) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
@@ -1992,13 +2012,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(\eta/2) = \sqrt&#123;0.5&#125;
-          \cos(\eta/2) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(\eta/2) = \sqrt&#123;0.5&#125;
           \sin(\eta/2) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
@@ -2010,13 +2028,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(135^\circ\hlfbk) = -\sqrt&#123;0.5&#125;
-          \cos(135^\circ\hlfbk) = -\sqrt&#123;0.5&#125;
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(135^\circ\hlfbk) = \sqrt&#123;0.5&#125;
           \sin(135^\circ\hlfbk) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
@@ -2028,13 +2044,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(1.5\eta) = -\sqrt&#123;0.5&#125;
-          \cos(1.5\eta) = -\sqrt&#123;0.5&#125;
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(1.5\eta) = \sqrt&#123;0.5&#125;
           \sin(1.5\eta) = \sqrt&#123;0.5&#125;
           $$
         </MathBlock>
@@ -2048,7 +2062,9 @@ const Rest = () => {
           triangles:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_main_angles_two_equilateral_triangles.svg" />
+        <Image
+          width="520.0px"
+          src="/images/svg_ch5_ch_main_angles_two_equilateral_triangles.svg" />
         <Pause />
         <VerticalChunk>
           The first triangle implies that the the unique
@@ -2101,7 +2117,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sqrt&#123;0.25&#125; = 0.5
-          \sqrt&#123;0.25&#125; = 0.5
           $$
         </MathBlock>
         <Pause />
@@ -2134,13 +2149,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(60^\circ\hlfbk) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
-          \cos(60^\circ\hlfbk) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(60^\circ\hlfbk) = \sqrt&#123;0.75&#125;
           \sin(60^\circ\hlfbk) = \sqrt&#123;0.75&#125;
           $$
         </MathBlock>
@@ -2152,13 +2165,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(30^\circ\hlfbk) = \sqrt&#123;0.75&#125;,
-          \cos(30^\circ\hlfbk) = \sqrt&#123;0.75&#125;,
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(30^\circ\hlfbk) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
           \sin(30^\circ\hlfbk) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
           $$
         </MathBlock>
@@ -2170,13 +2181,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(2\eta/3) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
-          \cos(2\eta/3) = 0.5 \,\,(= \sqrt&#123;0.25&#125;),
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(2\eta/3) = \sqrt&#123;0.75&#125;
           \sin(2\eta/3) = \sqrt&#123;0.75&#125;
           $$
         </MathBlock>
@@ -2188,13 +2197,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(\eta/3) = \sqrt&#123;0.75&#125;,
-          \cos(\eta/3) = \sqrt&#123;0.75&#125;,
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(\eta/3) = 0.5 \,\,(= \sqrt&#123;0.25&#125;)
           \sin(\eta/3) = 0.5 \,\,(= \sqrt&#123;0.25&#125;)
           $$
         </MathBlock>
@@ -2209,13 +2216,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(120^\circ\hlfbk) = -0.5 \,\,(= -\sqrt&#123;0.25&#125;),
-          \cos(120^\circ\hlfbk) = -0.5 \,\,(= -\sqrt&#123;0.25&#125;),
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(120^\circ\hlfbk) = \sqrt&#123;0.75&#125;
           \sin(120^\circ\hlfbk) = \sqrt&#123;0.75&#125;
           $$
         </MathBlock>
@@ -2227,13 +2232,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \cos(4\eta/3) = -0.5 \,\,(= -\sqrt&#123;0.25&#125;),
-          \cos(4\eta/3) = -0.5 \,\,(= -\sqrt&#123;0.25&#125;),
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \sin(4\eta/3) = \sqrt&#123;0.75&#125;
           \sin(4\eta/3) = \sqrt&#123;0.75&#125;
           $$
         </MathBlock>
@@ -2252,7 +2255,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sqrt&#123;0.5&#125; = &#123;1\over \sqrt&#123;2&#125;&#125;
-          \sqrt&#123;0.5&#125; = &#123;1\over \sqrt&#123;2&#125;&#125;
           $$
         </MathBlock>
         <Pause />
@@ -2263,7 +2265,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sqrt&#123;0.75&#125; = &#123;\sqrt&#123;3&#125;\over 2&#125;
-          \sqrt&#123;0.75&#125; = &#123;\sqrt&#123;3&#125;\over 2&#125;
           $$
         </MathBlock>
         <Pause />
@@ -2272,7 +2273,9 @@ const Rest = () => {
           drawn as follows (adding the angles in, as well):
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_main_angles_second.svg" />
+        <Image
+          width="600.0px"
+          src="/images/svg_ch5_ch_main_angles_second.svg" />
         <Pause />
         <VerticalChunk>
           <i>
@@ -2300,7 +2303,9 @@ const Rest = () => {
           {" "}In this case:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_main_angles_third.svg" />
+        <Image
+          width="600.0px"
+          src="/images/svg_ch5_ch_main_angles_third.svg" />
       </Section>
       <Pause />
       <Section id="section-9">
@@ -2325,7 +2330,9 @@ const Rest = () => {
           because that is the definition of sin and cos:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_scaling_circle_1.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_scaling_circle_1.svg" />
         <Pause />
         <VerticalChunk>
           But say now that
@@ -2346,7 +2353,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_scaling_circle_r.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_scaling_circle_r.svg" />
         <Pause />
         <VerticalChunk>
           ...what are the coordinates of{" "}
@@ -2675,8 +2684,6 @@ const Rest = () => {
           $$
           \displaylines&#123;x = r \cos(\theta)\\
           \up&#123;1.3&#125;y = r \sin(\theta)&#125;
-          \displaylines&#123;x = r \cos(\theta)\\
-          \up&#123;1.3&#125;y = r \sin(\theta)&#125;
           $$
         </MathBlock>
         <Pause />
@@ -2741,11 +2748,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \theta = \begin&#123;cases&#125;
-          \arctan(y/x)&amp;\te&#123;if &#125;\, x \ne 0, \,\te&#123;else&#125; \\
-          \up&#123;1.2&#125;\te&#123;arccot&#125;(x/y) &amp;\te&#123;if &#125;\, y \ne 0, \,\te&#123;else&#125; \\
-          \up&#123;1.2&#125;\rm&#123;?&#125; &amp;\te&#123;if &#125;\, x = 0, y = 0
-          \end&#123;cases&#125;
           \theta = \begin&#123;cases&#125;
           \arctan(y/x)&amp;\te&#123;if &#125;\, x \ne 0, \,\te&#123;else&#125; \\
           \up&#123;1.2&#125;\te&#123;arccot&#125;(x/y) &amp;\te&#123;if &#125;\, y \ne 0, \,\te&#123;else&#125; \\
@@ -2899,7 +2901,9 @@ const Rest = () => {
           (it's a scaled-up/down unit circle):
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_triangle_sequence_1.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_triangle_sequence_1.svg" />
         <Pause />
         <VerticalChunk>
           If we assume{" "}
@@ -2920,7 +2924,9 @@ const Rest = () => {
           the sidelengths of a right triangle:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_triangle_sequence_2.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_triangle_sequence_2.svg" />
         <Pause />
         <VerticalChunk>
           If we rebrand the three legs of the triangle
@@ -2934,19 +2940,25 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_triangle_sequence_rebranded.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_triangle_sequence_rebranded.svg" />
         <Pause />
         <VerticalChunk>
           ...the relationship can be written:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_relationships_of_note.svg" />
+        <Image
+          width="470.0px"
+          src="/images/svg_ch5_ch_relationships_of_note.svg" />
         <Pause />
         <VerticalChunk>
           To be paired with this figure:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_relationships_of_note_triangle_version.svg" />
+        <Image
+          width="470.0px"
+          src="/images/svg_ch5_ch_relationships_of_note_triangle_version.svg" />
         <Pause />
         <VerticalChunk>
           The arrows are meant to indicate that{" "}
@@ -2986,7 +2998,9 @@ const Rest = () => {
             In the following diagram...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_example_multiplications_1.svg" />
+          <Image
+            width="400.0px"
+            src="/images/svg_ch5_ch_example_multiplications_1.svg" />
           <Pause />
           <VerticalChunk>
             ...the length of the side marked ‘?’ is
@@ -3020,7 +3034,9 @@ const Rest = () => {
             In the following diagram...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch5_ch_example_multiplications_2.svg" />
+          <Image
+            width="400.0px"
+            src="/images/svg_ch5_ch_example_multiplications_2.svg" />
           <Pause />
           <VerticalChunk>
             ...the length of the side marked ‘?’ is
@@ -3058,7 +3074,9 @@ const Rest = () => {
           two right triangles:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_snail_stack_1.svg" />
+        <Image
+          width="400.0px"
+          src="/images/svg_ch5_ch_snail_stack_1.svg" />
         <Pause />
         <VerticalChunk>
           Rotate a copy of the smaller
@@ -3070,7 +3088,9 @@ const Rest = () => {
           we end up with two pairs of parallel sides:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_snail_stack_2.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_snail_stack_2.svg" />
         <Pause />
         <VerticalChunk>
           Therefore, if we snap a scaled copy of the
@@ -3087,7 +3107,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_snail_stack_3.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_snail_stack_3.svg" />
         <Pause />
         <VerticalChunk>
           We finish off the diagram by setting the
@@ -3101,7 +3123,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_snail_stack_4.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_snail_stack_4.svg" />
         <Pause />
         <VerticalChunk>
           This completes the diagram. Note that it is
@@ -3123,7 +3147,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_snail_stack_greater_eta.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_snail_stack_greater_eta.svg" />
         <Pause />
         <VerticalChunk>
           ...but, by construction,{" "}
@@ -3169,7 +3195,9 @@ const Rest = () => {
           sides of the angle that clears the arc:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_statement.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_abercrombie_statement.svg" />
         <Pause />
         <VerticalChunk>
           The eponymous
@@ -3212,7 +3240,9 @@ const Rest = () => {
           pictured in this stylized view of the number line:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_to_the_left.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_abercrombie_to_the_left.svg" />
         <Pause />
         <VerticalChunk>
           In the space between{" "}
@@ -3235,7 +3265,9 @@ const Rest = () => {
           approximating the arc...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_with_P.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_abercrombie_with_P.svg" />
         <Pause />
         <VerticalChunk>
           ...because such polygonal lines can
@@ -3264,14 +3296,18 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_shadows.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_abercrombie_shadows.svg" />
         <Pause />
         <VerticalChunk>
           ...this last claim follows from the following
           diagram:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_s1s2p1p2.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_abercrombie_s1s2p1p2.svg" />
         <Pause />
         <VerticalChunk>
           The point is that
@@ -3279,7 +3315,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \overline&#123;s_1s_2&#125;\, &gt; \,\overline&#123;p_1p_2&#125;
           \overline&#123;s_1s_2&#125;\, &gt; \,\overline&#123;p_1p_2&#125;
           $$
         </MathBlock>
@@ -3360,7 +3395,9 @@ const Rest = () => {
           of values...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_abercrombie_to_the_left_second.svg" />
+        <Image
+          width="460.0px"
+          src="/images/svg_ch5_ch_abercrombie_to_the_left_second.svg" />
         <Pause />
         <VerticalChunk>
           ...on the number line is an impossibility,
@@ -3428,16 +3465,12 @@ const Rest = () => {
             <span style="text-decoration:underline">
               i
             </span>
-            <span style="text-decoration:underline">
-              i
-            </span>
           </i>
           gorinovich—states that
         </VerticalChunk>
         <Pause />
         <MathBlock>
           $$
-          \sin(\theta) \,&lt;\, \theta \,&lt;\, &#123;\sin(\theta)\over\cos(\theta)&#125;
           \sin(\theta) \,&lt;\, \theta \,&lt;\, &#123;\sin(\theta)\over\cos(\theta)&#125;
           $$
         </MathBlock>
@@ -3462,7 +3495,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \sin(\theta)
           \sin(\theta)
           $$
         </MathBlock>
@@ -3498,7 +3530,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos(\theta)
           \cos(\theta)
           $$
         </MathBlock>
@@ -3578,7 +3609,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sin(\theta) \rt&#123;0.1&#125;&lt;\rt&#123;0.1&#125; \theta
-          \sin(\theta) \rt&#123;0.1&#125;&lt;\rt&#123;0.1&#125; \theta
           $$
         </MathBlock>
         <Pause />
@@ -3592,7 +3622,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_fisher_first_ineq.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_fisher_first_ineq.svg" />
         <Pause />
         <VerticalChunk>
           Namely, per the one slightly pedantic logic,
@@ -3600,7 +3632,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \theta &gt; L
           \theta &gt; L
           $$
         </MathBlock>
@@ -3656,7 +3687,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_fisher_second_ineq.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_fisher_second_ineq.svg" />
         <Pause />
         <VerticalChunk>
           Specifically,
@@ -3692,7 +3725,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \sin(\theta)
           \sin(\theta)
           $$
         </MathBlock>
@@ -3742,7 +3774,9 @@ const Rest = () => {
           four other outer edges precisely once:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_angle_sum_1.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_angle_sum_1.svg" />
         <Pause />
         <VerticalChunk>
           (Note by the way that{" "}
@@ -3800,7 +3834,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \,\sin(\theta_1 + \theta_2)\,
-          \,\sin(\theta_1 + \theta_2)\,
           $$
         </MathBlock>
         <Pause />
@@ -3811,7 +3844,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \,\cos(\theta_1 + \theta_2)\,
-          \,\cos(\theta_1 + \theta_2)\,
           $$
         </MathBlock>
         <Pause />
@@ -3821,7 +3853,9 @@ const Rest = () => {
           sums or differences of the four outer edges:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_angle_sum_2.svg" />
+        <Image
+          width="540.0px"
+          src="/images/svg_ch5_ch_angle_sum_2.svg" />
         <Pause />
         <VerticalChunk>
           (Or with{" "}
@@ -3833,7 +3867,9 @@ const Rest = () => {
           </NoBreak>
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_angle_sum_3.svg" />
+        <Image
+          width="540.0px"
+          src="/images/svg_ch5_ch_angle_sum_3.svg" />
         <Pause />
         <VerticalChunk>
           ...works as well!)
@@ -3842,7 +3878,9 @@ const Rest = () => {
           In other words, we find...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_angle_sum_formulas_flowers.svg" />
+        <Image
+          width="540.0px"
+          src="/images/svg_ch5_ch_angle_sum_formulas_flowers.svg" />
         <Pause />
         <VerticalChunk>
           ...for{" "}
@@ -3891,7 +3929,9 @@ const Rest = () => {
           note the “pattern” of the angle-sum formulas:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_angle_sum_formulas_by_heart.svg" />
+        <Image
+          width="540.0px"
+          src="/images/svg_ch5_ch_angle_sum_formulas_by_heart.svg" />
         <Pause />
         <VerticalChunk>
           The point of remembering these patterns
@@ -3921,7 +3961,9 @@ const Rest = () => {
           are hereby drawn:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_missing_arrows_veiled.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_missing_arrows_veiled.svg" />
         <Pause />
         <VerticalChunk>
           In fact, there is a dedicated, named function
@@ -3930,7 +3972,9 @@ const Rest = () => {
           functions (!!):
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_missing_arrows_unveiled.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_missing_arrows_unveiled.svg" />
         <Pause />
         <VerticalChunk>
           Here
@@ -3962,7 +4006,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sec(\theta)
-          \sec(\theta)
           $$
         </MathBlock>
         <Pause />
@@ -3972,7 +4015,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \csc(\theta)
           \csc(\theta)
           $$
         </MathBlock>
@@ -3984,7 +4026,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \tan(\theta)
-          \tan(\theta)
           $$
         </MathBlock>
         <Pause />
@@ -3995,7 +4036,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cot(\theta)
           \cot(\theta)
           $$
         </MathBlock>
@@ -4010,7 +4050,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sec = &#123;1\over \cos&#125;
-          \sec = &#123;1\over \cos&#125;
           $$
         </MathBlock>
         <Pause />
@@ -4020,7 +4059,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \csc = &#123;1\over \sin&#125;
           \csc = &#123;1\over \sin&#125;
           $$
         </MathBlock>
@@ -4034,13 +4072,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \,\tan = &#123;1\over \cot&#125;,
-          \,\tan = &#123;1\over \cot&#125;,
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cot = &#123;1\over \tan&#125;
           \cot = &#123;1\over \tan&#125;
           $$
         </MathBlock>
@@ -4076,13 +4112,11 @@ const Rest = () => {
         <MathBlock>
           $$
           \tan \,=\, \sec \cdot \sin \,\,=\,\, &#123;\sin\!\!\!\!\phantom&#123;1&#125;\over \cos&#125;
-          \tan \,=\, \sec \cdot \sin \,\,=\,\, &#123;\sin\!\!\!\!\phantom&#123;1&#125;\over \cos&#125;
           $$
         </MathBlock>
         <Pause />
         <MathBlock>
           $$
-          \cot \,=\, \csc \cdot \cos \,\,=\,\, &#123;\cos\!\!\!\!\phantom&#123;1&#125;\over \sin&#125;
           \cot \,=\, \csc \cdot \cos \,\,=\,\, &#123;\cos\!\!\!\!\phantom&#123;1&#125;\over \sin&#125;
           $$
         </MathBlock>
@@ -4099,7 +4133,6 @@ const Rest = () => {
         <MathBlock>
           $$
           %\sin(\theta) &lt; \theta &lt; \tan(\theta)\rt&#123;0.1&#125;
-          \sin(\theta) &lt; \theta &lt; \tan(\theta)\rt&#123;0.1&#125;
           \sin(\theta) &lt; \theta &lt; \tan(\theta)\rt&#123;0.1&#125;
           $$
         </MathBlock>
@@ -4122,7 +4155,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \sec(\theta)
-          \sec(\theta)
           $$
         </MathBlock>
         <Pause />
@@ -4132,13 +4164,7 @@ const Rest = () => {
           <span style="background-color:#ff82d7;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
             PURPLE
           </span>
-          <span style="background-color:#ff82d7;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
-            PURPLE
-          </span>
           {" "}to the{" "}
-          <span style="white-space:nowrap;background-color:#ccffaa;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
-            LIME GREEN
-          </span>
           <span style="white-space:nowrap;background-color:#ccffaa;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
             LIME GREEN
           </span>
@@ -4147,7 +4173,9 @@ const Rest = () => {
           figure:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_secant_reinterpretation_1.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_secant_reinterpretation_1.svg" />
         <Pause />
         <VerticalChunk>
           Indeed, the scaling factor that is needed
@@ -4188,14 +4216,18 @@ const Rest = () => {
           (After all, this multiplicative factor...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_secant_reinterpretation_2.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_secant_reinterpretation_2.svg" />
         <Pause />
         <VerticalChunk>
           ...was always going to equal
           this multiplicative factor...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_secant_reinterpretation_3.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_secant_reinterpretation_3.svg" />
         <Pause />
         <VerticalChunk>
           ...given that the target segment has length{" "}
@@ -4216,16 +4248,12 @@ const Rest = () => {
         <MathBlock>
           $$
           \csc(\theta)
-          \csc(\theta)
           $$
         </MathBlock>
         <Pause />
         <VerticalChunk>
           is the multiplicative factor that takes you 
           from the{" "}
-          <span style="white-space:nowrap;background-color:#ff6600;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
-            BURNT ORANGE
-          </span>
           <span style="white-space:nowrap;background-color:#ff6600;border-radius:0.3em;font-size:0.7em;padding-left:0.5em;padding-right:0.5em;padding-top:0.3em;padding-bottom:0.3em;border:1px solid black;font-family:arial;">
             BURNT ORANGE
           </span>
@@ -4236,7 +4264,9 @@ const Rest = () => {
           {" "}triangle below:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch5_ch_secant_reinterpretation_4.svg" />
+        <Image
+          width="440.0px"
+          src="/images/svg_ch5_ch_secant_reinterpretation_4.svg" />
         <Pause />
         <VerticalChunk>
           (But this fact is not used as often.)
@@ -4256,7 +4286,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \cos(1.57)
           \cos(1.57)
           $$
         </MathBlock>
@@ -4399,7 +4428,9 @@ const Rest = () => {
               Guesstimate a function with this graph:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4.svg" />
           </ExerciseStatement>
           <Solution solution_number={2}>
             <VerticalChunk>
@@ -4408,7 +4439,9 @@ const Rest = () => {
               diagram:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_equation.svg" />
+            <Image
+              width="1850.0px"
+              src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_equation.svg" />
             <Pause />
             <VerticalChunk>
               (Or in the technical sense of taking the sum
@@ -4460,11 +4493,14 @@ const Rest = () => {
               as we can count on the graph of the original
               function:
               <ImageLeft
+                width="400.0px"
                 src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_4eta_cloud.svg"
                 line={-2} />
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_bump_count.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_bump_count.svg" />
             <Pause />
             <VerticalChunk>
               As cos goes through{" "}
@@ -4490,7 +4526,6 @@ const Rest = () => {
                 <Math>
                   $10$
                 </Math>
-                &amp;#x200b;
                 &amp;#x200b;
               </NoBreak>
               <NoBreak>
@@ -4538,6 +4573,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
           </ExerciseStatement>
@@ -4550,6 +4586,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_parabola.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -4688,6 +4725,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_C_estimate.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -4741,6 +4779,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_A_estimate.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -4821,6 +4860,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_inset.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -4925,6 +4965,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_B_estimate.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -4965,7 +5006,9 @@ const Rest = () => {
               Guesstimate a function with this graph:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave.svg" />
           </ExerciseStatement>
           <Solution solution_number={4}>
             <VerticalChunk>
@@ -4973,7 +5016,9 @@ const Rest = () => {
               curve in purple:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple.svg" />
             <Pause />
             <VerticalChunk>
               It appears to be a linear function (line through
@@ -4987,7 +5032,9 @@ const Rest = () => {
               draw a line between them and estimate the slope:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_blue_with_1_4.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_blue_with_1_4.svg" />
             <Pause />
             <VerticalChunk>
               This makes the linear function portion of the purple
@@ -5013,7 +5060,9 @@ const Rest = () => {
               we won't be able to see where we're measuring):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_blue_with_height.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_blue_with_height.svg" />
             <Pause />
             <VerticalChunk>
               So it appears that the sinusoid has a total height
@@ -5030,7 +5079,9 @@ const Rest = () => {
               to measure the vertical width of this blue band...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_blue_with_band.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_blue_with_band.svg" />
             <Pause />
             <VerticalChunk>
               ...that, indeed, seems near{" "}
@@ -5066,7 +5117,9 @@ const Rest = () => {
               that “purple curve” retains its unique meaning):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_sinusoid_only.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_sinusoid_only.svg" />
             <Pause />
             <VerticalChunk>
               This graph has the form
@@ -5098,6 +5151,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="1139.5px"
               src="/images/svg_ch5_ex_big_wave_minus_sin_x.svg"
               style="margin-top:0.8em;margin-bottom:1em;" />
             <Pause />
@@ -5115,7 +5169,9 @@ const Rest = () => {
               has graph...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_minus_2sin_x.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_minus_2sin_x.svg" />
             <Pause />
             <VerticalChunk>
               ...and, from there, all that remains is to
@@ -5141,7 +5197,9 @@ const Rest = () => {
               the top of each large-scale bump):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_blue_period_measurement.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_blue_period_measurement.svg" />
             <Pause />
             <VerticalChunk>
               As
@@ -5223,7 +5281,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_wave_purple_small_scale_bump_count.svg" />
+            <Image
+              width="1139.5px"
+              src="/images/svg_ch5_ex_big_wave_purple_small_scale_bump_count.svg" />
             <Pause />
             <VerticalChunk>
               So the small-scale oscillation is running
@@ -5324,14 +5384,18 @@ const Rest = () => {
               </tbody>
             </table>
             <Pause />
-            <Image src="/images/svg_ch5_ex_four_graphs.svg" />
+            <Image
+              width="1203.483px"
+              src="/images/svg_ch5_ex_four_graphs.svg" />
           </ExerciseStatement>
           <Solution solution_number={5}>
             <VerticalChunk>
               The culprits are:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_four_graphs_labeled.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch5_ex_four_graphs_labeled.svg" />
             <Pause />
             <VerticalChunk>
               For reference (if you need help checking), the
@@ -5346,9 +5410,13 @@ const Rest = () => {
               {" "}are as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_four_graphs_cos.svg" />
+            <Image
+              width="580.0px"
+              src="/images/svg_ch5_ex_four_graphs_cos.svg" />
             <Pause />
-            <Image src="/images/svg_ch5_ex_four_graphs_sin.svg" />
+            <Image
+              width="580.0px"
+              src="/images/svg_ch5_ex_four_graphs_sin.svg" />
             <Pause />
             <VerticalChunk>
               (Then imagine summing together, squaring, etc.)
@@ -5435,10 +5503,12 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="580.0px"
               src="/images/svg_ch5_ex_pythagorean_graphs_sin2.svg"
               style="margin-top:1.1em;margin-bottom:1.1em;" />
             <Pause />
             <Image
+              width="580.0px"
               src="/images/svg_ch5_ex_pythagorean_graphs_cos2.svg"
               style="margin-top:1.1em;margin-bottom:1.1em;" />
             <Pause />
@@ -5461,6 +5531,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="580.0px"
               src="/images/svg_ch5_ex_pythagorean_graphs_compounded.svg"
               style="margin-top:1.1em;margin-bottom:1.1em;" />
             <Pause />
@@ -5470,7 +5541,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \cos^2(x) + \sin^2(x) = 1
               \cos^2(x) + \sin^2(x) = 1
               $$
             </MathBlock>
@@ -5503,6 +5573,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="740.0px"
               src="/images/svg_ch5_ex_big_snail.svg"
               style="width:500px;margin-top:1em;margin-bottom:1em;" />
           </ExerciseStatement>
@@ -5514,7 +5585,9 @@ const Rest = () => {
               ratio over and over again:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_snail_quad.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch5_ex_big_snail_quad.svg" />
             <Pause />
             <VerticalChunk>
               But the two triangles involved are
@@ -5534,7 +5607,9 @@ const Rest = () => {
               functions. Specifically, as per this drawing:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_snail_quad_four_parts.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch5_ex_big_snail_quad_four_parts.svg" />
             <Pause />
             <VerticalChunk>
               The multiplicative ratios that correspond to the
@@ -5545,13 +5620,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin(68^\circ\hlfbk)
-              \sin(68^\circ\hlfbk)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \sin(59^\circ\hlfbk)
               \sin(59^\circ\hlfbk)
               $$
             </MathBlock>
@@ -5565,13 +5638,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \csc(71^\circ\hlfbk)
-              \csc(71^\circ\hlfbk)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \csc(60^\circ\hlfbk)
               \csc(60^\circ\hlfbk)
               $$
             </MathBlock>
@@ -5585,7 +5656,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sin(68^\circ\hlfbk)\times\csc(71^\circ\hlfbk)\times\sin(59^\circ\hlfbk)\times\csc(60^\circ\hlfbk)
               \sin(68^\circ\hlfbk)\times\csc(71^\circ\hlfbk)\times\sin(59^\circ\hlfbk)\times\csc(60^\circ\hlfbk)
               $$
             </MathBlock>
@@ -5704,7 +5774,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \left(&#123;\sin(68^\circ\hlfbk)\cdot\sin(59^\circ\hlfbk) \over \sin(71^\circ\hlfbk)\cdot\sin(60^\circ\hlfbk)&#125;\right)^&#123;\!36&#125;
-                \left(&#123;\sin(68^\circ\hlfbk)\cdot\sin(59^\circ\hlfbk) \over \sin(71^\circ\hlfbk)\cdot\sin(60^\circ\hlfbk)&#125;\right)^&#123;\!36&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -5732,6 +5801,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="400.0px"
                 src="/images/svg_ch5_ex_big_snail_quad_purple_angle_1.svg"
                 style="margin-top:0.8em;margin-bottom:1em;" />
               <Pause />
@@ -5754,6 +5824,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="400.0px"
                 src="/images/svg_ch5_ex_big_snail_quad_purple_angle_2.svg"
                 style="margin-top:0.8em;margin-bottom:1em;" />
               <Pause />
@@ -5854,6 +5925,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="440.0px"
               src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_v2.svg"
               style="margin-top:1em;margin-bottom:0.5em;" />
           </ExerciseStatement>
@@ -5902,6 +5974,7 @@ const Rest = () => {
               r\cdot\cos(\phi)
               $$
               <ImageRight
+                width="300.0px"
                 offset_x="5.5em"
                 src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_DeltaX_v2_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -5925,6 +5998,7 @@ const Rest = () => {
               r\cdot\sin(\phi)
               $$
               <ImageLeft
+                width="300.0px"
                 offset_x="7.5em"
                 src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_DeltaY_v2_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -5992,7 +6066,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \vec&#123;u&#125; + \vec&#123;v&#125;
-              \vec&#123;u&#125; + \vec&#123;v&#125;
               $$
             </MathBlock>
             <Pause />
@@ -6003,7 +6076,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \vec&#123;u&#125; = (u_x, u_y)
-              \vec&#123;u&#125; = (u_x, u_y)
               $$
             </MathBlock>
             <Pause />
@@ -6013,7 +6085,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \vec&#123;v&#125; = (v_x, v_y)
               \vec&#123;v&#125; = (v_x, v_y)
               $$
             </MathBlock>
@@ -6060,7 +6131,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \vec&#123;u&#125; = (100, 100)
-              \vec&#123;u&#125; = (100, 100)
               $$
             </MathBlock>
             <Pause />
@@ -6070,7 +6140,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \vec&#123;v&#125; = (1, -1)
               \vec&#123;v&#125; = (1, -1)
               $$
             </MathBlock>
@@ -6082,9 +6151,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \,\vec&#123;u&#125; + \vec&#123;v&#125; = (101, 99)
-              \,\vec&#123;u&#125; + \vec&#123;v&#125; = (101, 99)
               $$
               <ImageRight
+                width="240.0px"
                 offset_x="1em"
                 src="/images/svg_ch5_ex_vector_sum_101_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -6204,7 +6273,9 @@ const Rest = () => {
                 respectively:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_vector_sum_vectors.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_vector_sum_vectors.svg" />
               <Pause />
               <VerticalChunk>
                 Then
@@ -6231,7 +6302,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_vector_sum_ux_plus_vx.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_vector_sum_ux_plus_vx.svg" />
               <Pause />
               <VerticalChunk>
                 ...component displacements, while
@@ -6258,7 +6331,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_vector_sum_uy_plus_vy.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_vector_sum_uy_plus_vy.svg" />
               <Pause />
               <VerticalChunk>
                 ...component displacements; moreover, both
@@ -6275,7 +6350,9 @@ const Rest = () => {
                 arrows...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_vector_sum_u_concat_v.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_vector_sum_u_concat_v.svg" />
               <Pause />
               <VerticalChunk>
                 ...which actually implies that{" "}
@@ -6303,7 +6380,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_vector_sum_u_plus_v.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_vector_sum_u_plus_v.svg" />
               <Pause />
               <VerticalChunk>
                 This makes a mess, but the point is that this
@@ -6352,6 +6431,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="500.0px"
                 src="/images/svg_ch5_ex_vector_sum_previous_example.svg"
                 style="margin-top:1em;margin-bottom:0.8em;" />
             </SolutionNote>
@@ -6688,13 +6768,17 @@ const Rest = () => {
               diagram illustrates the two possibilities:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_Bt_plus_C_OccamsRazor_combined_clockwise_version.svg" />
+            <Image
+              width="760.0px"
+              src="/images/svg_ch5_ex_Bt_plus_C_OccamsRazor_combined_clockwise_version.svg" />
             <Pause />
             <VerticalChunk>
               (Or... ~ ~ ~ ~ ~ ~ ~ ~ ~
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_Bt_plus_C_OccamsRazor_combined_counterclockwise_version.svg" />
+            <Image
+              width="760.0px"
+              src="/images/svg_ch5_ex_Bt_plus_C_OccamsRazor_combined_counterclockwise_version.svg" />
             <Pause />
             <VerticalChunk>
               ...to put everything in terms of
@@ -6720,7 +6804,9 @@ const Rest = () => {
                 than two solutions, picture this diagram...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_Bt_plus_C_black_on_white.svg" />
+              <Image
+                width="190.0px"
+                src="/images/svg_ch5_ex_Bt_plus_C_black_on_white.svg" />
               <Pause />
               <VerticalChunk>
                 ...and imagine the vertical line scanning
@@ -6877,7 +6963,9 @@ const Rest = () => {
               {" "}radians?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_0_2_radians_guess.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch5_ex_0_2_radians_guess.svg" />
           </ExerciseStatement>
           <Solution solution_number={12}>
             <VerticalChunk>
@@ -6911,6 +6999,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="400.0px"
               src="/images/svg_ch5_ex_0_2_radians_guess_answer.svg"
               style="margin-top:1em;margin-bottom:1em;" />
             <Pause />
@@ -6940,6 +7029,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="400.0px"
               src="/images/svg_ch5_ex_0_2_radians_guess_joke.svg"
               style="margin-top:1em;margin-bottom:1em;" />
             <Pause />
@@ -6960,7 +7050,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \eta
               \eta
               $$
             </MathBlock>
@@ -6992,7 +7081,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \eta
               \eta
               $$
             </MathBlock>
@@ -7108,7 +7196,9 @@ const Rest = () => {
               outside, in a time-space porthole of its own):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_11_over_7_longhand_eloise.svg" />
+            <Image
+              width="456.029px"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise.svg" />
             <Pause />
             <VerticalChunk>
               The division stops when we see the same
@@ -7195,6 +7285,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_1.svg"
                 style="margin-top:0.8em;margin-bottom:1.4em;" />
               <Pause />
@@ -7225,6 +7316,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2a.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7258,6 +7350,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2b.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7286,6 +7379,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3a.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7319,6 +7413,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3b.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7372,6 +7467,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_4.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7412,6 +7508,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_5.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7432,6 +7529,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6a.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7465,6 +7563,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6b.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7519,6 +7618,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_7.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7550,6 +7650,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="456.029px"
                 src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_8.svg"
                 style="margin-top:0.8em;margin-bottom:1.5em;" />
               <Pause />
@@ -7585,7 +7686,9 @@ const Rest = () => {
               remainders repeat, look as follows:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_22_and_33_and_44_over_7_combined_longhands.svg" />
+            <Image
+              width="1492.16px"
+              src="/images/svg_ch5_ex_22_and_33_and_44_over_7_combined_longhands.svg" />
             <Pause />
             <VerticalChunk>
               From which...
@@ -7593,10 +7696,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \displaylines&#123;
-              \Large \up&#123;1.5&#125;&#123;22\over 7&#125; = 3.\overline&#123;142857&#125;\\
-              \Large \up&#123;1.7&#125;&#123;33\over 7&#125; = 4.\overline&#123;714285&#125;\\
-              \Large \up&#123;1.7&#125;&#123;44\over 7&#125; = 6.\overline&#123;285714&#125;
               \displaylines&#123;
               \Large \up&#123;1.5&#125;&#123;22\over 7&#125; = 3.\overline&#123;142857&#125;\\
               \Large \up&#123;1.7&#125;&#123;33\over 7&#125; = 4.\overline&#123;714285&#125;\\
@@ -7628,11 +7727,6 @@ const Rest = () => {
                 \Large \up&#123;1.7&#125;2\eta \approx&#123;22\over 7&#125;\\
                 \Large \up&#123;1.7&#125;3\eta \approx&#123;33\over 7&#125;\\
                 \Large \up&#123;1.7&#125;4\eta \approx&#123;44\over 7&#125;
-                \displaylines&#123;
-                \Large         \eta  \approx&#123;11\over 7&#125;\\
-                \Large \up&#123;1.7&#125;2\eta \approx&#123;22\over 7&#125;\\
-                \Large \up&#123;1.7&#125;3\eta \approx&#123;33\over 7&#125;\\
-                \Large \up&#123;1.7&#125;4\eta \approx&#123;44\over 7&#125;
                 &#125;
                 $$
               </MathBlock>
@@ -7643,11 +7737,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \displaylines&#123;
-                \Large         \eta \approx  1.\overline&#123;571428&#125;\\
-                \Large \up&#123;1.7&#125;2\eta \approx 3.\overline&#123;142857&#125;\\
-                \Large \up&#123;1.7&#125;3\eta \approx 4.\overline&#123;714285&#125;\\
-                \Large \up&#123;1.7&#125;4\eta \approx 6.\overline&#123;285714&#125;&#125;
                 \displaylines&#123;
                 \Large         \eta \approx  1.\overline&#123;571428&#125;\\
                 \Large \up&#123;1.7&#125;2\eta \approx 3.\overline&#123;142857&#125;\\
@@ -7682,7 +7771,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \approx 0.0004
-                \approx 0.0004
                 $$
               </MathBlock>
               <Pause />
@@ -7693,7 +7781,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \approx 1.\overline&#123;571428&#125; \cdot 0.0004 \approx 0.0006
-                \approx 1.\overline&#123;571428&#125; \cdot 0.0004 \approx 0.0006
                 $$
               </MathBlock>
               <Pause />
@@ -7703,7 +7790,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \approx 1.\overline&#123;571428&#125;
                 \approx 1.\overline&#123;571428&#125;
                 $$
               </MathBlock>
@@ -7722,7 +7808,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \approx 3.\overline&#123;142857&#125; \cdot 0.0004 \approx 0.0012
-                \approx 3.\overline&#123;142857&#125; \cdot 0.0004 \approx 0.0012
                 $$
               </MathBlock>
               <Pause />
@@ -7732,7 +7817,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \approx 3.\overline&#123;142857&#125;
                 \approx 3.\overline&#123;142857&#125;
                 $$
               </MathBlock>
@@ -7751,7 +7835,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \approx 4.\overline&#123;714285&#125; \cdot 0.0004 \approx 0.0019
-                \approx 4.\overline&#123;714285&#125; \cdot 0.0004 \approx 0.0019
                 $$
               </MathBlock>
               <Pause />
@@ -7761,7 +7844,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \approx 4.\overline&#123;714285&#125;
                 \approx 4.\overline&#123;714285&#125;
                 $$
               </MathBlock>
@@ -7780,7 +7862,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \approx 6.\overline&#123;285714&#125; \cdot 0.0004 \approx 0.0025
-                \approx 6.\overline&#123;285714&#125; \cdot 0.0004 \approx 0.0025
                 $$
               </MathBlock>
               <Pause />
@@ -7790,7 +7871,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \approx 6.\overline&#123;285714&#125;
                 \approx 6.\overline&#123;285714&#125;
                 $$
               </MathBlock>
@@ -7809,11 +7889,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \displaylines&#123;
-                \Large         \eta \approx  1.5708\\
-                \Large \up&#123;1.7&#125;2\eta \approx 3.1416\\
-                \Large \up&#123;1.7&#125;3\eta \approx 4.7123\\
-                \Large \up&#123;1.7&#125;4\eta \approx 6.2832&#125;
                 \displaylines&#123;
                 \Large         \eta \approx  1.5708\\
                 \Large \up&#123;1.7&#125;2\eta \approx 3.1416\\
@@ -7865,11 +7940,6 @@ const Rest = () => {
               \up&#123;1&#125;\dn&#123;0.5&#125; n \cdot 777\,&amp;\,777&amp;1554&amp;2331&amp;3108&amp;3885&amp;4662&amp;5439&amp;6216&amp;6993
               \\
               \end&#123;array&#125;
-              \begin&#123;array&#125;&#123;c|cc&#125;
-              \up&#123;1&#125;\dn&#123;0.5&#125; n            &amp;\,1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7&amp;8&amp;9 \\ \hline
-              \up&#123;1&#125;\dn&#123;0.5&#125; n \cdot 777\,&amp;\,777&amp;1554&amp;2331&amp;3108&amp;3885&amp;4662&amp;5439&amp;6216&amp;6993
-              \\
-              \end&#123;array&#125;
               $$
             </MathBlock>
           </ExerciseStatement>
@@ -7900,7 +7970,9 @@ const Rest = () => {
               the “last remainder”):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_big_division.svg" />
+            <Image
+              width="655.542px"
+              src="/images/svg_ch5_ex_big_division.svg" />
             <Pause />
             <VerticalChunk>
               Said quotient is
@@ -7962,7 +8034,9 @@ const Rest = () => {
                 {" "}the answer will go here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_1.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_1.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -7986,7 +8060,9 @@ const Rest = () => {
                 {" "}the answer will go here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_2.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_2.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8012,7 +8088,9 @@ const Rest = () => {
                 {" "}the answer will go here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_3.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_3.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8038,7 +8116,9 @@ const Rest = () => {
                 {" "}the answer will go here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_4.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_4.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8064,14 +8144,18 @@ const Rest = () => {
                 the remainder:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_4b.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_4b.svg" />
               <Pause />
               <VerticalChunk>
                 (FYI, the remainder now consists of these yellow
                 digits:)
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_4remainder.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_4remainder.svg" />
               <Pause />
               <VerticalChunk>
                 Continuing, we bring down a{" "}
@@ -8096,7 +8180,9 @@ const Rest = () => {
                 {" "}the answer will go here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_5b_v2.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_5b_v2.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8129,7 +8215,9 @@ const Rest = () => {
                 here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_6b_v2.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_6b_v2.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8162,7 +8250,9 @@ const Rest = () => {
                 here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_7b_v2.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_7b_v2.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8195,7 +8285,9 @@ const Rest = () => {
                 here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_8b_v2.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_8b_v2.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is{" "}
@@ -8220,14 +8312,18 @@ const Rest = () => {
                 {" "}giving us a new remainder:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_8c.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_8c.svg" />
               <Pause />
               <VerticalChunk>
                 (And to be specific, the remainder is now formed
                 by...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_inside_8remainder.svg" />
+              <Image
+                width="655.542px"
+                src="/images/svg_ch5_ex_big_division_inside_8remainder.svg" />
               <Pause />
               <VerticalChunk>
                 ...these yellow digits.) Etc.
@@ -8244,7 +8340,9 @@ const Rest = () => {
                 long-form subtraction, say your subtraction is this:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_a.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_a.svg" />
               <Pause />
               <VerticalChunk>
                 You can either treat the top or bottom number as an
@@ -8257,7 +8355,9 @@ const Rest = () => {
                 would be as follows:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_odometer_1.svg" />
+              <Image
+                width="305.007px"
+                src="/images/svg_ch5_ex_big_division_odometer_1.svg" />
               <Pause />
               <VerticalChunk>
                 Starting from the right end of the subtraction, we ask
@@ -8282,7 +8382,9 @@ const Rest = () => {
                 will write the answer below:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_c.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_c.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is:{" "}
@@ -8292,7 +8394,9 @@ const Rest = () => {
                 {" "}[miles*] (*say):
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_d.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_d.svg" />
               <Pause />
               <VerticalChunk>
                 But the odometer will pass
@@ -8354,7 +8458,9 @@ const Rest = () => {
                 {" "}as some teachers put it):
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_e.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_e.svg" />
               <Pause />
               <VerticalChunk>
                 Next we ask “by how many{" "}
@@ -8386,7 +8492,9 @@ const Rest = () => {
                 will write the answer below:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_f.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_f.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is:{" "}
@@ -8404,7 +8512,9 @@ const Rest = () => {
                 {" "}of miles]:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_g.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_g.svg" />
               <Pause />
               <VerticalChunk>
                 But here too the odometer will pass
@@ -8443,7 +8553,9 @@ const Rest = () => {
                 effect:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_h.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_h.svg" />
               <Pause />
               <VerticalChunk>
                 Next we ask “by how many{" "}
@@ -8475,7 +8587,9 @@ const Rest = () => {
                 will write the answer below:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_i.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_i.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is:{" "}
@@ -8493,7 +8607,9 @@ const Rest = () => {
                 {" "}of miles]:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_j.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_j.svg" />
               <Pause />
               <VerticalChunk>
                 Next we ask “by how many{" "}
@@ -8523,7 +8639,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_k.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_k.svg" />
               <Pause />
               <VerticalChunk>
                 The answer is:{" "}
@@ -8541,13 +8659,16 @@ const Rest = () => {
                 {" "}of miles]:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_big_subtraction_l.svg" />
+              <Image
+                width="320.0px"
+                src="/images/svg_ch5_ex_big_division_big_subtraction_l.svg" />
               <Pause />
               <VerticalChunk>
                 Etc—we finally obtain:
               </VerticalChunk>
               <Pause />
               <Image
+                width="320.0px"
                 src="/images/svg_ch5_ex_big_division_big_subtraction_final.svg"
                 style="margin-top:1em;margin-bottom:1em;" />
               <Pause />
@@ -8569,7 +8690,9 @@ const Rest = () => {
                 Generally,
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_big_division_remainder_equation.svg" />
+              <Image
+                width="530.0px"
+                src="/images/svg_ch5_ex_big_division_remainder_equation.svg" />
               <Pause />
               <VerticalChunk>
                 at any point in a long division after the
@@ -8597,7 +8720,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_angle_sum_180.svg" />
+            <Image
+              width="300.0px"
+              src="/images/svg_ch5_ex_angle_sum_180.svg" />
           </ExerciseStatement>
           <Solution solution_number={17}>
             <VerticalChunk>
@@ -8613,7 +8738,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \theta + (\eta - \theta) + \eta = 2\eta
               \theta + (\eta - \theta) + \eta = 2\eta
               $$
             </MathBlock>
@@ -8689,7 +8813,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_maximum_of_sin_plus_cos.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch5_ex_maximum_of_sin_plus_cos.svg" />
             <Pause />
             <VerticalChunk>
               What is this maximum value, and for which
@@ -8737,6 +8863,7 @@ const Rest = () => {
             </VerticalChunk>
             <Pause />
             <Image
+              width="730.0px"
               style="background-color:#fdfdfd"
               src="/images/svg_ch5_ex_x_plus_y_options.svg" />
             <Pause />
@@ -8777,7 +8904,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_x_plus_y_intersections.svg" />
+            <Image
+              width="350.0px"
+              src="/images/svg_ch5_ex_x_plus_y_intersections.svg" />
             <Pause />
             <VerticalChunk>
               (By the way: when we say “line of angle
@@ -8833,7 +8962,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_x_plus_y_rainbow.svg" />
+            <Image
+              width="420.0px"
+              src="/images/svg_ch5_ex_x_plus_y_rainbow.svg" />
             <Pause />
             <VerticalChunk>
               If we are confined to some region of the plane
@@ -8849,7 +8980,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \cos(x) + \sin(x)
               \cos(x) + \sin(x)
               $$
             </MathBlock>
@@ -8896,7 +9026,9 @@ const Rest = () => {
               {" "}(!!!!):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_x_plus_y_eta_over_2.svg" />
+            <Image
+              width="420.0px"
+              src="/images/svg_ch5_ex_x_plus_y_eta_over_2.svg" />
             <Pause />
             <VerticalChunk>
               ...or with any multiple of{" "}
@@ -8913,7 +9045,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large \&#123;\eta/2 + 4\eta&#123;&#125;k : k \in \zz\&#125;
               \Large \&#123;\eta/2 + 4\eta&#123;&#125;k : k \in \zz\&#125;
               $$
             </MathBlock>
@@ -8969,10 +9100,6 @@ const Rest = () => {
               \begin&#123;align&#125;
               &amp;\,\, \cos(\eta/2) + \sin(\eta/2)\\ =&amp;\,\,\up&#123;1.5&#125;  \sqrt&#123;0.5&#125; + \sqrt&#123;0.5&#125;\\ =&amp;\,\,\up&#123;1.5&#125; \sqrt&#123;2&#125;
               \end&#123;align&#125;
-              \Large
-              \begin&#123;align&#125;
-              &amp;\,\, \cos(\eta/2) + \sin(\eta/2)\\ =&amp;\,\,\up&#123;1.5&#125;  \sqrt&#123;0.5&#125; + \sqrt&#123;0.5&#125;\\ =&amp;\,\,\up&#123;1.5&#125; \sqrt&#123;2&#125;
-              \end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -8983,7 +9110,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \Large \cos(\eta/2) = \sin(\eta/2) = \sqrt&#123;0.5&#125;
-                \Large \cos(\eta/2) = \sin(\eta/2) = \sqrt&#123;0.5&#125;
                 $$
               </MathBlock>
             </div>
@@ -8993,7 +9119,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large \sqrt&#123;0.5&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;
               \Large \sqrt&#123;0.5&#125; = &#123;\sqrt&#123;2&#125; \over 2&#125;
               $$
             </MathBlock>
@@ -9014,7 +9139,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \Large \cos(\eta/2) + \sin(\eta/2) = \sqrt&#123;2&#125;
-                \Large \cos(\eta/2) + \sin(\eta/2) = \sqrt&#123;2&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -9022,7 +9146,9 @@ const Rest = () => {
                 can also be seen from this diagram...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_x_plus_y_pythagoras.svg" />
+              <Image
+                width="420.0px"
+                src="/images/svg_ch5_ex_x_plus_y_pythagoras.svg" />
               <Pause />
               <VerticalChunk>
                 ...which is an application of the Pythagorean
@@ -9099,7 +9225,9 @@ const Rest = () => {
                 {" "}etc:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_maximum_of_sin_plus_cos_with_answer.svg" />
+              <Image
+                width="600.0px"
+                src="/images/svg_ch5_ex_maximum_of_sin_plus_cos_with_answer.svg" />
               <Pause />
               <VerticalChunk>
                 (Note that
@@ -9108,13 +9236,11 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \Large &#123;\eta\over 2&#125; + 4\eta = &#123;\eta\over 2&#125; + &#123;8\eta\over 2&#125; = &#123;9\eta\over 2&#125;
-                \Large &#123;\eta\over 2&#125; + 4\eta = &#123;\eta\over 2&#125; + &#123;8\eta\over 2&#125; = &#123;9\eta\over 2&#125;
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \Large
                 \Large
                 &#123;\eta\over 2&#125; - 4\eta = &#123;\eta\over 2&#125; - &#123;8\eta\over 2&#125; = -&#123;7\eta\over 2&#125;
                 $$
@@ -9148,7 +9274,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_angle_sum_180_followup.svg" />
+            <Image
+              width="300.0px"
+              src="/images/svg_ch5_ex_angle_sum_180_followup.svg" />
           </ExerciseStatement>
           <Solution solution_number={19}>
             <VerticalChunk>
@@ -9164,7 +9292,9 @@ const Rest = () => {
               of my complement is myself”:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_angle_sum_180_followup_explanation.svg" />
+            <Image
+              width="380.0px"
+              src="/images/svg_ch5_ex_angle_sum_180_followup_explanation.svg" />
             <Pause />
             <VerticalChunk>
               Another method of deduction uses the fact that,
@@ -9192,7 +9322,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_angle_sum_180_followup_explanation_2.svg" />
+            <Image
+              width="380.0px"
+              src="/images/svg_ch5_ex_angle_sum_180_followup_explanation_2.svg" />
             <Pause />
             <VerticalChunk>
               (In one case we use the fact that the
@@ -9223,7 +9355,9 @@ const Rest = () => {
               the center of the circle:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tangent_angle_v2.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch5_ex_tangent_angle_v2.svg" />
           </ExerciseStatement>
           <Solution solution_number={20}>
             <VerticalChunk>
@@ -9237,7 +9371,9 @@ const Rest = () => {
               respectively, of the central angle:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tangent_angle_explanation_v2.svg" />
+            <Image
+              width="400.0px"
+              src="/images/svg_ch5_ex_tangent_angle_explanation_v2.svg" />
             <Pause />
             <VerticalChunk>
               The angle marked ‘?’ is therefore obtained
@@ -9270,7 +9406,9 @@ const Rest = () => {
                 {" "}to:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_tangent_angle_explanation_other_quadrants.svg" />
+              <Image
+                width="440.0px"
+                src="/images/svg_ch5_ex_tangent_angle_explanation_other_quadrants.svg" />
               <Pause />
               <VerticalChunk>
                 Verbalized:{" "}
@@ -9296,7 +9434,9 @@ const Rest = () => {
                 are illustrated here:)
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_tangent_angle_explanation_radian_vector.svg" />
+              <Image
+                width="420.0px"
+                src="/images/svg_ch5_ex_tangent_angle_explanation_radian_vector.svg" />
             </SolutionNote>
             <Pause />
             <StarDivider />
@@ -9312,7 +9452,9 @@ const Rest = () => {
               If each of these dotted lines...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_max_xy_x_plus_y_isosets.svg" />
+            <Image
+              width="488.0px"
+              src="/images/svg_ch5_ex_max_xy_x_plus_y_isosets.svg" />
             <Pause />
             <VerticalChunk>
               ...is a so-called
@@ -9447,7 +9589,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin\theta&#123;&#125;\cos\theta
-              \sin\theta&#123;&#125;\cos\theta
               $$
             </MathBlock>
             <Pause />
@@ -9487,7 +9628,9 @@ const Rest = () => {
               different random ones):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_max_xy_xy_isosets.svg" />
+            <Image
+              width="488.0px"
+              src="/images/svg_ch5_ex_max_xy_xy_isosets.svg" />
             <Pause />
             <VerticalChunk>
               Note that each isoset consists of the union of TWO
@@ -9506,7 +9649,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \&#123;(x, y) \in \rr^2 : xy = 0 \&#125;
               \&#123;(x, y) \in \rr^2 : xy = 0 \&#125;
               $$
             </MathBlock>
@@ -9580,7 +9722,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \,x = 0\,
-              \,x = 0\,
               $$
             </MathBlock>
             <i>
@@ -9589,7 +9730,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \,y = 0
               \,y = 0
               $$
             </MathBlock>
@@ -9645,7 +9785,9 @@ const Rest = () => {
               quadrants:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_max_xy_rainbow.svg" />
+            <Image
+              width="420.0px"
+              src="/images/svg_ch5_ex_max_xy_rainbow.svg" />
             <Pause />
             <VerticalChunk>
               Of particular interest to us: at a given
@@ -9668,7 +9810,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_max_xy_fixed_distance.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_max_xy_fixed_distance.svg" />
             <Pause />
             <VerticalChunk>
               In particular,
@@ -9676,7 +9820,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \cos\theta\,\sin\theta
               \cos\theta\,\sin\theta
               $$
             </MathBlock>
@@ -9713,8 +9856,6 @@ const Rest = () => {
               $$
               \Large \&#123;0.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \\
               \Large \cup \&#123;2.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125;\up&#123;1.5&#125;
-              \Large \&#123;0.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \\
-              \Large \cup \&#123;2.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125;\up&#123;1.5&#125;
               $$
             </MathBlock>
             <Pause />
@@ -9722,7 +9863,9 @@ const Rest = () => {
               as per this illustration...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_max_xy_angles.svg" />
+            <Image
+              width="650.0px"
+              src="/images/svg_ch5_ex_max_xy_angles.svg" />
             <Pause />
             <VerticalChunk>
               ...and the maximum value of
@@ -9730,7 +9873,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large \cos\theta\,\sin\theta
               \Large \cos\theta\,\sin\theta
               $$
             </MathBlock>
@@ -9742,7 +9884,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large \sqrt&#123;0.5&#125; \cdot \sqrt&#123;0.5&#125; = &#123;1\over 2&#125;
-              \Large \sqrt&#123;0.5&#125; \cdot \sqrt&#123;0.5&#125; = &#123;1\over 2&#125;
               $$
             </MathBlock>
             <Pause />
@@ -9752,7 +9893,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large (-\sqrt&#123;0.5&#125;) \cdot (-\sqrt&#123;0.5&#125;) = &#123;1\over 2&#125;
               \Large (-\sqrt&#123;0.5&#125;) \cdot (-\sqrt&#123;0.5&#125;) = &#123;1\over 2&#125;
               $$
             </MathBlock>
@@ -9764,7 +9904,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large \&#123;0.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \cup \&#123;2.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \\ \Large \up&#123;1.5&#125;= \&#123;0.5\eta + 2\eta&#123;&#125;k : k \in \zz\&#125;
               \Large \&#123;0.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \cup \&#123;2.5\eta + 4\eta&#123;&#125;k : k \in \zz\&#125; \\ \Large \up&#123;1.5&#125;= \&#123;0.5\eta + 2\eta&#123;&#125;k : k \in \zz\&#125;
               $$
             </MathBlock>
@@ -9813,7 +9952,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \Large \&#123;0.5\eta + 2\eta&#123;&#125;k : k \in \zz\&#125;
-                \Large \&#123;0.5\eta + 2\eta&#123;&#125;k : k \in \zz\&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -9823,7 +9961,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \large \dots,\,\, -&#123;7\eta\over 2&#125;,\,\, -&#123;3\eta\over 2&#125;,\,\, &#123;\dn&#123;0.25&#125;\eta \over 2&#125;,\,\, &#123;5\eta \over 2&#125;,\,\, &#123;9\eta \over 2&#125;,\,\, \dots
                 \large \dots,\,\, -&#123;7\eta\over 2&#125;,\,\, -&#123;3\eta\over 2&#125;,\,\, &#123;\dn&#123;0.25&#125;\eta \over 2&#125;,\,\, &#123;5\eta \over 2&#125;,\,\, &#123;9\eta \over 2&#125;,\,\, \dots
                 $$
               </MathBlock>
@@ -9835,7 +9972,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \large \dots,\,\, &#123;-3.5\eta&#125;,\,\, &#123;-1.5\eta&#125;,\,\, &#123;0.5\eta&#125;,\,\, &#123;2.5\eta&#125;,\,\, &#123;4.5\eta&#125;,\,\, \dots
-                \large \dots,\,\, &#123;-3.5\eta&#125;,\,\, &#123;-1.5\eta&#125;,\,\, &#123;0.5\eta&#125;,\,\, &#123;2.5\eta&#125;,\,\, &#123;4.5\eta&#125;,\,\, \dots
                 $$
               </MathBlock>
               <Pause />
@@ -9844,7 +9980,9 @@ const Rest = () => {
                 given in Exercise 4:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_graph.svg" />
+              <Image
+                width="600.0px"
+                src="/images/svg_ch5_ex_max_xy_graph.svg" />
               <Pause />
               <StarDivider />
             </SolutionNote>
@@ -9867,6 +10005,7 @@ const Rest = () => {
               </VerticalChunk>
               <Pause />
               <Image
+                width="615.0px"
                 src="/images/svg_ch5_ex_max_xy_example_isoset.svg"
                 style="margin-top:1em;margin-bottom:1em;" />
             </SolutionNote>
@@ -9981,7 +10120,9 @@ const Rest = () => {
                 illustrated here:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_2x_scaling_v2.svg" />
+              <Image
+                width="488.0px"
+                src="/images/svg_ch5_ex_max_xy_2x_scaling_v2.svg" />
               <Pause />
               <VerticalChunk>
                 More generally, the curve
@@ -10286,7 +10427,9 @@ const Rest = () => {
                 about that line:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_mirror_image.svg" />
+              <Image
+                width="488.0px"
+                src="/images/svg_ch5_ex_max_xy_mirror_image.svg" />
               <Pause />
               <VerticalChunk>
                 Note that, technically, a set{" "}
@@ -10308,7 +10451,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \Large (x_0, y_0) \in S \iff (y_0, x_0) \in S
                 \Large (x_0, y_0) \in S \iff (y_0, x_0) \in S
                 $$
               </MathBlock>
@@ -10348,7 +10490,9 @@ const Rest = () => {
                 Illustrated:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_mirror_image_with_x0_y0.svg" />
+              <Image
+                width="488.0px"
+                src="/images/svg_ch5_ex_max_xy_mirror_image_with_x0_y0.svg" />
               <Pause />
               <VerticalChunk>
                 In our case, a point{" "}
@@ -10401,13 +10545,6 @@ const Rest = () => {
                 \large\up&#123;1.4&#125; \iff&amp; \,y_0x_0 = C \\
                 \large\up&#123;1.4&#125; \iff&amp; (y_0, x_0) \in \&#123;(x,y)\in \rr^2: xy = C\&#125;
                 \end&#123;align&#125;
-                \large
-                \begin&#123;align&#125;
-                \large     &amp; (x_0, y_0) \in \&#123;(x,y)\in \rr^2: xy = C\&#125; \\
-                \large\up&#123;1.4&#125; \iff&amp; \,x_0y_0 = C \\
-                \large\up&#123;1.4&#125; \iff&amp; \,y_0x_0 = C \\
-                \large\up&#123;1.4&#125; \iff&amp; (y_0, x_0) \in \&#123;(x,y)\in \rr^2: xy = C\&#125;
-                \end&#123;align&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -10432,7 +10569,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_mirror_image_other_way.svg" />
+              <Image
+                width="488.0px"
+                src="/images/svg_ch5_ex_max_xy_mirror_image_other_way.svg" />
               <Pause />
               <VerticalChunk>
                 Indeed, this symmetry can be obtained as the
@@ -10451,7 +10590,9 @@ const Rest = () => {
                 symmetry:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_max_xy_mirror_image_other_way_explanation.svg" />
+              <Image
+                width="508.0px"
+                src="/images/svg_ch5_ex_max_xy_mirror_image_other_way_explanation.svg" />
               <Pause />
               <VerticalChunk>
                 In other words, any set that is symmetric through
@@ -10494,7 +10635,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio.svg" />
+            <Image
+              width="300.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio.svg" />
           </ExerciseStatement>
           <Solution solution_number={22}>
             <VerticalChunk>
@@ -10516,7 +10659,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_height_C.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_height_C.svg" />
             <Pause />
             <VerticalChunk>
               On the one hand,{" "}
@@ -10528,7 +10673,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_left_part.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_left_part.svg" />
             <Pause />
             <VerticalChunk>
               On the other hand,{" "}
@@ -10545,7 +10692,9 @@ const Rest = () => {
               the middle-sized right triangle):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_right_part.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_right_part.svg" />
             <Pause />
             <VerticalChunk>
               The answer is therefore:
@@ -10553,7 +10702,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \tan(\theta)\cdot\tan(\theta) = \tan^2(\theta).
               \tan(\theta)\cdot\tan(\theta) = \tan^2(\theta).
               $$
             </MathBlock>
@@ -10589,7 +10737,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A.svg" />
+            <Image
+              width="300.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A.svg" />
           </ExerciseStatement>
           <Solution solution_number={23}>
             <VerticalChunk>
@@ -10619,7 +10769,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_with_D.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_with_D.svg" />
             <Pause />
             <VerticalChunk>
               On the one hand,{" "}
@@ -10631,7 +10783,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_left_part.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_left_part.svg" />
             <Pause />
             <VerticalChunk>
               On the other hand,{" "}
@@ -10644,7 +10798,9 @@ const Rest = () => {
               {" "}also (!?):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_right_part_shrunk.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_right_part_shrunk.svg" />
             <Pause />
             <VerticalChunk>
               Thus:
@@ -10687,7 +10843,9 @@ const Rest = () => {
               Exercise 22:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_with_Aprime.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_tan_sq_AB_ratio_big_A_with_Aprime.svg" />
             <Pause />
             <VerticalChunk>
               We find:
@@ -10727,7 +10885,6 @@ const Rest = () => {
                 <div style="display:inline-block;border:1px solid red;padding:1em 1em;">
                   <MathBlock>
                     $$
-                    \sec^2(\theta) = 1 + \tan^2(\theta)
                     \sec^2(\theta) = 1 + \tan^2(\theta)
                     $$
                   </MathBlock>
@@ -10787,7 +10944,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(\theta) \ne 0
-              \cos(\theta) \ne 0
               $$
             </MathBlock>
             <Pause />
@@ -10799,7 +10955,6 @@ const Rest = () => {
                 <MathBlock>
                   $$
                   \,\tan(\theta) = &#123;\sin(\theta)\over \cos(\theta)&#125;\,
-                  \,\tan(\theta) = &#123;\sin(\theta)\over \cos(\theta)&#125;\,
                   $$
                 </MathBlock>
                 <Pause />
@@ -10807,7 +10962,6 @@ const Rest = () => {
                 {" "}
                 <MathBlock>
                   $$
-                  \,\sec(\theta) = &#123;1\over \cos(\theta)&#125;\,
                   \,\sec(\theta) = &#123;1\over \cos(\theta)&#125;\,
                   $$
                 </MathBlock>
@@ -10859,7 +11013,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(\theta) \ne 0
-              \cos(\theta) \ne 0
               $$
             </MathBlock>
             <Pause />
@@ -10880,16 +11033,13 @@ const Rest = () => {
             <MathBlock>
               $$
               \begin&#123;align&#125;
-              \begin&#123;align&#125;
               1 + \tan^2(\theta)
-              \,\,&amp;=\,\, 1 + \left(&#123;\sin(\theta)\over \cos(\theta)&#125;\right)^&#123;\!2&#125; \\
               \,\,&amp;=\,\, 1 + \left(&#123;\sin(\theta)\over \cos(\theta)&#125;\right)^&#123;\!2&#125; \\
               &amp;=\,\, \up&#123;2&#125; &#123;\cos^2(\theta)\over \cos^2(\theta)&#125; + &#123;\sin^2(\theta)\over \cos^2(\theta)&#125; \\
               &amp;=\,\, \up&#123;2&#125; &#123;\cos^2(\theta) + \sin^2(\theta)\over \cos^2(\theta)&#125; \\
               &amp;=\,\, \up&#123;2&#125; &#123;1\over \cos^2(\theta)&#125; \\
               &amp;=\,\, \up&#123;2&#125; \left(&#123;1\over \cos(\theta)&#125;\right)^&#123;\!2&#125; \\
               &amp;=\,\, \up&#123;2&#125; \sec^2(\theta)
-              \end&#123;align&#125;
               \end&#123;align&#125;
               $$
             </MathBlock>
@@ -10912,7 +11062,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sec^2(\theta)
               \sec^2(\theta)
               $$
             </MathBlock>
@@ -10941,14 +11090,10 @@ const Rest = () => {
                   \begin&#123;align&#125;
                   \sec^2(\theta)
                   \,\,&amp;=\,\, &#123;1\over \cos^2(\theta)&#125; \\
-                  \begin&#123;align&#125;
-                  \sec^2(\theta)
-                  \,\,&amp;=\,\, &#123;1\over \cos^2(\theta)&#125; \\
                   &amp;=\,\, \up&#123;2&#125; &#123;\cos^2(\theta) + \sin^2(\theta)\over \cos^2(\theta)&#125; \\
                   &amp;=\,\, \up&#123;2&#125; &#123;\cos^2(\theta)\over \cos^2(\theta)&#125; + &#123;\sin^2(\theta)\over \cos^2(\theta)&#125; \\
                   &amp;=\,\, \up&#123;2&#125; 1 + \left(&#123;\sin(\theta)\over \cos(\theta)&#125;\right)^&#123;\!2&#125; \\
                   &amp;=\,\, \up&#123;2&#125;1 + \tan^2(\theta).
-                  \end&#123;align&#125;
                   \end&#123;align&#125;
                   $$
                 </MathBlock>
@@ -10996,7 +11141,9 @@ const Rest = () => {
               function):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_four_compositions.svg" />
+            <Image
+              width="460.0px"
+              src="/images/svg_ch5_ex_four_compositions.svg" />
             <Pause />
             <VerticalChunk>
               Rewrite each case:
@@ -11212,13 +11359,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \te&#123;1.&#125;\,\, x \ra f(x + A)
-              \te&#123;1.&#125;\,\, x \ra f(x + A)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \te&#123;2.&#125;\,\, x \ra f(Bx)
               \te&#123;2.&#125;\,\, x \ra f(Bx)
               $$
             </MathBlock>
@@ -11226,13 +11371,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \te&#123;3.&#125;\,\, x \ra f(x) + A
-              \te&#123;3.&#125;\,\, x \ra f(x) + A
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \te&#123;4.&#125;\,\, x \ra Bf(x)
               \te&#123;4.&#125;\,\, x \ra Bf(x)
               $$
             </MathBlock>
@@ -11370,13 +11513,7 @@ const Rest = () => {
             <MathBlock>
               $$
               \begin&#123;align&#125;
-              \begin&#123;align&#125;
               &amp;\,\,\, (\cos\cdot\sin)(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\cos(x + 2\eta)\cdot\sin(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;(-\cos(x))\cdot(-\sin(x))\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\cos(x)\cdot\sin(x)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;(\cos\cdot\sin)(x)
-              \end&#123;align&#125;
               =&amp;\,\,\, \up&#123;1.2&#125;\cos(x + 2\eta)\cdot\sin(x + 2\eta)\\
               =&amp;\,\,\, \up&#123;1.2&#125;(-\cos(x))\cdot(-\sin(x))\\
               =&amp;\,\,\, \up&#123;1.2&#125;\cos(x)\cdot\sin(x)\\
@@ -11399,7 +11536,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x + 2\eta) = -\cos(x)
-              \cos(x + 2\eta) = -\cos(x)
               $$
             </MathBlock>
             <Pause />
@@ -11409,7 +11545,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sin(x + 2\eta) = -\sin(x)
               \sin(x + 2\eta) = -\sin(x)
               $$
             </MathBlock>
@@ -11428,13 +11563,7 @@ const Rest = () => {
             <MathBlock>
               $$
               \begin&#123;align&#125;
-              \begin&#123;align&#125;
               &amp;\,\,\, \cos^2(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\cos(x + 2\eta)\cdot\cos(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;(-\cos(x))\cdot(-\cos(x))\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\cos(x)\cdot\cos(x)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\cos^2(x)
-              \end&#123;align&#125;
               =&amp;\,\,\, \up&#123;1.2&#125;\cos(x + 2\eta)\cdot\cos(x + 2\eta)\\
               =&amp;\,\,\, \up&#123;1.2&#125;(-\cos(x))\cdot(-\cos(x))\\
               =&amp;\,\,\, \up&#123;1.2&#125;\cos(x)\cdot\cos(x)\\
@@ -11457,13 +11586,7 @@ const Rest = () => {
             <MathBlock>
               $$
               \begin&#123;align&#125;
-              \begin&#123;align&#125;
               &amp;\,\,\, \sin^2(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\sin(x + 2\eta)\cdot\sin(x + 2\eta)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;(-\sin(x))\cdot(-\sin(x))\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\sin(x)\cdot\sin(x)\\
-              =&amp;\,\,\, \up&#123;1.2&#125;\sin^2(x)
-              \end&#123;align&#125;
               =&amp;\,\,\, \up&#123;1.2&#125;\sin(x + 2\eta)\cdot\sin(x + 2\eta)\\
               =&amp;\,\,\, \up&#123;1.2&#125;(-\sin(x))\cdot(-\sin(x))\\
               =&amp;\,\,\, \up&#123;1.2&#125;\sin(x)\cdot\sin(x)\\
@@ -11494,7 +11617,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \te&#123;“&#125;\cos\cdot\sin\te&#123;”&#125;
-                \te&#123;“&#125;\cos\cdot\sin\te&#123;”&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -11504,7 +11626,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \te&#123;“&#125;\rt&#123;0.1&#125;x \ra \cos(x)\sin(x)\rt&#123;0.1&#125;\te&#123;”&#125;
                 \te&#123;“&#125;\rt&#123;0.1&#125;x \ra \cos(x)\sin(x)\rt&#123;0.1&#125;\te&#123;”&#125;
                 $$
               </MathBlock>
@@ -11569,7 +11690,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(x + 2\eta)\cdot\sin(x+2\eta)
-                \cos(x + 2\eta)\cdot\sin(x+2\eta)
                 $$
               </MathBlock>
               <Pause />
@@ -11616,7 +11736,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison.svg" />
             <Pause />
             <VerticalChunk>
               ...it{" "}
@@ -11628,7 +11750,6 @@ const Rest = () => {
               really so, what would the exact amounts
               of translation be? (Vertical{" "}
               <i>
-                &amp;
                 &amp;
               </i>
               {" "}horizontal.)
@@ -11658,7 +11779,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison_sinxcosx_max.svg" />
+            <Image
+              width="605.0px"
+              src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison_sinxcosx_max.svg" />
             <Pause />
             <VerticalChunk>
               It might therefore be that a translation
@@ -11686,7 +11809,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison_zoomed_in.svg" />
+            <Image
+              width="605.0px"
+              src="/images/svg_ch5_ex_sinxcosx_and_cos2_comparison_zoomed_in.svg" />
             <Pause />
             <VerticalChunk>
               If true, this would indicate that
@@ -11695,7 +11820,6 @@ const Rest = () => {
               <div style="border:1px solid red;padding:1em 1em;width:fit-content;">
                 <MathBlock>
                   $$
-                  \cos^2(x) = &#123;1\over 2&#125; + \cos(x + \eta/2)\sin(x + \eta/2)
                   \cos^2(x) = &#123;1\over 2&#125; + \cos(x + \eta/2)\sin(x + \eta/2)
                   $$
                 </MathBlock>
@@ -11753,13 +11877,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
-              \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \sin(A + B) = \cos(A)\sin(B) + \sin(A)\cos(B)
               \sin(A + B) = \cos(A)\sin(B) + \sin(A)\cos(B)
               $$
             </MathBlock>
@@ -11771,7 +11893,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \,\cos(\eta/2) = \sin(\eta/2) = \sqrt&#123;0.5&#125;,
-              \,\cos(\eta/2) = \sin(\eta/2) = \sqrt&#123;0.5&#125;,
               $$
             </MathBlock>
             <Pause />
@@ -11781,10 +11902,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align*&#125;
-              \cos(x + \eta/2) &amp;= \cos(x)\cos(\eta/2) - \sin(x)\sin(\eta/2) \\
-              &amp;= \up&#123;1.6&#125;\sqrt&#123;0.5&#125;\cdot(\cos(x) - \sin(x))
-              \end&#123;align*&#125;
               \begin&#123;align*&#125;
               \cos(x + \eta/2) &amp;= \cos(x)\cos(\eta/2) - \sin(x)\sin(\eta/2) \\
               &amp;= \up&#123;1.6&#125;\sqrt&#123;0.5&#125;\cdot(\cos(x) - \sin(x))
@@ -11802,10 +11919,6 @@ const Rest = () => {
               \sin(x + \eta/2) &amp;= \cos(x)\sin(\eta/2) + \sin(x)\cos(\eta/2) \\
               &amp;= \up&#123;1.6&#125;\sqrt&#123;0.5&#125;\cdot(\cos(x) + \sin(x))
               \end&#123;align*&#125;
-              \begin&#123;align*&#125;
-              \sin(x + \eta/2) &amp;= \cos(x)\sin(\eta/2) + \sin(x)\cos(\eta/2) \\
-              &amp;= \up&#123;1.6&#125;\sqrt&#123;0.5&#125;\cdot(\cos(x) + \sin(x))
-              \end&#123;align*&#125;
               $$
             </MathBlock>
             <Pause />
@@ -11816,7 +11929,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x + \eta/2)\sin(x + \eta/2)
-              \cos(x + \eta/2)\sin(x + \eta/2)
               $$
             </MathBlock>
             <Pause />
@@ -11826,13 +11938,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align*&#125;
-              &amp;\sqrt&#123;0.5&#125;\cdot\sqrt&#123;0.5&#125;\cdot(\cos^2(x) - \sin^2(x)) \\
-              \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(\cos^2(x) - \sin^2(x)) \\
-              \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(\cos^2(x) - (1 - \cos^2(x))) \\
-              \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(2\cos^2(x) - 1) \\
-              \up&#123;1.6&#125; =\,\,&amp;\cos^2(x) - &#123;1\over 2&#125; \\
-              \end&#123;align*&#125;
               \begin&#123;align*&#125;
               &amp;\sqrt&#123;0.5&#125;\cdot\sqrt&#123;0.5&#125;\cdot(\cos^2(x) - \sin^2(x)) \\
               \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(\cos^2(x) - \sin^2(x)) \\
@@ -11873,7 +11978,6 @@ const Rest = () => {
               {" "}{" "}
               <i>
                 &amp;
-                &amp;
               </i>
               {" "}vice-versa.)
             </VerticalChunk>
@@ -11900,7 +12004,6 @@ const Rest = () => {
                 <div style="border:1px solid red;padding:1em 1em;width:fit-content;">
                   <MathBlock>
                     $$
-                    \,- &#123;1\over 2&#125; + \cos^2(x - \eta/2) = \cos(x)\sin(x).
                     \,- &#123;1\over 2&#125; + \cos^2(x - \eta/2) = \cos(x)\sin(x).
                     $$
                   </MathBlock>
@@ -11979,7 +12082,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
-                \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
                 $$
               </MathBlock>
               <Pause />
@@ -11989,7 +12091,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sin(-\eta/2) = -\sqrt&#123;0.5&#125;
                 \sin(-\eta/2) = -\sqrt&#123;0.5&#125;
                 $$
               </MathBlock>
@@ -12005,11 +12106,6 @@ const Rest = () => {
                 \up&#123;1.6&#125; &amp;=\,\, \cos(x)\sqrt&#123;0.5&#125; - \sin(x)(-\sqrt&#123;0.5&#125;) \\
                 \up&#123;1.6&#125; &amp;=\,\, \sqrt&#123;0.5&#125;\cdot(\cos(x) + \sin(x)) \\
                 \end&#123;align*&#125;
-                \begin&#123;align*&#125;
-                \cos(x - \eta/2) &amp;= \cos(x)\cos(-\eta/2) - \sin(x)\sin(-\eta/2) \\
-                \up&#123;1.6&#125; &amp;=\,\, \cos(x)\sqrt&#123;0.5&#125; - \sin(x)(-\sqrt&#123;0.5&#125;) \\
-                \up&#123;1.6&#125; &amp;=\,\, \sqrt&#123;0.5&#125;\cdot(\cos(x) + \sin(x)) \\
-                \end&#123;align*&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -12019,7 +12115,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \cos^2(x - \eta/2)
                 \cos^2(x - \eta/2)
                 $$
               </MathBlock>
@@ -12036,12 +12131,6 @@ const Rest = () => {
                 \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(1 + 2\cos x\sin x) \\
                 \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125; + \cos(x)\sin(x) \\
                 \end&#123;align*&#125;
-                \begin&#123;align*&#125;
-                &amp;\left(\sqrt&#123;0.5&#125;\cdot(\cos x + \sin x)\right)^2 \\
-                \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(\cos^2 x + 2\cos x\sin x +  \sin^2 x) \\
-                \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125;\cdot(1 + 2\cos x\sin x) \\
-                \up&#123;1.6&#125; =\,\,&amp;&#123;1\over 2&#125; + \cos(x)\sin(x) \\
-                \end&#123;align*&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -12052,11 +12141,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \begin&#123;align*&#125;
-                &amp; -&#123;1\over 2&#125; + \cos^2(x - \eta/2) \\
-                \up&#123;1.7&#125; =\,\,&amp;-&#123;1\over 2&#125; + \left(&#123;1\over 2&#125; + \cos(x)\sin(x)\right) \\
-                \up&#123;1.7&#125; =\,\,&amp;\cos(x)\sin(x)
-                \end&#123;align*&#125;
                 \begin&#123;align*&#125;
                 &amp; -&#123;1\over 2&#125; + \cos^2(x - \eta/2) \\
                 \up&#123;1.7&#125; =\,\,&amp;-&#123;1\over 2&#125; + \left(&#123;1\over 2&#125; + \cos(x)\sin(x)\right) \\
@@ -12097,7 +12181,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cos_and_cos2_comparison.svg" />
+            <Image
+              width="1240.0px"
+              src="/images/svg_ch5_ex_cos_and_cos2_comparison.svg" />
             <Pause />
             <VerticalChunk>
               If so, what scaling and translation operations,
@@ -12172,7 +12258,9 @@ const Rest = () => {
               {" "}either way):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cos_and_cos2_comparison_transformations_1.svg" />
+            <Image
+              width="640.0px"
+              src="/images/svg_ch5_ex_cos_and_cos2_comparison_transformations_1.svg" />
             <Pause />
             <VerticalChunk>
               Algebraically, the three steps above turn
@@ -12207,16 +12295,15 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large\cos(x)
-              \Large\cos(x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \Large\downarrow
-              \Large\downarrow
               $$
               <ImageRight
+                width="400.0px"
                 offset_x="4em"
                 src="/images/svg_ch5_ex_cos_and_cos2_comparison_step1_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -12225,16 +12312,15 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large\cos(2x)
-              \Large\cos(2x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \Large\downarrow
-              \Large\downarrow
               $$
               <ImageRight
+                width="400.0px"
                 offset_x="4em"
                 src="/images/svg_ch5_ex_cos_and_cos2_comparison_step2_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -12243,16 +12329,15 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large 1 + \cos(2x)
-              \Large 1 + \cos(2x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \Large\downarrow
-              \Large\downarrow
               $$
               <ImageRight
+                width="400.0px"
                 offset_x="4em"
                 src="/images/svg_ch5_ex_cos_and_cos2_comparison_step3_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -12260,7 +12345,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Large&#123;1 + \cos(2x)\over 2&#125;
               \Large&#123;1 + \cos(2x)\over 2&#125;
               $$
             </MathBlock>
@@ -12322,13 +12406,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large\cos(x)
-              \Large\cos(x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \Large\downarrow
               \Large\downarrow
               $$
             </MathBlock>
@@ -12336,13 +12418,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large\cos(2x)
-              \Large\cos(2x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \Large\downarrow
               \Large\downarrow
               $$
             </MathBlock>
@@ -12350,20 +12430,17 @@ const Rest = () => {
             <MathBlock>
               $$
               \Large&#123;1\over 2&#125;\cos(2x)
-              \Large&#123;1\over 2&#125;\cos(2x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \Large\downarrow
-              \Large\downarrow
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \Large&#123;1\over 2&#125; + &#123;1\over 2&#125;\cos(2x)
               \Large&#123;1\over 2&#125; + &#123;1\over 2&#125;\cos(2x)
               $$
             </MathBlock>
@@ -12401,7 +12478,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
-              \cos(A + B) = \cos(A)\cos(B) - \sin(A)\sin(B)
               $$
             </MathBlock>
             <Pause />
@@ -12431,12 +12507,6 @@ const Rest = () => {
               &amp;= \up&#123;1.6&#125; \cos(x)\cos(x) - \sin(x)\sin(x) \\
               &amp;= \up&#123;1.6&#125; \cos^2(x) - \sin^2(x)
               \end&#123;align*&#125;
-              \begin&#123;align*&#125;
-              \cos(2x)
-              &amp;= \cos(x + x) \\
-              &amp;= \up&#123;1.6&#125; \cos(x)\cos(x) - \sin(x)\sin(x) \\
-              &amp;= \up&#123;1.6&#125; \cos^2(x) - \sin^2(x)
-              \end&#123;align*&#125;
               $$
             </MathBlock>
             <Pause />
@@ -12447,14 +12517,7 @@ const Rest = () => {
             <MathBlock>
               $$
               \begin&#123;align*&#125;
-              \begin&#123;align*&#125;
               &#123;1 + \cos(2x)\over 2&#125;
-              &amp;= \up&#123;2.0&#125; &#123;1 + \cos^2(x) - \sin^2(x) \over 2&#125; \\
-              &amp;= \up&#123;2.0&#125; &#123;(1 - \sin^2(x)) + \cos^2(x)\over 2&#125; \\
-              &amp;= \up&#123;2.0&#125; &#123;\cos^2(x) + \cos^2(x)\over 2&#125; \\
-              &amp;= \up&#123;2.0&#125; &#123;2\cos^2(x)\over 2&#125; \\
-              &amp;= \up&#123;2.0&#125; \cos^2(x)
-              \end&#123;align*&#125;
               &amp;= \up&#123;2.0&#125; &#123;1 + \cos^2(x) - \sin^2(x) \over 2&#125; \\
               &amp;= \up&#123;2.0&#125; &#123;(1 - \sin^2(x)) + \cos^2(x)\over 2&#125; \\
               &amp;= \up&#123;2.0&#125; &#123;\cos^2(x) + \cos^2(x)\over 2&#125; \\
@@ -12463,6 +12526,7 @@ const Rest = () => {
               \end&#123;align*&#125;
               $$
               <ImageLeft
+                width="400.0px"
                 offset_y="3%"
                 offset_x="3.4em"
                 src="/images/svg_ch5_ex_cos_and_cos2_comparison_pythagorean_cloud.svg"
@@ -12498,7 +12562,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin(x)\cos(x)
-              \sin(x)\cos(x)
               $$
             </MathBlock>
             <Pause />
@@ -12508,7 +12571,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sin(2x)
               \sin(2x)
               $$
             </MathBlock>
@@ -12525,7 +12587,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin(A+B) = \cos A\sin B + \sin A\cos B
-              \sin(A+B) = \cos A\sin B + \sin A\cos B
               $$
             </MathBlock>
             <Pause />
@@ -12535,11 +12596,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align*&#125;
-              \sin(2x) =&amp;\,\, \sin(x + x) \\
-              \up&#123;1.6&#125; =&amp;\,\, \cos x\sin x + \sin x\cos x \\
-              \up&#123;1.6&#125; =&amp;\,\, 2\sin x\cos x
-              \end&#123;align*&#125;
               \begin&#123;align*&#125;
               \sin(2x) =&amp;\,\, \sin(x + x) \\
               \up&#123;1.6&#125; =&amp;\,\, \cos x\sin x + \sin x\cos x \\
@@ -12555,7 +12611,6 @@ const Rest = () => {
               <div style="display:inline-block;border:1px solid red;padding:1em 1em;">
                 <MathBlock>
                   $$
-                  \sin x\cos x = &#123;1\over 2&#125;\sin(2x)
                   \sin x\cos x = &#123;1\over 2&#125;\sin(2x)
                   $$
                 </MathBlock>
@@ -12601,7 +12656,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sin x\cos x = &#123;1\over 2&#125;\sin(2x)
               \sin x\cos x = &#123;1\over 2&#125;\sin(2x)
               $$
             </MathBlock>
@@ -12744,7 +12798,9 @@ const Rest = () => {
               from which the following graphic is recovered:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_cos_to_sin_plus_cos_reminder.svg" />
+            <Image
+              width="600.0px"
+              src="/images/svg_ch5_ex_cos_to_sin_plus_cos_reminder.svg" />
             <Pause />
             <VerticalChunk>
               (We have added the minimum at{" "}
@@ -12866,7 +12922,6 @@ const Rest = () => {
                 <MathBlock>
                   $$
                   \sqrt&#123;2&#125;\cdot \cos(x - \eta/2)
-                  \sqrt&#123;2&#125;\cdot \cos(x - \eta/2)
                   $$
                 </MathBlock>
               </div>
@@ -12896,7 +12951,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(A + B) = \cos A\cos B - \sin A\sin B
-              \cos(A + B) = \cos A\cos B - \sin A\sin B
               $$
             </MathBlock>
             <Pause />
@@ -12906,15 +12960,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align*&#125;
-              &amp;\,\, \sqrt&#123;2&#125;\cdot \cos(x - \eta/2) \\
-              \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;2&#125;\cdot(\cos(x)\cos(-\eta/2) - \sin(x)\sin(-\eta/2)) \\
-              \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;2&#125;\cdot(\cos(x)\sqrt&#123;0.5&#125; - \sin(x)(-\sqrt&#123;0.5&#125;)) \\
-              \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;2&#125;\cdot\sqrt&#123;0.5&#125;\cdot(\cos(x) + \sin(x)) \\
-              \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;2 \cdot 0.5&#125;\cdot(\cos(x) + \sin(x)) \\
-              \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;1&#125;\cdot(\cos(x) + \sin(x)) \\
-              \up&#123;1.6&#125; =&amp;\,\, \cos(x) + \sin(x)
-              \end&#123;align*&#125;
               \begin&#123;align*&#125;
               &amp;\,\, \sqrt&#123;2&#125;\cdot \cos(x - \eta/2) \\
               \up&#123;1.6&#125; =&amp;\,\, \sqrt&#123;2&#125;\cdot(\cos(x)\cos(-\eta/2) - \sin(x)\sin(-\eta/2)) \\
@@ -12943,7 +12988,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sqrt&#123;2&#125;\cdot \sqrt&#123;0.5&#125; = 1
-                \sqrt&#123;2&#125;\cdot \sqrt&#123;0.5&#125; = 1
                 $$
               </MathBlock>
               <Pause />
@@ -12953,7 +12997,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sqrt&#123;0.5&#125; = &#123;1\over \sqrt&#123;2&#125;&#125;
                 \sqrt&#123;0.5&#125; = &#123;1\over \sqrt&#123;2&#125;&#125;
                 $$
               </MathBlock>
@@ -13067,7 +13110,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x + \psi)
-              \cos(x + \psi)
               $$
             </MathBlock>
             <Pause />
@@ -13077,7 +13119,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \cos(x)\cos(\psi) - \sin(x)\sin(\psi)
               \cos(x)\cos(\psi) - \sin(x)\sin(\psi)
               $$
             </MathBlock>
@@ -13104,7 +13145,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \up&#123;1.4&#125;(W \cdot \cos \psi)\cdot\cos(x) - (W \cdot \sin \psi) \cdot \sin(x)
               \up&#123;1.4&#125;(W \cdot \cos \psi)\cdot\cos(x) - (W \cdot \sin \psi) \cdot \sin(x)
               $$
             </MathBlock>
@@ -13148,7 +13188,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \phantom&#123;-&#125;W\cdot\cos(\psi) = A_1
               \phantom&#123;-&#125;W\cdot\cos(\psi) = A_1
               $$
             </MathBlock>
@@ -13345,7 +13384,9 @@ const Rest = () => {
               ):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_polar_discovery.svg" />
+            <Image
+              width="335.0px"
+              src="/images/svg_ch5_ex_polar_discovery.svg" />
             <Pause />
             <VerticalChunk>
               In particular,
@@ -13396,10 +13437,6 @@ const Rest = () => {
                 \up&#123;1.2&#125;\te&#123;arccot&#125;(A_1/A_2) &amp; \te&#123;if &#125;\, A_2 \ne 0, \,\te&#123;else&#125; \\
                 \up&#123;1.2&#125;\rm&#123;?&#125;       &amp; \te&#123;if &#125;\, A_1 = 0, A_2 = 0
                 \end&#123;cases&#125;
-                \arctan(A_2/A_1) &amp; \te&#123;if &#125;\, A_1 \ne 0, \,\te&#123;else&#125; \\
-                \up&#123;1.2&#125;\te&#123;arccot&#125;(A_1/A_2) &amp; \te&#123;if &#125;\, A_2 \ne 0, \,\te&#123;else&#125; \\
-                \up&#123;1.2&#125;\rm&#123;?&#125;       &amp; \te&#123;if &#125;\, A_1 = 0, A_2 = 0
-                \end&#123;cases&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -13437,7 +13474,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \cos x + \sin x
               \cos x + \sin x
               $$
             </MathBlock>
@@ -13487,7 +13523,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_polar_discovery_1_1.svg" />
+            <Image
+              width="360.0px"
+              src="/images/svg_ch5_ex_polar_discovery_1_1.svg" />
             <Pause />
             <VerticalChunk>
               (In fact, the fact that...
@@ -13497,9 +13535,9 @@ const Rest = () => {
                 <MathBlock>
                   $$
                   \cos x + \sin x = \sqrt&#123;2&#125;\cdot\cos(x - \eta/2)
-                  \cos x + \sin x = \sqrt&#123;2&#125;\cdot\cos(x - \eta/2)
                   $$
                   <ImageRight
+                    width="300.0px"
                     src="/images/svg_ch5_ex_polar_discovery_cloud.svg"
                     compensate_offset_x_for_large_text_columns={true} />
                 </MathBlock>
@@ -13595,7 +13633,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin(x + \psi)
-              \sin(x + \psi)
               $$
             </MathBlock>
             <Pause />
@@ -13606,9 +13643,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \sin x\cos \psi + \cos x\sin \psi
-              \sin x\cos \psi + \cos x\sin \psi
               $$
               <ImageRight
+                width="500.0px"
                 offset_x="8em"
                 src="/images/svg_ch5_ex_polar_discovery2_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -13707,7 +13744,6 @@ const Rest = () => {
                 <MathBlock>
                   $$
                   \sin(x) + \cos(x) = \sqrt&#123;2&#125;\cdot\sin(x + \eta/2)
-                  \sin(x) + \cos(x) = \sqrt&#123;2&#125;\cdot\sin(x + \eta/2)
                   $$
                 </MathBlock>
               </div>
@@ -13755,7 +13791,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sec \theta, \,\sec^2(\theta), \,\sec^3(\theta), \,\sec^4(\theta), \dots
               \sec \theta, \,\sec^2(\theta), \,\sec^3(\theta), \,\sec^4(\theta), \dots
               $$
             </MathBlock>
@@ -13805,7 +13840,9 @@ const Rest = () => {
               echoes back to the first solution to Exercise 27:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sec_powers_bounce.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_sec_powers_bounce.svg" />
             <Pause />
             <VerticalChunk>
               Starting with a length of{" "}
@@ -13843,7 +13880,9 @@ const Rest = () => {
               of right triangles sharing a common vertex:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sec_powers_snail.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_sec_powers_snail.svg" />
             <Pause />
             <VerticalChunk>
               Or if we move the angle{" "}
@@ -13856,7 +13895,9 @@ const Rest = () => {
               this one:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sec_powers_inverted_towers.svg" />
+            <Image
+              width="330.0px"
+              src="/images/svg_ch5_ex_sec_powers_inverted_towers.svg" />
             <Pause />
             <VerticalChunk>
               We can also take a page from the geometric
@@ -13864,7 +13905,9 @@ const Rest = () => {
               the end of the chapter, and draw this figure:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sec_powers_circles.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_sec_powers_circles.svg" />
             <Pause />
             <VerticalChunk>
               (In which we are effectively using a circular arc
@@ -13883,7 +13926,9 @@ const Rest = () => {
                 appearance within the second diagram (modulo scale):
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_sec_powers_bounce_cameo.svg" />
+              <Image
+                width="430.0px"
+                src="/images/svg_ch5_ex_sec_powers_bounce_cameo.svg" />
             </SolutionNote>
           </Solution>
         </Exercise>
@@ -13904,23 +13949,34 @@ const Rest = () => {
               for secant, but go “in the other direction”:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_cos_bounce.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_costan_powers_cos_bounce.svg" />
             <Pause />
             <Image
+              width="430.0px"
               src="/images/svg_ch5_ex_costan_powers_cos_snail.svg"
               style="margin-top:1.5em;" />
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_cos_inverted_towers.svg" />
+            <Image
+              width="330.0px"
+              src="/images/svg_ch5_ex_costan_powers_cos_inverted_towers.svg" />
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_circles.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_ch5_ex_costan_powers_circles.svg" />
             <Pause />
             <VerticalChunk>
               For ‘tan’ it is possible to produce spirals:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_tan_48_big.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_costan_powers_tan_48_big.svg" />
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_tan_48_big_other_spiral.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_costan_powers_tan_48_big_other_spiral.svg" />
             <Pause />
             <VerticalChunk>
               There is also a staircase possibility (nb:
@@ -13934,7 +13990,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_tan_48_wedge.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_costan_powers_tan_48_wedge.svg" />
             <Pause />
             <VerticalChunk>
               We can also do as in the second spiral,
@@ -13946,7 +14004,9 @@ const Rest = () => {
               hypotenuses of the triangles...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_costan_powers_tan_48_other_wedge.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_costan_powers_tan_48_other_wedge.svg" />
             <Pause />
             <VerticalChunk>
               ...since the size ratio of successive triangles
@@ -13978,9 +14038,13 @@ const Rest = () => {
                 Here are some examples of what we suggest at the
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_costan_powers_cos_snail_other_way.svg" />
+              <Image
+                width="430.0px"
+                src="/images/svg_ch5_ex_costan_powers_cos_snail_other_way.svg" />
               <Pause />
-              <Image src="/images/svg_ch5_ex_costan_powers_cos_towers_other_way.svg" />
+              <Image
+                width="330.0px"
+                src="/images/svg_ch5_ex_costan_powers_cos_towers_other_way.svg" />
               <Pause />
               <VerticalChunk>
                 (To reiterate, this works because the triangles are all similar,
@@ -14008,7 +14072,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cot(\theta)
-                \cot(\theta)
                 $$
               </MathBlock>
               <Pause />
@@ -14018,7 +14081,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \tan(\theta)
                 \tan(\theta)
                 $$
               </MathBlock>
@@ -14036,7 +14098,9 @@ const Rest = () => {
                 E.g.:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_costan_powers_cot_48_big.svg" />
+              <Image
+                width="500.0px"
+                src="/images/svg_ch5_ex_costan_powers_cot_48_big.svg" />
               <Pause />
               <VerticalChunk>
                 Likewise, to illustrate powers of
@@ -14044,7 +14108,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sin(\theta)
                 \sin(\theta)
                 $$
               </MathBlock>
@@ -14064,9 +14127,13 @@ const Rest = () => {
                 snail:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_costan_powers_sin_snail.svg" />
+              <Image
+                width="430.0px"
+                src="/images/svg_ch5_ex_costan_powers_sin_snail.svg" />
               <Pause />
-              <Image src="/images/svg_ch5_ex_costan_powers_sin_snail_other_way.svg" />
+              <Image
+                width="430.0px"
+                src="/images/svg_ch5_ex_costan_powers_sin_snail_other_way.svg" />
               <Pause />
               <VerticalChunk>
                 (Likewise to switch from an illustration of{" "}
@@ -14145,13 +14212,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x)
-              \cos(x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \downarrow
               \downarrow
               $$
             </MathBlock>
@@ -14159,20 +14224,17 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x + 0.1)
-              \cos(x + 0.1)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \downarrow
-              \downarrow
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \,\cos(0.1x + 0.1).
               \,\cos(0.1x + 0.1).
               $$
             </MathBlock>
@@ -14279,13 +14341,11 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(x)
-                \cos(x)
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \downarrow
                 \downarrow
                 $$
               </MathBlock>
@@ -14293,20 +14353,17 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(0.1x)
-                \cos(0.1x)
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
                 \downarrow
-                \downarrow
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \,\cos(0.1(x + 1)) = \cos(0.1x + 0.1).
                 \,\cos(0.1(x + 1)) = \cos(0.1x + 0.1).
                 $$
               </MathBlock>
@@ -14389,7 +14446,9 @@ const Rest = () => {
                 </NoBreak>
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_cos_01x.svg" />
+              <Image
+                width="500.0px"
+                src="/images/svg_ch5_ex_cos_01x.svg" />
               <Pause />
               <VerticalChunk>
                 (The label of the middle box is pasted diagonally
@@ -14410,14 +14469,18 @@ const Rest = () => {
                 additional gluing on the graph:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_cos_01x_2.svg" />
+              <Image
+                width="480.0px"
+                src="/images/svg_ch5_ex_cos_01x_2.svg" />
               <Pause />
               <VerticalChunk>
                 On the other hand, if we perform the same
                 analysis on this alternate three-box sequence...
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_cos_01x_3.svg" />
+              <Image
+                width="480.0px"
+                src="/images/svg_ch5_ex_cos_01x_3.svg" />
               <Pause />
               <VerticalChunk>
                 ...that also computes{" "}
@@ -14431,7 +14494,9 @@ const Rest = () => {
                 we recover our second solution:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_cos_01x_4.svg" />
+              <Image
+                width="480.0px"
+                src="/images/svg_ch5_ex_cos_01x_4.svg" />
             </SolutionNote>
           </Solution>
         </Exercise>
@@ -14500,13 +14565,11 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x)
-              \cos(x)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \downarrow
               \downarrow
               $$
             </MathBlock>
@@ -14514,20 +14577,17 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(x + C)
-              \cos(x + C)
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \downarrow
-              \downarrow
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \cos(Bx + C)
               \cos(Bx + C)
               $$
             </MathBlock>
@@ -14612,13 +14672,11 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(x)
-                \cos(x)
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \downarrow
                 \downarrow
                 $$
               </MathBlock>
@@ -14626,20 +14684,17 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(Bx)
-                \cos(Bx)
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
                 \downarrow
-                \downarrow
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \cos(B(x + C/B)) = \cos(Bx + C)
                 \cos(B(x + C/B)) = \cos(Bx + C)
                 $$
               </MathBlock>
@@ -14850,7 +14905,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \sec(\theta)
-              \sec(\theta)
               $$
             </MathBlock>
             <Pause />
@@ -14864,8 +14918,12 @@ const Rest = () => {
               this, you can't be faulted for missing it):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_one_over_A_secant_construction.svg">
-              <ImageRight src="/images/svg_ch5_ex_one_over_A_secant_construction_cloud.svg" />
+            <Image
+              width="440.0px"
+              src="/images/svg_ch5_ex_one_over_A_secant_construction.svg">
+              <ImageRight
+                width="440.0px"
+                src="/images/svg_ch5_ex_one_over_A_secant_construction_cloud.svg" />
             </Image>
             <Pause />
             <VerticalChunk>
@@ -14892,7 +14950,9 @@ const Rest = () => {
               {" "}axis:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_one_over_A_secant_Agt1.svg" />
+            <Image
+              width="440.0px"
+              src="/images/svg_ch5_ex_one_over_A_secant_Agt1.svg" />
             <Pause />
             <VerticalChunk>
               ...the position obtained is the corresponding
@@ -14907,7 +14967,6 @@ const Rest = () => {
               <Math>
                 $\cos(\theta)\cdot\sec(\theta) = 1$
               </Math>
-              {" "}&amp;#x2705;.
               {" "}&amp;#x2705;.
               If{" "}
               <Math>
@@ -14952,7 +15011,9 @@ const Rest = () => {
               triangles?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_60_tangent.svg" />
+            <Image
+              width="550.0px"
+              src="/images/svg_ch5_ex_60_tangent.svg" />
           </ExerciseStatement>
           <Solution solution_number={41}>
             <VerticalChunk>
@@ -14995,12 +15056,16 @@ const Rest = () => {
               {" "}respectively:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_60_tangent_with_coordinates.svg" />
+            <Image
+              width="550.0px"
+              src="/images/svg_ch5_ex_60_tangent_with_coordinates.svg" />
             <Pause />
             <VerticalChunk>
               But by Exercise 43 this implies that the coordinate
               of the intersectionj of the tangent is
-              <ImageRight src="/images/svg_ch5_ex_60_tangent_sec_cloud.svg" />
+              <ImageRight
+                width="300.0px"
+                src="/images/svg_ch5_ex_60_tangent_sec_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -15015,7 +15080,9 @@ const Rest = () => {
                 $x$
               </Math>
               {" "}axis, and
-              <ImageRight src="/images/svg_ch5_ex_60_tangent_csc_cloud.svg" />
+              <ImageRight
+                width="300.0px"
+                src="/images/svg_ch5_ex_60_tangent_csc_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -15034,7 +15101,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={42}>
-          <ExerciseStatement id="_25_4291">
+          <ExerciseStatement id="_25_1311">
             <VerticalChunk>
               <b>
                 Exercise 42.
@@ -15053,7 +15120,9 @@ const Rest = () => {
               an angled inside wall (all distances in inches):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_floorplan.svg" />
+            <Image
+              width="860.0px"
+              src="/images/svg_ch5_ex_floorplan.svg" />
           </ExerciseStatement>
           <Solution solution_number={42}>
             <VerticalChunk>
@@ -15061,7 +15130,9 @@ const Rest = () => {
               red length, then the blue length, then add 130:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_floorplan_soln1.svg" />
+            <Image
+              width="860.0px"
+              src="/images/svg_ch5_ex_floorplan_soln1.svg" />
             <Pause />
             <VerticalChunk>
               Proceeding, the longer and smaller green lengths
@@ -15078,7 +15149,9 @@ const Rest = () => {
               respectively:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_floorplan_soln2.svg" />
+            <Image
+              width="860.0px"
+              src="/images/svg_ch5_ex_floorplan_soln2.svg" />
             <Pause />
             <VerticalChunk>
               The red length is therefore
@@ -15086,10 +15159,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \begin&#123;align*&#125;
-              &amp;\,\,268 - 8 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk) \\
-              \up&#123;1.6&#125; =&amp;\,\,260 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk)
-              \end&#123;align*&#125;
               \begin&#123;align*&#125;
               &amp;\,\,268 - 8 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk) \\
               \up&#123;1.6&#125; =&amp;\,\,260 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk)
@@ -15103,7 +15172,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \tan(22^\circ\hlfbk)\cdot[260 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk)]
               \tan(22^\circ\hlfbk)\cdot[260 - 112\cdot\sin(25.5^\circ\hlfbk) - 8\cdot\cos(25.5^\circ\hlfbk)]
               $$
             </MathBlock>
@@ -15120,7 +15188,9 @@ const Rest = () => {
             <Pause />
             <VerticalChunk>
               inches, which comes out to
-              <ImageLeft src="/images/svg_ch5_ex_floorplan_computation_cloud.svg" />
+              <ImageLeft
+                width="800.0px"
+                src="/images/svg_ch5_ex_floorplan_computation_cloud.svg" />
             </VerticalChunk>
             <Pause />
             <MathBlock>
@@ -15153,20 +15223,17 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \cos(25.5^\circ) = 0.90258\dots
-                \cos(25.5^\circ) = 0.90258\dots
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
                 \sin(25.5^\circ) = 0.43051\dots
-                \sin(25.5^\circ) = 0.43051\dots
                 $$
               </MathBlock>
               <Pause />
               <MathBlock>
                 $$
-                \tan(22^\circ) = 0.40402\dots
                 \tan(22^\circ) = 0.40402\dots
                 $$
               </MathBlock>
@@ -15194,7 +15261,9 @@ const Rest = () => {
               to Cartesian coordinates”.)
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_opening_door.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_opening_door.svg" />
             <Pause />
             <VerticalChunk>
               And:
@@ -15227,7 +15296,9 @@ const Rest = () => {
               {" "}drawing:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_opening_door_soln1.svg" />
+            <Image
+              width="1.2e3px"
+              src="/images/svg_ch5_ex_opening_door_soln1.svg" />
             <Pause />
             <VerticalChunk>
               (Nb: One can also compute the length marked ‘2’ as
@@ -15313,7 +15384,9 @@ const Rest = () => {
               {" "}digits of accuracy):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_opening_door_overhead.svg" />
+            <Image
+              width="530.0px"
+              src="/images/svg_ch5_ex_opening_door_overhead.svg" />
             <Pause />
             <VerticalChunk>
               Here
@@ -15321,7 +15394,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \arctan
               \arctan
               $$
             </MathBlock>
@@ -15332,7 +15404,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \te&#123;“&#125;\tan^&#123;-1&#125;\te&#123;”&#125;
               \te&#123;“&#125;\tan^&#123;-1&#125;\te&#123;”&#125;
               $$
             </MathBlock>
@@ -15418,7 +15489,9 @@ const Rest = () => {
               the “closed” position, shown by the dotted line?
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_bomb_shelter_door_tru_sizes.svg" />
+            <Image
+              width="530.0px"
+              src="/images/svg_ch5_ex_bomb_shelter_door_tru_sizes.svg" />
           </ExerciseStatement>
           <Solution solution_number={44}>
             <VerticalChunk>
@@ -15453,7 +15526,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_bomb_shelter_door_alpha_x0y0.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_bomb_shelter_door_alpha_x0y0.svg" />
             <Pause />
             <VerticalChunk>
               We can decompose
@@ -15461,7 +15536,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \alpha
               \alpha
               $$
             </MathBlock>
@@ -15488,7 +15562,9 @@ const Rest = () => {
               {" "}as depicted here:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_bomb_shelter_door_alpha_decomposed.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_bomb_shelter_door_alpha_decomposed.svg" />
             <Pause />
             <VerticalChunk>
               By definition of{" "}
@@ -15506,7 +15582,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \gamma = \arctan(y_0/x_0)
-              \gamma = \arctan(y_0/x_0)
               $$
             </MathBlock>
             <Pause />
@@ -15517,7 +15592,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \beta = \arctan(z/\sqrt&#123;r^2 - z^2&#125;)
-              \beta = \arctan(z/\sqrt&#123;r^2 - z^2&#125;)
               $$
             </MathBlock>
             <Pause />
@@ -15527,7 +15601,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \beta = \arctan(z/\sqrt&#123;x_0^2 + y_0^2 - z^2&#125;)
               \beta = \arctan(z/\sqrt&#123;x_0^2 + y_0^2 - z^2&#125;)
               $$
             </MathBlock>
@@ -15565,9 +15638,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \alpha = 90^\circ + \arctan(z/\sqrt&#123;x_0^2 + y_0^2 - z^2&#125;) - \arctan(y_0/x_0)
-              \alpha = 90^\circ + \arctan(z/\sqrt&#123;x_0^2 + y_0^2 - z^2&#125;) - \arctan(y_0/x_0)
               $$
               <ImageRight
+                width="300.0px"
                 src="/images/svg_ch5_ex_bomb_shelter_door_alpha_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
@@ -15610,7 +15683,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_bomb_shelter_annotated.svg" />
+            <Image
+              width="630.0px"
+              src="/images/svg_ch5_ex_bomb_shelter_annotated.svg" />
             <Pause />
             <VerticalChunk>
               The three values of{" "}
@@ -15624,20 +15699,17 @@ const Rest = () => {
             <MathBlock>
               $$
               \alpha = 90^\circ + \arctan(48/\sqrt&#123;60^2 + 30^2 - 48^2&#125;) - \arctan(30/60) = 109.1225\ldots^\circ
-              \alpha = 90^\circ + \arctan(48/\sqrt&#123;60^2 + 30^2 - 48^2&#125;) - \arctan(30/60) = 109.1225\ldots^\circ
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
               \alpha = 90^\circ + \arctan(48/\sqrt&#123;93^2 + 30^2 - 48^2&#125;) - \arctan(30/93) = 101.5410\ldots^\circ
-              \alpha = 90^\circ + \arctan(48/\sqrt&#123;93^2 + 30^2 - 48^2&#125;) - \arctan(30/93) = 101.5410\ldots^\circ
               $$
             </MathBlock>
             <Pause />
             <MathBlock>
               $$
-              \alpha = 90^\circ + \arctan(48/\sqrt&#123;108^2 + 22^2 - 48^2&#125;) - \arctan(22/108) = 104.3033\ldots^\circ
               \alpha = 90^\circ + \arctan(48/\sqrt&#123;108^2 + 22^2 - 48^2&#125;) - \arctan(22/108) = 104.3033\ldots^\circ
               $$
             </MathBlock>
@@ -15728,7 +15800,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_horizontal_projection_sphere_statement.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch5_ex_horizontal_projection_sphere_statement.svg" />
           </ExerciseStatement>
           <Solution solution_number={45}>
             <VerticalChunk>
@@ -15737,7 +15811,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \sec(\theta) \cdot \cos(\theta) = 1
               \sec(\theta) \cdot \cos(\theta) = 1
               $$
             </MathBlock>
@@ -15750,9 +15823,9 @@ const Rest = () => {
             <MathBlock>
               $$
               \sec(\theta)
-              \sec(\theta)
               $$
               <ImageRight
+                width="560.0px"
                 src="/images/svg_ch5_ex_horizontal_projection_sphere_sec_cloud.svg"
                 offset_x="9em"
                 compensate_offset_x_for_large_text_columns={true} />
@@ -15767,7 +15840,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos(\theta)
-              \cos(\theta)
               $$
             </MathBlock>
             <Pause />
@@ -15775,7 +15847,9 @@ const Rest = () => {
               ...as depicted in this...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_horizontal_projection_sphere_cos_explanation.svg" />
+            <Image
+              width="560.0px"
+              src="/images/svg_ch5_ex_horizontal_projection_sphere_cos_explanation.svg" />
             <Pause />
             <VerticalChunk>
               ...sketch, and because the
@@ -15813,7 +15887,9 @@ const Rest = () => {
               smallest area slice:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_pez_sphere_statement.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_pez_sphere_statement.svg" />
           </ExerciseStatement>
           <Solution solution_number={46}>
             <VerticalChunk>
@@ -15855,7 +15931,9 @@ const Rest = () => {
                 hugging the sphere, by Exercise 46, and because
                 the area of a cylinder slice only depends on its
                 height.
-                <ImageRight src="/images/svg_ch5_ex_pez_sphere_cloud.svg" />
+                <ImageRight
+                  width="900.0px"
+                  src="/images/svg_ch5_ex_pez_sphere_cloud.svg" />
               </VerticalChunk>
             </SolutionNote>
             <Pause />
@@ -15941,7 +16019,9 @@ const Rest = () => {
               {" "}by Exercise 46:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sphere_area.svg" />
+            <Image
+              width="500.0px"
+              src="/images/svg_ch5_ex_sphere_area.svg" />
             <Pause />
             <VerticalChunk>
               (Namely,
@@ -15985,7 +16065,9 @@ const Rest = () => {
               sphere as being made up of many cones:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sphere_volume_idea.svg" />
+            <Image
+              width="240.0px"
+              src="/images/svg_ch5_ex_sphere_volume_idea.svg" />
             <Pause />
             <VerticalChunk>
               When we add up the volume
@@ -16086,7 +16168,9 @@ const Rest = () => {
               </VerticalChunk>
             </SolutionNote>
             <Pause />
-            <Image src="/images/svg_ch5_ex_sphere_tetrahedrons.svg">
+            <Image
+              width="240.0px"
+              src="/images/svg_ch5_ex_sphere_tetrahedrons.svg">
               <VerticalChunk>
                 Note that a cone with a triangular base is
                 just a
@@ -16094,7 +16178,9 @@ const Rest = () => {
               <Pause />
               <CentralDisplayItalic>
                 tetrahedron
-                <ImageLeft src="/images/svg_ch5_ex_sphere_volume_cones_cloud.svg" />
+                <ImageLeft
+                  width="600.0px"
+                  src="/images/svg_ch5_ex_sphere_volume_cones_cloud.svg" />
               </CentralDisplayItalic>
               <Pause />
               <VerticalChunk>
@@ -16152,7 +16238,9 @@ const Rest = () => {
                 {" "}is the height of the tetrahedron):
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch5_ex_sphere_volume_closeup.svg" />
+              <Image
+                width="450.0px"
+                src="/images/svg_ch5_ex_sphere_volume_closeup.svg" />
               <Pause />
               <VerticalChunk>
                 One observes that
@@ -16326,7 +16414,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
                 $$
               </MathBlock>
               <Pause />
@@ -16387,9 +16474,9 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;A_i r
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;A_i r
                 $$
                 <ImageRight
+                  width="300.0px"
                   src="/images/svg_ch5_ex_sphere_volume_AiBi_cloud.svg"
                   offset_x="5em"
                   compensate_offset_x_for_large_text_columns={true} />
@@ -16402,9 +16489,9 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;\cdot 0.99999\cdot A_i\cdot 0.99999\cdot r
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;\cdot 0.99999\cdot A_i\cdot 0.99999\cdot r
                 $$
                 <ImageLeft
+                  width="500.0px"
                   src="/images/svg_ch5_ex_sphere_volume_AiBi_other_cloud.svg"
                   offset_x="2.5em"
                   compensate_offset_x_for_large_text_columns={true} />
@@ -16416,7 +16503,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sum_&#123;i=1&#125;^N A_i = A
                 \sum_&#123;i=1&#125;^N A_i = A
                 $$
               </MathBlock>
@@ -16433,7 +16519,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
                 $$
               </MathBlock>
               <Pause />
@@ -16444,7 +16529,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;A_ir = &#123;1\over 3&#125;\cdot r\cdot \sum_&#123;i=1&#125;^N A_i = &#123;1\over 3&#125;Ar
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;A_ir = &#123;1\over 3&#125;\cdot r\cdot \sum_&#123;i=1&#125;^N A_i = &#123;1\over 3&#125;Ar
                 $$
               </MathBlock>
               <Pause />
@@ -16454,7 +16538,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;\cdot 0.99999\cdot A_i\cdot 0.99999\cdot r = (0.99999)^2&#123;1\over 3&#125;Ar
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;\cdot 0.99999\cdot A_i\cdot 0.99999\cdot r = (0.99999)^2&#123;1\over 3&#125;Ar
                 $$
               </MathBlock>
@@ -16503,7 +16586,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;B_ih_i
                 $$
               </MathBlock>

@@ -26,8 +26,10 @@ const Article = () => {
   return (<>
       <Chapter
         number={3}
+        largest_centered_image_width="2.0e3"
+        largest_side_image_width="700.0"
         title="Functions"
-        id="_15_6597">
+        id="_15_7000">
         <SectionsBreadcrumbs>
           <BreadcrumbItem
             class="breadcrumb"
@@ -184,7 +186,9 @@ const Article = () => {
             “input tube” and an “output tube”:
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_f_box.svg" />
+          <Image
+            width="380.0px"
+            src="/images/svg_ch3_f_box.svg" />
           <Pause />
           <VerticalChunk>
             An input goes in via the input tube, is
@@ -427,7 +431,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \lambda&#123;&#125;x.x^2
-          \lambda&#123;&#125;x.x^2
           $$
         </MathBlock>
         <Pause />
@@ -450,7 +453,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \lambda&#123;&#125;z.z^2
-          \lambda&#123;&#125;z.z^2
           $$
         </MathBlock>
         <Pause />
@@ -466,7 +468,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \Huge \lambda
           \Huge \lambda
           $$
         </MathBlock>
@@ -584,11 +585,6 @@ const Rest = () => {
           \vdots &amp; \vdots\\
           \ldots &amp; \te&#123;$\ldots$&#125;
           \end&#123;cases&#125;
-          \ldots &amp; \te&#123;if $\ldots$&#125;\\
-          \ldots &amp; \te&#123;if $\ldots$&#125;\\
-          \vdots &amp; \vdots\\
-          \ldots &amp; \te&#123;$\ldots$&#125;
-          \end&#123;cases&#125;
           $$
         </MathBlock>
         <Pause />
@@ -608,11 +604,6 @@ const Rest = () => {
         <MathBlock>
           $$
           g(x) = \begin&#123;cases&#125;
-          \ldots &amp; \te&#123;if $\ldots$&#125;\\
-          \ldots &amp; \te&#123;if $\ldots$&#125;\\
-          \vdots &amp; \vdots\\
-          \ldots &amp; \te&#123;$\ldots$&#125;
-          \end&#123;cases&#125;
           \ldots &amp; \te&#123;if $\ldots$&#125;\\
           \ldots &amp; \te&#123;if $\ldots$&#125;\\
           \vdots &amp; \vdots\\
@@ -650,11 +641,6 @@ const Rest = () => {
             2.5\up&#123;1.1&#125; &amp; \te&#123;if $x = 1$&#125;,\\
             \te&#123;undefined&#125;\up&#123;1.1&#125; &amp; \te&#123;if $x \ne 0, 1$&#125;
             \end&#123;cases&#125;
-            \te&#123;VX-11/78A&#125;(x) = \begin&#123;cases&#125;
-            3.5 &amp; \te&#123;if $x = 0$&#125;,\\
-            2.5\up&#123;1.1&#125; &amp; \te&#123;if $x = 1$&#125;,\\
-            \te&#123;undefined&#125;\up&#123;1.1&#125; &amp; \te&#123;if $x \ne 0, 1$&#125;
-            \end&#123;cases&#125;
             $$
           </MathBlock>
           <Pause />
@@ -665,7 +651,6 @@ const Rest = () => {
           <MathBlock>
             $$
             \te&#123;VX-11/78A&#125;(0) = 3.5,
-            \te&#123;VX-11/78A&#125;(0) = 3.5,
             $$
           </MathBlock>
           <Pause />
@@ -675,7 +660,6 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \te&#123;VX-11/78A&#125;(1) = 2.5,
             \te&#123;VX-11/78A&#125;(1) = 2.5,
             $$
           </MathBlock>
@@ -796,14 +780,18 @@ const Rest = () => {
           For example, here is a graph of VX-11/78A:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_vx1178A.svg" />
+        <Image
+          width="387.0px"
+          src="/images/svg_ch3_vx1178A.svg" />
         <Pause />
         <VerticalChunk>
           The graph has only two points, because VX-78/11A
           is defined at only two values. One point is...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_ch_vx1178A_@0_with_cors.svg" />
+        <Image
+          width="377.288px"
+          src="/images/svg_ch3_ch_vx1178A_@0_with_cors.svg" />
         <Pause />
         <VerticalChunk>
           <NoBreak>
@@ -828,7 +816,9 @@ const Rest = () => {
           {" "}while the other point is...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_ch_vx1178A_@1_with_cors.svg" />
+        <Image
+          width="377.288px"
+          src="/images/svg_ch3_ch_vx1178A_@1_with_cors.svg" />
         <Pause />
         <VerticalChunk>
           <NoBreak>
@@ -880,7 +870,9 @@ const Rest = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_ch_x_squared_1.svg" />
+          <Image
+            width="520.0px"
+            src="/images/svg_ch3_ch_x_squared_1.svg" />
           <Pause />
           <VerticalChunk>
             Among all the points on this graph that we
@@ -894,7 +886,9 @@ const Rest = () => {
             </NoBreak>
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_ch_x_squared_2.svg" />
+          <Image
+            width="520.0px"
+            src="/images/svg_ch3_ch_x_squared_2.svg" />
           <Pause />
           <VerticalChunk>
             ...which finds itself on the graph, namely,
@@ -911,6 +905,7 @@ const Rest = () => {
               .
             </NoBreak>
             <ImageLeft
+              width="500.723px"
               offset_y="0em"
               line={-1}
               src="/images/svg_ch3_0.5625_cloud.svg" />
@@ -940,7 +935,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \dom\, f
-          \dom\, f
           $$
         </MathBlock>
         <Pause />
@@ -968,7 +962,6 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \dom\,\rt&#123;0.1&#125; \te&#123;VX-11/78A&#125; = \left\&#123; 0\rt&#123;0.1&#125;, 1 \right\&#125;
             \dom\,\rt&#123;0.1&#125; \te&#123;VX-11/78A&#125; = \left\&#123; 0\rt&#123;0.1&#125;, 1 \right\&#125;
             $$
           </MathBlock>
@@ -1016,11 +1009,6 @@ const Rest = () => {
             0             &amp; \te&#123;if $x \leq 0$ or $x \geq 1$&#125;,\\
             1 - x\up&#123;1.1&#125; &amp; \te&#123;if $0 &lt; x &lt; 1$&#125;
             \end&#123;cases&#125;
-            \te&#123;DM-1700&#125;(x) =
-            \begin&#123;cases&#125;
-            0             &amp; \te&#123;if $x \leq 0$ or $x \geq 1$&#125;,\\
-            1 - x\up&#123;1.1&#125; &amp; \te&#123;if $0 &lt; x &lt; 1$&#125;
-            \end&#123;cases&#125;
             $$
           </MathBlock>
           <Pause />
@@ -1030,7 +1018,6 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \dom\,\rt&#123;0.1&#125; \te&#123;DM-1700&#125; = \rr
             \dom\,\rt&#123;0.1&#125; \te&#123;DM-1700&#125; = \rr
             $$
           </MathBlock>
@@ -1078,9 +1065,6 @@ const Rest = () => {
           <Pause />
           <MathBlock>
             $$
-            \begin&#123;align&#125;
-            \dom\, g &amp;\,=\, [1, \infty)
-            \end&#123;align&#125;
             \begin&#123;align&#125;
             \dom\, g &amp;\,=\, [1, \infty)
             \end&#123;align&#125;
@@ -1155,7 +1139,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \dom f \subseteq \rr
-          \dom f \subseteq \rr
           $$
         </MathBlock>
         <Pause />
@@ -1174,7 +1157,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \&#123;f(x) : x \in \dom f\&#125; \subseteq \rr
           \&#123;f(x) : x \in \dom f\&#125; \subseteq \rr
           $$
         </MathBlock>
@@ -1208,7 +1190,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \dom f \subseteq A
-          \dom f \subseteq A
           $$
         </MathBlock>
         <Pause />
@@ -1230,7 +1211,6 @@ const Rest = () => {
         <Pause />
         <MathBlock>
           $$
-          \&#123;f(x) : x \in \dom f\&#125; \subseteq B
           \&#123;f(x) : x \in \dom f\&#125; \subseteq B
           $$
         </MathBlock>
@@ -1317,7 +1297,9 @@ const Rest = () => {
           For example, this particular graph...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_ch_wiggle_graph.svg" />
+        <Image
+          width="365.0px"
+          src="/images/svg_ch3_ch_wiggle_graph.svg" />
         <Pause />
         <VerticalChunk>
           is a function graph (or locally at least, from
@@ -1326,8 +1308,11 @@ const Rest = () => {
           graph...
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_ch_circle.svg">
+        <Image
+          width="330.0px"
+          src="/images/svg_ch3_ch_circle.svg">
           <ImageRight
+            width="400.0px"
             offset_x="2em"
             src="/images/svg_ch3_ch_crossing_circle_cloud.svg" />
         </Image>
@@ -1344,6 +1329,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <Image
+          width="430.0px"
           class="pt-4 mb-3"
           src="/images/svg_ch3_ch_empty_circle.svg" />
         <Pause />
@@ -1370,7 +1356,9 @@ const Rest = () => {
             {" "}of unit radius...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_ch_upper_semicircle.svg" />
+          <Image
+            width="410.0px"
+            src="/images/svg_ch3_ch_upper_semicircle.svg" />
           <Pause />
           <VerticalChunk>
             ...passes the vertical line test, and, hence,
@@ -1387,14 +1375,18 @@ const Rest = () => {
             This graph defines a function...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_ch_factory_function.svg" />
+          <Image
+            width="540.0px"
+            src="/images/svg_ch3_ch_factory_function.svg" />
           <Pause />
           <VerticalChunk>
             ...because it passes the vertical line test,
             while this graph does not define a function...
           </VerticalChunk>
           <Pause />
-          <Image src="/images/svg_ch3_factory_nonfunction.svg" />
+          <Image
+            width="540.0px"
+            src="/images/svg_ch3_factory_nonfunction.svg" />
           <Pause />
           <VerticalChunk>
             ...because it does{" "}
@@ -1431,7 +1423,6 @@ const Rest = () => {
         <MathBlock>
           $$
           \Large x \ra 0^x
-          \Large x \ra 0^x
           $$
         </MathBlock>
         <Pause />
@@ -1442,9 +1433,6 @@ const Rest = () => {
         <MathBlock>
           $$
           0^x =
-          \begin&#123;cases&#125; 0 &amp; \te&#123;if &#125; x &gt; 0\\
-          1 &amp; \te&#123;if &#125; x = 0\\
-          \te&#123;undefined&#125; &amp; \te&#123;if &#125;x &amp;lt; 0 \end&#123;cases&#125;
           \begin&#123;cases&#125; 0 &amp; \te&#123;if &#125; x &gt; 0\\
           1 &amp; \te&#123;if &#125; x = 0\\
           \te&#123;undefined&#125; &amp; \te&#123;if &#125;x &amp;lt; 0 \end&#123;cases&#125;
@@ -1467,7 +1455,9 @@ const Rest = () => {
           {" "}as pictured here:
         </VerticalChunk>
         <Pause />
-        <Image src="/images/svg_ch3_zero_to_the_x.svg" />
+        <Image
+          width="500.0px"
+          src="/images/svg_ch3_zero_to_the_x.svg" />
         <Pause />
         <VerticalChunk>
           (Pretty cool, no?)
@@ -1900,16 +1890,6 @@ const Rest = () => {
           \te&#123;4&#125; &amp; \te&#123;quartic&#125; &amp; 1 - x^4\\
           \te&#123;5&#125; &amp; \te&#123;quintic&#125; &amp; x^5
           \end&#123;array&#125;
-          \begin&#123;array&#125;&#123;c|c|c&#125;
-          \,\,\,\,\te&#123;degree&#125;\,\,\,\, &amp; \te&#123;name&#125; &amp; \,\,\,\,\te&#123;example&#125;\,\,\,\,\Rule&#123;0pt&#125;&#123;0.8em&#125;&#123;0.5em&#125; \\ \hline
-          -\infty &amp; \te&#123;zero&#125; &amp; 0\Rule&#123;0pt&#125;&#123;1.1em&#125;&#123;0.0em&#125;\\
-          \te&#123;0&#125; &amp; \te&#123;constant&#125; &amp; 1 + \sqrt&#123;5&#125;\\
-          \te&#123;1&#125; &amp; \te&#123;affine&#125; &amp; 10x - 1\\
-          \te&#123;2&#125; &amp; \,\,\,\,\te&#123;quadratic&#125;\,\,\,\, &amp; x^2 - 1\\
-          \te&#123;3&#125; &amp; \te&#123;cubic&#125; &amp; x^3 - 1\\
-          \te&#123;4&#125; &amp; \te&#123;quartic&#125; &amp; 1 - x^4\\
-          \te&#123;5&#125; &amp; \te&#123;quintic&#125; &amp; x^5
-          \end&#123;array&#125;
           $$
         </MathBlock>
         <Pause />
@@ -1960,6 +1940,7 @@ const Rest = () => {
         </VerticalChunk>
         <Pause />
         <Image
+          width="500.0px"
           src="/images/svg_ch3_ch_affine_linear_cloud.svg"
           style="margin-top:-0.6em;margin-bottom:-0.4em" />
       </Section>
@@ -2008,6 +1989,7 @@ const Rest = () => {
           a_7x^7 + a_6x^6 + a_5x^5 + a_4x^4 + a_3x^3 - a_2x^2 + a_1x + a_0
           $$
           <ImageRight
+            width="700.0px"
             src="/images/svg_ch3_ch_quadratic_linear_constant_cloud.svg"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
@@ -2055,6 +2037,7 @@ const Rest = () => {
           x^1 = x
           $$
           <ImageRight
+            width="700.0px"
             offset_x="-0.1em"
             offset_y="0.2em"
             src="/images/svg_ch3_ch_a1_x1_cloud.svg"
@@ -2077,6 +2060,7 @@ const Rest = () => {
           x^0 = 1
           $$
           <ImageRight
+            width="700.0px"
             offset_y="0.2em"
             offset_x="0em"
             src="/images/svg_ch3_ch_a0_x0_cloud.svg"
@@ -2118,7 +2102,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              x \ra \begin&#123;cases&#125; x &amp; \te&#123;if $x \geq 0$,&#125;\\ -x\!\!\up&#123;1.2&#125; &amp; \te&#123;if $x &lt; 0$&#125;\end&#123;cases&#125;
               x \ra \begin&#123;cases&#125; x &amp; \te&#123;if $x \geq 0$,&#125;\\ -x\!\!\up&#123;1.2&#125; &amp; \te&#123;if $x &lt; 0$&#125;\end&#123;cases&#125;
               $$
             </MathBlock>
@@ -2275,7 +2258,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={4}>
-          <ExerciseStatement id="_7_3499">
+          <ExerciseStatement id="_7_8422">
             <VerticalChunk>
               <b>
                 Exercise 4.
@@ -2297,7 +2280,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \lfloor x \rfloor,
               \lfloor x \rfloor,
               $$
             </MathBlock>
@@ -2353,7 +2335,9 @@ const Rest = () => {
               {" "}in your formula:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_factory_roof_graph.svg" />
+            <Image
+              width="580.0px"
+              src="/images/svg_ch3_ex_factory_roof_graph.svg" />
           </ExerciseStatement>
           <Solution solution_number={4}>
             <VerticalChunk>
@@ -2383,7 +2367,9 @@ const Rest = () => {
               staircase-shaped graph:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_factory_roof_floor_graph.svg" />
+            <Image
+              width="580.0px"
+              src="/images/svg_ch3_ex_factory_roof_floor_graph.svg" />
             <Pause />
             <VerticalChunk>
               (For example,{" "}
@@ -2428,7 +2414,9 @@ const Rest = () => {
               roof” graph in the statement, are equal:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_factory_roof_with_displacement_arrows.svg" />
+            <Image
+              width="450.0px"
+              src="/images/svg_ch3_ex_factory_roof_with_displacement_arrows.svg" />
             <Pause />
             <VerticalChunk>
               The red dot to the left of{" "}
@@ -2497,7 +2485,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={5}>
-          <ExerciseStatement id="_8_6908">
+          <ExerciseStatement id="_8_6764">
             <VerticalChunk>
               <b>
                 Exercise 5.
@@ -2516,7 +2504,9 @@ const Rest = () => {
               {" "}as a building block:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_factory_roof_stretched.svg" />
+            <Image
+              width="680.0px"
+              src="/images/svg_ch3_ex_factory_roof_stretched.svg" />
           </ExerciseStatement>
           <Solution solution_number={5}>
             <VerticalChunk>
@@ -2531,14 +2521,16 @@ const Rest = () => {
               </NoBreak>
               {" "}apply the function from{" "}
               <InChapterLink
-                href="/article/chapter3?id=_7_3499"
+                href="/article/chapter3?id=_7_8422"
                 class="handle-in-chapter-link">
                 Exercise 4
               </InChapterLink>
               ):
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_factory_roof_stretched_solution.svg" />
+            <Image
+              width="680.0px"
+              src="/images/svg_ch3_ex_factory_roof_stretched_solution.svg" />
             <Pause />
             <VerticalChunk>
               Indeed, the two graphs featured above differ
@@ -2584,7 +2576,7 @@ const Rest = () => {
               {" "}
               the formula for the function from{" "}
               <InChapterLink
-                href="/article/chapter3?id=_7_3499"
+                href="/article/chapter3?id=_7_8422"
                 class="handle-in-chapter-link">
                 Exercise 4
               </InChapterLink>
@@ -2651,7 +2643,9 @@ const Rest = () => {
               “input tube” and “output tube” sides of a function...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_f_box_inverted.svg" />
+            <Image
+              width="380.0px"
+              src="/images/svg_ch3_f_box_inverted.svg" />
             <Pause />
             <VerticalChunk>
               ...(compared to the drawing at the top of the
@@ -2731,7 +2725,9 @@ const Rest = () => {
               like so:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_f_box_g_box.svg" />
+            <Image
+              width="470.0px"
+              src="/images/svg_ch3_ex_f_box_g_box.svg" />
             <Pause />
             <VerticalChunk>
               In other words,{" "}
@@ -2753,7 +2749,9 @@ const Rest = () => {
               (To be perfectly clear,
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_f_circle_g_equals.svg" />
+            <Image
+              width="640.0px"
+              src="/images/svg_ch3_ex_f_circle_g_equals.svg" />
             <Pause />
             <VerticalChunk>
               <Math>
@@ -2802,7 +2800,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \,&#123;(f \circ g)(x) = f(g(x))&#125;.
               \,&#123;(f \circ g)(x) = f(g(x))&#125;.
               $$
             </MathBlock>
@@ -2956,7 +2953,9 @@ const Rest = () => {
               like these:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_three_factories.svg" />
+            <Image
+              width="620.0px"
+              src="/images/svg_ch3_ex_three_factories.svg" />
           </ExerciseStatement>
           <Solution solution_number={6}>
             <VerticalChunk>
@@ -2987,7 +2986,7 @@ const Rest = () => {
               because all we have to do is to multiply
               {" "}
               <InChapterLink
-                href="/article/chapter3?id=_8_6908"
+                href="/article/chapter3?id=_8_6764"
                 class="handle-in-chapter-link">
                 Exercise 5
               </InChapterLink>
@@ -3012,7 +3011,7 @@ const Rest = () => {
             <VerticalChunk>
               because the problem is similar to{" "}
               <InChapterLink
-                href="/article/chapter3?id=_8_6908"
+                href="/article/chapter3?id=_8_6764"
                 class="handle-in-chapter-link">
                 Exercise 5
               </InChapterLink>
@@ -3029,13 +3028,17 @@ const Rest = () => {
               here:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_three_factories_sol1.svg" />
+            <Image
+              width="620.0px"
+              src="/images/svg_ch3_ex_three_factories_sol1.svg" />
             <Pause />
             <VerticalChunk>
               And that formula is...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_three_factories_sol2.svg" />
+            <Image
+              width="620.0px"
+              src="/images/svg_ch3_ex_three_factories_sol2.svg" />
             <Pause />
             <VerticalChunk>
               ...iiiiiiiS...
@@ -3153,7 +3156,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \cos \dblcol \rr \ra \rr
-              \cos \dblcol \rr \ra \rr
               $$
             </MathBlock>
             <Pause />
@@ -3169,7 +3171,9 @@ const Rest = () => {
               is a function whose graph looks like so...
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_cosine.svg" />
+            <Image
+              width="1044.726px"
+              src="/images/svg_ch3_cosine.svg" />
             <Pause />
             <VerticalChunk>
               ...then does the function...
@@ -3185,7 +3189,6 @@ const Rest = () => {
               ...have a graph that looks like a bunch of very tight
               bumps, or, instead, very flat{" "}
               <i>
-                &amp;
                 &amp;
               </i>
               {" "}spaced-out bumps??
@@ -3207,7 +3210,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_ex_cosine_1000x.svg" />
+            <Image
+              width="1043.52px"
+              src="/images/svg_ch3_ex_cosine_1000x.svg" />
             <Pause />
             <VerticalChunk>
               By the first step, a
@@ -3277,7 +3282,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={8}>
-          <ExerciseStatement id="_9_7253">
+          <ExerciseStatement id="_9_6608">
             <VerticalChunk>
               <b>
                 Exercise 8.
@@ -3288,7 +3293,6 @@ const Rest = () => {
             <div style="font-size:1.1em;margin:1em 0em;">
               <MathBlock>
                 $$
-                \tag&#123;A&#125;(f \circ (g \circ h))(x)
                 \tag&#123;A&#125;(f \circ (g \circ h))(x)
                 $$
               </MathBlock>
@@ -3309,7 +3313,6 @@ const Rest = () => {
             <div style="font-size:1.1em;margin:1em 0em;">
               <MathBlock>
                 $$
-                \tag&#123;AA&#125;(r \circ s)(x) = r(s(x))
                 \tag&#123;AA&#125;(r \circ s)(x) = r(s(x))
                 $$
               </MathBlock>
@@ -3395,6 +3398,7 @@ const Rest = () => {
               {" "}
               in (AA) yields
               <ImageLeft
+                width="400.0px"
                 offset_x="1em"
                 y_anchor={1}
                 popup={true}
@@ -3450,7 +3454,9 @@ const Rest = () => {
               into a single string of equalities:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_first_victim_second_victim_1_1em.svg" />
+            <Image
+              width="430.0px"
+              src="/images/svg_first_victim_second_victim_1_1em.svg" />
           </Solution>
         </Exercise>
         <Exercise exercise_number={9}>
@@ -3462,7 +3468,7 @@ const Rest = () => {
               {" "}
               Same question as{" "}
               <InChapterLink
-                href="/article/chapter3?id=_9_7253"
+                href="/article/chapter3?id=_9_6608"
                 class="handle-in-chapter-link">
                 Exercise 8
               </InChapterLink>
@@ -3496,7 +3502,9 @@ const Rest = () => {
               world:
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_inner_outer_1_1em.svg" />
+            <Image
+              width="330.0px"
+              src="/images/svg_inner_outer_1_1em.svg" />
             <Pause />
             <VerticalChunk>
               So the first step is...
@@ -3784,7 +3792,9 @@ const Rest = () => {
               <Pause />
               <CentralDisplayItalic>
                 associativity
-                <ImageRight src="/images/svg_ch3_ex_associativity_cloud.svg" />
+                <ImageRight
+                  width="550.0px"
+                  src="/images/svg_ch3_ex_associativity_cloud.svg" />
               </CentralDisplayItalic>
               <Pause />
               <VerticalChunk>
@@ -3801,14 +3811,15 @@ const Rest = () => {
                 One of the best ways to explain{" "}
                 <i>
                   &amp;
-                  &amp;
                 </i>
                 {" "}understand
                 the associativity of function composition
                 uses this picture:
               </VerticalChunk>
               <Pause />
-              <Image src="/images/svg_ch3_truth_be_said.svg" />
+              <Image
+                width="800.0px"
+                src="/images/svg_ch3_truth_be_said.svg" />
               <Pause />
               <VerticalChunk>
                 In the above{" "}
@@ -4192,7 +4203,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={10}>
-          <ExerciseStatement id="_10_2820">
+          <ExerciseStatement id="_10_7744">
             <VerticalChunk>
               <b>
                 Exercise 10.
@@ -4258,11 +4269,6 @@ const Rest = () => {
               &amp;= x^2 + (2\cdot 5)x + 5^2 \\
               &amp;= \up&#123;1.4&#125; x^2 + 10x + 25
               \end&#123;align&#125;
-              \begin&#123;align&#125;
-              \,\,\,\,(x + 5)^2
-              &amp;= x^2 + (2\cdot 5)x + 5^2 \\
-              &amp;= \up&#123;1.4&#125; x^2 + 10x + 25
-              \end&#123;align&#125;
               $$
             </MathBlock>
             <Pause />
@@ -4290,14 +4296,13 @@ const Rest = () => {
               {" "}
               Solve{" "}
               <InChapterLink
-                href="/article/chapter3?id=_10_2820"
+                href="/article/chapter3?id=_10_7744"
                 class="handle-in-chapter-link">
                 Exercise 10
               </InChapterLink>
               {" "}using
               algebra{" "}
               <i>
-                &amp;
                 &amp;
               </i>
               {" "}variables.
@@ -4534,7 +4539,7 @@ const Rest = () => {
               </NoBreak>
               {" "}{" "}
               <InChapterLink
-                href="/article/chapter3?id=_10_2820"
+                href="/article/chapter3?id=_10_7744"
                 class="handle-in-chapter-link">
                 Exercise 10
               </InChapterLink>
@@ -4561,7 +4566,7 @@ const Rest = () => {
             <VerticalChunk>
               by{" "}
               <InChapterLink
-                href="/article/chapter3?id=_10_2820"
+                href="/article/chapter3?id=_10_7744"
                 class="handle-in-chapter-link">
                 Exercise 10
               </InChapterLink>
@@ -4652,7 +4657,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \,x + 5 = \pm\sqrt&#123;55&#125;
-              \,x + 5 = \pm\sqrt&#123;55&#125;
               $$
             </MathBlock>
             <Pause />
@@ -4663,7 +4667,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \,x = -5 \pm\sqrt&#123;55&#125;
-              \,x = -5 \pm\sqrt&#123;55&#125;
               $$
             </MathBlock>
             <Pause />
@@ -4673,7 +4676,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={14}>
-          <ExerciseStatement id="_11_2067">
+          <ExerciseStatement id="_11_7061">
             <VerticalChunk>
               <b>
                 Exercise 14.
@@ -5175,7 +5178,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={15}>
-          <ExerciseStatement id="_12_5373">
+          <ExerciseStatement id="_12_9406">
             <VerticalChunk>
               <b>
                 Exercise 15.
@@ -5579,7 +5582,7 @@ const Rest = () => {
               {" "}by the following
               sequence of transformations (cf.{" "}
               <InChapterLink
-                href="/article/chapter3?id=_11_2067"
+                href="/article/chapter3?id=_11_7061"
                 class="handle-in-chapter-link">
                 Exercise 14
               </InChapterLink>
@@ -5611,7 +5614,7 @@ const Rest = () => {
               (We put the vertical translation first.)
               By{" "}
               <InChapterLink
-                href="/article/chapter3?id=_12_5373"
+                href="/article/chapter3?id=_12_9406"
                 class="handle-in-chapter-link">
                 Exercise 15
               </InChapterLink>
@@ -5625,7 +5628,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \tag&#123;A&#125;
               \tag&#123;A&#125;
               x = -&#123;B\over 2A&#125; \pm \sqrt&#123;B^2 \over 4A^2&#125;
               $$
@@ -5648,7 +5650,6 @@ const Rest = () => {
             <MathBlock>
               $$
               \pm \sqrt&#123;B^2 \over 4A^2&#125; = \pm &#123;B \over 2A&#125;
-              \pm \sqrt&#123;B^2 \over 4A^2&#125; = \pm &#123;B \over 2A&#125;
               $$
             </MathBlock>
             <Pause />
@@ -5658,7 +5659,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \left(&#123;B \over 2A&#125;\right)^&#123;\!2&#125; = &#123;B^2 \over 4A^2&#125;
               \left(&#123;B \over 2A&#125;\right)^&#123;\!2&#125; = &#123;B^2 \over 4A^2&#125;
               $$
             </MathBlock>
@@ -5815,7 +5815,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={18}>
-          <ExerciseStatement id="_13_943">
+          <ExerciseStatement id="_13_8227">
             <VerticalChunk>
               <b>
                 Exercise 18.
@@ -6053,7 +6053,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise exercise_number={19}>
-          <ExerciseStatement id="_14_6427">
+          <ExerciseStatement id="_14_4354">
             <VerticalChunk>
               <b>
                 Exercise 19.
@@ -6131,7 +6131,7 @@ const Rest = () => {
             <VerticalChunk>
               and, similarly to{" "}
               <InChapterLink
-                href="/article/chapter3?id=_11_2067"
+                href="/article/chapter3?id=_11_7061"
                 class="handle-in-chapter-link">
                 Exercise 14
               </InChapterLink>
@@ -6150,7 +6150,6 @@ const Rest = () => {
             <Pause />
             <MathBlock>
               $$
-              \Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;
               \Big(x + &#123;B \over 2A&#125;\Big)^2 - &#123;B^2 \over 4A^2&#125;
               $$
             </MathBlock>
@@ -6195,7 +6194,7 @@ const Rest = () => {
               </NoBreak>
               {" "}of{" "}
               <InChapterLink
-                href="/article/chapter3?id=_11_2067"
+                href="/article/chapter3?id=_11_7061"
                 class="handle-in-chapter-link">
                 Exercise 14
               </InChapterLink>
@@ -6205,7 +6204,7 @@ const Rest = () => {
             <VerticalChunk indent={true}>
               By direct analogy with{" "}
               <InChapterLink
-                href="/article/chapter3?id=_11_2067"
+                href="/article/chapter3?id=_11_7061"
                 class="handle-in-chapter-link">
                 Exercise 14
               </InChapterLink>
@@ -6413,7 +6412,7 @@ const Rest = () => {
             <VerticalChunk>
               by{" "}
               <InChapterLink
-                href="/article/chapter3?id=_12_5373"
+                href="/article/chapter3?id=_12_9406"
                 class="handle-in-chapter-link">
                 Exercise 15
               </InChapterLink>
@@ -6439,7 +6438,6 @@ const Rest = () => {
               <MathBlock>
                 $$
                 \pm\sqrt&#123;B^2 - 4AC \over 4A^2&#125; = \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;
-                \pm\sqrt&#123;B^2 - 4AC \over 4A^2&#125; = \pm &#123;\sqrt&#123;B^2 - 4AC&#125; \over 2A&#125;
                 $$
               </MathBlock>
               <Pause />
@@ -6449,7 +6447,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \pm E = \pm F
                 \pm E = \pm F
                 $$
               </MathBlock>
@@ -6499,7 +6496,7 @@ const Rest = () => {
               <VerticalChunk>
                 as briefly flashed by, e.g., in{" "}
                 <a
-                  href="/article/chapter1?id=_5_8057"
+                  href="/article/chapter1?id=_5_5449"
                   class="handle-out-of-chapter-link">
                   Chapter 1
                 </a>
@@ -6528,7 +6525,6 @@ const Rest = () => {
               <Pause />
               <MathBlock>
                 $$
-                \sqrt&#123;B^2 - 4AC \over 4A^2&#125;
                 \sqrt&#123;B^2 - 4AC \over 4A^2&#125;
                 $$
               </MathBlock>
@@ -6574,7 +6570,6 @@ const Rest = () => {
               Summon your senses of extrapolation{" "}
               <i>
                 &amp;
-                &amp;
               </i>
               {" "}
               imagination to evaluate this expression:
@@ -6615,7 +6610,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_6.svg" />
+            <Image
+              width="92.755px"
+              src="/images/svg_ch3_connection_x_6.svg" />
             <Pause />
             <VerticalChunk>
               ...and{" "}
@@ -6637,7 +6634,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_6_in_computation.svg" />
+            <Image
+              width="186.776px"
+              src="/images/svg_ch3_connection_x_6_in_computation.svg" />
             <Pause />
             <VerticalChunk>
               ...; in an expression such as...
@@ -6663,7 +6662,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_6_again.svg" />
+            <Image
+              width="139.88px"
+              src="/images/svg_ch3_connection_x_6_again.svg" />
             <Pause />
             <VerticalChunk>
               ...and{" "}
@@ -6685,7 +6686,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_6_again_in_computation.svg" />
+            <Image
+              width="328.153px"
+              src="/images/svg_ch3_connection_x_6_again_in_computation.svg" />
             <Pause />
             <VerticalChunk>
               ...(in this case the result is not a number,
@@ -6722,7 +6725,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_y_6_8.svg" />
+            <Image
+              width="162.11px"
+              src="/images/svg_ch3_connection_x_y_6_8.svg" />
             <Pause />
             <VerticalChunk>
               ...and{" "}
@@ -6752,7 +6757,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_x_y_6_8_in_computation.svg" />
+            <Image
+              width="364.775px"
+              src="/images/svg_ch3_connection_x_y_6_8_in_computation.svg" />
             <Pause />
             <VerticalChunk>
               ...; now in an expression such as...
@@ -6801,7 +6808,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_f_x_h.svg" />
+            <Image
+              width="388.081px"
+              src="/images/svg_ch3_connection_f_x_h.svg" />
             <Pause />
             <VerticalChunk>
               ...and{" "}
@@ -6846,7 +6855,9 @@ const Rest = () => {
               </NoBreak>
             </VerticalChunk>
             <Pause />
-            <Image src="/images/svg_ch3_connection_f_x_h_in_computation.svg" />
+            <Image
+              width="683.627px"
+              src="/images/svg_ch3_connection_f_x_h_in_computation.svg" />
             <Pause />
             <VerticalChunk>
               ...; evaluating...
