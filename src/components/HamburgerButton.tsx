@@ -7,7 +7,7 @@ import {
   HAMBURGER_MENU_BACKGROUND_OFF_SCROLLY,
   MOBILE_MAX_WIDTH,
 } from "../constants";
-import useOnMobile from "../hooks/useOnMobile";
+import onMobile from "../hooks/useOnMobile";
 import { useGlobalContext } from "../store/StoreProvider";
 import usePrevNextArticle from "~/hooks/usePrevNextArticle";
 
@@ -22,7 +22,6 @@ const HeaderBarRightHandSideButtons = () => {
 };
 
 const ButtonsContainer = (props: ParentProps) => {
-  const { on_mobile } = useOnMobile();
   const { store } = useGlobalContext();
   const open = () => store.panel_opened;
 
@@ -57,7 +56,7 @@ const ButtonsContainer = (props: ParentProps) => {
         class={twJoin(
           "fixed right-0 z-40 h-14",
           store.scrollY <= HAMBURGER_MENU_BACKGROUND_OFF_SCROLLY &&
-            !on_mobile() &&
+            !onMobile() &&
             store.scrollX + store.innerWidth >=
               store.scrollWidth / 2 + MOBILE_MAX_WIDTH / 2 &&
             "h-[10rem]",
@@ -65,7 +64,7 @@ const ButtonsContainer = (props: ParentProps) => {
         style={{
           width: "134px",
           "background-color":
-            store.scrollY > HAMBURGER_MENU_BACKGROUND_OFF_SCROLLY || on_mobile()
+            store.scrollY > HAMBURGER_MENU_BACKGROUND_OFF_SCROLLY || onMobile()
               ? "transparent"
               : store.show_areas
                 ? "#fff000"
@@ -74,14 +73,14 @@ const ButtonsContainer = (props: ParentProps) => {
       <div
         class={twJoin(
           "fixed right-0 z-50 h-14",
-          !on_mobile() &&
+          !onMobile() &&
             !open() &&
             store.scrollY < 2 * HAMBURGER_MENU_HEIGHT &&
             "border-b",
         )}>
         <div
           class="select-none flex items-center justify-center h-8 m-3 hover:!opacity-100"
-          style={{ opacity: !open() && !on_mobile() ? opacity() : 1 }}>
+          style={{ opacity: !open() && !onMobile() ? opacity() : 1 }}>
           {props.children}
         </div>
       </div>
@@ -90,7 +89,6 @@ const ButtonsContainer = (props: ParentProps) => {
 };
 
 const HeaderBarLeftArrowButton = () => {
-  const { on_mobile } = useOnMobile();
   const { store } = useGlobalContext();
   const { getPrevArticle, prevDisabled } = usePrevNextArticle();
 
@@ -98,8 +96,8 @@ const HeaderBarLeftArrowButton = () => {
     <button
       id="prev-btn"
       class={twJoin(
-        !on_mobile() && "mr-2",
-        on_mobile() && "mr-4",
+        !onMobile() && "mr-2",
+        onMobile() && "mr-4",
         prevDisabled() && "cursor-default",
       )}
       onClick={(e) => {
@@ -123,7 +121,6 @@ const HeaderBarLeftArrowButton = () => {
 };
 
 const HeaderBarRightArrowButton = () => {
-  const { on_mobile } = useOnMobile();
   const { store } = useGlobalContext();
 
   const { getNextArticle, nextDisabled } = usePrevNextArticle();
@@ -132,8 +129,8 @@ const HeaderBarRightArrowButton = () => {
     <button
       id="next-btn"
       class={twJoin(
-        !on_mobile() && "mr-3",
-        on_mobile() && "mr-4",
+        !onMobile() && "mr-3",
+        onMobile() && "mr-4",
         nextDisabled() && "cursor-default",
       )}
       onClick={(e) => {

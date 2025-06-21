@@ -5,9 +5,13 @@ import { Spacer } from "~/components/Spacer";
 
 export default function Home() {
   return (
-    <TOC
-      next-page="/article/chapter1"
-      prev-page="/article/bootcamp1">
+    <TOC>
+      <a
+        class="next_page"
+        href="/article/chapter1" />
+      <a
+        class="prev_page"
+        href="/article/bootcamp1" />
       <div id="chapter">
         <TOCTitle label="Chapters" />
         <ul>

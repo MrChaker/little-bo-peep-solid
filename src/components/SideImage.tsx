@@ -11,7 +11,7 @@ import ImageOrSideImage from "./ImageOrSideImage";
 import { useGlobalContext } from "~/store/StoreProvider";
 import { useScale } from "~/store/ScaleProvider";
 import { DESKTOP_COLUMN_WIDTH, MOBILE_MAX_WIDTH } from "~/constants";
-import useOnMobile from "../hooks/useOnMobile";
+import onMobile from "../hooks/useOnMobile";
 
 type UserFacingSideImageProps = ParentProps &
   SharedProps & {
@@ -45,7 +45,6 @@ const SideImage = (props: InternalSideImageProps) => {
   const scale = useScale();
   // was trying to solve a bug, didn't work, this can be re-simplified at some point (see also (*))
   const [our_scale_copy, set_our_scale_copy] = createSignal(scale().scale);
-  const { on_mobile } = useOnMobile();
 
   let maybeChildren = () => {
     if (props.children) {
@@ -80,7 +79,6 @@ const SideImage = (props: InternalSideImageProps) => {
       style="left:0;top:0;width:100%;height:100%;background-color:none;margin:0;padding:0;pointer-events:none;">
       <div
         style={{
-          // visibility: scale().after_first_click || !on_mobile() ? "visible" : "hidden", // (*) have to do this cause we just couldn't get rid of that bug where we can't "hear" the initial scale...
           left: getLeft(
             props.side,
             props.offset_x,

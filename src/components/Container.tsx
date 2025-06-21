@@ -7,7 +7,7 @@ import {
 } from "solid-js";
 import Nav from "./Nav";
 import SVGDefs from "./SVGDefs";
-import useOnMobile from "../hooks/useOnMobile";
+import onMobile from "../hooks/useOnMobile";
 import { useGlobalContext } from "~/store/StoreProvider";
 import useScrollIsAt0 from "~/hooks/useScrollIsAt0";
 import usePrevNextArticle from "~/hooks/usePrevNextArticle";
@@ -20,7 +20,6 @@ const Container = (props: ParentProps) => {
   // add_imports and table of contents
   const [marginMode, set_marginMode] = createSignal(false);
 
-  let { on_mobile } = useOnMobile();
   let { store, set_store } = useGlobalContext();
   const { getPrevArticle, getNextArticle } = usePrevNextArticle();
 
@@ -46,7 +45,7 @@ const Container = (props: ParentProps) => {
       store.scrollHeight +
       store.scrollWidth;
 
-    if (!on_mobile()) {
+    if (!onMobile()) {
       window.scroll({
         left: (store.scrollWidth - store.innerWidth) / 2,
         behavior: "instant",
@@ -132,7 +131,7 @@ const Container = (props: ParentProps) => {
       if (
         preventActionOn().find((s) => s?.contains(target)) ||
         targetIsAnchor(target) ||
-        on_mobile() ||
+        onMobile() ||
         marginMode()
       ) {
         return;
