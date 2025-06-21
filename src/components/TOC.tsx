@@ -5,7 +5,12 @@ import useCheckedSaveScroll from "~/hooks/useCheckedSaveScroll";
 import useSetRoute from "~/hooks/useSetRoute";
 import SectionsBreadcrumbs from "./SectionsBreadcrumbs";
 
-const TOC = (props: ParentProps) => {
+const TOC = (
+  props: ParentProps & {
+    "next-page"?: string;
+    "prev-page"?: string;
+  },
+) => {
   let { set_store } = useGlobalContext();
   useScrollX();
   useCheckedSaveScroll();
@@ -22,6 +27,8 @@ const TOC = (props: ParentProps) => {
     set_store("innerHeight", window.innerHeight);
     set_store("scrollWidth", document.body.scrollWidth);
     set_store("scrollHeight", document.body.scrollHeight);
+    set_store("nextPage", props["next-page"] || "");
+    set_store("prevPage", props["prev-page"] || "");
   };
 
   onMount(() => resetDimensions());

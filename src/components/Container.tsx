@@ -1,4 +1,3 @@
-import { PAGE_DEFAULT_MARGIN } from "~/constants";
 import {
   ParentProps,
   createEffect,
@@ -208,7 +207,7 @@ const Container = (props: ParentProps) => {
 
   const effectiveMarginWidth = () => {
     return (containerWidth() - mainColumnWidth()) / 2;
-  }
+  };
 
   return (
     <div
