@@ -1,4 +1,4 @@
-import { MOBILE_MAX_WIDTH, DESKTOP_COLUMN_WIDTH } from "~/constants";
+import { PAGE_DEFAULT_MARGIN } from "~/constants";
 import {
   ParentProps,
   createEffect,
@@ -12,17 +12,15 @@ import useOnMobile from "../hooks/useOnMobile";
 import { useGlobalContext } from "~/store/StoreProvider";
 import useScrollIsAt0 from "~/hooks/useScrollIsAt0";
 import usePrevNextArticle from "~/hooks/usePrevNextArticle";
+import mainColumnWidth from "~/hooks/useMainColumnWidth";
 
 const Container = (props: ParentProps) => {
-  const env = import.meta.env.VITE_ENV;
   // can_click is for disabling click on page transition
   // there is an inital scroll when each page is loaded .
   // code for it is in useScrollX used in renderder helpers
   // add_imports and table of contents
   const [marginMode, set_marginMode] = createSignal(false);
 
-  // const [innerWidth, set_innerWidth] = createSignal(0);
-  // const [scrollWidth, set_scrollWidth] = createSignal(0);
   let { on_mobile } = useOnMobile();
   let { store, set_store } = useGlobalContext();
   const { getPrevArticle, getNextArticle } = usePrevNextArticle();
@@ -35,15 +33,33 @@ const Container = (props: ParentProps) => {
   };
 
   const handleResize = () => {
-    set_store("innerWidth", window.innerWidth);
+    set_store(
+      "innerWidth",
+      document.documentElement.clientWidth || window.innerWidth,
+    );
     set_store("innerHeight", window.innerHeight);
     set_store("scrollWidth", document.body.scrollWidth);
     set_store("scrollHeight", document.body.scrollHeight);
+
     let _dummy =
       store.scrollY +
       store.innerHeight +
       store.scrollHeight +
       store.scrollWidth;
+
+    if (!on_mobile()) {
+      window.scroll({
+        left: (store.scrollWidth - store.innerWidth) / 2,
+        behavior: "instant",
+      });
+    }
+  };
+
+  const handleOrientationChange = () => {
+    window.scroll({
+      left: (store.scrollWidth - store.innerWidth) / 2,
+      behavior: "instant",
+    });
   };
 
   createEffect(() => {
@@ -68,12 +84,14 @@ const Container = (props: ParentProps) => {
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
+    window.addEventListener("orientationchange", handleOrientationChange);
     document.addEventListener("scrollend", scroll_back);
     document.addEventListener("touchend", scroll_back);
 
     onCleanup(() => {
-      window.removeEventListener("scroll", scroll_back);
-      window.removeEventListener("resize", scroll_back);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("orientationchange", handleOrientationChange);
       document.removeEventListener("scrollend", scroll_back);
       document.removeEventListener("touchend", scroll_back);
     });
@@ -82,15 +100,6 @@ const Container = (props: ParentProps) => {
   let _window = window as any;
 
   onMount(() => {
-    window.addEventListener("resize", (_) => {
-      if (!on_mobile()) {
-        window.scroll({
-          left: (store.scrollWidth - store.innerWidth) / 2,
-          behavior: "instant",
-        });
-      }
-    });
-
     const preventActionOn = () => [
       document.getElementById("hamburger_panel"),
       document.getElementById("prev-btn"),
@@ -189,12 +198,41 @@ const Container = (props: ParentProps) => {
     });
   });
 
+  const containerWidth = () => {
+    return Math.max(
+      store.innerWidth,
+      store.maxElementWidth + 60,
+      mainColumnWidth() + 2 * store.pageNecessaryMargin,
+    );
+  };
+
+  const effectiveMarginWidth = () => {
+    return (containerWidth() - mainColumnWidth()) / 2;
+  }
+
   return (
     <div
       id="Container"
       class="pb-14 -z-10 relative overflow-hidden"
-      style={`width:${3000 + (store.innerWidth > MOBILE_MAX_WIDTH ? DESKTOP_COLUMN_WIDTH : store.innerWidth)}px; opacity: ${store.saved_scroll_finished || store.scroll_is_at_0 ? "1" : "0"}`}>
+      style={`width:${containerWidth()}px; opacity: ${store.saved_scroll_finished || store.scroll_is_at_0 ? "1" : "0"}`}>
       <EarlyImages />
+      {/* Show margin areas when show_areas is true */}
+      {store.show_areas && store.pageNecessaryMargin > 0 && (
+        <>
+          <div
+            style={`position:absolute;top:0;left:${effectiveMarginWidth() - store.pageNecessaryMargin}px; width:${store.pageNecessaryMargin}px;height:100%;background-color:rgba(255, 0, 0, 0.2);border:2px solid red;pointer-events:none;z-index:1000;`}
+          />
+          <div
+            style={`position:absolute;top:0;right:${effectiveMarginWidth() - store.pageNecessaryMargin}px;width:${store.pageNecessaryMargin}px;height:100%;background-color:rgba(255, 0, 0, 0.2);border: 2px solid red;pointer-events:none;z-index:1000;`}
+          />
+        </>
+      )}
+      {/* Show maxElementWidth area when show_areas is true */}
+      {store.show_areas && store.maxElementWidth > 0 && (
+        <div
+          style={`position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: ${store.maxElementWidth}px; height: 100%; background-color: rgba(0, 255, 0, 0.2); border: 2px solid green; pointer-events: none; z-index: 999;`}
+        />
+      )}
       <Nav />
       <div
         onClick={() => {

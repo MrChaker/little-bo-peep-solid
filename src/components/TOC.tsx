@@ -1,19 +1,24 @@
-import TOCAuthorSuppliedContents from "./TOCAuthorSuppliedContents";
 import useScrollX from "~/hooks/useScrollX";
 import { useGlobalContext } from "~/store/StoreProvider";
-import { onMount } from "solid-js";
+import { onMount, ParentProps } from "solid-js";
 import useCheckedSaveScroll from "~/hooks/useCheckedSaveScroll";
 import useSetRoute from "~/hooks/useSetRoute";
 import SectionsBreadcrumbs from "./SectionsBreadcrumbs";
 
-const TOC = () => {
-  let { store, set_store } = useGlobalContext();
+const TOC = (props: ParentProps) => {
+  let { set_store } = useGlobalContext();
   useScrollX();
   useCheckedSaveScroll();
   useSetRoute();
 
+  // TOC sets pageNecessaryMargin to 0
+  set_store("pageNecessaryMargin", 0);
+
   const resetDimensions = () => {
-    set_store("innerWidth", window.innerWidth);
+    set_store(
+      "innerWidth",
+      document.documentElement.clientWidth || window.innerWidth,
+    );
     set_store("innerHeight", window.innerHeight);
     set_store("scrollWidth", document.body.scrollWidth);
     set_store("scrollHeight", document.body.scrollHeight);
@@ -29,7 +34,7 @@ const TOC = () => {
         <TitleSVG />
       </div>
       <SectionsBreadcrumbs />
-      <TOCAuthorSuppliedContents />
+      {props.children}
     </div>
   );
 };

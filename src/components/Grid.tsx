@@ -1,4 +1,4 @@
-import { MOBILE_MAX_WIDTH, DESKTOP_COLUMN_WIDTH } from "~/constants";
+import { MOBILE_MAX_WIDTH } from "~/constants";
 import {
   mergeProps,
   ParentProps,
@@ -12,6 +12,7 @@ import SharedProps from "./types/SharedProps";
 import { TEXT_X_PADDING } from "~/constants";
 import { twJoin } from "tailwind-merge";
 import { useGlobalContext } from "~/store/StoreProvider";
+import mainColumnWidth from "~/hooks/useMainColumnWidth";
 
 type GridProps = ParentProps &
   SharedProps & {
@@ -53,7 +54,7 @@ const Grid = (_props: GridProps) => {
   const [cols, setCols] = createSignal(props.cols);
 
   const handleResize = () => {
-    setCols(window.innerWidth <= props.sm_cutoff ? props.sm_cols : props.cols);
+    setCols(store.innerWidth <= props.sm_cutoff ? props.sm_cols : props.cols);
   };
 
   createEffect(() => {
@@ -85,7 +86,7 @@ const Grid = (_props: GridProps) => {
         "margin-top": `${props.margin_top}px`,
         "margin-bottom": `${props.margin_bottom}px`,
         "padding-inline": props.with_padding ? `${TEXT_X_PADDING}px` : "0",
-        width: `${store.innerWidth > MOBILE_MAX_WIDTH ? DESKTOP_COLUMN_WIDTH : store.innerWidth}px`,
+        width: `${mainColumnWidth()}px`,
       }}>
       <div
         ref={parentSpan}

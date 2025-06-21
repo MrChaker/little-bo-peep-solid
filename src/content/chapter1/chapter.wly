@@ -20,9 +20,7 @@
     are both positive. But $\sqrt{4}$ is, by
     definition, the unique _nonnegative_
     solution to $x^2 = 4$.
-    Hence—
-    !! at possible _contrario_ to murky half-baked
-    !! thoughts of yesteryear—
+    Hence—!!!—
 
     $$\sqrt{(-2)^2} = 2$$
 
@@ -37,7 +35,7 @@
     \sqrt{x^{2}} \rt{0.1} = \rt{0.1} x
     $$
 
-    for every real number $x$. Instead: we have
+    for every real number $x$! Instead: we have
 
     $$
     \sqrt{x^{2}} \rt{0.1} = \rt{0.1} |x|
@@ -59,8 +57,7 @@
     for the solutions to the quadratic equation
     $ax^2 + bx + c = 0$.)
 
-    !! Now we can ponder, say,
-    We will next ponder
+    Next, we will ponder
 
     $$
     \sqrt{0.5}
@@ -135,11 +132,10 @@
     The point is: if “$X\%$ of $X\%$” equals $50\%$,
     then, of course, $\rt{0.03}X > 50$—that much
     seems logical—and, with a little thought, the
-    same phenomenon explains why $\sqrt{0.5} > 0.5$.
+    same phenomenon explains why $\sqrt{0.5} > 0.5$!
 
 
 |> Section
-    type=sec1
 
     *Fractions and Division.*
     An elementary fraction, or division, such as

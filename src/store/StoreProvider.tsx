@@ -23,6 +23,8 @@ export type Store = {
   content_loaded: boolean;
   saved_scroll_finished: boolean;
   scroll_is_at_0: boolean;
+  pageNecessaryMargin: number;
+  maxElementWidth: number;
 };
 
 const [store, set_store] = createStore<Store>({
@@ -31,7 +33,7 @@ const [store, set_store] = createStore<Store>({
   show_areas: false,
   show_squiggles: true,
   title: "Little Bo Peep",
-  innerWidth: window.innerWidth,
+  innerWidth: document.documentElement.clientWidth || window.innerWidth,
   innerHeight: window.innerHeight,
   scrollWidth: document.body.scrollWidth,
   scrollHeight: document.body.scrollHeight,
@@ -41,6 +43,8 @@ const [store, set_store] = createStore<Store>({
   content_loaded: false,
   saved_scroll_finished: false,
   scroll_is_at_0: false,
+  pageNecessaryMargin: 0,
+  maxElementWidth: 0,
 });
 
 const StoreContext = createContext<{
@@ -50,7 +54,10 @@ const StoreContext = createContext<{
 
 export const StoreProvider: ParentComponent = (props) => {
   createEffect(() => {
-    set_store("innerWidth", window.innerWidth);
+    set_store(
+      "innerWidth",
+      document.documentElement.clientWidth || window.innerWidth,
+    );
     set_store("innerHeight", window.innerHeight);
     set_store("scrollWidth", document.body.scrollWidth);
     set_store("scrollHeight", document.body.scrollHeight);
