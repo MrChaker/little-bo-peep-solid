@@ -12,22 +12,22 @@ const ArticleTitle = (props: {
   on_mobile_label?: string;
   class?: string;
 }) => {
+  const on_mobile = onMobile();
   return (
     <div class="slice" style={`width:${mainColumnWidth()}px;`}>
       <h1
         class="text-2rem sm:text-4xl pt-5 sm:pt-4 pb-4"
         style={`margin-top: ${
-          onMobile()
+          on_mobile
             ? CHAPTER_TITLE_TOP_MARGIN_MOBILE
             : CHAPTER_TITLE_TOP_MARGIN_DESKTOP
         }px;margin-bottom: ${
-          onMobile()
+          on_mobile
             ? CHAPTER_TITLE_BOTTOM_MARGIN_MOBILE
             : CHAPTER_TITLE_BOTTOM_MARGIN_DESKTOP
-        }px`}
-      >
+        }px`}>
         <span class="sm:hidden">
-          {onMobile() ? props.on_mobile_label : props.label}
+          {on_mobile ? props.on_mobile_label : props.label}
         </span>
         <span class="hidden sm:block">{props.label}</span>
       </h1>

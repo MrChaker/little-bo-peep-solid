@@ -19,7 +19,7 @@ const Container = (props: ParentProps) => {
   // code for it is in useScrollX used in renderder helpers
   // add_imports and table of contents
   const [marginMode, set_marginMode] = createSignal(false);
-
+  const on_mobile = onMobile();
   let { store, set_store } = useGlobalContext();
   const { getPrevArticle, getNextArticle } = usePrevNextArticle();
 
@@ -45,7 +45,7 @@ const Container = (props: ParentProps) => {
       store.scrollHeight +
       store.scrollWidth;
 
-    if (!onMobile()) {
+    if (!on_mobile) {
       window.scroll({
         left: (store.scrollWidth - store.innerWidth) / 2,
         behavior: "instant",
@@ -131,7 +131,7 @@ const Container = (props: ParentProps) => {
       if (
         preventActionOn().find((s) => s?.contains(target)) ||
         targetIsAnchor(target) ||
-        onMobile() ||
+        on_mobile ||
         marginMode()
       ) {
         return;
@@ -206,7 +206,7 @@ const Container = (props: ParentProps) => {
 
   const effectiveMarginWidth = () => {
     return (containerWidth() - mainColumnWidth()) / 2;
-  }
+  };
 
   return (
     <div
