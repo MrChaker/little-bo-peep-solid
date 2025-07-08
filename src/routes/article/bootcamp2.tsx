@@ -1,109 +1,82 @@
-import Bootcamp from "~/components/Bootcamp";
-import { Section, Note, SolutionNote, Example, NoBreak, Pause, WriterlyBlankLine } from "~/components/Wrappers";
-import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
-import TextParent from "~/components/TextParent";
-import { Math, MathBlock } from "~/components/Math";
-import { ImageRight, ImageLeft } from "~/components/SideImage";
-import Image from "~/components/Image";
-import InlineImage from "~/components/InlineImage";
-import { Exercise, Exercises, ExerciseStatement } from "~/components/Exercises";
-import InChapterLink from "~/components/InChapterLink";
-import Solution from "~/components/Solution";
-import Table from "~/components/Table";
-import Grid from "~/components/Grid";
-import { List, Item } from "~/components/List";
-import { SectionDivider } from "~/components/SectionDivider";
-import { StarDivider } from "~/components/StarDivider";
-import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
-import useSetRoute from "~/hooks/useSetRoute";
+import Article  from "~/components/Article";
+import ArticleTitle  from "~/components/ArticleTitle";
+import { CentralDisplayItalic }  from "~/components/Delimiters";
+import { Exercises, Exercise, ExerciseStatement }  from "~/components/Exercises";
+import Image  from "~/components/Image";
+import InChapterLink  from "~/components/InChapterLink";
+import { Math, MathBlock }  from "~/components/Math";
+import OuterP  from "~/components/OuterP";
+import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
+import { ImageLeft, ImageRight }  from "~/components/SideImage";
+import Solution  from "~/components/Solution";
+import Table  from "~/components/Table";
+import { Section, Pause, NoBreak, Example, SolutionNote }  from "~/components/Wrappers";
 import useShowMore from "~/hooks/useShowMore";
-import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
-const Article = () => {
-  useSetRoute();
-  useBreadcrumbs();
-  return (<>
-    <Bootcamp
-      number={2}
-      next-page="/article/bootcamp1"
-      max-element-width={1200}
-      page-necessary-margin={270}
-      title="Powers of 10">
+export default function __Bootcamp2__() {
+  return (
+    <Article
+      prevPage=""
+      nextPage="/article/bootcamp1"
+      pageNecessaryMargin={270}
+      maxElementWidth={1200}>
       <SectionsBreadcrumbs>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-0">
+        <BreadcrumbItem id="breadcrumb-0">
           <InChapterLink href="?id=section-1">
             terminology
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-1">
+        <BreadcrumbItem id="breadcrumb-1">
           <InChapterLink href="?id=section-2">
             integer powers of 10
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-2">
+        <BreadcrumbItem id="breadcrumb-2">
           <InChapterLink href="?id=section-3">
             other bases
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-3">
+        <BreadcrumbItem id="breadcrumb-3">
           <InChapterLink href="?id=section-4">
             additivity of exponents
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-4">
+        <BreadcrumbItem id="breadcrumb-4">
           <InChapterLink href="?id=section-5">
             the third law of exponents
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-5">
+        <BreadcrumbItem id="breadcrumb-5">
           <InChapterLink href="?id=section-6">
             famous powers of 10
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-6">
+        <BreadcrumbItem id="breadcrumb-6">
           <InChapterLink href="?id=section-7">
             negative exponent prefixes
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-7">
+        <BreadcrumbItem id="breadcrumb-7">
           <InChapterLink href="?id=section-8">
             positive exponent prefixes
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-8">
+        <BreadcrumbItem id="breadcrumb-8">
           <InChapterLink href="?id=section-9">
             logarithms base 10
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-9">
+        <BreadcrumbItem id="breadcrumb-9">
           <InChapterLink href="?id=exercises">
             exercises
           </InChapterLink>
         </BreadcrumbItem>
       </SectionsBreadcrumbs>
+      <ArticleTitle banner="Bootcamp 2:">
+        Powers of 10
+      </ArticleTitle>
       <Section id="section-1">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Terminology.
           </b>
@@ -124,11 +97,11 @@ const Article = () => {
             exponent
           </i>
           :
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/svg_base_exponent.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           The whole expression is read{" "}
           <Math>
             $\mathit&#123;10&#125;$
@@ -150,26 +123,26 @@ const Article = () => {
             exponentiation
           </i>
           .
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Rest />
-    </Bootcamp>
-  </>);
-};
+    </Article>
+  );
+}
 
 const Rest = () => {
   const showMore = useShowMore();
-  return(<>
-    { showMore() && <>
+  return <>
+    {showMore() && <>
       <Pause />
       <Section id="section-2">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Integer powers of 10.
           </b>
           {" "}
           We define
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -177,7 +150,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as follows, if{" "}
           <Math>
             $n$
@@ -196,7 +169,7 @@ const Rest = () => {
             $n$
           </Math>
           {" "}times. We also define
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -204,7 +177,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as follows, if{" "}
           <Math>
             $n$
@@ -223,10 +196,10 @@ const Rest = () => {
             $n$
           </Math>
           {" "}times.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -257,13 +230,13 @@ const Rest = () => {
           \Large 10^0 = 1 = 1
           $$
           <ImageLeft
-            offset_x="4em"
-            offset_y="-0.2em"
             src="/images/svg_bt2_bt_alert_cloud.svg"
+            offset_y="-0.2em"
+            offset_x="4em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (where, in the last line,{" "}
           <Math>
             $1$
@@ -278,7 +251,7 @@ const Rest = () => {
           </i>
           ,
           as per the exponent, which is zero) by the first definition, while
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -304,10 +277,10 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           by the second definition.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           As{" "}
           <Math>
             $n$
@@ -325,13 +298,13 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}one also has
-        </VerticalChunk>
+        </OuterP>
         <Pause />
-        <MathBlock id="_1_993">
+        <MathBlock id="_1_8633">
           $$\Large 10^&#123;-n&#125; = &#123;1 \over 10^&#123;\hspace&#123;0.2ex&#125;n&#125;&#125;\tag&#123;A&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           for every positive integer{" "}
           <NoBreak>
             <Math>
@@ -349,18 +322,18 @@ const Rest = () => {
           {" "}
           Moreover, (
           <InChapterLink
-            href="/article/bootcamp2?id=_1_993"
+            href="/article/bootcamp2?id=_1_8633"
             class="handle-in-chapter-link">
             A
           </InChapterLink>
           ) actually holds for
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           every
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           integer{" "}
           <NoBreak>
             <Math>
@@ -371,7 +344,7 @@ const Rest = () => {
           {" "}which is mildly important. In more
           detail, (
           <InChapterLink
-            href="/article/bootcamp2?id=_1_993"
+            href="/article/bootcamp2?id=_1_8633"
             class="handle-in-chapter-link">
             A
           </InChapterLink>
@@ -381,22 +354,22 @@ const Rest = () => {
           </Math>
           {" "}by inspection, and (
           <InChapterLink
-            href="/article/bootcamp2?id=_1_993"
+            href="/article/bootcamp2?id=_1_8633"
             class="handle-in-chapter-link">
             A
           </InChapterLink>
           )
           is equivalent to the identity
           <ImageLeft
-            line={2}
-            src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg" />
-        </VerticalChunk>
+            src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg"
+            line={2} />
+        </OuterP>
         <Pause />
-        <MathBlock id="_2_1546">
+        <MathBlock id="_2_875">
           $$\Large 10^&#123;-n&#125;10^n = 1 \tag&#123;AA&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which holds for{" "}
           <Math>
             $n$
@@ -428,13 +401,13 @@ const Rest = () => {
           {" "}
           in (
           <InChapterLink
-            href="/article/bootcamp2?id=_2_1546"
+            href="/article/bootcamp2?id=_2_875"
             class="handle-in-chapter-link">
             AA
           </InChapterLink>
           ) lands you right back on (
           <InChapterLink
-            href="/article/bootcamp2?id=_2_1546"
+            href="/article/bootcamp2?id=_2_875"
             class="handle-in-chapter-link">
             AA
           </InChapterLink>
@@ -448,7 +421,7 @@ const Rest = () => {
           </NoBreak>
           {" "}(So, namely, if (
           <InChapterLink
-            href="/article/bootcamp2?id=_2_1546"
+            href="/article/bootcamp2?id=_2_875"
             class="handle-in-chapter-link">
             AA
           </InChapterLink>
@@ -469,9 +442,9 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}as well.)
-        </VerticalChunk>
+        </OuterP>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           <b>
             Vocabulary.
           </b>
@@ -485,7 +458,7 @@ const Rest = () => {
             $b$
           </Math>
           {" "}such that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -493,7 +466,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are{" "}
           <i>
             reciprocal
@@ -508,7 +481,7 @@ const Rest = () => {
           </Math>
           {" "}are reciprocal,
           then these equations are satisfied...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -516,29 +489,29 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...and any one of these equations implies the other two.
           Thus, either of (
           <InChapterLink
-            href="/article/bootcamp2?id=_1_993"
+            href="/article/bootcamp2?id=_1_8633"
             class="handle-in-chapter-link">
             A
           </InChapterLink>
           ) and (
           <InChapterLink
-            href="/article/bootcamp2?id=_2_1546"
+            href="/article/bootcamp2?id=_2_875"
             class="handle-in-chapter-link">
             AA
           </InChapterLink>
           )
           expresses the
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           reciprocality
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           of{" "}
           <Math>
             $10^n$
@@ -550,18 +523,18 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-3">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Other bases.
           </b>
           {" "}
           Integer powers of other nonzero bases are defined
           similarly, e.g.,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -569,7 +542,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is defined as{" "}
           <Math>
             $1$
@@ -579,8 +552,8 @@ const Rest = () => {
             $2$
           </Math>
           {" "}twice, etc.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           However, a small quirk occurs for base{" "}
           <NoBreak>
             <Math>
@@ -602,7 +575,7 @@ const Rest = () => {
           </Math>
           {" "}remain
           undefined. E.g.,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -610,7 +583,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           would be{" "}
           <NoBreak>
             “
@@ -639,8 +612,8 @@ const Rest = () => {
           </NoBreak>
           {" "}etc, remain
           undefined.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Also (in case you're wondering){" "}
           <NoBreak>
             <Math>
@@ -655,7 +628,7 @@ const Rest = () => {
             $0$
           </Math>
           {" "}in descending order:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -681,7 +654,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           In other words, every positive power of{" "}
           <Math>
             $0$
@@ -719,23 +692,23 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Note that mathematicians sometimes refer
           to a power with an exponent of{" "}
           <Math>
             $0$
           </Math>
           {" "}as an
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           empty product
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and they will repeatedly admonish that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           an empty product is{" "}
@@ -744,7 +717,7 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           in the sense that “all products start at
           {" "}
           <NoBreak>
@@ -765,17 +738,17 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-4">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Additivity of exponents.
           </b>
           {" "}
           If you think about it,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -783,7 +756,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           because{" "}
           <Math>
             $13$
@@ -813,10 +786,10 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           More generally,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -824,7 +797,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           for all{" "}
           <Math>
             $n$
@@ -842,22 +815,22 @@ const Rest = () => {
           </NoBreak>
           {" "}
           which is known as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           additivity of exponents
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and which is sometimes paraphrased by saying
           that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the product of the powers is the power of the sum
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           where{" "}
           <i>
             the product of the powers
@@ -885,17 +858,17 @@ const Rest = () => {
             ”.
           </NoBreak>
           {" "}(Or for some other base.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-5">
-        <VerticalChunk>
+        <OuterP>
           <b>
             The third law of exponents.
           </b>
           {" "}
           Also, if you think about it,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -903,7 +876,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           because multiplying{" "}
           <Math>
             $14$
@@ -926,7 +899,7 @@ const Rest = () => {
           </NoBreak>
           {" "}More
           generally,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -934,7 +907,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           for all{" "}
           <Math>
             $n$
@@ -948,10 +921,10 @@ const Rest = () => {
           </NoBreak>
           {" "}This is known as “the third law
           of exponents”.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           On this subject, note that if one writes
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -959,7 +932,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           <NoBreak>
             [“
             <Math>
@@ -979,7 +952,7 @@ const Rest = () => {
           </NoBreak>
           {" "}
           there is a seeming ambiguity: does it mean
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -987,7 +960,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           <NoBreak>
             [“
             <Math>
@@ -1010,7 +983,7 @@ const Rest = () => {
           </NoBreak>
           {" "}
           or does it mean
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1018,7 +991,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           <NoBreak>
             [“[
             <Math>
@@ -1041,7 +1014,7 @@ const Rest = () => {
           </NoBreak>
           {" "}
           Well, because the second way can be written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1049,10 +1022,10 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           by the third law of exponents, the second way already has
           “its own” notation, and therefore the convention is that...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1060,9 +1033,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...absolutely always means...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1070,13 +1043,13 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...!
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-6">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Famous powers of 10.
           </b>
@@ -1098,8 +1071,8 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           In English, e.g., these are some of the “famous”
           powers of{" "}
           <NoBreak>
@@ -1108,7 +1081,7 @@ const Rest = () => {
             </Math>
             :
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Table class="first-line">
           <colgroup>
@@ -1254,17 +1227,17 @@ const Rest = () => {
           </tbody>
         </Table>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           One can note that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           one million is a thousand thousand
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           because
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1272,9 +1245,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           by counting zeroes, or, equivalently, because
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1282,34 +1255,34 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           by additivity of exponents. Similarly, note that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           one billion is a thousand million
           <ImageLeft src="/images/svg_bt2_bt_ten_to_the_3_times_ten_to_the_6_cloud.svg" />
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           one trillion is a thousand billion
           <ImageLeft src="/images/svg_bt2_bt_ten_to_the_3_times_ten_to_the_9_cloud.svg" />
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and also (while we're at it)
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           one trillion is a million million
           <ImageRight src="/images/svg_bt2_bt_ten_to_the_6_times_ten_to_the_6_cloud.svg" />
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as can be seen, for example, by replacing “billion”
           with “thousand million” in the previous sentence and
           then further replacing “thousand thousand” with “million”
@@ -1318,11 +1291,11 @@ const Rest = () => {
             that
           </i>
           {" "}sentence.
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-7">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Negative exponent prefixes.
           </b>
@@ -1330,7 +1303,7 @@ const Rest = () => {
           For negative exponents we simply say “one tenth”
           instead of “ten”, etc. Specifically, the table looks
           like so:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Table class="first-line">
           <colgroup>
@@ -1442,7 +1415,7 @@ const Rest = () => {
           </tbody>
         </Table>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           In passing, note how the standard decimal expansion
           for{" "}
           <Math>
@@ -1455,11 +1428,11 @@ const Rest = () => {
             </Math>
             :
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/svg_one_blue_one_image_equation.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Likewise, the standard decimal expansion for{" "}
           <Math>
             $10^&#123;-2&#125;$
@@ -1472,32 +1445,32 @@ const Rest = () => {
             </Math>
             's...
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/svg_two_blue_one_image_equation.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...and so on, which is a possible trick to check
           one's work and avoid mistakes.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           However, there also exist negative exponent
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           prefixes
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           that people use to qualify other measures. For
           example, a
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           millimeter
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is{" "}
           <Math>
             $10^&#123;-3&#125;$
@@ -1513,7 +1486,7 @@ const Rest = () => {
           </NoBreak>
           {" "}Here is a list of the most common
           such prefixes:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Table class="first-line">
           <colgroup>
@@ -1616,7 +1589,7 @@ const Rest = () => {
           </tbody>
         </Table>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (Funny how the prefixes switch from
           ending in ‘i’ to ending in ‘o’ after
           {" "}
@@ -1627,16 +1600,16 @@ const Rest = () => {
             .)
           </NoBreak>
           {" "}(Well, anyway.)
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           To give an idea of scale,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           micrometers
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are smaller than the smallest animal
           cells (human red blood cells, which
           are among the smallest animal cells,
@@ -1677,13 +1650,13 @@ const Rest = () => {
           </NoBreak>
           {" "}stands
           for “micrometer”). Next down,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           nanometers
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           happen to be smaller than the diameter
           of DNA, with DNA having a diameter of
           about{" "}
@@ -1694,11 +1667,11 @@ const Rest = () => {
             nm
           </NoBreak>
           {" "}(“nm” = “nanometer”).
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-8">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Positive exponent prefixes.
           </b>
@@ -1720,12 +1693,12 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}these are:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Table
-          margin-bottom="1em"
-          margin-top="1em"
-          class="first-line">
+          class="first-line"
+          marginTop="1em"
+          marginBottom="1em">
           <colgroup>
             <col width="120px" />
             <col width="120px" />
@@ -1826,15 +1799,15 @@ const Rest = () => {
           </tbody>
         </Table>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           For example, a
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           kilometer
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a thousand meters
           {" "}
           <NoBreak>
@@ -1845,13 +1818,13 @@ const Rest = () => {
           </NoBreak>
           {" "}“kilo” = thousand],
           while a
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           terabyte
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a trillion bytes{" "}
           <NoBreak>
             [b/
@@ -1862,13 +1835,13 @@ const Rest = () => {
           {" "}“tera” = trillion].
           (In case you don't know, by the way,
           a
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           byte
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a unit of computer memory
           that is equal to{" "}
           <Math>
@@ -1884,11 +1857,11 @@ const Rest = () => {
           </i>
           {" "}
           being a single 0/1 value.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-9">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Logarithms base 10.
           </b>
@@ -1905,10 +1878,10 @@ const Rest = () => {
           </i>
           {" "}of that
           (positive) number.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1916,14 +1889,14 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           can be uniquely written as “ten to the power
           something”. To wit,{" "}
           <Math>
             $100$
           </Math>
           {" "}is, of course,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           ten to the power{" "}
@@ -1932,9 +1905,9 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and this means that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1942,7 +1915,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is the logarithm base{" "}
           <Math>
             $10$
@@ -1954,16 +1927,16 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 1.
             </b>
             {" "}
             It so happens that
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -1971,7 +1944,7 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             under an extended definition of exponentiation that allows us to
             compute{" "}
             <Math>
@@ -1986,7 +1959,7 @@ const Rest = () => {
             </NoBreak>
             {" "}
             So
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -1994,7 +1967,7 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             is the logarithm base{" "}
             <Math>
               $10$
@@ -2006,17 +1979,17 @@ const Rest = () => {
               </Math>
               .
             </NoBreak>
-          </VerticalChunk>
+          </OuterP>
         </Example>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 2.
             </b>
             {" "}
             It so happens that
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -2024,9 +1997,9 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             under the same extended definition, so
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -2034,7 +2007,7 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             is the logarithm base{" "}
             <Math>
               $10$
@@ -2046,17 +2019,17 @@ const Rest = () => {
               </Math>
               .
             </NoBreak>
-          </VerticalChunk>
+          </OuterP>
         </Example>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 3.
             </b>
             {" "}
             Since
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -2064,7 +2037,7 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             the logarithm base{" "}
             <Math>
               $10$
@@ -2080,29 +2053,29 @@ const Rest = () => {
               </Math>
               .
             </NoBreak>
-          </VerticalChunk>
+          </OuterP>
         </Example>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 4.
             </b>
             {" "}
             Since
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
             \Large 0.00001 = 10^&#123;-5&#125;
             $$
             <ImageRight
-              offset_x="0em"
               src="/images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg"
+              offset_x="0em"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             the logarithm base{" "}
             <Math>
               $10$
@@ -2118,14 +2091,14 @@ const Rest = () => {
               </Math>
               .
             </NoBreak>
-          </VerticalChunk>
+          </OuterP>
         </Example>
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
+        <Exercise number={1}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 1.
               </b>
@@ -2146,10 +2119,10 @@ const Rest = () => {
                 $2^&#123;-4&#125;$
               </Math>
               {" "}by hand.
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={1}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Since{" "}
               <NoBreak>
                 <Math>
@@ -2158,7 +2131,7 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}one has
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2178,12 +2151,12 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               respectively.
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <SolutionNote>
-              <VerticalChunk>
+              <p>
                 <i>
                   Note 1.
                 </i>
@@ -2198,11 +2171,10 @@ const Rest = () => {
                   $5$
                 </Math>
                 {" "}thousandths:
-              </VerticalChunk>
+              </p>
               <Pause />
               <Image src="/images/svg_0.125_twelve_5.svg" />
-              <Pause />
-              <VerticalChunk>
+              <p>
                 Half of twelve hundredths is six hundredths, and
                 half of{" "}
                 <Math>
@@ -2213,11 +2185,10 @@ const Rest = () => {
                   $2.5$
                 </Math>
                 {" "}thousandths:
-              </VerticalChunk>
+              </p>
               <Pause />
               <Image src="/images/svg_06_and_0025.svg" />
-              <Pause />
-              <VerticalChunk>
+              <p>
                 ...so{" "}
                 <Math>
                   $0.125/2$
@@ -2229,13 +2200,13 @@ const Rest = () => {
                   </Math>
                   .
                 </NoBreak>
-              </VerticalChunk>
+              </p>
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
+        <Exercise number={2}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 2.
               </b>
@@ -2245,12 +2216,12 @@ const Rest = () => {
                 $100/16$
               </Math>
               {" "}by hand.
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={2}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               We have
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2258,9 +2229,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               so
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2268,7 +2239,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and that's all there is to it! (Or you could repeatedly divide{" "}
               <Math>
                 $100$
@@ -2289,12 +2260,12 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}after the fourth division.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={3}>
+        <Exercise number={3}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 3.
               </b>
@@ -2305,12 +2276,12 @@ const Rest = () => {
               </i>
               , what is “万万” in English?
               What about “万万万”?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={3}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               “万万” is “ten thousand ten thousand”, or
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2318,7 +2289,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               or{" "}
               <i>
                 one hundred million
@@ -2329,7 +2300,7 @@ const Rest = () => {
               </Math>
               {" "}is a hundred times a
               million. Similarly, “万万万” is
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2337,72 +2308,72 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which is just one trillion.
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Notes.
               </i>
               {" "}
               Rearranging
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <CentralDisplayItalic>
               ten thousand ten thousand
             </CentralDisplayItalic>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               to
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <CentralDisplayItalic>
               ten ten thousand thousand
             </CentralDisplayItalic>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               directly leads us to “hundred million”
               without having to use exponents, since ten
               times ten is a hundred and since a thousand
               times a thousand is a million.
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               (Similarly,
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <CentralDisplayItalic>
               ten thousand ten thousand ten thousand
             </CentralDisplayItalic>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               becomes
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <CentralDisplayItalic>
               ten ten ten thousand thousand thousand
             </CentralDisplayItalic>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               after rearrangement, which can be seen to
               equal one trillion because “ten ten ten” is
               a thousand.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={4}>
+        <Exercise number={4}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 4.
               </b>
               {" "}
               How many millimeters in a kilometer?
               How many kilometers in a millimeter?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={4}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               There are{" "}
               <Math>
                 $10^3$
@@ -2424,8 +2395,8 @@ const Rest = () => {
               </Math>
               {" "}
               millimeters in a kilometer.
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               From there, it automatically follows that
               there are{" "}
               <Math>
@@ -2433,8 +2404,8 @@ const Rest = () => {
               </Math>
               {" "}kilometers in
               a millimeter.
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               (Or you can run the reverse reasoning:
               There are{" "}
               <Math>
@@ -2452,12 +2423,12 @@ const Rest = () => {
               </Math>
               {" "}
               kilometers in a millimeter.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={5}>
+        <Exercise number={5}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 5.
               </b>
@@ -2467,12 +2438,12 @@ const Rest = () => {
                 $10^&#123;24&#125;$
               </Math>
               {" "}millimeters?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={5}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               We have
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2480,9 +2451,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               by the previous problem, so
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2490,7 +2461,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               by direct substitution. (You can do that with
               units.) The answer is therefore:{" "}
               <NoBreak>
@@ -2499,12 +2470,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={6}>
+        <Exercise number={6}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 6.
               </b>
@@ -2516,10 +2487,10 @@ const Rest = () => {
               {" "}trillion
               dollars, what percentage of the budget is
               one hundred billion $?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={6}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               One hundred billion is{" "}
               <Math>
                 $10\%$
@@ -2545,9 +2516,9 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Postscript
               </i>
@@ -2559,12 +2530,12 @@ const Rest = () => {
               </i>
               {" "}its currency
               into existence. (And taxes it out of existence.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={7}>
+        <Exercise number={7}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 7.
               </b>
@@ -2574,10 +2545,10 @@ const Rest = () => {
                 $10$
               </Math>
               {" "}of one trillion?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={7}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               <NoBreak>
                 <Math>
                   $12$
@@ -2591,12 +2562,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={8}>
+        <Exercise number={8}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 8.
               </b>
@@ -2612,10 +2583,10 @@ const Rest = () => {
                 </Math>
                 ?
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={8}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               <NoBreak>
                 <Math>
                   $0$
@@ -2629,12 +2600,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={9}>
+        <Exercise number={9}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 9.
               </b>
@@ -2648,12 +2619,12 @@ const Rest = () => {
                 a trillion times a billion times a million times a thousand
               </i>
               ?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={9}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Since
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2661,7 +2632,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               the answer is{" "}
               <NoBreak>
                 <Math>
@@ -2676,18 +2647,18 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={10}>
+        <Exercise number={10}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 10.
               </b>
               {" "}
               Evaluate:
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2695,10 +2666,10 @@ const Rest = () => {
               $$
             </MathBlock>
           </ExerciseStatement>
-          <Solution solution_number={10}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               We have
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2706,9 +2677,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2716,9 +2687,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2726,7 +2697,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               so the answer is{" "}
               <NoBreak>
                 <Math>
@@ -2734,12 +2705,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={11}>
+        <Exercise number={11}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 11.
               </b>
@@ -2753,10 +2724,10 @@ const Rest = () => {
                 gigabyte
               </i>
               ?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={11}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Presumably, there are{" "}
               <Math>
                 $1000$
@@ -2767,7 +2738,7 @@ const Rest = () => {
               eight bits in a byte, and a million bytes
               in a gigabyte, this means that there would
               be
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2775,7 +2746,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               or{" "}
               <Math>
                 $8$
@@ -2788,18 +2759,18 @@ const Rest = () => {
               </i>
               —i.e.,
               indivisible—unit of computer memory.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={12}>
+        <Exercise number={12}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 12.
               </b>
               {" "}
               It so happens that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2807,7 +2778,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               (i.e., the value of{" "}
               <NoBreak>
                 <Math>
@@ -2825,7 +2796,7 @@ const Rest = () => {
               </NoBreak>
               {" "}(You can
               verify that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2833,7 +2804,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and, by shifting two decimal places, one
               finds{" "}
               <NoBreak>
@@ -2844,7 +2815,7 @@ const Rest = () => {
               </NoBreak>
               {" "}Can you elucidate
               why it would be that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2852,14 +2823,14 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               by using some kind of algebra?
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={12}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               One has
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2867,7 +2838,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and{" "}
               <NoBreak>
                 <Math>
@@ -2876,18 +2847,18 @@ const Rest = () => {
                 .
               </NoBreak>
               {" "}(Ta-daa!)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={13}>
+        <Exercise number={13}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 13.
               </b>
               {" "}
               Prove that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2895,7 +2866,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               for all integers{" "}
               <Math>
                 $n$
@@ -2914,19 +2885,19 @@ const Rest = () => {
                 chapter
               </del>
               {" "}bootcamp.)
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={13}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Here is the “proof” that your professor is
               hoping for:
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/svg_start_end_proof.svg" />
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               The point is that the second equality uses the identity
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2934,10 +2905,10 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               stated earlier in the chapter as (
               <InChapterLink
-                href="/article/bootcamp2?id=_1_993"
+                href="/article/bootcamp2?id=_1_8633"
                 class="handle-in-chapter-link">
                 A
               </InChapterLink>
@@ -2945,9 +2916,9 @@ const Rest = () => {
               while the third equality uses additivity of exponents, 
               also stated earlier. (So: We are only using “known”
               facts, alongside some ordinary arithmetic.)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Notes.
               </i>
@@ -2957,11 +2928,11 @@ const Rest = () => {
               is one of the “laws of exponents”, whose complete list
               (even more-than-complete, other sources list fewer laws)
               is as follows (minus fine print):
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/svg_laws_exp.svg" />
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               The first law can be recognized as “additivity of exponents”
               while the second law
               is the above-mentioned generalization of this exercise's result.
@@ -2970,7 +2941,7 @@ const Rest = () => {
                 by definition
               </i>
               ,
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2978,9 +2949,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and it so happens that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2988,7 +2959,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               for all{" "}
               <NoBreak>
                 <Math>
@@ -2997,18 +2968,18 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}by some principle of elementary arithmetic.)
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={14}>
-          <ExerciseStatement id="_3_1745">
-            <VerticalChunk>
+        <Exercise number={14}>
+          <ExerciseStatement id="_3_3030">
+            <OuterP>
               <b>
                 Exercise 14.
               </b>
               {" "}
               Rewrite each of these expressions...
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3028,9 +2999,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               ...in the form...
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3038,7 +3009,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               ...for some integer exponents{" "}
               <NoBreak>
                 <Math>
@@ -3060,12 +3031,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={14}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               We have (#1)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3073,9 +3044,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               since
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3083,9 +3054,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and (#2)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3093,9 +3064,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               since
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3103,9 +3074,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and (#3)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3113,9 +3084,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               since
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3123,9 +3094,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3133,7 +3104,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               given that{" "}
               <NoBreak>
                 <Math>
@@ -3148,12 +3119,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={15}>
+        <Exercise number={15}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 15.
               </b>
@@ -3174,7 +3145,7 @@ const Rest = () => {
                 $c$
               </Math>
               {" "}such that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3182,7 +3153,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               where{" "}
               <NoBreak>
                 <Math>
@@ -3206,7 +3177,7 @@ const Rest = () => {
                 $\rho$
               </Math>
               {" "}are defined as below.
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3232,8 +3203,8 @@ const Rest = () => {
               $$
             </MathBlock>
           </ExerciseStatement>
-          <Solution solution_number={15}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Firstly we can rewrite{" "}
               <NoBreak>
                 <Math>
@@ -3285,12 +3256,12 @@ const Rest = () => {
               </Math>
               {" "}(as in{" "}
               <InChapterLink
-                href="/article/bootcamp2?id=_3_1745"
+                href="/article/bootcamp2?id=_3_3030"
                 class="handle-in-chapter-link">
                 Exercise 14
               </InChapterLink>
               ):
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3316,7 +3287,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               (Ok.) Nextly, we compute{" "}
               <NoBreak>
                 <Math>
@@ -3345,7 +3316,7 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}etc):
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3371,7 +3342,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               (In the last line we just restated{" "}
               <NoBreak>
                 <Math>
@@ -3385,7 +3356,7 @@ const Rest = () => {
                 $v^aF^b\mu^c\rho$
               </Math>
               {" "}becomes
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3393,7 +3364,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               by multiplying everything together and using
               additivity of exponents. (E.g.,{" "}
               <NoBreak>
@@ -3404,7 +3375,7 @@ const Rest = () => {
               </NoBreak>
               {" "}
               and so on.) This expression equals
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3412,7 +3383,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               independently of the values of{" "}
               <NoBreak>
                 <Math>
@@ -3433,13 +3404,13 @@ const Rest = () => {
               </Math>
               {" "}
               if and only if...
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <CentralDisplayItalic>
               the three exponents are zero
             </CentralDisplayItalic>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               ...(!!!) which means that we need to find values
               {" "}
               <NoBreak>
@@ -3457,7 +3428,7 @@ const Rest = () => {
                 $c$
               </Math>
               {" "}such that these three equations...
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3477,26 +3448,26 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               ...are satisfied! Adding the second and
               third equation together, we find
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
               \Large -b -2c -3 = 0
               $$
               <ImageRight
-                offset_x="0.5em"
-                offset_y="-0.5em"
                 src="/images/svg_bt2_ex_equation_addition_cloud.svg"
+                offset_y="-0.5em"
+                offset_x="0.5em"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and adding this last equation to the first
               equation above, we find
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3504,7 +3475,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which implies that{" "}
               <NoBreak>
                 <Math>
@@ -3526,7 +3497,7 @@ const Rest = () => {
               </Math>
               {" "}into the first of our three
               equations, we find
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3534,9 +3505,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               or
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3544,7 +3515,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which implies that{" "}
               <NoBreak>
                 <Math>
@@ -3566,7 +3537,7 @@ const Rest = () => {
               </Math>
               {" "}in our second equation above
               gives us
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3574,7 +3545,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which implies that{" "}
               <Math>
                 $a = 0$
@@ -3615,8 +3586,8 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}which it does.)
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               In summary, the solution is{" "}
               <NoBreak>
                 <Math>
@@ -3640,7 +3611,7 @@ const Rest = () => {
                 ;
               </NoBreak>
               {" "}we have discovered that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3648,7 +3619,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               under the given definitions of{" "}
               <NoBreak>
                 <Math>
@@ -3677,7 +3648,7 @@ const Rest = () => {
               </NoBreak>
               {" "}or which is to say, we have discovered
               that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -3685,7 +3656,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               (since{" "}
               <NoBreak>
                 <Math>
@@ -3700,12 +3671,10 @@ const Rest = () => {
                 </Math>
                 ).
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
       </Exercises>
-</> }
-</>);
+    </>}
+  </>;
 };
-
-export default Article;

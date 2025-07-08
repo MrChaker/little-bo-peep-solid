@@ -1,96 +1,68 @@
-import Bootcamp from "~/components/Bootcamp";
-import { Section, Note, SolutionNote, Example, NoBreak, Pause, WriterlyBlankLine } from "~/components/Wrappers";
-import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
-import TextParent from "~/components/TextParent";
-import { Math, MathBlock } from "~/components/Math";
-import { ImageRight, ImageLeft } from "~/components/SideImage";
-import Image from "~/components/Image";
-import InlineImage from "~/components/InlineImage";
-import { Exercise, Exercises, ExerciseStatement } from "~/components/Exercises";
-import InChapterLink from "~/components/InChapterLink";
-import Solution from "~/components/Solution";
-import Table from "~/components/Table";
-import Grid from "~/components/Grid";
-import { List, Item } from "~/components/List";
-import { SectionDivider } from "~/components/SectionDivider";
-import { StarDivider } from "~/components/StarDivider";
-import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
-import useSetRoute from "~/hooks/useSetRoute";
+import Article  from "~/components/Article";
+import ArticleTitle  from "~/components/ArticleTitle";
+import { CentralDisplayItalic }  from "~/components/Delimiters";
+import InChapterLink  from "~/components/InChapterLink";
+import { Math, MathBlock }  from "~/components/Math";
+import OuterP  from "~/components/OuterP";
+import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
+import { ImageRight }  from "~/components/SideImage";
+import { Section, NoBreak, Pause }  from "~/components/Wrappers";
 import useShowMore from "~/hooks/useShowMore";
-import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
-const Article = () => {
-  useSetRoute();
-  useBreadcrumbs();
-  return (<>
-    <Bootcamp
-      number={1}
-      next-page="/"
-      prev-page="/article/bootcamp2"
-      max-element-width={800}
-      page-necessary-margin={160}
-      title="Sets">
+export default function __Bootcamp1__() {
+  return (
+    <Article
+      prevPage="/article/bootcamp2"
+      nextPage="/"
+      pageNecessaryMargin={160}
+      maxElementWidth={800}>
       <SectionsBreadcrumbs>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-0">
+        <BreadcrumbItem id="breadcrumb-0">
           <InChapterLink href="?id=section-1">
             notation
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-1">
+        <BreadcrumbItem id="breadcrumb-1">
           <InChapterLink href="?id=section-2">
             what it does
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-2">
+        <BreadcrumbItem id="breadcrumb-2">
           <InChapterLink href="?id=section-3">
             set equality
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-3">
+        <BreadcrumbItem id="breadcrumb-3">
           <InChapterLink href="?id=section-4">
             second notation for the empty set
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-4">
+        <BreadcrumbItem id="breadcrumb-4">
           <InChapterLink href="?id=section-5">
             sets within sets
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-5">
+        <BreadcrumbItem id="breadcrumb-5">
           <InChapterLink href="?id=section-6">
             set union and set intersection
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-6">
+        <BreadcrumbItem id="breadcrumb-6">
           <InChapterLink href="?id=section-7">
             sets encountered in calculus
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-7">
+        <BreadcrumbItem id="breadcrumb-7">
           <InChapterLink href="?id=section-8">
             sets not encountered in calculus
           </InChapterLink>
         </BreadcrumbItem>
       </SectionsBreadcrumbs>
+      <ArticleTitle banner="Bootcamp 1:">
+        Sets
+      </ArticleTitle>
       <Section id="section-1">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Notation.
           </b>
@@ -135,21 +107,21 @@ const Article = () => {
             $3$
           </Math>
           {" "}(and nothing else):
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large\&#123;1, 2, 3\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Also,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large\&#123;1\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a set containing just the number{" "}
           <NoBreak>
             <Math>
@@ -158,13 +130,13 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}while
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large\&#123;1, 3\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a set containing just the numbers{" "}
           <Math>
             $1$
@@ -178,65 +150,65 @@ const Article = () => {
             ,
           </NoBreak>
           {" "}etc. Even,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large\&#123;\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is an{" "}
           <i>
             empty
           </i>
           {" "}set, a set with no elements!
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Rest />
-    </Bootcamp>
-  </>);
-};
+    </Article>
+  );
+}
 
 const Rest = () => {
   const showMore = useShowMore();
-  return(<>
-    { showMore() && <>
+  return <>
+    {showMore() && <>
       <Pause />
       <Section id="section-2">
-        <VerticalChunk>
+        <OuterP>
           <b>
             What it does.
           </b>
           {" "}
           The “API” (a computer science notion,
           roughly meaning
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the interface offered to the outside world
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as in, for example, the buttons and clock
           display and door handle of a microwave oven)
           of a set consists of just one functionality:
           a set can answer questions of the form
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           do you contain ... ?
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and nothing else.
           For example, you could ask a set
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           do you contain 3?
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           to which{" "}
           <Math>
             $\&#123;1, 3\&#125;$
@@ -247,13 +219,13 @@ const Rest = () => {
             $\&#123; 1\&#125;$
           </Math>
           {" "}would answer “no”, or
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           do you contain 2?
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           to which{" "}
           <Math>
             $\&#123;1\&#125;$
@@ -269,18 +241,18 @@ const Rest = () => {
           </Math>
           {" "}would
           answer “yes”.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Notation-wise, the expression
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large x \in A$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           means
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <Math>
@@ -292,9 +264,9 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           or
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <Math>
@@ -310,9 +282,9 @@ const Rest = () => {
           </NoBreak>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           equivalently. [One can also say
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <Math>
@@ -324,9 +296,9 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           or
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <Math>
@@ -338,9 +310,9 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           or
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <Math>
@@ -352,18 +324,18 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           depending on one's mood and/or tastes.]
           As in all of mathematics, any such statement
           evaluates to either “true” or “false”.
           For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large 1 \in \&#123;1, 2\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is true, because{" "}
           <Math>
             $1$
@@ -381,13 +353,13 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}whereas
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large 3 \in \&#123;1, 2\&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is false, because{" "}
           <Math>
             $3$
@@ -404,11 +376,11 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-3">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Set Equality.
           </b>
@@ -418,7 +390,7 @@ const Rest = () => {
           answer the same to
           all “do you contain ...?” questions.
           For example, while
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -426,9 +398,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           might look superficially different from
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -436,10 +408,10 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           these sets are actually one and the same,
           because they both answer “yes” to
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           do you contain 1?
@@ -449,9 +421,9 @@ const Rest = () => {
           do you contain 2?
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and answer “no” to all else. For that matter,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -459,9 +431,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           might also look superficially different from
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -469,9 +441,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           but since both sets answer “yes” to
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           do you contain 1?
@@ -481,66 +453,66 @@ const Rest = () => {
           do you contain 2?
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and answer “no” to all else,
           they are by definition the same.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           (These examples demonstrate that human notation
           is redundant: there are several different ways of
           writing down the same set. They also demonstrate
           that sets do not keep track of the
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           order
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           nor of the
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           multiplicity
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           of their elements. Such notions are simply not part
           of the “API” of a set.)
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Moreover, any empty set is equal to any other
           empty set. Equality follows because both sets
           answer all questions the same way: they both
           answer “no” to everything. So there is
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           one
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and only one empty set. Therefore, mathematicians
           speak of
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           empty set—the one and only!
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-4">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Second notation for the empty set.
           </b>
           {" "}
           While the empty set can be written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -548,9 +520,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           another available notation is
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -558,15 +530,15 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which is the Greek letter phi, read “fee”. (Or
           “fie”? Hum.) (Or you can just say “the empty set”,
           and keep it safe.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-5">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Sets within sets.
           </b>
@@ -574,7 +546,7 @@ const Rest = () => {
           Sets can be nested much like Russian dolls. In
           fact, the result of doing this might even look
           like a little bit like a Russian doll (no?):
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -582,12 +554,12 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           The above is “a set containing a set containing
           a set containing a set containing the empty set”.
           Eschewing complete adherence to the Russian doll
           aesthetic, we could also write
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -595,7 +567,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           for the same thing, given that{" "}
           <NoBreak>
             <Math>
@@ -603,25 +575,25 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Mind you, concerning this example, that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
           \Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
           $$
           <ImageRight
-            offset_x="3em"
             src="/images/svg_bt1_bt_empty_set_cloud.svg"
+            offset_x="3em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           because a box containing an empty box is not the
           same thing as an empty box! Specifically,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -629,7 +601,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           answers “yes” to the question “do you contain
           {" "}
           <NoBreak>
@@ -646,7 +618,7 @@ const Rest = () => {
             ?”)
           </NoBreak>
           {" "}whereas
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -654,7 +626,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           answers “no” to the same question. (Indeed, while
           the empty set{" "}
           <i>
@@ -666,7 +638,7 @@ const Rest = () => {
           </i>
           {" "}something.)
           Similarly,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -674,14 +646,14 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           etc, etc: adding a new outer layer changes the
           whole set each time.
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-6">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Set union and set intersection.
           </b>
@@ -700,13 +672,13 @@ const Rest = () => {
           </Math>
           {" "}is
           written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\Large A \cup B$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and consists of the set
           of all things that are either in{" "}
           <Math>
@@ -721,7 +693,7 @@ const Rest = () => {
           </NoBreak>
           {" "}For
           example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -729,7 +701,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as{" "}
           <NoBreak>
             <Math>
@@ -772,7 +744,7 @@ const Rest = () => {
             $B$
           </Math>
           {" "}is written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -780,7 +752,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and consists of the set of all things that are both
           in{" "}
           <Math>
@@ -794,7 +766,7 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -802,7 +774,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as{" "}
           <Math>
             $2$
@@ -819,10 +791,10 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Note that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -830,18 +802,21 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           if and only if
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
           \Large x \in A
           $$
         </MathBlock>
-        <i>
-          or
-        </i>
+        <Pause />
+        <OuterP>
+          <i>
+            or
+          </i>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -849,12 +824,12 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           because that's how we defined “union”. (Replace
           “or” by “and” to get a definition of intersection.)
           In fact, a logician would define the union of two
           sets by an abstruse expression of the type
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -862,9 +837,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           read
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           an element{" "}
@@ -898,7 +873,7 @@ const Rest = () => {
           </Math>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as{" "}
           <NoBreak>
             “
@@ -919,7 +894,7 @@ const Rest = () => {
           {" "}means “or”. (You can figure out the
           similar definition for the intersection of two sets
           if we tell you that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -927,13 +902,13 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           means “and”.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-7">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Sets encountered in calculus.
           </b>
@@ -943,7 +918,7 @@ const Rest = () => {
             the real
             numbers
           </i>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -951,13 +926,13 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which is an infinite set containing all “ordinary”
           decimal numbers, or such as{" "}
           <i>
             the integers
           </i>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -965,14 +940,14 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which contains all “whole” numbers, including the
           negative ones. You might also encounter
           {" "}
           <i>
             the natural numbers
           </i>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -980,7 +955,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which contains only those integers that are greater
           than{" "}
           <Math>
@@ -993,8 +968,8 @@ const Rest = () => {
             </Math>
             ).
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Secondly—and this pretty much wraps it up for those
           sets  that are commonly seen in calculus—you will
           encounter{" "}
@@ -1002,7 +977,7 @@ const Rest = () => {
             intervals
           </i>
           . For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1010,7 +985,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a{" "}
           <i>
             closed interval
@@ -1032,7 +1007,7 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}Or
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1040,7 +1015,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is a{" "}
           <i>
             half-open
@@ -1062,10 +1037,10 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}Etc.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Note that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1073,9 +1048,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           since
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1083,20 +1058,20 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (which is an{" "}
           <i>
             open
           </i>
           {" "}interval, by the way) means
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the set of real numbers with no bound below,
           and no bound above
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which is all of{" "}
           <NoBreak>
             <Math>
@@ -1104,11 +1079,11 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-8">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Sets not encountered in calculus.
           </b>
@@ -1120,7 +1095,7 @@ const Rest = () => {
           </i>
           ,
           written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1128,7 +1103,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and which consists of all the numbers in{" "}
           <NoBreak>
             <Math>
@@ -1154,7 +1129,7 @@ const Rest = () => {
             ”
           </NoBreak>
           {" "}as well:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1162,10 +1137,10 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (I.e., ...well, you get it!)
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           You can view{" "}
           <Math>
             $\overline&#123;\rr&#125;$
@@ -1184,7 +1159,7 @@ const Rest = () => {
           </Math>
           {" "}
           as being the closed interval
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1192,25 +1167,25 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           with the two infinite endpoints{" "}
           <i>
             included
           </i>
           .
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Does all this have any “real meaning”? Good question!
           The answer is:{" "}
           <i>
             not until you give it one
           </i>
           .
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           E.g. (to give you a brief flavor, before we move on
           forever from the topic), the value of something like
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1218,7 +1193,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           must be{" "}
           <i>
             defined
@@ -1249,7 +1224,7 @@ const Rest = () => {
             undefined
           </i>
           . For example, the expression
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1257,7 +1232,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           has an{" "}
           <i>
             undefined
@@ -1276,10 +1251,8 @@ const Rest = () => {
           </NoBreak>
           {" "}
           (Well, anyway, end of lesson.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
-</> }
-</>);
+    </>}
+  </>;
 };
-
-export default Article;

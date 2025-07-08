@@ -27,6 +27,7 @@
   --foreground-rgb: rgb(0, 0, 0);
   --desktop-text-column-padding: 16px;
   --mobile-max-width: 900px;
+  --toc-label-stroke-color: oklch(97% 0.001 106.424); /* bg-stone-100 */
 }
 
 .bg-bg {
@@ -77,13 +78,6 @@ em {
   padding-right: var(--desktop-text-column-padding);
 }
 
-.slice {
-  position: relative;
-  margin-inline: auto;
-  padding-left: var(--desktop-text-column-padding);
-  padding-right: var(--desktop-text-column-padding);
-}
-
 .mathblock {
   position: relative;
   width: fit-content;
@@ -105,6 +99,9 @@ em {
 
 /* Mathjax */
 
+.MathJax svg {
+  max-width: 100%;
+}
 .MathJax_SVG {
   font-size: 100%;
   position: relative;
@@ -114,6 +111,7 @@ em {
 }
 .MathJax_SVG svg {
   display: inline-block;
+  max-width: 100%;
 }
 .MathJax_SVG_Display {
   margin: 0 !important;
@@ -305,7 +303,7 @@ table.first-line tr td:first-child {
   white-space: nowrap;
 }
 
-.divide-horizontally {
+.left-right-background-divide {
   background-image: linear-gradient(
     to right,
     #d1d1f7 0%,
@@ -315,7 +313,7 @@ table.first-line tr td:first-child {
   );
 }
 
-.divide-vertically {
+.top-bottom-background-divide {
   background-image: linear-gradient(
     to bottom,
     #d1f7dc 0%,
@@ -430,7 +428,6 @@ ol.l1 > li:before {
 .breadcrumb,
 .breadcrumb-prev-next {
   position: relative;
-  font-size: 14px;
   font-family: sans-serif;
 }
 
@@ -473,4 +470,24 @@ ol.l1 > li:before {
   padding: 5px;
   margin: -5px;
   border-radius: 10px;
+}
+
+.toc-item-lead-wrapper {
+  position: absolute;
+  direction: ltr;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.toc-item-lead-dots {
+  margin-left: 5px;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+}
+
+.toc-item-title {
+  max-width: calc(100% - 40px);
+  align-items: right;
 }

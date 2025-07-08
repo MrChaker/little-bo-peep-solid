@@ -25,10 +25,10 @@ import smoothScrollTo from "~/utils/smoothScrollTo";
 import elementPosOnPage from "~/utils/elementPosOnPage";
 import { HeightChangeListenerProvider } from "~/store/HeightChangeListenerProvider";
 import useScrollToInChapter from "~/hooks/useScrollToInChapter";
+import { useOneExerciseContext } from "~/store/OneExerciseStoreProvider";
 
 type SolutionProps = ParentProps &
   SharedProps & {
-    solution_number: number;
     re_calculate_height?: boolean;
   };
 
@@ -74,12 +74,15 @@ export const Solution = (props: SolutionProps) => {
   let { store: global_store, set_store: set_global_store } = useGlobalContext();
   const { set_exercises_store: set_store, exercises_store: store } =
     useExercisesContext();
+  let {
+    store: { number: solution_number },
+  } = useOneExerciseContext();
   const { updateExerciseByIndex } = useExercisesStateHelpers();
 
   const solution_open = () =>
-    store.exercises[props.solution_number - 1]?.solution_open;
+    store.exercises[solution_number - 1]?.solution_open;
   const transition_duration = () =>
-    store.exercises[props.solution_number - 1]?.transition_duration;
+    store.exercises[solution_number - 1]?.transition_duration;
   const num_exercises = () => store.exercises.length;
 
   let [content_height, set_content_height] = createSignal(0);
@@ -101,7 +104,7 @@ export const Solution = (props: SolutionProps) => {
     props.re_calculate_height; // re-calc on change
     if (ref?.clientHeight) {
       set_content_height(ref?.clientHeight || 0);
-      updateExerciseByIndex(props.solution_number - 1, {
+      updateExerciseByIndex(solution_number - 1, {
         field: "transition_duration",
         value: Math.min(ref?.clientHeight, 1000) * 0.8,
       });
@@ -146,9 +149,7 @@ export const Solution = (props: SolutionProps) => {
   createEffect(() => {
     // green div height
     // if exercise question is too small we increase green div height
-    let exo = document
-      .querySelectorAll(".exercise")
-      ?.item(props.solution_number - 1);
+    let exo = document.querySelectorAll(".exercise")?.item(solution_number - 1);
     if (exo?.clientHeight < 200 + green_div_height()) {
       set_green_div_height(700);
     } else {
@@ -198,7 +199,7 @@ export const Solution = (props: SolutionProps) => {
         set_handle={set_handle}
         set_solution_fully_opened={set_solution_fully_opened}
         set_solution_transition={set_solution_transition}
-        solution_number={props.solution_number}
+        solution_number={solution_number}
         ref={buttonRef}
         resetter={reset_content_height_etc}
       />
@@ -216,7 +217,12 @@ export const Solution = (props: SolutionProps) => {
           "transition-duration": `${solution_transition()}ms`,
           "transition-property": "height",
         }}>
-        <div ref={ref} class={twJoin("absolute bottom-0 w-full")}>
+        <div
+          ref={ref}
+          style={{
+            position: solution_fully_opened() ? "relative" : "absolute",
+          }}
+          class={twJoin(" bottom-0 w-full")}>
           <ExtraSpaceBetweenSolutionButtonAndSolutionWhenSolutionShowing />
           {props.children}
         </div>
@@ -229,7 +235,7 @@ export const Solution = (props: SolutionProps) => {
       </div>
 
       {/* Possible backup arrow */}
-      {(!store.list_view || props.solution_number === num_exercises()) && (
+      {(!store.list_view || solution_number === num_exercises()) && (
         <>
           <SpaceBeforeBackupArrow />
           <div
@@ -245,15 +251,15 @@ export const Solution = (props: SolutionProps) => {
           </div>
         </>
       )}
-      {store.list_view && props.solution_number !== num_exercises() && (
+      {store.list_view && solution_number !== num_exercises() && (
         <SpaceBeforeNextExerciseWhenNotLastExerciseInListViewAlwaysShowing />
       )}
 
       {/* Green Div */}
       <div
-        class="slice transition-all col-start-2"
+        class="text-column transition-all col-start-2"
         style={{
-          height: `${(!store.list_view || props.solution_number === num_exercises()) && (!solution_open() || bot_div()) ? green_div_height() : 0}px`,
+          height: `${(!store.list_view || solution_number === num_exercises()) && (!solution_open() || bot_div()) ? green_div_height() : 0}px`,
           "background-color": global_store.show_areas ? "#00440050" : "",
           "transition-duration": `${green_div_transition()}ms`,
         }}></div>
@@ -287,7 +293,7 @@ const SolutionButton = (props: SolutionBtnProps) => {
     <div
       ref={props.ref}
       class="relative"
-      style={`padding-inline: ${TEXT_X_PADDING}`}>
+      style={`padding-inline: ${TEXT_X_PADDING}px`}>
       <SolutionSVG
         solution_open={solution_open}
         onClick={(event) => {

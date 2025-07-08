@@ -1,48 +1,40 @@
 import { JSX } from "solid-js";
 import { A, useLocation } from "@solidjs/router";
 import { useGlobalContext } from "~/store/StoreProvider";
-import { MOBILE_MAX_WIDTH } from "~/constants";
+import { ParentProps } from "solid-js";
 
-const setUpParentAndWidth = (
-  parent: HTMLDivElement,
-  span: HTMLSpanElement,
-): void => {
-  parent.style.width = MOBILE_MAX_WIDTH + "px";
-  parent.style.position = "absolute";
-  parent.style.top = "0px";
-  parent.style.visibility = "hidden";
-  span.style.font = "Baskerville, serif";
-  span.style.fontSize = "1.875rem";
-  span.style.height = "auto";
-  span.style.width = "auto";
-  span.style.whiteSpace = "nowrap";
-  parent.appendChild(span);
-  document.body.appendChild(parent);
-};
-
-const HamburgerPanelItem = (props: {
+const HamburgerPanelItem = (props: ParentProps & {
   href: string;
-  label: string;
-  on_mobile?: string;
-  article_type: any;
+  article_type: number;
 }) => {
   const { store } = useGlobalContext();
 
   return (
     <ConditionalLink
       href={`/article/${props.href}`}
-      class="panel-item flex items-baseline justify-between leading-9 sm:leading-8 text-2xl"
       onSameRoute={(e) => {
         e.preventDefault();
         window.scroll({
           left: (store.scrollWidth - store.innerWidth) / 2,
           behavior: "instant",
         });
-      }}>
-      <div class="relative w-full inline-flex items-baseline">
-        <span class="">{props.article_type}</span>
-        <span class="dots sm:min-w-[0rem] md:min-w-[2rem] lg:min-w-[4.4rem]"></span>
-        <span class="whitespace-normal text-right">{props.label}</span>
+      }}
+    >
+      <div class="panel-item flex items-baseline justify-between leading-9 sm:leading-8 text-2xl">
+        <div class="relative m-auto" style={`width:100%;direction:rtl;`}>
+          <div class="toc-item-lead-wrapper">
+            <div>
+              {/* somehow this wrapper div is useful for base-alignment */}
+              <span>{props.article_type}</span>
+              <span class="toc-item-lead-dots">
+                ..........................................................................................................................................................................
+              </span>
+            </div>
+          </div>
+          <div class="toc-item-title">
+            <span class="bg-stone-100">&lrm;&thinsp;{props.children}&lrm;</span>
+          </div>
+        </div>
       </div>
     </ConditionalLink>
   );

@@ -5,20 +5,18 @@ import blamedlines.{type Blame, type BlamedLine, Blame, BlamedLine}
 import gleam/io
 import gleam/list
 import gleam/option.{Some}
-import gleam/string
-import gleam/dict
+import gleam/string.{inspect as ins}
+import gleam/dict.{type Dict}
 import infrastructure as infra
-import pipeline
-import vxml.{type VXML, BlamedAttribute, V}
+import pipeline.{our_pipeline}
+import vxml.{type VXML, V}
 import vxml_renderer as vr
 import writerly as wp
 import gleam/otp/actor.{stop}
-
-const ins = string.inspect
+import emitter_imports as ei
 
 type FragmentType {
-  Chapter(Int)
-  Bootcamp(Int)
+  Article(String)
   TOC
   HamburgerPanelAuthorSuppliedContents
 }
@@ -30,19 +28,16 @@ type LBPSplitterError {
   MoreThanOneHamburgerPanelAuthorSuppliedContents
 }
 
-type LBPEmitterError {
-  NumberAttributeAlreadyExists(FragmentType, Int)
-}
+type LBPEmitterError = Nil
 
 fn blame_us(message: String) -> Blame {
   Blame(message, -1, -1, [])
 }
 
-fn lbp_splitter(
+fn our_splitter(
   root: VXML,
 ) -> Result(List(#(String, VXML, FragmentType)), LBPSplitterError) {
-  let chapter_vxmls = infra.children_with_tag(root, "Chapter")
-  let bootcamp_vxmls = infra.children_with_tag(root, "Bootcamp")
+  let articles = infra.children_with_tags(root, ["Chapter", "Bootcamp"])
   use toc_vxml <- infra.on_error_on_ok(
     infra.unique_child_with_tag(root, "TOC"),
     with_on_error: fn(error) {
@@ -69,12 +64,16 @@ fn lbp_splitter(
         #("routes/index.tsx", toc_vxml, TOC),
         #("components/HamburgerPanelAuthorSuppliedContents.tsx", panel_vxml, HamburgerPanelAuthorSuppliedContents),
       ],
-      list.index_map(chapter_vxmls, fn(c, index) {
-        #("routes/article/chapter" <> ins(index + 1) <> ".tsx", c, Chapter(index + 1))
-      }),
-      list.index_map(bootcamp_vxmls, fn(c, index) {
-        #("routes/article/bootcamp" <> ins(index + 1) <> ".tsx", c, Bootcamp(index + 1))
-      }),
+      list.map(
+        articles,
+        fn(c) {
+          let #(c, path) = infra.assert_pop_attribute_value(c, "path")
+          let #(c, number) = infra.assert_pop_attribute_value(c, "number")
+          let #(c, category) = infra.assert_pop_attribute_value(c, "category")
+          let c = infra.set_tag(c, "Article")
+          #("routes" <> path <> ".tsx", c, Article("__" <> category <> number <> "__"))
+        }
+      ),
     ]),
   )
 }
@@ -98,93 +97,50 @@ fn up_to_and_including_first_section(
   }
 }
 
-// splitting chapter vxmls for performance
-fn split_vxmls_to_first_section_and_rest(vxml: VXML) -> #(VXML, List(VXML)) {
+fn split_vxml_to_first_section_and_rest(vxml: VXML) -> #(VXML, List(VXML)) {
   let assert V(b, t, a, children) = vxml
   let #(before_rest, rest) = up_to_and_including_first_section([], children)
   let rest_tag = V(blame_us("rest tag"), "Rest", [], [])
   #(V(b, t, a, [rest_tag, ..before_rest] |> list.reverse), rest)
 }
 
-fn lbp_chapter_bootcamp_common_emitter(
+fn article_emitter(
   path: String,
   fragment: VXML,
   fragment_type: FragmentType,
-  number: Int,
+  imports_lookup: Dict(String, ei.ImportSource),
 ) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
-  let number_attribute =
-    BlamedAttribute(blame_us("lbp_fragment_emitterL65"), "number", ins(number))
 
-  use fragment <- infra.on_error_on_ok(
-    over: infra.prepend_unique_key_attribute(fragment, number_attribute),
-    with_on_error: fn(_) {
-      Error(NumberAttributeAlreadyExists(fragment_type, number))
-    },
-  )
+  let #(first_split, rest) = split_vxml_to_first_section_and_rest(fragment)
+  let assert Article(payload) = fragment_type
 
-  let #(first_split, rest) = split_vxmls_to_first_section_and_rest(fragment)
+  let assert Ok(component_imports) =
+    ei.uppercase_tags(fragment)
+    |> ei.imports_blamed_lines_for_symbols(imports_lookup)
 
   let lines =
     list.flatten([
-      [
-        case fragment_type {
-          Chapter(_) ->
-            BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Chapter from \"~/components/Chapter\";")
-          Bootcamp(_) ->
-            BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Bootcamp from \"~/components/Bootcamp\";")
-          _ -> panic as "bad fragment_type"
-        },
-      ],
-      [
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Section, Note, SolutionNote, Example, NoBreak, Pause, WriterlyBlankLine } from \"~/components/Wrappers\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { CentralDisplay, CentralDisplayItalic } from \"~/components/Delimiters\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import TextParent from \"~/components/TextParent\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Math, MathBlock } from \"~/components/Math\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { ImageRight, ImageLeft } from \"~/components/SideImage\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Image from \"~/components/Image\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import InlineImage from \"~/components/InlineImage\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { Exercise, Exercises, ExerciseStatement } from \"~/components/Exercises\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import InChapterLink from \"~/components/InChapterLink\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Solution from \"~/components/Solution\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Table from \"~/components/Table\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import Grid from \"~/components/Grid\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { List, Item } from \"~/components/List\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { SectionDivider } from \"~/components/SectionDivider\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import { StarDivider } from \"~/components/StarDivider\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import VerticalChunk from \"~/components/VerticalChunk\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import SectionsBreadcrumbs, { BreadcrumbItem } from \"~/components/SectionsBreadcrumbs\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import useSetRoute from \"~/hooks/useSetRoute\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import useShowMore from \"~/hooks/useShowMore\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "import useBreadcrumbs from \"~/hooks/useBreadcrumbs\";"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, ""),
-        BlamedLine(
-          blame_us("lbp_fragment_emitter"),
-          0,
-          "const Article = () => {",
-        ),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "useSetRoute();"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "useBreadcrumbs();"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "return (<>"),
+      component_imports,
+      [ BlamedLine(blame_us("article_emitter"), 0, "import useShowMore from \"~/hooks/useShowMore\";"),
+        BlamedLine(blame_us("article_emitter"), 0, ""),
+        BlamedLine(blame_us("article_emitter"), 0, "export default function " <> payload <> "() {"),
+        BlamedLine(blame_us("article_emitter"), 2, "return ("),
       ],
       vxml.vxml_to_jsx_blamed_lines(first_split, 4),
-      // first section loads immediatly
       [
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "</>);"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "};"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, ""),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "const Rest = () => {"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "const showMore = useShowMore();"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 2, "return(<>"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 4, "{ showMore() && <>"),
+        BlamedLine(blame_us("article_emitter"), 2, ");"),
+        BlamedLine(blame_us("article_emitter"), 0, "}"),
+        BlamedLine(blame_us("article_emitter"), 0, ""),
+        BlamedLine(blame_us("article_emitter"), 0, "const Rest = () => {"),
+        BlamedLine(blame_us("article_emitter"), 2, "const showMore = useShowMore();"),
+        BlamedLine(blame_us("article_emitter"), 2, "return <>"),
+        BlamedLine(blame_us("article_emitter"), 4, "{showMore() && <>"),
       ],
       vxml.vxmls_to_jsx_blamed_lines(rest, 6),
-      // first section loads immediatly
       [
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "</> }"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "</>);"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "};"),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, ""),
-        BlamedLine(blame_us("lbp_fragment_emitter"), 0, "export default Article;"),
+        BlamedLine(blame_us("article_emitter"), 4, "</>}"),
+        BlamedLine(blame_us("article_emitter"), 2, "</>;"),
+        BlamedLine(blame_us("article_emitter"), 0, "};"),
       ],
     ])
 
@@ -195,16 +151,17 @@ fn toc_emitter(
   path: String,
   fragment: VXML,
   fragment_type: FragmentType,
+  imports_lookup: Dict(String, ei.ImportSource),
 ) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let assert Ok(component_imports) =
+    ei.uppercase_tags(fragment)
+    |> ei.imports_blamed_lines_for_symbols(imports_lookup)
+
   let lines =
     list.flatten([
-      [
-        BlamedLine(blame_us("toc_emitter"), 0, "import TOC from \"~/components/TOC\";"),
-        BlamedLine(blame_us("toc_emitter"), 0, "import TOCTitle from \"~/components/TOCTitle\";"),
-        BlamedLine(blame_us("toc_emitter"), 0, "import TOCItem from \"~/components/TOCItem\";"),
-        BlamedLine(blame_us("toc_emitter"), 0, "import { Spacer } from \"~/components/Spacer\";"),
-        BlamedLine(blame_us("toc_emitter"), 0, ""),
-        BlamedLine(blame_us("toc_emitter"), 0, "export default function Home() {"),
+      component_imports,
+      [BlamedLine(blame_us("toc_emitter"), 0, ""),
+        BlamedLine(blame_us("toc_emitter"), 0, "export default function __Home__() {"),
         BlamedLine(blame_us("toc_emitter"), 2, "return ("),
       ],
       vxml.vxml_to_jsx_blamed_lines(fragment , 4),
@@ -218,45 +175,46 @@ fn toc_emitter(
   Ok(#(path, lines, fragment_type))
 }
 
-fn panel_emitter(
+fn hpausc_emitter(
   path: String,
   fragment: VXML,
   fragment_type: FragmentType,
+  imports_lookup: Dict(String, ei.ImportSource),
 ) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
+  let assert Ok(component_imports) =
+    ei.uppercase_tags_in_children(fragment)
+    |> ei.imports_blamed_lines_for_symbols(imports_lookup)
+
   let lines =
     list.flatten([
+      component_imports,
       [
-        BlamedLine(blame_us("panel_emitter"), 0, "import HamburgerPanelTitle from \"./HamburgerPanelTitle\";"),
-        BlamedLine(blame_us("panel_emitter"), 0, "import HamburgerPanelItem from \"./HamburgerPanelItem\";"),
-        BlamedLine(blame_us("panel_emitter"), 0, ""),
-        BlamedLine(blame_us("panel_emitter"), 0, "const HamburgerPanelAuthorSuppliedContents = () => {"),
-        BlamedLine(blame_us("panel_emitter"), 2, "return ("),
-        BlamedLine(blame_us("panel_emitter"), 4, "<>"),
+        BlamedLine(blame_us("hpausc_emitter"), 0, ""),
+        BlamedLine(blame_us("hpausc_emitter"), 0, "const HamburgerPanelAuthorSuppliedContents = () => {"),
+        BlamedLine(blame_us("hpausc_emitter"), 2, "return <>"),
       ],
-      vxml.vxmls_to_jsx_blamed_lines(fragment |> infra.get_children, 6),
+      vxml.vxmls_to_jsx_blamed_lines(fragment |> infra.get_children, 4),
       [
-        BlamedLine(blame_us("panel_emitter"), 4, "</>"),
-        BlamedLine(blame_us("panel_emitter"), 2, ");"),
-        BlamedLine(blame_us("panel_emitter"), 0, "};"),
-        BlamedLine(blame_us("panel_emitter"), 0, ""),
-        BlamedLine(blame_us("panel_emitter"), 0, "export default HamburgerPanelAuthorSuppliedContents;"),
+        BlamedLine(blame_us("hpausc_emitter"), 2, "</>;"),
+        BlamedLine(blame_us("hpausc_emitter"), 0, "};"),
+        BlamedLine(blame_us("hpausc_emitter"), 0, ""),
+        BlamedLine(blame_us("hpausc_emitter"), 0, "export default HamburgerPanelAuthorSuppliedContents;"),
       ],
     ])
 
   Ok(#(path, lines, fragment_type))
 }
 
-fn lbp_emitter(
+fn our_emitter(
   fragment: #(String, VXML, FragmentType),
+  imports_lookup: Dict(String, ei.ImportSource),
 ) -> Result(#(String, List(BlamedLine), FragmentType), LBPEmitterError) {
   let #(path, vxml, fragment_type) = fragment
   case fragment_type {
-    Chapter(n) ->
-      lbp_chapter_bootcamp_common_emitter(path, vxml, fragment_type, n)
-    Bootcamp(n) ->
-      lbp_chapter_bootcamp_common_emitter(path, vxml, fragment_type, n)
-    TOC -> toc_emitter(path, vxml, fragment_type)
-    HamburgerPanelAuthorSuppliedContents -> panel_emitter(path, vxml, fragment_type)
+    Article(_) ->
+      article_emitter(path, vxml, fragment_type, imports_lookup)
+    TOC -> toc_emitter(path, vxml, fragment_type, imports_lookup)
+    HamburgerPanelAuthorSuppliedContents -> hpausc_emitter(path, vxml, fragment_type, imports_lookup)
   }
 }
 
@@ -355,7 +313,7 @@ pub fn main() {
     },
   )
 
-    use _ <- infra.on_error_on_ok(
+  use _ <- infra.on_error_on_ok(
     dict.get(amendments.user_args, "--delete-wly"),
     with_on_ok: fn(_) {
       delete_files(".wly", input_dir)
@@ -373,19 +331,16 @@ pub fn main() {
     },
   )
 
+  let exports_dict = ei.lbp_exports_dictionary()
+  let imports_lookup = ei.imports_lookup_dictionary_from_exports(exports_dict)
+
   let renderer =
     vr.Renderer(
-      assembler: wp.assemble_blamed_lines_advanced_mode(
-        _,
-        amendments.spotlight_args_files,
-      ),
-      source_parser: vr.default_writerly_source_parser(
-        _,
-        amendments.spotlight_args,
-      ),
-      pipeline: pipeline.lbp_pipeline(),
-      splitter: lbp_splitter,
-      emitter: lbp_emitter,
+      assembler: wp.assemble_blamed_lines_advanced_mode(_, amendments.spotlight_args_files),
+      source_parser: vr.default_writerly_source_parser( _, amendments.spotlight_args),
+      pipeline: our_pipeline(),
+      splitter: our_splitter,
+      emitter: fn(fragment) { our_emitter(fragment, imports_lookup) },
       prettifier: vr.guarded_prettier_prettifier(amendments.user_args),
     )
 

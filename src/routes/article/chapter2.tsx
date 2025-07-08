@@ -1,110 +1,84 @@
-import Chapter from "~/components/Chapter";
-import { Section, Note, SolutionNote, Example, NoBreak, Pause, WriterlyBlankLine } from "~/components/Wrappers";
-import { CentralDisplay, CentralDisplayItalic } from "~/components/Delimiters";
-import TextParent from "~/components/TextParent";
-import { Math, MathBlock } from "~/components/Math";
-import { ImageRight, ImageLeft } from "~/components/SideImage";
-import Image from "~/components/Image";
-import InlineImage from "~/components/InlineImage";
-import { Exercise, Exercises, ExerciseStatement } from "~/components/Exercises";
-import InChapterLink from "~/components/InChapterLink";
-import Solution from "~/components/Solution";
-import Table from "~/components/Table";
-import Grid from "~/components/Grid";
-import { List, Item } from "~/components/List";
-import { SectionDivider } from "~/components/SectionDivider";
-import { StarDivider } from "~/components/StarDivider";
-import VerticalChunk from "~/components/VerticalChunk";
-import SectionsBreadcrumbs, { BreadcrumbItem } from "~/components/SectionsBreadcrumbs";
-import useSetRoute from "~/hooks/useSetRoute";
+import Article  from "~/components/Article";
+import ArticleTitle  from "~/components/ArticleTitle";
+import { CentralDisplayItalic, CentralDisplay }  from "~/components/Delimiters";
+import { Exercises, Exercise, ExerciseStatement }  from "~/components/Exercises";
+import Image  from "~/components/Image";
+import InChapterLink  from "~/components/InChapterLink";
+import InlineImage  from "~/components/InlineImage";
+import { Math, MathBlock }  from "~/components/Math";
+import OuterP  from "~/components/OuterP";
+import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
+import { ImageRight, ImageLeft }  from "~/components/SideImage";
+import Solution  from "~/components/Solution";
+import { StarDivider }  from "~/components/StarDivider";
+import Table  from "~/components/Table";
+import { Section, Pause, NoBreak, Example, SolutionNote }  from "~/components/Wrappers";
 import useShowMore from "~/hooks/useShowMore";
-import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 
-const Article = () => {
-  useSetRoute();
-  useBreadcrumbs();
-  return (<>
-    <Chapter
-      number={2}
-      next-page="/article/chapter3"
-      prev-page="/article/chapter1"
-      max-element-width={900}
-      page-necessary-margin={1040}
-      title="Slopes">
+export default function __Chapter2__() {
+  return (
+    <Article
+      prevPage="/article/chapter1"
+      nextPage="/article/chapter3"
+      pageNecessaryMargin={610}
+      maxElementWidth={900}>
       <SectionsBreadcrumbs>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-0">
+        <BreadcrumbItem id="breadcrumb-0">
           <InChapterLink href="?id=section-1">
             definition
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-1">
+        <BreadcrumbItem id="breadcrumb-1">
           <InChapterLink href="?id=section-2">
             measuring slope
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-2">
+        <BreadcrumbItem id="breadcrumb-2">
           <InChapterLink href="?id=section-3">
             sign combinations
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-3">
+        <BreadcrumbItem id="breadcrumb-3">
           <InChapterLink href="?id=section-4">
             pathological cases
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-4">
+        <BreadcrumbItem id="breadcrumb-4">
           <InChapterLink href="?id=section-5">
             “rise over run”
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-5">
+        <BreadcrumbItem id="breadcrumb-5">
           <InChapterLink href="?id=section-6">
             solving for “rise” and “run”
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-6">
+        <BreadcrumbItem id="breadcrumb-6">
           <InChapterLink href="?id=section-7">
             slopes and line equations
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-7">
+        <BreadcrumbItem id="breadcrumb-7">
           <InChapterLink href="?id=section-8">
             slopes and units
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-8">
+        <BreadcrumbItem id="breadcrumb-8">
           <InChapterLink href="?id=section-9">
             postscript: units vs dimensions
           </InChapterLink>
         </BreadcrumbItem>
-        <BreadcrumbItem
-          class="breadcrumb"
-          id="breadcrumb-9">
+        <BreadcrumbItem id="breadcrumb-9">
           <InChapterLink href="?id=exercises">
             exercises
           </InChapterLink>
         </BreadcrumbItem>
       </SectionsBreadcrumbs>
+      <ArticleTitle banner="Chapter 2:">
+        Slopes
+      </ArticleTitle>
       <Section id="section-1">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Definition.
           </b>
@@ -116,20 +90,20 @@ const Article = () => {
           mathematical measure of how “steep” a line is.
           Here are a few examples (for an explanation of
           the values, see below):
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/svg_ch2_ch_collection_of_examples.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           To explain, the slope of a line is...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the number of units the line goes up with each
           unit to the right
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...assuming that numbers on the{" "}
           <NoBreak>
             <Math>
@@ -148,28 +122,28 @@ const Article = () => {
           {" "}increase
           going right, as is usually the case. One can also
           describe slope as...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           the amount of vertical change per unit of
           horizontal change
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...more elegant!
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           For example, the line below has slope 1, because
           it goes up by{" "}
           <Math>
             $1$
           </Math>
           {" "}unit for each unit to the right:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/slope_1_example.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           On the other hand, the line below has slope
           {" "}
           <NoBreak>
@@ -188,26 +162,26 @@ const Article = () => {
           </Math>
           {" "}units
           with each unit to the right:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/slope_0.5_example.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (Etc.)
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Rest />
-    </Chapter>
-  </>);
-};
+    </Article>
+  );
+}
 
 const Rest = () => {
   const showMore = useShowMore();
-  return(<>
-    { showMore() && <>
+  return <>
+    {showMore() && <>
       <Pause />
       <Section id="section-2">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Measuring Slope.
           </b>
@@ -226,7 +200,7 @@ const Rest = () => {
             $B$
           </Math>
           {" "}on the line:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/31.svg" />
         <Pause />
@@ -234,44 +208,44 @@ const Rest = () => {
           $$ \te&#123;slope&#125; = &#123;\te&#123;vertical change from A to B&#125; \over \te&#123;horizontal change from A to B&#125;&#125; $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Indeed, dividing the vertical change by the
           horizontal change gives the per-horizontal-unit
           vertical change.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           More precisely, if
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ A = (x_1, y_1) $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ B = (x_2, y_2) $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           then
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are the horizontal{" "}
           <i>
             &amp;
@@ -289,51 +263,51 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}so
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
           \te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
           $$
           <ImageRight
-            offset_x="3em"
-            offset_y="-0.7em"
             src="/images/32.svg"
+            offset_y="-0.7em"
+            offset_x="3em"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           more succinctly. We call this the{" "}
           <i>
             slope formula
           </i>
           .
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 1.
             </b>
             {" "}
             A line that passes through the points
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$A = (-2, 5)$$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             and
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$B = (4, 1)$$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             has slope
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$&#123;1 - 5 \over 4 - (-2)&#125; = &#123;-4 \over 6&#125; = - &#123;2 \over 3&#125;.$$
@@ -342,9 +316,9 @@ const Rest = () => {
         <Pause />
         <StarDivider />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (The main thing to understand about Example 1 is that
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -352,7 +326,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is the vertical change from{" "}
           <Math>
             $A$
@@ -365,7 +339,7 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}while
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -373,7 +347,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is the horizontal change from{" "}
           <Math>
             $A$
@@ -385,31 +359,31 @@ const Rest = () => {
             </Math>
             .)
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-3">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Sign Combinations.
           </b>
           {" "}
           Technically, quantities such as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are not distances but{" "}
           <i>
             differences
@@ -422,32 +396,32 @@ const Rest = () => {
           ). A distance, by
           definition, is a nonnegative number, while a
           difference carries no such restriction.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           In particular, since
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ x_2 - x_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           can be positive or negative, while
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ y_2 - y_1 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           can be positive or negative or zero (more on
           zero below), the following sign combinations
           arise (lines of slope zero not included):
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Table
-          style="margin-top:0.5em;margin-bottom:0.5em;"
-          class="lines">
+          class="lines"
+          style="margin-top:0.5em;margin-bottom:0.5em;">
           <colgroup>
             <col width={120} />
             <col width={120} />
@@ -468,9 +442,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="padding-top:7px;padding-bottom:7px;"
+                  src="/images/33.svg"
                   width={50}
-                  src="/images/33.svg" />
+                  style="padding-top:7px;padding-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -493,8 +467,8 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;width:105px;"
-                  src="/images/34.svg" />
+                  src="/images/34.svg"
+                  style="margin-top:7px;margin-bottom:7px;width:105px;" />
               </td>
               <td>
                 <MathBlock>
@@ -517,9 +491,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/35.svg"
                   width={105}
-                  src="/images/35.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -542,9 +516,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/36.svg"
                   width={105}
-                  src="/images/36.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -567,9 +541,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                  style="margin-top:7px;margin-bottom:7px;"
+                  src="/images/37.svg"
                   width={105}
-                  src="/images/37.svg" />
+                  style="margin-top:7px;margin-bottom:7px;" />
               </td>
               <td>
                 <MathBlock>
@@ -582,7 +556,7 @@ const Rest = () => {
           </tbody>
         </Table>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           In fact, we{" "}
           <i>
             should
@@ -600,78 +574,78 @@ const Rest = () => {
           {" "}swap
           places, or, namely, to show that the fractions
           <ImageRight
-            offset_x="-0.5em"
+            src="/images/svg_ch2_ch_swap_cloud.svg"
             line={3}
-            src="/images/svg_ch2_ch_swap_cloud.svg" />
-        </VerticalChunk>
+            offset_x="-0.5em" />
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are somehow equal. But, indeed,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125; $$
           <ImageLeft
-            offset_y="-60px"
-            offset_x="2.5em"
             src="/images/39.svg"
+            offset_x="2.5em"
+            offset_y="-60px"
             compensate_offset_x_for_large_text_columns={true} />
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which verifies this hypothesis. In particular,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ &#123;y_2 - y_1 \over x_2 - x_1&#125;\qquad\,\,\,\,\,\te&#123;and&#125;\,\,\,\,\,\qquad&#123;y_1 - y_2 \over x_1 - x_2&#125; $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           are equally valid incarnations of the slope
           formula.
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-4">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Pathological Cases.
           </b>
           {" "}
           If
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ x_2 - x_1 = 0 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           the slope formula “breaks down” in the sense that
           division by 0 is undefined. This occurs, e.g., if
           we attempt to measure the slope of a vertical
           line:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/40.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Indeed, vertical lines have{" "}
           <i>
             undefined
           </i>
           {" "}slope.
           Moreover the bad case
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ x_2 - x_1 = 0 $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           can also occur another way, namely if the points
           {" "}
           <Math>
@@ -684,13 +658,13 @@ const Rest = () => {
           {" "}coincide. In that
           case, more precisely, the slope formula evaluates
           to
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$ \frac&#123;y_2 - y_1&#125;&#123;x_2 - x_1&#125; = \frac&#123;0&#125;&#123;0&#125; $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           which could be anything. (Technically,{" "}
           <NoBreak>
             “
@@ -702,11 +676,11 @@ const Rest = () => {
           {" "}is
           undefined.) Indeed, infinitely many different
           lines pass through any given point!
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-5">
-        <VerticalChunk>
+        <OuterP>
           <b>
             “Rise over Run”.
           </b>
@@ -721,19 +695,19 @@ const Rest = () => {
           </NoBreak>
           <span class="nobreak">
             <InlineImage
-              width="28px"
-              src="/images/rise-run.svg" />
+              src="/images/rise-run.svg"
+              width="28px" />
             ”),
           </span>
-          &amp;ensp;following such a picture:
-        </VerticalChunk>
+          {" "}following such a picture:
+        </OuterP>
         <Pause />
         <Image src="/images/44.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           In this context, note that, in physics, a
           one-dimensional displacement is measured as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -741,7 +715,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           in accordance, namely, with the coordinate
           differences{" "}
           <NoBreak>
@@ -761,27 +735,27 @@ const Rest = () => {
           </NoBreak>
           {" "}
           that appear in the slope formula.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           (In order not to discriminate, maybe we should
           also include this picture:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/47.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Then “rise” and “run” have their signs flipped,
           but the ratio rise-over-run is the same, as
           already mentioned.)
-        </VerticalChunk>
+        </OuterP>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           <i>
             An Additional Miscellaneous Notation.
           </i>
           {" "}
           The slope formula is occasionally written
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -789,7 +763,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           where the foreign-looking symbols{" "}
           <NoBreak>
             <Math>
@@ -835,17 +809,17 @@ const Rest = () => {
             </Math>
             ”.)
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-6">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Solving for “rise” and “run”.
           </b>
           {" "}
           Multiplying
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -853,9 +827,9 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           on each side by “run” gives
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -863,10 +837,10 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           or “rise equals slope times run”. After which,
           dividing each side by “slope”, we find
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -874,31 +848,31 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           or “run equals rise over slope”. Thus:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/48.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...as can sometimes be useful to know.
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-7">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Slopes and Line Equations.
           </b>
           {" "}An equation of the
           form
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = ax + b$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           where{" "}
           <Math>
             $a$
@@ -909,11 +883,11 @@ const Rest = () => {
           </Math>
           {" "}are constants defines a line in
           the Cartesian plane. E.g.:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/svg_ch2_ch_line_equations.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           Note that, assuming said{" "}
           <NoBreak>
             <Math>
@@ -922,13 +896,13 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}one has
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = a\cdot 0 + b = b$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           at{" "}
           <NoBreak>
             <Math>
@@ -949,7 +923,7 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}(FYI, this height is called the
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <NoBreak>
@@ -960,7 +934,7 @@ const Rest = () => {
           </NoBreak>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           of the line, because{" "}
           <Math>
             $x = 0$
@@ -971,15 +945,15 @@ const Rest = () => {
             $y$
           </Math>
           {" "}axis. But the point
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$(0, b)$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is also sometimes called the
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           <NoBreak>
@@ -990,7 +964,7 @@ const Rest = () => {
           </NoBreak>
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           of the line, so the term{" "}
           <NoBreak>
             “
@@ -1021,13 +995,13 @@ const Rest = () => {
             ,
           </NoBreak>
           {" "}we have
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = a\cdot 1 + b = a + b$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           so{" "}
           <Math>
             $y$
@@ -1084,35 +1058,35 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 2.
             </b>
             {" "}
             The equation
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$y = 100x - 3$$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             defines a line of slope 100.
-          </VerticalChunk>
+          </OuterP>
         </Example>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           On the other hand, an equation of the form
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = ax + b$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           cannot describe a vertical line, because{" "}
           <Math>
             $a$
@@ -1125,13 +1099,13 @@ const Rest = () => {
           </Math>
           {" "}be equal to? Instead, a vertical
           line is described by an equation of the form
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$x = c$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (see Fig. 1) where{" "}
           <Math>
             $c \in \rr$
@@ -1139,24 +1113,24 @@ const Rest = () => {
           {" "}is a constant,
           similarly to the more familiar equation
           <ImageLeft
-            offset_x="1em"
+            src="/images/svg_ch2_ch_vertical_line_equation.svg"
             offset_y="-6em"
-            src="/images/svg_ch2_ch_vertical_line_equation.svg" />
-        </VerticalChunk>
+            offset_x="1em" />
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = b$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           for a horizontal line, where{" "}
           <Math>
             $b \in \rr$
           </Math>
           {" "}is a
           constant.
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           One should also bear in mind that an equation can
           define a line without having either of the forms
           {" "}
@@ -1176,21 +1150,21 @@ const Rest = () => {
             ”.
           </NoBreak>
           {" "}For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$x + y = 3$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is equivalent to
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$y = 3 - x$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and thus describes a line of{" "}
           <NoBreak>
             <Math>
@@ -1211,14 +1185,14 @@ const Rest = () => {
             .
           </NoBreak>
           <ImageRight
-            offset_x="2rem"
+            src="/images/svg_3_plus_minus_one_times_x_cloud.svg"
             line={1}
-            src="/images/svg_3_plus_minus_one_times_x_cloud.svg" />
-        </VerticalChunk>
+            offset_x="2rem" />
+        </OuterP>
       </Section>
       <Pause />
       <Section id="section-8">
-        <VerticalChunk>
+        <OuterP>
           <b>
             Slopes and Units.
           </b>
@@ -1239,7 +1213,7 @@ const Rest = () => {
           </NoBreak>
           {" "}have units then a line's
           slope has units
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1247,7 +1221,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           as should make sense, given that the slope is a
           change in{" "}
           <Math>
@@ -1260,8 +1234,8 @@ const Rest = () => {
             </Math>
             .
           </NoBreak>
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           For example, if the units on the{" "}
           <Math>
             $y$
@@ -1273,7 +1247,7 @@ const Rest = () => {
           </Math>
           {" "}axis are
           seconds (“s”) then the slope has units
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1281,7 +1255,7 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           also known as{" "}
           <i>
             meters per second
@@ -1291,11 +1265,11 @@ const Rest = () => {
           graph, that purports to plot the height of a
           balloon, in meters, as a function of time elapsed,
           in seconds:
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/52.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           The slope of the graph is{" "}
           <Math>
             $0.75$
@@ -1316,7 +1290,7 @@ const Rest = () => {
           </i>
           {" "}(if
           you had noticed):
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$
@@ -1324,33 +1298,33 @@ const Rest = () => {
           $$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           In fact, the slope is the balloon's upward
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           velocity
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           since velocity is defined as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           displacement over time
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           and this is precisely the form of the ratio “rise
           over run” for the current graph. (More generally,
           we have
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplay>
           “slope = velocity”
         </CentralDisplay>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           whenever the{" "}
           <Math>
             $y$
@@ -1371,16 +1345,16 @@ const Rest = () => {
           </Math>
           {" "}
           or km/hour, etc, depends on the exact units involved.)
-        </VerticalChunk>
-        <VerticalChunk indent={true}>
+        </OuterP>
+        <OuterP class="indent-10">
           Terminology-wise, slopes are often known as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           rates of change
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           in the presence of units. More particularly, in the
           common case when the{" "}
           <NoBreak>
@@ -1391,22 +1365,22 @@ const Rest = () => {
           </NoBreak>
           {" "}denotes time, the
           formula
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\te&#123;slope&#125; = &#123;\te&#123;rise&#125; \over \te&#123;run&#125;&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           can be rephrased as
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <MathBlock>
           $$\te&#123;“&#125;\rt&#123;0.1&#125;\te&#123;rate of change&#125; \,\,=\,\,
           &#123;\!\rt&#123;0.15&#125;\te&#123;amount of change&#125;\!\rt&#123;0.1&#125; \over \te&#123;amount of time&#125;&#125;\rt&#123;0.1&#125;\te&#123;”&#125;$$
         </MathBlock>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           where “amount of change” is short for “amount of
           change on the{" "}
           <NoBreak>
@@ -1418,24 +1392,24 @@ const Rest = () => {
           {" "}By extension, taking all
           three permutations of the slope formula into account
           gives us...
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Image src="/images/53.svg" />
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           ...these formulas, commonly useful in “applied”
           problems.
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 3.
             </b>
             {" "}
             The increase in height of the above balloon
             over a period of 5 seconds is
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -1443,9 +1417,9 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             following the template
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -1457,7 +1431,7 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             found in the second line of the table. (Indeed,
             {" "}
             <NoBreak>
@@ -1474,11 +1448,11 @@ const Rest = () => {
             </NoBreak>
             {" "}is the “rate of change” of the
             balloon's height.)
-          </VerticalChunk>
+          </OuterP>
         </Example>
         <Pause />
         <Example>
-          <VerticalChunk>
+          <OuterP>
             <b>
               Example 4.
             </b>
@@ -1492,22 +1466,22 @@ const Rest = () => {
               m
             </NoBreak>
             {" "}is
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
             \frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
             $$
             <ImageRight
-              style="width:930px"
-              offset_x="-6rem"
               src="/images/svg_ch2_ch_units_cloud.svg"
+              offset_x="-6rem"
+              style="width:930px"
               compensate_offset_x_for_large_text_columns={true} />
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             following the template
-          </VerticalChunk>
+          </OuterP>
           <Pause />
           <MathBlock>
             $$
@@ -1517,22 +1491,22 @@ const Rest = () => {
             $$
           </MathBlock>
           <Pause />
-          <VerticalChunk>
+          <OuterP>
             found in the third line of the table.
-          </VerticalChunk>
+          </OuterP>
         </Example>
       </Section>
       <Pause />
       <Section
-        id="section-9"
-        divider={false}>
-        <VerticalChunk>
+        divider={false}
+        id="section-9">
+        <OuterP>
           <b>
             Postscript: Units vs Dimensions.
           </b>
           {" "}
           Comparing
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplay>
           “the{" "}
@@ -1545,9 +1519,9 @@ const Rest = () => {
           {" "}has dimensions of time”
         </CentralDisplay>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           with
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplay>
           “the{" "}
@@ -1560,12 +1534,12 @@ const Rest = () => {
           {" "}has units of seconds”
         </CentralDisplay>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           one could easily be tricked into thinking that a
           “dimension” is the same thing as a “unit”. In
           fact, dimensions are broader categories, such as,
           namely,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           time
@@ -1579,7 +1553,7 @@ const Rest = () => {
           mass
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           each of which covers{" "}
           <i>
             several different
@@ -1587,42 +1561,42 @@ const Rest = () => {
           {" "}units.
           For example, in the “time” dimension, one finds
           individual units of the type
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           years, seconds, minutes, hours, days
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (etc), while in
           the “length” dimension one finds
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           meters, kilometers, millimeters, yards, feet
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           (etc), and so on. (You can imagine some of the
           units found in the “mass” dimension, e.g..) On
           the other hand, dimensions can be multiplied and
           divided just like units. For example,
-        </VerticalChunk>
+        </OuterP>
         <Pause />
         <CentralDisplayItalic>
           length over time
         </CentralDisplayItalic>
         <Pause />
-        <VerticalChunk>
+        <OuterP>
           is another dimension, commonly known as...
           velocity!
-        </VerticalChunk>
+        </OuterP>
       </Section>
       <Pause />
       <Exercises>
-        <Exercise exercise_number={1}>
+        <Exercise number={1}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 1.
               </b>
@@ -1639,28 +1613,28 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={1}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               This is true, as illustrated by the following
               pair of lines:
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image
-              class="relative w-fit"
-              src="/images/55.svg">
+              src="/images/55.svg"
+              class="relative w-fit">
               <ImageRight
-                offset_x="-1.3rem"
+                src="/images/56.svg"
                 offset_y="5rem"
-                src="/images/56.svg" />
+                offset_x="-1.3rem" />
               <ImageLeft
-                offset_y="8rem"
+                src="/images/57.svg"
                 offset_x="-8rem"
-                src="/images/57.svg" />
+                offset_y="8rem" />
             </Image>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               In more detail, the two triangles are related
               by a{" "}
               <Math>
@@ -1668,10 +1642,10 @@ const Rest = () => {
               </Math>
               {" "}rotation and so, likewise,
               are the lines defined by their hypotenuses!
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <SolutionNote>
-              <VerticalChunk>
+              <p>
                 <i>
                   Note 1.
                 </i>
@@ -1697,28 +1671,28 @@ const Rest = () => {
                   .
                 </NoBreak>
                 {" "}By a similar drawing:
-              </VerticalChunk>
+              </p>
               <Pause />
               <Image
-                class="relative w-fit"
-                src="/images/58.svg">
+                src="/images/58.svg"
+                class="relative w-fit">
                 <ImageRight
-                  offset_x="-10%"
+                  src="/images/59.svg"
                   offset_y="27%"
-                  src="/images/59.svg" />
+                  offset_x="-10%" />
                 <ImageLeft
-                  offset_y="33%"
+                  src="/images/60.svg"
                   offset_x="-24%"
-                  src="/images/60.svg" />
+                  offset_y="33%" />
               </Image>
               <Pause />
               <StarDivider />
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={2}>
-          <ExerciseStatement id="_6_9147">
-            <VerticalChunk>
+        <Exercise number={2}>
+          <ExerciseStatement id="_6_4842">
+            <OuterP>
               <b>
                 Exercise 2.
               </b>
@@ -1737,10 +1711,10 @@ const Rest = () => {
               </NoBreak>
               {" "}
               (Hint: Start from the slope formula.)
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={2}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               A point{" "}
               <Math>
                 $(x,y) \ne (x_0,y_0)$
@@ -1751,26 +1725,26 @@ const Rest = () => {
                 $p$
               </Math>
               {" "}if and only if
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ p = &#123;y - y_0 \over x - x_0&#125; $$
               <ImageLeft
-                offset_y="103px"
-                offset_x="7.5em"
                 src="/images/svg_ch2_ex_x0_y0_line_equation_cloud.svg"
+                offset_x="7.5em"
+                offset_y="103px"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               because
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ \,\,&#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               is the slope of the line segment from
               {" "}
               <Math>
@@ -1795,16 +1769,16 @@ const Rest = () => {
               </Math>
               {" "}to be on
               the line!
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               Unfortunately, the equation
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ p = &#123;y - y_0 \over x - x_0&#125; $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               is not an entirely satisfactory answer,
               because the point{" "}
               <Math>
@@ -1812,13 +1786,13 @@ const Rest = () => {
               </Math>
               {" "}itself
               does not satisfy the equation. (We find
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ p = &#123;0 \over 0&#125; $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               if we plug in{" "}
               <NoBreak>
                 <Math>
@@ -1836,10 +1810,10 @@ const Rest = () => {
               {" "}which is
               not a valid equality because the right-hand
               side is an undefined quantity.)
-            </VerticalChunk>
-            <VerticalChunk indent={true}>
+            </OuterP>
+            <OuterP class="indent-10">
               Instead, multiplying
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1847,7 +1821,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               on both sides by{" "}
               <NoBreak>
                 <Math>
@@ -1857,7 +1831,7 @@ const Rest = () => {
               </NoBreak>
               {" "}we find the
               fraction-less equation
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1865,7 +1839,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which is satisfied by the point{" "}
               <Math>
                 $(x,y) = (x_0,y_0)$
@@ -1874,30 +1848,30 @@ const Rest = () => {
               as well as by every other point on the line.
               This can be a final answer, and, pleasingly,
               has the form
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
               \te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
               $$
               <ImageRight
-                offset_y="-0.5rem"
-                offset_x="2.5rem"
                 src="/images/svg_slope_times_run_equals_rise_cloud.svg"
+                offset_x="2.5rem"
+                offset_y="-0.5rem"
                 compensate_offset_x_for_large_text_columns={true} />
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which can also make it easy to remember!
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Note 1.
               </i>
               {" "}
               The answer we gave is more often written
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1905,9 +1879,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               with the two sides of the equation swapped, or
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1915,7 +1889,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               with{" "}
               <Math>
                 $y$
@@ -1938,7 +1912,7 @@ const Rest = () => {
                 ”
               </NoBreak>
               {" "}last)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1946,9 +1920,9 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               which has the form
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -1956,7 +1930,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               with{" "}
               <NoBreak>
                 <Math>
@@ -1971,12 +1945,12 @@ const Rest = () => {
                 </Math>
                 .
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={3}>
+        <Exercise number={3}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 3.
               </b>
@@ -1985,22 +1959,22 @@ const Rest = () => {
               <del>
                 an object
               </del>
-              &amp;ensp;a mosquito whose height over time is
+              {" "}a mosquito whose height over time is
               given by this graph (use the same time interval
               as the graph):
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/1.svg" />
           </ExerciseStatement>
-          <Solution solution_number={3}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               Here is the “official” graph of the (vertical)
               velocity:
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/64.svg" />
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               On each interval, the velocity is rate of
               change of the height, i.e., the{" "}
               <i>
@@ -2009,7 +1983,7 @@ const Rest = () => {
               {" "}of
               the height. For example, the rate of change
               of the height is
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2017,7 +1991,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               between{" "}
               <NoBreak>
                 <Math>
@@ -2044,26 +2018,26 @@ const Rest = () => {
               </NoBreak>
               {" "}
               for that time interval, etc.
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Note 1.
               </i>
               {" "}
               As explained in{" "}
               <a
-                href="/article/chapter3?id=_15_6679"
+                href="/article/chapter3?id=_15_8907"
                 class="handle-out-of-chapter-link">
                 Chapter 3
               </a>
               , an empty circle of
               this type
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/svg_empty_circle_alone.svg" />
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               indicates a “missing” value. Specifically, in
               our case, the vertical velocity is{" "}
               <i>
@@ -2073,9 +2047,9 @@ const Rest = () => {
               wherever the graph of the height has a sharp
               corner. (Because the slope of the graph is not
               well-defined at such corners.)
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Note 2.
               </i>
@@ -2096,13 +2070,13 @@ const Rest = () => {
               </NoBreak>
               {" "}the
               slope is
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ &#123;-2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = -\rt&#123;0.07&#125;4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               and similarly for the time interval from
               {" "}
               <NoBreak>
@@ -2119,13 +2093,13 @@ const Rest = () => {
                 s
               </NoBreak>
               {" "}the slope is
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ &#123;2\rt&#123;0.05&#125;\te&#123;m&#125; \over 0.5\rt&#123;0.05&#125;\te&#123;s&#125;&#125; = 4\rt&#123;0.1&#125;\te&#123;m&#125;/\te&#123;s&#125; $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               because{" "}
               <NoBreak>
                 <Math>
@@ -2149,12 +2123,12 @@ const Rest = () => {
                 </Math>
                 ?)
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
-        <Exercise exercise_number={4}>
+        <Exercise number={4}>
           <ExerciseStatement>
-            <VerticalChunk>
+            <OuterP>
               <b>
                 Exercise 4.
               </b>
@@ -2162,12 +2136,12 @@ const Rest = () => {
               Digressing on the second-to-last equation
               in the solution to{" "}
               <InChapterLink
-                href="/article/chapter2?id=_6_9147"
+                href="/article/chapter2?id=_6_4842"
                 class="handle-in-chapter-link">
                 Exercise 2
               </InChapterLink>
               , explain why
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2175,7 +2149,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               is the{" "}
               <NoBreak>
                 <Math>
@@ -2194,16 +2168,16 @@ const Rest = () => {
               </Math>
               {" "}by using a drawing
               and “rise equals slope times run”.
-            </VerticalChunk>
+            </OuterP>
           </ExerciseStatement>
-          <Solution solution_number={4}>
-            <VerticalChunk>
+          <Solution>
+            <OuterP>
               E.g.:
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <Image src="/images/66.svg" />
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               The rise from the{" "}
               <NoBreak>
                 <Math>
@@ -2225,7 +2199,7 @@ const Rest = () => {
               </NoBreak>
               {" "}as found by “rise equals slope times
               run”, implying that
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$
@@ -2233,7 +2207,7 @@ const Rest = () => {
               $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               is the{" "}
               <NoBreak>
                 <Math>
@@ -2241,9 +2215,9 @@ const Rest = () => {
                 </Math>
                 -intercept.
               </NoBreak>
-            </VerticalChunk>
+            </OuterP>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               <i>
                 Note 1.
               </i>
@@ -2260,13 +2234,13 @@ const Rest = () => {
                 .
               </NoBreak>
               {" "}But
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ px_0 $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               is the rise from the{" "}
               <NoBreak>
                 <Math>
@@ -2294,13 +2268,13 @@ const Rest = () => {
               </Math>
               {" "}is the run in all cases),
               making
-            </VerticalChunk>
+            </OuterP>
             <Pause />
             <MathBlock>
               $$ y_0 - px_0 $$
             </MathBlock>
             <Pause />
-            <VerticalChunk>
+            <OuterP>
               the{" "}
               <NoBreak>
                 <Math>
@@ -2309,12 +2283,10 @@ const Rest = () => {
                 -intercept
               </NoBreak>
               {" "}in all cases.
-            </VerticalChunk>
+            </OuterP>
           </Solution>
         </Exercise>
       </Exercises>
-</> }
-</>);
+    </>}
+  </>;
 };
-
-export default Article;
