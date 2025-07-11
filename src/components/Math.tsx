@@ -50,13 +50,6 @@ export const MathBlock = (props: ParentProps) => {
 
   const handleClick = () => {
     setScaledDown(!scaledDown());
-    if (!scaledDown()) {
-      setTimeout(() => { 
-        if (ref && !scaledDown()) {
-          setOriginalWidth(ref.getBoundingClientRect().width);
-        }
-      }, 100);
-    }
   };
 
   const shouldBeScaledDown = () => {
@@ -91,8 +84,7 @@ export const MathBlock = (props: ParentProps) => {
       let oldInnerWidth = localInnerWidthCopy();
       let newInnerWidth = window.innerWidth;
       setLocalInnerWidthCopy(newInnerWidth);
-      if (newInnerWidth != oldInnerWidth)
-        setScaledDown(shouldBeScaledDown());
+      if (newInnerWidth != oldInnerWidth) setScaledDown(shouldBeScaledDown());
     };
 
     handleResize(); // should result in call to setScaledDown()
@@ -112,7 +104,7 @@ export const MathBlock = (props: ParentProps) => {
       );
       return;
     }
-    ref?.style.setProperty("width", originalWidth() + "px");
+    ref?.style.setProperty("width", originalWidth() > 0 ? originalWidth() + "px" : "auto");
   });
 
   return (
