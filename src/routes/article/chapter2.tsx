@@ -7,6 +7,7 @@ import InChapterLink  from "~/components/InChapterLink";
 import InlineImage  from "~/components/InlineImage";
 import { Math, MathBlock }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
+import { SectionDivider }  from "~/components/SectionDivider";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
 import { ImageRight, ImageLeft }  from "~/components/SideImage";
 import Solution  from "~/components/Solution";
@@ -179,6 +180,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
+      <SectionDivider src="/images/section_divider_2.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -361,6 +363,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_15.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -609,6 +612,7 @@ const Rest = () => {
           formula.
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-4">
         <OuterP>
@@ -678,6 +682,7 @@ const Rest = () => {
           lines pass through any given point!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_3.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -811,6 +816,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_10.svg" />
       <Pause />
       <Section id="section-6">
         <OuterP>
@@ -858,6 +864,7 @@ const Rest = () => {
           ...as can sometimes be useful to know.
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_4.svg" />
       <Pause />
       <Section id="section-7">
         <OuterP>
@@ -1190,6 +1197,7 @@ const Rest = () => {
             offset_x="2rem" />
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-8">
         <OuterP>
@@ -1496,6 +1504,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
+      <SectionDivider src="/images/section_divider_3.svg" />
       <Pause />
       <Section
         divider={false}
@@ -1592,6 +1601,7 @@ const Rest = () => {
           velocity!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_18.svg" />
       <Pause />
       <Exercises>
         <Exercise number={1}>
@@ -1691,7 +1701,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise number={2}>
-          <ExerciseStatement id="_6_8289">
+          <ExerciseStatement id="_6_3741">
             <OuterP>
               <b>
                 Exercise 2.
@@ -2027,7 +2037,7 @@ const Rest = () => {
               {" "}
               As explained in {" "}
               <a
-                href="/article/chapter3?id=_15_7548"
+                href="/article/chapter3?id=_15_4262"
                 class="handle-out-of-chapter-link">
                 Chapter 3
               </a>
@@ -2136,7 +2146,7 @@ const Rest = () => {
               Digressing on the second-to-last equation
               in the solution to {" "}
               <InChapterLink
-                href="/article/chapter2?id=_6_8289"
+                href="/article/chapter2?id=_6_3741"
                 class="handle-in-chapter-link">
                 Exercise 2
               </InChapterLink>

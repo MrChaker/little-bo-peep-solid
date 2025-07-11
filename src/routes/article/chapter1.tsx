@@ -7,6 +7,7 @@ import InChapterLink  from "~/components/InChapterLink";
 import { List, Item }  from "~/components/List";
 import { Math, MathBlock }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
+import { SectionDivider }  from "~/components/SectionDivider";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
 import { ImageRight, ImageLeft }  from "~/components/SideImage";
 import Solution  from "~/components/Solution";
@@ -20,7 +21,7 @@ export default function __Chapter1__() {
       nextPage="/article/chapter2"
       pageNecessaryMargin={800}
       maxElementWidth={500}
-      id="_5_6951">
+      id="_5_4990">
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
           <InChapterLink href="?id=section-1">
@@ -525,6 +526,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
+      <SectionDivider src="/images/section_divider_11.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -743,6 +745,7 @@ const Rest = () => {
           {" "} (Interesting, no?)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_5.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -1323,6 +1326,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section
         divider={false}
@@ -1398,6 +1402,7 @@ const Rest = () => {
           for a difference of squares!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_6.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -1443,10 +1448,11 @@ const Rest = () => {
           are good things to multiply together.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_13.svg" />
       <Pause />
       <Exercises>
         <Exercise number={1}>
-          <ExerciseStatement id="_4_434">
+          <ExerciseStatement id="_4_7286">
             <OuterP>
               <b>
                 Exercise 1.
@@ -2610,7 +2616,7 @@ const Rest = () => {
               {" "}
               In the solution to {" "}
               <InChapterLink
-                href="/article/chapter1?id=_4_434"
+                href="/article/chapter1?id=_4_7286"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>

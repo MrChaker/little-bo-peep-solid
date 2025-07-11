@@ -2,7 +2,7 @@ import gleam/list
 import gleam/option.{None, Some}
 import infrastructure.{type Desugarer} as infra
 import prefabricated_pipelines as dsds
-import desugarer_names as ds
+import desugarer_library as ds
 
 pub fn our_pipeline() -> List(Desugarer) {
   [
@@ -202,6 +202,7 @@ pub fn our_pipeline() -> List(Desugarer) {
         Some("Spacer"),
       )),
       ds.generate_lbp_prev_next_attributes(),
+      ds.generate_lbp_random_section_dividers(20),
       ds.auto_generate_child_if_missing_from_first_descendant_of_type(#("Section", "BreadcrumbTitle", "b")),
       ds.generate_lbp_breadcrumbs(),
       ds.unwrap(["BreadcrumbTitle"]),

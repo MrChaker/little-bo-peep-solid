@@ -4,6 +4,7 @@ import { CentralDisplayItalic }  from "~/components/Delimiters";
 import InChapterLink  from "~/components/InChapterLink";
 import { Math, MathBlock }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
+import { SectionDivider }  from "~/components/SectionDivider";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
 import { ImageRight }  from "~/components/SideImage";
 import { Section, NoBreak, Pause }  from "~/components/Wrappers";
@@ -173,6 +174,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
+      <SectionDivider src="/images/section_divider_3.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -378,6 +380,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_17.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -504,6 +507,7 @@ const Rest = () => {
           empty set—the one and only!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-4">
         <OuterP>
@@ -536,6 +540,7 @@ const Rest = () => {
           and keep it safe.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_11.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -651,6 +656,7 @@ const Rest = () => {
           whole set each time.
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_17.svg" />
       <Pause />
       <Section id="section-6">
         <OuterP>
@@ -906,6 +912,7 @@ const Rest = () => {
           means “and”.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_15.svg" />
       <Pause />
       <Section id="section-7">
         <OuterP>
@@ -1081,6 +1088,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_5.svg" />
       <Pause />
       <Section id="section-8">
         <OuterP>
@@ -1253,6 +1261,7 @@ const Rest = () => {
           (Well, anyway, end of lesson.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_12.svg" />
     </>}
   </>;
 };

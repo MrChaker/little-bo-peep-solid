@@ -6,6 +6,7 @@ import Image  from "~/components/Image";
 import InChapterLink  from "~/components/InChapterLink";
 import { Math, MathBlock }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
+import { SectionDivider }  from "~/components/SectionDivider";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
 import { ImageLeft, ImageRight }  from "~/components/SideImage";
 import Solution  from "~/components/Solution";
@@ -675,6 +676,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
+      <SectionDivider src="/images/section_divider_12.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -988,6 +990,7 @@ const Rest = () => {
           the four-particle diagram!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -1151,6 +1154,7 @@ const Rest = () => {
           diagram, e.g..
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-4">
         <OuterP>
@@ -1246,6 +1250,7 @@ const Rest = () => {
           input!
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_14.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -1447,6 +1452,7 @@ const Rest = () => {
           this one.) Etc.
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_20.svg" />
       <Pause />
       <Section id="section-6">
         <OuterP>
@@ -1465,7 +1471,7 @@ const Rest = () => {
           of an angle was briefly touched upon in
           {" "}
           <a
-            href="/article/chapter4?id=_24_4268"
+            href="/article/chapter4?id=_24_6590"
             class="handle-out-of-chapter-link">
             Note 10
           </a>
@@ -1649,6 +1655,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
+      <SectionDivider src="/images/section_divider_3.svg" />
       <Pause />
       <Section id="section-7">
         <OuterP>
@@ -1762,6 +1769,7 @@ const Rest = () => {
           of the circle!)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_20.svg" />
       <Pause />
       <Section id="section-8">
         <OuterP>
@@ -2196,6 +2204,7 @@ const Rest = () => {
         <Pause />
         <Image src="/images/svg_ch5_ch_main_angles_third.svg" />
       </Section>
+      <SectionDivider src="/images/section_divider_19.svg" />
       <Pause />
       <Section id="section-9">
         <OuterP>
@@ -2319,6 +2328,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_6.svg" />
       <Pause />
       <Section id="section-10">
         <OuterP>
@@ -2555,6 +2565,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
+      <SectionDivider src="/images/section_divider_7.svg" />
       <Pause />
       <Section id="section-11">
         <OuterP>
@@ -2774,6 +2785,7 @@ const Rest = () => {
           .
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_8.svg" />
       <Pause />
       <Section id="section-12">
         <OuterP>
@@ -2932,6 +2944,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
+      <SectionDivider src="/images/section_divider_16.svg" />
       <Pause />
       <Section id="section-13">
         <OuterP>
@@ -3039,6 +3052,7 @@ const Rest = () => {
           “utility” of the diagram might be!)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_18.svg" />
       <Pause />
       <Section id="section-14">
         <OuterP>
@@ -3301,6 +3315,7 @@ const Rest = () => {
           of the original inequality.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_16.svg" />
       <Pause />
       <Section id="section-15">
         <OuterP>
@@ -3597,6 +3612,7 @@ const Rest = () => {
           arc, and that claims a strict inequality.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_1.svg" />
       <Pause />
       <Section id="section-16">
         <OuterP>
@@ -3783,6 +3799,7 @@ const Rest = () => {
           that way, at least.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_1.svg" />
       <Pause />
       <Section id="section-17">
         <OuterP>
@@ -3973,6 +3990,7 @@ const Rest = () => {
           sandwich.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_9.svg" />
       <Pause />
       <Section id="section-18">
         <OuterP>
@@ -4095,6 +4113,7 @@ const Rest = () => {
           (But this fact is not used as often.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_15.svg" />
       <Pause />
       <Section id="section-19">
         <OuterP>
@@ -4140,6 +4159,7 @@ const Rest = () => {
           case, that you're in the mode that you want.)
         </OuterP>
       </Section>
+      <SectionDivider src="/images/section_divider_12.svg" />
       <Pause />
       <Exercises>
         <Exercise number={1}>
@@ -14491,7 +14511,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise number={42}>
-          <ExerciseStatement id="_25_9754">
+          <ExerciseStatement id="_25_1534">
             <OuterP>
               <b>
                 Exercise 42.
