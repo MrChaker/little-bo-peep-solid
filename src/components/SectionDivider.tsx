@@ -11,6 +11,9 @@ export const SectionDivider = (props: { src?: string }) => {
           <Spacer />
           <img
             class="text-column"
+            style={{
+              border: store.show_areas ? "2px solid #8B4513" : "none",
+            }}
             src={props.src || "/images/section_divider.svg"}
           />
         </>
