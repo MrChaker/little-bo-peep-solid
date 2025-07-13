@@ -21,7 +21,7 @@ export default function __Chapter1__() {
       nextPage="/article/chapter2"
       pageNecessaryMargin={800}
       maxElementWidth={500}
-      id="_5_4990">
+      id="_5_2787">
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
           <InChapterLink href="?id=section-1">
@@ -526,7 +526,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
-      <SectionDivider src="/images/section_divider_11.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_11.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -745,7 +745,7 @@ const Rest = () => {
           {" "} (Interesting, no?)
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_5.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_5.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -1326,7 +1326,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
-      <SectionDivider src="/images/section_divider_7.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_7.svg" />
       <Pause />
       <Section
         divider={false}
@@ -1402,7 +1402,7 @@ const Rest = () => {
           for a difference of squares!
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_6.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_6.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -1448,11 +1448,10 @@ const Rest = () => {
           are good things to multiply together.)
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_13.svg" />
       <Pause />
       <Exercises>
         <Exercise number={1}>
-          <ExerciseStatement id="_4_7286">
+          <ExerciseStatement id="_4_9588">
             <OuterP>
               <b>
                 Exercise 1.
@@ -2616,7 +2615,7 @@ const Rest = () => {
               {" "}
               In the solution to {" "}
               <InChapterLink
-                href="/article/chapter1?id=_4_7286"
+                href="/article/chapter1?id=_4_9588"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>

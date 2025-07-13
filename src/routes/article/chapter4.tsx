@@ -259,7 +259,7 @@ const Rest = () => {
   const showMore = useShowMore();
   return <>
     {showMore() && <>
-      <SectionDivider src="/images/section_divider_3.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_3.svg" />
       <Pause />
       <Section id="section-2">
         <OuterP>
@@ -347,7 +347,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_16.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_16.svg" />
       <Pause />
       <Section id="section-3">
         <OuterP>
@@ -396,7 +396,7 @@ const Rest = () => {
           at least.)
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_7.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_7.svg" />
       <Pause />
       <Section id="section-4">
         <OuterP>
@@ -513,7 +513,7 @@ const Rest = () => {
           (the way people usually state it).
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_17.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_17.svg" />
       <Pause />
       <Section id="section-5">
         <OuterP>
@@ -749,7 +749,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
-      <SectionDivider src="/images/section_divider_4.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_4.svg" />
       <Pause />
       <Section id="section-6">
         <OuterP>
@@ -935,7 +935,7 @@ const Rest = () => {
           keeps changing from point to point.
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_10.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_10.svg" />
       <Pause />
       <Section id="section-7">
         <OuterP>
@@ -1151,7 +1151,7 @@ const Rest = () => {
         <Pause />
         <StarDivider style="margin-top:1.5em;margin-bottom:0em" />
       </Section>
-      <SectionDivider src="/images/section_divider_16.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_16.svg" />
       <Pause />
       <Section id="section-8">
         <OuterP>
@@ -1249,7 +1249,7 @@ const Rest = () => {
           of a significant change in slope, once again).
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_8.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_8.svg" />
       <Pause />
       <Section id="section-9">
         <OuterP>
@@ -1336,7 +1336,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
-      <SectionDivider src="/images/section_divider_3.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_3.svg" />
       <Pause />
       <Section id="section-10">
         <OuterP>
@@ -1586,7 +1586,7 @@ const Rest = () => {
           </OuterP>
         </Example>
       </Section>
-      <SectionDivider src="/images/section_divider_10.svg" />
+      <SectionDivider src="/images/section-dividers/section_divider_10.svg" />
       <Pause />
       <Section id="section-11">
         <OuterP>
@@ -1776,7 +1776,7 @@ const Rest = () => {
         <OuterP>
           of functions already appear in {" "}
           <a
-            href="/article/chapter3?id=_13_5355"
+            href="/article/chapter3?id=_13_1323"
             class="handle-out-of-chapter-link">
             Exercise 18 of Chapter 3
           </a>
@@ -1805,11 +1805,10 @@ const Rest = () => {
           {" "} familiar!)
         </OuterP>
       </Section>
-      <SectionDivider src="/images/section_divider_13.svg" />
       <Pause />
       <Exercises>
         <Exercise number={1}>
-          <ExerciseStatement id="_16_730">
+          <ExerciseStatement id="_16_9475">
             <OuterP>
               <b>
                 Exercise 1.
@@ -1937,7 +1936,7 @@ const Rest = () => {
             <OuterP>
               derivative of the graph in {" "}
               <InChapterLink
-                href="/article/chapter4?id=_16_730"
+                href="/article/chapter4?id=_16_9475"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>
@@ -1982,7 +1981,7 @@ const Rest = () => {
               {" "}
               If we pretend that the graph of {" "}
               <InChapterLink
-                href="/article/chapter4?id=_16_730"
+                href="/article/chapter4?id=_16_9475"
                 class="handle-in-chapter-link">
                 Exercise 1
               </InChapterLink>
@@ -2520,7 +2519,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise number={8}>
-          <ExerciseStatement id="_17_3883">
+          <ExerciseStatement id="_17_1318">
             <OuterP>
               <b>
                 Exercise 8.
@@ -2702,7 +2701,7 @@ const Rest = () => {
               {" "} analogously to
               {" "}
               <InChapterLink
-                href="/article/chapter4?id=_17_3883"
+                href="/article/chapter4?id=_17_1318"
                 class="handle-in-chapter-link">
                 Exercise 8
               </InChapterLink>
@@ -2972,7 +2971,7 @@ const Rest = () => {
           </Solution>
         </Exercise>
         <Exercise number={10}>
-          <ExerciseStatement id="_18_4030">
+          <ExerciseStatement id="_18_6116">
             <OuterP>
               <b>
                 Exercise 10.
@@ -4317,7 +4316,7 @@ const Rest = () => {
               {" "} compute?
             </OuterP>
           </ExerciseStatement>
-          <Solution id="_19_8367">
+          <Solution id="_19_4319">
             <OuterP>
               It computes
               the amount earned by the rat as a function of time. In
@@ -5693,7 +5692,7 @@ const Rest = () => {
             <Pause />
             <StarDivider />
             <Pause />
-            <SolutionNote id="_20_9731">
+            <SolutionNote id="_20_3911">
               <p>
                 <i>
                   Note 1.
@@ -6089,7 +6088,7 @@ const Rest = () => {
               the particle to cross each of the intervals defined by
               the following geometric progression* (*see {" "}
               <InChapterLink
-                href="/article/chapter4?id=_21_9565"
+                href="/article/chapter4?id=_21_6957"
                 class="handle-in-chapter-link">
                 Note 1
               </InChapterLink>
@@ -6266,7 +6265,7 @@ const Rest = () => {
               {" "} no matter how far back in time you look.)
             </OuterP>
             <Pause />
-            <SolutionNote id="_21_9565">
+            <SolutionNote id="_21_6957">
               <p>
                 <i>
                   Note 1.
@@ -8767,7 +8766,7 @@ const Rest = () => {
               ...?
             </OuterP>
           </ExerciseStatement>
-          <Solution id="_22_1359">
+          <Solution id="_22_2794">
             <OuterP>
               We can naïvely try to imitiate how the
               curves of Exercise 16 are generated by
@@ -9941,7 +9940,7 @@ const Rest = () => {
               the expression, if any.
             </OuterP>
           </ExerciseStatement>
-          <Solution id="_23_9210">
+          <Solution id="_23_1681">
             <OuterP>
               This version pictures all the elements
               that appear in the fraction:
@@ -10544,7 +10543,7 @@ const Rest = () => {
               {" "} (cf.
               Exercise 16 {" "}
               <InChapterLink
-                href="/article/chapter4?id=_19_8367"
+                href="/article/chapter4?id=_19_4319"
                 class="handle-in-chapter-link">
                 Note 3
               </InChapterLink>
@@ -11236,7 +11235,7 @@ const Rest = () => {
               to this point?
             </OuterP>
           </ExerciseStatement>
-          <Solution id="_24_6590">
+          <Solution id="_24_7364">
             <OuterP>
               That would be the fact that
             </OuterP>
