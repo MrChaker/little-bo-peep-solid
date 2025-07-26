@@ -2,11 +2,11 @@ import Article  from "~/components/Article";
 import ArticleTitle  from "~/components/ArticleTitle";
 import { CentralDisplayItalic }  from "~/components/Delimiters";
 import InChapterLink  from "~/components/InChapterLink";
-import { Math, MathBlock }  from "~/components/Math";
+import { MathBlock, Math }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
 import { ImageRight }  from "~/components/SideImage";
-import { Section, NoBreak, Pause }  from "~/components/Wrappers";
+import { Pause, NoBreak, Section }  from "~/components/Wrappers";
 import useShowMore from "~/hooks/useShowMore";
 
 export default function __Bootcamp1__() {
@@ -76,7 +76,7 @@ export default function __Bootcamp1__() {
             </Math>
             ”
           </NoBreak>
-          {" "}and ending{" "}
+          {" "} and ending {" "}
           <NoBreak>
             “
             <Math>
@@ -84,29 +84,29 @@ export default function __Bootcamp1__() {
             </Math>
             ”
           </NoBreak>
-          {" "}of a collection of
-          elements, otherwise known as a{" "}
+          {" "} of a collection of
+          elements, otherwise known as a {" "}
           <i>
             set
           </i>
           .
           For example, this is a set containing the
-          numbers{" "}
+          numbers {" "}
           <NoBreak>
             <Math>
               $1$
             </Math>
             ,
           </NoBreak>
-          {" "}{" "}
+          {" "} {" "}
           <Math>
             $2$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $3$
           </Math>
-          {" "}(and nothing else):
+          {" "} (and nothing else):
         </OuterP>
         <Pause />
         <MathBlock>
@@ -122,14 +122,14 @@ export default function __Bootcamp1__() {
         </MathBlock>
         <Pause />
         <OuterP>
-          is a set containing just the number{" "}
+          is a set containing just the number {" "}
           <NoBreak>
             <Math>
               $1$
             </Math>
             ,
           </NoBreak>
-          {" "}while
+          {" "} while
         </OuterP>
         <Pause />
         <MathBlock>
@@ -137,19 +137,21 @@ export default function __Bootcamp1__() {
         </MathBlock>
         <Pause />
         <OuterP>
-          is a set containing just the numbers{" "}
-          <Math>
-            $1$
-          </Math>
-          {" "}
-          and{" "}
+          is a set containing just the numbers {" "}
+          <NoBreak>
+            <Math>
+              $1$
+            </Math>
+            and
+          </NoBreak>
+          {" "} {" "}
           <NoBreak>
             <Math>
               $3$
             </Math>
             ,
           </NoBreak>
-          {" "}etc. Even,
+          {" "} etc. Even,
         </OuterP>
         <Pause />
         <MathBlock>
@@ -157,11 +159,11 @@ export default function __Bootcamp1__() {
         </MathBlock>
         <Pause />
         <OuterP>
-          is an{" "}
+          is an {" "}
           <i>
             empty
           </i>
-          {" "}set, a set with no elements!
+          {" "} set, a set with no elements!
         </OuterP>
       </Section>
       <Rest />
@@ -209,16 +211,18 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          to which{" "}
+          to which {" "}
           <Math>
             $\&#123;1, 3\&#125;$
           </Math>
-          {" "}would answer “yes”, but
-          {" "}
-          <Math>
-            $\&#123; 1\&#125;$
-          </Math>
-          {" "}would answer “no”, or
+          {" "} would answer “yes”, {" "}
+          <NoBreak>
+            but
+            <Math>
+              $\&#123; 1\&#125;$
+            </Math>
+          </NoBreak>
+          {" "} would answer “no”, or
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
@@ -226,20 +230,20 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          to which{" "}
+          to which {" "}
           <Math>
             $\&#123;1\&#125;$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $\&#123;1, 3\&#125;$
           </Math>
-          {" "}would
-          both answer “no”, but{" "}
+          {" "} would
+          both answer “no”, but {" "}
           <Math>
             $\&#123;1, 2, 3\&#125;$
           </Math>
-          {" "}would
+          {" "} would
           answer “yes”.
         </OuterP>
         <OuterP class="indent-10">
@@ -258,7 +262,7 @@ const Rest = () => {
           <Math>
             $A$
           </Math>
-          {" "}contains{" "}
+          {" "} contains {" "}
           <Math>
             $x$
           </Math>
@@ -272,8 +276,8 @@ const Rest = () => {
           <Math>
             $A$
           </Math>
-          {" "}answers “yes” to the
-          question “do you contain{" "}
+          {" "} answers “yes” to the
+          question “do you contain {" "}
           <NoBreak>
             <Math>
               $x$
@@ -290,7 +294,7 @@ const Rest = () => {
           <Math>
             $x$
           </Math>
-          {" "}in{" "}
+          {" "} in {" "}
           <Math>
             $A$
           </Math>
@@ -304,7 +308,7 @@ const Rest = () => {
           <Math>
             $x$
           </Math>
-          {" "}is in{" "}
+          {" "} is in {" "}
           <Math>
             $A$
           </Math>
@@ -318,7 +322,7 @@ const Rest = () => {
           <Math>
             $x$
           </Math>
-          {" "}is an element of{" "}
+          {" "} is an element of {" "}
           <Math>
             $A$
           </Math>
@@ -336,23 +340,23 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is true, because{" "}
+          is true, because {" "}
           <Math>
             $1$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <i>
             is
           </i>
-          {" "}an element of the set
-          {" "}
+          {" "} an element of the {" "}
           <NoBreak>
+            set
             <Math>
               $\&#123;1, 2\&#125;$
             </Math>
             ,
           </NoBreak>
-          {" "}whereas
+          {" "} whereas
         </OuterP>
         <Pause />
         <MathBlock>
@@ -360,16 +364,16 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is false, because{" "}
+          is false, because {" "}
           <Math>
             $3$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <i>
             is not
           </i>
           {" "}
-          an element of the set{" "}
+          an element of the set {" "}
           <NoBreak>
             <Math>
               $\&#123;1, 2\&#125;$
@@ -568,7 +572,7 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          for the same thing, given that{" "}
+          for the same thing, given that {" "}
           <NoBreak>
             <Math>
               $\phi = \&#123;\&#125;$
@@ -602,22 +606,22 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          answers “yes” to the question “do you contain
-          {" "}
+          answers “yes” to the question “do you {" "}
           <NoBreak>
+            contain
             <Math>
               $\&#123;\&#125;$
             </Math>
             ?”
           </NoBreak>
-          {" "}(a.k.a., “do you contain{" "}
+          {" "} (a.k.a., “do you contain {" "}
           <NoBreak>
             <Math>
               $\phi$
             </Math>
             ?”)
           </NoBreak>
-          {" "}whereas
+          {" "} whereas
         </OuterP>
         <Pause />
         <MathBlock>
@@ -628,15 +632,15 @@ const Rest = () => {
         <Pause />
         <OuterP>
           answers “no” to the same question. (Indeed, while
-          the empty set{" "}
+          the empty set {" "}
           <i>
             contains
           </i>
-          {" "}nothing, it{" "}
+          {" "} nothing, it {" "}
           <i>
             is
           </i>
-          {" "}something.)
+          {" "} something.)
           Similarly,
         </OuterP>
         <Pause />
@@ -658,19 +662,19 @@ const Rest = () => {
             Set union and set intersection.
           </b>
           {" "}
-          The so-called{" "}
+          The so-called {" "}
           <i>
             union
           </i>
-          {" "}of two sets{" "}
+          {" "} of two sets {" "}
           <Math>
             $A$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $B$
           </Math>
-          {" "}is
+          {" "} is
           written
         </OuterP>
         <Pause />
@@ -680,18 +684,18 @@ const Rest = () => {
         <Pause />
         <OuterP>
           and consists of the set
-          of all things that are either in{" "}
+          of all things that are either in {" "}
           <Math>
             $A$
           </Math>
-          {" "}or in{" "}
+          {" "} or in {" "}
           <NoBreak>
             <Math>
               $B$
             </Math>
             .
           </NoBreak>
-          {" "}For
+          {" "} For
           example,
         </OuterP>
         <Pause />
@@ -702,27 +706,27 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          as{" "}
+          as {" "}
           <NoBreak>
             <Math>
               $1$
             </Math>
             ,
           </NoBreak>
-          {" "}{" "}
+          {" "} {" "}
           <Math>
             $2$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $5$
           </Math>
-          {" "}are the only elements to find
-          themselves either in{" "}
+          {" "} are the only elements to find
+          themselves either in {" "}
           <Math>
             $\&#123;1, 2\&#125;$
           </Math>
-          {" "}or in{" "}
+          {" "} or in {" "}
           <NoBreak>
             <Math>
               $\&#123;2, 5\&#125;$
@@ -730,20 +734,22 @@ const Rest = () => {
             .
           </NoBreak>
           {" "}
-          The so-called{" "}
+          The so-called {" "}
           <i>
             intersection
           </i>
-          {" "}of two sets{" "}
+          {" "} of two sets {" "}
           <Math>
             $A$
           </Math>
-          {" "}and
-          {" "}
-          <Math>
-            $B$
-          </Math>
-          {" "}is written
+          {" "} {" "}
+          <NoBreak>
+            and
+            <Math>
+              $B$
+            </Math>
+          </NoBreak>
+          {" "} is written
         </OuterP>
         <Pause />
         <MathBlock>
@@ -754,18 +760,18 @@ const Rest = () => {
         <Pause />
         <OuterP>
           and consists of the set of all things that are both
-          in{" "}
+          in {" "}
           <Math>
             $A$
           </Math>
-          {" "}and in{" "}
+          {" "} and in {" "}
           <NoBreak>
             <Math>
               $B$
             </Math>
             .
           </NoBreak>
-          {" "}For example,
+          {" "} For example,
         </OuterP>
         <Pause />
         <MathBlock>
@@ -775,16 +781,18 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          as{" "}
+          as {" "}
           <Math>
             $2$
           </Math>
-          {" "}is the only element that is both in{" "}
-          <Math>
-            $\&#123;1, 2\&#125;$
-          </Math>
-          {" "}
-          and in{" "}
+          {" "} is the only element that is both in {" "}
+          <NoBreak>
+            <Math>
+              $\&#123;1, 2\&#125;$
+            </Math>
+            and
+          </NoBreak>
+          {" "} in {" "}
           <NoBreak>
             <Math>
               $\&#123;2, 5\&#125;$
@@ -842,11 +850,11 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
-          an element{" "}
+          an element {" "}
           <Math>
             $x$
           </Math>
-          {" "}is in the thing I call{" "}
+          {" "} is in the thing I call {" "}
           <NoBreak>
             “
             <Math>
@@ -855,26 +863,26 @@ const Rest = () => {
             ”
           </NoBreak>
           {" "}
-          if and only if{" "}
+          if and only if {" "}
           <Math>
             $x$
           </Math>
-          {" "}is in{" "}
+          {" "} is in {" "}
           <Math>
             $A$
           </Math>
-          {" "}or{" "}
+          {" "} or {" "}
           <Math>
             $x$
           </Math>
-          {" "}is in{" "}
+          {" "} is in {" "}
           <Math>
             $B$
           </Math>
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          as{" "}
+          as {" "}
           <NoBreak>
             “
             <Math>
@@ -882,7 +890,7 @@ const Rest = () => {
             </Math>
             ”
           </NoBreak>
-          {" "}means “if and only if” and
+          {" "} means “if and only if” and
           {" "}
           <NoBreak>
             “
@@ -891,7 +899,7 @@ const Rest = () => {
             </Math>
             ”
           </NoBreak>
-          {" "}means “or”. (You can figure out the
+          {" "} means “or”. (You can figure out the
           similar definition for the intersection of two sets
           if we tell you that
         </OuterP>
@@ -913,7 +921,7 @@ const Rest = () => {
             Sets encountered in calculus.
           </b>
           {" "}
-          In calculus, you will see sets such as{" "}
+          In calculus, you will see sets such as {" "}
           <i>
             the real
             numbers
@@ -928,7 +936,7 @@ const Rest = () => {
         <Pause />
         <OuterP>
           which is an infinite set containing all “ordinary”
-          decimal numbers, or such as{" "}
+          decimal numbers, or such as {" "}
           <i>
             the integers
           </i>
@@ -957,11 +965,11 @@ const Rest = () => {
         <Pause />
         <OuterP>
           which contains only those integers that are greater
-          than{" "}
+          than {" "}
           <Math>
             $0$
           </Math>
-          {" "}(i.e.,{" "}
+          {" "} (i.e., {" "}
           <NoBreak>
             <Math>
               $\nn = \&#123;1, 2, 3, \ldots \&#125;$
@@ -972,7 +980,7 @@ const Rest = () => {
         <OuterP class="indent-10">
           Secondly—and this pretty much wraps it up for those
           sets  that are commonly seen in calculus—you will
-          encounter{" "}
+          encounter {" "}
           <i>
             intervals
           </i>
@@ -986,27 +994,27 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is a{" "}
+          is a {" "}
           <i>
             closed interval
           </i>
           , consisting of all (real)
-          numbers greater than or equal to{" "}
+          numbers greater than or equal to {" "}
           <NoBreak>
             <Math>
               $a$
             </Math>
             ,
           </NoBreak>
-          {" "}and less than
-          or equal to{" "}
+          {" "} and less than
+          or equal to {" "}
           <NoBreak>
             <Math>
               $b$
             </Math>
             .
           </NoBreak>
-          {" "}Or
+          {" "} Or
         </OuterP>
         <Pause />
         <MathBlock>
@@ -1016,27 +1024,27 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is a{" "}
+          is a {" "}
           <i>
             half-open
           </i>
-          {" "}interval, consisting of all real
-          numbers greater than or equal to{" "}
+          {" "} interval, consisting of all real
+          numbers greater than or equal to {" "}
           <NoBreak>
             <Math>
               $a$
             </Math>
             ,
           </NoBreak>
-          {" "}and less than
-          {" "}
+          {" "} and less {" "}
           <NoBreak>
+            than
             <Math>
               $b$
             </Math>
             .
           </NoBreak>
-          {" "}Etc.
+          {" "} Etc.
         </OuterP>
         <OuterP class="indent-10">
           Note that
@@ -1059,11 +1067,11 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          (which is an{" "}
+          (which is an {" "}
           <i>
             open
           </i>
-          {" "}interval, by the way) means
+          {" "} interval, by the way) means
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
@@ -1072,7 +1080,7 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          which is all of{" "}
+          which is all of {" "}
           <NoBreak>
             <Math>
               $\rr$
@@ -1089,7 +1097,7 @@ const Rest = () => {
           </b>
           {" "}
           If you take a more advanced course, you might
-          encounter the so-called{" "}
+          encounter the so-called {" "}
           <i>
             set of extended real numbers
           </i>
@@ -1104,15 +1112,15 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          and which consists of all the numbers in{" "}
+          and which consists of all the numbers in {" "}
           <NoBreak>
             <Math>
               $\rr$
             </Math>
             ,
           </NoBreak>
-          {" "}plus
-          the formal symbols{" "}
+          {" "} plus
+          the formal symbols {" "}
           <NoBreak>
             “
             <Math>
@@ -1120,7 +1128,7 @@ const Rest = () => {
             </Math>
             ”,
           </NoBreak>
-          {" "}{" "}
+          {" "} {" "}
           <NoBreak>
             “
             <Math>
@@ -1128,7 +1136,7 @@ const Rest = () => {
             </Math>
             ”
           </NoBreak>
-          {" "}as well:
+          {" "} as well:
         </OuterP>
         <Pause />
         <MathBlock>
@@ -1141,24 +1149,26 @@ const Rest = () => {
           (I.e., ...well, you get it!)
         </OuterP>
         <OuterP class="indent-10">
-          You can view{" "}
+          You can view {" "}
           <Math>
             $\overline&#123;\rr&#125;$
           </Math>
-          {" "}as a kind “closed interval”
-          version of{" "}
+          {" "} as a kind “closed interval”
+          version of {" "}
           <NoBreak>
             <Math>
               $\rr$
             </Math>
             ,
           </NoBreak>
-          {" "}that is, think of{" "}
-          <Math>
-            $\overline&#123;\rr&#125;$
-          </Math>
-          {" "}
-          as being the closed interval
+          {" "} that is, think of {" "}
+          <NoBreak>
+            <Math>
+              $\overline&#123;\rr&#125;$
+            </Math>
+            as
+          </NoBreak>
+          {" "} being the closed interval
         </OuterP>
         <Pause />
         <MathBlock>
@@ -1168,7 +1178,7 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          with the two infinite endpoints{" "}
+          with the two infinite endpoints {" "}
           <i>
             included
           </i>
@@ -1176,7 +1186,7 @@ const Rest = () => {
         </OuterP>
         <OuterP class="indent-10">
           Does all this have any “real meaning”? Good question!
-          The answer is:{" "}
+          The answer is: {" "}
           <i>
             not until you give it one
           </i>
@@ -1194,32 +1204,34 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          must be{" "}
+          must be {" "}
           <i>
             defined
           </i>
-          . (It is defined to be{" "}
+          . (It is defined to be {" "}
           <NoBreak>
             <Math>
               $\infty$
             </Math>
             ,
           </NoBreak>
-          {" "}in
-          case you're curious. In fact, one has{" "}
-          <Math>
-            $a + \infty = \infty$
-          </Math>
-          {" "}
-          for any{" "}
+          {" "} in
+          case you're curious. In fact, one has {" "}
+          <NoBreak>
+            <Math>
+              $a + \infty = \infty$
+            </Math>
+            for
+          </NoBreak>
+          {" "} any {" "}
           <NoBreak>
             <Math>
               $a \ne -\infty$
             </Math>
             .)
           </NoBreak>
-          {" "}And some things remain
-          explicitly{" "}
+          {" "} And some things remain
+          explicitly {" "}
           <i>
             undefined
           </i>
@@ -1233,16 +1245,16 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          has an{" "}
+          has an {" "}
           <i>
             undefined
           </i>
-          {" "}value—the same way, say, that
-          division by{" "}
+          {" "} value—the same way, say, that
+          division by {" "}
           <Math>
             $0$
           </Math>
-          {" "}is undefined in{" "}
+          {" "} is undefined in {" "}
           <NoBreak>
             <Math>
               $\rr$

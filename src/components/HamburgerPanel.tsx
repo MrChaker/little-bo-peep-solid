@@ -2,6 +2,7 @@ import { HAMBURGER_MENU_HEIGHT } from "~/constants";
 import { Store, useGlobalContext } from "~/store/StoreProvider";
 import HamburgerPanelTitle from "./HamburgerPanelTitle";
 import HamburgerPanelAuthorSuppliedContents from "./HamburgerPanelAuthorSuppliedContents";
+import { createSignal, createEffect } from "solid-js";
 
 const HamburgerPanel = () => {
   const { store } = useGlobalContext();
@@ -20,8 +21,9 @@ const HamburgerPanel = () => {
     <div
       id="hamburger_panel"
       classList={{
-        "duration-500": menu_closed(),
-        "duration-200": !menu_closed(),
+        "duration-500": store.animations && menu_closed(),
+        "duration-200": store.animations && !menu_closed(),
+        "duration-0": !store.animations,
       }}
       onMouseEnter={() => toggle_scroll("hidden")}
       onMouseLeave={() => toggle_scroll("auto")}
@@ -35,17 +37,37 @@ const HamburgerPanel = () => {
       onClick={(e) => {
         e.stopPropagation();
       }}
-      class="text-xl leading-3 sm:leading-5 z-50 fixed right-0 top-14 scrollbar-hidden select-none overscroll-none w-[17rem] sm:w-[20rem] bg-stone-100 overflow-y-scroll translate-y-0 sm:translate-y-[-1px] pt-[0.6em] px-[1em] [&ul]:mb-[8px] [&ul]:p-0"
-    >
+      class="text-xl leading-3 sm:leading-5 z-50 fixed right-0 top-14 scrollbar-hidden select-none overscroll-none w-[17rem] sm:w-[20rem] bg-stone-100 overflow-y-scroll translate-y-0 sm:translate-y-[-1px] pt-[0.6em] px-[1em] [&ul]:mb-[8px] [&ul]:p-0">
       <HamburgerPanelAuthorSuppliedContents />
       {env === "DEV" || env === "LOCAL" ? (
-        <div id="options">
-          <HamburgerPanelTitle label="Options" />
-          <Option label="Areas" state_key="show_areas" />
-          <Option label="Section Dividers" state_key="show_section_dividers" />
-          <Option label="Squiggles" state_key="show_squiggles" />
-          <ClearCache />
-        </div>
+        <>
+          <div id="options">
+            <HamburgerPanelTitle label="Options" />
+            <Option label="Areas" state_key="show_areas" />
+            <Option
+              label="Section Dividers"
+              state_key="show_section_dividers"
+            />
+            <Option label="Navigation delays" state_key="navigation_delays" />
+            <Option label="Animations" state_key="animations" />
+            <ClearCache />
+          </div>
+          <div id="stats">
+            <HamburgerPanelTitle label="Stats" />
+            <Stat
+              label="Page load"
+              value={`${(store.last_page_load_ms / 1000).toFixed(2)}s`}
+            />
+            <Stat
+              label="Avg Page load"
+              value={
+                store.num_page_loads
+                  ? `${(store.total_page_load_ms / (store.num_page_loads * 1000)).toFixed(2)}s`
+                  : "0s"
+              }
+            />
+          </div>
+        </>
       ) : (
         <></>
       )}
@@ -67,6 +89,15 @@ const Option = (props: { label: string; state_key: keyof Store }) => {
         value={state()}
         onChange={() => set_store(props.state_key, !state())}
       />
+    </div>
+  );
+};
+
+const Stat = (props: { label: string; value: string }) => {
+  return (
+    <div class="flex justify-between items-center text-2xl pb-1.5 sm:pb-2">
+      <p>{props.label}</p>
+      <p>{props.value}</p>
     </div>
   );
 };

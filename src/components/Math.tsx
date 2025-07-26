@@ -11,6 +11,7 @@ import { useGlobalContext } from "~/store/StoreProvider";
 export const Math = (props: ParentProps) => {
   let ref: HTMLSpanElement | undefined;
   const [visible, setVisible] = createSignal(false);
+  const { set_store } = useGlobalContext();
 
   onMount(() => {
     const observer = new IntersectionObserver(
@@ -18,6 +19,7 @@ export const Math = (props: ParentProps) => {
         if (entry.isIntersecting) {
           (window as any).MathJax.typesetPromise([ref]);
           setVisible(true);
+          set_store("scrollHeight", document.body.scrollHeight);
           observer.disconnect();
         }
       },
@@ -42,7 +44,7 @@ export const Math = (props: ParentProps) => {
 
 export const MathBlock = (props: ParentProps) => {
   let ref: HTMLDivElement | undefined;
-  const { store } = useGlobalContext();
+  const { store, set_store } = useGlobalContext();
   const [visible, setVisible] = createSignal(false);
   const [scaledDown, setScaledDown] = createSignal(false);
   const [originalWidth, setOriginalWidth] = createSignal(0);
@@ -66,6 +68,7 @@ export const MathBlock = (props: ParentProps) => {
         if (entry.isIntersecting) {
           (window as any).MathJax.typesetPromise([ref]);
           setVisible(true);
+          set_store("scrollHeight", document.body.scrollHeight);
           observer.disconnect();
         }
       },
@@ -100,11 +103,14 @@ export const MathBlock = (props: ParentProps) => {
     if (scaledDown()) {
       ref?.style.setProperty(
         "width",
-        store.innerWidth - TEXT_X_PADDING * 2 + "px"
+        store.innerWidth - TEXT_X_PADDING * 2 + "px",
       );
       return;
     }
-    ref?.style.setProperty("width", originalWidth() > 0 ? originalWidth() + "px" : "auto");
+    ref?.style.setProperty(
+      "width",
+      originalWidth() > 0 ? originalWidth() + "px" : "auto",
+    );
   });
 
   return (
@@ -112,8 +118,7 @@ export const MathBlock = (props: ParentProps) => {
       class="mathblock transition-all"
       style={{ opacity: visible() ? "1" : "0" }}
       onClick={handleClick}
-      ref={ref}
-    >
+      ref={ref}>
       {props.children}
     </div>
   );

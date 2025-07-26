@@ -28,13 +28,20 @@ export type Store = {
   maxElementWidth: number;
   nextPage: string;
   prevPage: string;
+  loading: boolean;
+  have_been_outside_home: boolean;
+  last_page_load_ms: number;
+  total_page_load_ms: number;
+  num_page_loads: number;
+  navigation_delays: boolean;
+  animations: boolean;
 };
 
 const [store, set_store] = createStore<Store>({
   panel_opened: false,
   show_section_dividers: false,
   show_areas: false,
-  show_squiggles: true,
+  show_squiggles: false,
   title: "Little Bo Peep",
   innerWidth: document.documentElement.clientWidth || window.innerWidth,
   innerHeight: window.innerHeight,
@@ -51,6 +58,13 @@ const [store, set_store] = createStore<Store>({
   maxElementWidth: 0,
   nextPage: "",
   prevPage: "",
+  loading: false,
+  have_been_outside_home: false,
+  last_page_load_ms: 0,
+  total_page_load_ms: 0,
+  num_page_loads: 0,
+  navigation_delays: false,
+  animations: true,
 });
 
 const StoreContext = createContext<{

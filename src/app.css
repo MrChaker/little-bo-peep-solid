@@ -25,6 +25,7 @@
 :root {
   --background-rgb: #fff;
   --foreground-rgb: rgb(0, 0, 0);
+  --hamburger-menu-height: 56px;
   --desktop-text-column-padding: 16px;
   --mobile-max-width: 900px;
   --toc-label-stroke-color: oklch(97% 0.001 106.424); /* bg-stone-100 */

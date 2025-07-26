@@ -2,6 +2,7 @@ import { ParentProps } from "solid-js";
 import Nav from "./Nav";
 import { useGlobalContext } from "~/store/StoreProvider";
 import mainColumnWidth from "~/hooks/useMainColumnWidth";
+import LoadingGraphic from "./LoadingGraphic";
 
 const Container = (props: ParentProps) => {
   let { store } = useGlobalContext();
@@ -40,21 +41,24 @@ const Container = (props: ParentProps) => {
   };
 
   return (
-    <div
-      id="Container"
-      class="pb-14 -z-10 relative overflow-hidden"
-      style={{
-        width: containerWidth() + "px",
-        opacity: store.saved_scroll_finished || store.scroll_is_at_0 ? 1 : 0,
-      }}>
-      <EarlyImages />
-      {store.show_areas &&
-        store.pageNecessaryMargin > 0 &&
-        marginShowAreaDivs()}
-      {store.show_areas && maxElementShowAreasDiv()}
-      <Nav />
-      {props.children}
-    </div>
+    <>
+      <div
+        id="Container"
+        class="min-h-screen pb-14 -z-10 relative overflow-hidden"
+        style={{
+          width: containerWidth() + "px",
+          opacity: store.saved_scroll_finished || store.scroll_is_at_0 ? 1 : 0,
+        }}>
+        <EarlyImages />
+        {store.show_areas &&
+          store.pageNecessaryMargin > 0 &&
+          marginShowAreaDivs()}
+        {store.show_areas && maxElementShowAreasDiv()}
+        <Nav />
+        {props.children}
+        {store.loading && <LoadingGraphic />}
+      </div>
+    </>
   );
 };
 
@@ -62,6 +66,7 @@ const EarlyImages = () => {
   return (
     <div style="overflow:hidden;position:absolute;top:0px;left:0px;pointer-events:none;width:1px;height:1px;">
       <img src="/images/svg_base_exponent.svg" style="position:absolute" />
+      <img src="/images/loading_screen.png" style="position:absolute" />
       <img
         src="/images/svg_ch1_ch_minus_two_squared_cloud.svg"
         style="position:absolute"

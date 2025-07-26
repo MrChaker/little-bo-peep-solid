@@ -10,7 +10,7 @@ import useScrollToInChapter from "~/hooks/useScrollToInChapter";
 import { useExercisesContext } from "~/store/ExercisesStoreProvider";
 import mainColumnWidth from "~/hooks/useMainColumnWidth";
 
-const ActionArrows = () => {
+const PageTopBottomArrows = () => {
   const { store } = useGlobalContext();
   const { exercises_store } = useExercisesContext();
   const [opacity, set_opacity] = createSignal(1);
@@ -48,7 +48,7 @@ const ActionArrows = () => {
   const handleUpClick = (_: MouseEvent) => {
     let middleScroll = calculateTargetCenterOnPage(selectedExercise());
     let scrollTo = store.scrollY < middleScroll + 100 ? 0 : middleScroll + 50;
-    smoothScrollTo(scrollTo, 100);
+    smoothScrollTo(scrollTo, store.animations ? 100 : 0);
   };
 
   const handleDownClick = (_: MouseEvent) => {
@@ -58,7 +58,7 @@ const ActionArrows = () => {
         ? document.body.scrollHeight
         : middleScroll + 50;
 
-    smoothScrollTo(scrollTo, 100);
+    smoothScrollTo(scrollTo, store.animations ? 100 : 0);
   };
 
   const containerWidth = () => {
@@ -71,7 +71,7 @@ const ActionArrows = () => {
 
   const effectiveMarginWidth = () => {
     return (containerWidth() - mainColumnWidth()) / 2;
-  }
+  };
 
   return (
     <div
@@ -170,4 +170,4 @@ const DoubleDownArrowSVG = (props: { class?: string; style?: string }) => {
   );
 };
 
-export default ActionArrows;
+export default PageTopBottomArrows;

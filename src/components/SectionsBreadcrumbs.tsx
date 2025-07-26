@@ -1,5 +1,6 @@
 import {
   children,
+  createEffect,
   createSignal,
   JSX,
   onCleanup,
@@ -9,7 +10,7 @@ import {
 import { useGlobalContext } from "~/store/StoreProvider";
 import { HAMBURGER_MENU_HEIGHT, MOBILE_MAX_WIDTH } from "~/constants";
 import { Component } from "solid-js";
-import usePrevNextArticle from "~/hooks/usePrevNextArticle";
+import usePrevNextPage from "~/hooks/usePrevNextPage";
 import { twJoin } from "tailwind-merge";
 import SharedProps from "./types/SharedProps";
 import OutlinedText from "./OutlinedText";
@@ -49,7 +50,7 @@ const calculate_values = () => {
       (store.innerWidth - screen_width_to_achieve_min_size) /
         (screen_width_to_achieve_max_size - screen_width_to_achieve_min_size),
       0,
-      1
+      1,
     );
 
   const font_size = () =>
@@ -59,7 +60,7 @@ const calculate_values = () => {
     linear_interpolation(
       min_size_line_wrap_width_pct,
       max_size_line_wrap_width_pct,
-      progress()
+      progress(),
     );
 
   const line_height = () =>
@@ -69,14 +70,14 @@ const calculate_values = () => {
     linear_interpolation(
       closing_circle_min_size_stroke_width,
       closing_circle_max_size_stroke_width,
-      progress()
+      progress(),
     );
 
   const closing_circle_radius = () =>
     linear_interpolation(
       min_size_closing_circle_radius,
       max_size_closing_circle_radius,
-      progress()
+      progress(),
     );
 
   const top_margin = () =>
@@ -86,7 +87,7 @@ const calculate_values = () => {
     linear_interpolation(
       min_size_left_margin,
       max_size_left_margin,
-      progress()
+      progress(),
     );
 
   const default_visible_state = () =>
@@ -121,8 +122,10 @@ const SectionsBreadcrumbs = (props: ParentProps) => {
 
   const [visible, setVisible] = useLocalStorage(
     "sections-breadcrumbs-visible",
-    default_visible_state()
+    default_visible_state(),
   );
+  const [hasBeenClosed, setHasBeenClosed] = createSignal(false);
+  const really_visible = () => visible() && store.have_been_outside_home;
 
   const [outSideHovered, setOutSideHovered] = createSignal(false);
   let children_list = children(() => props.children).toArray();
@@ -134,7 +137,13 @@ const SectionsBreadcrumbs = (props: ParentProps) => {
   let ref: HTMLUListElement | undefined;
 
   const { getPrevArticle, prevDisabled, getNextArticle, nextDisabled } =
-    usePrevNextArticle();
+    usePrevNextPage();
+
+  createEffect(() => {
+    if (!visible()) {
+      setHasBeenClosed(true);
+    }
+  });
 
   onMount(() => {
     const isMouseOverElement = (
@@ -185,8 +194,7 @@ const SectionsBreadcrumbs = (props: ParentProps) => {
           left: "0",
           "z-index": 20,
         }}
-        onMouseEnter={() => setVisible(true)}
-      ></div>
+        onMouseEnter={() => setVisible(true)}></div>
       <div
         id="hot-corner" // this one is used!
         style={{
@@ -199,15 +207,14 @@ const SectionsBreadcrumbs = (props: ParentProps) => {
           "z-index": 10,
         }}
         onMouseEnter={() => {
-          setVisible(visible() || outSideHovered());
-        }}
-      ></div>
+          setVisible(really_visible() || outSideHovered());
+        }}></div>
       <div
         id="breadcrumbs"
         style={{
           background: store.show_areas ? "#5a3a" : "#0000",
           position: sticky() ? "fixed" : "absolute",
-          "z-index": visible() ? 25 : 0,
+          "z-index": really_visible() ? 25 : 0,
           top: (sticky() ? top_margin() : top_margin_when_not_sticky()) + "px",
           "padding-inline": left_margin() + "px",
           width:
@@ -217,29 +224,27 @@ const SectionsBreadcrumbs = (props: ParentProps) => {
             "px",
           left: sticky() ? "0" : store.scrollX + "px",
           display: on() ? "block" : "none",
-        }}
-      >
+        }}>
         <div
           style={{
-            transform: `translateY(${visible() ? "0" : "-120%"})`,
-            opacity: visible() ? 1 : 0,
-            transition: `all ${Math.min(300 + children_list.length * 50, 600)}ms ease-in-out`,
-          }}
-        >
+            transform: `translateY(${really_visible() ? "0" : "-120%"})`,
+            opacity: really_visible() ? 1 : 0,
+            transition: hasBeenClosed()
+              ? `all ${Math.min(300 + children_list.length * 50, 600)}ms ease-in-out`
+              : "none",
+          }}>
           <ul
             ref={ref}
             style={{
               "font-size": font_size() + "px",
               "line-height": line_height() + "rem",
-            }}
-          >
+            }}>
             <li
               style={{
                 "font-size": font_size() * 0.99 + "px", // slightly smaller font-size
                 "padding-bottom": line_height() * 0.06 + "rem", // ...and more space below, to offset optical illusion caused by underline
               }}
-              class="breadcrumb-prev-next flex gap-2"
-            >
+              class="breadcrumb-prev-next flex gap-2">
               <OutlinedText
                 onClick={(e: any) => {
                   e.stopPropagation();
@@ -313,21 +318,18 @@ const CloseCircleIcon: Component<JSX.SvgSVGAttributes<SVGSVGElement>> = (
       stroke-linejoin="round"
       class={props.class}
       onMouseOver={props.onMouseOver}
-      onClick={props.onClick}
-    >
+      onClick={props.onClick}>
       <circle cx={iconSize()} cy={iconSize()} r={circleRadius()}></circle>
       <line
         x1={iconSize() + crossSize()}
         y1={iconSize() - crossSize()}
         x2={iconSize() - crossSize()}
-        y2={iconSize() + crossSize()}
-      ></line>
+        y2={iconSize() + crossSize()}></line>
       <line
         x1={iconSize() - crossSize()}
         y1={iconSize() - crossSize()}
         x2={iconSize() + crossSize()}
-        y2={iconSize() + crossSize()}
-      ></line>
+        y2={iconSize() + crossSize()}></line>
     </svg>
   );
 };

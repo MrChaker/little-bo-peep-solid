@@ -5,7 +5,8 @@ import useSetRoute from "~/hooks/useSetRoute";
 import useBreadcrumbs from "~/hooks/useBreadcrumbs";
 import useScrollIsAt0 from "~/hooks/useScrollIsAt0";
 import useOnMobile from "../hooks/useOnMobile";
-import usePrevNextArticle from "~/hooks/usePrevNextArticle";
+import usePrevNextPage from "~/hooks/usePrevNextPage";
+import { useLocation } from "@solidjs/router";
 
 type PageProps = {
   pageNecessaryMargin?: number;
@@ -16,8 +17,9 @@ type PageProps = {
 
 const Page = (props: ParentProps & PageProps) => {
   let { set_store, store } = useGlobalContext();
-  const { getPrevArticle, getNextArticle } = usePrevNextArticle();
+  const { getPrevArticle, getNextArticle } = usePrevNextPage();
   const { on_mobile } = useOnMobile();
+  const location = useLocation();
 
   useScrollX();
   useScrollIsAt0();
@@ -135,7 +137,7 @@ const Page = (props: ParentProps & PageProps) => {
       e.stopPropagation();
       return;
     }
-    
+
     if (
       e.clientY >= store.innerHeight * 0.75 &&
       window.scrollY + window.innerHeight < document.body.scrollHeight
@@ -144,13 +146,13 @@ const Page = (props: ParentProps & PageProps) => {
       e.stopPropagation();
       return;
     }
-    
+
     if (e.clientX < store.innerWidth * 0.1) {
       getPrevArticle();
       e.stopPropagation();
       return;
     }
-    
+
     if (e.clientX > store.innerWidth * 0.9) {
       getNextArticle();
       e.stopPropagation();
@@ -178,6 +180,10 @@ const Page = (props: ParentProps & PageProps) => {
   onMount(() => {
     handleScroll();
     handleResize();
+    set_store("loading", false);
+    if (location.pathname !== "/") {
+      set_store("have_been_outside_home", true);
+    }
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);

@@ -1,16 +1,16 @@
 import Article  from "~/components/Article";
 import ArticleTitle  from "~/components/ArticleTitle";
 import { CentralDisplayItalic }  from "~/components/Delimiters";
-import { Exercises, Exercise, ExerciseStatement }  from "~/components/Exercises";
+import { ExerciseStatement, Exercise, Exercises }  from "~/components/Exercises";
 import Image  from "~/components/Image";
 import InChapterLink  from "~/components/InChapterLink";
-import { Math, MathBlock }  from "~/components/Math";
+import { MathBlock, Math }  from "~/components/Math";
 import OuterP  from "~/components/OuterP";
 import SectionsBreadcrumbs,  { BreadcrumbItem }  from "~/components/SectionsBreadcrumbs";
-import { ImageLeft, ImageRight }  from "~/components/SideImage";
+import { ImageRight, ImageLeft }  from "~/components/SideImage";
 import Solution  from "~/components/Solution";
 import Table  from "~/components/Table";
-import { Section, Pause, NoBreak, Example, SolutionNote }  from "~/components/Wrappers";
+import { SolutionNote, Example, NoBreak, Pause, Section }  from "~/components/Wrappers";
 import useShowMore from "~/hooks/useShowMore";
 
 export default function __Bootcamp2__() {
@@ -81,18 +81,18 @@ export default function __Bootcamp2__() {
             Terminology.
           </b>
           {" "}
-          The expression below is called a{" "}
+          The expression below is called a {" "}
           <i>
             power
           </i>
           ;
           the number at the bottom of the power is called
-          the{" "}
+          the {" "}
           <i>
             base
           </i>
-          {" "}(of the power); the number at the top
-          is called the{" "}
+          {" "} (of the power); the number at the top
+          is called the {" "}
           <i>
             exponent
           </i>
@@ -102,23 +102,23 @@ export default function __Bootcamp2__() {
         <Image src="/images/svg_base_exponent.svg" />
         <Pause />
         <OuterP>
-          The whole expression is read{" "}
+          The whole expression is read {" "}
           <Math>
             $\mathit&#123;10&#125;$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <i>
             to the power
           </i>
-          {" "}{" "}
+          {" "} {" "}
           <NoBreak>
             <Math>
               $\mathit&#123;3&#125;$
             </Math>
             ,
           </NoBreak>
-          {" "}and the
-          general process of taking a power is called{" "}
+          {" "} and the
+          general process of taking a power is called {" "}
           <i>
             exponentiation
           </i>
@@ -151,24 +151,24 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          as follows, if{" "}
+          as follows, if {" "}
           <Math>
             $n$
           </Math>
-          {" "}is a nonnegative integer: start
-          from{" "}
+          {" "} is a nonnegative integer: start
+          from {" "}
           <Math>
             $1$
           </Math>
-          {" "}and multiply by{" "}
+          {" "} and multiply by {" "}
           <Math>
             $10$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <Math>
             $n$
           </Math>
-          {" "}times. We also define
+          {" "} times. We also define
         </OuterP>
         <Pause />
         <MathBlock>
@@ -178,24 +178,24 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          as follows, if{" "}
+          as follows, if {" "}
           <Math>
             $n$
           </Math>
-          {" "}is a positive integer: start from{" "}
+          {" "} is a positive integer: start from {" "}
           <Math>
             $1$
           </Math>
-          {" "}and divide
-          by{" "}
+          {" "} and divide
+          by {" "}
           <Math>
             $10$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <Math>
             $n$
           </Math>
-          {" "}times.
+          {" "} times.
         </OuterP>
         <OuterP class="indent-10">
           For example,
@@ -237,15 +237,15 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          (where, in the last line,{" "}
+          (where, in the last line, {" "}
           <Math>
             $1$
           </Math>
-          {" "}is multiplied by{" "}
+          {" "} is multiplied by {" "}
           <Math>
             $10$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <i>
             zero times
           </i>
@@ -281,38 +281,38 @@ const Rest = () => {
           by the second definition.
         </OuterP>
         <OuterP class="indent-10">
-          As{" "}
+          As {" "}
           <Math>
             $n$
           </Math>
-          {" "}successive divisions
-          by{" "}
+          {" "} successive divisions
+          by {" "}
           <Math>
             $10$
           </Math>
-          {" "}is the same as one division by{" "}
+          {" "} is the same as one division by {" "}
           <NoBreak>
             <Math>
               $10^n$
             </Math>
             ,
           </NoBreak>
-          {" "}one also has
+          {" "} one also has
         </OuterP>
         <Pause />
-        <MathBlock id="_1_8633">
+        <MathBlock id="_1_hgi_">
           $$\Large 10^&#123;-n&#125; = &#123;1 \over 10^&#123;\hspace&#123;0.2ex&#125;n&#125;&#125;\tag&#123;A&#125;$$
         </MathBlock>
         <Pause />
         <OuterP>
-          for every positive integer{" "}
+          for every positive integer {" "}
           <NoBreak>
             <Math>
               $n$
             </Math>
             ,
           </NoBreak>
-          {" "}which gives an alternate means of computing{" "}
+          {" "} which gives an alternate means of computing {" "}
           <NoBreak>
             <Math>
               $10^&#123;-n&#125;$
@@ -321,11 +321,11 @@ const Rest = () => {
           </NoBreak>
           {" "}
           Moreover, (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_8633"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
+          <a
+            href="_1_hgi_?id=A"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           ) actually holds for
         </OuterP>
         <Pause />
@@ -334,30 +334,30 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          integer{" "}
+          integer {" "}
           <NoBreak>
             <Math>
               $n$
             </Math>
             ,
           </NoBreak>
-          {" "}which is mildly important. In more
+          {" "} which is mildly important. In more
           detail, (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_8633"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
-          ) holds for{" "}
+          <a
+            href="_1_hgi_?id=A"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
+          ) holds for {" "}
           <Math>
             $n = 0$
           </Math>
-          {" "}by inspection, and (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_8633"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
+          {" "} by inspection, and (
+          <a
+            href="_1_hgi_?id=A"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           )
           is equivalent to the identity
           <ImageLeft
@@ -365,24 +365,24 @@ const Rest = () => {
             line={2} />
         </OuterP>
         <Pause />
-        <MathBlock id="_2_875">
+        <MathBlock id="_2_hgi_">
           $$\Large 10^&#123;-n&#125;10^n = 1 \tag&#123;AA&#125;$$
         </MathBlock>
         <Pause />
         <OuterP>
-          which holds for{" "}
+          which holds for {" "}
           <Math>
             $n$
           </Math>
-          {" "}if and only if it holds for
-          {" "}
+          {" "} if and only if it holds {" "}
           <NoBreak>
+            for
             <Math>
               $-n$
             </Math>
             .
           </NoBreak>
-          {" "}(By which we mean: replacing{" "}
+          {" "} (By which we mean: replacing {" "}
           <NoBreak>
             “
             <Math>
@@ -390,7 +390,7 @@ const Rest = () => {
             </Math>
             ”
           </NoBreak>
-          {" "}by{" "}
+          {" "} by {" "}
           <NoBreak>
             “
             <Math>
@@ -400,48 +400,48 @@ const Rest = () => {
           </NoBreak>
           {" "}
           in (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_875"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
+          <a
+            href="_2_hgi_?id=AA"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           ) lands you right back on (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_875"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
+          <a
+            href="_2_hgi_?id=AA"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           ), due to the fact
-          that{" "}
+          that {" "}
           <NoBreak>
             <Math>
               $-&#123;(-n)&#125; = n$
             </Math>
             .)
           </NoBreak>
-          {" "}(So, namely, if (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_875"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
+          {" "} (So, namely, if (
+          <a
+            href="_2_hgi_?id=AA"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           ) holds for all
-          positive values of{" "}
+          positive values of {" "}
           <NoBreak>
             <Math>
               $\hspace&#123;0.05em&#125;n$
             </Math>
             ,
           </NoBreak>
-          {" "}then it holds
-          for all negative values of{" "}
+          {" "} then it holds
+          for all negative values of {" "}
           <NoBreak>
             <Math>
               $n$
             </Math>
             ,
           </NoBreak>
-          {" "}as well.)
+          {" "} as well.)
         </OuterP>
         <Pause />
         <OuterP>
@@ -449,15 +449,15 @@ const Rest = () => {
             Vocabulary.
           </b>
           {" "}
-          Numbers{" "}
+          Numbers {" "}
           <Math>
             $a$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $b$
           </Math>
-          {" "}such that
+          {" "} such that
         </OuterP>
         <Pause />
         <MathBlock>
@@ -467,19 +467,19 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          are{" "}
+          are {" "}
           <i>
             reciprocal
           </i>
-          . If{" "}
+          . If {" "}
           <Math>
             $a$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $b$
           </Math>
-          {" "}are reciprocal,
+          {" "} are reciprocal,
           then these equations are satisfied...
         </OuterP>
         <Pause />
@@ -492,17 +492,17 @@ const Rest = () => {
         <OuterP>
           ...and any one of these equations implies the other two.
           Thus, either of (
-          <InChapterLink
-            href="/article/bootcamp2?id=_1_8633"
-            class="handle-in-chapter-link">
-            A
-          </InChapterLink>
+          <a
+            href="_1_hgi_?id=A"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           ) and (
-          <InChapterLink
-            href="/article/bootcamp2?id=_2_875"
-            class="handle-in-chapter-link">
-            AA
-          </InChapterLink>
+          <a
+            href="_2_hgi_?id=AA"
+            class="handle-out-chapter-link">
+            /article/bootcamp2
+          </a>
           )
           expresses the
         </OuterP>
@@ -512,11 +512,11 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          of{" "}
+          of {" "}
           <Math>
             $10^n$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <NoBreak>
             <Math>
               $10^&#123;-n&#125;$
@@ -543,37 +543,37 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is defined as{" "}
+          is defined as {" "}
           <Math>
             $1$
           </Math>
-          {" "}divided by{" "}
+          {" "} divided by {" "}
           <Math>
             $2$
           </Math>
-          {" "}twice, etc.
+          {" "} twice, etc.
         </OuterP>
         <OuterP class="indent-10">
-          However, a small quirk occurs for base{" "}
+          However, a small quirk occurs for base {" "}
           <NoBreak>
             <Math>
               $0$
             </Math>
             :
           </NoBreak>
-          {" "}as one
-          cannot divide by{" "}
+          {" "} as one
+          cannot divide by {" "}
           <NoBreak>
             <Math>
               $0$
             </Math>
             ,
           </NoBreak>
-          {" "}negative powers of{" "}
+          {" "} negative powers of {" "}
           <Math>
             $0$
           </Math>
-          {" "}remain
+          {" "} remain
           undefined. E.g.,
         </OuterP>
         <Pause />
@@ -584,37 +584,37 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          would be{" "}
+          would be {" "}
           <NoBreak>
             “
             <Math>
               $1$
             </Math>
           </NoBreak>
-          {" "}divided by{" "}
+          {" "} divided by {" "}
           <Math>
             $0$
           </Math>
-          {" "}twice”, but this
-          is undefined. Hence{" "}
+          {" "} twice”, but this
+          is undefined. Hence {" "}
           <NoBreak>
             <Math>
               $0^&#123;-1&#125;$
             </Math>
             ,
           </NoBreak>
-          {" "}{" "}
+          {" "} {" "}
           <NoBreak>
             <Math>
               $0^&#123;-2&#125;$
             </Math>
             ,
           </NoBreak>
-          {" "}etc, remain
+          {" "} etc, remain
           undefined.
         </OuterP>
         <OuterP class="indent-10">
-          Also (in case you're wondering){" "}
+          Also (in case you're wondering) {" "}
           <NoBreak>
             <Math>
               $0^0 = 1$
@@ -623,11 +623,11 @@ const Rest = () => {
           </NoBreak>
           {" "}
           You can see this by writing down the first few powers
-          of{" "}
+          of {" "}
           <Math>
             $0$
           </Math>
-          {" "}in descending order:
+          {" "} in descending order:
         </OuterP>
         <Pause />
         <MathBlock>
@@ -655,19 +655,19 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          In other words, every positive power of{" "}
+          In other words, every positive power of {" "}
           <Math>
             $0$
           </Math>
-          {" "}is zero,
-          but when it comes to{" "}
+          {" "} is zero,
+          but when it comes to {" "}
           <NoBreak>
             <Math>
               $0^0$
             </Math>
             ,
           </NoBreak>
-          {" "}the{" "}
+          {" "} the {" "}
           <NoBreak>
             ‘
             <Math>
@@ -676,7 +676,7 @@ const Rest = () => {
             ’
           </NoBreak>
           {" "}
-          in the exponent “wins out” over the{" "}
+          in the exponent “wins out” over the {" "}
           <NoBreak>
             ‘
             <Math>
@@ -685,7 +685,7 @@ const Rest = () => {
             ’
           </NoBreak>
           {" "}
-          in the base, making the result{" "}
+          in the base, making the result {" "}
           <NoBreak>
             <Math>
               $1$
@@ -695,11 +695,11 @@ const Rest = () => {
         </OuterP>
         <OuterP class="indent-10">
           Note that mathematicians sometimes refer
-          to a power with an exponent of{" "}
+          to a power with an exponent of {" "}
           <Math>
             $0$
           </Math>
-          {" "}as an
+          {" "} as an
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
@@ -711,27 +711,27 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
-          an empty product is{" "}
+          an empty product is {" "}
           <Math>
             $\mathit&#123;1&#125;$
           </Math>
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          in the sense that “all products start at
-          {" "}
+          in the sense that “all products start {" "}
           <NoBreak>
+            at
             <Math>
               $1$
             </Math>
             ”,
           </NoBreak>
-          {" "}and that if you start at{" "}
+          {" "} and that if you start at {" "}
           <Math>
             $1$
           </Math>
-          {" "}and don't
-          multiply anything in, you stay at{" "}
+          {" "} and don't
+          multiply anything in, you stay at {" "}
           <NoBreak>
             <Math>
               $1$
@@ -757,29 +757,31 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          because{" "}
+          because {" "}
           <Math>
             $13$
           </Math>
-          {" "}multiplications by{" "}
+          {" "} multiplications by {" "}
           <Math>
             $10$
           </Math>
-          {" "}followed
-          by{" "}
+          {" "} followed
+          by {" "}
           <Math>
             $14$
           </Math>
-          {" "}multiplications by{" "}
+          {" "} multiplications by {" "}
           <Math>
             $10$
           </Math>
-          {" "}makes{" "}
-          <Math>
-            $13 + 14 = 27$
-          </Math>
-          {" "}
-          multiplications by{" "}
+          {" "} makes {" "}
+          <NoBreak>
+            <Math>
+              $13 + 14 = 27$
+            </Math>
+            multiplications
+          </NoBreak>
+          {" "} by {" "}
           <NoBreak>
             <Math>
               $10$
@@ -798,15 +800,15 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          for all{" "}
+          for all {" "}
           <Math>
             $n$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <Math>
             $m$
           </Math>
-          {" "}(and other bases than{" "}
+          {" "} (and other bases than {" "}
           <NoBreak>
             <Math>
               $10$
@@ -831,11 +833,11 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          where{" "}
+          where {" "}
           <i>
             the product of the powers
           </i>
-          {" "}refers to
+          {" "} refers to
           {" "}
           <NoBreak>
             “
@@ -844,12 +846,12 @@ const Rest = () => {
             </Math>
             ”
           </NoBreak>
-          {" "}and{" "}
+          {" "} and {" "}
           <i>
             the power of the sum
           </i>
           {" "}
-          refers to{" "}
+          refers to {" "}
           <NoBreak>
             “
             <Math>
@@ -857,7 +859,7 @@ const Rest = () => {
             </Math>
             ”.
           </NoBreak>
-          {" "}(Or for some other base.)
+          {" "} (Or for some other base.)
         </OuterP>
       </Section>
       <Pause />
@@ -877,27 +879,27 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          because multiplying{" "}
+          because multiplying {" "}
           <Math>
             $14$
           </Math>
-          {" "}times by{" "}
+          {" "} times by {" "}
           <Math>
             $10^&#123;13&#125;$
           </Math>
-          {" "}is like
-          multiplying{" "}
+          {" "} is like
+          multiplying {" "}
           <Math>
             $13\cdot 14$
           </Math>
-          {" "}times by{" "}
+          {" "} times by {" "}
           <NoBreak>
             <Math>
               $10$
             </Math>
             .
           </NoBreak>
-          {" "}More
+          {" "} More
           generally,
         </OuterP>
         <Pause />
@@ -908,18 +910,18 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          for all{" "}
+          for all {" "}
           <Math>
             $n$
           </Math>
-          {" "}and{" "}
+          {" "} and {" "}
           <NoBreak>
             <Math>
               $m$
             </Math>
             .
           </NoBreak>
-          {" "}This is known as “the third law
+          {" "} This is known as “the third law
           of exponents”.
         </OuterP>
         <OuterP class="indent-10">
@@ -939,11 +941,11 @@ const Rest = () => {
               $a$
             </Math>
           </NoBreak>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <Math>
             $b$
           </Math>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <NoBreak>
             <Math>
               $c$
@@ -967,14 +969,14 @@ const Rest = () => {
               $a$
             </Math>
           </NoBreak>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <NoBreak>
             [
             <Math>
               $b$
             </Math>
           </NoBreak>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <NoBreak>
             <Math>
               $c$
@@ -998,14 +1000,14 @@ const Rest = () => {
               $a$
             </Math>
           </NoBreak>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <NoBreak>
             <Math>
               $b$
             </Math>
             ]
           </NoBreak>
-          {" "}to the power{" "}
+          {" "} to the power {" "}
           <NoBreak>
             <Math>
               $c$
@@ -1055,17 +1057,17 @@ const Rest = () => {
           </b>
           {" "}
           Many human languages have special names for
-          various integer powers of{" "}
+          various integer powers of {" "}
           <NoBreak>
             <Math>
               $10$
             </Math>
             ,
           </NoBreak>
-          {" "}due to the fact
-          that many of our ancestors chose to count in base
-          {" "}
+          {" "} due to the fact
+          that many of our ancestors chose to count in {" "}
           <NoBreak>
+            base
             <Math>
               $10$
             </Math>
@@ -1074,7 +1076,7 @@ const Rest = () => {
         </OuterP>
         <OuterP class="indent-10">
           In English, e.g., these are some of the “famous”
-          powers of{" "}
+          powers of {" "}
           <NoBreak>
             <Math>
               $10$
@@ -1286,11 +1288,11 @@ const Rest = () => {
           as can be seen, for example, by replacing “billion”
           with “thousand million” in the previous sentence and
           then further replacing “thousand thousand” with “million”
-          in{" "}
+          in {" "}
           <i>
             that
           </i>
-          {" "}sentence.
+          {" "} sentence.
         </OuterP>
       </Section>
       <Pause />
@@ -1417,11 +1419,11 @@ const Rest = () => {
         <Pause />
         <OuterP>
           In passing, note how the standard decimal expansion
-          for{" "}
+          for {" "}
           <Math>
             $10^&#123;-1&#125;$
           </Math>
-          {" "}contains exactly one{" "}
+          {" "} contains exactly one {" "}
           <NoBreak>
             <Math>
               $&#123;0&#125;$
@@ -1433,12 +1435,14 @@ const Rest = () => {
         <Image src="/images/svg_one_blue_one_image_equation.svg" />
         <Pause />
         <OuterP>
-          Likewise, the standard decimal expansion for{" "}
-          <Math>
-            $10^&#123;-2&#125;$
-          </Math>
-          {" "}
-          contains exactly two{" "}
+          Likewise, the standard decimal expansion for {" "}
+          <NoBreak>
+            <Math>
+              $10^&#123;-2&#125;$
+            </Math>
+            contains
+          </NoBreak>
+          {" "} exactly two {" "}
           <NoBreak>
             <Math>
               $0$
@@ -1471,20 +1475,20 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          is{" "}
+          is {" "}
           <Math>
             $10^&#123;-3&#125;$
           </Math>
-          {" "}meters, i.e., one thousandth of
+          {" "} meters, i.e., one thousandth of
           a meter, because “milli” happens to be the prefix
-          for{" "}
+          for {" "}
           <NoBreak>
             <Math>
               $10^&#123;-3&#125;$
             </Math>
             .
           </NoBreak>
-          {" "}Here is a list of the most common
+          {" "} Here is a list of the most common
           such prefixes:
         </OuterP>
         <Pause />
@@ -1591,15 +1595,15 @@ const Rest = () => {
         <Pause />
         <OuterP>
           (Funny how the prefixes switch from
-          ending in ‘i’ to ending in ‘o’ after
-          {" "}
+          ending in ‘i’ to ending in ‘o’ {" "}
           <NoBreak>
+            after
             <Math>
               $10^&#123;-3&#125;$
             </Math>
             .)
           </NoBreak>
-          {" "}(Well, anyway.)
+          {" "} (Well, anyway.)
         </OuterP>
         <OuterP class="indent-10">
           To give an idea of scale,
@@ -1613,9 +1617,9 @@ const Rest = () => {
           are smaller than the smallest animal
           cells (human red blood cells, which
           are among the smallest animal cells,
-          have a diameter of
-          {" "}
+          have a diameter {" "}
           <NoBreak>
+            of
             <Math>
               $7$
             </Math>
@@ -1624,14 +1628,14 @@ const Rest = () => {
           <Math>
             $9$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <NoBreak>
             <Math>
               $\mu\textrm&#123;m&#125;$
             </Math>
             )
           </NoBreak>
-          {" "}(nb:{" "}
+          {" "} (nb: {" "}
           <NoBreak>
             “
             <Math>
@@ -1640,7 +1644,7 @@ const Rest = () => {
             ”
           </NoBreak>
           {" "}
-          stands for “micro” and{" "}
+          stands for “micro” and {" "}
           <NoBreak>
             “
             <Math>
@@ -1648,7 +1652,7 @@ const Rest = () => {
             </Math>
             m”
           </NoBreak>
-          {" "}stands
+          {" "} stands
           for “micrometer”). Next down,
         </OuterP>
         <Pause />
@@ -1659,14 +1663,14 @@ const Rest = () => {
         <OuterP>
           happen to be smaller than the diameter
           of DNA, with DNA having a diameter of
-          about{" "}
+          about {" "}
           <NoBreak>
             <Math>
               $2.5$
             </Math>
             nm
           </NoBreak>
-          {" "}(“nm” = “nanometer”).
+          {" "} (“nm” = “nanometer”).
         </OuterP>
       </Section>
       <Pause />
@@ -1677,22 +1681,22 @@ const Rest = () => {
           </b>
           {" "}
           There exists a similar set of prefixes
-          for positve powers of{" "}
+          for positve powers of {" "}
           <NoBreak>
             <Math>
               $10$
             </Math>
             .
           </NoBreak>
-          {" "}Going up
-          to{" "}
+          {" "} Going up
+          to {" "}
           <NoBreak>
             <Math>
               $10^&#123;15&#125;$
             </Math>
             ,
           </NoBreak>
-          {" "}these are:
+          {" "} these are:
         </OuterP>
         <Pause />
         <Table
@@ -1816,7 +1820,7 @@ const Rest = () => {
               $\!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;$
             </Math>
           </NoBreak>
-          {" "}“kilo” = thousand],
+          {" "} “kilo” = thousand],
           while a
         </OuterP>
         <Pause />
@@ -1825,14 +1829,14 @@ const Rest = () => {
         </CentralDisplayItalic>
         <Pause />
         <OuterP>
-          is a trillion bytes{" "}
+          is a trillion bytes {" "}
           <NoBreak>
             [b/
             <Math>
               $\!\hspace&#123;0.1ex&#125;\rm&#123;c&#125;$
             </Math>
           </NoBreak>
-          {" "}“tera” = trillion].
+          {" "} “tera” = trillion].
           (In case you don't know, by the way,
           a
         </OuterP>
@@ -1843,15 +1847,15 @@ const Rest = () => {
         <Pause />
         <OuterP>
           is a unit of computer memory
-          that is equal to{" "}
+          that is equal to {" "}
           <Math>
             $8$
           </Math>
-          {" "}{" "}
+          {" "} {" "}
           <i>
             bits
           </i>
-          , with a{" "}
+          , with a {" "}
           <i>
             bit
           </i>
@@ -1869,14 +1873,14 @@ const Rest = () => {
           Every positive number can be uniquely
           written as “ten to the power something”.
           This “something” will heretofore be called
-          the{" "}
+          the {" "}
           <i>
-            logarithm base{" "}
+            logarithm base {" "}
             <Math>
               $\mathit&#123;10&#125;$
             </Math>
           </i>
-          {" "}of that
+          {" "} of that
           (positive) number.
         </OuterP>
         <OuterP class="indent-10">
@@ -1891,15 +1895,15 @@ const Rest = () => {
         <Pause />
         <OuterP>
           can be uniquely written as “ten to the power
-          something”. To wit,{" "}
+          something”. To wit, {" "}
           <Math>
             $100$
           </Math>
-          {" "}is, of course,
+          {" "} is, of course,
         </OuterP>
         <Pause />
         <CentralDisplayItalic>
-          ten to the power{" "}
+          ten to the power {" "}
           <Math>
             $\mathit&#123;2&#125;$
           </Math>
@@ -1916,11 +1920,11 @@ const Rest = () => {
         </MathBlock>
         <Pause />
         <OuterP>
-          is the logarithm base{" "}
+          is the logarithm base {" "}
           <Math>
             $10$
           </Math>
-          {" "}of{" "}
+          {" "} of {" "}
           <NoBreak>
             <Math>
               $100$
@@ -1946,11 +1950,11 @@ const Rest = () => {
           <Pause />
           <OuterP>
             under an extended definition of exponentiation that allows us to
-            compute{" "}
+            compute {" "}
             <Math>
               $10^x$
             </Math>
-            {" "}for every{" "}
+            {" "} for every {" "}
             <NoBreak>
               <Math>
                 $x \in \rr$
@@ -1968,11 +1972,11 @@ const Rest = () => {
           </MathBlock>
           <Pause />
           <OuterP>
-            is the logarithm base{" "}
+            is the logarithm base {" "}
             <Math>
               $10$
             </Math>
-            {" "}of{" "}
+            {" "} of {" "}
             <NoBreak>
               <Math>
                 $99$
@@ -2008,11 +2012,11 @@ const Rest = () => {
           </MathBlock>
           <Pause />
           <OuterP>
-            is the logarithm base{" "}
+            is the logarithm base {" "}
             <Math>
               $10$
             </Math>
-            {" "}of{" "}
+            {" "} of {" "}
             <NoBreak>
               <Math>
                 $98$
@@ -2038,15 +2042,15 @@ const Rest = () => {
           </MathBlock>
           <Pause />
           <OuterP>
-            the logarithm base{" "}
+            the logarithm base {" "}
             <Math>
               $10$
             </Math>
-            {" "}of{" "}
+            {" "} of {" "}
             <Math>
               $0.1$
             </Math>
-            {" "}is{" "}
+            {" "} is {" "}
             <NoBreak>
               <Math>
                 $-1$
@@ -2076,15 +2080,15 @@ const Rest = () => {
           </MathBlock>
           <Pause />
           <OuterP>
-            the logarithm base{" "}
+            the logarithm base {" "}
             <Math>
               $10$
             </Math>
-            {" "}of{" "}
+            {" "} of {" "}
             <Math>
               $0.00001$
             </Math>
-            {" "}is{" "}
+            {" "} is {" "}
             <NoBreak>
               <Math>
                 $-5$
@@ -2103,34 +2107,34 @@ const Rest = () => {
                 Exercise 1.
               </b>
               {" "}
-              Compute{" "}
+              Compute {" "}
               <NoBreak>
                 <Math>
                   $2^&#123;-2&#125;$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $2^&#123;-3&#125;$
               </Math>
-              {" "}and{" "}
+              {" "} and {" "}
               <Math>
                 $2^&#123;-4&#125;$
               </Math>
-              {" "}by hand.
+              {" "} by hand.
             </OuterP>
           </ExerciseStatement>
           <Solution>
             <OuterP>
-              Since{" "}
+              Since {" "}
               <NoBreak>
                 <Math>
                   $2^&#123;-1&#125; = 1/2 = 0.5$
                 </Math>
                 ,
               </NoBreak>
-              {" "}one has
+              {" "} one has
             </OuterP>
             <Pause />
             <MathBlock>
@@ -2156,51 +2160,53 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <SolutionNote>
-              <p>
+              <OuterP>
                 <i>
                   Note 1.
                 </i>
                 {" "}
-                For the last computation,{" "}
+                For the last computation, {" "}
                 <Math>
                   $0.125$
                 </Math>
-                {" "}can be viewed
-                as twelve hundredths plus{" "}
+                {" "} can be viewed
+                as twelve hundredths plus {" "}
                 <Math>
                   $5$
                 </Math>
-                {" "}thousandths:
-              </p>
+                {" "} thousandths:
+              </OuterP>
               <Pause />
               <Image src="/images/svg_0.125_twelve_5.svg" />
-              <p>
+              <Pause />
+              <OuterP>
                 Half of twelve hundredths is six hundredths, and
-                half of{" "}
+                half of {" "}
                 <Math>
                   $5$
                 </Math>
-                {" "}thousandths is{" "}
+                {" "} thousandths is {" "}
                 <Math>
                   $2.5$
                 </Math>
-                {" "}thousandths:
-              </p>
+                {" "} thousandths:
+              </OuterP>
               <Pause />
               <Image src="/images/svg_06_and_0025.svg" />
-              <p>
-                ...so{" "}
+              <Pause />
+              <OuterP>
+                ...so {" "}
                 <Math>
                   $0.125/2$
                 </Math>
-                {" "}is{" "}
+                {" "} is {" "}
                 <NoBreak>
                   <Math>
                     $0.06 + 0.0025 = 0.0625$
                   </Math>
                   .
                 </NoBreak>
-              </p>
+              </OuterP>
             </SolutionNote>
           </Solution>
         </Exercise>
@@ -2211,11 +2217,11 @@ const Rest = () => {
                 Exercise 2.
               </b>
               {" "}
-              Compute{" "}
+              Compute {" "}
               <Math>
                 $100/16$
               </Math>
-              {" "}by hand.
+              {" "} by hand.
             </OuterP>
           </ExerciseStatement>
           <Solution>
@@ -2240,11 +2246,11 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              and that's all there is to it! (Or you could repeatedly divide{" "}
+              and that's all there is to it! (Or you could repeatedly divide {" "}
               <Math>
                 $100$
               </Math>
-              {" "}by{" "}
+              {" "} by {" "}
               <NoBreak>
                 <Math>
                   $2$
@@ -2252,14 +2258,14 @@ const Rest = () => {
                 ,
               </NoBreak>
               {" "}
-              until you reach{" "}
+              until you reach {" "}
               <NoBreak>
                 <Math>
                   $6.25$
                 </Math>
                 ,
               </NoBreak>
-              {" "}after the fourth division.)
+              {" "} after the fourth division.)
             </OuterP>
           </Solution>
         </Exercise>
@@ -2270,7 +2276,7 @@ const Rest = () => {
                 Exercise 3.
               </b>
               {" "}
-              If “万” is Chinese for{" "}
+              If “万” is Chinese for {" "}
               <i>
                 ten thousand
               </i>
@@ -2290,15 +2296,15 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              or{" "}
+              or {" "}
               <i>
                 one hundred million
               </i>
-              {" "}since{" "}
+              {" "} since {" "}
               <Math>
                 $10^8 = 10^2 \times 10^6$
               </Math>
-              {" "}is a hundred times a
+              {" "} is a hundred times a
               million. Similarly, “万万万” is
             </OuterP>
             <Pause />
@@ -2374,55 +2380,59 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution>
             <OuterP>
-              There are{" "}
+              There are {" "}
               <Math>
                 $10^3$
               </Math>
-              {" "}millimeters in a meter
+              {" "} millimeters in a meter
               (
               <i>
                 milli
               </i>
-              {" "}= thousandth) and{" "}
+              {" "} = thousandth) and {" "}
               <Math>
                 $10^3$
               </Math>
-              {" "}meters
-              in a kilometer, so there are
-              {" "}
-              <Math>
-                $10^3 \times 10^3 = 10^6$
-              </Math>
-              {" "}
-              millimeters in a kilometer.
+              {" "} meters
+              in a kilometer, so there {" "}
+              <NoBreak>
+                are
+                <Math>
+                  $10^3 \times 10^3 = 10^6$
+                </Math>
+                millimeters
+              </NoBreak>
+              {" "} in a kilometer.
             </OuterP>
             <OuterP class="indent-10">
               From there, it automatically follows that
-              there are{" "}
+              there are {" "}
               <Math>
                 $1/10^6 = 10^&#123;-6&#125;$
               </Math>
-              {" "}kilometers in
+              {" "} kilometers in
               a millimeter.
             </OuterP>
             <OuterP class="indent-10">
               (Or you can run the reverse reasoning:
-              There are{" "}
+              There are {" "}
               <Math>
                 $10^&#123;-3&#125;$
               </Math>
-              {" "}kilometers in a meter,
-              and{" "}
+              {" "} kilometers in a meter,
+              and {" "}
               <Math>
                 $10^&#123;-3&#125;$
               </Math>
-              {" "}meters in a millimeter,
-              so{" "}
-              <Math>
-                $10^&#123;-3&#125; \times 10^&#123;-3&#125; = 10^&#123;-6&#125;$
-              </Math>
-              {" "}
-              kilometers in a millimeter.)
+              {" "} meters in a millimeter,
+              so {" "}
+              <NoBreak>
+                <Math>
+                  $10^&#123;-3&#125; \times 10^&#123;-3&#125; = 10^&#123;-6&#125;$
+                </Math>
+                kilometers
+              </NoBreak>
+              {" "} in a millimeter.)
             </OuterP>
           </Solution>
         </Exercise>
@@ -2433,11 +2443,11 @@ const Rest = () => {
                 Exercise 5.
               </b>
               {" "}
-              How many kilometers is{" "}
+              How many kilometers is {" "}
               <Math>
                 $10^&#123;24&#125;$
               </Math>
-              {" "}millimeters?
+              {" "} millimeters?
             </OuterP>
           </ExerciseStatement>
           <Solution>
@@ -2463,7 +2473,7 @@ const Rest = () => {
             <Pause />
             <OuterP>
               by direct substitution. (You can do that with
-              units.) The answer is therefore:{" "}
+              units.) The answer is therefore: {" "}
               <NoBreak>
                 <Math>
                   $10^&#123;18&#125;$
@@ -2480,36 +2490,38 @@ const Rest = () => {
                 Exercise 6.
               </b>
               {" "}
-              If the US yearly budget is{" "}
+              If the US yearly budget is {" "}
               <Math>
                 $4$
               </Math>
-              {" "}trillion
+              {" "} trillion
               dollars, what percentage of the budget is
               one hundred billion $?
             </OuterP>
           </ExerciseStatement>
           <Solution>
             <OuterP>
-              One hundred billion is{" "}
+              One hundred billion is {" "}
               <Math>
                 $10\%$
               </Math>
-              {" "}of one trillion [cf.:
-              {" "}
+              {" "} of one trillion {" "}
               <NoBreak>
+                [cf.:
                 <Math>
                   $10^2 \times 10^9 = &#123;1 \over 10&#125;\times 10^&#123;12&#125;$
                 </Math>
                 ]
               </NoBreak>
               {" "}
-              and one trillion is a quarter of{" "}
-              <Math>
-                $4$
-              </Math>
-              {" "}
-              trillion, so the answer is{" "}
+              and one trillion is a quarter of {" "}
+              <NoBreak>
+                <Math>
+                  $4$
+                </Math>
+                trillion,
+              </NoBreak>
+              {" "} so the answer is {" "}
               <NoBreak>
                 <Math>
                   $&#123;1\over 4&#125;\cdot 10\% = 2.5\%$
@@ -2524,11 +2536,11 @@ const Rest = () => {
               </i>
               :
               There is no such thing as “the U.S. budget”. A
-              monetarily sovereign nation{" "}
+              monetarily sovereign nation {" "}
               <i>
                 spends
               </i>
-              {" "}its currency
+              {" "} its currency
               into existence. (And taxes it out of existence.)
             </OuterP>
           </Solution>
@@ -2540,11 +2552,11 @@ const Rest = () => {
                 Exercise 7.
               </b>
               {" "}
-              What is the logarithm base{" "}
+              What is the logarithm base {" "}
               <Math>
                 $10$
               </Math>
-              {" "}of one trillion?
+              {" "} of one trillion?
             </OuterP>
           </ExerciseStatement>
           <Solution>
@@ -2555,7 +2567,7 @@ const Rest = () => {
                 </Math>
                 ,
               </NoBreak>
-              {" "}because one trillion is{" "}
+              {" "} because one trillion is {" "}
               <NoBreak>
                 <Math>
                   $10^&#123;12&#125;$
@@ -2572,11 +2584,11 @@ const Rest = () => {
                 Exercise 8.
               </b>
               {" "}
-              What is the logarithm base{" "}
+              What is the logarithm base {" "}
               <Math>
                 $10$
               </Math>
-              {" "}of{" "}
+              {" "} of {" "}
               <NoBreak>
                 <Math>
                   $1$
@@ -2593,7 +2605,7 @@ const Rest = () => {
                 </Math>
                 ,
               </NoBreak>
-              {" "}because{" "}
+              {" "} because {" "}
               <NoBreak>
                 <Math>
                   $1 = 10^0$
@@ -2610,11 +2622,11 @@ const Rest = () => {
                 Exercise 9.
               </b>
               {" "}
-              What is the logarithm base{" "}
+              What is the logarithm base {" "}
               <Math>
                 $10$
               </Math>
-              {" "}of:{" "}
+              {" "} of: {" "}
               <i>
                 a trillion times a billion times a million times a thousand
               </i>
@@ -2633,14 +2645,14 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              the answer is{" "}
+              the answer is {" "}
               <NoBreak>
                 <Math>
                   $12+9+6+3$
                 </Math>
                 ,
               </NoBreak>
-              {" "}or{" "}
+              {" "} or {" "}
               <NoBreak>
                 <Math>
                   $30$
@@ -2698,7 +2710,7 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              so the answer is{" "}
+              so the answer is {" "}
               <NoBreak>
                 <Math>
                   $10^&#123;12&#125;$
@@ -2715,11 +2727,11 @@ const Rest = () => {
                 Exercise 11.
               </b>
               {" "}
-              How many{" "}
+              How many {" "}
               <i>
                 millibits
               </i>
-              {" "}in a{" "}
+              {" "} in a {" "}
               <i>
                 gigabyte
               </i>
@@ -2728,11 +2740,11 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution>
             <OuterP>
-              Presumably, there are{" "}
+              Presumably, there are {" "}
               <Math>
                 $1000$
               </Math>
-              {" "}“millibits”
+              {" "} “millibits”
               (whatever those are, we can go along with
               the joke here) in one bit. Since there are
               eight bits in a byte, and a million bytes
@@ -2747,13 +2759,13 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              or{" "}
+              or {" "}
               <Math>
                 $8$
               </Math>
-              {" "}billion “millibits” per gigabyte.
+              {" "} billion “millibits” per gigabyte.
               (But to reiterate, there is no such thing
-              as a “millibit”; a bit is a{" "}
+              as a “millibit”; a bit is a {" "}
               <i>
                 discrete
               </i>
@@ -2779,22 +2791,22 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              (i.e., the value of{" "}
+              (i.e., the value of {" "}
               <NoBreak>
                 <Math>
                   $100/16$
                 </Math>
                 )
               </NoBreak>
-              {" "}is also
-              famous for being equal to{" "}
+              {" "} is also
+              famous for being equal to {" "}
               <NoBreak>
                 <Math>
                   $2.5^2$
                 </Math>
                 .
               </NoBreak>
-              {" "}(You can
+              {" "} (You can
               verify that
             </OuterP>
             <Pause />
@@ -2806,14 +2818,14 @@ const Rest = () => {
             <Pause />
             <OuterP>
               and, by shifting two decimal places, one
-              finds{" "}
+              finds {" "}
               <NoBreak>
                 <Math>
                   $2.5^2 = 6.25$
                 </Math>
                 .)
               </NoBreak>
-              {" "}Can you elucidate
+              {" "} Can you elucidate
               why it would be that
             </OuterP>
             <Pause />
@@ -2839,14 +2851,14 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              and{" "}
+              and {" "}
               <NoBreak>
                 <Math>
                   $5/2 = 2.5$
                 </Math>
                 .
               </NoBreak>
-              {" "}(Ta-daa!)
+              {" "} (Ta-daa!)
             </OuterP>
           </Solution>
         </Exercise>
@@ -2867,24 +2879,24 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              for all integers{" "}
+              for all integers {" "}
               <Math>
                 $n$
               </Math>
-              {" "}and{" "}
+              {" "} and {" "}
               <NoBreak>
                 <Math>
                   $m$
                 </Math>
                 .
               </NoBreak>
-              {" "}(You can
+              {" "} (You can
               take for granted any identity that is stated
-              in this{" "}
+              in this {" "}
               <del>
                 chapter
               </del>
-              {" "}bootcamp.)
+              {" "} bootcamp.)
             </OuterP>
           </ExerciseStatement>
           <Solution>
@@ -2907,11 +2919,11 @@ const Rest = () => {
             <Pause />
             <OuterP>
               stated earlier in the chapter as (
-              <InChapterLink
-                href="/article/bootcamp2?id=_1_8633"
-                class="handle-in-chapter-link">
-                A
-              </InChapterLink>
+              <a
+                href="_1_hgi_?id=A"
+                class="handle-out-chapter-link">
+                /article/bootcamp2
+              </a>
               ), 
               while the third equality uses additivity of exponents, 
               also stated earlier. (So: We are only using “known”
@@ -2936,7 +2948,7 @@ const Rest = () => {
               The first law can be recognized as “additivity of exponents”
               while the second law
               is the above-mentioned generalization of this exercise's result.
-              (Nb: Concerning the next-to-last law, note that,{" "}
+              (Nb: Concerning the next-to-last law, note that, {" "}
               <i>
                 by definition
               </i>
@@ -2960,19 +2972,19 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              for all{" "}
+              for all {" "}
               <NoBreak>
                 <Math>
                   $a, b \ne 0$
                 </Math>
                 ,
               </NoBreak>
-              {" "}by some principle of elementary arithmetic.)
+              {" "} by some principle of elementary arithmetic.)
             </OuterP>
           </Solution>
         </Exercise>
         <Exercise number={14}>
-          <ExerciseStatement id="_3_3030">
+          <ExerciseStatement id="_3_hgi_">
             <OuterP>
               <b>
                 Exercise 14.
@@ -3010,21 +3022,21 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              ...for some integer exponents{" "}
+              ...for some integer exponents {" "}
               <NoBreak>
                 <Math>
                   $a$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $b$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $c$
@@ -3105,14 +3117,14 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              given that{" "}
+              given that {" "}
               <NoBreak>
                 <Math>
                   $&#123;1\over T&#125; = T^&#123;-1&#125;$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $&#123;1\over L&#125;=L^&#123;-1&#125;$
@@ -3129,22 +3141,22 @@ const Rest = () => {
                 Exercise 15.
               </b>
               {" "}
-              Find integers{" "}
+              Find integers {" "}
               <NoBreak>
                 <Math>
                   $a$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $b$
               </Math>
-              {" "}and{" "}
+              {" "} and {" "}
               <Math>
                 $c$
               </Math>
-              {" "}such that
+              {" "} such that
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3154,29 +3166,29 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              where{" "}
+              where {" "}
               <NoBreak>
                 <Math>
                   $v$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $F$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $\mu$
               </Math>
-              {" "}and{" "}
+              {" "} and {" "}
               <Math>
                 $\rho$
               </Math>
-              {" "}are defined as below.
+              {" "} are defined as below.
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3205,61 +3217,65 @@ const Rest = () => {
           </ExerciseStatement>
           <Solution>
             <OuterP>
-              Firstly we can rewrite{" "}
+              Firstly we can rewrite {" "}
               <NoBreak>
                 <Math>
                   $v$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $F$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $\mu$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
-              <Math>
-                $\rho$
-              </Math>
-              {" "}
-              in the canonical form{" "}
-              <Math>
-                $M^xL^yT^z$
-              </Math>
-              {" "}
-              for integers{" "}
+              {" "} {" "}
+              <NoBreak>
+                <Math>
+                  $\rho$
+                </Math>
+                in
+              </NoBreak>
+              {" "} the canonical form {" "}
+              <NoBreak>
+                <Math>
+                  $M^xL^yT^z$
+                </Math>
+                for
+              </NoBreak>
+              {" "} integers {" "}
               <NoBreak>
                 <Math>
                   $x$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $y$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $z$
               </Math>
-              {" "}(as in{" "}
-              <InChapterLink
-                href="/article/bootcamp2?id=_3_3030"
-                class="handle-in-chapter-link">
-                Exercise 14
-              </InChapterLink>
+              {" "} (as in {" "}
+              <a
+                href="_3_hgi_?id=14"
+                class="handle-out-chapter-link">
+                Exercise /article/bootcamp2
+              </a>
               ):
             </OuterP>
             <Pause />
@@ -3288,34 +3304,36 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              (Ok.) Nextly, we compute{" "}
+              (Ok.) Nextly, we compute {" "}
               <NoBreak>
                 <Math>
                   $v^a$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $F^b$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
-              <Math>
-                $\mu^c$
-              </Math>
-              {" "}
-              by applying the fourth law of exponents (note e.g.
-              that{" "}
+              {" "} {" "}
+              <NoBreak>
+                <Math>
+                  $\mu^c$
+                </Math>
+                by
+              </NoBreak>
+              {" "} applying the fourth law of exponents (note e.g.
+              that {" "}
               <NoBreak>
                 <Math>
                   $(T^&#123;-1&#125;)^a = T^&#123;(-1)a&#125; = T^&#123;-a&#125;$
                 </Math>
                 ,
               </NoBreak>
-              {" "}etc):
+              {" "} etc):
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3343,7 +3361,7 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              (In the last line we just restated{" "}
+              (In the last line we just restated {" "}
               <NoBreak>
                 <Math>
                   $\rho$
@@ -3351,11 +3369,11 @@ const Rest = () => {
                 .)
               </NoBreak>
               {" "}
-              Then{" "}
+              Then {" "}
               <Math>
                 $v^aF^b\mu^c\rho$
               </Math>
-              {" "}becomes
+              {" "} becomes
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3366,7 +3384,7 @@ const Rest = () => {
             <Pause />
             <OuterP>
               by multiplying everything together and using
-              additivity of exponents. (E.g.,{" "}
+              additivity of exponents. (E.g., {" "}
               <NoBreak>
                 <Math>
                   $M^bM^cM = M^&#123;b+c+1&#125;$
@@ -3384,26 +3402,28 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              independently of the values of{" "}
+              independently of the values of {" "}
               <NoBreak>
                 <Math>
                   $M$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $L$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
-              <Math>
-                $T$
-              </Math>
-              {" "}
-              if and only if...
+              {" "} {" "}
+              <NoBreak>
+                <Math>
+                  $T$
+                </Math>
+                if
+              </NoBreak>
+              {" "} and only if...
             </OuterP>
             <Pause />
             <CentralDisplayItalic>
@@ -3411,23 +3431,23 @@ const Rest = () => {
             </CentralDisplayItalic>
             <Pause />
             <OuterP>
-              ...(!!!) which means that we need to find values
-              {" "}
+              ...(!!!) which means that we need to find {" "}
               <NoBreak>
+                values
                 <Math>
                   $a$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $b$
               </Math>
-              {" "}and{" "}
+              {" "} and {" "}
               <Math>
                 $c$
               </Math>
-              {" "}such that these three equations...
+              {" "} such that these three equations...
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3476,14 +3496,14 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              which implies that{" "}
+              which implies that {" "}
               <NoBreak>
                 <Math>
                   $-c = 2$
                 </Math>
                 ,
               </NoBreak>
-              {" "}i.e., that{" "}
+              {" "} i.e., that {" "}
               <NoBreak>
                 <Math>
                   $c = -2$
@@ -3491,11 +3511,11 @@ const Rest = () => {
                 .
               </NoBreak>
               {" "}
-              Plugging{" "}
+              Plugging {" "}
               <Math>
                 $c = -2$
               </Math>
-              {" "}into the first of our three
+              {" "} into the first of our three
               equations, we find
             </OuterP>
             <Pause />
@@ -3516,26 +3536,26 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              which implies that{" "}
+              which implies that {" "}
               <NoBreak>
                 <Math>
                   $b = 1$
                 </Math>
                 .
               </NoBreak>
-              {" "}Lastly, plugging
-              {" "}
+              {" "} Lastly, {" "}
               <NoBreak>
+                plugging
                 <Math>
                   $b = 1$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $c = -2$
               </Math>
-              {" "}in our second equation above
+              {" "} in our second equation above
               gives us
             </OuterP>
             <Pause />
@@ -3546,11 +3566,11 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              which implies that{" "}
+              which implies that {" "}
               <Math>
                 $a = 0$
               </Math>
-              {" "}since{" "}
+              {" "} since {" "}
               <NoBreak>
                 <Math>
                   $1-(-2)-3 = 0$
@@ -3559,58 +3579,56 @@ const Rest = () => {
               </NoBreak>
               {" "}
               (One can finally check that
-              setting{" "}
+              setting {" "}
               <NoBreak>
                 <Math>
                   $a=0$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $b = 1$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <Math>
                 $c=-2$
               </Math>
-              {" "}satisfies that
-              third equation,{" "}
+              {" "} satisfies that
+              third equation, {" "}
               <NoBreak>
                 <Math>
                   $-a-2b-c=0$
                 </Math>
                 ,
               </NoBreak>
-              {" "}which it does.)
+              {" "} which it does.)
             </OuterP>
             <OuterP class="indent-10">
-              In summary, the solution is{" "}
+              In summary, the solution is {" "}
               <NoBreak>
                 <Math>
                   $a = 0$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $b = 1$
                 </Math>
                 ,
               </NoBreak>
-              {" "}
-              {" "}
               <NoBreak>
                 <Math>
                   $c = -2$
                 </Math>
                 ;
               </NoBreak>
-              {" "}we have discovered that
+              {" "} we have discovered that
             </OuterP>
             <Pause />
             <MathBlock>
@@ -3620,33 +3638,35 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              under the given definitions of{" "}
+              under the given definitions of {" "}
               <NoBreak>
                 <Math>
                   $v$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $F$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
-              <Math>
-                $\mu$
-              </Math>
-              {" "}
-              and{" "}
+              {" "} {" "}
+              <NoBreak>
+                <Math>
+                  $\mu$
+                </Math>
+                and
+              </NoBreak>
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $\rho$
                 </Math>
                 ,
               </NoBreak>
-              {" "}or which is to say, we have discovered
+              {" "} or which is to say, we have discovered
               that
             </OuterP>
             <Pause />
@@ -3657,14 +3677,14 @@ const Rest = () => {
             </MathBlock>
             <Pause />
             <OuterP>
-              (since{" "}
+              (since {" "}
               <NoBreak>
                 <Math>
                   $v^0 = 1$
                 </Math>
                 ,
               </NoBreak>
-              {" "}{" "}
+              {" "} {" "}
               <NoBreak>
                 <Math>
                   $F^1 = F$

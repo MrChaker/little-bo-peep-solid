@@ -9,7 +9,7 @@ import {
 } from "../constants";
 import useOnMobile from "../hooks/useOnMobile";
 import { useGlobalContext } from "../store/StoreProvider";
-import usePrevNextArticle from "~/hooks/usePrevNextArticle";
+import usePrevNextPage from "~/hooks/usePrevNextPage";
 
 const HeaderButtons = () => {
   return (
@@ -102,7 +102,21 @@ const ButtonsContainer = (props: ParentProps) => {
 const LeftArrowButton = () => {
   const { on_mobile } = useOnMobile();
   const { store } = useGlobalContext();
-  const { getPrevArticle, prevDisabled } = usePrevNextArticle();
+  const { getPrevArticle, prevDisabled } = usePrevNextPage();
+  const [pressed, setPressed] = createSignal(false);
+  const [pressedTimeout, setPressedTimeout] = createSignal(false);
+
+  const handleMouseDown = () => {
+    setPressed(true);
+    setPressedTimeout(true);
+    setTimeout(() => {
+      setPressedTimeout(false);
+    }, on_mobile() ? 50 : 20);
+  };
+
+  const handleMouseUp = () => {
+    setPressed(false);
+  };
 
   return (
     <button
@@ -117,15 +131,28 @@ const LeftArrowButton = () => {
         e.stopImmediatePropagation();
         getPrevArticle();
       }}
+      onMouseDown={handleMouseDown}
+      onTouchStart={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
+      onTouchEnd={handleMouseUp}
       style={{
-        "background-color": store.show_areas ? "rgb(224, 215, 48)" : "#fff",
+        "background-color":
+          (pressed() || pressedTimeout()) && !on_mobile()
+            ? "#ececec"
+            : store.show_areas
+              ? "rgb(224, 215, 48)"
+              : "#fff",
+        scale: (pressed() || pressedTimeout()) && on_mobile() ? "1.8" : "1",
       }}
     >
       <LeftArrowSVG
         class={twMerge(
-          !prevDisabled()
-            ? "stroke-[rgb(30,30,30)] hover:stroke-stone-600"
-            : "stroke-stone-300"
+          pressed() && !on_mobile()
+            ? "stroke-purple-600"
+            : !prevDisabled()
+              ? "stroke-[rgb(30,30,30)] hover:stroke-stone-600"
+              : "stroke-stone-300"
         )}
         style=""
       />
@@ -136,8 +163,21 @@ const LeftArrowButton = () => {
 const RightArrowButton = () => {
   const { on_mobile } = useOnMobile();
   const { store } = useGlobalContext();
+  const { getNextArticle, nextDisabled } = usePrevNextPage();
+  const [pressed, setPressed] = createSignal(false);
+  const [pressedTimeout, setPressedTimeout] = createSignal(false);
 
-  const { getNextArticle, nextDisabled } = usePrevNextArticle();
+  const handleMouseDown = () => {
+    setPressed(true);
+    setPressedTimeout(true);
+    setTimeout(() => {
+      setPressedTimeout(false);
+    }, on_mobile() ? 50 : 20);
+  };
+
+  const handleMouseUp = () => {
+    setPressed(false);
+  };
 
   return (
     <button
@@ -152,15 +192,28 @@ const RightArrowButton = () => {
         e.stopImmediatePropagation();
         getNextArticle();
       }}
+      onMouseDown={handleMouseDown}
+      onTouchStart={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
+      onTouchEnd={handleMouseUp}
       style={{
-        "background-color": store.show_areas ? "rgb(224, 215, 48)" : "#fff",
+        "background-color":
+          (pressed() || pressedTimeout()) && !on_mobile()
+            ? "#ececec"
+            : store.show_areas
+              ? "rgb(224, 215, 48)"
+              : "#fff",
+        scale: (pressed() || pressedTimeout()) && on_mobile() ? "1.8" : "1",
       }}
     >
       <RightArrowSVG
         class={twMerge(
-          !nextDisabled()
-            ? "stroke-[rgb(30,30,30)] hover:stroke-stone-600"
-            : "stroke-stone-300"
+          pressed() && !on_mobile()
+            ? "stroke-purple-600"
+            : !nextDisabled()
+              ? "stroke-[rgb(30,30,30)] hover:stroke-stone-600"
+              : "stroke-stone-300"
         )}
         style=""
       />
@@ -198,10 +251,7 @@ const adx = 6.5;
 const ady = 6.5;
 const un = 30 / 2;
 
-const LeftArrowSVG = (props: {
-  class: string;
-  style: string;
-}) => {
+const LeftArrowSVG = (props: { class: string; style: string }) => {
   return (
     <svg
       class={props.class}
