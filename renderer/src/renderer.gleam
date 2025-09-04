@@ -9,7 +9,7 @@ import gleam/dict.{type Dict}
 import infrastructure as infra
 import pipeline.{our_pipeline}
 import vxml.{type VXML, V}
-import vxml_renderer as vr
+import desugaring as ds
 import emitter_imports as ei
 import on
 
@@ -19,7 +19,7 @@ type LBPFragmentClassifer {
   HamburgerPanelAuthorSuppliedContents
 }
 
-type LBPFragment(z) = vr.OutputFragment(LBPFragmentClassifer, z)
+type LBPFragment(z) = ds.OutputFragment(LBPFragmentClassifer, z)
 type BL = List(OutputLine)
 
 type LBPSplitterError {
@@ -67,8 +67,8 @@ fn our_splitter(
   Ok(
     list.flatten([
       [
-        vr.OutputFragment(TOC, "routes/index.tsx", toc_vxml),
-        vr.OutputFragment(HamburgerPanelAuthorSuppliedContents, "components/HamburgerPanelAuthorSuppliedContents.tsx", panel_vxml),
+        ds.OutputFragment(TOC, "routes/index.tsx", toc_vxml),
+        ds.OutputFragment(HamburgerPanelAuthorSuppliedContents, "components/HamburgerPanelAuthorSuppliedContents.tsx", panel_vxml),
       ],
       list.map(
         articles,
@@ -77,7 +77,7 @@ fn our_splitter(
           let #(c, number) = infra.v_assert_pop_attribute_value(c, "number")
           let #(c, category) = infra.v_assert_pop_attribute_value(c, "category")
           let c = infra.v_set_tag(c, "Article")
-          vr.OutputFragment(Article("__" <> category <> number <> "__"), "routes" <> path <> ".tsx", c)
+          ds.OutputFragment(Article("__" <> category <> number <> "__"), "routes" <> path <> ".tsx", c)
         }
       ),
     ]),
@@ -152,7 +152,7 @@ fn article_emitter(
       ],
     ])
 
-  Ok(vr.OutputFragment(..fr, payload: lines))
+  Ok(ds.OutputFragment(..fr, payload: lines))
 }
 
 fn toc_emitter(
@@ -182,7 +182,7 @@ fn toc_emitter(
       ],
     ])
 
-  Ok(vr.OutputFragment(..fr, payload: lines))
+  Ok(ds.OutputFragment(..fr, payload: lines))
 }
 
 fn hpausc_emitter(
@@ -213,7 +213,7 @@ fn hpausc_emitter(
       ],
     ])
 
-  Ok(vr.OutputFragment(..fr, payload: lines))
+  Ok(ds.OutputFragment(..fr, payload: lines))
 }
 
 fn our_emitter(
@@ -233,11 +233,11 @@ fn cli_usage_supplementary() {
 
 pub fn main() {
   use amendments <- on.error_ok(
-    vr.process_command_line_arguments(argv.load().arguments, []),
+    ds.process_command_line_arguments(argv.load().arguments, []),
     fn(error) {
       io.println("")
       io.println("command line error: " <> ins(error))
-      vr.basic_cli_usage()
+      ds.basic_cli_usage()
       cli_usage_supplementary()
     },
   )
@@ -251,30 +251,30 @@ pub fn main() {
   let imports_lookup = ei.imports_lookup_dictionary_from_exports(exports_dict)
 
   let renderer =
-    vr.Renderer(
-      assembler: vr.default_assembler(amendments.only_paths),
-      parser: vr.default_writerly_parser(amendments.only_key_values),
+    ds.Renderer(
+      assembler: ds.default_assembler(amendments.only_paths),
+      parser: ds.default_writerly_parser(amendments.only_key_values),
       pipeline: our_pipeline(),
       splitter: our_splitter,
       emitter: our_emitter(_, imports_lookup),
-      prettifier: vr.default_prettier_prettifier,
+      prettifier: ds.default_prettier_prettifier,
     )
-    |> vr.amend_renderer_by_command_line_amendments(amendments)
+    |> ds.amend_renderer_by_command_line_amendments(amendments)
 
   let output_dir = "../src"
 
   let parameters =
-    vr.RendererParameters(
+    ds.RendererParameters(
       table: False,
       input_dir: "../src/content",
       output_dir: output_dir,
-      prettifier_behavior: vr.PrettifierOff,
+      prettifier_behavior: ds.PrettifierOff,
     )
-    |> vr.amend_renderer_paramaters_by_command_line_amendments(amendments)
+    |> ds.amend_renderer_paramaters_by_command_line_amendments(amendments)
 
   let debug_options =
-    vr.default_renderer_debug_options()
-    |> vr.amend_renderer_debug_options_by_command_line_amendments(amendments)
+    ds.default_renderer_debug_options()
+    |> ds.amend_renderer_debug_options_by_command_line_amendments(amendments)
 
   let _ = shellout.command(
     run: "rm",
@@ -287,7 +287,7 @@ pub fn main() {
     opt: [],
   )
 
-  let _ = vr.run_renderer(renderer, parameters, debug_options)
+  let _ = ds.run_renderer(renderer, parameters, debug_options)
 
   Nil
 }
