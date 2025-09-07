@@ -2458,7 +2458,7 @@ const Rest = () => {
                 href="/article/chapter3#_7_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 4
+                  Exercise {" "}
                 </InChapterLink>
                 ):
               </NoBreak>
@@ -2515,7 +2515,7 @@ const Rest = () => {
                 href="/article/chapter3#_7_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 4
+                  Exercise {" "}
                 </InChapterLink>
                 .
               </NoBreak>
@@ -2924,7 +2924,7 @@ const Rest = () => {
                 href="/article/chapter3#_8_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 5
+                  Exercise {" "}
                 </InChapterLink>
                 's
               </NoBreak>
@@ -2952,7 +2952,7 @@ const Rest = () => {
               href="/article/chapter3#_8_hgi_"
               class="handle-in-chapter-link"
               >
-                Exercise 5
+                Exercise {" "}
               </InChapterLink>
               {" "}
               except with a factor {" "}
@@ -3403,7 +3403,7 @@ const Rest = () => {
                 href="/article/chapter3#_9_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 8
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -4238,7 +4238,7 @@ const Rest = () => {
               href="/article/chapter3#_10_hgi_"
               class="handle-in-chapter-link"
               >
-                Exercise 10
+                Exercise {" "}
               </InChapterLink>
               {" "} using
               algebra {" "}
@@ -4483,7 +4483,7 @@ const Rest = () => {
                 href="/article/chapter3#_10_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 10
+                  Exercise {" "}
                 </InChapterLink>
                 )
               </NoBreak>
@@ -4514,7 +4514,7 @@ const Rest = () => {
                 href="/article/chapter3#_10_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 10
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -5538,7 +5538,7 @@ const Rest = () => {
                 href="/article/chapter3#_11_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 14
+                  Exercise {" "}
                 </InChapterLink>
                 ):
               </NoBreak>
@@ -5574,7 +5574,7 @@ const Rest = () => {
                 href="/article/chapter3#_12_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 15
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -6104,7 +6104,7 @@ const Rest = () => {
                 href="/article/chapter3#_11_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 14
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -6171,7 +6171,7 @@ const Rest = () => {
                 href="/article/chapter3#_11_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 14
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -6185,7 +6185,7 @@ const Rest = () => {
                 href="/article/chapter3#_11_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 14
+                  Exercise {" "}
                 </InChapterLink>
                 ,
               </NoBreak>
@@ -6397,7 +6397,7 @@ const Rest = () => {
                 href="/article/chapter3#_12_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 15
+                  Exercise {" "}
                 </InChapterLink>
                 .
               </NoBreak>
@@ -6485,7 +6485,7 @@ const Rest = () => {
                   href="/article/chapter1#_5_hgi_"
                   class="handle-out-chapter-link"
                   >
-                    Chapter 1
+                    Chapter {" "}
                   </a>
                   .
                 </NoBreak>

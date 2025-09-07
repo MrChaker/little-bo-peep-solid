@@ -257,6 +257,7 @@ pub fn main() {
       pipeline: our_pipeline(),
       splitter: our_splitter,
       emitter: our_emitter(_, imports_lookup),
+      writer: ds.default_writer,
       prettifier: ds.default_prettier_prettifier,
     )
     |> ds.amend_renderer_by_command_line_amendments(amendments)

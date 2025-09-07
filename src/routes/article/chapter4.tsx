@@ -1777,7 +1777,7 @@ const Rest = () => {
             href="/article/chapter3#_13_hgi_"
             class="handle-out-chapter-link"
             >
-              Exercise 18 of Chapter 3
+              Exercise  of Chapter {" "}
             </a>
             ,
           </NoBreak>
@@ -1941,7 +1941,7 @@ const Rest = () => {
                 href="/article/chapter4#_16_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 1
+                  Exercise {" "}
                 </InChapterLink>
                 .
               </NoBreak>
@@ -1989,7 +1989,7 @@ const Rest = () => {
               href="/article/chapter4#_16_hgi_"
               class="handle-in-chapter-link"
               >
-                Exercise 1
+                Exercise {" "}
               </InChapterLink>
               {" "}
               depicts the
@@ -2712,7 +2712,7 @@ const Rest = () => {
                 href="/article/chapter4#_17_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Exercise 8
+                  Exercise {" "}
                 </InChapterLink>
                 .
               </NoBreak>
@@ -6116,7 +6116,7 @@ const Rest = () => {
                 href="/article/chapter4#_21_hgi_"
                 class="handle-in-chapter-link"
                 >
-                  Note 1
+                  Note {" "}
                 </InChapterLink>
                 ):
               </NoBreak>
