@@ -14,6 +14,7 @@ const useScrollToInChapter = () => {
   const getClosestExerciseParentIndex = (
     target: HTMLElement | null,
   ): number => {
+    console.log("very hi");
     if (!target) return -1;
 
     let current: HTMLElement | null = target;
@@ -93,6 +94,8 @@ const useScrollToInChapter = () => {
     scrollDuration: number = 100,
   ) => {
     let target = document.getElementById(targetId);
+    console.log("hell-o: ", target, targetId);
+    console.log("hell-a: ", targetId === "");
     target = exercisesEdgeCase(target);
 
     // check if target is not inside exercise
