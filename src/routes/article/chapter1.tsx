@@ -67,7 +67,6 @@ export default function __Chapter1__() {
             Square Roots.
           </b>
           {" "}
-          $x$
           You might remember that “minus times minus
           is plus” and that “plus times plus is plus”.
           (Why? The enemy of my enemy is my friend.)

@@ -2573,7 +2573,6 @@
         by Exercise 22. (The End.)
 
         |> SolutionNote
-
             Since the two solutions compute
             answers to the same question,
             one can in particular deduce that
@@ -2904,7 +2903,6 @@
             (We mean: likewise for “$\sin^2$” and “$\cos^2$”.)
 
 |> Exercise
-    t=tt
 
     Given the graphs $y = \cos(x)\sin(x)$ and
     $y = \cos^2(x)$...
@@ -3105,7 +3103,6 @@
 
 
 |> Exercise
-    t=tt
 
     It also seems from the graphs that $y = \cos^2(x)$
     is a _sinusoid_, i.e., some combination of a
@@ -3266,7 +3263,6 @@
 
 
 |> Exercise
-    t=tt
 
     Relate
     $$
@@ -3307,7 +3303,6 @@
 
 
 |> Exercise
-    t=tt
 
     What sequence of geometric transformations
     can turn [the graph] $y = \sin(x)$
@@ -3328,7 +3323,6 @@
 
 
 |> Exercise
-    t=tt
 
     !! What sequence of geometric transformations
     !! can turn [the graph] $y = \cos(x)$

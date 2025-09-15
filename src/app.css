@@ -85,6 +85,16 @@ em {
   margin-inline: auto;
 }
 
+/* mjx-assistive-mml {
+  display: none !important;
+  position: absolute !important;
+  width: 0px !important;
+}
+
+mjx-container {
+  width: fit-content;
+} */
+
 .spacer-150 {
   height: 1.5rem;
 }

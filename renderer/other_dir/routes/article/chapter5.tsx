@@ -6052,7 +6052,7 @@ const Rest = () => {
                 <Pause />
                 <OuterP>with the definitions being...</OuterP>
                 <center style="margin-top:1em;margin-bottom:1em;">
-                  <div style="display:inline-block;border:1px solid red;padding:1em 1em;">
+                  <div style="display:inline-block;border:1px solid red;padding:1em 1em;width:fit-content;">
                     <MathBlock>
                       $$ \,\tan(\theta) = &#123;\sin(\theta)\over
                       \cos(\theta)&#125;\, $$
