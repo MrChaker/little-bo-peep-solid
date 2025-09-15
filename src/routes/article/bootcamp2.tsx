@@ -18,8 +18,8 @@ export default function __Bootcamp2__() {
     <Article
     prevPage=""
     nextPage="/article/bootcamp1"
-    pageNecessaryMargin={270}
     maxElementWidth={1200}
+    pageNecessaryMargin={270}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -231,9 +231,9 @@ const Rest = () => {
           \Large 10^0 = 1 = 1
           $$
           <ImageLeft
-          src="/images/svg_bt2_bt_alert_cloud.svg"
-          offset_y="-0.2em"
           offset_x="4em"
+          offset_y="-0.2em"
+          src="/images/svg_bt2_bt_alert_cloud.svg"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -380,8 +380,8 @@ const Rest = () => {
           {" "}
           is equivalent to the identity
           <ImageLeft
-          src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg"
           line={2}
+          src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg"
            />
         </OuterP>
         <Pause />
@@ -1743,9 +1743,9 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <Table
-        class="first-line"
-        marginTop="1em"
         marginBottom="1em"
+        marginTop="1em"
+        class="first-line"
         >
           <colgroup>
             <col width="120px" />
@@ -2118,8 +2118,8 @@ const Rest = () => {
             \Large 0.00001 = 10^&#123;-5&#125;
             $$
             <ImageRight
-            src="/images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg"
             offset_x="0em"
+            src="/images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg"
             compensate_offset_x_for_large_text_columns={true}
              />
           </MathBlock>
@@ -3518,9 +3518,9 @@ const Rest = () => {
               \Large -b -2c -3 = 0
               $$
               <ImageRight
-              src="/images/svg_bt2_ex_equation_addition_cloud.svg"
-              offset_y="-0.5em"
               offset_x="0.5em"
+              offset_y="-0.5em"
+              src="/images/svg_bt2_ex_equation_addition_cloud.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>

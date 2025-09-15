@@ -18,9 +18,9 @@ export default function __Chapter1__() {
     <Article
     prevPage="/"
     nextPage="/article/chapter2"
-    pageNecessaryMargin={800}
-    maxElementWidth={500}
     id="_5_hgi_"
+    maxElementWidth={500}
+    pageNecessaryMargin={800}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -67,6 +67,7 @@ export default function __Chapter1__() {
             Square Roots.
           </b>
           {" "}
+          $x$
           You might remember that “minus times minus
           is plus” and that “plus times plus is plus”.
           (Why? The enemy of my enemy is my friend.)
@@ -117,8 +118,8 @@ export default function __Chapter1__() {
           \sqrt&#123;(-2)^2&#125; = 2
           $$
           <ImageRight
-          src="/images/svg_ch1_ch_minus_two_squared_cloud.svg"
           offset_x="5em"
+          src="/images/svg_ch1_ch_minus_two_squared_cloud.svg"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -851,9 +852,9 @@ const Rest = () => {
           (a + b)(C + D) \,=\, aC + bC + aD + bD
           $$
           <ImageLeft
-          src="/images/325.svg"
-          offset_y="-0.5em"
           offset_x="1em"
+          offset_y="-0.5em"
+          src="/images/325.svg"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -1331,8 +1332,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-      divider={false}
       id="section-4"
+      divider={false}
       >
         <OuterP>
           <b>
@@ -1463,10 +1464,10 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            cols={3}
-            sm_cols={2}
-            sm_cutoff={520}
             center_on_overflow={true}
+            sm_cutoff={520}
+            sm_cols={2}
+            cols={3}
             >
               <Item>
                 a. {" "}
@@ -1620,8 +1621,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageLeft
-              src="/images/17.svg"
               offset_y="0.8rem"
+              src="/images/17.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -1957,10 +1958,10 @@ const Rest = () => {
               10^&#123;9&#125;\fw\te&#123;km&#125;
               $$
               <ImageRight
-              src="/images/svg_ch1_ex_104.svg"
-              offset_x="3rem"
-              offset_y="-1rem"
               squiggle={false}
+              offset_y="-1rem"
+              offset_x="3rem"
+              src="/images/svg_ch1_ex_104.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2156,8 +2157,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            cols={3}
             place_items="end"
+            cols={3}
             >
               <Math>
                 $(-1)^1 =$
@@ -2472,8 +2473,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageRight
-              src="/images/svg_ch1_ex_24.svg"
               offset_y="-0.5em"
+              src="/images/svg_ch1_ex_24.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2695,10 +2696,10 @@ const Rest = () => {
               &#123;1 \over n&#125; - &#123;1 \over n+1&#125; = &#123;1 \over n(n+1)&#125;
               $$
               <ImageRight
-              offset_x="5rem"
-              offset_y="1.2rem"
-              src="/images/svg_ch1_ex_25.svg"
               squiggle={false}
+              src="/images/svg_ch1_ex_25.svg"
+              offset_y="1.2rem"
+              offset_x="5rem"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2712,10 +2713,10 @@ const Rest = () => {
               &#123;1 \over n^2&#125;
               $$
               <ImageRight
-              offset_x="11.5rem"
-              offset_y="1.2rem"
-              src="/images/svg_ch1_ex_26.svg"
               squiggle={false}
+              src="/images/svg_ch1_ex_26.svg"
+              offset_y="1.2rem"
+              offset_x="11.5rem"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2757,8 +2758,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageRight
-              src="/images/svg_ch1_ex_27.svg"
               offset_y="-0.5em"
+              src="/images/svg_ch1_ex_27.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>

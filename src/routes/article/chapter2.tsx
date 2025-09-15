@@ -20,8 +20,8 @@ export default function __Chapter2__() {
     <Article
     prevPage="/article/chapter1"
     nextPage="/article/chapter3"
-    pageNecessaryMargin={610}
     maxElementWidth={900}
+    pageNecessaryMargin={610}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -281,9 +281,9 @@ const Rest = () => {
           \te&#123;slope&#125; = &#123;y_2 - y_1 \over x_2 - x_1&#125;
           $$
           <ImageRight
-          src="/images/32.svg"
-          offset_y="-0.7em"
           offset_x="3em"
+          offset_y="-0.7em"
+          src="/images/32.svg"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -446,8 +446,8 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <Table
-        class="lines"
         style="margin-top:0.5em;margin-bottom:0.5em;"
+        class="lines"
         >
           <colgroup>
             <col width={120} />
@@ -469,9 +469,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                src="/images/33.svg"
-                width={50}
                 style="padding-top:7px;padding-bottom:7px;"
+                width={50}
+                src="/images/33.svg"
                  />
               </td>
               <td>
@@ -495,8 +495,8 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                src="/images/34.svg"
                 style="margin-top:7px;margin-bottom:7px;width:105px;"
+                src="/images/34.svg"
                  />
               </td>
               <td>
@@ -520,9 +520,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                src="/images/35.svg"
-                width={105}
                 style="margin-top:7px;margin-bottom:7px;"
+                width={105}
+                src="/images/35.svg"
                  />
               </td>
               <td>
@@ -546,9 +546,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                src="/images/36.svg"
-                width={105}
                 style="margin-top:7px;margin-bottom:7px;"
+                width={105}
+                src="/images/36.svg"
                  />
               </td>
               <td>
@@ -572,9 +572,9 @@ const Rest = () => {
               </td>
               <td>
                 <img
-                src="/images/37.svg"
-                width={105}
                 style="margin-top:7px;margin-bottom:7px;"
+                width={105}
+                src="/images/37.svg"
                  />
               </td>
               <td>
@@ -606,9 +606,9 @@ const Rest = () => {
           {" "} swap
           places, or, namely, to show that the fractions
           <ImageRight
-          src="/images/svg_ch2_ch_swap_cloud.svg"
-          line={3}
           offset_x="-0.5em"
+          line={3}
+          src="/images/svg_ch2_ch_swap_cloud.svg"
            />
         </OuterP>
         <Pause />
@@ -627,9 +627,9 @@ const Rest = () => {
           &#123;y_2 - y_1 \over x_2 - x_1&#125; = &#123;-(y_2 - y_1) \over -(x_2 - x_1)&#125; = &#123;y_1 - y_2 \over x_1 - x_2&#125;
           $$
           <ImageLeft
-          src="/images/39.svg"
-          offset_x="2.5em"
           offset_y="-60px"
+          offset_x="2.5em"
+          src="/images/39.svg"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -741,8 +741,8 @@ const Rest = () => {
           </NoBreak>
           <span class="nobreak">
             <InlineImage
-            src="/images/rise-run.svg"
             width="28px"
+            src="/images/rise-run.svg"
              />
             ”),
           </span>
@@ -1174,9 +1174,9 @@ const Rest = () => {
           {" "} is a constant,
           similarly to the more familiar equation
           <ImageLeft
-          src="/images/svg_ch2_ch_vertical_line_equation.svg"
-          offset_y="-6em"
           offset_x="1em"
+          offset_y="-6em"
+          src="/images/svg_ch2_ch_vertical_line_equation.svg"
            />
         </OuterP>
         <Pause />
@@ -1253,9 +1253,9 @@ const Rest = () => {
             .
           </NoBreak>
           <ImageRight
-          src="/images/svg_3_plus_minus_one_times_x_cloud.svg"
-          line={1}
           offset_x="2rem"
+          line={1}
+          src="/images/svg_3_plus_minus_one_times_x_cloud.svg"
            />
         </OuterP>
       </Section>
@@ -1546,9 +1546,9 @@ const Rest = () => {
             \frac&#123;4\te&#123;m&#125;&#125;&#123;0.75\te&#123;m&#125;/\te&#123;s&#125;&#125;\! = 5.3333...\te&#123;s&#125;
             $$
             <ImageRight
-            src="/images/svg_ch2_ch_units_cloud.svg"
-            offset_x="-6rem"
             style="width:930px"
+            offset_x="-6rem"
+            src="/images/svg_ch2_ch_units_cloud.svg"
             compensate_offset_x_for_large_text_columns={true}
              />
           </MathBlock>
@@ -1572,8 +1572,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-      divider={false}
       id="section-9"
+      divider={false}
       >
         <OuterP>
           <b>
@@ -1697,18 +1697,18 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/55.svg"
             class="relative w-fit"
+            src="/images/55.svg"
             >
               <ImageRight
-              src="/images/56.svg"
-              offset_y="5rem"
               offset_x="-1.3rem"
+              offset_y="5rem"
+              src="/images/56.svg"
                />
               <ImageLeft
-              src="/images/57.svg"
-              offset_x="-8rem"
               offset_y="8rem"
+              offset_x="-8rem"
+              src="/images/57.svg"
                />
             </Image>
             <Pause />
@@ -1752,18 +1752,18 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/58.svg"
               class="relative w-fit"
+              src="/images/58.svg"
               >
                 <ImageRight
-                src="/images/59.svg"
-                offset_y="27%"
                 offset_x="-10%"
+                offset_y="27%"
+                src="/images/59.svg"
                  />
                 <ImageLeft
-                src="/images/60.svg"
-                offset_x="-24%"
                 offset_y="33%"
+                offset_x="-24%"
+                src="/images/60.svg"
                  />
               </Image>
               <Pause />
@@ -1813,9 +1813,9 @@ const Rest = () => {
               p = &#123;y - y_0 \over x - x_0&#125;
               $$
               <ImageLeft
-              src="/images/svg_ch2_ex_x0_y0_line_equation_cloud.svg"
-              offset_x="7.5em"
               offset_y="103px"
+              offset_x="7.5em"
+              src="/images/svg_ch2_ex_x0_y0_line_equation_cloud.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -1945,9 +1945,9 @@ const Rest = () => {
               \te&#123;“&#125;\te&#123;slope&#125; \times \te&#123;run&#125; = \te&#123;rise&#125;\te&#123;”&#125;
               $$
               <ImageRight
-              src="/images/svg_slope_times_run_equals_rise_cloud.svg"
-              offset_x="2.5rem"
               offset_y="-0.5rem"
+              offset_x="2.5rem"
+              src="/images/svg_slope_times_run_equals_rise_cloud.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
