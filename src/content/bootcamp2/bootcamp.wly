@@ -49,7 +49,7 @@
     |> ImageLeft
         src=images/svg_bt2_bt_alert_cloud.svg
         offset_y=-0.2em
-        offset_x= 4em
+        offset_x=4em
 
     (where, in the last line, $1$ is multiplied by $10$ _zero times_,
     as per the exponent, which is zero) by the first definition, while
@@ -823,7 +823,7 @@
 
         |> ImageRight
             src=images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg
-            offset_x= 0em
+            offset_x=0em
 
         the logarithm base $10$ of $0.00001$ is $-5$.
 
@@ -1283,7 +1283,7 @@
             |> ImageRight
                 src=images/svg_bt2_ex_equation_addition_cloud.svg
                 offset_y=-0.5em
-                offset_x= 0.5em
+                offset_x=0.5em
             and adding this last equation to the first
             equation above, we find
             $$

@@ -698,7 +698,7 @@
 
         |> ImageLeft
             src=images/svg_ch5_ex_P_in_terms_of_ADEphi_DeltaY_v2_cloud.svg
-            offset_x= 7.5em
+            offset_x=7.5em
 
         is the difference from the center of the circle to $P$ in $y$,
         as per scaling a unit circle to radius $r$.
@@ -3253,7 +3253,7 @@
 
         |> ImageLeft
             src=images/svg_ch5_ex_cos_and_cos2_comparison_pythagorean_cloud.svg
-            offset_x= 3.4em
+            offset_x=3.4em
             offset_y=3%
 
         ...as conjectured!
@@ -4796,7 +4796,7 @@
             $$
 
             |> ImageLeft
-                offset_x= 2.5em
+                offset_x=2.5em
                 src=images/svg_ch5_ex_sphere_volume_AiBi_other_cloud.svg
 
             below, for sufficiently small mesh size; but

@@ -82,7 +82,7 @@
     |> ImageRight
         src=images/32.svg
         offset_y=-0.7em
-        offset_x= 3em
+        offset_x=3em
 
     more succinctly. We call this the _slope formula_.
 
@@ -270,7 +270,7 @@
     |> ImageRight
         src=images/svg_ch2_ch_swap_cloud.svg
         line=3
-        offset_x= -0.5em
+        offset_x=-0.5em
 
     $$ {y_2 - y_1 \over x_2 - x_1}\qquad\,\,\,\,\,\te{and}\,\,\,\,\,\qquad{y_1 - y_2 \over x_1 - x_2} $$
 
@@ -280,7 +280,7 @@
 
     |> ImageLeft
         src=images/39.svg
-        offset_x= 2.5em
+        offset_x=2.5em
         offset_y=-60px
 
     which verifies this hypothesis. In particular,
@@ -472,7 +472,7 @@
     |> ImageLeft
         src=images/svg_ch2_ch_vertical_line_equation.svg
         offset_y=-6em
-        offset_x= 1em
+        offset_x=1em
 
     $$y = b$$
 
@@ -495,7 +495,7 @@
     |> ImageRight
         src=images/svg_3_plus_minus_one_times_x_cloud.svg
         line=1
-        offset_x= 2rem
+        offset_x=2rem
 
 |> Section
 
@@ -690,11 +690,11 @@
             |> ImageRight
                 src=images/56.svg
                 offset_y=5rem
-                offset_x= -1.3rem
+                offset_x=-1.3rem
 
             |> ImageLeft
                 src=images/57.svg
-                offset_x= -8rem
+                offset_x=-8rem
                 offset_y=8rem
 
             In more detail, the two triangles are related
@@ -714,11 +714,11 @@
                     |> ImageRight
                         src=images/59.svg
                         offset_y=27%
-                        offset_x= -10%
+                        offset_x=-10%
 
                     |> ImageLeft
                         src=images/60.svg
-                        offset_x= -24%
+                        offset_x=-24%
                         offset_y=33%
 
                 |> StarDivider
@@ -745,7 +745,7 @@
 
             |> ImageLeft
                 src=images/svg_ch2_ex_x0_y0_line_equation_cloud.svg
-                offset_x= 7.5em
+                offset_x=7.5em
                 offset_y=103px
 
             because

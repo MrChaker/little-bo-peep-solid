@@ -107,7 +107,7 @@
     |> ImageRight
         src=images/svg_ch4_ch_curve_to_sketch_cloud.svg
         offset_y=36%
-        offset_x= -15%
+        offset_x=-15%
 
     ...voilà!
 
@@ -147,7 +147,7 @@
 
     |> ImageLeft
         src=images/svg_ch4_ch_constant_derivative_cloud.svg
-        offset_x= 8em
+        offset_x=8em
 
     because at each $x$-value you find a slope of
     $0$, when you look up (down?) at the graph.
@@ -188,7 +188,7 @@
 
     |> ImageLeft
         src=images/svg_ch4_ch_affine_derivative_cloud.svg
-        offset_x= 7em
+        offset_x=7em
 
     because the slope of a line of slope $A$ is
     $A$, no matter where you put yourself on the

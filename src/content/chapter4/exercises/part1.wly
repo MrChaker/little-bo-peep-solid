@@ -309,7 +309,7 @@
         !! |> ImageRight
         !!     src=images/svg_ch4_ex_position_by_time_find_the_order_cloud.svg
         !!     offset_y=-0.1em
-        !!     offset_x= -0.5em
+        !!     offset_x=-0.5em
 
 
 |> Exercise
@@ -1807,7 +1807,7 @@
 
         |> ImageLeft
             src=images/svg_ch4_one_particle_speed_equals_time_cloud.svg
-            offset_x= 6em
+            offset_x=6em
 
         time to cross, because the maximum speed of the particle
         inside of that interval is $1$.
@@ -2005,7 +2005,7 @@
         |> ImageRight
             src=images/svg_ch4_circle_at_2_4_with_some_vectors_cloud.svg
             offset_y=150px
-            offset_x= -0.5em
+            offset_x=-0.5em
 
         For $t < 0$ motion will be
         down and to the left, at least initially—it
@@ -3050,7 +3050,7 @@
 
         |> ImageLeft
             src=images/svg_ch4_ex_cosine_recall_cloud.svg
-            offset_x= 200px
+            offset_x=200px
 
         is the distance between adjacent bumps. Thus if
 
@@ -3138,7 +3138,7 @@
 
                     |> ImageLeft
                         src=images/svg_ch4_ex_f_g_h_A_B_C_D_cloud.svg
-                        offset_x= 4em
+                        offset_x=4em
 
                 |> li
 

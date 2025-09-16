@@ -780,7 +780,7 @@
     |> ImageRight
         src=images/svg_ch3_ch_a1_x1_cloud.svg
         offset_y=0.2em
-        offset_x= -0.1em
+        offset_x=-0.1em
 
     for all $x$, and
 
