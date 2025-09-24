@@ -104,7 +104,7 @@ pub fn our_pipeline() -> Pipeline {
       dl.table_marker(),
       dl.find_replace__outside(#("\\*", "*"), ["MathBlock", "Math"]),
       dl.find_replace__outside(#("\\_", "_"), ["MathBlock", "Math"]),
-      dl.wrap_adjacent_non_whitespace_text_with(#("Math", "NoBreak")),
+      dl.wrap_adjacent_non_whitespace_text_with(#(["Math"], "NoBreak")),
       // cleaning 'p' second time around (not sure all the steps are necessary this time):
       dl.concatenate_text_nodes(),
       dl.delete_text_nodes_with_singleton_empty_line(),
@@ -188,8 +188,7 @@ pub fn our_pipeline() -> Pipeline {
       //   #("Exercise <a href=1>_1_</a>", "<a href=1>Exercise _1_</a>"),
       //   #("Note <a href='1'>_1_</a>", "<a href='1'>Note _1_</a>"),
       // ]),
-      dl.wrap_adjacent_non_whitespace_text_with(#("a", "NoBreak")),
-      dl.wrap_adjacent_non_whitespace_text_with(#("InChapterLink", "NoBreak")),
+      dl.wrap_adjacent_non_whitespace_text_with(#(["a", "InChapterLink"], "NoBreak")),
       dl.generate_lbp_table_of_contents(#("HamburgerPanelAuthorSuppliedContents", "HamburgerPanelTitle", "HamburgerPanelItem", None)),
       dl.generate_lbp_table_of_contents(#("TOC", "TOCTitle", "TOCItem", Some("Spacer"))),
       dl.generate_lbp_prev_next_attributes(),
