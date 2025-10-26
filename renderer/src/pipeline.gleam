@@ -3,7 +3,6 @@ import gleam/option.{None, Some}
 import infrastructure.{type Pipeline} as infra
 import prefabricated_pipelines as pp
 import desugarer_library as dl
-import selector_library as sl
 
 const cannot_be_contained_in_a_paragrap = [
   "ArticleTitle", "Bootcamp", "CentralDisplay",
@@ -27,6 +26,7 @@ pub fn our_pipeline() -> Pipeline {
   [
     [
       dl.identity(),
+      dl.delete("WriterlyComment"),
       dl.auto_generate_child_if_missing_from_attribute__outside(#("Bootcamp", "ArticleTitle", "title"), ["Chapter"]),
       dl.auto_generate_child_if_missing_from_attribute__outside(#("Chapter", "ArticleTitle", "title"), ["Bootcamp"]),
       dl.table_marker(),
@@ -122,7 +122,7 @@ pub fn our_pipeline() -> Pipeline {
       dl.rename_if_child_of(#("p", "OuterP", "Chapter")),
       dl.rename_if_child_of(#("p", "OuterP", "Bootcamp")),
       dl.rename_if_child_of(#("p", "OuterP", "SolutionNote")),
-      dl.wrap_children_before_in(#("Exercise", "Solution", "ExerciseStatement")),
+      dl.wrap_children_up_to(#("Exercise", "Solution", "ExerciseStatement", infra.GoBack)),
       dl.cut_paste_attribute_from_self_to_child(#("Exercise", "ExerciseStatement", "id")),
       dl.absorb_into_previous_sibling(["ImageRight", "ImageLeft"]),
       dl.append_attribute_if_child_of(#("ImageRight", "MathBlock", "compensate_offset_x_for_large_text_columns", "true")),
@@ -208,14 +208,5 @@ pub fn our_pipeline() -> Pipeline {
     ]
   ]
   |> list.flatten
-  |> infra.desugarers_2_pipeline(
-    sl.verbatim("Square Roots.")
-    |> infra.extend_selector_up(4)
-    |> infra.extend_selector_down(4)
-    |> infra.extend_selector_to_ancestors(
-      with_elder_siblings: True,
-      with_attributes: True,
-    ),
-    infra.TrackingOff,
-  )
+  |> infra.desugarers_2_pipeline()
 }

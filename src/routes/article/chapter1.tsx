@@ -18,9 +18,10 @@ export default function __Chapter1__() {
     <Article
     prevPage="/"
     nextPage="/article/chapter2"
-    id="_5_hgi_"
-    maxElementWidth={500}
+    _="ChapterCounter 1"
     pageNecessaryMargin={800}
+    maxElementWidth={500}
+    id="_5_hgi_"
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -117,8 +118,8 @@ export default function __Chapter1__() {
           \sqrt&#123;(-2)^2&#125; = 2
           $$
           <ImageRight
-          offset_x="5em"
           src="/images/svg_ch1_ch_minus_two_squared_cloud.svg"
+          offset_x="5em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -851,9 +852,9 @@ const Rest = () => {
           (a + b)(C + D) \,=\, aC + bC + aD + bD
           $$
           <ImageLeft
-          offset_x="1em"
-          offset_y="-0.5em"
           src="/images/325.svg"
+          offset_y="-0.5em"
+          offset_x="1em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -890,7 +891,7 @@ const Rest = () => {
           by distributivity again.
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 1">
           <OuterP>
             <b>
               Example 1.
@@ -920,7 +921,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 2">
           <OuterP>
             <b>
               Example 2.
@@ -1036,7 +1037,7 @@ const Rest = () => {
           important at this stage.)
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 3">
           <OuterP>
             <b>
               Example 3.
@@ -1168,7 +1169,7 @@ const Rest = () => {
           is.) (PS: “Factored” means “written as a product”.)
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 4">
           <OuterP>
             <b>
               Example 4.
@@ -1198,7 +1199,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 5">
           <OuterP>
             <b>
               Example 5.
@@ -1304,7 +1305,7 @@ const Rest = () => {
           by distributivity (used in the second step).
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 6">
           <OuterP>
             <b>
               Example 6.
@@ -1331,8 +1332,8 @@ const Rest = () => {
       </Section>
       <Pause />
       <Section
-      id="section-4"
       divider={false}
+      id="section-4"
       >
         <OuterP>
           <b>
@@ -1452,7 +1453,10 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise number={1}>
+        <Exercise
+        _="ExerciseCounter 1"
+        number={1}
+        >
           <ExerciseStatement id="_4_hgi_">
             <OuterP>
               <b>
@@ -1463,10 +1467,10 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            center_on_overflow={true}
-            sm_cutoff={520}
-            sm_cols={2}
             cols={3}
+            sm_cols={2}
+            sm_cutoff={520}
+            center_on_overflow={true}
             >
               <Item>
                 a. {" "}
@@ -1620,8 +1624,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageLeft
-              offset_y="0.8rem"
               src="/images/17.svg"
+              offset_y="0.8rem"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -1957,10 +1961,10 @@ const Rest = () => {
               10^&#123;9&#125;\fw\te&#123;km&#125;
               $$
               <ImageRight
-              squiggle={false}
-              offset_y="-1rem"
-              offset_x="3rem"
               src="/images/svg_ch1_ex_104.svg"
+              offset_x="3rem"
+              offset_y="-1rem"
+              squiggle={false}
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2156,8 +2160,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            place_items="end"
             cols={3}
+            place_items="end"
             >
               <Math>
                 $(-1)^1 =$
@@ -2472,8 +2476,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageRight
-              offset_y="-0.5em"
               src="/images/svg_ch1_ex_24.svg"
+              offset_y="-0.5em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2614,7 +2618,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={2}>
+        <Exercise
+        _="ExerciseCounter 2"
+        number={2}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2695,10 +2702,10 @@ const Rest = () => {
               &#123;1 \over n&#125; - &#123;1 \over n+1&#125; = &#123;1 \over n(n+1)&#125;
               $$
               <ImageRight
-              squiggle={false}
-              src="/images/svg_ch1_ex_25.svg"
-              offset_y="1.2rem"
               offset_x="5rem"
+              offset_y="1.2rem"
+              src="/images/svg_ch1_ex_25.svg"
+              squiggle={false}
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2712,10 +2719,10 @@ const Rest = () => {
               &#123;1 \over n^2&#125;
               $$
               <ImageRight
-              squiggle={false}
-              src="/images/svg_ch1_ex_26.svg"
-              offset_y="1.2rem"
               offset_x="11.5rem"
+              offset_y="1.2rem"
+              src="/images/svg_ch1_ex_26.svg"
+              squiggle={false}
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -2757,8 +2764,8 @@ const Rest = () => {
               \end&#123;align&#125;
               $$
               <ImageRight
-              offset_y="-0.5em"
               src="/images/svg_ch1_ex_27.svg"
+              offset_y="-0.5em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>

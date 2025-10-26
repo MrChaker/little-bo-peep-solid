@@ -45,7 +45,7 @@ fn our_splitter(
 ) -> Result(List(LBPFragment(VXML)), LBPSplitterError) {
   let articles = infra.v_children_with_tags(root, ["Chapter", "Bootcamp"])
   use toc_vxml <- on.error_ok(
-    infra.v_unique_child_with_tag(root, "TOC"),
+    infra.v_unique_child_with_singleton_error(root, "TOC"),
     on_error: fn(error) {
       case error {
         infra.LessThanOne -> Error(NoTOC)
@@ -55,7 +55,7 @@ fn our_splitter(
   )
 
   use panel_vxml <- on.error_ok(
-    infra.v_unique_child_with_tag(root, "HamburgerPanelAuthorSuppliedContents"),
+    infra.v_unique_child_with_singleton_error(root, "HamburgerPanelAuthorSuppliedContents"),
     on_error: fn(error) {
       case error {
         infra.LessThanOne -> Error(NoHamburgerPanelAuthorSuppliedContents)
@@ -73,9 +73,9 @@ fn our_splitter(
       list.map(
         articles,
         fn(c) {
-          let #(c, path) = infra.v_assert_pop_attribute_value(c, "path")
-          let #(c, number) = infra.v_assert_pop_attribute_value(c, "number")
-          let #(c, category) = infra.v_assert_pop_attribute_value(c, "category")
+          let #(c, path) = infra.v_assert_pop_attr_val(c, "path")
+          let #(c, number) = infra.v_assert_pop_attr_val(c, "number")
+          let #(c, category) = infra.v_assert_pop_attr_val(c, "category")
           let c = infra.v_set_tag(c, "Article")
           ds.OutputFragment(Article("__" <> category <> number <> "__"), "routes" <> path <> ".tsx", c)
         }
@@ -237,7 +237,7 @@ pub fn main() {
     fn(error) {
       io.println("")
       io.println("command line error: " <> ins(error))
-      ds.basic_cli_usage()
+      ds.basic_cli_usage("\nCommand line options (basic):")
       cli_usage_supplementary()
     },
   )
@@ -270,6 +270,8 @@ pub fn main() {
       input_dir: "../src/content",
       output_dir: output_dir,
       prettifier_behavior: ds.PrettifierOff,
+      verbose: False,
+      warnings: False,
     )
     |> ds.amend_renderer_paramaters_by_command_line_amendments(amendments)
 

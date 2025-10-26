@@ -20,9 +20,10 @@ export default function __Chapter3__() {
     <Article
     prevPage="/article/chapter2"
     nextPage="/article/chapter4"
-    id="_15_hgi_"
-    maxElementWidth={1500}
+    _="ChapterCounter 3"
     pageNecessaryMargin={700}
+    maxElementWidth={1500}
+    id="_15_hgi_"
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -585,7 +586,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 1">
           <OuterP>
             <b>
               Example 1.
@@ -796,7 +797,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 2">
           <OuterP>
             <b>
               Example 2.
@@ -856,9 +857,9 @@ const Rest = () => {
               .
             </NoBreak>
             <ImageLeft
-            offset_y="0em"
-            line={-1}
             src="/images/svg_ch3_0.5625_cloud.svg"
+            line={-1}
+            offset_y="0em"
              />
           </OuterP>
         </Example>
@@ -902,7 +903,7 @@ const Rest = () => {
           defined.
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 3">
           <OuterP>
             <b>
               Example 3.
@@ -943,7 +944,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 4">
           <OuterP>
             <b>
               Example 4.
@@ -989,7 +990,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 5">
           <OuterP>
             <b>
               Example 5.
@@ -1259,8 +1260,8 @@ const Rest = () => {
         <Pause />
         <Image src="/images/svg_ch3_ch_circle.svg">
           <ImageRight
-          offset_x="2em"
           src="/images/svg_ch3_ch_crossing_circle_cloud.svg"
+          offset_x="2em"
            />
         </Image>
         <Pause />
@@ -1276,8 +1277,8 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <Image
-        class="pt-4 mb-3"
         src="/images/svg_ch3_ch_empty_circle.svg"
+        class="pt-4 mb-3"
          />
         <Pause />
         <OuterP>
@@ -1290,7 +1291,7 @@ const Rest = () => {
           means that the point is included!)
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 6">
           <OuterP>
             <b>
               Example 6.
@@ -1311,7 +1312,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 7">
           <OuterP>
             <b>
               Example 7.
@@ -1879,8 +1880,8 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <Image
-        src="/images/svg_ch3_ch_affine_linear_cloud.svg"
         style="margin-top:-0.6em;margin-bottom:-0.4em"
+        src="/images/svg_ch3_ch_affine_linear_cloud.svg"
          />
       </Section>
       <Pause />
@@ -1976,9 +1977,9 @@ const Rest = () => {
           x^1 = x
           $$
           <ImageRight
-          offset_x="-0.1em"
-          offset_y="0.2em"
           src="/images/svg_ch3_ch_a1_x1_cloud.svg"
+          offset_y="0.2em"
+          offset_x="-0.1em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -1999,9 +2000,9 @@ const Rest = () => {
           x^0 = 1
           $$
           <ImageRight
-          offset_y="0.2em"
-          offset_x="0em"
           src="/images/svg_ch3_ch_a0_x0_cloud.svg"
+          offset_x="0em"
+          offset_y="0.2em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -2023,7 +2024,10 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise number={1}>
+        <Exercise
+        _="ExerciseCounter 1"
+        number={1}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2064,7 +2068,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={2}>
+        <Exercise
+        _="ExerciseCounter 2"
+        number={2}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2116,7 +2123,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={3}>
+        <Exercise
+        _="ExerciseCounter 3"
+        number={3}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2127,11 +2137,11 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            column_first={true}
-            with_padding={false}
-            place_items="start"
-            sm_cols={1}
             cols={2}
+            sm_cols={1}
+            place_items="start"
+            with_padding={false}
+            column_first={true}
             >
               <Item>
                 i. {" "}
@@ -2165,11 +2175,11 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            column_first={true}
-            with_padding={false}
-            place_items="start"
-            sm_cols={1}
             cols={2}
+            sm_cols={1}
+            place_items="start"
+            with_padding={false}
+            column_first={true}
             >
               <Item>
                 i. {" "}
@@ -2198,7 +2208,10 @@ const Rest = () => {
             </Grid>
           </Solution>
         </Exercise>
-        <Exercise number={4}>
+        <Exercise
+        _="ExerciseCounter 4"
+        number={4}
+        >
           <ExerciseStatement id="_7_hgi_">
             <OuterP>
               <b>
@@ -2419,7 +2432,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={5}>
+        <Exercise
+        _="ExerciseCounter 5"
+        number={5}
+        >
           <ExerciseStatement id="_8_hgi_">
             <OuterP>
               <b>
@@ -2532,8 +2548,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="1400px"
             src="/images/png_ch3_desmos_composition_0_c.png"
+            width="1400px"
              />
             <Pause />
             <OuterP>
@@ -2546,8 +2562,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="1400px"
             src="/images/png_ch3_desmos_composition_1_c.png"
+            width="1400px"
              />
             <Pause />
             <OuterP>
@@ -2555,8 +2571,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="1400px"
             src="/images/png_ch3_desmos_composition_2_b.png"
+            width="1400px"
              />
             <Pause />
             <OuterP>
@@ -2878,7 +2894,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={6}>
+        <Exercise
+        _="ExerciseCounter 6"
+        number={6}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -3029,9 +3048,9 @@ const Rest = () => {
               <NoBreak>
                 “
                 <InlineImage
-                bottom="0.15em"
-                width="0.9em"
                 src="/images/svg_ch3_3_3_grid_1.svg"
+                width="0.9em"
+                bottom="0.15em"
                  />
                 ” {" "}
               </NoBreak>
@@ -3039,9 +3058,9 @@ const Rest = () => {
               <NoBreak>
                 “
                 <InlineImage
-                bottom="0.15em"
-                width="0.9em"
                 src="/images/svg_ch3_3_3_grid_2.svg"
+                width="0.9em"
+                bottom="0.15em"
                  />
                 ”, {" "}
               </NoBreak>
@@ -3080,7 +3099,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={7}>
+        <Exercise
+        _="ExerciseCounter 7"
+        number={7}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -3214,7 +3236,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={8}>
+        <Exercise
+        _="ExerciseCounter 8"
+        number={8}
+        >
           <ExerciseStatement id="_9_hgi_">
             <OuterP>
               <b>
@@ -3331,10 +3356,10 @@ const Rest = () => {
               {" "}
               in (AA) yields
               <ImageLeft
-              offset_x="1em"
-              line={1}
-              popup={true}
               src="/images/svg_ch3_r_s_substitution_1_1.1em_cloud.svg"
+              popup={true}
+              line={1}
+              offset_x="1em"
                />
             </OuterP>
             <div style="font-size:1.1em;margin:0.8em 0em;">
@@ -3390,7 +3415,10 @@ const Rest = () => {
             <Image src="/images/svg_first_victim_second_victim_1_1em.svg" />
           </Solution>
         </Exercise>
-        <Exercise number={9}>
+        <Exercise
+        _="ExerciseCounter 9"
+        number={9}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -3506,7 +3534,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -3590,7 +3618,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -3612,7 +3640,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 3">
               <OuterP>
                 <i>
                   Note 3.
@@ -3733,7 +3761,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 4">
               <OuterP>
                 <i>
                   Note 4.
@@ -3836,28 +3864,28 @@ const Rest = () => {
                   $\Large h($
                 </Math>
                 <InlineImage
-                top="-3px"
-                width="1rem"
                 src="/images/svg_ch3_composition_icon_clubs.svg"
+                width="1rem"
+                top="-3px"
                  />
                 <Math>
                   $\Large&#123;&#125;) =$
                 </Math>
                 <InlineImage
-                marginRight=".5rem"
-                marginLeft=".5rem"
-                top="-3px"
-                width="1.25rem"
                 src="/images/svg_ch3_composition_icon_die_3.svg"
+                width="1.25rem"
+                top="-3px"
+                marginLeft=".5rem"
+                marginRight=".5rem"
                  />
               </CentralDisplay>
               <Pause />
               <OuterP>
                 because the arrow that originates at {" "}
                 <InlineImage
-                top="-4px"
-                width="1rem"
                 src="/images/svg_ch3_composition_icon_clubs.svg"
+                width="1rem"
+                top="-4px"
                  />
                 {" "} in set {" "}
                 <Math>
@@ -3865,9 +3893,9 @@ const Rest = () => {
                 </Math>
                 {" "} lands at {" "}
                 <InlineImage
-                top="-4px"
-                width="1.25rem"
                 src="/images/svg_ch3_composition_icon_die_3.svg"
+                width="1.25rem"
+                top="-4px"
                  />
                 {" "} in set {" "}
                 <NoBreak>
@@ -3886,19 +3914,19 @@ const Rest = () => {
                   $\Large g(h($
                 </Math>
                 <InlineImage
-                top="-3px"
-                width="1rem"
                 src="/images/svg_ch3_composition_icon_clubs.svg"
+                width="1rem"
+                top="-3px"
                  />
                 <Math>
                   $\Large&#123;&#125;)) =$
                 </Math>
                 <InlineImage
-                marginRight=".5rem"
-                marginLeft=".5rem"
-                top="-4px"
-                width="2.3rem"
                 src="/images/svg_ch3_composition_icon_fence.svg"
+                width="2.3rem"
+                top="-4px"
+                marginLeft=".5rem"
+                marginRight=".5rem"
                  />
               </CentralDisplay>
               <Pause />
@@ -3906,9 +3934,9 @@ const Rest = () => {
                 because, pursuing that path onwards, the arrow
                 that originates at {" "}
                 <InlineImage
-                top="-4px"
-                width="1.25rem"
                 src="/images/svg_ch3_composition_icon_die_3.svg"
+                width="1.25rem"
+                top="-4px"
                  />
                 {" "} in set {" "}
                 <Math>
@@ -3916,9 +3944,9 @@ const Rest = () => {
                 </Math>
                 {" "} lands at {" "}
                 <InlineImage
-                top="-4px"
-                width="2.3rem"
                 src="/images/svg_ch3_composition_icon_fence.svg"
+                width="2.3rem"
+                top="-4px"
                  />
                 {" "} in set {" "}
                 <NoBreak>
@@ -3950,8 +3978,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              width="2000px"
               src="/images/svg_ch3_truth_be_said_right_first.svg"
+              width="2000px"
                />
               <Pause />
               <OuterP>
@@ -3967,8 +3995,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              width="2000px"
               src="/images/svg_ch3_truth_be_said_left_first.svg"
+              width="2000px"
                />
               <Pause />
               <OuterP>
@@ -4009,7 +4037,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 5">
               <OuterP>
                 <i>
                   Note 5.
@@ -4034,7 +4062,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 6">
               <OuterP>
                 <i>
                   Note 6.
@@ -4141,7 +4169,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={10}>
+        <Exercise
+        _="ExerciseCounter 10"
+        number={10}
+        >
           <ExerciseStatement id="_10_hgi_">
             <OuterP>
               <b>
@@ -4226,7 +4257,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={11}>
+        <Exercise
+        _="ExerciseCounter 11"
+        number={11}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4454,7 +4488,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={12}>
+        <Exercise
+        _="ExerciseCounter 12"
+        number={12}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4534,7 +4571,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={13}>
+        <Exercise
+        _="ExerciseCounter 13"
+        number={13}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4623,7 +4663,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={14}>
+        <Exercise
+        _="ExerciseCounter 14"
+        number={14}
+        >
           <ExerciseStatement id="_11_hgi_">
             <OuterP>
               <b>
@@ -5049,7 +5092,7 @@ const Rest = () => {
               </Math>
             </CentralDisplayItalic>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -5125,7 +5168,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={15}>
+        <Exercise
+        _="ExerciseCounter 15"
+        number={15}
+        >
           <ExerciseStatement id="_12_hgi_">
             <OuterP>
               <b>
@@ -5250,8 +5296,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="760px"
             src="/images/svg_ch3_ex_x0_y0_step0.svg"
+            width="760px"
              />
             <Pause />
             <OuterP>
@@ -5270,8 +5316,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="760px"
             src="/images/svg_ch3_ex_x0_y0_step1.svg"
+            width="760px"
              />
             <Pause />
             <OuterP>
@@ -5290,8 +5336,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="760px"
             src="/images/svg_ch3_ex_x0_y0_step2.svg"
+            width="760px"
              />
             <Pause />
             <OuterP>
@@ -5316,8 +5362,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            width="760px"
             src="/images/svg_ch3_ex_x0_y0_step3.svg"
+            width="760px"
              />
             <Pause />
             <OuterP>
@@ -5333,7 +5379,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={16}>
+        <Exercise
+        _="ExerciseCounter 16"
+        number={16}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5690,7 +5739,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={17}>
+        <Exercise
+        _="ExerciseCounter 17"
+        number={17}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5712,12 +5764,12 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Grid
-            column_first={true}
-            with_padding={false}
-            place_items="start"
-            center_on_overflow={true}
-            sm_cols={1}
             cols={2}
+            sm_cols={1}
+            center_on_overflow={true}
+            place_items="start"
+            with_padding={false}
+            column_first={true}
             >
               <Item>
                 i. {" "}
@@ -5775,7 +5827,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={18}>
+        <Exercise
+        _="ExerciseCounter 18"
+        number={18}
+        >
           <ExerciseStatement id="_13_hgi_">
             <OuterP>
               <b>
@@ -6021,7 +6076,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={19}>
+        <Exercise
+        _="ExerciseCounter 19"
+        number={19}
+        >
           <ExerciseStatement id="_14_hgi_">
             <OuterP>
               <b>
@@ -6244,7 +6302,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={20}>
+        <Exercise
+        _="ExerciseCounter 20"
+        number={20}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -6411,7 +6472,7 @@ const Rest = () => {
               </Math>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -6493,7 +6554,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -6549,7 +6610,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={21}>
+        <Exercise
+        _="ExerciseCounter 21"
+        number={21}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>

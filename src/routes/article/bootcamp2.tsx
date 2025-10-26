@@ -18,8 +18,9 @@ export default function __Bootcamp2__() {
     <Article
     prevPage=""
     nextPage="/article/bootcamp1"
-    maxElementWidth={1200}
+    _="BootcampCounter 2"
     pageNecessaryMargin={270}
+    maxElementWidth={1200}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -231,9 +232,9 @@ const Rest = () => {
           \Large 10^0 = 1 = 1
           $$
           <ImageLeft
-          offset_x="4em"
-          offset_y="-0.2em"
           src="/images/svg_bt2_bt_alert_cloud.svg"
+          offset_y="-0.2em"
+          offset_x="4em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>
@@ -380,8 +381,8 @@ const Rest = () => {
           {" "}
           is equivalent to the identity
           <ImageLeft
-          line={2}
           src="/images/svg_bt2_bt_10_to_the_minus_0_cloud.svg"
+          line={2}
            />
         </OuterP>
         <Pause />
@@ -1743,9 +1744,9 @@ const Rest = () => {
         </OuterP>
         <Pause />
         <Table
-        marginBottom="1em"
-        marginTop="1em"
         class="first-line"
+        marginTop="1em"
+        marginBottom="1em"
         >
           <colgroup>
             <col width="120px" />
@@ -1977,7 +1978,7 @@ const Rest = () => {
           </NoBreak>
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 1">
           <OuterP>
             <b>
               Example 1.
@@ -2030,7 +2031,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 2">
           <OuterP>
             <b>
               Example 2.
@@ -2070,7 +2071,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 3">
           <OuterP>
             <b>
               Example 3.
@@ -2104,7 +2105,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 4">
           <OuterP>
             <b>
               Example 4.
@@ -2118,8 +2119,8 @@ const Rest = () => {
             \Large 0.00001 = 10^&#123;-5&#125;
             $$
             <ImageRight
-            offset_x="0em"
             src="/images/svg_bt2_bt_ten_to_the_minus_5_cloud.svg"
+            offset_x="0em"
             compensate_offset_x_for_large_text_columns={true}
              />
           </MathBlock>
@@ -2145,7 +2146,10 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise number={1}>
+        <Exercise
+        _="ExerciseCounter 1"
+        number={1}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2204,7 +2208,7 @@ const Rest = () => {
               respectively.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -2255,7 +2259,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={2}>
+        <Exercise
+        _="ExerciseCounter 2"
+        number={2}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2314,7 +2321,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={3}>
+        <Exercise
+        _="ExerciseCounter 3"
+        number={3}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2412,7 +2422,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={4}>
+        <Exercise
+        _="ExerciseCounter 4"
+        number={4}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2477,7 +2490,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={5}>
+        <Exercise
+        _="ExerciseCounter 5"
+        number={5}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2524,7 +2540,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={6}>
+        <Exercise
+        _="ExerciseCounter 6"
+        number={6}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2584,7 +2603,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={7}>
+        <Exercise
+        _="ExerciseCounter 7"
+        number={7}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2616,7 +2638,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={8}>
+        <Exercise
+        _="ExerciseCounter 8"
+        number={8}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2654,7 +2679,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={9}>
+        <Exercise
+        _="ExerciseCounter 9"
+        number={9}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2701,7 +2729,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={10}>
+        <Exercise
+        _="ExerciseCounter 10"
+        number={10}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2759,7 +2790,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={11}>
+        <Exercise
+        _="ExerciseCounter 11"
+        number={11}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2813,7 +2847,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={12}>
+        <Exercise
+        _="ExerciseCounter 12"
+        number={12}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -2901,7 +2938,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={13}>
+        <Exercise
+        _="ExerciseCounter 13"
+        number={13}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -3027,7 +3067,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={14}>
+        <Exercise
+        _="ExerciseCounter 14"
+        number={14}
+        >
           <ExerciseStatement id="_3_hgi_">
             <OuterP>
               <b>
@@ -3178,7 +3221,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={15}>
+        <Exercise
+        _="ExerciseCounter 15"
+        number={15}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -3518,9 +3564,9 @@ const Rest = () => {
               \Large -b -2c -3 = 0
               $$
               <ImageRight
-              offset_x="0.5em"
-              offset_y="-0.5em"
               src="/images/svg_bt2_ex_equation_addition_cloud.svg"
+              offset_y="-0.5em"
+              offset_x="0.5em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>

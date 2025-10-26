@@ -14,8 +14,9 @@ export default function __Bootcamp1__() {
     <Article
     prevPage="/article/bootcamp2"
     nextPage="/"
-    maxElementWidth={800}
+    _="BootcampCounter 1"
     pageNecessaryMargin={160}
+    maxElementWidth={800}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -600,8 +601,8 @@ const Rest = () => {
           \Large \&#123;\&#123;\&#125; \&#125; \ne \&#123;\&#125;
           $$
           <ImageRight
-          offset_x="3em"
           src="/images/svg_bt1_bt_empty_set_cloud.svg"
+          offset_x="3em"
           compensate_offset_x_for_large_text_columns={true}
            />
         </MathBlock>

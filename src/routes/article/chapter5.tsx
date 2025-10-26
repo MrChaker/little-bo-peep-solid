@@ -19,8 +19,9 @@ export default function __Chapter5__() {
     <Article
     prevPage="/article/chapter4"
     nextPage=""
-    maxElementWidth={1000}
+    _="ChapterCounter 5"
     pageNecessaryMargin={950}
+    maxElementWidth={1000}
     >
       <SectionsBreadcrumbs>
         <BreadcrumbItem id="breadcrumb-0">
@@ -1593,7 +1594,7 @@ const Rest = () => {
           ...with the input appearing as a radian.
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 1">
           <OuterP>
             <b>
               Example 1.
@@ -1622,7 +1623,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 2">
           <OuterP>
             <b>
               Example 2.
@@ -2479,7 +2480,7 @@ const Rest = () => {
           a point, out of expediency!
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 3">
           <OuterP>
             <b>
               Example 3.
@@ -2518,7 +2519,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 4">
           <OuterP>
             <b>
               Example 4.
@@ -2866,7 +2867,7 @@ const Rest = () => {
           that takes one from “hypotenuse” to “opposite”.
         </OuterP>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 5">
           <OuterP>
             <b>
               Example 5.
@@ -2900,7 +2901,7 @@ const Rest = () => {
           </OuterP>
         </Example>
         <Pause />
-        <Example>
+        <Example _="ExampleCounter 6">
           <OuterP>
             <b>
               Example 6.
@@ -4142,7 +4143,10 @@ const Rest = () => {
       </Section>
       <Pause />
       <Exercises>
-        <Exercise number={1}>
+        <Exercise
+        _="ExerciseCounter 1"
+        number={1}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4241,7 +4245,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={2}>
+        <Exercise
+        _="ExerciseCounter 2"
+        number={2}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4312,8 +4319,8 @@ const Rest = () => {
               as we can count on the graph of the original
               function:
               <ImageLeft
-              src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_4eta_cloud.svg"
               line={-2}
+              src="/images/svg_ch5_ex_cosine_10x_plus_x_over_4_4eta_cloud.svg"
                />
             </OuterP>
             <Pause />
@@ -4377,7 +4384,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={3}>
+        <Exercise
+        _="ExerciseCounter 3"
+        number={3}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4390,8 +4400,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic.svg"
              />
           </ExerciseStatement>
           <Solution>
@@ -4403,8 +4413,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_parabola.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_parabola.svg"
              />
             <Pause />
             <OuterP>
@@ -4542,8 +4552,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_C_estimate.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_C_estimate.svg"
              />
             <Pause />
             <OuterP>
@@ -4596,8 +4606,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_A_estimate.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_A_estimate.svg"
              />
             <Pause />
             <OuterP>
@@ -4677,8 +4687,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_inset.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_with_inset.svg"
              />
             <Pause />
             <OuterP>
@@ -4782,8 +4792,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_B_estimate.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_cosine_minus_cos_20x_plus_quadratic_B_estimate.svg"
              />
             <Pause />
             <OuterP>
@@ -4813,7 +4823,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={4}>
+        <Exercise
+        _="ExerciseCounter 4"
+        number={4}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -4956,8 +4969,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_big_wave_minus_sin_x.svg"
             style="margin-top:0.8em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_big_wave_minus_sin_x.svg"
              />
             <Pause />
             <OuterP>
@@ -5137,7 +5150,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={5}>
+        <Exercise
+        _="ExerciseCounter 5"
+        number={5}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5149,8 +5165,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <table
-            style="border-collapse:collapse;font-size:100%;text-align:center;margin:auto;margin-top:1em;margin-bottom:1.5em;"
             class="slice"
+            style="border-collapse:collapse;font-size:100%;text-align:center;margin:auto;margin-top:1em;margin-bottom:1.5em;"
             >
               <colgroup>
                 <col width={200} />
@@ -5214,7 +5230,7 @@ const Rest = () => {
               (Then imagine summing together, squaring, etc.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -5263,7 +5279,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={6}>
+        <Exercise
+        _="ExerciseCounter 6"
+        number={6}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5295,13 +5314,13 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_pythagorean_graphs_sin2.svg"
             style="margin-top:1.1em;margin-bottom:1.1em;"
+            src="/images/svg_ch5_ex_pythagorean_graphs_sin2.svg"
              />
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_pythagorean_graphs_cos2.svg"
             style="margin-top:1.1em;margin-bottom:1.1em;"
+            src="/images/svg_ch5_ex_pythagorean_graphs_cos2.svg"
              />
             <Pause />
             <OuterP>
@@ -5323,8 +5342,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_pythagorean_graphs_compounded.svg"
             style="margin-top:1.1em;margin-bottom:1.1em;"
+            src="/images/svg_ch5_ex_pythagorean_graphs_compounded.svg"
              />
             <Pause />
             <OuterP>
@@ -5349,7 +5368,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={7}>
+        <Exercise
+        _="ExerciseCounter 7"
+        number={7}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5365,8 +5387,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_big_snail.svg"
             style="width:500px;margin-top:1em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_big_snail.svg"
              />
           </ExerciseStatement>
           <Solution>
@@ -5540,7 +5562,7 @@ const Rest = () => {
               {" "} from the drawing!
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -5575,7 +5597,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -5589,8 +5611,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_big_snail_quad_purple_angle_1.svg"
               style="margin-top:0.8em;margin-bottom:1em;"
+              src="/images/svg_ch5_ex_big_snail_quad_purple_angle_1.svg"
                />
               <Pause />
               <OuterP>
@@ -5612,8 +5634,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_big_snail_quad_purple_angle_2.svg"
               style="margin-top:0.8em;margin-bottom:1em;"
+              src="/images/svg_ch5_ex_big_snail_quad_purple_angle_2.svg"
                />
               <Pause />
               <OuterP>
@@ -5657,7 +5679,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={8}>
+        <Exercise
+        _="ExerciseCounter 8"
+        number={8}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5713,8 +5738,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_v2.svg"
             style="margin-top:1em;margin-bottom:0.5em;"
+            src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_v2.svg"
              />
           </ExerciseStatement>
           <Solution>
@@ -5762,8 +5787,8 @@ const Rest = () => {
               r\cdot\cos(\phi)
               $$
               <ImageRight
-              offset_x="5.5em"
               src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_DeltaX_v2_cloud.svg"
+              offset_x="5.5em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -5786,8 +5811,8 @@ const Rest = () => {
               r\cdot\sin(\phi)
               $$
               <ImageLeft
-              offset_x="7.5em"
               src="/images/svg_ch5_ex_P_in_terms_of_ADEphi_DeltaY_v2_cloud.svg"
+              offset_x="7.5em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -5815,7 +5840,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={9}>
+        <Exercise
+        _="ExerciseCounter 9"
+        number={9}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -5943,8 +5971,8 @@ const Rest = () => {
               \,\vec&#123;u&#125; + \vec&#123;v&#125; = (101, 99)
               $$
               <ImageRight
-              offset_x="1em"
               src="/images/svg_ch5_ex_vector_sum_101_cloud.svg"
+              offset_x="1em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -5973,7 +6001,7 @@ const Rest = () => {
               on the other hand.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -5993,7 +6021,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -6197,7 +6225,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 3">
               <OuterP>
                 <i>
                   Note 3.
@@ -6211,13 +6239,16 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_vector_sum_previous_example.svg"
               style="margin-top:1em;margin-bottom:0.8em;"
+              src="/images/svg_ch5_ex_vector_sum_previous_example.svg"
                />
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={10}>
+        <Exercise
+        _="ExerciseCounter 10"
+        number={10}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -6570,7 +6601,7 @@ const Rest = () => {
               those points where direction is reversed.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -6603,7 +6634,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={11}>
+        <Exercise
+        _="ExerciseCounter 11"
+        number={11}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -6723,7 +6757,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={12}>
+        <Exercise
+        _="ExerciseCounter 12"
+        number={12}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -6771,8 +6808,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_0_2_radians_guess_answer.svg"
             style="margin-top:1em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_0_2_radians_guess_answer.svg"
              />
             <Pause />
             <OuterP>
@@ -6801,8 +6838,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_0_2_radians_guess_joke.svg"
             style="margin-top:1em;margin-bottom:1em;"
+            src="/images/svg_ch5_ex_0_2_radians_guess_joke.svg"
              />
             <Pause />
             <OuterP>
@@ -6810,7 +6847,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={13}>
+        <Exercise
+        _="ExerciseCounter 13"
+        number={13}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -6873,7 +6913,7 @@ const Rest = () => {
               divided by its radius.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -6898,7 +6938,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -6928,7 +6968,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={14}>
+        <Exercise
+        _="ExerciseCounter 14"
+        number={14}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -7044,7 +7087,7 @@ const Rest = () => {
             <Pause />
             <StarDivider />
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -7055,8 +7098,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_1.svg"
               style="margin-top:0.8em;margin-bottom:1.4em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_1.svg"
                />
               <Pause />
               <OuterP>
@@ -7086,8 +7129,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2a.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2a.svg"
                />
               <Pause />
               <OuterP>
@@ -7120,8 +7163,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2b.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_2b.svg"
                />
               <Pause />
               <OuterP>
@@ -7149,8 +7192,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3a.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3a.svg"
                />
               <Pause />
               <OuterP>
@@ -7183,8 +7226,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3b.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_3b.svg"
                />
               <Pause />
               <OuterP>
@@ -7237,8 +7280,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_4.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_4.svg"
                />
               <Pause />
               <OuterP>
@@ -7278,8 +7321,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_5.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_5.svg"
                />
               <Pause />
               <OuterP>
@@ -7299,8 +7342,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6a.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6a.svg"
                />
               <Pause />
               <OuterP>
@@ -7333,8 +7376,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6b.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_6b.svg"
                />
               <Pause />
               <OuterP>
@@ -7388,8 +7431,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_7.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_7.svg"
                />
               <Pause />
               <OuterP>
@@ -7420,8 +7463,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_8.svg"
               style="margin-top:0.8em;margin-bottom:1.5em;"
+              src="/images/svg_ch5_ex_11_over_7_longhand_eloise_start_8.svg"
                />
               <Pause />
               <OuterP>
@@ -7430,7 +7473,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={15}>
+        <Exercise
+        _="ExerciseCounter 15"
+        number={15}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -7479,7 +7525,7 @@ const Rest = () => {
               after the decimal point.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -7524,7 +7570,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -7674,7 +7720,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={16}>
+        <Exercise
+        _="ExerciseCounter 16"
+        number={16}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -7774,7 +7823,7 @@ const Rest = () => {
               per properties of the long division algorithm.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -8072,7 +8121,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -8390,8 +8439,8 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_big_division_big_subtraction_final.svg"
               style="margin-top:1em;margin-bottom:1em;"
+              src="/images/svg_ch5_ex_big_division_big_subtraction_final.svg"
                />
               <Pause />
               <OuterP>
@@ -8403,7 +8452,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 3">
               <OuterP>
                 <i>
                   Note 3.
@@ -8423,7 +8472,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={17}>
+        <Exercise
+        _="ExerciseCounter 17"
+        number={17}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -8470,7 +8522,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -8509,7 +8561,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={18}>
+        <Exercise
+        _="ExerciseCounter 18"
+        number={18}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -8579,8 +8634,8 @@ const Rest = () => {
             </OuterP>
             <Pause />
             <Image
-            style="background-color:#fdfdfd"
             src="/images/svg_ch5_ex_x_plus_y_options.svg"
+            style="background-color:#fdfdfd"
              />
             <Pause />
             <OuterP>
@@ -8837,7 +8892,7 @@ const Rest = () => {
               (cf. Exercise 1, Chapter 1).
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -8886,7 +8941,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -8963,7 +9018,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={19}>
+        <Exercise
+        _="ExerciseCounter 19"
+        number={19}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -9036,7 +9094,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={20}>
+        <Exercise
+        _="ExerciseCounter 20"
+        number={20}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -9088,7 +9149,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -9134,7 +9195,10 @@ const Rest = () => {
             <StarDivider />
           </Solution>
         </Exercise>
-        <Exercise number={21}>
+        <Exercise
+        _="ExerciseCounter 21"
+        number={21}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -9605,7 +9669,7 @@ const Rest = () => {
               {" "} for which the maximum is achieved.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -9670,7 +9734,7 @@ const Rest = () => {
               <StarDivider />
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -9688,12 +9752,12 @@ const Rest = () => {
               </OuterP>
               <Pause />
               <Image
-              src="/images/svg_ch5_ex_max_xy_example_isoset.svg"
               style="margin-top:1em;margin-bottom:1em;"
+              src="/images/svg_ch5_ex_max_xy_example_isoset.svg"
                />
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 3">
               <OuterP>
                 <i>
                   Note 3.
@@ -10087,7 +10151,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 4">
               <OuterP>
                 <i>
                   Note 4.
@@ -10230,7 +10294,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 5">
               <OuterP>
                 <i>
                   Note 5.
@@ -10288,7 +10352,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={22}>
+        <Exercise
+        _="ExerciseCounter 22"
+        number={22}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -10382,7 +10449,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={23}>
+        <Exercise
+        _="ExerciseCounter 23"
+        number={23}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -10526,7 +10596,7 @@ const Rest = () => {
               by Exercise 22. (The End.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -10573,7 +10643,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={24}>
+        <Exercise
+        _="ExerciseCounter 24"
+        number={24}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -10702,7 +10775,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={25}>
+        <Exercise
+        _="ExerciseCounter 25"
+        number={25}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -10778,7 +10854,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={26}>
+        <Exercise
+        _="ExerciseCounter 26"
+        number={26}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -10803,8 +10882,8 @@ const Rest = () => {
             </OuterP>
             <TextParent>
               <ol
-              style="margin-top:0.5em;"
               class="l1"
+              style="margin-top:0.5em;"
               >
                 <li>
                   using the composition {" "}
@@ -10989,7 +11068,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={27}>
+        <Exercise
+        _="ExerciseCounter 27"
+        number={27}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -11097,7 +11179,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={28}>
+        <Exercise
+        _="ExerciseCounter 28"
+        number={28}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -11261,7 +11346,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -11371,7 +11456,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={29}>
+        <Exercise
+        _="ExerciseCounter 29"
+        number={29}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -11632,7 +11720,7 @@ const Rest = () => {
               {" "} vice-versa.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -11719,7 +11807,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -11805,7 +11893,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={30}>
+        <Exercise
+        _="ExerciseCounter 30"
+        number={30}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -11949,8 +12040,8 @@ const Rest = () => {
               \Large\downarrow
               $$
               <ImageRight
-              offset_x="4em"
               src="/images/svg_ch5_ex_cos_and_cos2_comparison_step1_cloud.svg"
+              offset_x="4em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -11966,8 +12057,8 @@ const Rest = () => {
               \Large\downarrow
               $$
               <ImageRight
-              offset_x="4em"
               src="/images/svg_ch5_ex_cos_and_cos2_comparison_step2_cloud.svg"
+              offset_x="4em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -11983,8 +12074,8 @@ const Rest = () => {
               \Large\downarrow
               $$
               <ImageRight
-              offset_x="4em"
               src="/images/svg_ch5_ex_cos_and_cos2_comparison_step3_cloud.svg"
+              offset_x="4em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -12172,9 +12263,9 @@ const Rest = () => {
               \end&#123;align*&#125;
               $$
               <ImageLeft
-              offset_y="3%"
-              offset_x="3.4em"
               src="/images/svg_ch5_ex_cos_and_cos2_comparison_pythagorean_cloud.svg"
+              offset_x="3.4em"
+              offset_y="3%"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -12195,7 +12286,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={31}>
+        <Exercise
+        _="ExerciseCounter 31"
+        number={31}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -12273,7 +12367,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={32}>
+        <Exercise
+        _="ExerciseCounter 32"
+        number={32}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -12356,13 +12453,17 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={33}>
+        <Exercise
+        _="ExerciseCounter 33"
+        number={33}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
                 Exercise 33.
               </b>
-              {" "}
+            </OuterP>
+            <OuterP class="indent-10">
               What sequence of geometric transformations
               maps the graph
             </OuterP>
@@ -12620,7 +12721,7 @@ const Rest = () => {
               ...victory!!!!
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -12651,7 +12752,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={34}>
+        <Exercise
+        _="ExerciseCounter 34"
+        number={34}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -13052,7 +13156,7 @@ const Rest = () => {
               which concludes the problem.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -13195,7 +13299,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={35}>
+        <Exercise
+        _="ExerciseCounter 35"
+        number={35}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -13291,8 +13398,8 @@ const Rest = () => {
               \sin x\cos \psi + \cos x\sin \psi
               $$
               <ImageRight
-              offset_x="8em"
               src="/images/svg_ch5_ex_polar_discovery2_cloud.svg"
+              offset_x="8em"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -13415,7 +13522,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={36}>
+        <Exercise
+        _="ExerciseCounter 36"
+        number={36}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -13554,7 +13664,7 @@ const Rest = () => {
               you are bound to save humanity!
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -13568,7 +13678,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={37}>
+        <Exercise
+        _="ExerciseCounter 37"
+        number={37}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -13588,8 +13701,8 @@ const Rest = () => {
             <Image src="/images/svg_ch5_ex_costan_powers_cos_bounce.svg" />
             <Pause />
             <Image
-            src="/images/svg_ch5_ex_costan_powers_cos_snail.svg"
             style="margin-top:1.5em;"
+            src="/images/svg_ch5_ex_costan_powers_cos_snail.svg"
              />
             <Pause />
             <Image src="/images/svg_ch5_ex_costan_powers_cos_inverted_towers.svg" />
@@ -13651,7 +13764,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -13678,7 +13791,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -13768,7 +13881,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={38}>
+        <Exercise
+        _="ExerciseCounter 38"
+        number={38}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -13925,7 +14041,7 @@ const Rest = () => {
               {" "} for 2.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -14042,7 +14158,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -14104,7 +14220,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={39}>
+        <Exercise
+        _="ExerciseCounter 39"
+        number={39}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -14259,7 +14378,7 @@ const Rest = () => {
             <Pause />
             <StarDivider />
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -14335,7 +14454,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -14376,7 +14495,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={40}>
+        <Exercise
+        _="ExerciseCounter 40"
+        number={40}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -14596,7 +14718,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={41}>
+        <Exercise
+        _="ExerciseCounter 41"
+        number={41}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -14690,7 +14815,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={42}>
+        <Exercise
+        _="ExerciseCounter 42"
+        number={42}
+        >
           <ExerciseStatement id="_25_hgi_">
             <OuterP>
               <b>
@@ -14793,7 +14921,7 @@ const Rest = () => {
               should be good enough for a construction site.)
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -14829,7 +14957,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={43}>
+        <Exercise
+        _="ExerciseCounter 43"
+        number={43}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15048,7 +15179,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={44}>
+        <Exercise
+        _="ExerciseCounter 44"
+        number={44}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15348,7 +15482,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={45}>
+        <Exercise
+        _="ExerciseCounter 45"
+        number={45}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15391,8 +15528,8 @@ const Rest = () => {
               \sec(\theta)
               $$
               <ImageRight
-              src="/images/svg_ch5_ex_horizontal_projection_sphere_sec_cloud.svg"
               offset_x="9em"
+              src="/images/svg_ch5_ex_horizontal_projection_sphere_sec_cloud.svg"
               compensate_offset_x_for_large_text_columns={true}
                />
             </MathBlock>
@@ -15435,7 +15572,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={46}>
+        <Exercise
+        _="ExerciseCounter 46"
+        number={46}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15482,7 +15622,7 @@ const Rest = () => {
               </NoBreak>
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -15497,7 +15637,7 @@ const Rest = () => {
               </OuterP>
             </SolutionNote>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 2">
               <OuterP>
                 <i>
                   Note 2.
@@ -15531,7 +15671,10 @@ const Rest = () => {
             </SolutionNote>
           </Solution>
         </Exercise>
-        <Exercise number={47}>
+        <Exercise
+        _="ExerciseCounter 47"
+        number={47}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15601,7 +15744,10 @@ const Rest = () => {
             </OuterP>
           </Solution>
         </Exercise>
-        <Exercise number={48}>
+        <Exercise
+        _="ExerciseCounter 48"
+        number={48}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -15711,7 +15857,7 @@ const Rest = () => {
               by Exercise 49.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
@@ -16008,8 +16154,8 @@ const Rest = () => {
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;A_i r
                 $$
                 <ImageRight
-                src="/images/svg_ch5_ex_sphere_volume_AiBi_cloud.svg"
                 offset_x="5em"
+                src="/images/svg_ch5_ex_sphere_volume_AiBi_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true}
                  />
               </MathBlock>
@@ -16022,8 +16168,8 @@ const Rest = () => {
                 \sum_&#123;i=1&#125;^N &#123;1\over 3&#125;\cdot 0.99999\cdot A_i\cdot 0.99999\cdot r
                 $$
                 <ImageLeft
-                src="/images/svg_ch5_ex_sphere_volume_AiBi_other_cloud.svg"
                 offset_x="2.5em"
+                src="/images/svg_ch5_ex_sphere_volume_AiBi_other_cloud.svg"
                 compensate_offset_x_for_large_text_columns={true}
                  />
               </MathBlock>
@@ -16131,7 +16277,10 @@ const Rest = () => {
             </Image>
           </Solution>
         </Exercise>
-        <Exercise number={49}>
+        <Exercise
+        _="ExerciseCounter 49"
+        number={49}
+        >
           <ExerciseStatement>
             <OuterP>
               <b>
@@ -16262,7 +16411,7 @@ const Rest = () => {
               that is half-algebraic, half-numerical.
             </OuterP>
             <Pause />
-            <SolutionNote>
+            <SolutionNote _="SolutionNoteCounter 1">
               <OuterP>
                 <i>
                   Note 1.
